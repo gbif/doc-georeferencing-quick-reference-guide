@@ -1,0 +1,11 @@
+https://doi.org/10.35035/e09p-h128[image:https://zenodo.org/badge/DOI/10.35035/e09p-h128.svg[doi:10.35035/e09p-h128]]
+https://creativecommons.org/licenses/by-sa/4.0/[image:https://img.shields.io/badge/License-CC%20BY%2D-SA%204.0-lightgrey.svg[CC BY-SA 4.0]]
+https://builds.gbif.org/job/doc-georeferencing-quick-reference-guide/[image:https://builds.gbif.org/job/doc-georeferencing-quick-reference-guide/badge/icon[Build status]]
+
+= Georeferencing Quick Reference Guide
+
+_This is information *about* this document's source code.  It is not part of the document._
+
+The document is available in a temporary location as HTML and PDF at https://docs.gbif-uat.org/georeferencing-quick-reference-guide/en/[Georeferencing Quick Reference Guide].
+
+The document is built using AsciiDoc, for guidance on how to make changes or suggestions see the https://docs.gbif.org/documentation-guidelines/[GBIF Documentation Guidelines].
