@@ -26,6 +26,10 @@ endif::backend-pdf[]
 :idprefix:
 :idseparator: -
 
+// Shorthand for links to the other two documents
+:gbp: link:../../doc-georeferencing-best-practices/en/
+:gcm: link:../../doc-georeferencing-calculator-manual/en/
+
 // add cover image to img directory and update filename below
 ifdef::backend-html5[]
 //image::img/western-honey-bee.jpg[]
@@ -53,7 +57,7 @@ https://doi.org/10.35035/e09p-h128
 
 == Introduction
 
-This is a practical guide for **<<georeference,georeferencing>>**. It describes the protocols to determine the shapes of **<<feature,features>>** and how to use them as the basis for georeferencing with the **<<point-radius>>** **<<georeferencing method>>** (Wieczorek 2001, Wieczorek _et al._ 2004, Chapman & Wieczorek 2020) using the http://georeferencing.org/georefcalculator/gc.html[*_Georeferencing Calculator_*] (Wieczorek & Wieczorek 2019), and its associated *_Georeferencing Calculator Manual_* (Bloom _et al._ 2020), maps, **<<gazetteer,gazetteer>>**, and other resources from which **<<coordinates>>** and spatial **<<boundary,boundaries>>** for places can be found. This document is a citable **<<georeference protocol>>**. If a derived protocol is used, a new document should be made publicly available and cited with attribution to this document.
+This is a practical guide for **<<georeference,georeferencing>>**. It describes the protocols to determine the shapes of **<<feature,features>>** and how to use them as the basis for georeferencing with the **<<point-radius>>** **<<georeferencing method>>** (Wieczorek 2001, Wieczorek _et al._ 2004, Chapman & Wieczorek 2020) using the http://georeferencing.org/georefcalculator/gc.html[*_Georeferencing Calculator_*] (Wieczorek & Wieczorek 2019), and its associated {gcm}[*_Georeferencing Calculator Manual_*] (Bloom _et al._ 2020), maps, **<<gazetteer,gazetteer>>**, and other resources from which **<<coordinates>>** and spatial **<<boundary,boundaries>>** for places can be found. This document is a citable **<<georeference protocol>>**. If a derived protocol is used, a new document should be made publicly available and cited with attribution to this document.
 
 Here is a link:blocks.html#more-blocks[basic link way] crosslink.
 
@@ -143,11 +147,11 @@ http://rs.tdwg.org/dwc/terms/#dwc:locationRemarks[*_locationRemarks_*]::  Notes 
 "Villa Epecuen was inundated in November 1985 and ceased to be inhabited until 2009"
 ====
 
-For additional community discussion and recommendations, see the **<<Darwin Core>>** Project wiki (Wieczorek 2017), the https://github.com/tdwg/dwc-qa/wiki/Webinars[_Darwin Core Hour Webinars_] and *_<<Georeferencing Best Practices>>_*.
+For additional community discussion and recommendations, see the **<<Darwin Core>>** Project wiki (Wieczorek 2017), the https://github.com/tdwg/dwc-qa/wiki/Webinars[_Darwin Core Hour Webinars_] and {gbp}[*_<<Georeferencing Best Practices>>_*].
 
 === Georeferencing Concepts
 
-One of the goals of **<<georeference,georeferencing>>** following best practices is to be sure that enough information is provided in the output so that the **<<georeference>>** is repeatable (see <<Principles of Best Practice>> in *_Georeferencing Best Practices_*). To that end, this document provides a set of recipes for **<<georeference,georeferencing>>** various **<<locality type,locality types>>** using the *_Georeferencing Calculator_*. The *_Calculator_* allows you to make distinct kinds of calculations based on the **<<locality type>>** (<<Locality Type>>). When the **<<locality type>>** is chosen from the predefined list, the *_Calculator_* presents input boxes for all of the parameters needed for that type of calculation. Note that the **<<locality type>>** is for the most specific **<<locality clause,clause>>** in the **<<locality>>** description (see <<Parsing the Locality Description>> in *_Georeferencing Best Practices_*), but there may be information for other **<<locality clause,clauses>>** or other parts of the **<<location>>** record that help to constrain the **<<location>>** and come into play when a **<<feature>> <<boundary>>** is determined. Many *_Calculator_* parameters are used for more than one **<<locality type>>**. Rather than repeat the explanation for each **<<locality type>>**, they are collected here for common reference. Some **<<locality type,locality types>>** require specific parameters, for which the corresponding explanations are included in each subsection of <<Georeferencing Method for Locality Type>>. Refer to the *_Georeferencing Calculator Manual_* (Bloom _et al._ 2020) for details about the *_Calculator_* not answered in this document.
+One of the goals of **<<georeference,georeferencing>>** following best practices is to be sure that enough information is provided in the output so that the **<<georeference>>** is repeatable (see {gbp}#principles-of-best-practice[Principles of Best Practice] in *_Georeferencing Best Practices_*). To that end, this document provides a set of recipes for **<<georeference,georeferencing>>** various **<<locality type,locality types>>** using the *_Georeferencing Calculator_*. The *_Calculator_* allows you to make distinct kinds of calculations based on the **<<locality type>>** (<<Locality Type>>). When the **<<locality type>>** is chosen from the predefined list, the *_Calculator_* presents input boxes for all of the parameters needed for that type of calculation. Note that the **<<locality type>>** is for the most specific **<<locality clause,clause>>** in the **<<locality>>** description (see {gbp}#parsing-the-locality-description[Parsing the Locality Description] in *_Georeferencing Best Practices_*), but there may be information for other **<<locality clause,clauses>>** or other parts of the **<<location>>** record that help to constrain the **<<location>>** and come into play when a **<<feature>> <<boundary>>** is determined. Many *_Calculator_* parameters are used for more than one **<<locality type>>**. Rather than repeat the explanation for each **<<locality type>>**, they are collected here for common reference. Some **<<locality type,locality types>>** require specific parameters, for which the corresponding explanations are included in each subsection of <<Georeferencing Method for Locality Type>>. Refer to the {gcm}[*_Georeferencing Calculator Manual_*] (Bloom _et al._ 2020) for details about the *_Calculator_* not answered in this document.
 
 ==== Locality Type
 
@@ -196,7 +200,7 @@ The _Coordinate Source_ is the type of resource (map type, **<<GPS>>**, **<<gaze
 // TODO That > sign after Maps?
 NOTE: More often than not, the original **<<coordinates>>** are used to find the general vicinity of the **<<location>>** on a map, after which the process of determining the **<<corrected center>>** provides the new **<<coordinates>>**. The **Coordinate Source** to use in the **Calculator** in this case is the map from which the **<<corrected center>>** was determined, not the original source used to determine the general vicinity on the map. For example, suppose the original **<<coordinates>>** came from a **<<gazetteer>>**, but the **<<boundary>>** and **<<corrected center>>** of the **<<feature>>** were determined from Google Maps™, the **Coordinate Source** would be "**Google Earth/Maps >2008**", not "**gazetteer**".
 
-This term is related to, but *NOT* the same as, the **<<Darwin Core>>** term *_georeferenceSources_*, which requires the specific resources used rather than their type. Note that the **<<uncertainty,uncertainties>>** from the two sources _gazetteer_ and _locality description_ can not be anticipated universally, and therefore do not contribute to the global **<<uncertainty>>** in the calculations. If the **<<error>>** characteristics of these sources are known, they can be added in the _Measurement Error_ field before calculating. If the source _GPS_ is selected, the label for _Measurement Error_ will change to _GPS Accuracy_, which is where the **<<accuracy>>** of the **<<GPS>>** (see <<Using a GPS>> in *_Georeferencing Best Practices_*) at the time the **<<coordinates>>** were taken should be entered.
+This term is related to, but *NOT* the same as, the **<<Darwin Core>>** term *_georeferenceSources_*, which requires the specific resources used rather than their type. Note that the **<<uncertainty,uncertainties>>** from the two sources _gazetteer_ and _locality description_ can not be anticipated universally, and therefore do not contribute to the global **<<uncertainty>>** in the calculations. If the **<<error>>** characteristics of these sources are known, they can be added in the _Measurement Error_ field before calculating. If the source _GPS_ is selected, the label for _Measurement Error_ will change to _GPS Accuracy_, which is where the **<<accuracy>>** of the **<<GPS>>** (see {gbp}#using-a-gps[Using a GPS] in *_Georeferencing Best Practices_*) at the time the **<<coordinates>>** were taken should be entered.
 
 ==== Coordinate Format
 
@@ -216,15 +220,15 @@ NOTE: This term is similar to, but **NOT** the same as, the <<Darwin Core>> term
 
 ==== Datum
 
-Defines the position of the origin and orientation of an **<<ellipsoid>>** upon which the **<<coordinates>>** are based for the given _Input Latitude_ and __Longitude__ (see <<Coordinate Reference System>> in *_Georeferencing Best Practices_*).
+Defines the position of the origin and orientation of an **<<ellipsoid>>** upon which the **<<coordinates>>** are based for the given _Input Latitude_ and __Longitude__ (see {gbp}#coordinate-reference-system[Coordinate Reference System] in *_Georeferencing Best Practices_*).
 
 NOTE: The **Datum** to use in the **Calculator** is the **<<datum>>** (or **<<ellipsoid>>**) of the map from which the **<<corrected center>>** was determined. For example, suppose the original **<<coordinates>>** came from a **<<gazetteer>>** with an unknown <<datum>>, but the **<<boundary>>** and **<<corrected center>>** of the **<<feature>>** were determined from Google Maps™, the **Datum** would be **WGS84**, not **datum not recorded**.
 
-The term _Datum_ in the *_Calculator_* is equivalent to the **<<Darwin Core>>** term *_geodeticDatum_*. The *_Calculator_* includes **<<ellipsoid,ellipsoids>>** on the __Datum __drop-down list, as sometimes that is all that **<<coordinates,coordinate>>** source shows. The choice of **<<datum>>** in the *_Calculator_* has two important effects. The first is the contribution to **<<uncertainty>>** if the **<<datum>>** of the input **<<coordinates>>** is not known. If the **<<datum>>** and **<<ellipsoid>>** are not known, _datum not recorded_ must be selected. **<<uncertainty,Uncertainty>>** due to an unknown **<<datum>>** can be severe and varies geographically in a complex way with a worst-case contribution of 5359 m (see <<Coordinate Reference System>> in *_<<Georeferencing Best Practices>>_*). The second important effect of the **<<datum>>** selection is to provide the characteristics of the **<<ellipsoid>>** model of the earth, on which the distance calculations depend.
+The term _Datum_ in the *_Calculator_* is equivalent to the **<<Darwin Core>>** term *_geodeticDatum_*. The *_Calculator_* includes **<<ellipsoid,ellipsoids>>** on the __Datum __drop-down list, as sometimes that is all that **<<coordinates,coordinate>>** source shows. The choice of **<<datum>>** in the *_Calculator_* has two important effects. The first is the contribution to **<<uncertainty>>** if the **<<datum>>** of the input **<<coordinates>>** is not known. If the **<<datum>>** and **<<ellipsoid>>** are not known, _datum not recorded_ must be selected. **<<uncertainty,Uncertainty>>** due to an unknown **<<datum>>** can be severe and varies geographically in a complex way with a worst-case contribution of 5359 m (see {gbp}#coordinate-reference-system[Coordinate Reference System] in *_<<Georeferencing Best Practices>>_*). The second important effect of the **<<datum>>** selection is to provide the characteristics of the **<<ellipsoid>>** model of the earth, on which the distance calculations depend.
 
 ==== Direction
 
-The _Direction_ in the *_Calculator_* is the **<<heading>>** given in the **<<locality>>** description, either as a standard compass point (see https://en.wikipedia.org/wiki/Boxing_the_compass[_Boxing_the_compass_]) or as a number of degrees in the clockwise direction from north. True North is not the same as Magnetic North (see <<Headings>> in *_Georeferencing Best Practices_*). If a **<<heading>>** is known to be a magnetic **<<heading>>**, it will have to be converted into a true **<<heading>>** (see NOAA's https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml[_Magnetic Field Calculator_]) before it can be used in the *_Georeferencing Calculator_*. If _degrees from N_ is selected, a text box will appear to the right of the selection, into which the degree **<<heading>>** should be entered.
+The _Direction_ in the *_Calculator_* is the **<<heading>>** given in the **<<locality>>** description, either as a standard compass point (see https://en.wikipedia.org/wiki/Boxing_the_compass[_Boxing_the_compass_]) or as a number of degrees in the clockwise direction from north. True North is not the same as Magnetic North (see {gbp}#headings[Headings] in *_Georeferencing Best Practices_*). If a **<<heading>>** is known to be a magnetic **<<heading>>**, it will have to be converted into a true **<<heading>>** (see NOAA's https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml[_Magnetic Field Calculator_]) before it can be used in the *_Georeferencing Calculator_*. If _degrees from N_ is selected, a text box will appear to the right of the selection, into which the degree **<<heading>>** should be entered.
 
 NOTE: Some marine **locality** descriptions reference a direction (azimuth) toward a landmark rather than a **<<heading>>** from the current **location** (e.g., "327° to Nubble Lighthouse"). To make a **Distance** at a **<<heading>>** calculation for such a **<<locality>>** description, use the compass point 180 degrees from the one given in the **<<locality>>** description (147° in the example above) as the **Direction**.
 
@@ -249,7 +253,7 @@ The _Distance Units_ selection denotes the real world units used in the **<<loca
 
 ==== Distance Precision
 
-The _Distance Precision_, labeled in the *_Calculator_* as _Precision_ in the second column of input parameters, refers to the **<<precision>>** with which a distance was described in a **<<locality>>** (see <<Uncertainty Related to Offset Precision>> in *_<<Georeferencing Best Practices>>_*). This drop-down list is populated based on the _Distance Units_ chosen and contains powers of ten and simple fractions to indicate the **<<precision>>** demonstrated in the verbatim original **<<offset>>**.
+The _Distance Precision_, labeled in the *_Calculator_* as _Precision_ in the second column of input parameters, refers to the **<<precision>>** with which a distance was described in a **<<locality>>** (see {gbp}#uncertainty-related-to-offset-precision[Uncertainty Related to Offset Precision] in *_<<Georeferencing Best Practices>>_*). This drop-down list is populated based on the _Distance Units_ chosen and contains powers of ten and simple fractions to indicate the **<<precision>>** demonstrated in the verbatim original **<<offset>>**.
 
 .{blank}
 ====
@@ -264,7 +268,7 @@ The _Measurement Error_ accounts for **<<error>>** associated with the ability t
 ==== GPS Accuracy
 
 // TODO Enter a value... bad grammar.
-When _GPS_ is selected from the _Coordinate Source_ drop-down list, the label for the _Measurement Error_ text box changes to _GPS Accuracy_. Enter a value that we recommend is at least twice the value given by the **<<GPS>>** at the time the **<<coordinates>>** were captured (see <<Uncertainty due to GPS>> in *_<<Georeferencing Best Practices>>_*). If _GPS Accuracy_ is not known, enter 100 m for standard hand-held **<<GPS>>** **<<coordinates>>** taken before 1 May 2000 when Selective Availability was discontinued. After that, use 30 m as a conservative default value.
+When _GPS_ is selected from the _Coordinate Source_ drop-down list, the label for the _Measurement Error_ text box changes to _GPS Accuracy_. Enter a value that we recommend is at least twice the value given by the **<<GPS>>** at the time the **<<coordinates>>** were captured (see {gbp}#uncertainty-due-to-gps[Uncertainty due to GPS] in *_<<Georeferencing Best Practices>>_*). If _GPS Accuracy_ is not known, enter 100 m for standard hand-held **<<GPS>>** **<<coordinates>>** taken before 1 May 2000 when Selective Availability was discontinued. After that, use 30 m as a conservative default value.
 
 ==== Uncertainty
 
@@ -364,9 +368,7 @@ h|Feature Type h|Default <<geographic radial>>
 |*Grid*, ¼ degree *precision* (at equator)† |39226 m
 |===
 
-// TODO Table 2 Crossref
-
-† **<<grid,Grids>>** based on **<<geographic coordinates>>**, such as Quarter Degree Squares, are not square, nor are they constant. They vary in size and shape by **<<latitude>>**. See Table 2 in <<Uncertainty Related to Coordinate Precision>> in *_<<Georeferencing Best Practices>>_*.
+† **<<grid,Grids>>** based on **<<geographic coordinates>>**, such as Quarter Degree Squares, are not square, nor are they constant. They vary in size and shape by **<<latitude>>**. See {gbp}#table-uncertainty[table] in {gbp}#uncertainty-related-to-coordinate-precision[Uncertainty Related to Coordinate Precision] in *_<<Georeferencing Best Practices>>_*.
 
 The **<<boundary,boundaries>>** between mountains can be determined by using the terrain (valleys, saddles, and plains) that separate one mountain from others around it (xref:img-mountain-boundaries[xrefstyle="short"]).
 
@@ -513,7 +515,7 @@ image::img/junction.png[width=627,align="center"]
 
 ===== Feature – Cave
 
-The **<<locality>>** is a cave, an underground mine, etc. For details of how to record a **<<locality>>** within a cave, see <<Caves>> in *_<<Georeferencing Best Practices>>_*.
+The **<<locality>>** is a cave, an underground mine, etc. For details of how to record a **<<locality>>** within a cave, see {gbp}#caves[Caves] in *_<<Georeferencing Best Practices>>_*.
 
 .{blank}
 [caption=Examples]
@@ -526,7 +528,7 @@ The **<<locality>>** is a cave, an underground mine, etc. For details of how to 
 
 *Step 1 – Determine the <<feature>> **<<boundary,boundaries>>**:* Locate the cave and/or its main entrance.
 
-a. Cave **<<extent>>** evident – if a map of all the interior of the cave with measurements and orientation to the surface is available, or if a position can be determined directly above the **<<location>>** inside the cave using the **<<ground zero>>** concept (see <<Determining Location>> in *_<<Georeferencing Best Practices>>_*), determine the **<<boundary>>** as if it is a <<Feature – with Obvious Spatial Extent>> (xref:img-caves[xrefstyle="short"]A).
+a. Cave **<<extent>>** evident – if a map of all the interior of the cave with measurements and orientation to the surface is available, or if a position can be determined directly above the **<<location>>** inside the cave using the **<<ground zero>>** concept (see {gbp}#determining-location[Determining Location] in *_<<Georeferencing Best Practices>>_*), determine the **<<boundary>>** as if it is a <<Feature – with Obvious Spatial Extent>> (xref:img-caves[xrefstyle="short"]A).
 
 b. Cave **<<extent>>** not evident – if the limits of the cave are not evident: a) use the nearest identifiable **<<feature>>** to determine the **<<extent>>** and **<<boundary>>** of the cave, as for <<Feature – without Obvious Spatial Extent>> (xref:img-caves[xrefstyle="short"]B); or b) determine the **<<coordinates>>** of the cave entrance and use any evidence of the size of the cave to circumscribe the **<<boundary>>** as a circle around the entrance with a **<<radial,radius>>** commensurate with its size (xref:img-caves[xrefstyle="short"]C). Document accordingly in *_georeferenceRemarks_*.
 
@@ -819,7 +821,7 @@ image::img/offset-multiple-paths.jpg[width=606,align="center"]
 
 ==== Offset – Distance along Orthogonal Directions
 
-**<<locality,Locality>>** consists of a linear distance in each of two orthogonal **<<direction,directions>>** from a **<<feature>>**. For more information and details see <<Offset along Orthogonal Directions>> in *_<<Georeferencing Best Practices>>_*.
+**<<locality,Locality>>** consists of a linear distance in each of two orthogonal **<<direction,directions>>** from a **<<feature>>**. For more information and details see {gbp}#offset-along-orthogonal-directions[Offset along Orthogonal Directions] in *_<<Georeferencing Best Practices>>_*.
 
 NOTE: Where <<locality,localities>> have two orthogonal measurements in them, it should always be assumed that the measurements are "by air" unless there is a reference that indicates otherwise.
 
@@ -925,7 +927,7 @@ NOTE: The *_Calculator_* calculates and preserves seven digits of <<precision>> 
 
 ==== Coordinates – Universal Transverse Mercator (UTM)
 
-The **<<locality>>** consists of a point represented by **<<coordinates,coordinate>>** information in the form of **<<UTM,Universal Transverse Mercator (UTM)>>** or a related **<<coordinate system>>**. For **<<UTM>>** or equivalent **<<coordinates>>**, a Zone should ALWAYS be included to make sure that the **<<longitude>>** is not ambiguous. Zones are often not reported where a region (_e.g.,_ Tasmania) falls completely within one **<<UTM>>** zone. Be aware that **<<UTM>>** zones are valid only between 84°N and 80°S. For details on dealing with **<<UTM>>** **<<coordinates,Coordinates>>** see <<Universal Transverse Mercator (UTM) Coordinates>> in *_<<Georeferencing Best Practices>>_*.
+The **<<locality>>** consists of a point represented by **<<coordinates,coordinate>>** information in the form of **<<UTM,Universal Transverse Mercator (UTM)>>** or a related **<<coordinate system>>**. For **<<UTM>>** or equivalent **<<coordinates>>**, a Zone should ALWAYS be included to make sure that the **<<longitude>>** is not ambiguous. Zones are often not reported where a region (_e.g.,_ Tasmania) falls completely within one **<<UTM>>** zone. Be aware that **<<UTM>>** zones are valid only between 84°N and 80°S. For details on dealing with **<<UTM>>** **<<coordinates,Coordinates>>** see {gbp}#universal-transverse-mercator-utm-coordinates[Universal Transverse Mercator (UTM) Coordinates] in *_<<Georeferencing Best Practices>>_*.
 
 NOTE: There are many national and local **<<grids>>** derived from <<UTM>> and work in the same way, such as the Australian Map Grid (AMG).
 
@@ -952,7 +954,7 @@ NOTE: <<UTM>> <<coordinates>> are sometimes truncated to fewer than 7 digits in 
 
 ==== Coordinates – Grid Systems
 
-**<<locality,Locality>>** is a **<<grid>>** reference (see <<Grids>> in *_Georeferencing Best Practices_*), such as the 100 m square grids extensively used in Europe, Quarter Degree Square Grids (QDS) as used in South Africa, and the Public Land Survey System (PLSS) system of Townships andSection (TRS) used in the mid- and western USA. Townships in the PLSS system are usually square and six miles on each side, with 36 one-mile by one-mile sections. Be aware that not all townships are square, however, as some were adjusted to conform to administrative or natural boundaries (rivers, for example). Numbered Townships are not unique descriptions without a **<<meridian>>**, which often is not given in a locality description. The **<<meridian>>** must be inferred from a Principal Meridian map using other information in the **<<locality>>** description. Similar subdivisions are used in other countries, and should be calculated in a similar way, once the sizes of the cells have been determined (see Table 2). Map sheets (quadrangles) are sometimes used and can also be calculated as a **<<grid>>** system. Note that, unlike geographic **<<grid,grids>>**, QDS **<<grid,grids>>** are referenced from the top left corner.
+**<<locality,Locality>>** is a **<<grid>>** reference (see {gbp}#grids[Grids] in *_Georeferencing Best Practices_*), such as the 100 m square grids extensively used in Europe, Quarter Degree Square Grids (QDS) as used in South Africa, and the Public Land Survey System (PLSS) system of Townships andSection (TRS) used in the mid- and western USA. Townships in the PLSS system are usually square and six miles on each side, with 36 one-mile by one-mile sections. Be aware that not all townships are square, however, as some were adjusted to conform to administrative or natural boundaries (rivers, for example). Numbered Townships are not unique descriptions without a **<<meridian>>**, which often is not given in a locality description. The **<<meridian>>** must be inferred from a Principal Meridian map using other information in the **<<locality>>** description. Similar subdivisions are used in other countries, and should be calculated in a similar way, once the sizes of the cells have been determined (see xref:table-default-geographic-radial[xrefstyle="short"]). Map sheets (quadrangles) are sometimes used and can also be calculated as a **<<grid>>** system. Note that, unlike geographic **<<grid,grids>>**, QDS **<<grid,grids>>** are referenced from the top left corner.
 
 .{blank}
 [caption=Examples]
@@ -974,7 +976,7 @@ NOTE: Usually the <<grid>> is made up of <<bounding box,bounding boxes>>, so det
 
 === Difficult Localities
 
-At times, **<<locality>>** descriptions are fraught with vagueness. This may be due to any number of reasons, but in particular relates to historic collections in areas that at the time may have had no named **<<feature,features>>** to reference. See the section <<Difficult Localities>> in *_Georeferencing Best Practices_*.
+At times, **<<locality>>** descriptions are fraught with vagueness. This may be due to any number of reasons, but in particular relates to historic collections in areas that at the time may have had no named **<<feature,features>>** to reference. See the section {gbp}#difficult-localities[Difficult Localities] in *_Georeferencing Best Practices_*.
 
 A cause of vagueness may be incorrect data entry and it is recommended that checking the original catalogs, ledgers, field notes, specimen labels, etc. be the first step in removing the vagaries of a **<<locality>>** so that it can be **<<georeference,georeferenced>>** with confidence.
 
@@ -1050,7 +1052,7 @@ Do not **<<georeference>>**. Document in *_georeferenceRemarks_* the reason for 
 
 The **<<locality>>** description contains irreconcilable inconsistencies – assertions that can not all be simultaneously true. Do not **<<georeference>>** these. Document in *_georeferenceRemarks_* the reason for not **<<georeference,georeferencing>>**, _e.g.,_ "_locality contains irreconcilable inconsistencies_".
 
-A common source of inconsistency occurs when the **<<locality>>** description does not match the geopolitical subdivision of which it is supposed to be a part (_e.g._, "_Missoula County, Idaho_". **<<elevation,Elevation>>** is another possible source of inconsistency, especially since **<<elevation>>** data are notoriously inaccurate (see <<Elevation>> in *_Georeferencing Best Practices_*. It is difficult to know which part of the **<<locality>>** is the one in **<<error>>** and a risk to judge that one part of the description should take precedence over another. Rather than determine **<<coordinates>>** for such **<<locality,localities>>**, annotate the **<<locality>>** in *_georeferenceRemarks_* with the nature of the inconsistency (_e.g_., "_Missoula County not in Idaho_") and refer the **<<locality>>** to the source institution for reconciliation.
+A common source of inconsistency occurs when the **<<locality>>** description does not match the geopolitical subdivision of which it is supposed to be a part (_e.g._, "_Missoula County, Idaho_". **<<elevation,Elevation>>** is another possible source of inconsistency, especially since **<<elevation>>** data are notoriously inaccurate (see {gbp}#elements-elevation[Elevation] in *_Georeferencing Best Practices_*. It is difficult to know which part of the **<<locality>>** is the one in **<<error>>** and a risk to judge that one part of the description should take precedence over another. Rather than determine **<<coordinates>>** for such **<<locality,localities>>**, annotate the **<<locality>>** in *_georeferenceRemarks_* with the nature of the inconsistency (_e.g_., "_Missoula County not in Idaho_") and refer the **<<locality>>** to the source institution for reconciliation.
 
 .{blank}
 [caption=Examples]
@@ -1062,7 +1064,7 @@ A common source of inconsistency occurs when the **<<locality>>** description do
 
 ==== Cultivated or Captive
 
-The **<<locality>>** refers to a captive animal, a cultivated plant or from some other non-natural occurrence. The **<<locality>>** cited is often that of a zoo, aquarium, botanical garden, etc. (see <<Dealing with Non-natural Occurrences>> in *_Georeferencing Best Practices_*).
+The **<<locality>>** refers to a captive animal, a cultivated plant or from some other non-natural occurrence. The **<<locality>>** cited is often that of a zoo, aquarium, botanical garden, etc. (see {gbp}#dealing-with-non-natural-occurrences[Dealing with Non-natural Occurrences] in *_Georeferencing Best Practices_*).
 
 .{blank}
 [caption=Examples]
