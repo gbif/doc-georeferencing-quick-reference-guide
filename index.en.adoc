@@ -59,10 +59,6 @@ https://doi.org/10.35035/e09p-h128
 
 This is a practical guide for **<<georeference,georeferencing>>**. It describes the protocols to determine the shapes of **<<feature,features>>** and how to use them as the basis for georeferencing with the **<<point-radius>>** **<<georeferencing method>>** (Wieczorek 2001, Wieczorek _et al._ 2004, Chapman & Wieczorek 2020) using the http://georeferencing.org/georefcalculator/gc.html[*_Georeferencing Calculator_*] (Wieczorek & Wieczorek 2019), and its associated {gcm}[*_Georeferencing Calculator Manual_*] (Bloom _et al._ 2020), maps, **<<gazetteer,gazetteer>>**, and other resources from which **<<coordinates>>** and spatial **<<boundary,boundaries>>** for places can be found. This document is a citable **<<georeference protocol>>**. If a derived protocol is used, a new document should be made publicly available and cited with attribution to this document.
 
-Here is a link:blocks.html#more-blocks[basic link way] crosslink.
-
-Here is a <<blocks.en.adoc#more-blocks,recommended way>> crosslink.
-
 The *_Guide_*, in its first version (Wieczorek _et al._ 2012), was an adaptation of *_Georeferencing for Dummies_* (Spencer _et al. n.dat._). It explains the recommended **<<georeference,georeferencing>>** procedures for the most commonly encountered type of **<<locality,localities>>**. This *_Guide_* should be used in parallel with *_Georeferencing Best Practices_* (Chapman & Wieczorek 2020), which contains the theoretical background and more detailed information about concepts used here.
 
 Throughout this document there are terms with a very specific meaning as it is being used here. Those that are given in *bold* have a link to the *_<<Glossary>>_* of the *_<<Georeferencing Best Practices>>_* where they are defined in detail. Terms in italics and not bold (_e.g._, _Input Latitude_) are references to fields or labels in the *_Calculator_*. Terms in italics and bold (_e.g._, *_georeferenceRemarks_*) are names of terms in the *<<Darwin Core>>.*
