@@ -10,7 +10,7 @@
 :numbered:
 :revnumber: {git-metadata-sha-short}
 :revdate: {git-metadata-date} {git-metadata-time} {git-metadata-timezone}
-//:title-logo-image: img/western-honey-bee.jpg
+//:title-logo-image: img/web/western-honey-bee.jpg
 :icons: font
 :pagenums:
 :license: https://creativecommons.org/licenses/by/4.0/
@@ -23,16 +23,13 @@ ifdef::backend-pdf[]
 :section-refsig: §
 endif::backend-pdf[]
 
-:idprefix:
-:idseparator: -
-
 // Shorthand for links to the other two documents
-:gbp: link:../../doc-georeferencing-best-practices/en/
-:gcm: link:../../doc-georeferencing-calculator-manual/en/
+:gbp: link:../../../georeferencing-best-practices/en/1.0/
+:gcm: link:../../../georeferencing-calculator-manual/1.0/
 
 // add cover image to img directory and update filename below
 ifdef::backend-html5[]
-//image::img/western-honey-bee.jpg[]
+//image::img/web/western-honey-bee.jpg[]
 endif::backend-html5[]
 
 :!sectnums:
@@ -57,17 +54,17 @@ https://doi.org/10.35035/e09p-h128
 
 == Introduction
 
-This is a practical guide for **<<georeference,georeferencing>>**. It describes the protocols to determine the shapes of **<<feature,features>>** and how to use them as the basis for georeferencing with the **<<point-radius>>** **<<georeferencing method>>** (Wieczorek 2001, Wieczorek _et al._ 2004, Chapman & Wieczorek 2020) using the http://georeferencing.org/georefcalculator/gc.html[*_Georeferencing Calculator_*] (Wieczorek & Wieczorek 2019), and its associated {gcm}[*_Georeferencing Calculator Manual_*] (Bloom _et al._ 2020), maps, **<<gazetteer,gazetteer>>**, and other resources from which **<<coordinates>>** and spatial **<<boundary,boundaries>>** for places can be found. This document is a citable **<<georeference protocol>>**. If a derived protocol is used, a new document should be made publicly available and cited with attribution to this document.
+This is a practical guide for **<<georeference,georeferencing>>**. It describes the protocols to determine the shapes of **<<feature,features>>** and how to use them as the basis for georeferencing with the **<<point-radius>>** **<<georeferencing-method>>** (Wieczorek 2001, Wieczorek _et al._ 2004, Chapman & Wieczorek 2020) using the http://georeferencing.org/georefcalculator/gc.html[*_Georeferencing Calculator_*] (Wieczorek & Wieczorek 2019), and its associated {gcm}[*_Georeferencing Calculator Manual_*] (Bloom _et al._ 2020), maps, **<<gazetteer,gazetteer>>**, and other resources from which **<<coordinates>>** and spatial **<<boundary,boundaries>>** for places can be found. This document is a citable **<<georeferencing-protocol>>**. If a derived protocol is used, a new document should be made publicly available and cited with attribution to this document.
 
-The *_Guide_*, in its first version (Wieczorek _et al._ 2012), was an adaptation of *_Georeferencing for Dummies_* (Spencer _et al. n.dat._). It explains the recommended **<<georeference,georeferencing>>** procedures for the most commonly encountered type of **<<locality,localities>>**. This *_Guide_* should be used in parallel with *_Georeferencing Best Practices_* (Chapman & Wieczorek 2020), which contains the theoretical background and more detailed information about concepts used here.
+The *_Guide_*, in its first version (Wieczorek _et al._ 2012), was an adaptation of *_Georeferencing for Dummies_* (Spencer _et al. n.dat._). It explains the recommended **<<georeference,georeferencing>>** procedures for the most commonly encountered type of **<<locality,localities>>**. This *_Guide_* should be used in parallel with {gbp}[*_Georeferencing Best Practices_*] (Chapman & Wieczorek 2020), which contains the theoretical background and more detailed information about concepts used here.
 
-Throughout this document there are terms with a very specific meaning as it is being used here. Those that are given in *bold* have a link to the *_<<Glossary>>_* of the *_<<Georeferencing Best Practices>>_* where they are defined in detail. Terms in italics and not bold (_e.g._, _Input Latitude_) are references to fields or labels in the *_Calculator_*. Terms in italics and bold (_e.g._, *_georeferenceRemarks_*) are names of terms in the *<<Darwin Core>>.*
+Throughout this document there are terms with a very specific meaning as it is being used here. Those that are presented <<accuracy,like this>> and have a link to the *_<<Glossary>>_* where they are defined in detail. Terms in italics and not bold (_e.g._, _Input Latitude_) are references to fields or labels in the *_Calculator_*. Terms in fixed-width font (_e.g._, term:[georeferenceRemarks]) are names of terms in the *<<Darwin-Core>>.*
 
-At the end of this document is a **<<Georeference Quick Reference Guide Key to Locality Types>>**, which contains a quick summary of the **<<georeferencing protocol,protocols>>** for the most common **<<locality type,locality types>>**, described in detail in the sections of this guide.
+At the end of this document is a **<<key-to-locality-types,Georeference Quick Reference Guide Key to Locality Types>>**, which contains a quick summary of the **<<georeferencing-protocol,protocols>>** for the most common **<<locality-type,locality types>>**, described in detail in the sections of this guide.
 
 === Objectives
 
-This document provides guidance on how to **<<georeference>>** using the **<<point-radius>>** **<<georeferencing method,method>>**. This *_Guide_* also provides the methods for determining the **<<boundary,boundaries>>** of **<<feature,features>>**, which form the basis of the **<<shape>>** **<<georeferencing method,method>>**.
+This document provides guidance on how to **<<georeference>>** using the **<<point-radius>>** **<<georeferencing-method,method>>**. This *_Guide_* also provides the methods for determining the **<<boundary,boundaries>>** of **<<feature,features>>**, which form the basis of the **<<shape>>** **<<georeferencing-method,method>>**.
 
 === Target Audience
 
@@ -75,13 +72,13 @@ This document is a practical guide for anyone who needs to **<<georeference>>** 
 
 === Scope
 
-This document is one of three that cover recommended requirements and methods to **<<georeference>>** **<<location,locations>>**. It provides a practical how-to guide for putting the theory of the **<<point-radius>> <<georeferencing method>>** into practice.
+This document is one of three that cover recommended requirements and methods to **<<georeference>>** **<<location,locations>>**. It provides a practical how-to guide for putting the theory of the **<<point-radius>> <<georeferencing-method>>** into practice.
 
-The *_Guide_* relies on the *_<<Georeferencing Best Practices>>_* for background, definitions, and more detailed explanations of the theory behind the methods and calculations found here and in the *_Calculator_*.
+The *_Guide_* relies on the {gbp}[*_Georeferencing Best Practices_*] for background, definitions, and more detailed explanations of the theory behind the methods and calculations found here and in the *_Calculator_*.
 
-The *_Georeferencing Calculator_* is a browser-based javascript application that aids in **<<georeference,georeferencing>>** descriptive **<<locality,localities>>**, making the calculations necessary to obtain **<<geographic coordinates>>** and **<<uncertainty,uncertainties>>** for **<<location,locations>>** using the **<<point-radius>>** **<<georeferencing method,method>>**.
+The *_Georeferencing Calculator_* is a browser-based JavaScript application that aids in **<<georeference,georeferencing>>** descriptive **<<locality,localities>>**, making the calculations necessary to obtain **<<geographic-coordinates>>** and **<<uncertainty,uncertainties>>** for **<<location,locations>>** using the **<<point-radius>>** **<<georeferencing-method,method>>**.
 
-These documents DO NOT provide guidance on georectifying images or **<<geocoding>>** street addresses – distinct operations that are sometimes called "georeferencing".
+These documents DO NOT provide guidance on georectifying images or **<<geocode,geocoding>>** street addresses – distinct operations that are sometimes called "georeferencing".
 
 === Changes from Previous Version
 
@@ -89,22 +86,21 @@ There have been a few changes in terminology since the previous edition of the *
 
 * *extent* in the previous version has been changed to **<<radial>>**. **<<extent,Extent>>**, where retained, is used in a more traditional way to mean the entire space within a **<<location>>**.
 * "named place" has been replaced with "**<<feature>>**".
-* where the **<<geographic center>>** was recommended in the past, **<<corrected center>>** based on the **<<geographic radial>>** is now used. This is an important change because the **<<geographic center>>** did not necessarily yield the smallest **<<uncertainty>>** due to the **<<extent>>** of a **<<feature>>**; the **<<corrected center>>** and **<<geographic radial>>** does.
+* where the **<<geographic-center>>** was recommended in the past, **<<corrected-center>>** based on the **<<geographic-radial>>** is now used. This is an important change because the **<<geographic-center>>** did not necessarily yield the smallest **<<uncertainty>>** due to the **<<extent>>** of a **<<feature>>**; the **<<corrected-center>>** and **<<geographic-radial>>** does.
 
 This version of the *_Guide_* includes graphical examples of each type of location and steps for how to **<<georeference>>** them.
 
 === Using Darwin Core
 
-**<<georeference,Georeferences>>** using the methods in this *_Guide_* will be of greatest value if as much information as possible is captured about and during the **<<georeference,georeferencing>>** process. The **<<Darwin Core>>** Standard (TDWG 2018) defines all of the fields recommended for the capture of reproducible **<<georeference,georeferences>>**, as follows:
+**<<georeference,Georeferences>>** using the methods in this *_Guide_* will be of greatest value if as much information as possible is captured about and during the **<<georeference,georeferencing>>** process. The **<<Darwin-Core>>** Standard (TDWG 2018) defines all of the fields recommended for the capture of reproducible **<<georeference,georeferences>>**, as follows:
 
-*<<Darwin Core>>* **<<georeference,georeferencing>>** terms:
+*<<Darwin-Core>>* **<<georeference,georeferencing>>** terms:
 
-http://rs.tdwg.org/dwc/terms/#dwc:decimalLatitude[*_decimalLatitude_*], http://rs.tdwg.org/dwc/terms/#dwc:decimalLongitude[*_decimalLongitude_*], http://rs.tdwg.org/dwc/terms/#dwc:geodeticDatum[*_geodeticDatum_*]:: the combination of these fields provide the reference for the center of the **<<point-radius>>** representation of the **<<georeference>>**.
-http://rs.tdwg.org/dwc/terms/#dwc:coordinateUncertaintyInMeters[*_coordinateUncertaintyInMeters_*]::  The horizontal distance in meters from the given *_decimalLatitude_* and *_decimalLongitude_* that describes the **<<smallest enclosing circle>>** that contains the whole of the **<<location>>**. Leave the value empty if the **<<uncertainty>>** is unknown, cannot be estimated, or is not applicable (because there are no **<<coordinates>>**). Zero is not a valid value for this term. This term corresponds with the **<<geographic radial>>** of the final **<<georeference>>**.
-http://rs.tdwg.org/dwc/terms/#dwc:georeferencedBy[*_georeferencedBy_*], http://rs.tdwg.org/dwc/terms/#dwc:georeferencedDate[*_georeferencedDate_*]:: the individual(s) who last modified the **<<georeference>>** and when. These correspond to the final authority on the **<<georeference>>** in its current state, regardless of who might have worked on previous versions of the **<<georeference>>**.
-http://rs.tdwg.org/dwc/terms/#dwc:georeferenceProtocol[*_georeferenceProtocol_*]::  A description or reference to the methods used to determine the **<<shape>>** using the **<<shape>>** **<<georeferencing method>>**, or the **<<coordinates>>** and **<<uncertainty>>** using the **<<point-radius>>** **<<georeferencing method,method>>**. If the protocol in this *_Guide_* is used unaltered, then the *_georeferenceProtocol_* should be the citation for this document.
-http://rs.tdwg.org/dwc/terms/#dwc:georeferenceSources[*_georeferenceSources_*]::  A list (concatenated and separated) of maps, **<<gazetteer,gazetteers>>**, or other resources used to **<<georeference>>** the **<<location>>**, described specifically enough to allow anyone in the future to use the same resources.
-
+term:[dwc:decimalLatitude], term:[dwc:decimalLongitude], term:[dwc:geodeticDatum]:: the combination of these fields provide the reference for the center of the **<<point-radius>>** representation of the **<<georeference>>**.
+term:[dwc:coordinateUncertaintyInMeters]::  The horizontal distance in meters from the given term:[decimalLatitude] and term:[decimalLongitude] that describes the **<<smallest-enclosing-circle>>** that contains the whole of the **<<location>>**. Leave the value empty if the **<<uncertainty>>** is unknown, cannot be estimated, or is not applicable (because there are no **<<coordinates>>**). Zero is not a valid value for this term. This term corresponds with the **<<geographic-radial>>** of the final **<<georeference>>**.
+term:[dwc:georeferencedBy], term:[dwc:georeferencedDate]:: the individual(s) who last modified the **<<georeference>>** and when. These correspond to the final authority on the **<<georeference>>** in its current state, regardless of who might have worked on previous versions of the **<<georeference>>**.
+term:[dwc:georeferenceProtocol]::  A description or reference to the methods used to determine the **<<shape>>** using the **<<shape>>** **<<georeferencing-method>>**, or the **<<coordinates>>** and **<<uncertainty>>** using the **<<point-radius>>** **<<georeferencing-method,method>>**. If the protocol in this *_Guide_* is used unaltered, then the term:[georeferenceProtocol] should be the citation for this document.
+term:[dwc:georeferenceSources]::  A list (concatenated and separated) of maps, **<<gazetteer,gazetteers>>**, or other resources used to **<<georeference>>** the **<<location>>**, described specifically enough to allow anyone in the future to use the same resources.
 +
 .{blank}
 [caption=Examples]
@@ -114,8 +110,7 @@ http://rs.tdwg.org/dwc/terms/#dwc:georeferenceSources[*_georeferenceSources_*]::
 "Wieczorek C, J Wieczorek (2020) Georeferencing Calculator. Version yyyymmdd. Available: http://georeferencing.org/georefcalculator/gc.html. Accessed [yyyy-mm-dd]"
 ====
 
-http://rs.tdwg.org/dwc/terms/#dwc:georeferenceVerificationStatus[*_georeferenceVerificationStatus_*]::  A categorical description of the extent to which the **georeference** has been verified to represent the best possible spatial description. Recommended best practice is to use a controlled vocabulary.
-
+term:[dwc:georeferenceVerificationStatus]::  A categorical description of the extent to which the **<g-georeference>>** has been verified to represent the best possible spatial description. Recommended best practice is to use a controlled vocabulary.
 +
 .{blank}
 [caption=Examples]
@@ -125,8 +120,7 @@ http://rs.tdwg.org/dwc/terms/#dwc:georeferenceVerificationStatus[*_georeferenceV
 "verified by curator".
 ====
 
-http://rs.tdwg.org/dwc/terms/#dwc:georeferenceRemarks[*_georeferenceRemarks_*]::  Notes or comments out of the ordinary about the **<<georeference>>**, explaining assumptions made in addition or opposition to those formalized in the method referred to in *_georeferenceProtocol_*.
-
+term:[dwc:georeferenceRemarks]::  Notes or comments out of the ordinary about the **<<georeference>>**, explaining assumptions made in addition or opposition to those formalized in the method referred to in term:[georeferenceProtocol].
 +
 .{blank}
 [caption=Example]
@@ -134,8 +128,7 @@ http://rs.tdwg.org/dwc/terms/#dwc:georeferenceRemarks[*_georeferenceRemarks_*]::
 "assumed distance by road (Hwy. 101)"
 ====
 
-http://rs.tdwg.org/dwc/terms/#dwc:locationRemarks[*_locationRemarks_*]::  Notes or comments of interest about the **<<location>>** (not the **<<georeference>>** of the **<<location>>**, which go in *_georeferenceRemarks_*).
-
+term:[dwc:locationRemarks]::  Notes or comments of interest about the **<<location>>** (not the **<<georeference>>** of the **<<location>>**, which go in term:[georeferenceRemarks]).
 +
 .{blank}
 [caption=Example]
@@ -143,15 +136,16 @@ http://rs.tdwg.org/dwc/terms/#dwc:locationRemarks[*_locationRemarks_*]::  Notes 
 "Villa Epecuen was inundated in November 1985 and ceased to be inhabited until 2009"
 ====
 
-For additional community discussion and recommendations, see the **<<Darwin Core>>** Project wiki (Wieczorek 2017), the https://github.com/tdwg/dwc-qa/wiki/Webinars[_Darwin Core Hour Webinars_] and {gbp}[*_<<Georeferencing Best Practices>>_*].
+For additional community discussion and recommendations, see the **<<Darwin-Core>>** Project wiki (Wieczorek 2017), the https://github.com/tdwg/dwc-qa/wiki/Webinars[_Darwin Core Hour Webinars_] and {gbp}[*_Georeferencing Best Practices_*].
 
 === Georeferencing Concepts
 
-One of the goals of **<<georeference,georeferencing>>** following best practices is to be sure that enough information is provided in the output so that the **<<georeference>>** is repeatable (see {gbp}#principles-of-best-practice[Principles of Best Practice] in *_Georeferencing Best Practices_*). To that end, this document provides a set of recipes for **<<georeference,georeferencing>>** various **<<locality type,locality types>>** using the *_Georeferencing Calculator_*. The *_Calculator_* allows you to make distinct kinds of calculations based on the **<<locality type>>** (<<Locality Type>>). When the **<<locality type>>** is chosen from the predefined list, the *_Calculator_* presents input boxes for all of the parameters needed for that type of calculation. Note that the **<<locality type>>** is for the most specific **<<locality clause,clause>>** in the **<<locality>>** description (see {gbp}#parsing-the-locality-description[Parsing the Locality Description] in *_Georeferencing Best Practices_*), but there may be information for other **<<locality clause,clauses>>** or other parts of the **<<location>>** record that help to constrain the **<<location>>** and come into play when a **<<feature>> <<boundary>>** is determined. Many *_Calculator_* parameters are used for more than one **<<locality type>>**. Rather than repeat the explanation for each **<<locality type>>**, they are collected here for common reference. Some **<<locality type,locality types>>** require specific parameters, for which the corresponding explanations are included in each subsection of <<Georeferencing Method for Locality Type>>. Refer to the {gcm}[*_Georeferencing Calculator Manual_*] (Bloom _et al._ 2020) for details about the *_Calculator_* not answered in this document.
+One of the goals of **<<georeference,georeferencing>>** following best practices is to be sure that enough information is provided in the output so that the **<<georeference>>** is repeatable (see {gbp}#principles-of-best-practice[Principles of Best Practice] in *_Georeferencing Best Practices_*). To that end, this document provides a set of recipes for **<<georeference,georeferencing>>** various **<<locality-type,locality-types>>** using the *_Georeferencing Calculator_*. The *_Calculator_* allows you to make distinct kinds of calculations based on the **<<locality-type>>** (<<Locality Type>>). When the **<<locality-type>>** is chosen from the predefined list, the *_Calculator_* presents input boxes for all of the parameters needed for that type of calculation. Note that the **<<locality-type>>** is for the most specific **<<locality-clause,clause>>** in the **<<locality>>** description (see {gbp}#parsing-the-locality-description[Parsing the Locality Description] in *_Georeferencing Best Practices_*), but there may be information for other **<<locality-clause,clauses>>** or other parts of the **<<location>>** record that help to constrain the **<<location>>** and come into play when a **<<feature>>** **<<boundary>>** is determined. Many *_Calculator_* parameters are used for more than one **<<locality-type>>**. Rather than repeat the explanation for each **<<locality-type>>**, they are collected here for common reference. Some **<<locality-type,locality-types>>** require specific parameters, for which the corresponding explanations are included in each subsection of <<Georeferencing Methods for Locality Type>>. Refer to the {gcm}[*_Georeferencing Calculator Manual_*] (Bloom _et al._ 2020) for details about the *_Calculator_* not answered in this document.
 
+[#s-locality-type]
 ==== Locality Type
 
-The **<<locality type>>** refers to the pattern of the most specific part of a **<<locality>>** description to be **<<georeference,georeferenced>>** – the one that determines which calculation method to use. The *_Calculator_* has options to compute **<<georeference,georeferences>>** for six basic **<<locality type,locality types>>**:
+The **<<locality-type>>** refers to the pattern of the most specific part of a **<<locality>>** description to be **<<georeference,georeferenced>>** – the one that determines which calculation method to use. The *_Calculator_* has options to compute **<<georeference,georeferences>>** for six basic **<<locality-type,locality-types>>**:
 
 * **<<coordinates,Coordinates>>** only.
 * Geographic **<<feature>>** only.
@@ -160,77 +154,84 @@ The **<<locality type>>** refers to the pattern of the most specific part of a *
 * Distance along orthogonal **<<direction,directions>>**.
 * Distance at a **<<heading>>**.
 
-Selecting a **<<locality type,Locality Type>>** will configure the *_Calculator_* to show all of the parameters that need to be set to perform the **<<georeference>>** calculation. This *_Guide_* gives specific instructions for how to set the parameters for many different examples of each of the **<<locality type,Locality Types>>**.
+Selecting a **<<locality-type,Locality-Type>>** will configure the *_Calculator_* to show all of the parameters that need to be set to perform the **<<georeference>>** calculation. This *_Guide_* gives specific instructions for how to set the parameters for many different examples of each of the **<<locality-type,Locality-Types>>**.
 
+[#s-corrected-center]
 ==== Corrected Center
 
-The **<<corrected center>>** is the point within a **<<location>>**, or on its  **<<boundary>>**, that minimizes the **<<geographic radial>>** (see <<Radial of Feature>>). This point is obtained by finding the **<<smallest enclosing circle>>** that contains the entire **<<feature>>**, and then taking the center of that circle (xref:img-corrected-center[xrefstyle="short"]A). If that center does not fall on or inside the **<<boundary,boundaries>>** of the **<<feature>>**, find the **<<smallest enclosing circle>>** that contains the entire **<<feature>>**, *but* has its center on the **<<boundary>>** of the **<<feature>>** (xref:img-corrected-center[xrefstyle="short"]B). Note that in the corrected case, the new circle, and hence the **<<radial>>**, will always be larger than the uncorrected one. In the *_Calculator_*, the **<<coordinates>>** corresponding to the **<<corrected center>>** are labelled as _Input Latitude_ and _Input Longitude_.
+The **<<corrected-center>>** is the point within a **<<location>>**, or on its  **<<boundary>>**, that minimizes the **<<geographic-radial>>** (see <<Radial of Feature>>). This point is obtained by finding the **<<smallest-enclosing-circle>>** that contains the entire **<<feature>>**, and then taking the center of that circle (xref:img-corrected-center[xrefstyle="short"]A). If that center does not fall on or inside the **<<boundary,boundaries>>** of the **<<feature>>**, find the **<<smallest-enclosing-circle>>** that contains the entire **<<feature>>**, *but* has its center on the **<<boundary>>** of the **<<feature>>** (xref:img-corrected-center[xrefstyle="short"]B). Note that in the corrected case, the new circle, and hence the **<<radial>>**, will always be larger than the uncorrected one. In the *_Calculator_*, the **<<coordinates>>** corresponding to the **<<corrected-center>>** are labelled as _Input Latitude_ and _Input Longitude_.
 
 
 [#img-corrected-center]
-.*A*: The *center* ⓐ of the **<<smallest enclosing circle>>** of a **<<feature>>** (polygon highlighted in light grey). Note that the center does not fall within the **<<boundary>>** of the **<<feature>>**. **B**: The **<<corrected center>>** ⓑ, which is on the **<<boundary>>** of the **<<feature>>**, and the corresponding **<<geographic radial>>** ⓒ.
-image::img/corrected-center.png[width=597,align="center"]
+.*A*: The *center* ⓐ of the **<<smallest-enclosing-circle>>** of a **<<feature>>** (polygon highlighted in light grey). Note that the center does not fall within the **<<boundary>>** of the **<<feature>>**. **B**: The **<<corrected-center>>** ⓑ, which is on the **<<boundary>>** of the **<<feature>>**, and the corresponding **<<geographic-radial>>** ⓒ.
+image::img/web/corrected-center.png[width=597,align="center"]
 
 ==== Radial of Feature
 
-A **<<feature>>** is a place in the **<<locality>>** description that has an **<<extent>>** and can be delimited by a  **<<boundary>>**. The **<<geographic radial>>** of the **<<feature>>** (shown as _Radial of Feature_ in the *_Calculator_*) is the distance from the **<<corrected center>>** of the **<<feature>>** to the furthest point on the **<<geographic boundary>>** of that **<<feature>>** (see xref:img-corrected-center[xrefstyle="short"] and <<Extent of a Location>> in *_<<Georeferencing Best Practices>>_*). Note that the radial was called "*extent*" in early versions of the *_Calculator_*.
+A **<<feature>>** is a place in the **<<locality>>** description that has an **<<extent>>** and can be delimited by a  **<<boundary>>**. The **<<geographic-radial>>** of the **<<feature>>** (shown as _Radial of Feature_ in the *_Calculator_*) is the distance from the **<<corrected-center>>** of the **<<feature>>** to the furthest point on the **<<geographic-boundary>>** of that **<<feature>>** (see xref:img-corrected-center[xrefstyle="short"] and {gbp}#extent-of-a-location[Extent of a Location] in *_Georeferencing Best Practices_*). Note that the radial was called "*extent*" in early versions of the *_Calculator_*.
 
-NOTE: The final <<georeference>> will have a <<geographic radial>> distinct from the <<geographic radial>> of any of the <<feature,features>> in the <<locality>> description (because it will also encompass all sources of <<uncertainty>>), and this will be captured in the output from the Calculator in the *Uncertainty* field.
+NOTE: The final <<georeference>> will have a <<geographic-radial>> distinct from the <<geographic-radial>> of any of the <<feature,features>> in the <<locality>> description (because it will also encompass all sources of <<uncertainty>>), and this will be captured in the output from the Calculator in the *Uncertainty* field.
 
+[#s-latitude]
 ==== Latitude
 
-Labelled as _Input Latitude_ in the *_Calculator_*. The **<<geographic coordinates,geographic coordinate>>** north or south of the equator (where **<<latitude>>** is 0) that represents the starting point for a **<<georeference>>** calculation and depends on the **<<locality type>>**.
+Labelled as _Input Latitude_ in the *_Calculator_*. The **<<geographic-coordinates,geographic-coordinate>>** north or south of the equator (where **<<latitude>>** is 0) that represents the starting point for a **<<georeference>>** calculation and depends on the **<<locality-type>>**.
 
-**<<latitude,Latitudes>>** in **<<decimal degrees>>** north of the equator are positive by convention, while **<<latitudes>>** to the south are negative. The *_Calculator_* supports three degree-based **<<geographic coordinates,geographic coordinate>>** formats for **<<latitude>>** and **<<longitude>>**: **<<decimal degrees>>** (_e.g._, −41.0570673), degrees decimal minutes (_e.g._, 41° 3.424"), and **<<DMS,degrees minutes seconds>>** (_e.g._, 41° 3' 25.44" S).
+**<<latitude,Latitudes>>** in **<<decimal-degrees>>** north of the equator are positive by convention, while **<<latitude,latitudes>>** to the south are negative. The *_Calculator_* supports three degree-based **<<geographic-coordinates,geographic-coordinate>>** formats for **<<latitude>>** and **<<longitude>>**: **<<decimal-degrees>>** (_e.g._, −41.0570673), degrees decimal minutes (_e.g._, 41° 3.424"), and **<<DMS,degrees-minutes-seconds>>** (_e.g._, 41° 3' 25.44" S).
 
+[#s-longitude]
 ==== Longitude
 
-Labelled as _Input Longitude_ in the *_Calculator_*. The **<<geographic coordinates,geographic coordinate>>** east or west of the **<<prime meridian>>** (an arc between the north and south poles where **<<longitude>>** is 0) that represents the starting point for a **<<georeference>>** calculation and depends on the **<<locality type>>**.
+Labelled as _Input Longitude_ in the *_Calculator_*. The **<<geographic-coordinates,geographic-coordinate>>** east or west of the **<<prime-meridian>>** (an arc between the north and south poles where **<<longitude>>** is 0) that represents the starting point for a **<<georeference>>** calculation and depends on the **<<locality-type>>**.
 
-**<<longitude,Longitudes>>** in **<<decimal degrees>>** east of the **<<prime meridian>>** are positive by convention, while **<<longitude,longitudes>>** to the west are negative. The *_Calculator_* supports three degree-based **<<geographic coordinates,geographic coordinate>>** formats for **<<latitude>>** and **<<longitude>>**: **<<decimal degrees>>** (−71.5246934), degrees decimal minutes (71° 31.482"), and **<<DMS,degrees minutes seconds>>** (71° 31' 28.90" W).
+**<<longitude,Longitudes>>** in **<<decimal-degrees>>** east of the **<<prime-meridian>>** are positive by convention, while **<<longitude,longitudes>>** to the west are negative. The *_Calculator_* supports three degree-based **<<geographic-coordinates,geographic-coordinate>>** formats for **<<latitude>>** and **<<longitude>>**: **<<decimal-degrees>>** (−71.5246934), degrees decimal minutes (71° 31.482"), and **<<DMS,degrees-minutes-seconds>>** (71° 31' 28.90" W).
 
 ==== Coordinate Source
 
 The _Coordinate Source_ is the type of resource (map type, **<<GPS>>**, **<<gazetteer>>**, **<<locality>>** description) from which the starting _Input Latitude_ and _Longitude_ were derived.
 
 // TODO That > sign after Maps?
-NOTE: More often than not, the original **<<coordinates>>** are used to find the general vicinity of the **<<location>>** on a map, after which the process of determining the **<<corrected center>>** provides the new **<<coordinates>>**. The **Coordinate Source** to use in the **Calculator** in this case is the map from which the **<<corrected center>>** was determined, not the original source used to determine the general vicinity on the map. For example, suppose the original **<<coordinates>>** came from a **<<gazetteer>>**, but the **<<boundary>>** and **<<corrected center>>** of the **<<feature>>** were determined from Google Maps™, the **Coordinate Source** would be "**Google Earth/Maps >2008**", not "**gazetteer**".
+NOTE: More often than not, the original **<<coordinates>>** are used to find the general vicinity of the **<<location>>** on a map, after which the process of determining the **<<corrected-center>>** provides the new **<<coordinates>>**. The **Coordinate Source** to use in the **Calculator** in this case is the map from which the **<<corrected-center>>** was determined, not the original source used to determine the general vicinity on the map. For example, suppose the original **<<coordinates>>** came from a **<<gazetteer>>**, but the **<<boundary>>** and **<<corrected-center>>** of the **<<feature>>** were determined from Google Maps™, the **Coordinate Source** would be "**Google Earth/Maps >2008**", not "**gazetteer**".
 
-This term is related to, but *NOT* the same as, the **<<Darwin Core>>** term *_georeferenceSources_*, which requires the specific resources used rather than their type. Note that the **<<uncertainty,uncertainties>>** from the two sources _gazetteer_ and _locality description_ can not be anticipated universally, and therefore do not contribute to the global **<<uncertainty>>** in the calculations. If the **<<error>>** characteristics of these sources are known, they can be added in the _Measurement Error_ field before calculating. If the source _GPS_ is selected, the label for _Measurement Error_ will change to _GPS Accuracy_, which is where the **<<accuracy>>** of the **<<GPS>>** (see {gbp}#using-a-gps[Using a GPS] in *_Georeferencing Best Practices_*) at the time the **<<coordinates>>** were taken should be entered.
+This term is related to, but *NOT* the same as, the **<<Darwin-Core>>** term term:[georeferenceSources], which requires the specific resources used rather than their type. Note that the **<<uncertainty,uncertainties>>** from the two sources _gazetteer_ and _locality description_ can not be anticipated universally, and therefore do not contribute to the global **<<uncertainty>>** in the calculations. If the **<<error>>** characteristics of these sources are known, they can be added in the _Measurement Error_ field before calculating. If the source _GPS_ is selected, the label for _Measurement Error_ will change to _GPS Accuracy_, which is where the **<<accuracy>>** of the **<<GPS>>** (see {gbp}#using-a-gps[Using a GPS] in *_Georeferencing Best Practices_*) at the time the **<<coordinates>>** were taken should be entered.
 
+[#s-coordinate-format]
 ==== Coordinate Format
 
-The _Coordinate Format_ in the *_Calculator_* defines the representation of the original **<<geographic coordinates>>** (**<<decimal degrees>>**, **<<DMS,degrees minutes seconds>>** degrees decimal minutes) of the **<<coordinates,coordinate>>** source.
+The _Coordinate Format_ in the *_Calculator_* defines the representation of the original **<<geographic-coordinates>>** (**<<decimal-degrees>>**, **<<DMS,degrees-minutes-seconds>>** degrees decimal minutes) of the **<<coordinates,coordinate>>** source.
 
-NOTE: More often than not, the original **<<coordinates>>** are used to find the general vicinity of the **<<location>>** on a map, after which the process of determining the **<<corrected center>>** provides the new **<<coordinates>>**. The **Coordinate Format** to use in the **Calculator** in this case is the **<<coordinate format>>** on the map from which the **<<corrected center>>** was determined, not the <<coordinate format>> of the original source used to determine the general vicinity on the map. For example, suppose the original **<<coordinates>>** came from a **<<gazetteer>>** in <<DMS,degrees minutes seconds>>, but the **<<boundary>>** and **<<corrected center>>** of the **<<feature>>** were determined from Google Maps™, the **Coordinate Format** would be **decimal degrees**, not **degrees minutes seconds**.
+NOTE: More often than not, the original **<<coordinates>>** are used to find the general vicinity of the **<<location>>** on a map, after which the process of determining the **<<corrected-center>>** provides the new **<<coordinates>>**. The **Coordinate Format** to use in the **Calculator** in this case is the **<<coordinate-format>>** on the map from which the **<<corrected-center>>** was determined, not the <<coordinate-format>> of the original source used to determine the general vicinity on the map. For example, suppose the original **<<coordinates>>** came from a **<<gazetteer>>** in <<DMS,degrees minutes seconds>>, but the **<<boundary>>** and **<<corrected-center>>** of the **<<feature>>** were determined from Google Maps™, the **Coordinate Format** would be **decimal degrees**, not **degrees minutes seconds**.
 
-This term is equivalent to the **<<Darwin Core>>** term *_verbatimCoordinateSystem_*. Selecting the original **<<coordinate format>>** allows the **<<coordinates>>** to be entered in their native format and forces the *_Calculator_* to present appropriate options for **<<coordinate precision>>**. Changing the **<<coordinate format>>** will automatically reset the **<<coordinate precision>>** value to _nearest degree_. Be sure to correct this for the actual **<<coordinate precision>>**. The *_Calculator_* stores **<<coordinates>>** in **<<decimal degrees>>** to seven decimal places. This is to preserve the correct **<<coordinates>>** in all formats regardless of how many **<<coordinates,coordinate>>** transformations are done.
+This term is equivalent to the **<<Darwin-Core>>** term term:[verbatimCoordinateSystem]. Selecting the original **<<coordinate-format>>** allows the **<<coordinates>>** to be entered in their native format and forces the *_Calculator_* to present appropriate options for **<<coordinate-precision>>**. Changing the **<<coordinate-format>>** will automatically reset the **<<coordinate-precision>>** value to _nearest degree_. Be sure to correct this for the actual **<<coordinate-precision>>**. The *_Calculator_* stores **<<coordinates>>** in **<<decimal-degrees>>** to seven decimal places. This is to preserve the correct **<<coordinates>>** in all formats regardless of how many **<<coordinates,coordinate>>** transformations are done.
 
+[#s-coordinate-precision]
 ==== Coordinate Precision
 
-Labeled in the *_Calculator_* as _Precision_ in the first column of input parameters, this drop-down list is populated with levels of **<<precision>>** in keeping with the **<<coordinate format>>** chosen. For example, with a _Coordinate Format_ of _degrees minutes seconds_, an _Input Latitude_ of 35° 22' 24" N and an _Input Longitude_ of 105° 22’ 28" W, the _Coordinate Precision_ would be _nearest second_. A value of _exact_ is any level of **<<precision>>** higher than the otherwise highest **<<precision>>** given on a list. Sources of **<<coordinate precision>>** may include paper or digital maps, digital imagery, **<<GPS>>**, **<<gazetteer,gazetteers>>**, or **<<locality>>** descriptions.
+Labeled in the *_Calculator_* as _Precision_ in the first column of input parameters, this drop-down list is populated with levels of **<<precision>>** in keeping with the **<<coordinate-format>>** chosen. For example, with a _Coordinate Format_ of _degrees minutes seconds_, an _Input Latitude_ of 35° 22' 24" N and an _Input Longitude_ of 105° 22' 28" W, the _Coordinate Precision_ would be _nearest second_. A value of _exact_ is any level of **<<precision>>** higher than the otherwise highest **<<precision>>** given on a list. Sources of **<<coordinate-precision>>** may include paper or digital maps, digital imagery, **<<GPS>>**, **<<gazetteer,gazetteers>>**, or **<<locality>>** descriptions.
 
-NOTE: The **Coordinate Precision** to use in the **Calculator** is the **<<coordinate precision>>** of the map from which the **<<corrected center>>** was determined, not the **<<coordinate precision>>** of the original source used to determine the general vicinity on the map. For example, suppose the original **<<coordinates>>** came from a **<<gazetteer>>**, but the **<<boundary>>** and **<<corrected center>>** of the **<<feature>>** were determined from *_Google Maps_*, the **Coordinate Precision** would be determined by the number of digits of <<decimal degrees>> you captured from the **<<corrected center>>** on Google Maps™, not the **Coordinate Precision** of the **<<coordinates>>** from the original **<<gazetteer entry>>**. If you use all of the digits provided on Google Maps™, the **Coordinate Precision** would be **exact**.
+NOTE: The **Coordinate Precision** to use in the **Calculator** is the **<<coordinate-precision>>** of the map from which the **<<corrected-center>>** was determined, not the **<<coordinate-precision>>** of the original source used to determine the general vicinity on the map. For example, suppose the original **<<coordinates>>** came from a **<<gazetteer>>**, but the **<<boundary>>** and **<<corrected-center>>** of the **<<feature>>** were determined from *_Google Maps_*, the **Coordinate Precision** would be determined by the number of digits of **<<decimal-degrees>>** you captured from the **<<corrected-center>>** on Google Maps™, not the **Coordinate Precision** of the **<<coordinates>>** from the original **<<gazetteer>>** entry. If you use all of the digits provided on Google Maps™, the **Coordinate Precision** would be **exact**.
 
-NOTE: This term is similar to, but **NOT** the same as, the <<Darwin Core>> term coordinatePrecision, which applies to the output **<<coordinates>>**.
+NOTE: This term is similar to, but **NOT** the same as, the <<Darwin-Core>> term term:[coordinatePrecision], which applies to the output **<<coordinates>>**.
 
+[#s-datum]
 ==== Datum
 
 Defines the position of the origin and orientation of an **<<ellipsoid>>** upon which the **<<coordinates>>** are based for the given _Input Latitude_ and __Longitude__ (see {gbp}#coordinate-reference-system[Coordinate Reference System] in *_Georeferencing Best Practices_*).
 
-NOTE: The **Datum** to use in the **Calculator** is the **<<datum>>** (or **<<ellipsoid>>**) of the map from which the **<<corrected center>>** was determined. For example, suppose the original **<<coordinates>>** came from a **<<gazetteer>>** with an unknown <<datum>>, but the **<<boundary>>** and **<<corrected center>>** of the **<<feature>>** were determined from Google Maps™, the **Datum** would be **WGS84**, not **datum not recorded**.
+NOTE: The **Datum** to use in the **Calculator** is the **<<datum>>** (or **<<ellipsoid>>**) of the map from which the **<<corrected-center>>** was determined. For example, suppose the original **<<coordinates>>** came from a **<<gazetteer>>** with an unknown <<datum>>, but the **<<boundary>>** and **<<corrected-center>>** of the **<<feature>>** were determined from Google Maps™, the **Datum** would be **WGS84**, not **datum not recorded**.
 
-The term _Datum_ in the *_Calculator_* is equivalent to the **<<Darwin Core>>** term *_geodeticDatum_*. The *_Calculator_* includes **<<ellipsoid,ellipsoids>>** on the __Datum __drop-down list, as sometimes that is all that **<<coordinates,coordinate>>** source shows. The choice of **<<datum>>** in the *_Calculator_* has two important effects. The first is the contribution to **<<uncertainty>>** if the **<<datum>>** of the input **<<coordinates>>** is not known. If the **<<datum>>** and **<<ellipsoid>>** are not known, _datum not recorded_ must be selected. **<<uncertainty,Uncertainty>>** due to an unknown **<<datum>>** can be severe and varies geographically in a complex way with a worst-case contribution of 5359 m (see {gbp}#coordinate-reference-system[Coordinate Reference System] in *_<<Georeferencing Best Practices>>_*). The second important effect of the **<<datum>>** selection is to provide the characteristics of the **<<ellipsoid>>** model of the earth, on which the distance calculations depend.
+The term _Datum_ in the *_Calculator_* is equivalent to the **<<Darwin-Core>>** term term:[geodeticDatum]. The *_Calculator_* includes **<<ellipsoid,ellipsoids>>** on the __Datum __drop-down list, as sometimes that is all that **<<coordinates,coordinate>>** source shows. The choice of **<<datum>>** in the *_Calculator_* has two important effects. The first is the contribution to **<<uncertainty>>** if the **<<datum>>** of the input **<<coordinates>>** is not known. If the **<<datum>>** and **<<ellipsoid>>** are not known, _datum not recorded_ must be selected. **<<uncertainty,Uncertainty>>** due to an unknown **<<datum>>** can be severe and varies geographically in a complex way with a worst-case contribution of 5359 m (see {gbp}#coordinate-reference-system[Coordinate Reference System] in *_Georeferencing Best Practices_*). The second important effect of the **<<datum>>** selection is to provide the characteristics of the **<<ellipsoid>>** model of the earth, on which the distance calculations depend.
 
+[#s-direction]
 ==== Direction
 
-The _Direction_ in the *_Calculator_* is the **<<heading>>** given in the **<<locality>>** description, either as a standard compass point (see https://en.wikipedia.org/wiki/Boxing_the_compass[_Boxing_the_compass_]) or as a number of degrees in the clockwise direction from north. True North is not the same as Magnetic North (see {gbp}#headings[Headings] in *_Georeferencing Best Practices_*). If a **<<heading>>** is known to be a magnetic **<<heading>>**, it will have to be converted into a true **<<heading>>** (see NOAA's https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml[_Magnetic Field Calculator_]) before it can be used in the *_Georeferencing Calculator_*. If _degrees from N_ is selected, a text box will appear to the right of the selection, into which the degree **<<heading>>** should be entered.
+The _Direction_ in the *_Calculator_* is the **<<heading>>** given in the **<<locality>>** description, either as a standard compass point (see https://en.wikipedia.org/wiki/Boxing_the_compass[_Boxing the compass_]) or as a number of degrees in the clockwise direction from north. True North is not the same as Magnetic North (see {gbp}#headings[Headings] in *_Georeferencing Best Practices_*). If a **<<heading>>** is known to be a magnetic **<<heading>>**, it will have to be converted into a true **<<heading>>** (see NOAA's https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml[_Magnetic Field Calculator_]) before it can be used in the *_Georeferencing Calculator_*. If _degrees from N_ is selected, a text box will appear to the right of the selection, into which the degree **<<heading>>** should be entered.
 
-NOTE: Some marine **locality** descriptions reference a direction (azimuth) toward a landmark rather than a **<<heading>>** from the current **location** (e.g., "327° to Nubble Lighthouse"). To make a **Distance** at a **<<heading>>** calculation for such a **<<locality>>** description, use the compass point 180 degrees from the one given in the **<<locality>>** description (147° in the example above) as the **Direction**.
+NOTE: Some marine **<<locality>>** descriptions reference a direction (azimuth) toward a landmark rather than a **<<heading>>** from the current **<<location>>** (e.g., "327° to Nubble Lighthouse"). To make a **Distance** at a **<<heading>>** calculation for such a **<<locality>>** description, use the compass point 180 degrees from the one given in the **<<locality>>** description (147° in the example above) as the **Direction**.
 
 ==== Offset Distance
 
-The _Offset Distance_ in the *_Calculator_* is the linear surface distance from a point of origin. **<<offset,Offsets>>** are used for the _Locality Types_ _Distance at a heading_ and _Distance only_. If the _Locality Type_ _Distance along orthogonal directions_ is selected, there are two distinct **<<offsets>>**:
+The _Offset Distance_ in the *_Calculator_* is the linear surface distance from a point of origin. **<<offset,Offsets>>** are used for the _Locality Types_ _Distance at a heading_ and _Distance only_. If the _Locality Type_ _Distance along orthogonal directions_ is selected, there are two distinct **<<offset,offsets>>**:
 
 North or South Offset Distance:: The distance to the north or south (set with the selection box to the right of the distance text box) of the _Input Latitude_.
 
@@ -238,7 +239,7 @@ East or West Offset Distance:: The distance to the east or west (set with the se
 
 ==== Distance Units
 
-The _Distance Units_ selection denotes the real world units used in the **<<locality>>** description. It is important to select the original units as given in the description. This is needed to incorporate the **<<uncertainty>>** from **<<distance precision>>** properly. If the **<<locality>>** description does not include distance units, use the distance units of the map from which measurements are derived.
+The _Distance Units_ selection denotes the real world units used in the **<<locality>>** description. It is important to select the original units as given in the description. This is needed to incorporate the **<<uncertainty>>** from **<<Distance Precision>>** properly. If the **<<locality>>** description does not include distance units, use the distance units of the map from which measurements are derived.
 
 .{blank}
 ====
@@ -249,7 +250,7 @@ The _Distance Units_ selection denotes the real world units used in the **<<loca
 
 ==== Distance Precision
 
-The _Distance Precision_, labeled in the *_Calculator_* as _Precision_ in the second column of input parameters, refers to the **<<precision>>** with which a distance was described in a **<<locality>>** (see {gbp}#uncertainty-related-to-offset-precision[Uncertainty Related to Offset Precision] in *_<<Georeferencing Best Practices>>_*). This drop-down list is populated based on the _Distance Units_ chosen and contains powers of ten and simple fractions to indicate the **<<precision>>** demonstrated in the verbatim original **<<offset>>**.
+The _Distance Precision_, labeled in the *_Calculator_* as _Precision_ in the second column of input parameters, refers to the **<<precision>>** with which a distance was described in a **<<locality>>** (see {gbp}#uncertainty-related-to-offset-precision[Uncertainty Related to Offset Precision] in *_Georeferencing Best Practices_*). This drop-down list is populated based on the _Distance Units_ chosen and contains powers of ten and simple fractions to indicate the **<<precision>>** demonstrated in the verbatim original **<<offset>>**.
 
 .{blank}
 ====
@@ -264,11 +265,12 @@ The _Measurement Error_ accounts for **<<error>>** associated with the ability t
 ==== GPS Accuracy
 
 // TODO Enter a value... bad grammar.
-When _GPS_ is selected from the _Coordinate Source_ drop-down list, the label for the _Measurement Error_ text box changes to _GPS Accuracy_. Enter a value that we recommend is at least twice the value given by the **<<GPS>>** at the time the **<<coordinates>>** were captured (see {gbp}#uncertainty-due-to-gps[Uncertainty due to GPS] in *_<<Georeferencing Best Practices>>_*). If _GPS Accuracy_ is not known, enter 100 m for standard hand-held **<<GPS>>** **<<coordinates>>** taken before 1 May 2000 when Selective Availability was discontinued. After that, use 30 m as a conservative default value.
+When _GPS_ is selected from the _Coordinate Source_ drop-down list, the label for the _Measurement Error_ text box changes to _GPS Accuracy_. Enter a value that we recommend is at least twice the value given by the **<<GPS>>** at the time the **<<coordinates>>** were captured (see {gbp}#uncertainty-due-to-gps[Uncertainty due to GPS] in *_Georeferencing Best Practices_*). If _GPS Accuracy_ is not known, enter 100 m for standard hand-held **<<GPS>>** **<<coordinates>>** taken before 1 May 2000 when Selective Availability was discontinued. After that, use 30 m as a conservative default value.
 
+[#s-uncertainty]
 ==== Uncertainty
 
-The _Uncertainty_ in the *_Calculator_* is the calculated result of the combination of all sources of **<<uncertainty>>** (**<<coordinate precision>>**, unknown **<<datum>>**, data source, **<<GPS>>** **<<accuracy>>**, measurement **<<error>>**, **<<feature>> <<extent>>**, distance **<<precision>>**, and **<<heading>>** **<<precision>>**) expressed as a linear distance – the **<<geographic radial>>** of the **<<georeference>>** and the **<<radial,radius>>** in the **<<point-radius>>** **<<georeferencing method,method>>** (Wieczorek _et al._ 2004). Along with the _Output Latitude_, _Output Longitude_, and _Datum_, the **<<radial,radius>>** defines a circle containing all of the possible places a **<<locality>>** description could mean. In the *_Calculator_* the _Uncertainty_ is given in meters.
+The _Uncertainty_ in the *_Calculator_* is the calculated result of the combination of all sources of **<<uncertainty>>** (**<<coordinate-precision>>**, unknown **<<datum>>**, data source, **<<GPS>>** **<<accuracy>>**, measurement **<<error>>**, **<<feature>> <<extent>>**, distance **<<precision>>**, and **<<heading>>** **<<precision>>**) expressed as a linear distance – the **<<geographic-radial>>** of the **<<georeference>>** and the **<<radial,radius>>** in the **<<point-radius>>** **<<georeferencing-method,method>>** (Wieczorek _et al._ 2004). Along with the _Output Latitude_, _Output Longitude_, and _Datum_, the **<<radial,radius>>** defines a circle containing all of the possible places a **<<locality>>** description could mean. In the *_Calculator_* the _Uncertainty_ is given in meters.
 
 == Georeferencing Methods for Locality Type
 
@@ -280,9 +282,9 @@ The _Uncertainty_ in the *_Calculator_* is the calculated result of the combinat
 The simplest **<<locality>>** descriptions consist of only a named place, or more generally, a **<<feature>>**, which is often listed in a standard **<<gazetteer>>** and can probably be located on a map of the appropriate scale.
 ====
 
-Despite how they might be presented in a **<<gazetteer>>** or on a map, **<<feature,features>>** are not points; they are areas that have a spatial **<<extent>>**. Some **<<feature,features>>** can have an obvious spatial **<<extent>>**, while others may not. All variations of **<<feature,features>>** are treated in this *_Guide_* as one or the other of these two main categories. The basic methodology is to try to determine the **<<boundary,boundaries>>** of the **<<feature>>**, its **<<corrected center>>** and a measure of how specific the **<<feature>>** is (defined here by the **<<geographic radial>>**).
+Despite how they might be presented in a **<<gazetteer>>** or on a map, **<<feature,features>>** are not points; they are areas that have a spatial **<<extent>>**. Some **<<feature,features>>** can have an obvious spatial **<<extent>>**, while others may not. All variations of **<<feature,features>>** are treated in this *_Guide_* as one or the other of these two main categories. The basic methodology is to try to determine the **<<boundary,boundaries>>** of the **<<feature>>**, its **<<corrected-center>>** and a measure of how specific the **<<feature>>** is (defined here by the **<<geographic-radial>>**).
 
-NOTE: **<<coordinates,Coordinates>>** from geographic indexes such as **<<gazetteer,gazetteers>>** often use reference points that are not necessarily in the center of the **feature**. For example, a river may be referenced by its mouth, and a town by its main post office, courthouse, or main plaza. It is best to use a visual reference to determine **<<boundary,boundaries>>, centers**, and **radials**. For this reason, it is a good idea to use the **<<gazetteer>> <<coordinates>>** to find the **<<feature>>** on a map, and then use the map to find the **<<boundary,boundaries>>**, **<<corrected center>>**, and <<geographic radial>> of the **<<feature>>**.
+NOTE: **<<coordinates,Coordinates>>** from geographic indexes such as **<<gazetteer,gazetteers>>** often use reference points that are not necessarily in the center of the **<<feature>>**. For example, a river may be referenced by its mouth, and a town by its main post office, courthouse, or main plaza. It is best to use a visual reference to determine **<<boundary,boundaries>>, centers**, and **<<radial,radials>>**. For this reason, it is a good idea to use the **<<gazetteer>> <<coordinates>>** to find the **<<feature>>** on a map, and then use the map to find the **<<boundary,boundaries>>**, **<<corrected-center>>**, and **<<geographic-radial>>** of the **<<feature>>**.
 
 ==== Feature – with Obvious Spatial Extent
 
@@ -303,15 +305,15 @@ The **<<locality>>** refers to a geographic **<<feature>>** with discernible spa
 
 NOTE: Record the source (including date) used to determine the <<boundary,boundaries>> (see georeferenceSources).
 
-*Step 2 – Determine the <<coordinates>>:* Use the **<<coordinates>>** of the **<<corrected center>>** of the **<<feature>>** ("*a*" in xref:img-obvious-spatial-extent[xrefstyle="short"]B) as the _Input Latitude_ and _Longitude_.
+*Step 2 – Determine the <<coordinates>>:* Use the **<<coordinates>>** of the **<<corrected-center>>** of the **<<feature>>** ("*a*" in xref:img-obvious-spatial-extent[xrefstyle="short"]B) as the _Input Latitude_ and _Longitude_.
 
-*Step 3 – Measure the <<geographic radial>>:* Measure the distance from the **<<corrected center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>** ("*b*" in xref:img-obvious-spatial-extent[xrefstyle="short"]B) as the _Radial of Feature_.
+*Step 3 – Measure the <<geographic-radial>>:* Measure the distance from the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>** ("*b*" in xref:img-obvious-spatial-extent[xrefstyle="short"]B) as the _Radial of Feature_.
 
 *Step 4 – Calculate using the following additional parameters:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, and _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-obvious-spatial-extent]
-.*A* **<<boundary,Boundary>>** only, and *B* **<<boundary>>**, center ⓐ of the **<<smallest enclosing circle>>** and **<<geographic radial>>** ⓑ of a **<<feature>>** with obvious spatial **<<extent>>**. The center ⓐ falls within the **<<boundary,boundaries>>** and thus needs no correction.
-image::img/obvious-spatial-extent.png[width=618,align="center"]
+.*A* **<<boundary,Boundary>>** only, and *B* **<<boundary>>**, center ⓐ of the **<<smallest-enclosing-circle>>** and **<<geographic-radial>>** ⓑ of a **<<feature>>** with obvious spatial **<<extent>>**. The center ⓐ falls within the **<<boundary,boundaries>>** and thus needs no correction.
+image::img/web/obvious-spatial-extent.png[width=618,align="center"]
 
 ==== Feature – without Obvious Spatial Extent
 
@@ -331,24 +333,24 @@ The **<<locality>>** refers to a geographic **<<feature>>** that does not have a
 For towns without obvious borders one can use the presence of buildings near the **<<coordinates>>** given for the town to decide where the town ends (xref:img-without-obvious-spatial-extent[xrefstyle="short"]). In some cases there might not be such indicators and these will be more subjective. For this reason it is particularly important to document the rationale for the selection of the **<<locality>>** with unclear **<<boundary,boundaries>>**.
 
 [#img-without-obvious-spatial-extent]
-.**<<boundary,Boundary>>** (lighter dotted line), **<<corrected center>>** ⓐ and **<<geographic radial>>** ⓑ of a town based on the locations of buildings and a well-defined neighboring town border (denoted by the darker dotted line) on a map.
-image::img/without-obvious-spatial-extent.png[width=378,align="center"]
+.**<<boundary,Boundary>>** (lighter dotted line), **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ of a town based on the locations of buildings and a well-defined neighboring town border (denoted by the darker dotted line) on a map.
+image::img/web/without-obvious-spatial-extent.png[width=378,align="center"]
 
 Where there are no indicators for the  **<<boundary>>**, use the midpoint between the given **<<feature>>** and neighboring **<<feature,features>>** with similar type, size, or importance to make a rough **<<boundary>>**. Though this **<<boundary>>** may not represent the actual **<<feature>>** very well, it will represent the **<<uncertainty>>** of where the **<<locality>>** is, and that is the major goal of the **<<georeference>>**.
 
 For small **<<feature,features>>**, where the only indicator on a map is a label and possibly a marker, or where there are only **<<coordinates>>** from a **<<gazetteer>>** (and no further indicators at those **<<coordinates>>** on a map), a good strategy would be to use a predefined default size based on the **<<feature>>** type (xref:img-without-obvious-spatial-extent-default-size[xrefstyle="short"], xref:table-default-geographic-radial[xrefstyle="short"]).
 
 [#img-without-obvious-spatial-extent-default-size]
-.The **<<boundary>>** for a spring determined from the position of its icon on a map ⓐ and a **<<geographic radial>>** ⓑ determined by a default size for the **<<feature>>** type.
-image::img/without-obvious-spatial-extent-default-size.png[width=227,align="center"]
+.The **<<boundary>>** for a spring determined from the position of its icon on a map ⓐ and a **<<geographic-radial>>** ⓑ determined by a default size for the **<<feature>>** type.
+image::img/web/without-obvious-spatial-extent-default-size.png[width=227,align="center"]
 
 // NB was Table 2 in the source document, but there is no Table 1.
 
 [#table-default-geographic-radial]
-.List of **<<feature>>** types and the default **<<geographic radial>>** to use. If the **<<feature>>** type you are looking for isn't on the list, use one that is most like the **<<feature>>** type you seek and be sure to document your choice in *_georeferenceRemarks_*.
+.List of **<<feature>>** types and the default **<<geographic-radial>>** to use. If the **<<feature>>** type you are looking for isn't on the list, use one that is most like the **<<feature>>** type you seek and be sure to document your choice in term:[georeferenceRemarks].
 [%autowidth,frame=topbot,grid=rows,stripes=none,align="center"]
 |===
-h|Feature Type h|Default <<geographic radial>>
+h|Feature Type h|Default <<geographic-radial>>
 |spring, bore, tank, well, or waterhole |3 m
 |small stream |3 m
 |two-lane city streets, two-lane highways intersections |10 m
@@ -364,19 +366,19 @@ h|Feature Type h|Default <<geographic radial>>
 |*Grid*, ¼ degree *precision* (at equator)† |39226 m
 |===
 
-† **<<grid,Grids>>** based on **<<geographic coordinates>>**, such as Quarter Degree Squares, are not square, nor are they constant. They vary in size and shape by **<<latitude>>**. See {gbp}#table-uncertainty[table] in {gbp}#uncertainty-related-to-coordinate-precision[Uncertainty Related to Coordinate Precision] in *_<<Georeferencing Best Practices>>_*.
+† **<<grid,Grids>>** based on **<<geographic-coordinates>>**, such as Quarter Degree Squares, are not square, nor are they constant. They vary in size and shape by **<<latitude>>**. See {gbp}#table-uncertainty[table] in {gbp}#uncertainty-related-to-coordinate-precision[Uncertainty Related to Coordinate Precision] in *_Georeferencing Best Practices_*.
 
 The **<<boundary,boundaries>>** between mountains can be determined by using the terrain (valleys, saddles, and plains) that separate one mountain from others around it (xref:img-mountain-boundaries[xrefstyle="short"]).
 
-Always use *_georeferenceRemarks_* to document the decisions made and the reasons for them as well as possible, including the neighboring **<<feature,features>>** used for reference.
+Always use term:[georeferenceRemarks] to document the decisions made and the reasons for them as well as possible, including the neighboring **<<feature,features>>** used for reference.
 
 [#img-mountain-boundaries]
-.*A* Topographic contours of a group of nearby mountains. *B* Rough **<<boundary>>**, **<<corrected center>>** ⓐ and **<<geographic radial>>** ⓑ of a mountain determined by the surrounding valleys, saddles, and plains.
-image::img/mountain-boundaries.png[width=574,align="center"]
+.*A* Topographic contours of a group of nearby mountains. *B* Rough **<<boundary>>**, **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ of a mountain determined by the surrounding valleys, saddles, and plains.
+image::img/web/mountain-boundaries.png[width=574,align="center"]
 
-*Step 2 – Determine the <<coordinates>>:* Once the estimated **<<boundary>>** has been determined, use the **<<coordinates>>** of the **<<corrected center>>** (xref:img-obvious-spatial-extent[xrefstyle="short"], xref:img-without-obvious-spatial-extent[xrefstyle="short"], and xref:img-mountain-boundaries[xrefstyle="short"]B) as the _Input Latitude_ and _Longitude_.
+*Step 2 – Determine the <<coordinates>>:* Once the estimated **<<boundary>>** has been determined, use the **<<coordinates>>** of the **<<corrected-center>>** (xref:img-obvious-spatial-extent[xrefstyle="short"], xref:img-without-obvious-spatial-extent[xrefstyle="short"], and xref:img-mountain-boundaries[xrefstyle="short"]B) as the _Input Latitude_ and _Longitude_.
 
-*Step 3 – Measure the <<geographic radial>>:* Once the rough **<<boundary>>** and the **<<coordinates>>** of the **<<corrected center>>** have been determined, find the **<<geographic radial>>** as the _Radial of Feature_ by measuring the distance from the **<<corrected center>>** to the furthest point on the estimated **<<boundary>>** of the **<<feature>>**.
+*Step 3 – Measure the <<geographic-radial>>:* Once the rough **<<boundary>>** and the **<<coordinates>>** of the **<<corrected-center>>** have been determined, find the **<<geographic-radial>>** as the _Radial of Feature_ by measuring the distance from the **<<corrected-center>>** to the furthest point on the estimated **<<boundary>>** of the **<<feature>>**.
 
 *Step 4 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
@@ -404,13 +406,13 @@ a. Address **<<boundary>>** evident – if the map shows the **<<extent>>** of t
 
 b. Address **<<boundary>>** not evident – if the exact address cannot be found, estimate the **<<boundary>>** as well as possible, such as the block that it must be on (xref:img-street-address[xrefstyle="short"]B), as for <<Feature – without Obvious Spatial Extent>>. Many addresses reflect a **<<grid>>** system of labeling addresses. For instance, addresses between 12th Street and 13th Street would lie between 1200 and 1300.
 
-*Step 2 – Determine the <<coordinates>> and measure the <<geographic radial>>:* Once the **<<boundary>>** has been determined, use the same method to determine the **<<coordinates>>** and **<<geographic radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
+*Step 2 – Determine the <<coordinates>> and measure the <<geographic-radial>>:* Once the **<<boundary>>** has been determined, use the same method to determine the **<<coordinates>>** and **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-street-address]
-.**<<boundary,Boundary>>**, **<<corrected center>>** ⓐ and **<<geographic radial>>** ⓑ of a street address, *A* with obvious **<<boundary,boundaries>>**; *B* with no obvious **<<boundary,boundaries>>**, and where it is not possible to tell from the source map whether the **<<location>>** is on one side of the street or the other.
-image::img/street-address.png[width=613,align="center"]
+.**<<boundary,Boundary>>**, **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ of a street address, *A* with obvious **<<boundary,boundaries>>**; *B* with no obvious **<<boundary,boundaries>>**, and where it is not possible to tell from the source map whether the **<<location>>** is on one side of the street or the other.
+image::img/web/street-address.png[width=613,align="center"]
 
 ===== Feature – Property
 
@@ -434,15 +436,15 @@ b. Property **<<boundary,boundaries>>** not evident – if the full **<<extent>>
 
 *Step 2 – Determine the coordinates and geographic radial:*
 
-a. Property **<<boundary,boundaries>>** evident – once the **<<boundary>> **is determined, determine the **<<coordinates>>** and **<<geographic radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>** (xref:img-property-boundary[xrefstyle="short"]A).
+a. Property **<<boundary,boundaries>>** evident – once the **<<boundary>> **is determined, determine the **<<coordinates>>** and **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>** (xref:img-property-boundary[xrefstyle="short"]A).
 
-b. Property **<<boundary,boundaries>>** not evident – once the outer **<<boundary,boundaries>>** are determined, use them to find **<<coordinates>>** as for <<Feature – with Obvious Spatial Extent>>, namely find the center of the **<<smallest enclosing circle>>** containing the outer, uncertain  **<<boundary>>**. If that center falls within the inner, confident  **<<boundary>>**, use it to determine the **<<geographic radial>>** by finding the distance from that point to the furthest point on the uncertain **<<boundary>>** (xref:img-property-boundary[xrefstyle="short"]B). If the center does not fall in or on the confident inner  **<<boundary>>**, let the **<<corrected center>>** be a point on the inner confident **<<boundary>>** that minimizes the **<<geographic radial>>** to the outer uncertain **<<boundary>>** (xref:img-property-boundary[xrefstyle="short"]C).
+b. Property **<<boundary,boundaries>>** not evident – once the outer **<<boundary,boundaries>>** are determined, use them to find **<<coordinates>>** as for <<Feature – with Obvious Spatial Extent>>, namely find the center of the **<<smallest-enclosing-circle>>** containing the outer, uncertain  **<<boundary>>**. If that center falls within the inner, confident  **<<boundary>>**, use it to determine the **<<geographic-radial>>** by finding the distance from that point to the furthest point on the uncertain **<<boundary>>** (xref:img-property-boundary[xrefstyle="short"]B). If the center does not fall in or on the confident inner  **<<boundary>>**, let the **<<corrected-center>>** be a point on the inner confident **<<boundary>>** that minimizes the **<<geographic-radial>>** to the outer uncertain **<<boundary>>** (xref:img-property-boundary[xrefstyle="short"]C).
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-property-boundary]
-.**<<boundary,Boundary>>**, **<<corrected center>>** ⓐ and **<<geographic radial>>** ⓑ of a property. *A* with obvious **<<boundary,boundaries>>**; *B* with an obvious inner **<<boundary>>** (dark shading) and a less obvious rough outer **<<boundary>>** (lighter shading), where the center of the outer **<<boundary>>** falls within the obvious inner  **<<boundary>>** ; *C:* with an obvious inner **<<boundary>>** (dark shading) and a rough outer **<<boundary>>** (lighter shading), where the center of the outer **<<boundary>>** ⓒ does not fall within the obvious inner  **<<boundary>>**.
-image::img/property-boundary.png[width=615,align="center"]
+.**<<boundary,Boundary>>**, **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ of a property. *A* with obvious **<<boundary,boundaries>>**; *B* with an obvious inner **<<boundary>>** (dark shading) and a less obvious rough outer **<<boundary>>** (lighter shading), where the center of the outer **<<boundary>>** falls within the obvious inner  **<<boundary>>** ; *C:* with an obvious inner **<<boundary>>** (dark shading) and a rough outer **<<boundary>>** (lighter shading), where the center of the outer **<<boundary>>** ⓒ does not fall within the obvious inner  **<<boundary>>**.
+image::img/web/property-boundary.png[width=615,align="center"]
 
 ===== Feature – Path
 
@@ -461,7 +463,7 @@ NOTE: a path may cross over itself, such as the track of an animal’s movements
 
 *Locality Type:* _Geographic feature only_
 
-*Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* As a linear **<<feature>>**, a **<<path>>** is often represented as a series of line segments (_i.e._, a polyline), with or without a buffer. When viewed on satellite imagery these **<<feature,features>>** (especially rivers) can be quite complex, so a constant buffer around the midline is not a good representation in these cases. When possible, determine the **<<boundary>>** as for any other **<<shape>>** using <<Feature – with Obvious Spatial Extent>>) (xref:img-paths[xrefstyle="short"]A). Otherwise, treat the **<<boundary>>** as a polyline (xref:img-paths[xrefstyle="short"]B) and determine the **<<corrected center>>** and **<<geographic radial>>** as explained below.
+*Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* As a linear **<<feature>>**, a **<<path>>** is often represented as a series of line segments (_i.e._, a polyline), with or without a buffer. When viewed on satellite imagery these **<<feature,features>>** (especially rivers) can be quite complex, so a constant buffer around the midline is not a good representation in these cases. When possible, determine the **<<boundary>>** as for any other **<<shape>>** using <<Feature – with Obvious Spatial Extent>>) (xref:img-paths[xrefstyle="short"]A). Otherwise, treat the **<<boundary>>** as a polyline (xref:img-paths[xrefstyle="short"]B) and determine the **<<corrected-center>>** and **<<geographic-radial>>** as explained below.
 
 NOTE: <<path,Paths>> are susceptible to change over time, so it may be best to find a map source from the period during which the event occurred. The scale is important when looking at a path on a map, as smaller scale maps reduce the complexity shown, with corners cut off, and with loops (oxbows, billabongs), etc. often not shown.
 
@@ -473,15 +475,15 @@ NOTE: Buffers might require interpolation on a topographic map if they do not co
 
 These considerations apply equally to **<<depth>>** and **<<bathymetry>>** where contours are available, bearing in mind that some **<<bathymetry,bathymetric>>** contours are quite coarse.
 
-*Step 2 – Determine the <<coordinates>> and <<geographic radial>>:* If the **<<boundary>>** can be determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>** (xref:img-paths[xrefstyle="short"]A).
+*Step 2 – Determine the <<coordinates>> and <<geographic-radial>>:* If the **<<boundary>>** can be determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>** (xref:img-paths[xrefstyle="short"]A).
 
-If the **<<feature>>** must be treated as a polyline, draw a straight line connecting the ends of the polyline and determine its midpoint. If the midpoint falls on the polyline, that will be the center (no need for correction), and the **<<geographic radial>>** will be the distance from that point to either of the endpoints of the polyline. If the midpoint does not fall on the polyline, move it to the point on the polyline that minimizes the distance to both endpoints. This is the **<<corrected center>>** and the distance to the endpoints is the **<<geographic radial>>** (xref:img-paths[xrefstyle="short"]B).
+If the **<<feature>>** must be treated as a polyline, draw a straight line connecting the ends of the polyline and determine its midpoint. If the midpoint falls on the polyline, that will be the center (no need for correction), and the **<<geographic-radial>>** will be the distance from that point to either of the endpoints of the polyline. If the midpoint does not fall on the polyline, move it to the point on the polyline that minimizes the distance to both endpoints. This is the **<<corrected-center>>** and the distance to the endpoints is the **<<geographic-radial>>** (xref:img-paths[xrefstyle="short"]B).
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-paths]
-.**<<corrected center,Corrected center>>** ⓐ and **<<geographic radial>>** ⓑ for a **<<path>>**: *A* With **<<boundary>>** of the **<<path>>** as a **<<shape>>**; *B* With **<<path>>** as a polyline, showing the midpoint ⓒ between the ends of the **<<path>>**. *C* **<<boundary,Boundary>>**, center ⓒ, **<<corrected center>>** ⓐ and **<<geographic radial>>** ⓑ of bounded section of a contour line, in this case an isohypse of 220 m with an **<<elevation,elevational>>** **<<uncertainty>>** of 10 m.
-image::img/paths.png[width=600,align="center"]
+.**<<corrected-center,Corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ for a **<<path>>**: *A* With **<<boundary>>** of the **<<path>>** as a **<<shape>>**; *B* With **<<path>>** as a polyline, showing the midpoint ⓒ between the ends of the **<<path>>**. *C* **<<boundary,Boundary>>**, center ⓒ, **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ of bounded section of a contour line, in this case an isohypse of 220 m with an **<<elevation,elevational>>** **<<uncertainty>>** of 10 m.
+image::img/web/paths.png[width=600,align="center"]
 
 ===== Feature – Junction, Intersection, Crossing, Confluence
 
@@ -501,17 +503,17 @@ The **<<locality>>** is the junction of two or more **<<path,paths>>** – roads
 
 For a confluence of two waterways, the **<<boundary>>** is a triangle that consists of the two segments at the same **<<elevation>>** reaching from where the waterways join to the opposite shores at the same **<<elevation>>**, plus the segment that joins those two points on the opposite shores (xref:img-junction[xrefstyle="short"]B).
 
-*Step 2 – Determine the <<coordinates>> and <<geographic radial>>:* Once the **<<boundary>>** has been determined, use the same method to determine the **<<coordinates>>** and **<<geographic radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>** (xref:img-junction[xrefstyle="short"]B).
+*Step 2 – Determine the <<coordinates>> and <<geographic radial>>:* Once the **<<boundary>>** has been determined, use the same method to determine the **<<coordinates>>** and **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>** (xref:img-junction[xrefstyle="short"]B).
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-junction]
-.*A* Crossing of a road and a stream with details of  **<<boundary>>**, **<<corrected center>>** ⓐ (with no need for correction) and **<<geographic radial>>** ⓑ of the intersection. *B* **<<boundary,Boundary>>**, **<<corrected center>>** ⓐ and **<<geographic radial>>** ⓑ of a confluence of two rivers.
-image::img/junction.png[width=627,align="center"]
+.*A* Crossing of a road and a stream with details of  **<<boundary>>**, **<<corrected-center>>** ⓐ (with no need for correction) and **<<geographic-radial>>** ⓑ of the intersection. *B* **<<boundary,Boundary>>**, **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ of a confluence of two rivers.
+image::img/web/junction.png[width=627,align="center"]
 
 ===== Feature – Cave
 
-The **<<locality>>** is a cave, an underground mine, etc. For details of how to record a **<<locality>>** within a cave, see {gbp}#caves[Caves] in *_<<Georeferencing Best Practices>>_*.
+The **<<locality>>** is a cave, an underground mine, etc. For details of how to record a **<<locality>>** within a cave, see {gbp}#caves[Caves] in *_Georeferencing Best Practices_*.
 
 .{blank}
 [caption=Examples]
@@ -524,21 +526,21 @@ The **<<locality>>** is a cave, an underground mine, etc. For details of how to 
 
 *Step 1 – Determine the <<feature>> **<<boundary,boundaries>>**:* Locate the cave and/or its main entrance.
 
-a. Cave **<<extent>>** evident – if a map of all the interior of the cave with measurements and orientation to the surface is available, or if a position can be determined directly above the **<<location>>** inside the cave using the **<<ground zero>>** concept (see {gbp}#determining-location[Determining Location] in *_<<Georeferencing Best Practices>>_*), determine the **<<boundary>>** as if it is a <<Feature – with Obvious Spatial Extent>> (xref:img-caves[xrefstyle="short"]A).
+a. Cave **<<extent>>** evident – if a map of all the interior of the cave with measurements and orientation to the surface is available, or if a position can be determined directly above the **<<location>>** inside the cave using the **<<ground-zero>>** concept (see {gbp}#determining-location[Determining Location] in *_Georeferencing Best Practices_*), determine the **<<boundary>>** as if it is a <<Feature – with Obvious Spatial Extent>> (xref:img-caves[xrefstyle="short"]A).
 
-b. Cave **<<extent>>** not evident – if the limits of the cave are not evident: a) use the nearest identifiable **<<feature>>** to determine the **<<extent>>** and **<<boundary>>** of the cave, as for <<Feature – without Obvious Spatial Extent>> (xref:img-caves[xrefstyle="short"]B); or b) determine the **<<coordinates>>** of the cave entrance and use any evidence of the size of the cave to circumscribe the **<<boundary>>** as a circle around the entrance with a **<<radial,radius>>** commensurate with its size (xref:img-caves[xrefstyle="short"]C). Document accordingly in *_georeferenceRemarks_*.
+b. Cave **<<extent>>** not evident – if the limits of the cave are not evident: a) use the nearest identifiable **<<feature>>** to determine the **<<extent>>** and **<<boundary>>** of the cave, as for <<Feature – without Obvious Spatial Extent>> (xref:img-caves[xrefstyle="short"]B); or b) determine the **<<coordinates>>** of the cave entrance and use any evidence of the size of the cave to circumscribe the **<<boundary>>** as a circle around the entrance with a **<<radial,radius>>** commensurate with its size (xref:img-caves[xrefstyle="short"]C). Document accordingly in term:[georeferenceRemarks].
 
-*Step 2 – Determine the <<coordinates>> and <<geographic radial>>:* Once the **<<boundary>>** has been determined, use the same method to determine the **<<coordinates>>** and **<<geographic radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
+*Step 2 – Determine the <<coordinates>> and <<geographic-radial>>:* Once the **<<boundary>>** has been determined, use the same method to determine the **<<coordinates>>** and **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-caves]
-.**<<boundary,Boundary>>**, **<<corrected center>>** ⓐ and **<<geographic radial>>** ⓑ of a cave. *A* cave **<<extent>>** known and projected onto the surface. *B* cave **<<extent>>** not known, but inferred from other evidence. *C* cave **<<extent>>** not known, but maximum horizontal length known and measured from the entrance.
-image::img/caves.png[width=617,align="center"]
+.**<<boundary,Boundary>>**, **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ of a cave. *A* cave **<<extent>>** known and projected onto the surface. *B* cave **<<extent>>** not known, but inferred from other evidence. *C* cave **<<extent>>** not known, but maximum horizontal length known and measured from the entrance.
+image::img/web/caves.png[width=617,align="center"]
 
 ===== Feature – Dive Location
 
-The **<<locality>>** is a diving site (marine or freshwater). Commonly recorded using the **<<geographic coordinates>>** of the point on the surface where the diver entered the water (_i.e_., the **<<entry point>>**).
+The **<<locality>>** is a diving site (marine or freshwater). Commonly recorded using the **<<geographic-coordinates>>** of the point on the surface where the diver entered the water (_i.e_., the **<<entry-point>>**).
 
 .{blank}
 [caption=Example]
@@ -548,19 +550,19 @@ The **<<locality>>** is a diving site (marine or freshwater). Commonly recorded 
 
 *Locality Type:* _Geographic feature only_
 
-*Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* Locate the **<<extent>>** of the dive as a 3D-shape, which should be projected perpendicularly onto the water surface. Determine the **<<boundary>>** of that projection in the horizontal plane (_i.e._, the **<<geographic boundary>>**) (xref:img-dive-location[xrefstyle="short"]).
+*Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* Locate the **<<extent>>** of the dive as a 3D-shape, which should be projected perpendicularly onto the water surface. Determine the **<<boundary>>** of that projection in the horizontal plane (_i.e._, the **<<geographic-boundary>>**) (xref:img-dive-location[xrefstyle="short"]).
 
-a. Dive **<<extent>>** evident – underwater **<<location,locations>>** are often recorded as a distance, **<<direction>>** and water **<<depth>>** from the *<<entry point>>*. Below the surface there may be a "trajectory" with a three dimensional aspect that includes a horizontal component and a minimum and maximum water **<<depth>>**. Use these to circumscribe the **<<boundary>>** on the surface (see xref:img-dive-location[xrefstyle="short"]A and <<Three Dimensional Shapes>> in *_Georeferencing Best Practices_*).
+a. Dive **<<extent>>** evident – underwater **<<location,locations>>** are often recorded as a distance, **<<direction>>** and water **<<depth>>** from the *<<entry-point>>*. Below the surface there may be a "trajectory" with a three dimensional aspect that includes a horizontal component and a minimum and maximum water **<<depth>>**. Use these to circumscribe the **<<boundary>>** on the surface (see xref:img-dive-location[xrefstyle="short"]A and {gbp}#three-dimensional-shapes[Three Dimensional Shapes] in *_Georeferencing Best Practices_*).
 
-b. Dive **<<extent>>** not evident – if the limits of the dive are not evident, there is no trajectory, and no distance or direction from the **<<entry point>>**, use a reasonable upper limit for the distance the diver might have been able to cover in a straight line from and back to the **<<entry point>>**. This could vary greatly depending on the diver, the depth reached, equipment used, etc. Use any evidence of the length of the dive to circumscribe the **<<boundary>>** as a circle around the **<<entry point>>** with a **<<radial,radius>>** commensurate with that length (xref:img-dive-location[xrefstyle="short"]B).
+b. Dive **<<extent>>** not evident – if the limits of the dive are not evident, there is no trajectory, and no distance or direction from the **<<entry-point>>**, use a reasonable upper limit for the distance the diver might have been able to cover in a straight line from and back to the **<<entry-point>>**. This could vary greatly depending on the diver, the depth reached, equipment used, etc. Use any evidence of the length of the dive to circumscribe the **<<boundary>>** as a circle around the **<<entry-point>>** with a **<<radial,radius>>** commensurate with that length (xref:img-dive-location[xrefstyle="short"]B).
 
-*Step 2 – Determine the <<coordinates>> and <<geographic radial>>:* Treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
+*Step 2 – Determine the <<coordinates>> and <<geographic-radial>>:* Treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-dive-location]
-.**<<boundary,Boundary>>**, **<<corrected center>>** ⓐ and **<<geographic radial>>** ⓑ of a dive **<<location>>**. *A* side view of a dive with **<<extent>>** evident *B* top view of a dive **<<location>>** with evident **<<extent>>**, projected onto the surface. *C* top view of a dive **<<location>>** with **<<extent>>** not evident, but inferred from other evidence.
-image::img/dive-location.png[width=621,align="center"]
+.**<<boundary,Boundary>>**, **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ of a dive **<<location>>**. *A* side view of a dive with **<<extent>>** evident *B* top view of a dive **<<location>>** with evident **<<extent>>**, projected onto the surface. *C* top view of a dive **<<location>>** with **<<extent>>** not evident, but inferred from other evidence.
+image::img/web/dive-location.png[width=621,align="center"]
 
 ===== Feature – Headwaters of a Waterway
 
@@ -579,17 +581,17 @@ The headwater of a waterway may or may not be well defined. For most sizable riv
 
 If the headwater is not designated, use the set of all of the streams upstream of the waterway mentioned. Draw the least convex polygon containing the entire set of streams as the *boundary* (xref:img-watershed[xrefstyle="short"]).
 
-*Step 2 – Determine the <<coordinates>> and <<geographic radial>>:* Once the **<<boundary>>** has been determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected center>>** to the furthest point on the  **<<boundary>>**. The **<<corrected center>>** should be on a waterbody within the **<<boundary,boundaries>>**.
+*Step 2 – Determine the <<coordinates>> and <<geographic-radial>>:* Once the **<<boundary>>** has been determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the  **<<boundary>>**. The **<<corrected-center>>** should be on a waterbody within the **<<boundary,boundaries>>**.
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-headwater]
-.Overview of a headwater issuing from a stationary waterbody (in this case a lake). Detail of **<<corrected center>>** ⓐ and **<<geographic radial>>** ⓑ.
-image::img/headwater.png[width=588,align="center"]
+.Overview of a headwater issuing from a stationary waterbody (in this case a lake). Detail of **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ.
+image::img/web/headwater.png[width=588,align="center"]
 
 [#img-watershed]
-.Overview of a watershed as the headwater of a river Ⓡ with detail showing the **<<boundary,boundaries>>** of the upstream tributaries of R, with center ⓒ, **<<corrected center>>** ⓐ and **<<geographic radial>>** ⓑ.
-image::img/watershed.png[width=587,align="center"]
+.Overview of a watershed as the headwater of a river Ⓡ with detail showing the **<<boundary,boundaries>>** of the upstream tributaries of R, with center ⓒ, **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ.
+image::img/web/watershed.png[width=587,align="center"]
 
 ===== Feature – near a Feature
 
@@ -611,13 +613,13 @@ NOTE: Neighboring <<feature,features>> were not necessarily there at the time th
 
 NOTE: The buffer distance for the extension is arbitrary – it is hard to defend any given value as a default. Make a judgement and imagine what the person who recorded the <<locality>> meant. Document the rationale and decisions made in georeferenceRemarks. Remember, one goal of a <<georeference>> is that it is repeatable.
 
-*Step 2 – Determine the <<coordinates>> and <<geographic radial>>:* Once the **<<boundary>>** of the "extended" **<<feature>>** has been determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected center>>** to the furthest point on the **<<boundary>>** of the extended **<<feature>>**.
+*Step 2 – Determine the <<coordinates>> and <<geographic-radial>>:* Once the **<<boundary>>** of the "extended" **<<feature>>** has been determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the extended **<<feature>>**.
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-near-a-feature]
-.**<<boundary,Boundary>>**, **<<corrected center>>** ⓐ and **<<geographic radial>>** ⓑ of an interpretation of **<<locality type>>** _near a Feature_ with a **<<boundary>>** extended a fixed distance in all directions, in this case 10 km. *A* **<<boundary,Boundary>>** extended a fixed distance in all directions with no neighboring conflicts. *B* **<<boundary,Boundary>>** extended a fixed distance in all directions except in the area overlapping a similar **<<feature>>**, where it extends half the distance to the neighboring **<<feature>>**.
-image::img/near-a-feature.png[width=486,align="center"]
+.**<<boundary,Boundary>>**, **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ of an interpretation of **<<locality-type>>** _near a Feature_ with a **<<boundary>>** extended a fixed distance in all directions, in this case 10 km. *A* **<<boundary,Boundary>>** extended a fixed distance in all directions with no neighboring conflicts. *B* **<<boundary,Boundary>>** extended a fixed distance in all directions except in the area overlapping a similar **<<feature>>**, where it extends half the distance to the neighboring **<<feature>>**.
+image::img/web/near-a-feature.png[width=486,align="center"]
 
 ===== Feature – between Two Features
 
@@ -635,13 +637,13 @@ The **<<locality>>** description uses the pattern "between A and B", where A and
 
 *Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* Determine the **<<boundary,boundaries>>** of each **<<feature>>** as <<Feature – with Obvious Spatial Extent>> or <<Feature – without Obvious Spatial Extent>> (xref:img-between-two-features[xrefstyle="short"]A).
 
-*Step 2 – Determine the <<coordinates>> and <<geographic radial>>:* Once you have determined the **<<boundary,boundaries>>** of the two **<<feature,feature>>**, find their **<<corrected center,corrected centers>>**, as for <<Feature – with Obvious Spatial Extent>>. Use the midpoint between the **<<corrected center,corrected centers>>** of the two **<<feature,features>>** (xref:img-between-two-features[xrefstyle="short"]B) to determine the **<<coordinates>>** of the **<<location>>** between the **<<feature,features>>**. The **<<geographic radial>>** of the **<<location>>** between the two **<<feature,features>>** is half the distance between the **<<corrected center,corrected centers>>** of the **<<feature,features>>** (xref:img-between-two-features[xrefstyle="short"]B).
+*Step 2 – Determine the <<coordinates>> and <<geographic-radial>>:* Once you have determined the **<<boundary,boundaries>>** of the two **<<feature,feature>>**, find their **<<corrected-center,corrected-centers>>**, as for <<Feature – with Obvious Spatial Extent>>. Use the midpoint between the **<<corrected-center,corrected-centers>>** of the two **<<feature,features>>** (xref:img-between-two-features[xrefstyle="short"]B) to determine the **<<coordinates>>** of the **<<location>>** between the **<<feature,features>>**. The **<<geographic-radial>>** of the **<<location>>** between the two **<<feature,features>>** is half the distance between the **<<corrected-center,corrected-centers>>** of the **<<feature,features>>** (xref:img-between-two-features[xrefstyle="short"]B).
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _Radial of Feature_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-between-two-features]
-.*A* **<<boundary,Boundary>>**, **<<corrected center>>** ⓐ and **<<geographic radial>>** ⓑ of two **<<feature,features>>**. *B* **<<coordinates,Coordinates>>** ⓒ and **<<geographic radial>>** ⓓ of the interpretation of _between Two Features_.
-image::img/between-two-features.png[width=582,align="center"]
+.*A* **<<boundary,Boundary>>**, **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ of two **<<feature,features>>**. *B* **<<coordinates,Coordinates>>** ⓒ and **<<geographic-radial>>** ⓓ of the interpretation of _between Two Features_.
+image::img/web/between-two-features.png[width=582,align="center"]
 
 ===== Feature – between Two Paths
 
@@ -661,25 +663,25 @@ The **<<locality>>** describes a **<<location>>** between two **<<path,paths>>**
 
 NOTE: <<path,Paths>> may cross each other one or more times, with the area between switching from one side of each **<<path>>** to the other, resulting in a **boundary** consisting of multiple polygons (xref:img-between-two-paths[xrefstyle="short"]B).
 
-*Step 2 – Determine the <<coordinates>> and <<geographic radial>>:* Once the **<<boundary>>** has been determined, obtain the **<<coordinates>>** and the **<<geographic radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
+*Step 2 – Determine the <<coordinates>> and <<geographic-radial>>:* Once the **<<boundary>>** has been determined, obtain the **<<coordinates>>** and the **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-between-two-paths]
-.**<<boundary,Boundary>>**, **<<corrected center>>** ⓐ and **<<geographic radial>>** ⓑ for a **<<location>>** between two **<<path,paths>>** (light shaded area), that *A* do not cross; *B* cross each other multiple times, with location restricted by an administrative boundary (dashed line).
-image::img/between-two-paths.png[width=564,align="center"]
+.**<<boundary,Boundary>>**, **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ for a **<<location>>** between two **<<path,paths>>** (light shaded area), that *A* do not cross; *B* cross each other multiple times, with location restricted by an administrative boundary (dashed line).
+image::img/web/between-two-paths.png[width=564,align="center"]
 
 === Offsets
 
 .**Definition**
 [NOTE]
 ====
-An **<<offset>>** is a displacement from a reference **<<location>>**. An **<<offset>>** is usually used in conjunction with **<<heading>>** to give a distance and direction from a **<<feature>>** (see <<Offsets>> and <<Uncertainty Related to Offset Precision>>, both in *_Georeferencing Best Practices_*). There are a variety of ways in which **<<offset,offsets>>** interact with **<<feature,features>>** and **<<heading,headings>>** in **<<locality>>** descriptions, each with its own methods of spatial interpretation.
+An **<<offset>>** is a displacement from a reference **<<location>>**. An **<<offset>>** is usually used in conjunction with **<<heading>>** to give a distance and direction from a **<<feature>>** (see {gbp}#offsets[Offsets] and {gbp}#uncertainty-related-to-offset-precision[Uncertainty Related to Offset Precision], both in *_Georeferencing Best Practices_*). There are a variety of ways in which **<<offset,offsets>>** interact with **<<feature,features>>** and **<<heading,headings>>** in **<<locality>>** descriptions, each with its own methods of spatial interpretation.
 ====
 
-In all cases, both for the **<<shape>>** **<<georeferencing method,method>>** and for the **<<point-radius>>** **<<georeferencing method,method>>** using the *_Georeferencing Calculator_*, the **<<boundary,boundaries>>** of the reference <<feature,**feature(s)>> **are needed. Thus, this section on **<<offset,Offsets>>** will repeatedly refer to **<<feature,features>>** as determined by the methods presented in the various sections of <<Geographic Feature only>>.
+In all cases, both for the **<<shape>>** **<<georeferencing-method,method>>** and for the **<<point-radius>>** **<<georeferencing-method,method>>** using the *_Georeferencing Calculator_*, the **<<boundary,boundaries>>** of the reference **<<feature,feature(s)>>** are needed. Thus, this section on **<<offset,Offsets>>** will repeatedly refer to **<<feature,features>>** as determined by the methods presented in the various sections of <<Geographic Feature only>>.
 
-The **<<locality type,locality types>>** that involve **<<offset,offsets>>**, in addition to the tricky one we have already seen above (<<Feature – near a Feature>>, are:
+The **<<locality-type,locality-types>>** that involve **<<offset,offsets>>**, in addition to the tricky one we have already seen above (<<Feature – near a Feature>>), are:
 
 * distance only (_e.g._, "5 mi from Bakersfield")
 * *<<heading>>* only (_e.g._, "North of Bakersfield")
@@ -703,7 +705,7 @@ The **<<locality type,locality types>>** that involve **<<offset,offsets>>**, in
 
 *Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* Determine the *boundary* of the feature as you would for <<Feature – near a Feature>>, except that the distance to use for the buffer is the distance given in the **<<locality>>** description, and there is no need to account for the proximity of other **<<feature,features>>**.
 
-*Step 2 – Determine the <<coordinates>> and <<geographic radial>>:* Once the **boundary** has been determined, obtain the **coordinates** and the **<<geographic radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
+*Step 2 – Determine the <<coordinates>> and <<geographic-radial>>:* Once the **boundary** has been determined, obtain the **coordinates** and the **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
 
 *Offset Distance:* Set to 0. The distance has already been incorporated in the determination of the  **<<boundary>>**. Use the distance and units given in the locality description to **<<georeference>>** using the *_Calculator_*.
 
@@ -726,19 +728,19 @@ The **<<locality>>** consists of a direction from a **<<feature>>** without any 
 
 *Locality Type:* _Geographic feature only_
 
-*Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* First determine the **<<boundary>>** of the given **<<feature>>** based on the **<<feature>>** type, either as for <<Feature – with Obvious Spatial Extent>>, or as for <<Feature – without Obvious Spatial Extent>>. Then, to account for the **<<offset>>** at a **<<heading>>**, extend that **<<boundary>>** outward in a cone defined by the **<<heading>>** **<<uncertainty>>** (see <<Offset Direction Only>> and <<Uncertainty Related to Heading>>, both in *_Georeferencing Best Practices_*) until reaching a constraining **<<boundary>>** imposed by other information in the **<<locality>>** record, or until reaching the proximity of another similar **<<feature>>**, whichever is nearer the original **<<feature>>** (xref:img-offset-heading[xrefstyle="short"]A). Call this the "extended **<<feature>>**". If the extension impinges on any similar extension of another similar **<<feature>>** in the cone of the specified **<<heading>>**, modify the **<<boundary>>** in the shared space to be half the distance between the nearest **<<boundary,boundaries>>** between the two **<<feature,features>>** (xref:img-offset-heading[xrefstyle="short"]B). For example, "N Palmetto" could mean "northern part of Palmetto" or "North of Palmetto". Since we have no way of knowing which was intended, we choose the latter interpretation, which is more inclusive and will entirely contain the less inclusive interpretation. Use the rules for **<<heading>>** **<<uncertainty>>** to determine the angle within which to find the nearest similar **<<feature>>**. For example, for "N Palmetto" look for a named place somewhere between NE and NW of Palmetto.
+*Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* First determine the **<<boundary>>** of the given **<<feature>>** based on the **<<feature>>** type, either as for <<Feature – with Obvious Spatial Extent>>, or as for <<Feature – without Obvious Spatial Extent>>. Then, to account for the **<<offset>>** at a **<<heading>>**, extend that **<<boundary>>** outward in a cone defined by the **<<heading>>** **<<uncertainty>>** (see {gbp}#offset-direction-only[Offset – Direction Only] and {gbp}#uncertainty-related-to-heading[Uncertainty Related to Heading], both in *_Georeferencing Best Practices_*) until reaching a constraining **<<boundary>>** imposed by other information in the **<<locality>>** record, or until reaching the proximity of another similar **<<feature>>**, whichever is nearer the original **<<feature>>** (xref:img-offset-heading[xrefstyle="short"]A). Call this the "extended **<<feature>>**". If the extension impinges on any similar extension of another similar **<<feature>>** in the cone of the specified **<<heading>>**, modify the **<<boundary>>** in the shared space to be half the distance between the nearest **<<boundary,boundaries>>** between the two **<<feature,features>>** (xref:img-offset-heading[xrefstyle="short"]B). For example, "N Palmetto" could mean "northern part of Palmetto" or "North of Palmetto". Since we have no way of knowing which was intended, we choose the latter interpretation, which is more inclusive and will entirely contain the less inclusive interpretation. Use the rules for **<<heading>>** **<<uncertainty>>** to determine the angle within which to find the nearest similar **<<feature>>**. For example, for "N Palmetto" look for a named place somewhere between NE and NW of Palmetto.
 
-*Step 2 – Determine the <<coordinates>> and <<geographic radial>>:* Once you have determined the **<<boundary>>** of the "extended" **<<feature>>**, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected center>>** to the furthest point on the **<<boundary>>** of the extended **<<feature>>**.
+*Step 2 – Determine the <<coordinates>> and <<geographic-radial>>:* Once you have determined the **<<boundary>>** of the "extended" **<<feature>>**, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the extended **<<feature>>**.
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-offset-heading]
-.A **<<locality>>** "east of" a **<<feature>>**, but bounded on the east by an administrative border (dotted line). *A*: **<<boundary,Boundary>>** and **<<corrected center>>** ⓐ of the starting **<<feature>>**. The cone to the east forms part of the new boundary with **<<corrected center>>** (ⓒ, no need for correction) and **<<geographic radial>>** ⓓ. *B*: Similar to A, but with an intervening **<<feature>>** to the northeast before the border.
-image::img/offset-heading.png[width=501,align="center"]
+.A **<<locality>>** "east of" a **<<feature>>**, but bounded on the east by an administrative border (dotted line). *A*: **<<boundary,Boundary>>** and **<<corrected-center>>** ⓐ of the starting **<<feature>>**. The cone to the east forms part of the new boundary with **<<corrected-center>>** (ⓒ, no need for correction) and **<<geographic-radial>>** ⓓ. *B*: Similar to A, but with an intervening **<<feature>>** to the northeast before the border.
+image::img/web/offset-heading.png[width=501,align="center"]
 
 ==== Offset – Distance along a Path
 
-The **<<locality>>** consists of a reference **<<feature>>** to start from and a distance to travel along a **<<path>>** from there. Most of the time there will be just one **<<path>>** that matches the description and it will not be very wide compared to the reference **<<feature>>**, for example, a highway out of a town, or a stream out of a lake. In cases such as these, the **<<georeferencing method>>** is relatively simple (see <<Offset along a Narrow Path>>). If the **<<path>>** is wide enough that multiple possible routes could be taken along it, such as in a river, the method for dealing with it is a little more complicated (see <<Offset along a Wide Path>>). Sometimes there might be multiple distinct possible **<<path,paths>>** that match the **<<locality>>** description, such as two different roads in the same general direction out of a town and there is a third method to use to find the **<<georeference>>** (see <<Offset along Multiple Possible Paths>>). In all cases, the **<<georeference>>** will cover a segment of the **<<path>>** or possible **<<path,paths>>** that includes all the sources of **<<uncertainty>>**. Though there might be a **<<heading>>** mentioned in the **<<locality>>** description, it serves only to constrain which **<<path>>** or **<<path,paths>>** are possible, and does not contribute **<<uncertainty>>** due to **<<heading>>** **<<precision>>**.
+The **<<locality>>** consists of a reference **<<feature>>** to start from and a distance to travel along a **<<path>>** from there. Most of the time there will be just one **<<path>>** that matches the description and it will not be very wide compared to the reference **<<feature>>**, for example, a highway out of a town, or a stream out of a lake. In cases such as these, the **<<georeferencing-method>>** is relatively simple (see <<Offset along a Narrow Path>>). If the **<<path>>** is wide enough that multiple possible routes could be taken along it, such as in a river, the method for dealing with it is a little more complicated (see <<Offset along a Wide Path>>). Sometimes there might be multiple distinct possible **<<path,paths>>** that match the **<<locality>>** description, such as two different roads in the same general direction out of a town and there is a third method to use to find the **<<georeference>>** (see <<Offset along Multiple Possible Paths>>). In all cases, the **<<georeference>>** will cover a segment of the **<<path>>** or possible **<<path,paths>>** that includes all the sources of **<<uncertainty>>**. Though there might be a **<<heading>>** mentioned in the **<<locality>>** description, it serves only to constrain which **<<path>>** or **<<path,paths>>** are possible, and does not contribute **<<uncertainty>>** due to **<<heading>>** **<<precision>>**.
 
 NOTE: The more accumulated curvature there is in the <<path>>, the more important it is to measure carefully (and therefore use a map of appropriate scale or zoom), otherwise there will be an accumulated error in the position of the <<offset>>. The less detail there is in the map compared to the real <<path>>, the greater the overestimate of the actual distance from the starting point to the end point will be because the measurements will be "cutting corners" along the whole measured <<path>>.
 
@@ -754,17 +756,17 @@ NOTE: The more accumulated curvature there is in the <<path>>, the more importan
 
 *Locality Type:* _Distance along path_
 
-*Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* Find the **<<boundary>>** of the intersection of the reference **<<feature>>** with the **<<path>>** as you would for <<Feature – Junction, Intersection, Crossing, Confluence>> (xref:img-offset-narrow-path[xrefstyle="short"]).
+*Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* Find the **<<boundary>>** of the intersection of the reference **<<feature>>** with the **<<path>>** as you would for <<feature-junction-intersection-crossing-confluence,Feature – Junction, Intersection, Crossing, Confluence>> (xref:img-offset-narrow-path[xrefstyle="short"]).
 
-*Step 2 – Determine the starting <<feature>> <<coordinates>> and <<geographic radial>>:* Once the **<<boundary>>** of the starting **<<feature>>** has been determined, use the same method to determine the **<<corrected center>>** and **<<geographic radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected center>>** to the furthest point on the **<<boundary>>** of the starting **<<feature>>** (xref:img-offset-narrow-path[xrefstyle="short"]B). Enter the length of the **<<geographic radial>>** in _Radial of Feature_ in the *_Calculator_*.
+*Step 2 – Determine the starting <<feature>> <<coordinates>> and <<geographic-radial>>:* Once the **<<boundary>>** of the starting **<<feature>>** has been determined, use the same method to determine the **<<corrected-center>>** and **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the starting **<<feature>>** (xref:img-offset-narrow-path[xrefstyle="short"]B). Enter the length of the **<<geographic-radial>>** in _Radial of Feature_ in the *_Calculator_*.
 
-*Step 3 – Enter the _Input Latitude_ and _Longitude_:* Enter the **<<coordinates>>** of the **<<offset>>** position, which can be determined by measuring the length along the midline of the **<<path>>** from the **<<corrected center>>** of the starting **<<feature>>** to the distance given in the **<<locality>>** description. See the notes on map scale and accumulated **<<error>>** in <<Offset – Distance along a Path>>.
+*Step 3 – Enter the _Input Latitude_ and _Longitude_:* Enter the **<<coordinates>>** of the **<<offset>>** position, which can be determined by measuring the length along the midline of the **<<path>>** from the **<<corrected-center>>** of the starting **<<feature>>** to the distance given in the **<<locality>>** description. See the notes on map scale and accumulated **<<error>>** in <<Offset – Distance along a Path>>.
 
 *Step 4 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _Measurement Error_, _Distance Units_, _Distance Precision_ (see <<Georeferencing Concepts>>).
 
 [#img-offset-narrow-path]
-.A **<<locality>>** of the type **<<offset,Offset>>** along a **<<path>>** where the <<path>> is narrow, specifically, along a road "east of" a **<<feature>>**. *A*: Inset showing the  **<<boundary>>**, **<<corrected center>>** ⓐ, and **<<geographic radial>>** ⓑ of the intersection of the **<<path>>** and the starting **<<feature>>**. *B*: The **<<corrected center>>** ⓐ and the **<<offset>>** ⓓ measured along the road.
-image::img/offset-narrow-path.png[width=584,align="center"]
+.A **<<locality>>** of the type **<<offset,Offset>>** along a **<<path>>** where the <<path>> is narrow, specifically, along a road "east of" a **<<feature>>**. *A*: Inset showing the  **<<boundary>>**, **<<corrected-center>>** ⓐ, and **<<geographic-radial>>** ⓑ of the intersection of the **<<path>>** and the starting **<<feature>>**. *B*: The **<<corrected-center>>** ⓐ and the **<<offset>>** ⓓ measured along the road.
+image::img/web/offset-narrow-path.png[width=584,align="center"]
 
 ===== Offset along a Wide Path
 
@@ -776,23 +778,23 @@ image::img/offset-narrow-path.png[width=584,align="center"]
 
 *Locality Type:* _Distance along path_
 
-*Step 1 – Determine the starting <<feature>> <<boundary,boundaries>>:* Find the center of the intersection of the reference **<<feature>>** with the **<<path>>** as you would for <<Feature – Junction, Intersection, Crossing, Confluence>> (xref:img-offset-wide-path[xrefstyle="short"]A).
+*Step 1 – Determine the starting <<feature>> <<boundary,boundaries>>:* Find the center of the intersection of the reference **<<feature>>** with the **<<path>>** as you would for <<feature-junction-intersection-crossing-confluence,Feature – Junction, Intersection, Crossing, Confluence>> (xref:img-offset-wide-path[xrefstyle="short"]A).
 
-*Step 2 – Determine the starting <<feature>> <<coordinates>> and <<geographic radial>>:* Once the **<<boundary>>** of the starting **<<feature>>** has been determined, use the same method to determine the **<<corrected center>>** and **<<geographic radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected center>>** to the furthest point on the **<<boundary>>** of the starting **<<feature>>** (xref:img-offset-wide-path[xrefstyle="short"]A).
+*Step 2 – Determine the starting <<feature>> <<coordinates>> and <<geographic-radial>>:* Once the **<<boundary>>** of the starting **<<feature>>** has been determined, use the same method to determine the **<<corrected-center>>** and **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the starting **<<feature>>** (xref:img-offset-wide-path[xrefstyle="short"]A).
 
-*Step 3 – <<coordinates,Coordinates>> at the <<offset>> distance:* Determine the **<<coordinates>>** of the **<<offset>>** position by measuring the length along the midline of the **<<path>>** from the **<<corrected center>>** of the starting **<<feature>>** (from *Step 2*) to the distance given in the **<<locality>>** description. In a river, follow the talweg (deepest channel) if it is evident.
+*Step 3 – <<coordinates,Coordinates>> at the <<offset>> distance:* Determine the **<<coordinates>>** of the **<<offset>>** position by measuring the length along the midline of the **<<path>>** from the **<<corrected-center>>** of the starting **<<feature>>** (from *Step 2*) to the distance given in the **<<locality>>** description. In a river, follow the talweg (deepest channel) if it is evident.
 
-*Step 4 – Calculate preliminary <<uncertainty,uncertainties>>:* Calculate a preliminary **<<uncertainty>>** by entering the **<<geographic radial>>** from Step 1 into the _Radial of feature_ in the *_Calculator_* and fill in the rest of the parameters for the _Distance along path_ **<<locality type>>**.
+*Step 4 – Calculate preliminary <<uncertainty,uncertainties>>:* Calculate a preliminary **<<uncertainty>>** by entering the **<<geographic-radial>>** from Step 1 into the _Radial of feature_ in the *_Calculator_* and fill in the rest of the parameters for the _Distance along path_ **<<locality-type>>**.
 
 *Additional parameters for Step 4:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _Measurement Error_, _Distance Units_, _Distance Precision_ (see <<Georeferencing Concepts>>).
 
 *Step 5 – Final <<path>> <<boundary>>:* Measure in both directions along the midline of the **<<path>>** from the **<<coordinates>>** determined in *Step 3* to a distance equal to the **<<uncertainty>>** determined in *Step 4*. From each of these points, make a transverse segment across the **<<path>>** at that **<<elevation>>**. These segments form the two ends of the **<<boundary>>** of the **<<path>>**, and the edges of the **<<path>>** between these two segments complete the **<<boundary>>** (xref:img-offset-wide-path[xrefstyle="short"]).
 
-*Step 6 – **<<path,Path>>** **<<boundary>>** <<corrected center>> and <<geographic radial>>:* Once you have determined the **<<boundary>>** of the **<<path>>** segment from *Step 5*, treat as for <<Feature – with Obvious Spatial Extent>>, namely, find the **<<corrected center>>** and measure the distance from there to the furthest point on the **<<boundary>>** of the **<<path>>** segment. Use the **<<coordinates>>** of the **<<corrected center>>** of the **<<path>>** segment for the resulting _Latitude_ and _Longitude_ and use the length of the **<<geographic radial>>** of the final **<<path>>** segment as the final _Uncertainty_. No further calculation has to be made.
+*Step 6 – **<<path,Path>>** **<<boundary>>** <<corrected-center>> and <<geographic-radial>>:* Once you have determined the **<<boundary>>** of the **<<path>>** segment from *Step 5*, treat as for <<Feature – with Obvious Spatial Extent>>, namely, find the **<<corrected-center>>** and measure the distance from there to the furthest point on the **<<boundary>>** of the **<<path>>** segment. Use the **<<coordinates>>** of the **<<corrected-center>>** of the **<<path>>** segment for the resulting _Latitude_ and _Longitude_ and use the length of the **<<geographic-radial>>** of the final **<<path>>** segment as the final _Uncertainty_. No further calculation has to be made.
 
 [#img-offset-wide-path]
-.Determination of the input **<<coordinates>>** and **<<geographic radial>>** for a **<<locality>>** of the type _Offset along path_ where the **<<path>>** is wide, in this case a river. *A* **<<boundary,Boundary>>**, **<<corrected center>>** (a₁) and **<<geographic radial>>** (b₁) for the starting **<<feature>>** along one edge of a river. *B*. **<<boundary,Boundary>>**, **<<corrected center>>** (a₂, uncorrected because it already presents one of the viable **<<path,paths>>** down the river) and **<<geographic radial>>** (b₂) for the section of the river at a distance X downstream of the **<<corrected center>>** (a₁) of the starting **<<feature>>**, plus or minus the **<<uncertainty,uncertainties>>** determined for the _Distance along path_ **<<locality type>>** (u).
-image::img/offset-wide-path.png[width=593,align="center"]
+.Determination of the input **<<coordinates>>** and **<<geographic-radial>>** for a **<<locality>>** of the type _Offset along path_ where the **<<path>>** is wide, in this case a river. *A* **<<boundary,Boundary>>**, **<<corrected-center>>** (a₁) and **<<geographic-radial>>** (b₁) for the starting **<<feature>>** along one edge of a river. *B*. **<<boundary,Boundary>>**, **<<corrected-center>>** (a₂, uncorrected because it already presents one of the viable **<<path,paths>>** down the river) and **<<geographic-radial>>** (b₂) for the section of the river at a distance X downstream of the **<<corrected-center>>** (a₁) of the starting **<<feature>>**, plus or minus the **<<uncertainty,uncertainties>>** determined for the _Distance along path_ **<<locality-type>>** (u).
+image::img/web/offset-wide-path.png[width=593,align="center"]
 
 ===== Offset along Multiple Possible Paths
 
@@ -803,21 +805,21 @@ image::img/offset-wide-path.png[width=593,align="center"]
 “5 km up Cox River from the coast, Limmen NP, NT, Australia” (Cox River is a delta with several arms).
 ====
 
-*Locality Type:* As the **<<locality type,locality types>>** of the possible **<<path,paths>>**.
+*Locality Type:* As the **<<locality-type,locality-types>>** of the possible **<<path,paths>>**.
 
-*Step 1 – Determine the starting <<feature>> <<boundary,boundaries>>:* Find the center of the intersection of the reference **<<feature>>** with each **<<path>>** as you would for <<Feature – Junction, Intersection, Crossing, Confluence>> (xref:img-offset-multiple-paths[xrefstyle="short"]A).
+*Step 1 – Determine the starting <<feature>> <<boundary,boundaries>>:* Find the center of the intersection of the reference **<<feature>>** with each **<<path>>** as you would for <<feature-junction-intersection-crossing-confluence,Feature – Junction, Intersection, Crossing, Confluence>> (xref:img-offset-multiple-paths[xrefstyle="short"]A).
 
 *Step 2 – Determine the <<boundary,boundaries>> for distinct **<<path,paths>>**:* For each of the distinct possible **<<path,paths>>**, determine the final **<<boundary,boundaries>>** of the **<<path>>** segment as <<Offset along a Narrow Path>> or <<Offset along a Wide Path>>, as appropriate (xref:img-offset-multiple-paths[xrefstyle="short"]B).
 
-*Step 3 – Determine the final <<coordinates>> and <<geographic radial>>*: Treat the set of **<<boundary,boundaries>>** from Step 2 as parts of the same **<<feature>>**. Find the **<<corrected center>>** and **<<geographic radial>>** for this **<<feature>>** (xref:img-offset-multiple-paths[xrefstyle="short"]B). Use the **<<coordinates>>** of the **<<corrected center>>** of the **<<path>>** segment for the resulting__Input Latitude__ and _Longitude_ and use the length of the **<<geographic radial>>** of the final **<<path>>** segment as the final **<<uncertainty>>**. No further calculation is necessary.
+*Step 3 – Determine the final <<coordinates>> and <<geographic-radial>>*: Treat the set of **<<boundary,boundaries>>** from Step 2 as parts of the same **<<feature>>**. Find the **<<corrected-center>>** and **<<geographic-radial>>** for this **<<feature>>** (xref:img-offset-multiple-paths[xrefstyle="short"]B). Use the **<<coordinates>>** of the **<<corrected-center>>** of the **<<path>>** segment for the resulting__Input Latitude__ and _Longitude_ and use the length of the **<<geographic-radial>>** of the final **<<path>>** segment as the final **<<uncertainty>>**. No further calculation is necessary.
 
 [#img-offset-multiple-paths]
-.Determination of the input **<<coordinates>>** and **<<geographic radial>>** for a _Locality Type Offset along path_ where there are multiple possible **<<path,paths>>** matching the **<<locality>>** description, in this case two roads out of a town. *A*: Inset showing the **<<boundary,boundaries>>**, **<<corrected center,corrected centers>>** (a₁ and a₂), and **<<geographic radial,geographic radials>>** (b₂ and b₂) of the intersections of the **<<path,paths>>** and the starting **<<feature>>**. *B*. **<<boundary,Boundary>>**, **<<corrected center>>** (a₃) and **<<geographic radial>>** (b₃) for the combination of the two road sections, each defined by **<<offset,offsets>>** at a distance X along the respective **<<path,paths>>** from their respective **<<corrected center,corrected centers>>** in the starting **<<feature>>**, plus or minus the **<<uncertainty,uncertainties>>** determined for the _Distance along a Path_ **<<locality type>>** (u).
-image::img/offset-multiple-paths.jpg[width=606,align="center"]
+.Determination of the input **<<coordinates>>** and **<<geographic-radial>>** for a _Locality Type Offset along path_ where there are multiple possible **<<path,paths>>** matching the **<<locality>>** description, in this case two roads out of a town. *A*: Inset showing the **<<boundary,boundaries>>**, **<<corrected-center,corrected-centers>>** (a₁ and a₂), and **<<geographic-radial,geographic-radials>>** (b₂ and b₂) of the intersections of the **<<path,paths>>** and the starting **<<feature>>**. *B*. **<<boundary,Boundary>>**, **<<corrected-center>>** (a₃) and **<<geographic-radial>>** (b₃) for the combination of the two road sections, each defined by **<<offset,offsets>>** at a distance X along the respective **<<path,paths>>** from their respective **<<corrected-center,corrected-centers>>** in the starting **<<feature>>**, plus or minus the **<<uncertainty,uncertainties>>** determined for the _Distance along a Path_ **<<locality-type>>** (u).
+image::img/web/offset-multiple-paths.jpg[width=606,align="center"]
 
 ==== Offset – Distance along Orthogonal Directions
 
-**<<locality,Locality>>** consists of a linear distance in each of two orthogonal **<<direction,directions>>** from a **<<feature>>**. For more information and details see {gbp}#offset-along-orthogonal-directions[Offset along Orthogonal Directions] in *_<<Georeferencing Best Practices>>_*.
+**<<locality,Locality>>** consists of a linear distance in each of two orthogonal **<<direction,directions>>** from a **<<feature>>**. For more information and details see {gbp}#offset-along-orthogonal-directions[Offset along Orthogonal Directions] in *_Georeferencing Best Practices_*.
 
 NOTE: Where <<locality,localities>> have two orthogonal measurements in them, it should always be assumed that the measurements are "by air" unless there is a reference that indicates otherwise.
 
@@ -833,21 +835,21 @@ NOTE: Where <<locality,localities>> have two orthogonal measurements in them, it
 
 *Step 1 – Determine the starting <<feature>> <<boundary,boundaries>>:* Determine the **<<boundary>>** of the **<<feature>>** based on whatever the **<<feature>>** type is, either as for <<Feature – with Obvious Spatial Extent>>, or as for <<Feature – without Obvious Spatial Extent>>.
 
-*Step 2 – Determine the starting <<feature>> <<coordinates>> and <<geographic radial>>:* Once the **<<boundary>>** of the starting **<<feature>>** has been determined, use the same method to determine the **<<corrected center>>** and **<<geographic radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected center>>** to the furthest point on the **<<boundary>>** of the starting **<<feature>>** (xref:img-offset-orthogonal-direction[xrefstyle="short"]).
+*Step 2 – Determine the starting <<feature>> <<coordinates>> and <<geographic-radial>>:* Once the **<<boundary>>** of the starting **<<feature>>** has been determined, use the same method to determine the **<<corrected-center>>** and **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the starting **<<feature>>** (xref:img-offset-orthogonal-direction[xrefstyle="short"]).
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source,_ _Coordinate Format_, _Datum_, _Coordinate Precision_, _North or South Offset Distance, East or West Offset Distance_, _GPS Accuracy_/_Measurement Error_, _Distance Units_, _Distance Precision_ (see <<Georeferencing Concepts>>).
 
 [#img-offset-orthogonal-direction]
-.Example of **<<offset,offsets>>** (ⓧ, and ⓨ) in orthogonal **<<direction,directions>>** (from the **<<corrected center>>** ⓐ of a **<<feature>>** with **<<radial>>** ⓑ. By convention the **<<heading,headings>>** are exactly in the specified directions and contribute no **<<uncertainty>>** due to direction **<<precision>>**.
-image::img/offset-orthogonal-direction.jpg[width=392,align="center"]
+.Example of **<<offset,offsets>>** (ⓧ, and ⓨ) in orthogonal **<<direction,directions>>** (from the **<<corrected-center>>** ⓐ of a **<<feature>>** with **<<radial>>** ⓑ. By convention the **<<heading,headings>>** are exactly in the specified directions and contribute no **<<uncertainty>>** due to direction **<<precision>>**.
+image::img/web/offset-orthogonal-direction.jpg[width=392,align="center"]
 
 ==== Offset – Distance at a Heading
 
-**<<locality,Locality>>** consists of a distance in a given **<<direction>>** from a single **<<feature>>**. Such **<<locality,localities>>** sometimes contain an explicit indicator of how the distance was measured, (_e.g._, "by air", "air miles W of", "due N of", "as the crow flies", "by road", "downstream from", etc.). Without such an indicator the interpretation is a matter of judgment, which should be documented in *_georeferenceRemarks_*.
+**<<locality,Locality>>** consists of a distance in a given **<<direction>>** from a single **<<feature>>**. Such **<<locality,localities>>** sometimes contain an explicit indicator of how the distance was measured, (_e.g._, "by air", "air miles W of", "due N of", "as the crow flies", "by road", "downstream from", etc.). Without such an indicator the interpretation is a matter of judgment, which should be documented in term:[georeferenceRemarks].
 
-NOTE: Since an <<offset>> at a <<heading>> "by air" will usually encompass the alternative by a <<path>> anyway, this is the recommended <<locality type>> to use if there is no indication to the contrary. You can increase the maximum <<uncertainty>> to encompass the other option. This recommendation applies if you don’t have a compelling reason to use <<Offset – Distance along a Path>>).
+NOTE: Since an <<offset>> at a <<heading>> "by air" will usually encompass the alternative by a <<path>> anyway, this is the recommended <<locality-type>> to use if there is no indication to the contrary. You can increase the maximum <<uncertainty>> to encompass the other option. This recommendation applies if you don’t have a compelling reason to use <<Offset – Distance along a Path>>).
 
-NOTE: The addition of an adverbial modifier to the distance part of a locality description (e.g., "about 25 km WNW Campinas"), while an honest observation, should not affect the determination of the **<<geographic coordinates>>** or the overall **<<uncertainty>>**.
+NOTE: The addition of an adverbial modifier to the distance part of a locality description (e.g., "about 25 km WNW Campinas"), while an honest observation, should not affect the determination of the **<<geographic-coordinates>>** or the overall **<<uncertainty>>**.
 
 .{blank}
 [caption=Examples]
@@ -863,7 +865,7 @@ NOTE: The addition of an adverbial modifier to the distance part of a locality d
 
 *Step 1 – Determine the starting <<feature>> <<boundary,boundaries>>:* Determine the **<<boundary>>** of the **<<feature>>** based on whatever the **<<feature>>** type is, either as for <<Feature – with Obvious Spatial Extent>>, or as for <<Feature – without Obvious Spatial Extent>>.
 
-*Step 2 – Determine the starting <<feature>> <<coordinates>> and <<geographic radial>>:* Once the **<<boundary>>** has been determined, obtain the **<<coordinates>>** and the **<<geographic radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
+*Step 2 – Determine the starting <<feature>> <<coordinates>> and <<geographic-radial>>:* Once the **<<boundary>>** has been determined, obtain the **<<coordinates>>** and the **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source,_ _Coordinate Format_, _Datum_, _Coordinate Precision_, _Direction_, _Offset Distance_, _GPS Accuracy_/_Measurement Error_, _Distance Units_, _Distance Precision_ (see <<Georeferencing Concepts>>).
 
@@ -879,31 +881,32 @@ NOTE: The addition of an adverbial modifier to the distance part of a locality d
 
 *Locality Type:* _Distance along path_
 
-Although this is not technically a distance along a **<<path>>**, the choice of this **<<locality type>>** in the *_Calculator_* will allow all of the relevant parameters to be entered.
+Although this is not technically a distance along a **<<path>>**, the choice of this **<<locality-type>>** in the *_Calculator_* will allow all of the relevant parameters to be entered.
 
 *Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* Determine the **<<boundary,boundaries>>** of the area matching the **<<locality>>** description by creating a copy of the **<<path,paths>>**, each **<<offset>>** by the distance and **<<direction>>** given. The overlap of these two copies defines the **<<extent>>** of the place described. Draw the **<<boundary>>** around the overlapping area.
 
-*Step 2 – Determine the <<coordinates>> and <<geographic radial>>:* Once the **<<boundary>>** has been determined, obtain the **<<coordinates>>** and the **<<geographic radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
+*Step 2 – Determine the <<coordinates>> and <<geographic-radial>>:* Once the **<<boundary>>** has been determined, obtain the **<<coordinates>>** and the **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _Radial of Feature_, _Measurement Error_, _Distance Units_, _Distance Precision_ (see <<Georeferencing Concepts>>).
 
+[#s-coordinates]
 === Coordinates
 
 .**Definition**
 [NOTE]
 ====
-The **<<locality>>** consists of a point represented by **<<coordinates>>**, which may be in the form of **<<geographic coordinates>>** (**<<latitude>>** and **<<longitude>>**), **<<UTM,Universal Transverse Mercator (UTM)>>**, Quarter Degree Squares (QDS), metric **<<grid,grids>>**, map sheets, or any number of other Cartesian reference systems
+The **<<locality>>** consists of a point represented by **<<coordinates>>**, which may be in the form of **<<geographic-coordinates>>** (**<<latitude>>** and **<<longitude>>**), **<<UTM,Universal-Transverse-Mercator-(UTM)>>**, Quarter Degree Squares (QDS), metric **<<grid,grids>>**, map sheets, or any number of other Cartesian reference systems
 ====
 
 ==== Coordinates – Geographic Coordinates
 
-The **<<locality>>** consists of a point represented by **<<latitude>>** and <<longitude>> <<coordinates>> **in one of various <<coordinate formats>>:**
+The **<<locality>>** consists of a point represented by **<<latitude>>** and <<longitude>> <<coordinates>> **in one of various <<coordinate-format,coordinate formats>>:**
 
-* **<<DMS,degrees, minutes and seconds>>** (DMS).
+* **<<DMS,degrees minutes and seconds>>** (DMS).
 * degrees and decimal minutes (DDM).
-* **<<decimal degrees>>** (DD).
+* **<<decimal-degrees>>** (DD).
 
-Records should also contain a hemisphere indicator ('E' or 'W' and 'N' or 'S' for DMS and DDM formats; '−' for west or south in DD format). For maritime **<<location,locations>>**, the **<<coordinates>>** must come from a **<<GPS (receiver),GPS receiver>>** or a map. If there is no information that would suggest a particular _Coordinate Source_, use a map of 1:150000 scale, as this is a realistic conservative selection.
+Records should also contain a hemisphere indicator ('E' or 'W' and 'N' or 'S' for DMS and DDM formats; '−' for west or south in DD format). For maritime **<<location,locations>>**, the **<<coordinates>>** must come from a **<<GPS-receiver,GPS receiver>>** or a map. If there is no information that would suggest a particular _Coordinate Source_, use a map of 1:150000 scale, as this is a realistic conservative selection.
 
 .{blank}
 [caption=Examples]
@@ -915,17 +918,17 @@ Records should also contain a hemisphere indicator ('E' or 'W' and 'N' or 'S' fo
 
 *Locality Type:* _Coordinates only_
 
-*Step 1 – Enter the <<coordinates>>:* Enter the **<<coordinates>>** in the format they were captured from the **<<GPS>>** or from the verbatim **<<locality>>** (**<<decimal degrees>>**, degrees decimal minutes, or **<<DMS,degrees, minutes, seconds>>**) with all of the given digits of **<<precision>>**.
+*Step 1 – Enter the <<coordinates>>:* Enter the **<<coordinates>>** in the format they were captured from the **<<GPS>>** or from the verbatim **<<locality>>** (**<<decimal-degrees>>**, degrees decimal minutes, or **<<DMS,degrees minutes seconds>>**) with all of the given digits of **<<precision>>**.
 
-NOTE: The *_Calculator_* calculates and preserves seven digits of <<precision>> in **<<decimal degrees>>** so that any transformation between **coordinate formats** is reversible without introducing rounding errors.
+NOTE: The *_Calculator_* calculates and preserves seven digits of <<precision>> in **<<decimal-degrees>>** so that any transformation between **coordinate formats** is reversible without introducing rounding errors.
 
 *Step 2 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Datum_, _Coordinate Precision_, _GPS Accuracy_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 ==== Coordinates – Universal Transverse Mercator (UTM)
 
-The **<<locality>>** consists of a point represented by **<<coordinates,coordinate>>** information in the form of **<<UTM,Universal Transverse Mercator (UTM)>>** or a related **<<coordinate system>>**. For **<<UTM>>** or equivalent **<<coordinates>>**, a Zone should ALWAYS be included to make sure that the **<<longitude>>** is not ambiguous. Zones are often not reported where a region (_e.g.,_ Tasmania) falls completely within one **<<UTM>>** zone. Be aware that **<<UTM>>** zones are valid only between 84°N and 80°S. For details on dealing with **<<UTM>>** **<<coordinates,Coordinates>>** see {gbp}#universal-transverse-mercator-utm-coordinates[Universal Transverse Mercator (UTM) Coordinates] in *_<<Georeferencing Best Practices>>_*.
+The **<<locality>>** consists of a point represented by **<<coordinates,coordinate>>** information in the form of **<<UTM,Universal Transverse Mercator (UTM)>>** or a related **<<coordinate-system>>**. For **<<UTM>>** or equivalent **<<coordinates>>**, a Zone should ALWAYS be included to make sure that the **<<longitude>>** is not ambiguous. Zones are often not reported where a region (_e.g.,_ Tasmania) falls completely within one **<<UTM>>** zone. Be aware that **<<UTM>>** zones are valid only between 84°N and 80°S. For details on dealing with **<<UTM>>** **<<coordinates,Coordinates>>** see {gbp}#universal-transverse-mercator-utm-coordinates[Universal Transverse Mercator (UTM) Coordinates] in *_Georeferencing Best Practices_*.
 
-NOTE: There are many national and local **<<grids>>** derived from <<UTM>> and work in the same way, such as the Australian Map Grid (AMG).
+NOTE: There are many national and local **<<grid,grids>>** derived from <<UTM>> and work in the same way, such as the Australian Map Grid (AMG).
 
 .{blank}
 [caption=Examples]
@@ -938,13 +941,13 @@ NOTE: There are many national and local **<<grids>>** derived from <<UTM>> and w
 
 *Locality Type:* _Geographic feature only_
 
-Although this is not technically a **<<feature>>**, the _Geographic feature only_ **<<locality type>>** in the *_Calculator_* includes all of the relevant parameters.
+Although this is not technically a **<<feature>>**, the _Geographic feature only_ **<<locality-type>>** in the *_Calculator_* includes all of the relevant parameters.
 
-*Step 1 – Convert the <<coordinates>>:* The **<<UTM>> <<coordinates>>** must be converted to **<<decimal degrees>>** using a **<<UTM>>** to **<<latitude,Latitude>>**/**<<longitude,Longitude>>** conversion tool. If the Zone is not given with the **<<UTM>> <<coordinates>>**, try to determine it using http://www.dmap.co.uk/utmworld.htm[_UTM Grid Zones of the World_] (Morton 2006) and any additional geographic information in the **<<locality>>** or geography fields combined with a **<<UTM>>** zone map. Use all of the digits of **<<precision>>** from the conversion in the __Input Latitude__ and _Longitude_. Choose the *Coordinate Source:* _locality description_
+*Step 1 – Convert the <<coordinates>>:* The **<<UTM>> <<coordinates>>** must be converted to **<<decimal-degrees>>** using a **<<UTM>>** to **<<latitude,Latitude>>**/**<<longitude,Longitude>>** conversion tool. If the Zone is not given with the **<<UTM>> <<coordinates>>**, try to determine it using http://www.dmap.co.uk/utmworld.htm[_UTM Grid Zones of the World_] (Morton 2006) and any additional geographic information in the **<<locality>>** or geography fields combined with a **<<UTM>>** zone map. Use all of the digits of **<<precision>>** from the conversion in the __Input Latitude__ and _Longitude_. Choose the *Coordinate Source:* _locality description_
 
-NOTE: <<UTM>> <<coordinates>> are sometimes truncated to fewer than 7 digits in the <<northing>> and 6 digits in the <<easting>>, signifying a less <<precision,precise>> <<location>>. To make a <<coordinates,coordinate>> conversion, add zeros to the right of each **<<coordinate>>** to make 7 digits overall in the <<northing>> and 6 digits in the <<easting>>.
+NOTE: <<UTM>> <<coordinates>> are sometimes truncated to fewer than 7 digits in the <<northing>> and 6 digits in the <<easting>>, signifying a less <<precision,precise>> <<location>>. To make a <<coordinates,coordinate>> conversion, add zeros to the right of each **<<coordinates,coordinate>>** to make 7 digits overall in the <<northing>> and 6 digits in the <<easting>>.
 
-*Step 2 – Determine <<geographic radial>>:* If the <<UTM>> **<<coordinates>>** have 7 digits in the **<<northing>>** and 6 digits in the **<<easting>>**, the **<<geographic radial>>** is 0.707 m (because the **<<coordinates>>** distinguish to the nearest meter and the **<<geographic radial>>** is half the diagonal of the 1 m by 1 m **<<grid>>** cell). For **<<UTM>>** **<<coordinates>>** with fewer digits of **<<precision>>** see xref:table-default-geographic-radial[xrefstyle="short"]. This **<<radial>>** covers the **<<uncertainty>>** from the **<<UTM>> <<coordinate precision>>**. The _Coordinate Precision_ in the *_Calculator_* for this case is the **<<coordinate precision>>** of the _Input Latitude_ and _Longitude_, which depends on how many digits of **<<decimal degrees>>** are copied from the converted **<<latitude>>** and **<<longitude>>** (xref:table-default-geographic-radial[xrefstyle="short"]).
+*Step 2 – Determine <<geographic-radial>>:* If the <<UTM>> **<<coordinates>>** have 7 digits in the **<<northing>>** and 6 digits in the **<<easting>>**, the **<<geographic-radial>>** is 0.707 m (because the **<<coordinates>>** distinguish to the nearest meter and the **<<geographic-radial>>** is half the diagonal of the 1 m by 1 m **<<grid>>** cell). For **<<UTM>>** **<<coordinates>>** with fewer digits of **<<precision>>** see xref:table-default-geographic-radial[xrefstyle="short"]. This **<<radial>>** covers the **<<uncertainty>>** from the **<<UTM>> <<coordinate-precision>>**. The _Coordinate Precision_ in the *_Calculator_* for this case is the **<<coordinate-precision>>** of the _Input Latitude_ and _Longitude_, which depends on how many digits of **<<decimal-degrees>>** are copied from the converted **<<latitude>>** and **<<longitude>>** (xref:table-default-geographic-radial[xrefstyle="short"]).
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* Coordinate Format, Datum, Coordinate Precision, GPS Accuracy/Measurement Error, and Distance Units (see <<Georeferencing Concepts>>).
 
@@ -962,11 +965,11 @@ NOTE: <<UTM>> <<coordinates>> are sometimes truncated to fewer than 7 digits in 
 
 *Locality Type:* _Geographic feature only_
 
-*Step 1 – Determine the <<coordinates>>:* Determine as for <<Feature – with Obvious Spatial Extent>>. Use the **<<coordinates>>** for the **<<corrected center>>** of the named **<<grid>>** cell.
+*Step 1 – Determine the <<coordinates>>:* Determine as for <<Feature – with Obvious Spatial Extent>>. Use the **<<coordinates>>** for the **<<corrected-center>>** of the named **<<grid>>** cell.
 
-NOTE: Usually the <<grid>> is made up of <<bounding box,bounding boxes>>, so determining the <<corrected center>> should be easy.
+NOTE: Usually the <<grid>> is made up of <<bounding-box,bounding boxes>>, so determining the <<corrected-center>> should be easy.
 
-*Step 2 – Determine the <<geographic radial>>:* As for <<Feature – with Obvious Spatial Extent>>. See xref:table-default-geographic-radial[xrefstyle="short"] for **<<radial,radials>>** of regularly shaped Townships, Sections, and subsections.
+*Step 2 – Determine the <<geographic-radial>>:* As for <<Feature – with Obvious Spatial Extent>>. See xref:table-default-geographic-radial[xrefstyle="short"] for **<<radial,radials>>** of regularly shaped Townships, Sections, and subsections.
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _Measurement Error_, and _Distance Units_ (see <<Georeferencing Concepts>>).
 
@@ -988,9 +991,9 @@ The most important type of vagueness in a **<<locality>>** description is one in
 "Bakersfield?"
 ====
 
-*<<georeference,Georeferencing>> procedure:* If some part of the **<<locality>>** description is in question, but aside from that there is **<<location>>** information that is not in question, use the unquestioned part of the **<<locality>>** to determine the **<<locality type>>** and **<<georeference>>** it normally following the appropriate method. Document in *_georeferenceRemarks_* what had to be disregarded in order to **<<georeference>>** the **<<locality>>** in question.
+*<<georeference,Georeferencing>> procedure:* If some part of the **<<locality>>** description is in question, but aside from that there is **<<location>>** information that is not in question, use the unquestioned part of the **<<locality>>** to determine the **<<locality-type>>** and **<<georeference>>** it normally following the appropriate method. Document in term:[georeferenceRemarks] what had to be disregarded in order to **<<georeference>>** the **<<locality>>** in question.
 
-If the entire **<<locality>>** is in question, do not **<<georeference>>** it and document in *_georeferenceRemarks_* the reason for not **<<georeference,georeferencing>>** (_e.g.,_ "_locality in question_").
+If the entire **<<locality>>** is in question, do not **<<georeference>>** it and document in term:[georeferenceRemarks] the reason for not **<<georeference,georeferencing>>** (_e.g.,_ "_locality in question_").
 
 ==== Cannot Be Located
 
@@ -998,7 +1001,7 @@ The cited **<<locality>>** cannot be found. This may be for any number of reason
 
 * There is no **<<locality>>** information cited.
 * The **<<location>>** fields contain other than **<<location>>** information.
-* The <<feature,*feature(s)>>* cannot be found with available references.
+* The **<<feature,feature(s)>>** cannot be found with available references.
 
 .{blank}
 [caption=Examples]
@@ -1009,7 +1012,7 @@ The cited **<<locality>>** cannot be found. This may be for any number of reason
 "El Dorado"
 ====
 
-Do not **<<georeference>>** these **<<locality,localities>>**. These recommendations apply to all **<<locality types>>**. Document in *_georeferenceRemarks_* the reason for not **<<georeference,georeferencing>>**, _e.g.,_ "_locality cannot be found with available references_". Fill in the *_georeferenceSources_* so that others do not waste time using the same resources to track down the **<<locality>>**.
+Do not **<<georeference>>** these **<<locality,localities>>**. These recommendations apply to all **<<locality-type,locality types>>**. Document in term:[georeferenceRemarks] the reason for not **<<georeference,georeferencing>>**, _e.g.,_ "_locality cannot be found with available references_". Fill in the term:[georeferenceSources] so that others do not waste time using the same resources to track down the **<<locality>>**.
 
 ==== More than One Matching Feature
 
@@ -1027,11 +1030,11 @@ At times the **<<locality>>** cannot be distinguished from among multiple possib
 
 *Locality Type:* _Geographic feature only_
 
-If there are multiple distinct nearby places with the same name and no further information to distinguish between the possibilities, such as "Battle Mountain" and the nearby town with the same name, treat the combination of them as the **<<feature>>** (xref:img-nearby-features[xrefstyle="short"]) and follow the procedure for the appropriate **<<locality type>>**. Make note of the multiple possibilities and the procedure used in *_georeferenceRemarks_*.
+If there are multiple distinct nearby places with the same name and no further information to distinguish between the possibilities, such as "Battle Mountain" and the nearby town with the same name, treat the combination of them as the **<<feature>>** (xref:img-nearby-features[xrefstyle="short"]) and follow the procedure for the appropriate **<<locality-type>>**. Make note of the multiple possibilities and the procedure used in term:[georeferenceRemarks].
 
 [#img-nearby-features]
-.The **<<boundary,boundaries>>** for two distinct nearby **<<feature,features>>** with the same name, with *center* ⓒ, **<<corrected center>>** ⓐ, and **<<geographic radial>>** ⓑ covering both possible interpretations of the **<<locality>>**.
-image::img/nearby-features.png[width=341,align="center"]
+.The **<<boundary,boundaries>>** for two distinct nearby **<<feature,features>>** with the same name, with *center* ⓒ, **<<corrected-center>>** ⓐ, and **<<geographic-radial>>** ⓑ covering both possible interpretations of the **<<locality>>**.
+image::img/web/nearby-features.png[width=341,align="center"]
 
 ===== Multiple Unrelated Features
 
@@ -1042,13 +1045,13 @@ image::img/nearby-features.png[width=341,align="center"]
 "Washington Street" (could refer to multiple streets in different states)
 ====
 
-Do not **<<georeference>>**. Document in *_georeferenceRemarks_* the reason for not **<<georeference,georeferencing>>**, _e.g.,_ "_there are multiple possible unrelated features matching the one in the locality description_".
+Do not **<<georeference>>**. Document in term:[georeferenceRemarks] the reason for not **<<georeference,georeferencing>>**, _e.g.,_ "_there are multiple possible unrelated features matching the one in the locality description_".
 
 ==== Demonstrably Inconsistent
 
-The **<<locality>>** description contains irreconcilable inconsistencies – assertions that can not all be simultaneously true. Do not **<<georeference>>** these. Document in *_georeferenceRemarks_* the reason for not **<<georeference,georeferencing>>**, _e.g.,_ "_locality contains irreconcilable inconsistencies_".
+The **<<locality>>** description contains irreconcilable inconsistencies – assertions that can not all be simultaneously true. Do not **<<georeference>>** these. Document in term:[georeferenceRemarks] the reason for not **<<georeference,georeferencing>>**, _e.g.,_ "_locality contains irreconcilable inconsistencies_".
 
-A common source of inconsistency occurs when the **<<locality>>** description does not match the geopolitical subdivision of which it is supposed to be a part (_e.g._, "_Missoula County, Idaho_". **<<elevation,Elevation>>** is another possible source of inconsistency, especially since **<<elevation>>** data are notoriously inaccurate (see {gbp}#elements-elevation[Elevation] in *_Georeferencing Best Practices_*. It is difficult to know which part of the **<<locality>>** is the one in **<<error>>** and a risk to judge that one part of the description should take precedence over another. Rather than determine **<<coordinates>>** for such **<<locality,localities>>**, annotate the **<<locality>>** in *_georeferenceRemarks_* with the nature of the inconsistency (_e.g_., "_Missoula County not in Idaho_") and refer the **<<locality>>** to the source institution for reconciliation.
+A common source of inconsistency occurs when the **<<locality>>** description does not match the geopolitical subdivision of which it is supposed to be a part (_e.g._, "_Missoula County, Idaho_"). **<<elevation,Elevation>>** is another possible source of inconsistency, especially since **<<elevation>>** data are notoriously inaccurate (see {gbp}#elements-elevation[Elevation] in *_Georeferencing Best Practices_*. It is difficult to know which part of the **<<locality>>** is the one in **<<error>>** and a risk to judge that one part of the description should take precedence over another. Rather than determine **<<coordinates>>** for such **<<locality,localities>>**, annotate the **<<locality>>** in term:[georeferenceRemarks] with the nature of the inconsistency (_e.g_., "_Missoula County not in Idaho_") and refer the **<<locality>>** to the source institution for reconciliation.
 
 .{blank}
 [caption=Examples]
@@ -1071,9 +1074,11 @@ The **<<locality>>** refers to a captive animal, a cultivated plant or from some
 "San Diego Wild Animal Park"
 ====
 
-**<<georeference,Georeference>>** the **<<locality>>** normally based on the **<<locality type>>** and**<<feature>>**. Retain the **<<location>>** (_e.g._, zoo) along with its **<<georeference>>**, as for other **<<locality,localities>>** in this *_Guide_*, but be sure to record the nature of its provenance (cultivated, captive, washed ashore, etc.) in *_georeferenceRemarks_* or the **<<Darwin Core>>** term *_establishmentMeans_*.
+**<<georeference,Georeference>>** the **<<locality>>** normally based on the **<<locality-type>>** and**<<feature>>**. Retain the **<<location>>** (_e.g._, zoo) along with its **<<georeference>>**, as for other **<<locality,localities>>** in this *_Guide_*, but be sure to record the nature of its provenance (cultivated, captive, washed ashore, etc.) in term:[georeferenceRemarks] or the **<<Darwin-Core>>** term term:[establishmentMeans].
 
 :!sectnums:
+
+include::glossary.en.adoc[]
 
 [bibliography]
 == References
@@ -1111,9 +1116,9 @@ endif::backend-pdf[]
 
 == Key to Locality Types
 
-**<<corrected center,Corrected center>>**:: the center of the **<<smallest enclosing circle>>** of a **<<feature>>** while having its center in or on the **<<boundary>>** of that **<<feature>>**.
+**<<corrected-center,Corrected-center>>**:: the center of the **<<smallest-enclosing-circle>>** of a **<<feature>>** while having its center in or on the **<<boundary>>** of that **<<feature>>**.
 
-**<<geographical radial,Geographic radial>>**:: distance from the **<<corrected center>>** to the furthest point on the **<<boundary>>**  of the **<<feature>>**.
+**<<geographic-radial,Geographic-radial>>**:: distance from the **<<corrected-center>>** to the furthest point on the **<<boundary>>**  of the **<<feature>>**.
 
 === Features
 
@@ -1128,35 +1133,35 @@ h|Calculation Steps
 |The **<<locality>>** description consists only of a **<<feature>>**, which is often listed in a standard **<<gazetteer>>** and can probably be located on a map. Remember: **<<feature,features>>** are not points; they have a spatial **<<extent>>**.
 
 a|
-<<Feature – with Obvious SpatialExtent,§2.1.1 With Obvious Extent>>
+<<Feature – with Obvious Spatial Extent,§2.1.1 With Obvious Extent>>
 
-image::img/key-obvious-extent.jpg[width=109,align="center"]
+image::img/web/key-obvious-extent.jpg[width=109,align="center"]
 
 a|
 Step 1: Determine **<<feature>>** **<<boundary,boundaries>>**.
 
-Step 2: Determine the **<<coordinates>>** of the **<<corrected center>>** of the **<<feature>>** for _Input Latitude_ and _Longitude_.
+Step 2: Determine the **<<coordinates>>** of the **<<corrected-center>>** of the **<<feature>>** for _Input Latitude_ and _Longitude_.
 
-Step 3: Measure the **<<geographic radial>>**.
+Step 3: Measure the **<<geographic-radial>>**.
 
 a|
-<<Feature-without Obvious Spatial Extent,§2.1.2 Without Obvious Extent>>
+<<Feature – without Obvious Spatial Extent,§2.1.2 Without Obvious Extent>>
 
-image::img/key-without-obvious-extent.jpg[width=108,align="center"]
+image::img/web/key-without-obvious-extent.jpg[width=108,align="center"]
 
 a|
 Step 1: Estimate **<<feature>>** **<<boundary,boundaries>>** using known information from the map, record, or other documentation.
 
-Step 2: Determine the **<<coordinates>>** of the **<<corrected center>>** of the estimated **<<feature>>** **<<boundary,boundaries>>** as the _Input Latitude_ and _Longitude_.
+Step 2: Determine the **<<coordinates>>** of the **<<corrected-center>>** of the estimated **<<feature>>** **<<boundary,boundaries>>** as the _Input Latitude_ and _Longitude_.
 
-Step 3: Measure the **<<geographic radial>>**.
+Step 3: Measure the **<<geographic-radial>>**.
 
 |<<Feature – Special Cases,§2.1.3 Special Cases>>
 
 a|
 _Special Cases_ all follow the same process as **<<feature,features>>** with or without an obvious spatial **<<extent>>**, but may have some special considerations. For details see:
 
-<<Feature – Street Address,Street Address (§2.1.3.1)>>; <<Feature – Property,Property (§2.1.3.2)>>; <<Feature – Path,Path (§2.1.3.3)>>; <<Feature – Junction, Intersection, Crossing, Confluence,Junction, Intersection, Crossing, Confluence (§2.1.3.4)>>; <<Feature – Cave,Cave (§2.1.3.5)>>; <<Feature – Dive Location,Dive Location (§2.1.3.6)>>; <<Feature – Headwaters of a Waterway,Headwaters of a Waterway (§2.1.3.7)>>; <<Feature – near a Feature,near a Feature (§2.1.3.8)>>; <<Feature – between Two Features,between Two Features (§2.1.3.9)>>; <<Feature – between Two Paths,between Two Paths (§2.1.3.10)>>.
+<<Feature – Street Address,Street Address (§2.1.3.1)>>; <<Feature – Property,Property (§2.1.3.2)>>; <<Feature – Path,Path (§2.1.3.3)>>; <<feature-junction-intersection-crossing-confluence,Junction, Intersection, Crossing, Confluence (§2.1.3.4)>>; <<Feature – Cave,Cave (§2.1.3.5)>>; <<Feature – Dive Location,Dive Location (§2.1.3.6)>>; <<Feature – Headwaters of a Waterway,Headwaters of a Waterway (§2.1.3.7)>>; <<Feature – near a Feature,near a Feature (§2.1.3.8)>>; <<Feature – between Two Features,between Two Features (§2.1.3.9)>>; <<Feature – between Two Paths,between Two Paths (§2.1.3.10)>>.
 |===
 
 === Offsets
@@ -1174,15 +1179,15 @@ h|Calculation Steps
 a|
 Step 1: Determine the **<<feature>>** **<<boundary,boundaries>>** using the method for <<Geographic Feature only,Geographic Feature only (§2.1)>> except that the distance to use for the buffer is the distance given in the **<<locality>>** description, and there is no need to account for the proximity of other **<<feature,features>>**.
 
-Step 2: Determine **<<coordinates>>** and **<<geographic radial>>**. _Offset Distance_ = 0. _Distance Precision_ = **<<precision>>** with which a distance was described in the **<<locality>>**.
+Step 2: Determine **<<coordinates>>** and **<<geographic-radial>>**. _Offset Distance_ = 0. _Distance Precision_ = **<<precision>>** with which a distance was described in the **<<locality>>**.
 
 a|
-<<Offest – Heading only,§2.2.2 Heading only>>
+<<Offset – Heading only,§2.2.2 Heading only>>
 
-image::img/key-heading-only.jpg[width=115,align="center"]
+image::img/web/key-heading-only.jpg[width=115,align="center"]
 
 a|
-Step 1: Determine **<<feature>>** **<<boundary,boundaries>>** using method for <<Feature – with an Obvious Spatial Extent,Feature – with an Obvious Spatial Extent (§2.1.1)>>. Account for the **<<offset>>** at a **<<heading>>** using information in the **<<locality>>** record, or until reaching the proximity of another similar **<<feature>>**, whichever is nearer the original **<<feature>>**. Call this the "extended **<<feature>>**".
+Step 1: Determine **<<feature>>** **<<boundary,boundaries>>** using method for <<Feature – with Obvious Spatial Extent,Feature – with Obvious Spatial Extent (§2.1.1)>>. Account for the **<<offset>>** at a **<<heading>>** using information in the **<<locality>>** record, or until reaching the proximity of another similar **<<feature>>**, whichever is nearer the original **<<feature>>**. Call this the "extended **<<feature>>**".
 
 Step 2: Determine and use the **<<coordinates>>** and **<<radial>>** of the extended **<<feature>>**.
 
@@ -1194,27 +1199,28 @@ a|
 a|
 <<Offset – Distance along Orthogonal Directions,§2.2.4 Distance along Orthogonal Directions>>
 
-image::img/key-distance-orthogonal-direction.jpg[width=119,align="center"]
+image::img/web/key-distance-orthogonal-direction.jpg[width=119,align="center"]
 
 a|
 Step 1: Determine the **<<boundary>>** of the **<<feature>>** based on **<<feature>>** *type*.
 
-Step 2: Determine and use the **<<coordinates>>** of the **<<corrected center>>** of the estimated **<<feature>>** **<<boundary,boundaries>>** as the _Input Latitude_ and _Longitude_.
+Step 2: Determine and use the **<<coordinates>>** of the **<<corrected-center>>** of the estimated **<<feature>>** **<<boundary,boundaries>>** as the _Input Latitude_ and _Longitude_.
 
 |<<Offset – Distance at a Heading,§2.2.5 Distance at a Heading>>
 a|
 Step 1: Determine the starting **<<feature>>**.
 
-Step 2: Determine and use the starting **<<feature>> <<coordinates>>** and the **<<geographic radial>>**.
+Step 2: Determine and use the starting **<<feature>> <<coordinates>>** and the **<<geographic-radial>>**.
 
-|<<Offset – Distances from Two Distinct Paths,§§2.2.6 Distances from Two Distinct Paths>> a|
+|<<Offset – Distances from Two Distinct Paths,§2.2.6 Distances from Two Distinct Paths>> a|
 When the **<<locality>>** consists of orthogonal **<<offset>>** distances, one from each of two distinct **<<path,paths>>**.
 
 Step 1: Determine the starting **<<feature>>**.
 
-Step 2: Determine and use the starting **<<feature>> <<coordinates>>** and the **<<geographic radial>>**.
+Step 2: Determine and use the starting **<<feature>> <<coordinates>>** and the **<<geographic-radial>>**.
 |===
 
+[#s-offsets-coordinates]
 === Coordinates
 
 [#table-key-coordinates]
@@ -1224,26 +1230,26 @@ h|Locality Type
 h|Calculation Steps
 
 |<<Coordinates,§2.3 Coordinates>>
-|The **<<locality>>** consists of a point represented by **<<latitude>>** and **<<longitude>>** in one of various **<<coordinate format,coordinate formats>>**.
+|The **<<locality>>** consists of a point represented by **<<latitude>>** and **<<longitude>>** in one of various **<<coordinate-format,coordinate-formats>>**.
 
 |<<Coordinates – Geographic Coordinates,§2.3.1 Geographic Coordinates>>
 |Step 1: Enter the **<<coordinates>>** in the format they were captured from the **<<GPS>>** or from the verbatim **<<locality>>**.
 
 |<<Coordinates – Universal Transverse Mercator (UTM),§2.3.2 Universal Transverse Mercator (UTM)>>
 a|
-Although this is not technically a **<<feature>>**, the <<Geographic Feature only,Geographic Feature only (§2.1)>> **<<locality type>>** in the *_Calculator_* includes all of the relevant parameters.
+Although this is not technically a **<<feature>>**, the <<Geographic Feature only,Geographic Feature only (§2.1)>> **<<locality-type>>** in the *_Calculator_* includes all of the relevant parameters.
 
-Step 1: The **<<UTM>> <<coordinates>>** must be converted to **<<decimal degrees>>** using a **<<UTM>>** to **<<latitude,Latitude>>**/**<<longitude,Longitude>>** conversion tool. The **<<UTM>>** Zone is required to do this.
+Step 1: The **<<UTM>> <<coordinates>>** must be converted to **<<decimal-degrees>>** using a **<<UTM>>** to **<<latitude,Latitude>>**/**<<longitude,Longitude>>** conversion tool. The **<<UTM>>** Zone is required to do this.
 
 // TODO extra section link here
 
-Step 2: *Determine <<radial>>:* If the **<<UTM>> <<coordinates>>** have 7 digits in the **<<northing>>** and 6 digits in the **<<easting>>**, the **<<geographic radial>>** is 0.707 m. For **<<UTM>> <<coordinates>>** with fewer digits of **<<precision>>** see xref:table-default-geographic-radial[xrefstyle="short"] (§2.1.2).
+Step 2: *Determine <<radial>>:* If the **<<UTM>> <<coordinates>>** have 7 digits in the **<<northing>>** and 6 digits in the **<<easting>>**, the **<<geographic-radial>>** is 0.707 m. For **<<UTM>> <<coordinates>>** with fewer digits of **<<precision>>** see xref:table-default-geographic-radial[xrefstyle="short"] (§2.1.2).
 
-|<<Coordinates -Grid Systems,§2.3.3 Grid Systems>>
+|<<Coordinates – Grid Systems,§2.3.3 Grid Systems>>
 a|
-Step 1: Determine the **<<coordinates>>** as for a <<Feature – with an Obvious Spatial Extent,Feature – with an Obvious Spatial Extent (§2.1.1)>>. Use the **<<coordinates>>** for the **<<corrected center>>** of the named **<<grid>>** cell.
+Step 1: Determine the **<<coordinates>>** as for a <<Feature – with Obvious Spatial Extent,Feature – with Obvious Spatial Extent (§2.1.1)>>. Use the **<<coordinates>>** for the **<<corrected-center>>** of the named **<<grid>>** cell.
 
-Step 2: Measure the **<<geographic radial>>**.
+Step 2: Measure the **<<geographic-radial>>**.
 
 |===
 
@@ -1260,11 +1266,11 @@ h|Calculation Steps
 
 |<<Dubious Locations,§2.4.1 Dubious Locations>>
 a|
-If some part of the **<<locality>>** description is in question, but there is **<<locality>>** information that is not in question, use the unquestioned part of the **<<locality>>** to determine the **<<locality type>>** and **<<georeference>>** following the appropriate method.
+If some part of the **<<locality>>** description is in question, but there is **<<locality>>** information that is not in question, use the unquestioned part of the **<<locality>>** to determine the **<<locality-type>>** and **<<georeference>>** following the appropriate method.
 
-If the entire **<<locality>>** is in question, do not **<<georeference>>** and document in *_georeferenceRemarks_* the reason for not **<<georeference,georeferencing>>** (_e.g._, "_locality in question_").
+If the entire **<<locality>>** is in question, do not **<<georeference>>** and document in term:[georeferenceRemarks] the reason for not **<<georeference,georeferencing>>** (_e.g._, "_locality in question_").
 
-|<<Cannot be Located,§2.4.2 Cannot be Located>>
+|<<Cannot Be Located,§2.4.2 Cannot Be Located>>
 a|
 The cited **<<locality>>** cannot be found. Reasons may include:
 
@@ -1274,20 +1280,20 @@ b. The **<<location>>** fields contain other than *location* information;
 
 c. The **<<feature>>**(s) cannot be found with available references.
 
-Do not **<<georeference>>** these **<<locality,localities>>**. Document in *_georeferenceRemarks_*.
+Do not **<<georeference>>** these **<<locality,localities>>**. Document in term:[georeferenceRemarks].
 
 |<<More than One Matching Feature,§2.4.3 More than One Matching Feature>>
 a|
-Multiple related **<<feature,features>>**: If there are multiple distinct nearby places with the same name and no further information to distinguish between the possibilities, treat the combination of them as the **<<feature>>** and follow the procedure for the appropriate **<<locality type>>**. Document in *_georeferenceRemarks_*.
+Multiple related **<<feature,features>>**: If there are multiple distinct nearby places with the same name and no further information to distinguish between the possibilities, treat the combination of them as the **<<feature>>** and follow the procedure for the appropriate **<<locality-type>>**. Document in term:[georeferenceRemarks].
 
-Multiple unrelated **<<feature,features>>**: Do not **<<georeference>>**. Document in *_georeferenceRemarks_*.
+Multiple unrelated **<<feature,features>>**: Do not **<<georeference>>**. Document in term:[georeferenceRemarks].
 
 |<<Demonstrably Inconsistent,§2.4.4 Demonstrably Inconsistent>>
-|The **<<locality>>** description contains irreconcilable inconsistencies – assertions that can not all be simultaneously true. Do not **<<georeference>>**. Document in *_georeferenceRemarks_*.
+|The **<<locality>>** description contains irreconcilable inconsistencies – assertions that can not all be simultaneously true. Do not **<<georeference>>**. Document in term:[georeferenceRemarks].
 
-|<<Cutivated or Captive,§2.4.5 Cultivated or Captive>>
+|<<Cultivated or Captive,§2.4.5 Cultivated or Captive>>
 a|
 Refers to a captive animal, a cultivated plant or _event_ from some other non-natural occurrence. The **<<locality>>** cited is often that of a zoo, aquarium, or botanical garden.
 
-*<<georeference,Georeference>>* the **<<locality>>** normally based on the **<<locality type>>** and **<<feature>>**. Document in *_georeferenceRemarks_*.
+*<<georeference,Georeference>>* the **<<locality>>** normally based on the **<<locality-type>>** and **<<feature>>**. Document in term:[georeferenceRemarks].
 |===
