@@ -1,0 +1,102 @@
+=== Difficult Localities
+
+At times, **<<locality>>** descriptions are fraught with vagueness. This may be due to any number of reasons, but in particular relates to historic collections in areas that at the time may have had no named **<<feature,features>>** to reference. See the section {gbp}#difficult-localities[Difficult Localities] in *_Georeferencing Best Practices_*.
+
+A cause of vagueness may be incorrect data entry and it is recommended that checking the original catalogs, ledgers, field notes, specimen labels, etc. be the first step in removing the vagaries of a **<<locality>>** so that it can be **<<georeference,georeferenced>>** with confidence.
+
+==== Dubious Locations
+
+The most important type of vagueness in a **<<locality>>** description is one in which some or all of the **<<locality>>** is explicitly in question.
+
+.{blank}
+[caption=Examples]
+====
+"possibly Isla Boca Brava" +
+"presumably central Chile" +
+"Bakersfield?"
+====
+
+*<<georeference,Georeferencing>> procedure:* If some part of the **<<locality>>** description is in question, but aside from that there is **<<location>>** information that is not in question, use the unquestioned part of the **<<locality>>** to determine the **<<locality-type>>** and **<<georeference>>** it normally following the appropriate method. Document in term:[georeferenceRemarks] what had to be disregarded in order to **<<georeference>>** the **<<locality>>** in question.
+
+If the entire **<<locality>>** is in question, do not **<<georeference>>** it and document in term:[georeferenceRemarks] the reason for not **<<georeference,georeferencing>>** (_e.g.,_ "_locality in question_").
+
+==== Cannot Be Located
+
+The cited **<<locality>>** cannot be found. This may be for any number of reasons, including:
+
+* There is no **<<locality>>** information cited.
+* The **<<location>>** fields contain other than **<<location>>** information.
+* The **<<feature,feature(s)>>** cannot be found with available references.
+
+.{blank}
+[caption=Examples]
+====
+"locality not recorded" +
+"Bob Jones" +
+"summit" +
+"El Dorado"
+====
+
+Do not **<<georeference>>** these **<<locality,localities>>**. These recommendations apply to all **<<locality-type,locality types>>**. Document in term:[georeferenceRemarks] the reason for not **<<georeference,georeferencing>>**, _e.g.,_ "_locality cannot be found with available references_". Fill in the term:[georeferenceSources] so that others do not waste time using the same resources to track down the **<<locality>>**.
+
+==== More than One Matching Feature
+
+At times the **<<locality>>** cannot be distinguished from among multiple possible candidates because the geographical **<<feature>>** in the **<<locality>>** description has multiple matches.
+
+===== Multiple Related Nearby Features
+
+.{blank}
+[caption=Examples]
+====
+"Nahuel Huapi" (could refer to a national park or a lake within it) +
+"Battle Mountain" (could refer to a mountain or a nearby town) +
+"San Isidro"
+====
+
+*Locality Type:* _Geographic feature only_
+
+If there are multiple distinct nearby places with the same name and no further information to distinguish between the possibilities, such as "Battle Mountain" and the nearby town with the same name, treat the combination of them as the **<<feature>>** (xref:img-nearby-features[xrefstyle="short"]) and follow the procedure for the appropriate **<<locality-type>>**. Make note of the multiple possibilities and the procedure used in term:[georeferenceRemarks].
+
+[#img-nearby-features]
+.The **<<boundary,boundaries>>** for two distinct nearby **<<feature,features>>** with the same name, with *center* ⓒ, **<<corrected-center>>** ⓐ, and **<<geographic-radial>>** ⓑ covering both possible interpretations of the **<<locality>>**.
+image::img/web/nearby-features.png[width=341,align="center"]
+
+===== Multiple Unrelated Features
+
+.{blank}
+[caption=Examples]
+====
+"Laguna Blanca" (could refer to distinct lagoons or municipalities in at least five different countries) +
+"Washington Street" (could refer to multiple streets in different states)
+====
+
+Do not **<<georeference>>**. Document in term:[georeferenceRemarks] the reason for not **<<georeference,georeferencing>>**, _e.g.,_ "_there are multiple possible unrelated features matching the one in the locality description_".
+
+==== Demonstrably Inconsistent
+
+The **<<locality>>** description contains irreconcilable inconsistencies – assertions that can not all be simultaneously true. Do not **<<georeference>>** these. Document in term:[georeferenceRemarks] the reason for not **<<georeference,georeferencing>>**, _e.g.,_ "_locality contains irreconcilable inconsistencies_".
+
+A common source of inconsistency occurs when the **<<locality>>** description does not match the geopolitical subdivision of which it is supposed to be a part (_e.g._, "_Missoula County, Idaho_"). **<<elevation,Elevation>>** is another possible source of inconsistency, especially since **<<elevation>>** data are notoriously inaccurate (see {gbp}#elements-elevation[Elevation] in *_Georeferencing Best Practices_*. It is difficult to know which part of the **<<locality>>** is the one in **<<error>>** and a risk to judge that one part of the description should take precedence over another. Rather than determine **<<coordinates>>** for such **<<locality,localities>>**, annotate the **<<locality>>** in term:[georeferenceRemarks] with the nature of the inconsistency (_e.g_., "_Missoula County not in Idaho_") and refer the **<<locality>>** to the source institution for reconciliation.
+
+.{blank}
+[caption=Examples]
+====
+"Sonoma County side of the Gualala River, Mendocino County" +
+"10 mi W of Bakersfield, 6000 ft" (There is no place anywhere near 10 mi W of Bakersfield at an elevation of 6000 ft) +
+"5 mi N of Delano, Kern Co." (5 mi N would put the locality in Tulare Co.)
+====
+
+==== Cultivated or Captive
+
+The **<<locality>>** refers to a captive animal, a cultivated plant or from some other non-natural occurrence. The **<<locality>>** cited is often that of a zoo, aquarium, botanical garden, etc. (see {gbp}#dealing-with-non-natural-occurrences[Dealing with Non-natural Occurrences] in *_Georeferencing Best Practices_*).
+
+.{blank}
+[caption=Examples]
+====
+"lab born" +
+"bait shop" +
+"Cultivated in Botanic Gardens from seed obtained from Bourke, NSW." +
+"San Diego Wild Animal Park"
+====
+
+**<<georeference,Georeference>>** the **<<locality>>** normally based on the **<<locality-type>>** and**<<feature>>**. Retain the **<<location>>** (_e.g._, zoo) along with its **<<georeference>>**, as for other **<<locality,localities>>** in this *_Guide_*, but be sure to record the nature of its provenance (cultivated, captive, washed ashore, etc.) in term:[georeferenceRemarks] or the **<<Darwin-Core>>** term term:[establishmentMeans].
