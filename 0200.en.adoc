@@ -73,7 +73,7 @@ image::img/web/without-obvious-spatial-extent-default-size.png[width=227,align="
 // NB was Table 2 in the source document, but there is no Table 1.
 
 [#table-default-geographic-radial]
-.List of **<<feature>>** types and the default **<<geographic-radial>>** to use. If the **<<feature>>** type you are looking for isn't on the list, use one that is most like the **<<feature>>** type you seek and be sure to document your choice in term:[georeferenceRemarks].
+.List of **<<feature>>** types and the default **<<geographic-radial>>** to use. If the **<<feature>>** type you are looking for isn't on the list, use one that is most like the **<<feature>>** type you seek and be sure to document your choice in term:dwc[georeferenceRemarks].
 [%autowidth,frame=topbot,grid=rows,stripes=none,align="center"]
 |===
 h|Feature Type h|Default <<geographic-radial>>
@@ -96,7 +96,7 @@ h|Feature Type h|Default <<geographic-radial>>
 
 The **<<boundary,boundaries>>** between mountains can be determined by using the terrain (valleys, saddles, and plains) that separate one mountain from others around it (xref:img-mountain-boundaries[xrefstyle="short"]).
 
-Always use term:[georeferenceRemarks] to document the decisions made and the reasons for them as well as possible, including the neighboring **<<feature,features>>** used for reference.
+Always use term:dwc[georeferenceRemarks] to document the decisions made and the reasons for them as well as possible, including the neighboring **<<feature,features>>** used for reference.
 
 [#img-mountain-boundaries]
 .*A* Topographic contours of a group of nearby mountains. *B* Rough **<<boundary>>**, **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ of a mountain determined by the surrounding valleys, saddles, and plains.
@@ -254,7 +254,7 @@ The **<<locality>>** is a cave, an underground mine, etc. For details of how to 
 
 a. Cave **<<extent>>** evident – if a map of all the interior of the cave with measurements and orientation to the surface is available, or if a position can be determined directly above the **<<location>>** inside the cave using the **<<ground-zero>>** concept (see {gbp}#determining-location[Determining Location] in *_Georeferencing Best Practices_*), determine the **<<boundary>>** as if it is a <<Feature – with Obvious Spatial Extent>> (xref:img-caves[xrefstyle="short"]A).
 
-b. Cave **<<extent>>** not evident – if the limits of the cave are not evident: a) use the nearest identifiable **<<feature>>** to determine the **<<extent>>** and **<<boundary>>** of the cave, as for <<Feature – without Obvious Spatial Extent>> (xref:img-caves[xrefstyle="short"]B); or b) determine the **<<coordinates>>** of the cave entrance and use any evidence of the size of the cave to circumscribe the **<<boundary>>** as a circle around the entrance with a **<<radial,radius>>** commensurate with its size (xref:img-caves[xrefstyle="short"]C). Document accordingly in term:[georeferenceRemarks].
+b. Cave **<<extent>>** not evident – if the limits of the cave are not evident: a) use the nearest identifiable **<<feature>>** to determine the **<<extent>>** and **<<boundary>>** of the cave, as for <<Feature – without Obvious Spatial Extent>> (xref:img-caves[xrefstyle="short"]B); or b) determine the **<<coordinates>>** of the cave entrance and use any evidence of the size of the cave to circumscribe the **<<boundary>>** as a circle around the entrance with a **<<radial,radius>>** commensurate with its size (xref:img-caves[xrefstyle="short"]C). Document accordingly in term:dwc[georeferenceRemarks].
 
 *Step 2 – Determine the <<coordinates>> and <<geographic-radial>>:* Once the **<<boundary>>** has been determined, use the same method to determine the **<<coordinates>>** and **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
 

@@ -172,7 +172,7 @@ image::img/web/offset-orthogonal-direction.jpg[width=392,align="center"]
 
 ==== Offset – Distance at a Heading
 
-**<<locality,Locality>>** consists of a distance in a given **<<direction>>** from a single **<<feature>>**. Such **<<locality,localities>>** sometimes contain an explicit indicator of how the distance was measured, (_e.g._, "by air", "air miles W of", "due N of", "as the crow flies", "by road", "downstream from", etc.). Without such an indicator the interpretation is a matter of judgment, which should be documented in term:[georeferenceRemarks].
+**<<locality,Locality>>** consists of a distance in a given **<<direction>>** from a single **<<feature>>**. Such **<<locality,localities>>** sometimes contain an explicit indicator of how the distance was measured, (_e.g._, "by air", "air miles W of", "due N of", "as the crow flies", "by road", "downstream from", etc.). Without such an indicator the interpretation is a matter of judgment, which should be documented in term:dwc[georeferenceRemarks].
 
 NOTE: Since an <<offset>> at a <<heading>> "by air" will usually encompass the alternative by a <<path>> anyway, this is the recommended <<locality-type>> to use if there is no indication to the contrary. You can increase the maximum <<uncertainty>> to encompass the other option. This recommendation applies if you don’t have a compelling reason to use <<Offset – Distance along a Path>>).
 

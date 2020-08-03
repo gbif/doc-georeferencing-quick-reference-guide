@@ -4,7 +4,7 @@ This is a practical guide for **<<georeference,georeferencing>>**. It describes 
 
 The *_Guide_*, in its first version (Wieczorek _et al._ 2012), was an adaptation of *_Georeferencing for Dummies_* (Spencer _et al. n.dat._). It explains the recommended **<<georeference,georeferencing>>** procedures for the most commonly encountered type of **<<locality,localities>>**. This *_Guide_* should be used in parallel with {gbp}[*_Georeferencing Best Practices_*] (Chapman & Wieczorek 2020), which contains the theoretical background and more detailed information about concepts used here.
 
-Throughout this document there are terms with a very specific meaning as it is being used here. Those that are presented <<accuracy,like this>> and have a link to the *_<<Glossary>>_* where they are defined in detail. Terms in italics and not bold (_e.g._, _Input Latitude_) are references to fields or labels in the *_Calculator_*. Terms in fixed-width font (_e.g._, term:[georeferenceRemarks]) are names of terms in the *<<Darwin-Core>>.*
+Throughout this document there are terms with a very specific meaning as it is being used here. Those that are presented <<accuracy,like this>> and have a link to the *_<<Glossary>>_* where they are defined in detail. Terms in italics and not bold (_e.g._, _Input Latitude_) are references to fields or labels in the *_Calculator_*. Terms in fixed-width font (_e.g._, term:dwc[georeferenceRemarks]) are names of terms in the *<<Darwin-Core>>.*
 
 At the end of this document is a **<<key-to-locality-types,Georeference Quick Reference Guide Key to Locality Types>>**, which contains a quick summary of the **<<georeferencing-protocol,protocols>>** for the most common **<<locality-type,locality types>>**, described in detail in the sections of this guide.
 
@@ -42,11 +42,11 @@ This version of the *_Guide_* includes graphical examples of each type of locati
 
 *<<Darwin-Core>>* **<<georeference,georeferencing>>** terms:
 
-term:[dwc:decimalLatitude], term:[dwc:decimalLongitude], term:[dwc:geodeticDatum]:: the combination of these fields provide the reference for the center of the **<<point-radius>>** representation of the **<<georeference>>**.
-term:[dwc:coordinateUncertaintyInMeters]::  The horizontal distance in meters from the given term:[decimalLatitude] and term:[decimalLongitude] that describes the **<<smallest-enclosing-circle>>** that contains the whole of the **<<location>>**. Leave the value empty if the **<<uncertainty>>** is unknown, cannot be estimated, or is not applicable (because there are no **<<coordinates>>**). Zero is not a valid value for this term. This term corresponds with the **<<geographic-radial>>** of the final **<<georeference>>**.
-term:[dwc:georeferencedBy], term:[dwc:georeferencedDate]:: the individual(s) who last modified the **<<georeference>>** and when. These correspond to the final authority on the **<<georeference>>** in its current state, regardless of who might have worked on previous versions of the **<<georeference>>**.
-term:[dwc:georeferenceProtocol]::  A description or reference to the methods used to determine the **<<shape>>** using the **<<shape>>** **<<georeferencing-method>>**, or the **<<coordinates>>** and **<<uncertainty>>** using the **<<point-radius>>** **<<georeferencing-method,method>>**. If the protocol in this *_Guide_* is used unaltered, then the term:[georeferenceProtocol] should be the citation for this document.
-term:[dwc:georeferenceSources]::  A list (concatenated and separated) of maps, **<<gazetteer,gazetteers>>**, or other resources used to **<<georeference>>** the **<<location>>**, described specifically enough to allow anyone in the future to use the same resources.
+term:dwc[dwc:decimalLatitude], term:dwc[dwc:decimalLongitude], term:dwc[dwc:geodeticDatum]:: the combination of these fields provide the reference for the center of the **<<point-radius>>** representation of the **<<georeference>>**.
+term:dwc[dwc:coordinateUncertaintyInMeters]::  The horizontal distance in meters from the given term:dwc[decimalLatitude] and term:dwc[decimalLongitude] that describes the **<<smallest-enclosing-circle>>** that contains the whole of the **<<location>>**. Leave the value empty if the **<<uncertainty>>** is unknown, cannot be estimated, or is not applicable (because there are no **<<coordinates>>**). Zero is not a valid value for this term. This term corresponds with the **<<geographic-radial>>** of the final **<<georeference>>**.
+term:dwc[dwc:georeferencedBy], term:dwc[dwc:georeferencedDate]:: the individual(s) who last modified the **<<georeference>>** and when. These correspond to the final authority on the **<<georeference>>** in its current state, regardless of who might have worked on previous versions of the **<<georeference>>**.
+term:dwc[dwc:georeferenceProtocol]::  A description or reference to the methods used to determine the **<<shape>>** using the **<<shape>>** **<<georeferencing-method>>**, or the **<<coordinates>>** and **<<uncertainty>>** using the **<<point-radius>>** **<<georeferencing-method,method>>**. If the protocol in this *_Guide_* is used unaltered, then the term:dwc[georeferenceProtocol] should be the citation for this document.
+term:dwc[dwc:georeferenceSources]::  A list (concatenated and separated) of maps, **<<gazetteer,gazetteers>>**, or other resources used to **<<georeference>>** the **<<location>>**, described specifically enough to allow anyone in the future to use the same resources.
 +
 .{blank}
 [caption=Examples]
@@ -56,7 +56,7 @@ term:[dwc:georeferenceSources]::  A list (concatenated and separated) of maps, *
 "Wieczorek C, J Wieczorek (2020) Georeferencing Calculator. Version yyyymmdd. Available: http://georeferencing.org/georefcalculator/gc.html. Accessed [yyyy-mm-dd]"
 ====
 
-term:[dwc:georeferenceVerificationStatus]::  A categorical description of the extent to which the **<g-georeference>>** has been verified to represent the best possible spatial description. Recommended best practice is to use a controlled vocabulary.
+term:dwc[dwc:georeferenceVerificationStatus]::  A categorical description of the extent to which the **<g-georeference>>** has been verified to represent the best possible spatial description. Recommended best practice is to use a controlled vocabulary.
 +
 .{blank}
 [caption=Examples]
@@ -66,7 +66,7 @@ term:[dwc:georeferenceVerificationStatus]::  A categorical description of the ex
 "verified by curator".
 ====
 
-term:[dwc:georeferenceRemarks]::  Notes or comments out of the ordinary about the **<<georeference>>**, explaining assumptions made in addition or opposition to those formalized in the method referred to in term:[georeferenceProtocol].
+term:dwc[dwc:georeferenceRemarks]::  Notes or comments out of the ordinary about the **<<georeference>>**, explaining assumptions made in addition or opposition to those formalized in the method referred to in term:dwc[georeferenceProtocol].
 +
 .{blank}
 [caption=Example]
@@ -74,7 +74,7 @@ term:[dwc:georeferenceRemarks]::  Notes or comments out of the ordinary about th
 "assumed distance by road (Hwy. 101)"
 ====
 
-term:[dwc:locationRemarks]::  Notes or comments of interest about the **<<location>>** (not the **<<georeference>>** of the **<<location>>**, which go in term:[georeferenceRemarks]).
+term:dwc[dwc:locationRemarks]::  Notes or comments of interest about the **<<location>>** (not the **<<georeference>>** of the **<<location>>**, which go in term:dwc[georeferenceRemarks]).
 +
 .{blank}
 [caption=Example]
@@ -139,7 +139,7 @@ The _Coordinate Source_ is the type of resource (map type, **<<GPS>>**, **<<gaze
 // TODO That > sign after Maps?
 NOTE: More often than not, the original **<<coordinates>>** are used to find the general vicinity of the **<<location>>** on a map, after which the process of determining the **<<corrected-center>>** provides the new **<<coordinates>>**. The **Coordinate Source** to use in the **Calculator** in this case is the map from which the **<<corrected-center>>** was determined, not the original source used to determine the general vicinity on the map. For example, suppose the original **<<coordinates>>** came from a **<<gazetteer>>**, but the **<<boundary>>** and **<<corrected-center>>** of the **<<feature>>** were determined from Google Maps™, the **Coordinate Source** would be "**Google Earth/Maps >2008**", not "**gazetteer**".
 
-This term is related to, but *NOT* the same as, the **<<Darwin-Core>>** term term:[georeferenceSources], which requires the specific resources used rather than their type. Note that the **<<uncertainty,uncertainties>>** from the two sources _gazetteer_ and _locality description_ can not be anticipated universally, and therefore do not contribute to the global **<<uncertainty>>** in the calculations. If the **<<error>>** characteristics of these sources are known, they can be added in the _Measurement Error_ field before calculating. If the source _GPS_ is selected, the label for _Measurement Error_ will change to _GPS Accuracy_, which is where the **<<accuracy>>** of the **<<GPS>>** (see {gbp}#using-a-gps[Using a GPS] in *_Georeferencing Best Practices_*) at the time the **<<coordinates>>** were taken should be entered.
+This term is related to, but *NOT* the same as, the **<<Darwin-Core>>** term term:dwc[georeferenceSources], which requires the specific resources used rather than their type. Note that the **<<uncertainty,uncertainties>>** from the two sources _gazetteer_ and _locality description_ can not be anticipated universally, and therefore do not contribute to the global **<<uncertainty>>** in the calculations. If the **<<error>>** characteristics of these sources are known, they can be added in the _Measurement Error_ field before calculating. If the source _GPS_ is selected, the label for _Measurement Error_ will change to _GPS Accuracy_, which is where the **<<accuracy>>** of the **<<GPS>>** (see {gbp}#using-a-gps[Using a GPS] in *_Georeferencing Best Practices_*) at the time the **<<coordinates>>** were taken should be entered.
 
 [#s-coordinate-format]
 ==== Coordinate Format
@@ -148,7 +148,7 @@ The _Coordinate Format_ in the *_Calculator_* defines the representation of the 
 
 NOTE: More often than not, the original **<<coordinates>>** are used to find the general vicinity of the **<<location>>** on a map, after which the process of determining the **<<corrected-center>>** provides the new **<<coordinates>>**. The **Coordinate Format** to use in the **Calculator** in this case is the **<<coordinate-format>>** on the map from which the **<<corrected-center>>** was determined, not the <<coordinate-format>> of the original source used to determine the general vicinity on the map. For example, suppose the original **<<coordinates>>** came from a **<<gazetteer>>** in <<DMS,degrees minutes seconds>>, but the **<<boundary>>** and **<<corrected-center>>** of the **<<feature>>** were determined from Google Maps™, the **Coordinate Format** would be **decimal degrees**, not **degrees minutes seconds**.
 
-This term is equivalent to the **<<Darwin-Core>>** term term:[verbatimCoordinateSystem]. Selecting the original **<<coordinate-format>>** allows the **<<coordinates>>** to be entered in their native format and forces the *_Calculator_* to present appropriate options for **<<coordinate-precision>>**. Changing the **<<coordinate-format>>** will automatically reset the **<<coordinate-precision>>** value to _nearest degree_. Be sure to correct this for the actual **<<coordinate-precision>>**. The *_Calculator_* stores **<<coordinates>>** in **<<decimal-degrees>>** to seven decimal places. This is to preserve the correct **<<coordinates>>** in all formats regardless of how many **<<coordinates,coordinate>>** transformations are done.
+This term is equivalent to the **<<Darwin-Core>>** term term:dwc[verbatimCoordinateSystem]. Selecting the original **<<coordinate-format>>** allows the **<<coordinates>>** to be entered in their native format and forces the *_Calculator_* to present appropriate options for **<<coordinate-precision>>**. Changing the **<<coordinate-format>>** will automatically reset the **<<coordinate-precision>>** value to _nearest degree_. Be sure to correct this for the actual **<<coordinate-precision>>**. The *_Calculator_* stores **<<coordinates>>** in **<<decimal-degrees>>** to seven decimal places. This is to preserve the correct **<<coordinates>>** in all formats regardless of how many **<<coordinates,coordinate>>** transformations are done.
 
 [#s-coordinate-precision]
 ==== Coordinate Precision
@@ -157,7 +157,7 @@ Labeled in the *_Calculator_* as _Precision_ in the first column of input parame
 
 NOTE: The **Coordinate Precision** to use in the **Calculator** is the **<<coordinate-precision>>** of the map from which the **<<corrected-center>>** was determined, not the **<<coordinate-precision>>** of the original source used to determine the general vicinity on the map. For example, suppose the original **<<coordinates>>** came from a **<<gazetteer>>**, but the **<<boundary>>** and **<<corrected-center>>** of the **<<feature>>** were determined from *_Google Maps_*, the **Coordinate Precision** would be determined by the number of digits of **<<decimal-degrees>>** you captured from the **<<corrected-center>>** on Google Maps™, not the **Coordinate Precision** of the **<<coordinates>>** from the original **<<gazetteer>>** entry. If you use all of the digits provided on Google Maps™, the **Coordinate Precision** would be **exact**.
 
-NOTE: This term is similar to, but **NOT** the same as, the <<Darwin-Core>> term term:[coordinatePrecision], which applies to the output **<<coordinates>>**.
+NOTE: This term is similar to, but **NOT** the same as, the <<Darwin-Core>> term term:dwc[coordinatePrecision], which applies to the output **<<coordinates>>**.
 
 [#s-datum]
 ==== Datum
@@ -166,7 +166,7 @@ Defines the position of the origin and orientation of an **<<ellipsoid>>** upon 
 
 NOTE: The **Datum** to use in the **Calculator** is the **<<datum>>** (or **<<ellipsoid>>**) of the map from which the **<<corrected-center>>** was determined. For example, suppose the original **<<coordinates>>** came from a **<<gazetteer>>** with an unknown <<datum>>, but the **<<boundary>>** and **<<corrected-center>>** of the **<<feature>>** were determined from Google Maps™, the **Datum** would be **WGS84**, not **datum not recorded**.
 
-The term _Datum_ in the *_Calculator_* is equivalent to the **<<Darwin-Core>>** term term:[geodeticDatum]. The *_Calculator_* includes **<<ellipsoid,ellipsoids>>** on the __Datum __drop-down list, as sometimes that is all that **<<coordinates,coordinate>>** source shows. The choice of **<<datum>>** in the *_Calculator_* has two important effects. The first is the contribution to **<<uncertainty>>** if the **<<datum>>** of the input **<<coordinates>>** is not known. If the **<<datum>>** and **<<ellipsoid>>** are not known, _datum not recorded_ must be selected. **<<uncertainty,Uncertainty>>** due to an unknown **<<datum>>** can be severe and varies geographically in a complex way with a worst-case contribution of 5359 m (see {gbp}#coordinate-reference-system[Coordinate Reference System] in *_Georeferencing Best Practices_*). The second important effect of the **<<datum>>** selection is to provide the characteristics of the **<<ellipsoid>>** model of the earth, on which the distance calculations depend.
+The term _Datum_ in the *_Calculator_* is equivalent to the **<<Darwin-Core>>** term term:dwc[geodeticDatum]. The *_Calculator_* includes **<<ellipsoid,ellipsoids>>** on the __Datum __drop-down list, as sometimes that is all that **<<coordinates,coordinate>>** source shows. The choice of **<<datum>>** in the *_Calculator_* has two important effects. The first is the contribution to **<<uncertainty>>** if the **<<datum>>** of the input **<<coordinates>>** is not known. If the **<<datum>>** and **<<ellipsoid>>** are not known, _datum not recorded_ must be selected. **<<uncertainty,Uncertainty>>** due to an unknown **<<datum>>** can be severe and varies geographically in a complex way with a worst-case contribution of 5359 m (see {gbp}#coordinate-reference-system[Coordinate Reference System] in *_Georeferencing Best Practices_*). The second important effect of the **<<datum>>** selection is to provide the characteristics of the **<<ellipsoid>>** model of the earth, on which the distance calculations depend.
 
 [#s-direction]
 ==== Direction

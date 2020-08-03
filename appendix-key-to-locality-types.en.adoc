@@ -157,7 +157,7 @@ h|Calculation Steps
 a|
 If some part of the **<<locality>>** description is in question, but there is **<<locality>>** information that is not in question, use the unquestioned part of the **<<locality>>** to determine the **<<locality-type>>** and **<<georeference>>** following the appropriate method.
 
-If the entire **<<locality>>** is in question, do not **<<georeference>>** and document in term:[georeferenceRemarks] the reason for not **<<georeference,georeferencing>>** (_e.g._, "_locality in question_").
+If the entire **<<locality>>** is in question, do not **<<georeference>>** and document in term:dwc[georeferenceRemarks] the reason for not **<<georeference,georeferencing>>** (_e.g._, "_locality in question_").
 
 |<<Cannot Be Located,§2.4.2 Cannot Be Located>>
 a|
@@ -169,20 +169,20 @@ b. The **<<location>>** fields contain other than *location* information;
 
 c. The **<<feature>>**(s) cannot be found with available references.
 
-Do not **<<georeference>>** these **<<locality,localities>>**. Document in term:[georeferenceRemarks].
+Do not **<<georeference>>** these **<<locality,localities>>**. Document in term:dwc[georeferenceRemarks].
 
 |<<More than One Matching Feature,§2.4.3 More than One Matching Feature>>
 a|
-Multiple related **<<feature,features>>**: If there are multiple distinct nearby places with the same name and no further information to distinguish between the possibilities, treat the combination of them as the **<<feature>>** and follow the procedure for the appropriate **<<locality-type>>**. Document in term:[georeferenceRemarks].
+Multiple related **<<feature,features>>**: If there are multiple distinct nearby places with the same name and no further information to distinguish between the possibilities, treat the combination of them as the **<<feature>>** and follow the procedure for the appropriate **<<locality-type>>**. Document in term:dwc[georeferenceRemarks].
 
-Multiple unrelated **<<feature,features>>**: Do not **<<georeference>>**. Document in term:[georeferenceRemarks].
+Multiple unrelated **<<feature,features>>**: Do not **<<georeference>>**. Document in term:dwc[georeferenceRemarks].
 
 |<<Demonstrably Inconsistent,§2.4.4 Demonstrably Inconsistent>>
-|The **<<locality>>** description contains irreconcilable inconsistencies – assertions that can not all be simultaneously true. Do not **<<georeference>>**. Document in term:[georeferenceRemarks].
+|The **<<locality>>** description contains irreconcilable inconsistencies – assertions that can not all be simultaneously true. Do not **<<georeference>>**. Document in term:dwc[georeferenceRemarks].
 
 |<<Cultivated or Captive,§2.4.5 Cultivated or Captive>>
 a|
 Refers to a captive animal, a cultivated plant or _event_ from some other non-natural occurrence. The **<<locality>>** cited is often that of a zoo, aquarium, or botanical garden.
 
-*<<georeference,Georeference>>* the **<<locality>>** normally based on the **<<locality-type>>** and **<<feature>>**. Document in term:[georeferenceRemarks].
+*<<georeference,Georeference>>* the **<<locality>>** normally based on the **<<locality-type>>** and **<<feature>>**. Document in term:dwc[georeferenceRemarks].
 |===
