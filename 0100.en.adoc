@@ -40,9 +40,9 @@ This version of the Guide includes graphical examples of each type of location a
 
 === Using Darwin Core
 
-<<georeference,Georeferences>> using the methods in this Guide will be of greatest value if as much information as possible is captured about and during the georeferencing process. The https://dwc.tdwg.org/terms/[Darwin-Core standard (TDWG 2018)^] defines all of the fields recommended for the capture of reproducible georeferences, as follows:
+<<georeference,Georeferences>> using the methods in this Guide will be of greatest value if as much information as possible is captured about and during the georeferencing process. The https://dwc.tdwg.org/terms/[Darwin Core standard (TDWG 2018)^] defines all of the fields recommended for the capture of reproducible georeferences, as follows:
 
-<<Darwin-Core,Darwin Core>> georeference,georeferencing terms:
+<<Darwin-Core,Darwin Core>> georeferencing terms:
 
 term:dwc[dwc:decimalLatitude], term:dwc[dwc:decimalLongitude], term:dwc[dwc:geodeticDatum]:: the combination of these fields provide the reference for the center of the <<point-radius>> representation of the georeference.
 term:dwc[dwc:coordinateUncertaintyInMeters]::  The horizontal distance in meters from the given term:dwc[decimalLatitude] and term:dwc[decimalLongitude] that describes the <<smallest-enclosing-circle>> that contains the whole of the <<location>>. Leave the value empty if the <<uncertainty>> is unknown, cannot be estimated, or is not applicable (because there are no <<coordinates>>). Zero is not a valid value for this term. This term corresponds with the <<geographic-radial>> of the final georeference.
@@ -53,9 +53,9 @@ term:dwc[dwc:georeferenceSources]::  A list (concatenated and separated) of maps
 .{blank}
 [caption=Examples]
 ====
-"USGS 1:24000 Florence Montana Quad" +
-"Terrametrics® 2008 Google Earth™" +
-"Wieczorek C & J Wieczorek (2020) Georeferencing Calculator, version yyyymmdd. Available: http://georeferencing.org/georefcalculator/gc.html."
+USGS 1:24000 Florence Montana Quad +
+Terrametrics® 2008 Google Earth™ +
+Wieczorek C & J Wieczorek (2020) Georeferencing Calculator, version yyyymmdd. Available: http://georeferencing.org/georefcalculator/gc.html.
 ====
 
 term:dwc[dwc:georeferenceVerificationStatus]::  A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description. Recommended best practice is to use a controlled vocabulary.
@@ -63,9 +63,9 @@ term:dwc[dwc:georeferenceVerificationStatus]::  A categorical description of the
 .{blank}
 [caption=Examples]
 ====
-"requires verification" +
-"verified by collector" +
-"verified by curator"
+requires verification +
+verified by collector +
+verified by curator
 ====
 
 term:dwc[dwc:georeferenceRemarks]::  Notes or comments out of the ordinary about the georeference, explaining assumptions made in addition or opposition to those formalized in the method referred to in term:dwc[georeferenceProtocol].
@@ -73,7 +73,7 @@ term:dwc[dwc:georeferenceRemarks]::  Notes or comments out of the ordinary about
 .{blank}
 [caption=Example]
 ====
-"assumed distance by road (Hwy. 101)"
+assumed distance by road (Hwy. 101)
 ====
 
 term:dwc[dwc:locationRemarks]::  Notes or comments of interest about the location (not the georeference of the location, which go in term:dwc[georeferenceRemarks]).
@@ -81,7 +81,7 @@ term:dwc[dwc:locationRemarks]::  Notes or comments of interest about the locatio
 .{blank}
 [caption=Example]
 ====
-"Villa Epecuen was inundated in November 1985 and ceased to be inhabited until 2009"
+Villa Epecuen was inundated in November 1985 and ceased to be inhabited until 2009
 ====
 
 For additional community discussion and recommendations, see the https://github.com/tdwg/dwc-qa/wiki/Georeferences[Darwin-Core Project wiki (Wieczorek 2017)^], the https://github.com/tdwg/dwc-qa/wiki/Webinars[Darwin Core Hour Webinars^] and {gbp}[Georeferencing Best Practices^].
