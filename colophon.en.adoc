@@ -7,7 +7,7 @@ endif::backend-html5[]
 
 [#citation]
 === Suggested citation
-Zermoglio PF, https://orcid.org/0000-0003-1700-6962[Chapman AD], https://orcid.org/0000-0003-1144-0290[Wieczorek JR], Luna MC, Bloom DA (2020) Georeferencing Quick Reference Guide. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/e09p-h128
+https://orcid.org/0000-0002-6056-5084[Zermoglio PF], https://orcid.org/0000-0003-1700-6962[Chapman AD], https://orcid.org/0000-0003-1144-0290[Wieczorek JR], https://orcid.org/0000-0002-6392-8864[Luna MC] & https://orcid.org/0000-0003-1273-1807[Bloom DA] (2020) Georeferencing Quick Reference Guide. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/e09p-h128
 
 === Contributors
 
@@ -25,7 +25,7 @@ https://doi.org/10.35035/e09p-h128
 
 === Document control
 
-Third edition, April 2019
+Third edition, September 2020 [community review draft]
 
 // include reference to provenance if possible/relevant
 https://doi.org/10.15468/doc-yyyy-yyyy[Second edition], March 2015, by Due Autore and https://orcid.org/0000-0000-0000-0000[Tercio Auteur].
