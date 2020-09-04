@@ -1,30 +1,32 @@
 == Introduction
 
-This is a practical guide for **<<georeference,georeferencing>>**. It describes the protocols to determine the shapes of **<<feature,features>>** and how to use them as the basis for georeferencing with the **<<point-radius>>** **<<georeferencing-method>>** (Wieczorek 2001, Wieczorek _et al._ 2004, Chapman & Wieczorek 2020) using the http://georeferencing.org/georefcalculator/gc.html[*_Georeferencing Calculator_*] (Wieczorek & Wieczorek 2019), and its associated {gcm}[*_Georeferencing Calculator Manual_*] (Bloom _et al._ 2020), maps, **<<gazetteer,gazetteer>>**, and other resources from which **<<coordinates>>** and spatial **<<boundary,boundaries>>** for places can be found. This document is a citable **<<georeferencing-protocol>>**. If a derived protocol is used, a new document should be made publicly available and cited with attribution to this document.
+This is a practical guide for <<georeference,georeferencing>>. It describes the protocols to determine the shapes of <<feature,features>> and how to use them as the basis for georeferencing with the <<point-radius>> <<georeferencing-method>> ([Wieczorek 2001^], [Wieczorek et al. 2004^], [Chapman & Wieczorek 2020^]) using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator (Wieczorek & Wieczorek 2019)^], and its associated {gcm}[Georeferencing Calculator Manual (Bloom et al. 2020)^], maps, <<gazetteer,gazetteer>>, and other resources from which <<coordinates>> and spatial <<boundary,boundaries>> for places can be found. This document is a citable <<georeferencing-protocol>>. If a derived protocol is used, a new document should be made publicly available and cited with attribution to this document.
 
-The *_Guide_*, in its first version (Wieczorek _et al._ 2012), was an adaptation of *_Georeferencing for Dummies_* (Spencer _et al. n.dat._). It explains the recommended **<<georeference,georeferencing>>** procedures for the most commonly encountered type of **<<locality,localities>>**. This *_Guide_* should be used in parallel with {gbp}[*_Georeferencing Best Practices_*] (Chapman & Wieczorek 2020), which contains the theoretical background and more detailed information about concepts used here.
+The [first version of the Guide (Wieczorek et al. 2012)^], was an adaptation of [Georeferencing for Dummies (Spencer et al. n.d.)^]. It explains the recommended georeferencing procedures for the most commonly encountered type of <<locality,localities>>. This Guide should be used in parallel with {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^], which contains the theoretical background and more detailed information about concepts used here.
 
-Throughout this document there are terms with a very specific meaning as it is being used here. Those that are presented <<accuracy,like this>> and have a link to the *_<<Glossary>>_* where they are defined in detail. Terms in italics and not bold (_e.g._, _Input Latitude_) are references to fields or labels in the *_Calculator_*. Terms in fixed-width font (_e.g._, term:dwc[georeferenceRemarks]) are names of terms in the *<<Darwin-Core>>.*
+`[ADJUST TEST TO FIT PRACTICE]`
 
-At the end of this document is a **<<key-to-locality-types,Georeference Quick Reference Guide Key to Locality Types>>**, which contains a quick summary of the **<<georeferencing-protocol,protocols>>** for the most common **<<locality-type,locality types>>**, described in detail in the sections of this guide.
+`Throughout this document there are terms with a very specific meaning as it is being used here. Those that are presented <<accuracy,like this>> and have a link to the <<Glossary>> where they are defined in detail. Terms in italics and not bold (_e.g._, _Input Latitude_) are references to fields or labels in the *_Calculator_*. Terms in fixed-width font (_e.g._, term:dwc[georeferenceRemarks]) are names of terms in the <<Darwin-Core>>.`
+
+At the end of this document is a <<key-to-locality-types,Georeference Quick Reference Guide Key to Locality Types>>, which contains a quick summary of the protocols for the most common <<locality-type,locality types>>, described in detail in the sections of this guide.
 
 === Objectives
 
-This document provides guidance on how to **<<georeference>>** using the **<<point-radius>>** **<<georeferencing-method,method>>**. This *_Guide_* also provides the methods for determining the **<<boundary,boundaries>>** of **<<feature,features>>**, which form the basis of the **<<shape>>** **<<georeferencing-method,method>>**.
+This document provides guidance on how to <<georeference>> using the <<point-radius>> <<georeferencing-method,method>>. This Guide also provides the methods for determining the <<boundary,boundaries>> of <<feature,features>>, which form the basis of the <<shape>> <<georeferencing-method,method>>.
 
 === Target Audience
 
-This document is a practical guide for anyone who needs to **<<georeference>>** textual **<<locality>>** descriptions so that they can be used in spatial filtering or analysis in research, education, or the maintenance of biological collections data.
+This document is a practical guide for anyone who needs to <<georeference>> textual <<locality>> descriptions so that they can be used in spatial filtering or analysis in research, education, or the maintenance of biological collections data.
 
 === Scope
 
-This document is one of three that cover recommended requirements and methods to **<<georeference>>** **<<location,locations>>**. It provides a practical how-to guide for putting the theory of the **<<point-radius>> <<georeferencing-method>>** into practice.
+This document is one of three that cover recommended requirements and methods to <<georeference>> <<location,locations>>. It provides a practical how-to guide for putting the theory of the <<point-radius>> <<georeferencing-method>> into practice.
 
-The *_Guide_* relies on the {gbp}[*_Georeferencing Best Practices_*] for background, definitions, and more detailed explanations of the theory behind the methods and calculations found here and in the *_Calculator_*.
+The Guide relies on the {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^] for background, definitions, and more detailed explanations of the theory behind the methods and calculations found here and in the Calculator.
 
-The *_Georeferencing Calculator_* is a browser-based JavaScript application that aids in **<<georeference,georeferencing>>** descriptive **<<locality,localities>>**, making the calculations necessary to obtain **<<geographic-coordinates>>** and **<<uncertainty,uncertainties>>** for **<<location,locations>>** using the **<<point-radius>>** **<<georeferencing-method,method>>**.
+The https://#[Georeferencing Calculator] is a browser-based JavaScript application that aids in georeferencing descriptive <<locality,localities>>, making the calculations necessary to obtain <<geographic-coordinates>> and <<uncertainty,uncertainties>> for locations using the <<point-radius>> method.
 
-These documents DO NOT provide guidance on georectifying images or **<<geocode,geocoding>>** street addresses – distinct operations that are sometimes called "georeferencing".
+These documents DO NOT provide guidance on georectifying images or <<geocode,geocoding>> street addresses – distinct operations that are sometimes called "georeferencing".
 
 === Changes from Previous Version
 
