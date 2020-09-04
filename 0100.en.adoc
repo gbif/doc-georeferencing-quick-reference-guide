@@ -30,45 +30,45 @@ These documents DO NOT provide guidance on georectifying images or <<geocode,geo
 
 === Changes from Previous Version
 
-There have been a few changes in terminology since the previous edition of the *_Guide_*. These include:
+There have been a few changes in terminology since the previous edition of the Guide. These include:
 
-* *extent* in the previous version has been changed to **<<radial>>**. **<<extent,Extent>>**, where retained, is used in a more traditional way to mean the entire space within a **<<location>>**.
-* "named place" has been replaced with "**<<feature>>**".
-* where the **<<geographic-center>>** was recommended in the past, **<<corrected-center>>** based on the **<<geographic-radial>>** is now used. This is an important change because the **<<geographic-center>>** did not necessarily yield the smallest **<<uncertainty>>** due to the **<<extent>>** of a **<<feature>>**; the **<<corrected-center>>** and **<<geographic-radial>>** does.
+* <<extent,Extent>> in the previous version has been changed to <<radial>>. Extent, where retained, is used in a more traditional way to mean the entire space within a <<location>>.
+* "Named place" has been replaced with <<feature>>.
+* Where the <<geographic-center>> was recommended in the past, <<corrected-center>> based on the <<geographic-radial>> is now used. This is an important change because the geographic-center did not necessarily yield the smallest <<uncertainty>> due to the extent of a feature; the corrected-center and geographic-radial does.
 
-This version of the *_Guide_* includes graphical examples of each type of location and steps for how to **<<georeference>>** them.
+This version of the Guide includes graphical examples of each type of location and steps for how to <<georeference>> them.
 
 === Using Darwin Core
 
-**<<georeference,Georeferences>>** using the methods in this *_Guide_* will be of greatest value if as much information as possible is captured about and during the **<<georeference,georeferencing>>** process. The **<<Darwin-Core>>** Standard (TDWG 2018) defines all of the fields recommended for the capture of reproducible **<<georeference,georeferences>>**, as follows:
+<<georeference,Georeferences>> using the methods in this Guide will be of greatest value if as much information as possible is captured about and during the georeferencing process. The https://dwc.tdwg.org/terms/[Darwin-Core standard (TDWG 2018)^] defines all of the fields recommended for the capture of reproducible georeferences, as follows:
 
-*<<Darwin-Core>>* **<<georeference,georeferencing>>** terms:
+<<Darwin-Core,Darwin Core>> georeference,georeferencing terms:
 
-term:dwc[dwc:decimalLatitude], term:dwc[dwc:decimalLongitude], term:dwc[dwc:geodeticDatum]:: the combination of these fields provide the reference for the center of the **<<point-radius>>** representation of the **<<georeference>>**.
-term:dwc[dwc:coordinateUncertaintyInMeters]::  The horizontal distance in meters from the given term:dwc[decimalLatitude] and term:dwc[decimalLongitude] that describes the **<<smallest-enclosing-circle>>** that contains the whole of the **<<location>>**. Leave the value empty if the **<<uncertainty>>** is unknown, cannot be estimated, or is not applicable (because there are no **<<coordinates>>**). Zero is not a valid value for this term. This term corresponds with the **<<geographic-radial>>** of the final **<<georeference>>**.
-term:dwc[dwc:georeferencedBy], term:dwc[dwc:georeferencedDate]:: the individual(s) who last modified the **<<georeference>>** and when. These correspond to the final authority on the **<<georeference>>** in its current state, regardless of who might have worked on previous versions of the **<<georeference>>**.
-term:dwc[dwc:georeferenceProtocol]::  A description or reference to the methods used to determine the **<<shape>>** using the **<<shape>>** **<<georeferencing-method>>**, or the **<<coordinates>>** and **<<uncertainty>>** using the **<<point-radius>>** **<<georeferencing-method,method>>**. If the protocol in this *_Guide_* is used unaltered, then the term:dwc[georeferenceProtocol] should be the citation for this document.
-term:dwc[dwc:georeferenceSources]::  A list (concatenated and separated) of maps, **<<gazetteer,gazetteers>>**, or other resources used to **<<georeference>>** the **<<location>>**, described specifically enough to allow anyone in the future to use the same resources.
+term:dwc[dwc:decimalLatitude], term:dwc[dwc:decimalLongitude], term:dwc[dwc:geodeticDatum]:: the combination of these fields provide the reference for the center of the <<point-radius>> representation of the georeference.
+term:dwc[dwc:coordinateUncertaintyInMeters]::  The horizontal distance in meters from the given term:dwc[decimalLatitude] and term:dwc[decimalLongitude] that describes the <<smallest-enclosing-circle>> that contains the whole of the <<location>>. Leave the value empty if the <<uncertainty>> is unknown, cannot be estimated, or is not applicable (because there are no <<coordinates>>). Zero is not a valid value for this term. This term corresponds with the <<geographic-radial>> of the final georeference.
+term:dwc[dwc:georeferencedBy], term:dwc[dwc:georeferencedDate]:: the individual(s) who last modified the georeference and when. These correspond to the final authority on the georeference in its current state, regardless of who might have worked on previous versions of the georeference.
+term:dwc[dwc:georeferenceProtocol]::  A description or reference to the methods used to determine the <<shape>> using the shape <<georeferencing-method>>, or the coordinates and uncertainty using the point-radius method. If the protocol in this Guide is used unaltered, then the term:dwc[georeferenceProtocol] should be the citation for this document.
+term:dwc[dwc:georeferenceSources]::  A list (concatenated and separated) of maps, <<gazetteer,gazetteers>>, or other resources used to georeference the location, described specifically enough to allow anyone in the future to use the same resources.
 +
 .{blank}
 [caption=Examples]
 ====
 "USGS 1:24000 Florence Montana Quad" +
 "Terrametrics® 2008 Google Earth™" +
-"Wieczorek C, J Wieczorek (2020) Georeferencing Calculator. Version yyyymmdd. Available: http://georeferencing.org/georefcalculator/gc.html. Accessed [yyyy-mm-dd]"
+"Wieczorek C & J Wieczorek (2020) Georeferencing Calculator, version yyyymmdd. Available: http://georeferencing.org/georefcalculator/gc.html."
 ====
 
-term:dwc[dwc:georeferenceVerificationStatus]::  A categorical description of the extent to which the **<g-georeference>>** has been verified to represent the best possible spatial description. Recommended best practice is to use a controlled vocabulary.
+term:dwc[dwc:georeferenceVerificationStatus]::  A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description. Recommended best practice is to use a controlled vocabulary.
 +
 .{blank}
 [caption=Examples]
 ====
 "requires verification" +
 "verified by collector" +
-"verified by curator".
+"verified by curator"
 ====
 
-term:dwc[dwc:georeferenceRemarks]::  Notes or comments out of the ordinary about the **<<georeference>>**, explaining assumptions made in addition or opposition to those formalized in the method referred to in term:dwc[georeferenceProtocol].
+term:dwc[dwc:georeferenceRemarks]::  Notes or comments out of the ordinary about the georeference, explaining assumptions made in addition or opposition to those formalized in the method referred to in term:dwc[georeferenceProtocol].
 +
 .{blank}
 [caption=Example]
@@ -76,7 +76,7 @@ term:dwc[dwc:georeferenceRemarks]::  Notes or comments out of the ordinary about
 "assumed distance by road (Hwy. 101)"
 ====
 
-term:dwc[dwc:locationRemarks]::  Notes or comments of interest about the **<<location>>** (not the **<<georeference>>** of the **<<location>>**, which go in term:dwc[georeferenceRemarks]).
+term:dwc[dwc:locationRemarks]::  Notes or comments of interest about the location (not the georeference of the location, which go in term:dwc[georeferenceRemarks]).
 +
 .{blank}
 [caption=Example]
@@ -84,7 +84,7 @@ term:dwc[dwc:locationRemarks]::  Notes or comments of interest about the **<<loc
 "Villa Epecuen was inundated in November 1985 and ceased to be inhabited until 2009"
 ====
 
-For additional community discussion and recommendations, see the **<<Darwin-Core>>** Project wiki (Wieczorek 2017), the https://github.com/tdwg/dwc-qa/wiki/Webinars[_Darwin Core Hour Webinars_] and {gbp}[*_Georeferencing Best Practices_*].
+For additional community discussion and recommendations, see the https://github.com/tdwg/dwc-qa/wiki/Georeferences[Darwin-Core Project wiki (Wieczorek 2017)^], the https://github.com/tdwg/dwc-qa/wiki/Webinars[Darwin Core Hour Webinars^] and {gbp}[Georeferencing Best Practices^].
 
 === Georeferencing Concepts
 
