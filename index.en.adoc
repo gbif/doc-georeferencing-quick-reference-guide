@@ -1,4 +1,4 @@
-= Georeferencing Quick Reference Guide
+= Georeferencing Quick Reference Guide [Community review draft]
 :authorcount: 5
 :author_1: Paula F. Zermoglio
 :author_2: Arthur D. Chapman
@@ -15,9 +15,9 @@
 :pagenums:
 :license: https://creativecommons.org/licenses/by-sa/4.0/
 :sectnumlevels: 4
-// Set <<these-links>> to use the name rather than "Section 1.2"
 :xrefstyle: basic
-
+:xrefstyle: short
+:section-refsig: §
 ifdef::backend-pdf[]
 :xrefstyle: full
 :section-refsig: §
