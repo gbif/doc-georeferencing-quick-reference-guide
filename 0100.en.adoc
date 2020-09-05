@@ -54,7 +54,7 @@ term:dwc[dwc:georeferenceSources]::  A list (concatenated and separated) of maps
 [caption=Examples]
 ====
 USGS 1:24000 Florence Montana Quad +
-Terrametrics® 2008 Google Earth™ +
+Terrametrics 2008 Google Earth +
 Wieczorek C & J Wieczorek (2020) Georeferencing Calculator, version yyyymmdd. Available: http://georeferencing.org/georefcalculator/gc.html.
 ====
 
@@ -88,21 +88,21 @@ For additional community discussion and recommendations, see the https://github.
 
 === Georeferencing Concepts
 
-One of the goals of **<<georeference,georeferencing>>** following best practices is to be sure that enough information is provided in the output so that the **<<georeference>>** is repeatable (see {gbp}#principles-of-best-practice[Principles of Best Practice] in *_Georeferencing Best Practices_*). To that end, this document provides a set of recipes for **<<georeference,georeferencing>>** various **<<locality-type,locality-types>>** using the *_Georeferencing Calculator_*. The *_Calculator_* allows you to make distinct kinds of calculations based on the **<<locality-type>>** (<<Locality Type>>). When the **<<locality-type>>** is chosen from the predefined list, the *_Calculator_* presents input boxes for all of the parameters needed for that type of calculation. Note that the **<<locality-type>>** is for the most specific **<<locality-clause,clause>>** in the **<<locality>>** description (see {gbp}#parsing-the-locality-description[Parsing the Locality Description] in *_Georeferencing Best Practices_*), but there may be information for other **<<locality-clause,clauses>>** or other parts of the **<<location>>** record that help to constrain the **<<location>>** and come into play when a **<<feature>>** **<<boundary>>** is determined. Many *_Calculator_* parameters are used for more than one **<<locality-type>>**. Rather than repeat the explanation for each **<<locality-type>>**, they are collected here for common reference. Some **<<locality-type,locality-types>>** require specific parameters, for which the corresponding explanations are included in each subsection of <<Georeferencing Methods for Locality Type>>. Refer to the {gcm}[*_Georeferencing Calculator Manual_*] (Bloom _et al._ 2020) for details about the *_Calculator_* not answered in this document.
+One of the goals of **<<georeference,georeferencing>>** following best practices is to be sure that enough information is provided in the output so that the georeference is repeatable (see {gbp}#principles-of-best-practice[Principles of Best Practice] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). To that end, this document provides a set of recipes for georeferencing various **<<locality-type,locality types>>** using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator]. The Calculator allows you to make distinct kinds of calculations based on the locality type (<<Locality Type>>). When the locality type is chosen from the predefined list, the Calculator presents input boxes for all of the parameters needed for that type of calculation. Note that the locality type is for the most specific <<locality-clause,clause>> in the <<locality>> description (see {gbp}#parsing-the-locality-description[Parsing the Locality Description] in {gbp}[Georeferencing Best Practices (Chapman & Weiczorek 2020)^]), but there may be information for other clauses or other parts of the <<location>> record that help to constrain the location and come into play when a <<feature>> <<boundary>> is determined. Many Calculator parameters are used for more than one locality type. Rather than repeat the explanation for each locality type, they are collected here for common reference. Some locality types require specific parameters, for which the corresponding explanations are included in each subsection of <<Georeferencing Methods for Locality Type>>. Refer to the {gcm}[Georeferencing Calculator Manual (Bloom et al. 2020)^] for details about the Calculator not answered in this document.
 
 [#s-locality-type]
 ==== Locality Type
 
-The **<<locality-type>>** refers to the pattern of the most specific part of a **<<locality>>** description to be **<<georeference,georeferenced>>** – the one that determines which calculation method to use. The *_Calculator_* has options to compute **<<georeference,georeferences>>** for six basic **<<locality-type,locality-types>>**:
+The <<locality-type,locality type>> refers to the pattern of the most specific part of a <<locality>> description to be <<georeference,georeferenced>> – the one that determines which calculation method to use. The Calculator has options to compute georeferences for six basic locality types:
 
-* **<<coordinates,Coordinates>>** only.
-* Geographic **<<feature>>** only.
-* Distance only.
-* Distance along a path.
-* Distance along orthogonal **<<direction,directions>>**.
-* Distance at a **<<heading>>**.
+* <<coordinates,Coordinates>> only
+* Geographic <<feature>> only
+* Distance only
+* Distance along a path
+* Distance along orthogonal <<direction,directions>>
+* Distance at a <<heading>>
 
-Selecting a **<<locality-type,Locality-Type>>** will configure the *_Calculator_* to show all of the parameters that need to be set to perform the **<<georeference>>** calculation. This *_Guide_* gives specific instructions for how to set the parameters for many different examples of each of the **<<locality-type,Locality-Types>>**.
+Selecting a locality type will configure the Calculator to show all of the parameters that need to be set to perform the georeference calculation. This Guide gives specific instructions for how to set the parameters for many different examples of each of the locality types.
 
 [#s-corrected-center]
 ==== Corrected Center
