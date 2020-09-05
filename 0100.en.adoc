@@ -107,7 +107,7 @@ Selecting a locality type will configure the Calculator to show all of the param
 [#s-corrected-center]
 ==== Corrected Center
 
-The <<corrected-center,corrected center>> is the point within a <<location>>, or on its <<boundary>>, that minimizes the <<geographic-radial,geographic radial>> (see <<Radial of Feature>>). This point is obtained by finding the <<smallest-enclosing-circle,smallest enclosing circle>> that contains the entire <<feature>>, and then taking the center of that circle (xref:img-corrected-center[xrefstyle="short"]A). If that center does not fall on or inside the boundaries of the feature, find the smallest-enclosing-circle that contains the entire feature, *but* has its center on the boundary of the feature (xref:img-corrected-center[xrefstyle="short"]B). Note that in the corrected case, the new circle, and hence the <<radial>>, will always be larger than the uncorrected one. In the http://georeferencing.org/georefcalculator/gc.html[Calculator], the <<coordinates>> corresponding to the corrected center are labelled as _Input Latitude_ and _Input Longitude_.
+The <<corrected-center,corrected center>> is the point within a <<location>>, or on its <<boundary>>, that minimizes the <<geographic-radial,geographic radial>> (see <<Radial of Feature>>). This point is obtained by finding the <<smallest-enclosing-circle,smallest enclosing circle>> that contains the entire <<feature>>, and then taking the center of that circle (xref:img-corrected-center[xrefstyle="short"]A). If that center does not fall on or inside the boundaries of the feature, find the smallest-enclosing-circle that contains the entire feature, *but* has its center on the boundary of the feature (xref:img-corrected-center[xrefstyle="short"]B). Note that in the corrected case, the new circle, and hence the <<radial>>, will always be larger than the uncorrected one. In the http://georeferencing.org/georefcalculator/gc.html[Calculator^], the <<coordinates>> corresponding to the corrected center are labelled as _Input Latitude_ and _Input Longitude_.
 
 
 [#img-corrected-center]
@@ -116,14 +116,14 @@ image::img/web/corrected-center.png[width=597,align="center"]
 
 ==== Radial of Feature
 
-A **<<feature>>** is a place in the **<<locality>>** description that has an **<<extent>>** and can be delimited by a  **<<boundary>>**. The **<<geographic-radial>>** of the **<<feature>>** (shown as _Radial of Feature_ in the *_Calculator_*) is the distance from the **<<corrected-center>>** of the **<<feature>>** to the furthest point on the **<<geographic-boundary>>** of that **<<feature>>** (see xref:img-corrected-center[xrefstyle="short"] and {gbp}#extent-of-a-location[Extent of a Location] in *_Georeferencing Best Practices_*). Note that the radial was called "*extent*" in early versions of the *_Calculator_*.
+A <<feature>> is a place in the <<locality>> description that has an <<extent>> and can be delimited by a <<boundary>>. The <<geographic-radial,geographic radial>> of the feature (shown as _Radial of Feature_ in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]) is the distance from the <<corrected-center,corrected center>> of the feature to the furthest point on the <<geographic-boundary,geographic boundary>> of that feature (see xref:img-corrected-center[xrefstyle="short"] and {gbp}#extent-of-a-location[Extent of a Location^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]. Note that the radial was called "extent" in early versions of the Calculator.
 
-NOTE: The final <<georeference>> will have a <<geographic-radial>> distinct from the <<geographic-radial>> of any of the <<feature,features>> in the <<locality>> description (because it will also encompass all sources of <<uncertainty>>), and this will be captured in the output from the Calculator in the *Uncertainty* field.
+NOTE: The final <<georeference>> will have a geographic radial distinct from the geographic radial of any of the features in the <<locality>> description (because it will also encompass all sources of <<uncertainty>>), and this will be captured in the output from the Calculator in the _Uncertainty_ field.
 
 [#s-latitude]
 ==== Latitude
 
-Labelled as _Input Latitude_ in the *_Calculator_*. The **<<geographic-coordinates,geographic-coordinate>>** north or south of the equator (where **<<latitude>>** is 0) that represents the starting point for a **<<georeference>>** calculation and depends on the **<<locality-type>>**.
+Labelled as _Input Latitude_ in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]. The **<<geographic-coordinates,geographic-coordinate>>** north or south of the equator (where **<<latitude>>** is 0) that represents the starting point for a **<<georeference>>** calculation and depends on the **<<locality-type>>**.
 
 **<<latitude,Latitudes>>** in **<<decimal-degrees>>** north of the equator are positive by convention, while **<<latitude,latitudes>>** to the south are negative. The *_Calculator_* supports three degree-based **<<geographic-coordinates,geographic-coordinate>>** formats for **<<latitude>>** and **<<longitude>>**: **<<decimal-degrees>>** (_e.g._, −41.0570673), degrees decimal minutes (_e.g._, 41° 3.424"), and **<<DMS,degrees-minutes-seconds>>** (_e.g._, 41° 3' 25.44" S).
 
