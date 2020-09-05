@@ -24,8 +24,8 @@ ifdef::backend-pdf[]
 endif::backend-pdf[]
 
 // Shorthand for links to the other two documents
-:gbp: link:../../../georeferencing-best-practices/1.0/en
-:gcm: link:../../../georeferencing-calculator-manual/1.0/
+:gbp: link:../../../georeferencing-best-practices/1.0/en/
+:gcm: link:../../../georeferencing-calculator-manual/1.0/en/
 
 ifdef::backend-html5[]
 languageLinks:combined[]
