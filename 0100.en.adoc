@@ -212,7 +212,7 @@ The _Measurement Error_ accounts for <<error>> associated with the ability to di
 
 ==== GPS Accuracy
 
-When _GPS_ is selected from the _Coordinate Source_ drop-down list, the label for the _Measurement Error_ text box changes to _GPS Accuracy_. We recommend entering a value that is at least twice the value given by the <<GPS>> at the time the <<coordinates>> were captured (see {gbp}#uncertainty-due-to-gps[Uncertainty due to GPS^] in [Georeferencing Best Practices (Chapman & Wieczorek 2020)^]. If _GPS Accuracy_ is not known, enter 100 m for standard hand-held GPS coordinates taken before 1 May 2000 when Selective Availability was discontinued. After that, use 30 m as a conservative default value.
+When _GPS_ is selected from the _Coordinate Source_ drop-down list, the label for the _Measurement Error_ text box changes to _GPS Accuracy_. We recommend entering a value that is at least twice the value given by the <<GPS>> at the time the <<coordinates>> were captured (see {gbp}#uncertainty-due-to-gps[Uncertainty due to GPS^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]. If _GPS Accuracy_ is not known, enter 100 m for standard hand-held GPS coordinates taken before 1 May 2000 when Selective Availability was discontinued. After that, use 30 m as a conservative default value.
 
 [#s-uncertainty]
 ==== Uncertainty
