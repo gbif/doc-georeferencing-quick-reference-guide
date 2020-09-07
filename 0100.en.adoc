@@ -208,7 +208,7 @@ The _Distance Precision_, labeled in the http://georeferencing.org/georefcalcula
 
 ==== Measurement Error
 
-The _Measurement Error_ accounts for <<error>> associated with the ability to distinguish one point from another using any measuring tool, such as rulers on paper maps or the measuring tools on Google Maps or Google Earth. The units of measurement must be the same as those in the <<locality>> description as captured in _Distance Units_ (see <<Distance Units>>). The _Distance Converter_ at the bottom of the http://georeferencing.org/georefcalculator/gc.html[Calculator^]* is provided to aid in changing a measurement to the locality description units. For example, a measurement error of 1 mm on a map of 1:24,000 scale would be 24 m.
+The _Measurement Error_ accounts for <<error>> associated with the ability to distinguish one point from another using any measuring tool, such as rulers on paper maps or the measuring tools on Google Maps or Google Earth. The units of measurement must be the same as those in the <<locality>> description as captured in _Distance Units_ (see <<Distance Units>>). The _Distance Converter_ at the bottom of the http://georeferencing.org/georefcalculator/gc.html[Calculator^] is provided to aid in changing a measurement to the locality description units. For example, a measurement error of 1 mm on a map of 1:24,000 scale would be 24 m.
 
 ==== GPS Accuracy
 
