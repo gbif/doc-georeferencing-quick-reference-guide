@@ -2,43 +2,43 @@
 
 === Geographic Feature only
 
-.**Definition**
+.Definition
 [NOTE]
 ====
-The simplest **<<locality>>** descriptions consist of only a named place, or more generally, a **<<feature>>**, which is often listed in a standard **<<gazetteer>>** and can probably be located on a map of the appropriate scale.
+The simplest locality descriptions consist of only a named place, or more generally, a feature, which is often listed in a standard gazetteer and can probably be located on a map of the appropriate scale.
 ====
 
-Despite how they might be presented in a **<<gazetteer>>** or on a map, **<<feature,features>>** are not points; they are areas that have a spatial **<<extent>>**. Some **<<feature,features>>** can have an obvious spatial **<<extent>>**, while others may not. All variations of **<<feature,features>>** are treated in this *_Guide_* as one or the other of these two main categories. The basic methodology is to try to determine the **<<boundary,boundaries>>** of the **<<feature>>**, its **<<corrected-center>>** and a measure of how specific the **<<feature>>** is (defined here by the **<<geographic-radial>>**).
+Despite how they might be presented in a <<gazetteer>> or on a map, <<feature,features>> are not points; they are areas that have a spatial <<extent>>. Some features can have an obvious spatial extent, while others may not. All variations of features are treated in this Guide as one or the other of these two main categories. The basic methodology is to try to determine the <<boundary,boundaries>> of the feature, its <<corrected-center,corrected center>> and a measure of how specific the feature is (defined here by the <<geographic-radial,geographic radial>>).
 
-NOTE: **<<coordinates,Coordinates>>** from geographic indexes such as **<<gazetteer,gazetteers>>** often use reference points that are not necessarily in the center of the **<<feature>>**. For example, a river may be referenced by its mouth, and a town by its main post office, courthouse, or main plaza. It is best to use a visual reference to determine **<<boundary,boundaries>>, centers**, and **<<radial,radials>>**. For this reason, it is a good idea to use the **<<gazetteer>> <<coordinates>>** to find the **<<feature>>** on a map, and then use the map to find the **<<boundary,boundaries>>**, **<<corrected-center>>**, and **<<geographic-radial>>** of the **<<feature>>**.
+NOTE: Coordinates from geographic indexes such as gazetteers often use reference points that are not necessarily in the center of the feature. For example, a river may be referenced by its mouth, and a town by its main post office, courthouse, or main plaza. It is best to use a visual reference to determine boundaries, centers, and radials. For this reason, it is a good idea to use the gazetteer coordinates to find the feature on a map, and then use the map to find the boundaries, corrected center and geographic radial of the feature.
 
 ==== Feature – with Obvious Spatial Extent
 
-The **<<locality>>** refers to a geographic **<<feature>>** with discernible spatial **<<extent>>**, _i.e._, the **<<boundary,boundaries>>** of the **<<feature>>** can be determined easily (xref:img-obvious-spatial-extent[xrefstyle="short"]).
+The <<locality>> refers to a geographic <<feature>> with discernible spatial <<extent>>, i.e. the <<boundary,boundaries>> of the feature can be determined easily (xref:img-obvious-spatial-extent[xrefstyle="short"]).
 
 .{blank}
 [caption=Examples]
 ====
-"Puerto Madryn" +
-"Isla Tiburón" +
-"Yosemite National Park" +
-"Botany Bay"
+Puerto Madryn +
+Isla Tiburón +
+Yosemite National Park +
+Botany Bay
 ====
 
 *Locality Type:* _Geographic feature only_
 
-*Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* This step is to determine the **<<shape>>** that contains the **<<feature>>**. This is typically done by drawing a polygon around the **<<feature>>** (xref:img-obvious-spatial-extent[xrefstyle="short"]A), but some features may require more complex **<<geometry,geometries>>**, such as multiple polygons.
+*Step 1 – Determine the feature boundaries:* This step is to determine the <<shape>> that contains the <<feature>>. This is typically done by drawing a polygon around the feature (xref:img-obvious-spatial-extent[xrefstyle="short"]A), but some features may require more complex <<geometry,geometries>>, such as multiple polygons.
 
-NOTE: Record the source (including date) used to determine the <<boundary,boundaries>> (see georeferenceSources).
+NOTE: Record the source (including date) used to determine the boundaries (see term:dwc[georeferenceSources]).
 
-*Step 2 – Determine the <<coordinates>>:* Use the **<<coordinates>>** of the **<<corrected-center>>** of the **<<feature>>** ("*a*" in xref:img-obvious-spatial-extent[xrefstyle="short"]B) as the _Input Latitude_ and _Longitude_.
+*Step 2 – Determine the coordinates:* Use the <<coordinates>> of the <<corrected-center,corrected center>> of the <<feature>> ("*a*" in xref:img-obvious-spatial-extent[xrefstyle="short"]B) as the _Input Latitude_ and _Longitude_.
 
-*Step 3 – Measure the <<geographic-radial>>:* Measure the distance from the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>** ("*b*" in xref:img-obvious-spatial-extent[xrefstyle="short"]B) as the _Radial of Feature_.
+*Step 3 – Measure the geographic radial:* Measure the distance from the <<corrected-center,corrected center>> to the furthest point on the <<boundary>> of the <<feature>> ("*b*" in xref:img-obvious-spatial-extent[xrefstyle="short"]B) as the _Radial of Feature_.
 
 *Step 4 – Calculate using the following additional parameters:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, and _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-obvious-spatial-extent]
-.*A* **<<boundary,Boundary>>** only, and *B* **<<boundary>>**, center ⓐ of the **<<smallest-enclosing-circle>>** and **<<geographic-radial>>** ⓑ of a **<<feature>>** with obvious spatial **<<extent>>**. The center ⓐ falls within the **<<boundary,boundaries>>** and thus needs no correction.
+.*A* <<boundary,Boundary>> only, and *B* center ⓐ of the <<smallest-enclosing-circle>> and <<geographic-radial>> ⓑ of a <<feature>> with obvious spatial <<extent>>. The center ⓐ falls within the boundaries and thus needs no correction.
 image::img/web/obvious-spatial-extent.png[width=618,align="center"]
 
 ==== Feature – without Obvious Spatial Extent
