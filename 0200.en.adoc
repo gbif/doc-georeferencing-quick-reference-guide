@@ -110,34 +110,34 @@ image::img/web/mountain-boundaries.png[width=574,align="center"]
 
 ==== Feature – Special Cases
 
-The following are special cases of **<<feature,features>>** that might or might not have an obvious spatial **<<extent>>**, depending on the completeness of the information available.
+The following are special cases of <<feature,features>> that might or might not have an obvious spatial <<extent>>, depending on the completeness of the information available.
 
 ===== Feature – Street Address
 
-The **<<locality>>** is a street address – usually with a number, a street name, and an administrative **<<feature>>** name.
+The <<locality>> is a street address – usually with a number, a street name, and an administrative <<feature>> name.
 
 .{blank}
 [caption=Examples]
 ====
-"Av. Angel Gallardo 470, Buenos Aires, Argentina" +
-"1 Orchard Lane, Berkeley, CA" +
+Av. Angel Gallardo 470, Buenos Aires, Argentina +
+1 Orchard Lane, Berkeley, CA +
 "21054 Baldersleigh Road, Guyra, NSW" (indicates that the locality is 21.054 km from the beginning of Baldersleigh Road).
 ====
 
 *Locality Type:* _Geographic feature only_
 
-*Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* Locate the address using a site such as Google Maps™, Mapquest™ or OpenStreetMap.
+*Step 1 – Determine the feature boundaries:* Locate the address using a site such as Google Maps, Mapquest or OpenStreetMap.
 
-a. Address **<<boundary>>** evident – if the map shows the **<<extent>>** of the address clearly, determine the **<<boundary>>** exactly as you would for a **<<feature>>** with an Obvious Spatial Extent (xref:img-street-address[xrefstyle="short"]A); (see <<Feature – with Obvious Spatial Extent>>).
+a. Address <<boundary>> evident – if the map shows the <<extent>> of the address clearly, determine the boundary exactly as you would for a feature with an Obvious Spatial Extent (xref:img-street-address[xrefstyle="short"]A); (see <<Feature – with Obvious Spatial Extent>>).
 
-b. Address **<<boundary>>** not evident – if the exact address cannot be found, estimate the **<<boundary>>** as well as possible, such as the block that it must be on (xref:img-street-address[xrefstyle="short"]B), as for <<Feature – without Obvious Spatial Extent>>. Many addresses reflect a **<<grid>>** system of labeling addresses. For instance, addresses between 12th Street and 13th Street would lie between 1200 and 1300.
+b. Address boundary not evident – if the exact address cannot be found, estimate the boundary as well as possible, such as the block that it must be on (xref:img-street-address[xrefstyle="short"]B), as for <<Feature – without Obvious Spatial Extent>>. Many addresses reflect a <<grid>> system of labeling addresses. For instance, addresses between 12th Street and 13th Street would lie between 1200 and 1300.
 
-*Step 2 – Determine the <<coordinates>> and measure the <<geographic-radial>>:* Once the **<<boundary>>** has been determined, use the same method to determine the **<<coordinates>>** and **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
+*Step 2 – Determine the coordinates and measure the geographic radial:* Once the boundary has been determined, use the same method to determine the coordinates and <<geographic-radial,geographic radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center,corrected center>> to the furthest point on the boundary of the feature.
 
 *Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-street-address]
-.**<<boundary,Boundary>>**, **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ of a street address, *A* with obvious **<<boundary,boundaries>>**; *B* with no obvious **<<boundary,boundaries>>**, and where it is not possible to tell from the source map whether the **<<location>>** is on one side of the street or the other.
+.Boundary, corrected center ⓐ and geographic radial ⓑ of a street address. *A* has obvious boundaries; *B* has no obvious boundaries, and where it is not possible to tell from the source map whether the location is on one side of the street or the other.
 image::img/web/street-address.png[width=613,align="center"]
 
 ===== Feature – Property
