@@ -38,7 +38,7 @@ NOTE: Record the source (including date) used to determine the boundaries (see t
 *Step 4 – Calculate using the following additional parameters:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, and _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-obvious-spatial-extent]
-.*A* <<boundary,Boundary>> only, and *B* center ⓐ of the <<smallest-enclosing-circle>> and <<geographic-radial>> ⓑ of a <<feature>> with obvious spatial <<extent>>. The center ⓐ falls within the boundaries and thus needs no correction.
+.A. Boundary only, and B. center ⓐ of the smallest enclosing circle and geographic radial ⓑ of a feature with obvious spatial extent. The center ⓐ falls within the boundaries and thus needs no correction.
 image::img/web/obvious-spatial-extent.png[width=618,align="center"]
 
 ==== Feature – without Obvious Spatial Extent
