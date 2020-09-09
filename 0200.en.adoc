@@ -142,34 +142,34 @@ image::img/web/street-address.png[width=613,align="center"]
 
 ===== Feature – Property
 
-The **<<locality>>** is a property – a ranch, rancho, station, farm, finca, grange, granja, estância, plantation, hacienda, fazenda, manor, holding, estate, spread, acreage, orchard, steading, parcel, terreno, etc.
+The <<locality>> is a property – a ranch, rancho, station, farm, finca, grange, granja, estância, plantation, hacienda, fazenda, manor, holding, estate, spread, acreage, orchard, steading, parcel, terreno, etc.
 
 .{blank}
 [caption=Examples]
 ====
-"Victoria River Station" +
-"Mathae Ranch" +
-"Estancia 9 de Julio"
+Victoria River Station +
+Mathae Ranch +
+Estancia 9 de Julio
 ====
 
 *Locality Type:* _Geographic feature only_
 
-*Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* Locate the property using whatever sources you can. You may have to resort to a cadastral map.
+*Step 1 – Determine the feature boundaries:* Locate the property using whatever sources you can. You may have to resort to a cadastral map.
 
-a. Property **<<boundary,boundaries>>** evident – if the map shows the **<<extent>>** of the property, determine the **<<boundary>>** exactly as you would for <<Feature – with Obvious Spatial Extent>>).
+a. Property <<boundary,boundaries>> evident – if the map shows the <<extent>> of the property, determine the boundary exactly as you would for <<Feature – with Obvious Spatial Extent>>).
 
-b. Property **<<boundary,boundaries>>** not evident – if the full **<<extent>>** of the property cannot be found, it should still be possible to determine some part of it confidently, and the rest with less certainty. Delimit the outer, uncertain feature **<<boundary,boundaries>>** as usual by following <<Feature – without Obvious Spatial Extent>>. In addition, determine the **<<boundary,boundaries>>** of the part of the property that is obvious following <<Feature – with Obvious Spatial Extent>>.
+b. Property boundaries not evident – if the full extent of the property cannot be found, it should still be possible to determine some part of it confidently, and the rest with less certainty. Delimit the outer, uncertain feature boundaries as usual by following <<Feature – without Obvious Spatial Extent>>. In addition, determine the boundaries of the part of the property that is obvious following <<Feature – with Obvious Spatial Extent>>.
 
 *Step 2 – Determine the coordinates and geographic radial:*
 
-a. Property **<<boundary,boundaries>>** evident – once the **<<boundary>> **is determined, determine the **<<coordinates>>** and **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>** (xref:img-property-boundary[xrefstyle="short"]A).
+a. Property boundaries evident – once the boundary is determined, determine the <<coordinates>> and <<geographic-radial,geographic radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center,corrected center>> to the furthest point on the boundary of the feature (xref:img-property-boundary[xrefstyle="short"]A).
 
-b. Property **<<boundary,boundaries>>** not evident – once the outer **<<boundary,boundaries>>** are determined, use them to find **<<coordinates>>** as for <<Feature – with Obvious Spatial Extent>>, namely find the center of the **<<smallest-enclosing-circle>>** containing the outer, uncertain  **<<boundary>>**. If that center falls within the inner, confident  **<<boundary>>**, use it to determine the **<<geographic-radial>>** by finding the distance from that point to the furthest point on the uncertain **<<boundary>>** (xref:img-property-boundary[xrefstyle="short"]B). If the center does not fall in or on the confident inner  **<<boundary>>**, let the **<<corrected-center>>** be a point on the inner confident **<<boundary>>** that minimizes the **<<geographic-radial>>** to the outer uncertain **<<boundary>>** (xref:img-property-boundary[xrefstyle="short"]C).
+b. Property boundaries not evident – once the outer boundaries are determined, use them to find coordinates as for <<Feature – with Obvious Spatial Extent>>, namely find the center of the <<smallest-enclosing-circle,smallest enclosing circle>> containing the outer, uncertain  boundary. If that center falls within the inner, confident boundary, use it to determine the geographic radial by finding the distance from that point to the furthest point on the uncertain boundary (xref:img-property-boundary[xrefstyle="short"]B). If the center does not fall in or on the confident inner boundary, let the <<corrected-center,corrected center>> be a point on the inner confident boundary that minimizes the geographic radial to the outer uncertain boundary (xref:img-property-boundary[xrefstyle="short"]C).
 
-*Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the Calculator*: _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-property-boundary]
-.**<<boundary,Boundary>>**, **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ of a property. *A* with obvious **<<boundary,boundaries>>**; *B* with an obvious inner **<<boundary>>** (dark shading) and a less obvious rough outer **<<boundary>>** (lighter shading), where the center of the outer **<<boundary>>** falls within the obvious inner  **<<boundary>>** ; *C:* with an obvious inner **<<boundary>>** (dark shading) and a rough outer **<<boundary>>** (lighter shading), where the center of the outer **<<boundary>>** ⓒ does not fall within the obvious inner  **<<boundary>>**.
+.Boundary, corrected center ⓐ and geographic radial ⓑ of a property. *A* has obvious boundaries; *B* has an obvious inner boundary (dark shading) and a less obvious rough outer boundary (lighter shading), where the center of the outer boundary falls within the obvious inner boundary; *C* has an obvious inner boundary (dark shading) and a rough outer boundary (lighter shading), where the center of the outer boundary ⓒ does not fall within the obvious inner boundary.
 image::img/web/property-boundary.png[width=615,align="center"]
 
 ===== Feature – Path
