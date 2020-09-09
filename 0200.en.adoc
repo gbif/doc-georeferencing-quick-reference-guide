@@ -43,26 +43,26 @@ image::img/web/obvious-spatial-extent.png[width=618,align="center"]
 
 ==== Feature – without Obvious Spatial Extent
 
-The **<<locality>>** refers to a geographic **<<feature>>** that does not have an easily discernible spatial  **<<boundary>>**. Some **<<feature,features>>** may have undefined **<<boundary,boundaries>>** (_e.g._, mountains, unincorporated towns, etc.). Other **<<feature,features>>** may only have a label, with no apparent **<<boundary,boundaries>>** or size on a map because they are small or obscured on satellite imagery (_e.g._, spring, monument, etc.). Another possibility is a feature with only **<<coordinates>>** from a **<<gazetteer>>** and no discernible presence on a map.
+The <<locality>> refers to a geographic <<feature>> that does not have an easily discernible spatial <<boundary>>. Some features may have undefined boundaries (e.g. mountains, unincorporated towns, etc.). Other features may only have a label, with no apparent boundaries or size on a map because they are small or obscured on satellite imagery (e.g. spring, monument, etc.). Another possibility is a feature with only <<coordinates>> from a <<gazetteer>> and no discernible presence on a map.
 
 .{blank}
 [caption=Examples]
 ====
 "Pampa Grande" as a region, "Mt Hypipamee" +
-"Great Barrier Reef"
+Great Barrier Reef
 ====
 
 *Locality Type:* _Geographic feature only_
 
-*Step 1 – Estimate the <<feature>> <<boundary,boundaries>>:* Determine the **<<boundary,boundaries>>** of the **<<feature>>** as well as possible using visible evidence for the **<<feature>>** on a map. Try to get into the mind of the person who recorded the **<<locality>>**. Imagine yourself there. What circumstances would influence which **<<feature>>** was recorded and what circumstances would have encouraged them to choose a different **<<feature>>**?
+*Step 1 – Estimate the feature boundaries:* Determine the <<boundary,boundaries>> of the <<feature>> as well as possible using visible evidence for the feature on a map. Try to get into the mind of the person who recorded the <<locality>>. Imagine yourself there. What circumstances would influence which feature was recorded and what circumstances would have encouraged them to choose a different feature?
 
-For towns without obvious borders one can use the presence of buildings near the **<<coordinates>>** given for the town to decide where the town ends (xref:img-without-obvious-spatial-extent[xrefstyle="short"]). In some cases there might not be such indicators and these will be more subjective. For this reason it is particularly important to document the rationale for the selection of the **<<locality>>** with unclear **<<boundary,boundaries>>**.
+For towns without obvious borders one can use the presence of buildings near the <<coordinates>> given for the town to decide where the town ends (xref:img-without-obvious-spatial-extent[xrefstyle="short"]). In some cases there might not be such indicators and these will be more subjective. For this reason it is particularly important to document the rationale for the selection of the locality with unclear boundaries.
 
 [#img-without-obvious-spatial-extent]
-.**<<boundary,Boundary>>** (lighter dotted line), **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ of a town based on the locations of buildings and a well-defined neighboring town border (denoted by the darker dotted line) on a map.
+.Boundary (lighter dotted line), corrected center ⓐ and geographic radial ⓑ of a town based on the locations of buildings and a well-defined neighboring town border (denoted by the darker dotted line) on a map.
 image::img/web/without-obvious-spatial-extent.png[width=378,align="center"]
 
-Where there are no indicators for the  **<<boundary>>**, use the midpoint between the given **<<feature>>** and neighboring **<<feature,features>>** with similar type, size, or importance to make a rough **<<boundary>>**. Though this **<<boundary>>** may not represent the actual **<<feature>>** very well, it will represent the **<<uncertainty>>** of where the **<<locality>>** is, and that is the major goal of the **<<georeference>>**.
+Where there are no indicators for the boundary, use the midpoint between the given feature and neighboring features with similar type, size, or importance to make a rough boundary. Though this boundary>>** may not represent the actual **<<feature>>** very well, it will represent the **<<uncertainty>>** of where the **<<locality>>** is, and that is the major goal of the **<<georeference>>**.
 
 For small **<<feature,features>>**, where the only indicator on a map is a label and possibly a marker, or where there are only **<<coordinates>>** from a **<<gazetteer>>** (and no further indicators at those **<<coordinates>>** on a map), a good strategy would be to use a predefined default size based on the **<<feature>>** type (xref:img-without-obvious-spatial-extent-default-size[xrefstyle="short"], xref:table-default-geographic-radial[xrefstyle="short"]).
 
