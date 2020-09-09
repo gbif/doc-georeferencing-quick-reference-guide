@@ -62,18 +62,18 @@ For towns without obvious borders one can use the presence of buildings near the
 .Boundary (lighter dotted line), corrected center ⓐ and geographic radial ⓑ of a town based on the locations of buildings and a well-defined neighboring town border (denoted by the darker dotted line) on a map.
 image::img/web/without-obvious-spatial-extent.png[width=378,align="center"]
 
-Where there are no indicators for the boundary, use the midpoint between the given feature and neighboring features with similar type, size, or importance to make a rough boundary. Though this boundary>>** may not represent the actual **<<feature>>** very well, it will represent the **<<uncertainty>>** of where the **<<locality>>** is, and that is the major goal of the **<<georeference>>**.
+Where there are no indicators for the boundary, use the midpoint between the given feature and neighboring features with similar type, size, or importance to make a rough boundary. Though this boundary may not represent the actual feature very well, it will represent the uncertainty of where the locality is, and that is the major goal of the <<georeference>>.
 
-For small **<<feature,features>>**, where the only indicator on a map is a label and possibly a marker, or where there are only **<<coordinates>>** from a **<<gazetteer>>** (and no further indicators at those **<<coordinates>>** on a map), a good strategy would be to use a predefined default size based on the **<<feature>>** type (xref:img-without-obvious-spatial-extent-default-size[xrefstyle="short"], xref:table-default-geographic-radial[xrefstyle="short"]).
+For small features, where the only indicator on a map is a label and possibly a marker, or where there are only coordinates from a <<gazetteer>> (and no further indicators at those coordinates on a map), a good strategy would be to use a predefined default size based on the feature type (xref:img-without-obvious-spatial-extent-default-size[xrefstyle="short"], xref:table-default-geographic-radial[xrefstyle="short"]).
 
 [#img-without-obvious-spatial-extent-default-size]
-.The **<<boundary>>** for a spring determined from the position of its icon on a map ⓐ and a **<<geographic-radial>>** ⓑ determined by a default size for the **<<feature>>** type.
+.The boundary for a spring determined from the position of its icon on a map ⓐ and a geographic radial ⓑ determined by a default size for the feature type.
 image::img/web/without-obvious-spatial-extent-default-size.png[width=227,align="center"]
 
 // NB was Table 2 in the source document, but there is no Table 1.
 
 [#table-default-geographic-radial]
-.List of **<<feature>>** types and the default **<<geographic-radial>>** to use. If the **<<feature>>** type you are looking for isn't on the list, use one that is most like the **<<feature>>** type you seek and be sure to document your choice in term:dwc[georeferenceRemarks].
+.List of feature types and the default geographic radial to use. If the feature type you are looking for isn't on the list, use one that is most like the feature type you seek and be sure to document your choice in term:dwc[georeferenceRemarks].
 [%autowidth,frame=topbot,grid=rows,stripes=none,align="center"]
 |===
 h|Feature Type h|Default <<geographic-radial>>
@@ -85,26 +85,26 @@ h|Feature Type h|Default <<geographic-radial>>
 |PLSS Township |6828 m
 |PLSS Section |1138 m
 |PLSS ¼ Section |570 m
-|*Grid* (_e.g._, **UTM**), 1 m *precision* |1 m
-|*Grid* (_e.g._, **UTM**), 10 m *precision* |7 m
-|*Grid* (_e.g._, **UTM**), 100 m *precision* |71 m
-|*Grid* (_e.g._, **UTM**), 1 km *precision* |707 m
-|*Grid*, ¼ degree *precision* (at equator)† |39226 m
+|Grid (e.g. UTM), 1 m precision |1 m
+|Grid (e.g. UTM), 10 m precision |7 m
+|Grid (e.g. UTM), 100 m precision |71 m
+|Grid (e.g. UTM), 1 km precision |707 m
+|Grid, ¼ degree *precision* (at equator)† |39226 m
 |===
 
-† **<<grid,Grids>>** based on **<<geographic-coordinates>>**, such as Quarter Degree Squares, are not square, nor are they constant. They vary in size and shape by **<<latitude>>**. See {gbp}#table-uncertainty[table] in {gbp}#uncertainty-related-to-coordinate-precision[Uncertainty Related to Coordinate Precision] in *_Georeferencing Best Practices_*.
+† <<grid,Grids>> based on <<geographic-coordinates,geographic coordinates>>, such as Quarter Degree Squares, are not square, nor are they constant. They vary in size and shape by <<latitude>>. See {gbp}#table-uncertainty[table^] in {gbp}#uncertainty-related-to-coordinate-precision[Uncertainty Related to Coordinate Precision in Georeferencing Best Practices (Chapman & Wieczorek 2020)^].
 
-The **<<boundary,boundaries>>** between mountains can be determined by using the terrain (valleys, saddles, and plains) that separate one mountain from others around it (xref:img-mountain-boundaries[xrefstyle="short"]).
+The boundaries between mountains can be determined by using the terrain (valleys, saddles, and plains) that separate one mountain from others around it (xref:img-mountain-boundaries[xrefstyle="short"]).
 
-Always use term:dwc[georeferenceRemarks] to document the decisions made and the reasons for them as well as possible, including the neighboring **<<feature,features>>** used for reference.
+Always use term:dwc[georeferenceRemarks] to document the decisions made and the reasons for them as well as possible, including the neighboring features used for reference.
 
 [#img-mountain-boundaries]
-.*A* Topographic contours of a group of nearby mountains. *B* Rough **<<boundary>>**, **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ of a mountain determined by the surrounding valleys, saddles, and plains.
+.A. Topographic contours of a group of nearby mountains. B. Rough boundary, corrected center ⓐ and geographic radial ⓑ of a mountain determined by the surrounding valleys, saddles, and plains.
 image::img/web/mountain-boundaries.png[width=574,align="center"]
 
-*Step 2 – Determine the <<coordinates>>:* Once the estimated **<<boundary>>** has been determined, use the **<<coordinates>>** of the **<<corrected-center>>** (xref:img-obvious-spatial-extent[xrefstyle="short"], xref:img-without-obvious-spatial-extent[xrefstyle="short"], and xref:img-mountain-boundaries[xrefstyle="short"]B) as the _Input Latitude_ and _Longitude_.
+*Step 2 – Determine the coordinates:* Once the estimated boundary has been determined, use the coordinates of the corrected center (xref:img-obvious-spatial-extent[xrefstyle="short"], xref:img-without-obvious-spatial-extent[xrefstyle="short"], and xref:img-mountain-boundaries[xrefstyle="short"]B) as the _Input Latitude_ and _Longitude_.
 
-*Step 3 – Measure the <<geographic-radial>>:* Once the rough **<<boundary>>** and the **<<coordinates>>** of the **<<corrected-center>>** have been determined, find the **<<geographic-radial>>** as the _Radial of Feature_ by measuring the distance from the **<<corrected-center>>** to the furthest point on the estimated **<<boundary>>** of the **<<feature>>**.
+*Step 3 – Measure the geographic radial:* Once the rough boundary and the coordinates of the corrected center have been determined, find the geographic radial as the _Radial of Feature_ by measuring the distance from the corrected center to the furthest point on the estimated boundary of the feature.
 
 *Step 4 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
