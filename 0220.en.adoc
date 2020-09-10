@@ -3,23 +3,23 @@
 .**Definition**
 [NOTE]
 ====
-An **<<offset>>** is a displacement from a reference **<<location>>**. An **<<offset>>** is usually used in conjunction with **<<heading>>** to give a distance and direction from a **<<feature>>** (see {gbp}#offsets[Offsets] and {gbp}#uncertainty-related-to-offset-precision[Uncertainty Related to Offset Precision], both in *_Georeferencing Best Practices_*). There are a variety of ways in which **<<offset,offsets>>** interact with **<<feature,features>>** and **<<heading,headings>>** in **<<locality>>** descriptions, each with its own methods of spatial interpretation.
+An *offset* is a displacement from a reference location. An offset is usually used in conjunction with heading to give a distance and direction from a feature (see {gbp}#offsets[Offsets^] and {gbp}#uncertainty-related-to-offset-precision[Uncertainty Related to Offset Precision^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]. There are a variety of ways in which offsets with features and headings in locality descriptions, each with its own methods of spatial interpretation.
 ====
 
-In all cases, both for the **<<shape>>** **<<georeferencing-method,method>>** and for the **<<point-radius>>** **<<georeferencing-method,method>>** using the *_Georeferencing Calculator_*, the **<<boundary,boundaries>>** of the reference **<<feature,feature(s)>>** are needed. Thus, this section on **<<offset,Offsets>>** will repeatedly refer to **<<feature,features>>** as determined by the methods presented in the various sections of <<Geographic Feature only>>.
+In all cases, both for the <<shape>> <<georeferencing-method,method>> and for the <<point-radius>> <<georeferencing-method,method>> using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator], the <<boundary,boundaries>> of the reference <<feature,feature(s)>> are needed. Thus, this section on Offsets will repeatedly refer to features as determined by the methods presented in the various sections of <<Geographic Feature only>>.
 
-The **<<locality-type,locality-types>>** that involve **<<offset,offsets>>**, in addition to the tricky one we have already seen above (<<Feature – near a Feature>>), are:
+The <<locality-type,locality-types>>** that involve offsets, in addition to the tricky one we have already seen above (<<Feature – near a Feature>>), are:
 
-* distance only (_e.g._, "5 mi from Bakersfield")
-* *<<heading>>* only (_e.g._, "North of Bakersfield")
-* distance along a **<<path>>** (_e.g._, "13 miles east (by road) from Bakersfield")
-* distance along orthogonal **<<direction,directions>>** (_e.g._, "2 miles east and 3 miles north of Bakersfield")
-* distance at a **<<heading>>** (_e.g._, "10 miles east (by air) from Bakersfield")
-* distances from two distinct **<<path,paths>>** (_e.g._, "1.5 mile east of Louisiana State Highway 1026 and 2 miles south of U.S. Highway 190")
+* distance only (e.g. "5 mi from Bakersfield")
+* <<heading>> only (e.g. "North of Bakersfield")
+* distance along a <<path>> (e.g. "13 miles east (by road) from Bakersfield")
+* distance along orthogonal <<direction,directions>> (e.g. "2 miles east and 3 miles north of Bakersfield")
+* distance at a <<heading>> (e.g. "10 miles east (by air) from Bakersfield")
+* distances from two distinct <<path,paths>> (e.g. "1.5 mile east of Louisiana State Highway 1026 and 2 miles south of U.S. Highway 190")
 
 ==== Offset – Distance only
 
-**<<locality,Locality>>** consists of an **<<offset>>** from a **<<feature>>** without any direction specified.
+<<locality,Locality>> consists of an <<offset>> from a <<feature>> without any direction specified.
 
 .{blank}
 [caption=Examples]
@@ -30,15 +30,15 @@ The **<<locality-type,locality-types>>** that involve **<<offset,offsets>>**, in
 
 *Locality Type:* _Distance only_
 
-*Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* Determine the *boundary* of the feature as you would for <<Feature – near a Feature>>, except that the distance to use for the buffer is the distance given in the **<<locality>>** description, and there is no need to account for the proximity of other **<<feature,features>>**.
+*Step 1 – Determine the feature boundaries:* Determine the <<boundary>> of the feature as you would for <<Feature – near a Feature>>, except that the distance to use for the buffer is the distance given in the locality description, and there is no need to account for the proximity of other features.
 
-*Step 2 – Determine the <<coordinates>> and <<geographic-radial>>:* Once the **boundary** has been determined, obtain the **coordinates** and the **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
+*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature.
 
-*Offset Distance:* Set to 0. The distance has already been incorporated in the determination of the  **<<boundary>>**. Use the distance and units given in the locality description to **<<georeference>>** using the *_Calculator_*.
+*Offset Distance*: Set to 0. The distance has already been incorporated in the determination of the boundary. Use the distance and units given in the locality description to <<georeference>> using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^].
 
-*Distance Precision:* Though the *_Offset Distance_* is set to zero, the _Distance Precision_ should still be set (see <<Distance Precision>>) to account for this source of **<<uncertainty>>**.
+*Distance Precision:* Though the *_Offset Distance_* is set to zero, the _Distance Precision_ should still be set (see <<Distance Precision>>) to account for this source of <<uncertainty>>.
 
-*Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _Measurement Error_ (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the Calculator:* _Coordinate source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _Measurement Error_ (see <<Georeferencing Concepts>>).
 
 ==== Offset – Heading only
 
