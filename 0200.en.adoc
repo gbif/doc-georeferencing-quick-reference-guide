@@ -19,10 +19,10 @@ The <<locality>> refers to a geographic <<feature>> with discernible spatial <<e
 .{blank}
 [caption=Examples]
 ====
-Puerto Madryn +
-Isla Tiburón +
-Yosemite National Park +
-Botany Bay
+* "Puerto Madryn" +
+* "Isla Tiburón" +
+* "Yosemite National Park" +
+* "Botany Bay"
 ====
 
 *Locality Type:* _Geographic feature only_
@@ -48,8 +48,8 @@ The <<locality>> refers to a geographic <<feature>> that does not have an easily
 .{blank}
 [caption=Examples]
 ====
-"Pampa Grande" as a region, "Mt Hypipamee" +
-Great Barrier Reef
+* "Pampa Grande" as a region, "Mt Hypipamee" +
+* "Great Barrier Reef"
 ====
 
 *Locality Type:* _Geographic feature only_
@@ -119,9 +119,9 @@ The <<locality>> is a street address – usually with a number, a street name, a
 .{blank}
 [caption=Examples]
 ====
-Av. Angel Gallardo 470, Buenos Aires, Argentina +
-1 Orchard Lane, Berkeley, CA +
-"21054 Baldersleigh Road, Guyra, NSW" (indicates that the locality is 21.054 km from the beginning of Baldersleigh Road).
+* "Av. Angel Gallardo 470, Buenos Aires, Argentina" +
+* "1 Orchard Lane, Berkeley, CA" +
+* "21054 Baldersleigh Road, Guyra, NSW" (indicates that the locality is 21.054 km from the beginning of Baldersleigh Road).
 ====
 
 *Locality Type:* _Geographic feature only_
@@ -147,9 +147,9 @@ The <<locality>> is a property – a ranch, rancho, station, farm, finca, grange
 .{blank}
 [caption=Examples]
 ====
-Victoria River Station +
-Mathae Ranch +
-Estancia 9 de Julio
+* "Victoria River Station" +
+* "Mathae Ranch* +
+* "Estancia 9 de Julio"
 ====
 
 *Locality Type:* _Geographic feature only_
@@ -174,41 +174,41 @@ image::img/web/property-boundary.png[width=615,align="center"]
 
 ===== Feature – Path
 
-A **<<path>>** is a linear **<<feature,features>>** such as a road, trail, river, stream, contour line,  **<<boundary>>**, **<<transect>>**, track of an animal’s movements, tow, trawl, etc. The **<<locality>>** may also refer to part (or subdivision) of a bigger **<<path>>**.
+A <<path>> is a linear <<feature,features>> such as a road, trail, river, stream, contour line, <<boundary>>, <<transect>>, track of an animal’s movements, tow, trawl, etc. The <<locality>> may also refer to part (or subdivision) of a bigger path.
 
-NOTE: a path may cross over itself, such as the track of an animal’s movements.
+NOTE: A path may cross over itself, for example, as with the track of an animal’s movements.
 
 .{blank}
 [caption=Examples]
 ====
-"Sacramento River" +
-"Arroyo Urugua-í" +
-"Hwy 1" +
-"along 100 m contour line"
+* "Sacramento River" +
+* "Arroyo Urugua-í" +
+* "Hwy 1" +
+* "along 100 m contour line"
 ====
 
 *Locality Type:* _Geographic feature only_
 
-*Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* As a linear **<<feature>>**, a **<<path>>** is often represented as a series of line segments (_i.e._, a polyline), with or without a buffer. When viewed on satellite imagery these **<<feature,features>>** (especially rivers) can be quite complex, so a constant buffer around the midline is not a good representation in these cases. When possible, determine the **<<boundary>>** as for any other **<<shape>>** using <<Feature – with Obvious Spatial Extent>>) (xref:img-paths[xrefstyle="short"]A). Otherwise, treat the **<<boundary>>** as a polyline (xref:img-paths[xrefstyle="short"]B) and determine the **<<corrected-center>>** and **<<geographic-radial>>** as explained below.
+*Step 1 – Determine the feature boundaries*: As a linear feature, a path is often represented as a series of line segments (i.e. a polyline), with or without a buffer. When viewed on satellite imagery these features (especially rivers) can be quite complex, so a constant buffer around the midline is not a good representation in these cases. When possible, determine the boundary as for any other <<shape>> using <<Feature – with Obvious Spatial Extent>>) (xref:img-paths[xrefstyle="short"]A). Otherwise, treat the boundary as a polyline (xref:img-paths[xrefstyle="short"]B) and determine the <<corrected-center>> and <<geographic-radial>> as explained below.
 
-NOTE: <<path,Paths>> are susceptible to change over time, so it may be best to find a map source from the period during which the event occurred. The scale is important when looking at a path on a map, as smaller scale maps reduce the complexity shown, with corners cut off, and with loops (oxbows, billabongs), etc. often not shown.
+NOTE: Paths are susceptible to change over time, so it may be best to find a map source from the period during which the event occurred. The scale is important when looking at a path on a map, as smaller scale maps reduce the complexity shown, with corners cut off, and with loops (oxbows, billabongs), etc. often not shown.
 
-*Contour Lines* — these are linear **<<feature,features>>** defined by **<<elevation>>** or **<<depth>>**. The horizontal width of the buffer around the contour line depends on the **<<uncertainty>>** in **<<elevation>>** due either to an elevational range, or due to the imprecision in the **<<elevation>>** recorded. For example, if the **<<elevation,elevational>>** range is given as 100-200 m, then the **<<boundary>>** of the **<<feature>>** defined by the contours would contain the horizontal area between the contours at 100 m and 200 m.
+*Contour Lines* — these are linear features defined by <<elevation>> or <<depth>>. The horizontal width of the buffer around the contour line depends on the <<uncertainty>> in elevation due either to an elevational range, or due to the imprecision in the elevation recorded. For example, if the elevational range is given as 100-200 m, then the boundary of the feature defined by the contours would contain the horizontal area between the contours at 100 m and 200 m.
 
-The determination of the **<<boundary>>** would be similar for an **<<elevation,elevational>>** buffer defined by the **<<uncertainty>>** in **<<elevation>>**. For example, if the **<<elevation>>** is given as 220 m, the elevational precision would be to the nearest 10 m and the **<<boundary>>** would be defined by the contours 210 m and 230 m.
+The determination of the boundary would be similar for an elevational buffer defined by the uncertainty in elevation. For example, if the elevation is given as 220 m, the elevational precision would be to the nearest 10 m and the boundary would be defined by the contours 210 m and 230 m.
 
 NOTE: Buffers might require interpolation on a topographic map if they do not correspond with the printed contour lines (xref:img-paths[xrefstyle="short"]C).
 
-These considerations apply equally to **<<depth>>** and **<<bathymetry>>** where contours are available, bearing in mind that some **<<bathymetry,bathymetric>>** contours are quite coarse.
+These considerations apply equally to depth and <<bathymetry>> where contours are available, bearing in mind that some bathymetric contours are quite coarse.
 
-*Step 2 – Determine the <<coordinates>> and <<geographic-radial>>:* If the **<<boundary>>** can be determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>** (xref:img-paths[xrefstyle="short"]A).
+*Step 2 – Determine the coordinates and geographic radial*: If the boundary can be determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the corrected-center to the furthest point on the boundary of the feature (xref:img-paths[xrefstyle="short"]A).
 
-If the **<<feature>>** must be treated as a polyline, draw a straight line connecting the ends of the polyline and determine its midpoint. If the midpoint falls on the polyline, that will be the center (no need for correction), and the **<<geographic-radial>>** will be the distance from that point to either of the endpoints of the polyline. If the midpoint does not fall on the polyline, move it to the point on the polyline that minimizes the distance to both endpoints. This is the **<<corrected-center>>** and the distance to the endpoints is the **<<geographic-radial>>** (xref:img-paths[xrefstyle="short"]B).
+If the  feature must be treated as a polyline, draw a straight line connecting the ends of the polyline and determine its midpoint. If the midpoint falls on the polyline, that will be the center (no need for correction), and the geographic radial will be the distance from that point to either of the endpoints of the polyline. If the midpoint does not fall on the polyline, move it to the point on the polyline that minimizes the distance to both endpoints. This is the corrected center and the distance to the endpoints is the geographic radial (xref:img-paths[xrefstyle="short"]B).
 
-*Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the _Calculator_*: _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-paths]
-.**<<corrected-center,Corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ for a **<<path>>**: *A* With **<<boundary>>** of the **<<path>>** as a **<<shape>>**; *B* With **<<path>>** as a polyline, showing the midpoint ⓒ between the ends of the **<<path>>**. *C* **<<boundary,Boundary>>**, center ⓒ, **<<corrected-center>>** ⓐ and **<<geographic-radial>>** ⓑ of bounded section of a contour line, in this case an isohypse of 220 m with an **<<elevation,elevational>>** **<<uncertainty>>** of 10 m.
+.Corrected center ⓐ and geographic radial ⓑ for a path. *A*: with boundary of the path as a  shape. *B*: with path as a polyline, showing the midpoint ⓒ between the ends of the path. *C*: Boundary center ⓒ, corrected center ⓐ and geographic radial ⓑ of bounded section of a contour line, in this case an isohypse of 220 m with an elevational uncertainty of 10 m.
 image::img/web/paths.png[width=600,align="center"]
 
 ===== Feature – Junction, Intersection, Crossing, Confluence
@@ -218,9 +218,9 @@ The **<<locality>>** is the junction of two or more **<<path,paths>>** – roads
 .{blank}
 [caption=Examples]
 ====
-"junction of Coora Rd. and E Siparia Rd" +
-"Where Dalby Road crosses Bunya Mountains National Park Boundary" +
-"confluence of Rio Claro and Rio La Hondura"
+* "junction of Coora Rd. and E Siparia Rd" +
+* "Where Dalby Road crosses Bunya Mountains National Park Boundary" +
+* "confluence of Rio Claro and Rio La Hondura"
 ====
 
 *Locality Type:* _Geographic feature only_
@@ -244,8 +244,8 @@ The **<<locality>>** is a cave, an underground mine, etc. For details of how to 
 .{blank}
 [caption=Examples]
 ====
-"Giant Dome, Hall of Giants, Carlsbad Caverns" +
-"Cueva de Las Brujas"
+* "Giant Dome, Hall of Giants, Carlsbad Caverns" +
+* "Cueva de Las Brujas"
 ====
 
 *Locality Type:* _Geographic feature only_
@@ -297,8 +297,8 @@ The headwater of a waterway may or may not be well defined. For most sizable riv
 .{blank}
 [caption=Examples]
 ====
-"headwaters of the Missouri River" +
-"Cabecera Río Manso"
+* "headwaters of the Missouri River" +
+* "Cabecera Río Manso"
 ====
 
 *Locality Type:* _Geographic feature only_
@@ -326,9 +326,9 @@ The **<<locality>>** is given with a proximity to a **<<feature>>**, usually wri
 .{blank}
 [caption=Examples]
 ====
-"before Ceibas" +
-"near Dina Huapi" +
-"off Rottnest island" , "adjacent to the railway underpass on Smith Street"
+* "before Ceibas" +
+* "near Dina Huapi" +
+* "off Rottnest island" , "adjacent to the railway underpass on Smith Street"
 ====
 
 *Locality Type:* _Geographic feature only_
@@ -354,9 +354,9 @@ The **<<locality>>** description uses the pattern "between A and B", where A and
 .{blank}
 [caption=Examples]
 ====
-"between Missoula and Florence, Montana" +
-"Entre Pampa Blanca y Pampa Vieja, Jujuy" +
-"between Point Reyes and Inverness"
+* "between Missoula and Florence, Montana" +
+* "Entre Pampa Blanca y Pampa Vieja, Jujuy" +
+* "between Point Reyes and Inverness"
 ====
 
 *Locality Type:* _Geographic feature only_
@@ -378,9 +378,9 @@ The **<<locality>>** describes a **<<location>>** between two **<<path,paths>>**
 .{blank}
 [caption=Examples]
 ====
-"between the Great Western Hwy and the railway line" +
-"between Tanama R. and Clearwater Ck." +
-"entre Av. Corrientes y Av. Córdoba" (_i.e._, two streets that don’t intersect).
+* "between the Great Western Hwy and the railway line" +
+* "between Tanama R. and Clearwater Ck." +
+* "entre Av. Corrientes y Av. Córdoba" (_i.e._, two streets that don’t intersect).
 ====
 
 *Locality Type:* _Geographic feature only_
