@@ -164,7 +164,7 @@ NOTE: Where localities have two orthogonal measurements in them, it should alway
 
 *Step 2 – Determine the starting feature coordinates and geographic radial*: Once the boundary of the starting feature has been determined, use the same method to determine the <<corrected-center>> and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the corrected center to the furthest point on the boundary of the starting feature (xref:img-offset-orthogonal-direction[xrefstyle="short"]).
 
-*Step 3 – Calculate using the following additional parameters in the {gcm}[Calculator^]*: _Coordinate Source,_ _Coordinate Format_, _Datum_, _Coordinate Precision_, _North or South Offset Distance, East or West Offset Distance_, _GPS Accuracy_/_Measurement Error_, _Distance Units_, _Distance Precision_ (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: _Coordinate Source,_ _Coordinate Format_, _Datum_, _Coordinate Precision_, _North or South Offset Distance, East or West Offset Distance_, _GPS Accuracy_/_Measurement Error_, _Distance Units_, _Distance Precision_ (see <<Georeferencing Concepts>>).
 
 [#img-offset-orthogonal-direction]
 .Example of offsets (ⓧ, and ⓨ) in orthogonal directions from the corrected center ⓐ of a feature with radial ⓑ. By convention the headings are exactly in the specified directions and contribute no uncertainty due to direction precision.
@@ -172,11 +172,11 @@ image::img/web/offset-orthogonal-direction.jpg[width=392,align="center"]
 
 ==== Offset – Distance at a Heading
 
-**<<locality,Locality>>** consists of a distance in a given **<<direction>>** from a single **<<feature>>**. Such **<<locality,localities>>** sometimes contain an explicit indicator of how the distance was measured, (_e.g._, "by air", "air miles W of", "due N of", "as the crow flies", "by road", "downstream from", etc.). Without such an indicator the interpretation is a matter of judgment, which should be documented in term:dwc[georeferenceRemarks].
+<<locality,Locality>> consists of a distance in a given <<direction>> from a single <<feature>>. Such localities sometimes contain an explicit indicator of how the distance was measured, (e.g. "by air", "air miles W of", "due N of", "as the crow flies", "by road", "downstream from", etc.). Without such an indicator the interpretation is a matter of judgment, which should be documented in term:dwc[georeferenceRemarks].
 
-NOTE: Since an <<offset>> at a <<heading>> "by air" will usually encompass the alternative by a <<path>> anyway, this is the recommended <<locality-type>> to use if there is no indication to the contrary. You can increase the maximum <<uncertainty>> to encompass the other option. This recommendation applies if you don’t have a compelling reason to use <<Offset – Distance along a Path>>).
+NOTE: Since an offset at a heading "by air" will usually encompass the alternative by a path anyway, this is the recommended locality type to use if there is no indication to the contrary. You can increase the maximum uncertainty to encompass the other option. This recommendation applies if you don’t have a compelling reason to use <<Offset – Distance along a Path>>).
 
-NOTE: The addition of an adverbial modifier to the distance part of a locality description (e.g., "about 25 km WNW Campinas"), while an honest observation, should not affect the determination of the **<<geographic-coordinates>>** or the overall **<<uncertainty>>**.
+NOTE: The addition of an adverbial modifier to the distance part of a locality description (e.g. "about 25 km WNW Campinas"), while an honest observation, should not affect the determination of the <<geographic-coordinates>> or the overall <<uncertainty>>.
 
 .{blank}
 [caption=Examples]
@@ -190,15 +190,15 @@ NOTE: The addition of an adverbial modifier to the distance part of a locality d
 
 *Locality Type:* _Distance at a heading_
 
-*Step 1 – Determine the starting <<feature>> <<boundary,boundaries>>:* Determine the **<<boundary>>** of the **<<feature>>** based on whatever the **<<feature>>** type is, either as for <<Feature – with Obvious Spatial Extent>>, or as for <<Feature – without Obvious Spatial Extent>>.
+*Step 1 – Determine the starting feature boundaries*: Determine the <<boundary>> of the <<feature>> based on whatever the feature type is, either as for <<Feature – with Obvious Spatial Extent>>, or as for <<Feature – without Obvious Spatial Extent>>.
 
-*Step 2 – Determine the starting <<feature>> <<coordinates>> and <<geographic-radial>>:* Once the **<<boundary>>** has been determined, obtain the **<<coordinates>>** and the **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
+*Step 2 – Determine the starting feature coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature.
 
-*Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source,_ _Coordinate Format_, _Datum_, _Coordinate Precision_, _Direction_, _Offset Distance_, _GPS Accuracy_/_Measurement Error_, _Distance Units_, _Distance Precision_ (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georefencing Calculator^]*: _Coordinate Source,_ _Coordinate Format_, _Datum_, _Coordinate Precision_, _Direction_, _Offset Distance_, _GPS Accuracy_/_Measurement Error_, _Distance Units_, _Distance Precision_ (see <<Georeferencing Concepts>>).
 
 ==== Offset – Distances from Two Distinct Paths
 
-**<<locality,Locality>>** consists of orthogonal **<<offset>>** distances, one from each of two distinct **<<path,paths>>**.
+<<locality,Locality>> consists of orthogonal <<offset>> distances, one from each of two distinct <<path,paths>>.
 
 .{blank}
 [caption=Example]
@@ -208,12 +208,12 @@ NOTE: The addition of an adverbial modifier to the distance part of a locality d
 
 *Locality Type:* _Distance along path_
 
-Although this is not technically a distance along a **<<path>>**, the choice of this **<<locality-type>>** in the *_Calculator_* will allow all of the relevant parameters to be entered.
+Although this is not technically a distance along a path, the choice of this <<locality-type>> in the http://georeferencing.org/georefcalculator/gc.html[Georeferncing Calculator^] will allow all of the relevant parameters to be entered.
 
-*Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* Determine the **<<boundary,boundaries>>** of the area matching the **<<locality>>** description by creating a copy of the **<<path,paths>>**, each **<<offset>>** by the distance and **<<direction>>** given. The overlap of these two copies defines the **<<extent>>** of the place described. Draw the **<<boundary>>** around the overlapping area.
+*Step 1 – Determine the feature boundaries*: Determine the <<boundary,boundaries>> of the area matching the locality description by creating a copy of the paths, each offset by the distance and <<direction>> given. The overlap of these two copies defines the <<extent>> of the place described. Draw the boundary around the overlapping area.
 
-*Step 2 – Determine the <<coordinates>> and <<geographic-radial>>:* Once the **<<boundary>>** has been determined, obtain the **<<coordinates>>** and the **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the **<<feature>>**.
+*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> and the <<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature.
 
-*Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _Radial of Feature_, _Measurement Error_, _Distance Units_, _Distance Precision_ (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the Calculator*: _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _Radial of Feature_, _Measurement Error_, _Distance Units_, _Distance Precision_ (see <<Georeferencing Concepts>>).
 
 [#s-coordinates]
