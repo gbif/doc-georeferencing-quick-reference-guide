@@ -24,8 +24,8 @@ The <<locality-type,locality-types>>** that involve offsets, in addition to the 
 .{blank}
 [caption=Examples]
 ====
-"5 km outside Calgary" +
-"12 km de Purmamarca"
+* "5 km outside Calgary" +
+* "12 km de Purmamarca"
 ====
 
 *Locality Type:* _Distance only_
@@ -42,57 +42,57 @@ The <<locality-type,locality-types>>** that involve offsets, in addition to the 
 
 ==== Offset – Heading only
 
-The **<<locality>>** consists of a direction from a **<<feature>>** without any distance specified. Note that seldom is such information given alone; there is usually some supporting information. For example, the **<<locality>>** may have higher-level geographic information such as "East of Albuquerque, Bernalillo County, New Mexico". This provides a stopping point (the county border), and should allow you to **<<georeference>>** the **<<locality>>**. Alternatively, there might be another similar **<<feature>>** in the direction of the given **<<heading>>** that can constrain the **<<offset>>**.
+The <<locality>> consists of a direction from a <<feature>> without any distance specified. Note that seldom is such information given alone; there is usually some supporting information. For example, the locality may have higher-level geographic information such as "East of Albuquerque, Bernalillo County, New Mexico". This provides a stopping point (the county border), and should allow you to <<georeference>> the locality. Alternatively, there might be another similar feature in the direction of the given <<heading>> that can constrain the <<offset>>.
 
 .{blank}
 [caption=Examples]
 ====
-"N Palmetto" +
-"W of Berkeley" +
-"Saladillo E" +
-"Al N de Saladillo"
+* "N Palmetto" +
+* "W of Berkeley" +
+* "Saladillo E" +
+* "Al N de Saladillo"
 ====
 
 *Locality Type:* _Geographic feature only_
 
-*Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* First determine the **<<boundary>>** of the given **<<feature>>** based on the **<<feature>>** type, either as for <<Feature – with Obvious Spatial Extent>>, or as for <<Feature – without Obvious Spatial Extent>>. Then, to account for the **<<offset>>** at a **<<heading>>**, extend that **<<boundary>>** outward in a cone defined by the **<<heading>>** **<<uncertainty>>** (see {gbp}#offset-direction-only[Offset – Direction Only] and {gbp}#uncertainty-related-to-heading[Uncertainty Related to Heading], both in *_Georeferencing Best Practices_*) until reaching a constraining **<<boundary>>** imposed by other information in the **<<locality>>** record, or until reaching the proximity of another similar **<<feature>>**, whichever is nearer the original **<<feature>>** (xref:img-offset-heading[xrefstyle="short"]A). Call this the "extended **<<feature>>**". If the extension impinges on any similar extension of another similar **<<feature>>** in the cone of the specified **<<heading>>**, modify the **<<boundary>>** in the shared space to be half the distance between the nearest **<<boundary,boundaries>>** between the two **<<feature,features>>** (xref:img-offset-heading[xrefstyle="short"]B). For example, "N Palmetto" could mean "northern part of Palmetto" or "North of Palmetto". Since we have no way of knowing which was intended, we choose the latter interpretation, which is more inclusive and will entirely contain the less inclusive interpretation. Use the rules for **<<heading>>** **<<uncertainty>>** to determine the angle within which to find the nearest similar **<<feature>>**. For example, for "N Palmetto" look for a named place somewhere between NE and NW of Palmetto.
+*Step 1 – Determine the feature boundaries*: First determine the <<boundary>> of the given feature based on the feature type, either as for <<Feature – with Obvious Spatial Extent>>, or as for <<Feature – without Obvious Spatial Extent>>. Then, to account for the offset at a heading, extend that boundary outward in a cone defined by the heading <<uncertainty>> (see {gbp}#offset-direction-only[Offset – Direction Only^] and {gbp}#uncertainty-related-to-heading[Uncertainty Related to Heading^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^] until reaching a constraining boundary imposed by other information in the locality record, or until reaching the proximity of another similar feature, whichever is nearer the original feature (xref:img-offset-heading[xrefstyle="short"]A). Call this the "extended feature". If the extension impinges on any similar extension of another similar feature in the cone of the specified heading, modify the boundary in the shared space to be half the distance between the nearest boundaries between the two features (xref:img-offset-heading[xrefstyle="short"]B). For example, "N Palmetto" could mean "northern part of Palmetto" or "North of Palmetto". Since we have no way of knowing which was intended, we choose the latter interpretation, which is more inclusive and will entirely contain the less inclusive interpretation. Use the rules for heading uncertainty to determine the angle within which to find the nearest similar feature. For example, for "N Palmetto" look for a named place somewhere between NE and NW of Palmetto.
 
-*Step 2 – Determine the <<coordinates>> and <<geographic-radial>>:* Once you have determined the **<<boundary>>** of the "extended" **<<feature>>**, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the extended **<<feature>>**.
+*Step 2 – Determine the coordinates and geographic radial*: Once you have determined the boundary of the extended feature, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary of the extended feature.
 
-*Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the _Calculator_*: _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-offset-heading]
-.A **<<locality>>** "east of" a **<<feature>>**, but bounded on the east by an administrative border (dotted line). *A*: **<<boundary,Boundary>>** and **<<corrected-center>>** ⓐ of the starting **<<feature>>**. The cone to the east forms part of the new boundary with **<<corrected-center>>** (ⓒ, no need for correction) and **<<geographic-radial>>** ⓓ. *B*: Similar to A, but with an intervening **<<feature>>** to the northeast before the border.
+.A locality "east of" a feature, but bounded on the east by an administrative border (dotted line). *A*: Boundary and corrected center ⓐ of the starting feature. The cone to the east forms part of the new boundary with corrected center (ⓒ, no need for correction) and geographic radial ⓓ. *B*: Similar to A, but with an intervening feature to the northeast before the border.
 image::img/web/offset-heading.png[width=501,align="center"]
 
 ==== Offset – Distance along a Path
 
-The **<<locality>>** consists of a reference **<<feature>>** to start from and a distance to travel along a **<<path>>** from there. Most of the time there will be just one **<<path>>** that matches the description and it will not be very wide compared to the reference **<<feature>>**, for example, a highway out of a town, or a stream out of a lake. In cases such as these, the **<<georeferencing-method>>** is relatively simple (see <<Offset along a Narrow Path>>). If the **<<path>>** is wide enough that multiple possible routes could be taken along it, such as in a river, the method for dealing with it is a little more complicated (see <<Offset along a Wide Path>>). Sometimes there might be multiple distinct possible **<<path,paths>>** that match the **<<locality>>** description, such as two different roads in the same general direction out of a town and there is a third method to use to find the **<<georeference>>** (see <<Offset along Multiple Possible Paths>>). In all cases, the **<<georeference>>** will cover a segment of the **<<path>>** or possible **<<path,paths>>** that includes all the sources of **<<uncertainty>>**. Though there might be a **<<heading>>** mentioned in the **<<locality>>** description, it serves only to constrain which **<<path>>** or **<<path,paths>>** are possible, and does not contribute **<<uncertainty>>** due to **<<heading>>** **<<precision>>**.
+The <<locality>> consists of a reference <<feature>> to start from and a distance to travel along a <<path>> from there. Most of the time there will be just one path that matches the description and it will not be very wide compared to the reference feature, for example, a highway out of a town, or a stream out of a lake. In cases such as these, the <<georeferencing-method>> is relatively simple (see <<Offset along a Narrow Path>>). If the path is wide enough that multiple possible routes could be taken along it, such as in a river, the method for dealing with it is a little more complicated (see <<Offset along a Wide Path>>). Sometimes there might be multiple distinct possible paths that match the locality description, such as two different roads in the same general direction out of a town and there is a third method to use to find the <<georeference>> (see <<Offset along Multiple Possible Paths>>). In all cases, the georeference will cover a segment of the path or possible paths that includes all the sources of <<uncertainty>>. Though there might be a <<heading>> mentioned in the locality description, it serves only to constrain which path or paths are possible, and does not contribute uncertainty due to heading <<precision>>.
 
-NOTE: The more accumulated curvature there is in the <<path>>, the more important it is to measure carefully (and therefore use a map of appropriate scale or zoom), otherwise there will be an accumulated error in the position of the <<offset>>. The less detail there is in the map compared to the real <<path>>, the greater the overestimate of the actual distance from the starting point to the end point will be because the measurements will be "cutting corners" along the whole measured <<path>>.
+NOTE: The more accumulated curvature there is in the path, the more important it is to measure carefully (and therefore use a map of appropriate scale or zoom), otherwise there will be an accumulated error in the position of the offset. The less detail there is in the map compared to the real path, the greater the overestimate of the actual distance from the starting point to the end point will be because the measurements will be "cutting corners" along the whole measured path.
 
 ===== Offset along a Narrow Path
 
 .{blank}
 [caption=Examples]
 ====
-"Ruta Nacional 81, 8 km O de Ingeniero Guillermo Nicasio Juárez" +
-"left bank of the Mississippi River, 16 mi downstream from St. Louis" +
-"500m up Skeleton Gorge"
+* "Ruta Nacional 81, 8 km O de Ingeniero Guillermo Nicasio Juárez" +
+* "left bank of the Mississippi River, 16 mi downstream from St. Louis" +
+* "500m up Skeleton Gorge"
 ====
 
 *Locality Type:* _Distance along path_
 
-*Step 1 – Determine the <<feature>> <<boundary,boundaries>>:* Find the **<<boundary>>** of the intersection of the reference **<<feature>>** with the **<<path>>** as you would for <<feature-junction-intersection-crossing-confluence,Feature – Junction, Intersection, Crossing, Confluence>> (xref:img-offset-narrow-path[xrefstyle="short"]).
+*Step 1 – Determine the feature boundaries*: Find the <<boundary>> of the intersection of the reference <<feature>> with the <<path>> as you would for <<feature-junction-intersection-crossing-confluence,Feature – Junction, Intersection, Crossing, Confluence>> (xref:img-offset-narrow-path[xrefstyle="short"]).
 
-*Step 2 – Determine the starting <<feature>> <<coordinates>> and <<geographic-radial>>:* Once the **<<boundary>>** of the starting **<<feature>>** has been determined, use the same method to determine the **<<corrected-center>>** and **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the starting **<<feature>>** (xref:img-offset-narrow-path[xrefstyle="short"]B). Enter the length of the **<<geographic-radial>>** in _Radial of Feature_ in the *_Calculator_*.
+*Step 2 – Determine the starting feature coordinates and  geographic radial*: Once the <<boundary>> of the starting <<feature>> has been determined, use the same method to determine the <<corrected-center>> and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the corrected center to the furthest point on the boundary of the starting feature (xref:img-offset-narrow-path[xrefstyle="short"]B). Enter the length of the geographic radial in _Radial of Feature_ in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^].
 
-*Step 3 – Enter the _Input Latitude_ and _Longitude_:* Enter the **<<coordinates>>** of the **<<offset>>** position, which can be determined by measuring the length along the midline of the **<<path>>** from the **<<corrected-center>>** of the starting **<<feature>>** to the distance given in the **<<locality>>** description. See the notes on map scale and accumulated **<<error>>** in <<Offset – Distance along a Path>>.
+*Step 3 – Enter the _Input Latitude_ and _Longitude_*: Enter the coordinates of the <<offset>> position, which can be determined by measuring the length along the midline of the path from the corrected center of the starting feature to the distance given in the <<locality>> description. See the notes on map scale and accumulated <<error>> in <<Offset – Distance along a Path>>.
 
-*Step 4 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _Measurement Error_, _Distance Units_, _Distance Precision_ (see <<Georeferencing Concepts>>).
+*Step 4 – Calculate using the following additional parameters in the Calculator:* _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _Measurement Error_, _Distance Units_, _Distance Precision_ (see <<Georeferencing Concepts>>).
 
 [#img-offset-narrow-path]
-.A **<<locality>>** of the type **<<offset,Offset>>** along a **<<path>>** where the <<path>> is narrow, specifically, along a road "east of" a **<<feature>>**. *A*: Inset showing the  **<<boundary>>**, **<<corrected-center>>** ⓐ, and **<<geographic-radial>>** ⓑ of the intersection of the **<<path>>** and the starting **<<feature>>**. *B*: The **<<corrected-center>>** ⓐ and the **<<offset>>** ⓓ measured along the road.
+.A locality of the type Offset along a path where the path is narrow, specifically, along a road "east of" a feature. *A*: Inset showing the  boundary, corrected center ⓐ, and geographic radial ⓑ of the intersection of the path and the starting feature. *B*: The corrected center ⓐ and the offset ⓓ measured along the road.
 image::img/web/offset-narrow-path.png[width=584,align="center"]
 
 ===== Offset along a Wide Path
@@ -100,7 +100,7 @@ image::img/web/offset-narrow-path.png[width=584,align="center"]
 .{blank}
 [caption=Example]
 ====
-"Mississippi River, 16 mi downstream from St. Louis"
+* "Mississippi River, 16 mi downstream from St. Louis"
 ====
 
 *Locality Type:* _Distance along path_
@@ -128,8 +128,8 @@ image::img/web/offset-wide-path.png[width=593,align="center"]
 .{blank}
 [caption=Examples]
 ====
-"15km al O de Rosario por ruta" +
-“5 km up Cox River from the coast, Limmen NP, NT, Australia” (Cox River is a delta with several arms).
+* "15km al O de Rosario por ruta" +
+* “5 km up Cox River from the coast, Limmen NP, NT, Australia” (Cox River is a delta with several arms).
 ====
 
 *Locality Type:* As the **<<locality-type,locality-types>>** of the possible **<<path,paths>>**.
@@ -153,9 +153,9 @@ NOTE: Where <<locality,localities>> have two orthogonal measurements in them, it
 .{blank}
 [caption=Examples]
 ====
-"6 km N and 4 km W of Welna" +
-"2 mi E and 1.5 mi N of Kandy" +
-"2 miles north, 1 mile east of Boulder Falls, Boulder County, Colorado"
+* "6 km N and 4 km W of Welna" +
+* "2 mi E and 1.5 mi N of Kandy" +
+* "2 miles north, 1 mile east of Boulder Falls, Boulder County, Colorado"
 ====
 
 *Locality Type:* _Distance along orthogonal directions_
@@ -181,11 +181,11 @@ NOTE: The addition of an adverbial modifier to the distance part of a locality d
 .{blank}
 [caption=Examples]
 ====
-"50 miles W of Las Vegas" +
-"10.2 km E de Amamá" +
-"16 mi downstream from St Louis on the Mississippi River" +
-"about 25 km WNW of Campinas" +
-"10 mi E (by air) Yerevan"
+* "50 miles W of Las Vegas" +
+* "10.2 km E de Amamá" +
+* "16 mi downstream from St Louis on the Mississippi River" +
+* "about 25 km WNW of Campinas" +
+* "10 mi E (by air) Yerevan"
 ====
 
 *Locality Type:* _Distance at a heading_
@@ -203,7 +203,7 @@ NOTE: The addition of an adverbial modifier to the distance part of a locality d
 .{blank}
 [caption=Example]
 ====
-"1.5 mi E LA Hwy. 1026 and 2 mi S U.S. 190"
+* "1.5 mi E LA Hwy. 1026 and 2 mi S U.S. 190"
 ====
 
 *Locality Type:* _Distance along path_
