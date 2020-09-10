@@ -8,7 +8,7 @@ An *offset* is a displacement from a reference location. An offset is usually us
 
 In all cases, both for the <<shape>> <<georeferencing-method,method>> and for the <<point-radius>> <<georeferencing-method,method>> using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator], the <<boundary,boundaries>> of the reference <<feature,feature(s)>> are needed. Thus, this section on Offsets will repeatedly refer to features as determined by the methods presented in the various sections of <<Geographic Feature only>>.
 
-The <<locality-type,locality-types>>** that involve offsets, in addition to the tricky one we have already seen above (<<Feature – near a Feature>>), are:
+The <<locality-type,locality-types>> that involve offsets, in addition to the tricky one we have already seen above (<<Feature – near a Feature>>), are:
 
 * distance only (e.g. "5 mi from Bakersfield")
 * <<heading>> only (e.g. "North of Bakersfield")
