@@ -146,9 +146,9 @@ image::img/web/offset-multiple-paths.jpg[width=606,align="center"]
 
 ==== Offset – Distance along Orthogonal Directions
 
-**<<locality,Locality>>** consists of a linear distance in each of two orthogonal **<<direction,directions>>** from a **<<feature>>**. For more information and details see {gbp}#offset-along-orthogonal-directions[Offset along Orthogonal Directions] in *_Georeferencing Best Practices_*.
+<<locality,Locality>> consists of a linear distance in each of two orthogonal <<direction,directions>> from a <<feature>>. For more information and details see {gbp}#offset-along-orthogonal-directions[Offset along Orthogonal Directions^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^].
 
-NOTE: Where <<locality,localities>> have two orthogonal measurements in them, it should always be assumed that the measurements are "by air" unless there is a reference that indicates otherwise.
+NOTE: Where localities have two orthogonal measurements in them, it should always be assumed that the measurements are "by air" unless there is a reference that indicates otherwise.
 
 .{blank}
 [caption=Examples]
@@ -160,14 +160,14 @@ NOTE: Where <<locality,localities>> have two orthogonal measurements in them, it
 
 *Locality Type:* _Distance along orthogonal directions_
 
-*Step 1 – Determine the starting <<feature>> <<boundary,boundaries>>:* Determine the **<<boundary>>** of the **<<feature>>** based on whatever the **<<feature>>** type is, either as for <<Feature – with Obvious Spatial Extent>>, or as for <<Feature – without Obvious Spatial Extent>>.
+*Step 1 – Determine the starting feature boundaries*: Determine the <<boundary>> of the <<feature>> based on whatever the feature type is, either as for <<Feature – with Obvious Spatial Extent>>, or as for <<Feature – without Obvious Spatial Extent>>.
 
-*Step 2 – Determine the starting <<feature>> <<coordinates>> and <<geographic-radial>>:* Once the **<<boundary>>** of the starting **<<feature>>** has been determined, use the same method to determine the **<<corrected-center>>** and **<<geographic-radial>>** as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the **<<corrected-center>>** to the furthest point on the **<<boundary>>** of the starting **<<feature>>** (xref:img-offset-orthogonal-direction[xrefstyle="short"]).
+*Step 2 – Determine the starting feature coordinates and geographic radial*: Once the boundary of the starting feature has been determined, use the same method to determine the <<corrected-center>> and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the corrected center to the furthest point on the boundary of the starting feature (xref:img-offset-orthogonal-direction[xrefstyle="short"]).
 
-*Step 3 – Calculate using the following additional parameters in the _Calculator_:* _Coordinate Source,_ _Coordinate Format_, _Datum_, _Coordinate Precision_, _North or South Offset Distance, East or West Offset Distance_, _GPS Accuracy_/_Measurement Error_, _Distance Units_, _Distance Precision_ (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the {gcm}[Calculator^]*: _Coordinate Source,_ _Coordinate Format_, _Datum_, _Coordinate Precision_, _North or South Offset Distance, East or West Offset Distance_, _GPS Accuracy_/_Measurement Error_, _Distance Units_, _Distance Precision_ (see <<Georeferencing Concepts>>).
 
 [#img-offset-orthogonal-direction]
-.Example of **<<offset,offsets>>** (ⓧ, and ⓨ) in orthogonal **<<direction,directions>>** (from the **<<corrected-center>>** ⓐ of a **<<feature>>** with **<<radial>>** ⓑ. By convention the **<<heading,headings>>** are exactly in the specified directions and contribute no **<<uncertainty>>** due to direction **<<precision>>**.
+.Example of offsets (ⓧ, and ⓨ) in orthogonal directions from the corrected center ⓐ of a feature with radial ⓑ. By convention the headings are exactly in the specified directions and contribute no uncertainty due to direction precision.
 image::img/web/offset-orthogonal-direction.jpg[width=392,align="center"]
 
 ==== Offset – Distance at a Heading
