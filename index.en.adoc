@@ -53,4 +53,4 @@ include::glossary.en.adoc[]
 
 include::bibliography.en.adoc[]
 
-include::appendix-key-to-locality-types.en.adoc[]
+include::appa.en.adoc[]
