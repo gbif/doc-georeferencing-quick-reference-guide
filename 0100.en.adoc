@@ -32,7 +32,7 @@ There have been a few changes in terminology since the previous edition of the G
 
 * <<extent,Extent>> in the previous version has been changed to <<radial>>. Extent, where retained, is used in a more traditional way to mean the entire space within a <<location>>.
 * "Named place" has been replaced with <<feature>>.
-* Where the <<geographic-center>> was recommended in the past, <<corrected-center>> based on the <<geographic-radial>> is now used. This is an important change because the geographic-center did not necessarily yield the smallest <<uncertainty>> due to the extent of a feature; the corrected-center and geographic-radial does.
+* Where the <<geographic-center>> was recommended in the past, <<corrected-center>> based on the <<geographic-radial>> is now used. This is an important change because the geographic center did not necessarily yield the smallest <<uncertainty>> due to the extent of a feature; the corrected-center and geographic-radial does.
 
 This version of the Guide includes graphical examples of each type of location and steps for how to <<georeference>> them.
 
@@ -153,7 +153,7 @@ This term is equivalent to the <<Darwin-Core,Darwin Core>> term term:dwc[verbati
 [#s-coordinate-precision]
 ==== Coordinate Precision
 
-Labeled in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] as _Precision_ in the first column of input parameters, this drop-down list is populated with levels of <<precision>> in keeping with the <<coordinate-format,coordinate format>> chosen. For example, with a _Coordinate Format_ of _degrees minutes seconds_, an _Input Latitude_ of 35° 22' 24" N and an _Input Longitude_ of 105° 22' 28" W, the _Coordinate Precision_ would be _nearest second_. A value of _exact_ is any level of precision higher than the otherwise highest precision given on a list. Sources of <<coordinate-precision,coordinate precision>> may include paper or digital maps, digital imagery, <<GPS>>, <<gazetteer,gazetteers>>, or <<locality>> descriptions.
+Labelled in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] as _Precision_ in the first column of input parameters, this drop-down list is populated with levels of <<precision>> in keeping with the <<coordinate-format,coordinate format>> chosen. For example, with a _Coordinate Format_ of _degrees minutes seconds_, an _Input Latitude_ of 35° 22' 24" N and an _Input Longitude_ of 105° 22' 28" W, the _Coordinate Precision_ would be _nearest second_. A value of _exact_ is any level of precision higher than the otherwise highest precision given on a list. Sources of <<coordinate-precision,coordinate precision>> may include paper or digital maps, digital imagery, <<GPS>>, <<gazetteer,gazetteers>>, or <<locality>> descriptions.
 
 NOTE: The Coordinate Precision to use in the Calculator is the coordinate precision of the map from which the <<corrected-center,corrected center>> was determined, not the coordinate precision of the original source used to determine the general vicinity on the map. For example, suppose the original <<coordinates>> came from a gazetteer, but the <<boundary>> and corrected center of the <<feature>> were determined from Google Maps, the Coordinate Precision would be determined by the number of digits of <<decimal-degrees,decimal degrees>> you captured from the corrected center on Google Maps, not the Coordinate Precision of the coordinates from the original gazetteer entry. If you use all of the digits provided on Google Maps, the Coordinate Precision would be "exact".
 
