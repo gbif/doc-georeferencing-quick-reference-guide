@@ -2,7 +2,7 @@
 
 At times, <<locality>> descriptions are fraught with vagueness. This may be due to any number of reasons, but in particular relates to historic collections in areas that at the time may have had no named <<feature,features>> to reference. See the section {gbp}#difficult-localities[Difficult Localities^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^].
 
-A cause of vagueness may be incorrect data entry and it is recommended that checking the original catalogs, ledgers, field notes, specimen labels, etc. be the first step in removing the vagaries of a locality so that it can be <<georeference,georeferenced>> with confidence.
+A cause of vagueness may be incorrect data entry and it is recommended that checking the original catalogues, ledgers, field notes, specimen labels, etc. be the first step in removing the vagaries of a locality so that it can be <<georeference,georeferenced>> with confidence.
 
 ==== Dubious Locations
 
