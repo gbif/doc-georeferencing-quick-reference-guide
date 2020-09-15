@@ -59,10 +59,10 @@ The <<locality>> refers to a geographic <<feature>> that does not have an easily
 For towns without obvious borders one can use the presence of buildings near the <<coordinates>> given for the town to decide where the town ends (xref:img-without-obvious-spatial-extent[xrefstyle="short"]). In some cases there might not be such indicators and these will be more subjective. For this reason it is particularly important to document the rationale for the selection of the locality with unclear boundaries.
 
 [#img-without-obvious-spatial-extent]
-.Boundary (lighter dotted line), corrected center ⓐ and geographic radial ⓑ of a town based on the locations of buildings and a well-defined neighboring town border (denoted by the darker dotted line) on a map.
+.Boundary (lighter dotted line), corrected center ⓐ and geographic radial ⓑ of a town based on the locations of buildings and a well-defined neighbouring town border (denoted by the darker dotted line) on a map.
 image::img/web/without-obvious-spatial-extent.png[width=378,align="center"]
 
-Where there are no indicators for the boundary, use the midpoint between the given feature and neighboring features with similar type, size, or importance to make a rough boundary. Though this boundary may not represent the actual feature very well, it will represent the uncertainty of where the locality is, and that is the major goal of the <<georeference>>.
+Where there are no indicators for the boundary, use the midpoint between the given feature and neighbouring features with similar type, size, or importance to make a rough boundary. Though this boundary may not represent the actual feature very well, it will represent the uncertainty of where the locality is, and that is the major goal of the <<georeference>>.
 
 For small features, where the only indicator on a map is a label and possibly a marker, or where there are only coordinates from a <<gazetteer>> (and no further indicators at those coordinates on a map), a good strategy would be to use a predefined default size based on the feature type (xref:img-without-obvious-spatial-extent-default-size[xrefstyle="short"], xref:table-default-geographic-radial[xrefstyle="short"]).
 
@@ -96,7 +96,7 @@ h|Feature Type h|Default <<geographic-radial>>
 
 The boundaries between mountains can be determined by using the terrain (valleys, saddles, and plains) that separate one mountain from others around it (xref:img-mountain-boundaries[xrefstyle="short"]).
 
-Always use term:dwc[georeferenceRemarks] to document the decisions made and the reasons for them as well as possible, including the neighboring features used for reference.
+Always use term:dwc[georeferenceRemarks] to document the decisions made and the reasons for them as well as possible, including the neighbouring features used for reference.
 
 [#img-mountain-boundaries]
 .A. Topographic contours of a group of nearby mountains. B. Rough boundary, corrected center ⓐ and geographic radial ⓑ of a mountain determined by the surrounding valleys, saddles, and plains.
@@ -130,7 +130,7 @@ The <<locality>> is a street address – usually with a number, a street name, a
 
 a. Address <<boundary>> evident – if the map shows the <<extent>> of the address clearly, determine the boundary exactly as you would for a feature with an Obvious Spatial Extent (xref:img-street-address[xrefstyle="short"]A); (see <<Feature – with Obvious Spatial Extent>>).
 
-b. Address boundary not evident – if the exact address cannot be found, estimate the boundary as well as possible, such as the block that it must be on (xref:img-street-address[xrefstyle="short"]B), as for <<Feature – without Obvious Spatial Extent>>. Many addresses reflect a <<grid>> system of labeling addresses. For instance, addresses between 12th Street and 13th Street would lie between 1200 and 1300.
+b. Address boundary not evident – if the exact address cannot be found, estimate the boundary as well as possible, such as the block that it must be on (xref:img-street-address[xrefstyle="short"]B), as for <<Feature – without Obvious Spatial Extent>>. Many addresses reflect a <<grid>> system of labelling addresses. For instance, addresses between 12th Street and 13th Street would lie between 1200 and 1300.
 
 *Step 2 – Determine the coordinates and measure the geographic radial*: Once the boundary has been determined, use the same method to determine the coordinates and <<geographic-radial,geographic radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center,corrected center>> to the furthest point on the boundary of the feature.
 
@@ -335,7 +335,7 @@ The <<locality>> is given with a proximity to a <<feature>>, usually written as 
 
 *Step 1 – Determine the feature boundaries*: First determine the <<boundary>> of the feature itself based on the feature type, either as <<Feature – with Obvious Spatial Extent>>, or as <<Feature – without Obvious Spatial Extent>>. Then, to account for the proximity indicator, extend that boundary outward for a fixed distance in all directions (xref:img-near-a-feature[xrefstyle="short"]A). Call this the "extended feature". If the extension overlaps the extension of any other similar feature, modify the boundary in the shared space to be half the distance between the nearest boundaries between the two features (xref:img-near-a-feature[xrefstyle="short"]B).
 
-NOTE: Neighboring features were not necessarily there at the time the locality was recorded, nor were they necessarily the same size. The feature of interest may have changed size in the time between the recording of the locality and the time when the map you use was made. These considerations add to the vagaries associated with this type of locality and underline the importance to never describe localities in this way.
+NOTE: Neighbouring features were not necessarily there at the time the locality was recorded, nor were they necessarily the same size. The feature of interest may have changed size in the time between the recording of the locality and the time when the map you use was made. These considerations add to the vagaries associated with this type of locality and underline the importance to never describe localities in this way.
 
 NOTE: The buffer distance for the extension is arbitrary – it is hard to defend any given value as a default. Make a judgement and imagine what the person who recorded the locality meant. Document the rationale and decisions made in georeferenceRemarks. Remember, one goal of a georeference is that it is repeatable.
 
@@ -344,7 +344,7 @@ NOTE: The buffer distance for the extension is arbitrary – it is hard to defen
 *Step 3 – Calculate using the following additional parameters in the _Calculator_*: _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy_/_Measurement Error_, _Distance Units_ (see <<Georeferencing Concepts>>).
 
 [#img-near-a-feature]
-.Boundary, corrected center ⓐ and geographic radial ⓑ of an interpretation of locality type _near a Feature_ with a boundary extended a fixed distance in all directions, in this case 10 km. *A*: Boundary extended a fixed distance in all directions with no neighboring conflicts. *B*: Boundary extended a fixed distance in all directions except in the area overlapping a similar feature, where it extends half the distance to the neighboring feature.
+.Boundary, corrected center ⓐ and geographic radial ⓑ of an interpretation of locality type _near a Feature_ with a boundary extended a fixed distance in all directions, in this case 10 km. *A*: Boundary extended a fixed distance in all directions with no neighbouring conflicts. *B*: Boundary extended a fixed distance in all directions except in the area overlapping a similar feature, where it extends half the distance to the neighbouring feature.
 image::img/web/near-a-feature.png[width=486,align="center"]
 
 ===== Feature – between Two Features
