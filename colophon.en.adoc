@@ -41,5 +41,4 @@ Originally based on an earlier publication, _Towards establishing the special gu
 
 === Cover image
 
-// Caption. Credit, source, licence.
 Commerson's dolphin (_Cephalorhynchus commersonii_), off the coast of Chubut, Argentina. Photo 2018 Gabriel Laufer via https://www.gbif.org/occurrence/2563539903[iNaturalist research-grade observations], in the public domain under http://creativecommons.org/publicdomain/zero/1.0/[CC0].
