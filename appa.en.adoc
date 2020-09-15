@@ -7,7 +7,7 @@ endif::backend-pdf[]
 
 <<corrected-center,Corrected center>>:: the center of the <<smallest-enclosing-circle>> of a <<feature>> while having its center in or on the <<boundary>> of that feature.
 
-<<geographic-radial,Geographic radial>>**:: distance from the corrected center to the furthest point on the boundary of the feature.
+<<geographic-radial,Geographic radial>>:: distance from the corrected center to the furthest point on the boundary of the feature.
 
 === Features
 
