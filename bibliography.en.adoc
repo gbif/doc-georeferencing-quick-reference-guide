@@ -9,7 +9,7 @@
 
 - Frazier C, Neville T, Giermakowski JT & Racz G (2004) The INRAM Protocol for Georeferencing Biological Museum Specimen Records, version 1.3. Zenodo. http://doi.org/10.5281/zenodo.3235003
 
-- Spencer C, Yamamoto K, Fang J, Constable H & Koo M (2008) Georeferencing for Dummies. http://www.herpnet.org/herpnet/documents/georeffordummy.xls
+- Spencer C, Yamamoto K, Fang J, Constable H, Koo M, & Wieczorek J (2008) Georeferencing for Dummies. http://georeferencing.org/docs/georeffordummy.xls
 
 - TDWG (2018) Darwin Core quick reference guide. Biodiversity Information Standards (TDWG). https://dwc.tdwg.org/terms/
 
