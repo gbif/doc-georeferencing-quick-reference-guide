@@ -38,7 +38,7 @@ NOTE: "the true value is not known, but only estimated, the accuracy of the meas
 
 [[Darwin-Core]]Darwin Core:: is a standard for exchanging information about biological diversity (see https://www.tdwg.org/standards/dwc/[_Darwin Core_]).
 
-[[datum]]datum:: a set of one or more parameters that serve as a reference or basis for the calculation of other parameters [ISO 19111]. A datum defines the position of the origin, the scale, and the orientation of the axes of a <<coordinate-system>>. For <<georeference,georeferencing>> purposes, a *datum* may be a {gbp}#geodetic-datum[geodtic datum] or a {gbp}#vertical-datum[vertical datum].
+[[datum]]datum:: a set of one or more parameters that serve as a reference or basis for the calculation of other parameters [ISO 19111]. A datum defines the position of the origin, the scale, and the orientation of the axes of a <<coordinate-system>>. For <<georeference,georeferencing>> purposes, a *datum* may be a {gbp}#geodetic-datum[geodetic datum] or a {gbp}#vertical-datum[vertical datum].
 
 [[decimal-degrees]]decimal degrees:: degrees expressed as a single real number (_e.g._, −22.343456). Note that <<latitude,latitudes>> south of the equator are negative, as are <<longitude,longitudes>> west of the <<prime-meridian>> to −180 degrees. See also {gbp}#decimal-latitude[decimal latitude] and {gbp}#decimal-longitude[decimal longitude].
 

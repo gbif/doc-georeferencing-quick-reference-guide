@@ -160,7 +160,7 @@ h|Locality Type
 h|Calculation Steps
 
 |<<Difficult Localities,§2.4 Difficult Localities>>
-|The <<locality>> is vague. It is recommended to check the original catalogs, ledgers, field notes, specimen labels, etc. as a first step to resolve the vagaries.
+|The <<locality>> is vague. It is recommended to check the original catalogues, ledgers, field notes, specimen labels, etc. as a first step to resolve the vagaries.
 
 |<<Dubious Locations,§2.4.1 Dubious Locations>>
 a|

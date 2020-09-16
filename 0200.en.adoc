@@ -292,7 +292,7 @@ image::img/web/dive-location.png[width=621,align="center"]
 
 ===== Feature – Headwaters of a Waterway
 
-The headwater of a waterway may or may not be well defined. For most sizable rivers a headwater is designated. If not, there is no universally agreed upon definition for a headwater. A reasonable interpretation might be the beginning of the most upstream first order stream that is a tributary of the named waterway. However, there is no guarantee that the author of the <<locality>> description used that definition. Therefore, we recommend the conservative solution that includes the watershed of all of the streams of lower order than the waterway mentioned.
+The headwater of a waterway may or may not be well defined. For most sizeable rivers a headwater is designated. If not, there is no universally agreed upon definition for a headwater. A reasonable interpretation might be the beginning of the most upstream first order stream that is a tributary of the named waterway. However, there is no guarantee that the author of the <<locality>> description used that definition. Therefore, we recommend the conservative solution that includes the watershed of all of the streams of lower order than the waterway mentioned.
 
 .{blank}
 [caption=Examples]
