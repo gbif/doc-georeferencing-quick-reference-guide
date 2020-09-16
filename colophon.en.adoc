@@ -8,15 +8,15 @@ endif::backend-html5[]
 [#citation]
 === Suggested citation
 
-https://orcid.org/0000-0002-6056-5084[Zermoglio PF], https://orcid.org/0000-0003-1700-6962[Chapman AD], https://orcid.org/0000-0003-1144-0290[Wieczorek JR], https://orcid.org/0000-0002-6392-8864[Luna MC] & https://orcid.org/0000-0003-1273-1807[Bloom DA] (2020) Georeferencing Quick Reference Guide. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/e09p-h128
+Zermoglio PF, Chapman AD, Wieczorek JR, Luna MC & Bloom DA (2020) Georeferencing Quick Reference Guide. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/e09p-h128
 
 === Authors
 
-https://orcid.org/0000-0002-6056-5084[Zermoglio PF], https://orcid.org/0000-0003-1700-6962[Chapman AD], https://orcid.org/0000-0003-1144-0290[Wieczorek JR], https://orcid.org/0000-0002-6392-8864[Luna MC] & https://orcid.org/0000-0003-1273-1807[Bloom DA]
+https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio], https://orcid.org/0000-0003-1700-6962[Arthur D. Chapman], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek], https://orcid.org/0000-0002-6392-8864[Marie Celeste Luna] & https://orcid.org/0000-0003-1273-1807[David A. Bloom]
 
 === Contributors
 
-TODO
+// TODO
 
 === Licence
 
