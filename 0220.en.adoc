@@ -208,7 +208,7 @@ NOTE: The addition of an adverbial modifier to the distance part of a locality d
 
 *Locality Type:* [ui-element]#Distance along path#
 
-Although this is not technically a distance along a path, the choice of this <<locality-type>> in the http://georeferencing.org/georefcalculator/gc.html[Georeferncing Calculator^] will allow all of the relevant parameters to be entered.
+Although this is not technically a distance along a path, the choice of this <<locality-type>> in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^] will allow all of the relevant parameters to be entered.
 
 *Step 1 – Determine the feature boundaries*: Determine the <<boundary,boundaries>> of the area matching the locality description by creating a copy of the paths, each offset by the distance and <<direction>> given. The overlap of these two copies defines the <<extent>> of the place described. Draw the boundary around the overlapping area.
 
