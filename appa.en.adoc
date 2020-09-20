@@ -29,7 +29,7 @@ image::img/web/key-obvious-extent.jpg[width=109,align="center"]
 a|
 Step 1: Determine <<feature>> <<boundary,boundaries>>.
 
-Step 2: Determine the <<coordinates>> of the <<corrected-center>> of the feature for _Input Latitude_ and _Longitude_.
+Step 2: Determine the <<coordinates>> of the <<corrected-center>> of the feature for [ui-element]#Input Latitude# and [ui-element]#Longitude#.
 
 Step 3: Measure the <<geographic-radial>>.
 
@@ -41,7 +41,7 @@ image::img/web/key-without-obvious-extent.jpg[width=108,align="center"]
 a|
 Step 1: Estimate <<feature>> <<boundary,boundaries>> using known information from the map, record, or other documentation.
 
-Step 2: Determine the <<coordinates>> of the <<corrected-center>> of the estimated feature boundaries as the _Input Latitude_ and _Longitude_.
+Step 2: Determine the <<coordinates>> of the <<corrected-center>> of the estimated feature boundaries as the [ui-element]#Input Latitude# and [ui-element]#Longitude#.
 
 Step 3: Measure the <<geographic-radial>>.
 
@@ -77,7 +77,7 @@ h|Calculation Steps
 a|
 Step 1: Determine the <<feature>> <<boundary,boundaries>> using the method for <<Geographic Feature only,Geographic Feature only (§2.1)>> except that the distance to use for the buffer is the distance given in the <<locality>> description, and there is no need to account for the proximity of other features.
 
-Step 2: Determine <<coordinates>> and **<<geographic-radial>>. _Offset Distance_ = 0. _Distance Precision_ = <<precision>> with which a distance was described in the <<locality>>.
+Step 2: Determine <<coordinates>> and <<geographic-radial>>. [ui-element]#Offset Distance# = 0. [ui-element]#Distance Precision# = <<precision>> with which a distance was described in the <<locality>>.
 
 a|
 <<Offset – Heading only,§2.2.2 Heading only>>
@@ -102,7 +102,7 @@ image::img/web/key-distance-orthogonal-direction.jpg[width=119,align="center"]
 a|
 Step 1: Determine the <<boundary>> of the <<feature>> based on feature *type*.
 
-Step 2: Determine and use the <<coordinates>> of the <<corrected-center>> of the estimated feature boundaries as the _Input Latitude_ and _Longitude_.
+Step 2: Determine and use the <<coordinates>> of the <<corrected-center>> of the estimated feature boundaries as the [ui-element]#Input Latitude# and [ui-element]#Longitude#.
 
 |<<Offset – Distance at a Heading,§2.2.5 Distance at a Heading>>
 a|
@@ -137,7 +137,7 @@ h|Calculation Steps
 a|
 Although this is not technically a <<feature>>, the <<Geographic Feature only,Geographic Feature only (§2.1)>> <<locality-type>> in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator (Wieczorek & Wieczorek 2020)^] includes all of the relevant parameters.
 
-Step 1: The <<UTM>> <<coordinates>> must be converted to <<decimal-degrees>> using a UTM to <<latitude,Latitude>>/<<longitude,Longitude>>** conversion tool. The UTM Zone is required to do this.
+Step 1: The <<UTM>> <<coordinates>> must be converted to <<decimal-degrees>> using a UTM to <<latitude,Latitude>>/<<longitude,Longitude>> conversion tool. The UTM Zone is required to do this.
 
 // TODO extra section link here
 
@@ -166,7 +166,7 @@ h|Calculation Steps
 a|
 If some part of the <<locality>> description is in question, but there is locality information that is not in question, use the unquestioned part of the locality to determine the <<locality-type>> and <<georeference>> following the appropriate method.
 
-If the entire locality is in question, do not <<georeference>> and document in term:dwc[georeferenceRemarks] the reason for not **<<georeference,georeferencing>> (e.g. "locality in question").
+If the entire locality is in question, do not <<georeference>> and document in term:dwc[georeferenceRemarks] the reason for not <<georeference,georeferencing>> (e.g. "locality in question").
 
 |<<Cannot Be Located,§2.4.2 Cannot Be Located>>
 a|
@@ -191,7 +191,7 @@ Multiple unrelated features: Do not <<georeference>>. Document in term:dwc[geore
 
 |<<Cultivated or Captive,§2.4.5 Cultivated or Captive>>
 a|
-Refers to a captive animal, a cultivated plant or _event_ from some other non-natural occurrence. The <<locality>> cited is often that of a zoo, aquarium, or botanical garden.
+Refers to a captive animal, a cultivated plant or [ui-element]#event# from some other non-natural occurrence. The <<locality>> cited is often that of a zoo, aquarium, or botanical garden.
 
 <<georeference,Georeference>> the locality normally based on the <<locality-type>> and <<feature>>. Document in term:dwc[georeferenceRemarks].
 |===

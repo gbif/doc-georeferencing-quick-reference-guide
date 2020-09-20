@@ -14,7 +14,7 @@ The <<locality>> consists of a point represented by <<latitude>> and <<longitude
 * degrees and decimal minutes (DDM)
 * <<decimal-degrees>> (DD)
 
-Records should also contain a hemisphere indicator ('E' or 'W' and 'N' or 'S' for DMS and DDM formats; '−' for west or south in DD format). For maritime <<location,locations>>, the coordinates must come from a <<GPS-receiver,GPS receiver>> or a map. If there is no information that would suggest a particular _Coordinate Source_, use a map of 1:150000 scale, as this is a realistic conservative selection.
+Records should also contain a hemisphere indicator ('E' or 'W' and 'N' or 'S' for DMS and DDM formats; '−' for west or south in DD format). For maritime <<location,locations>>, the coordinates must come from a <<GPS-receiver,GPS receiver>> or a map. If there is no information that would suggest a particular [ui-element]#Coordinate Source#, use a map of 1:150000 scale, as this is a realistic conservative selection.
 
 .{blank}
 [caption=Examples]
@@ -24,13 +24,13 @@ Records should also contain a hemisphere indicator ('E' or 'W' and 'N' or 'S' fo
 * "−36.524276; −114.164055" (DD using minus signs to indicate southern and western hemispheres).
 ====
 
-*Locality Type:* _Coordinates only_
+*Locality Type:* [ui-element]#Coordinates only#
 
 *Step 1 – Enter the coordinates*: Enter the <<coordinates>> in the format they were captured from the <<GPS>> or from the verbatim <<locality>> (<<decimal-degrees>>, degrees decimal minutes, or <<DMS,degrees minutes seconds>>) with all of the given digits of <<precision>>.
 
 NOTE: The http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator] calculates and preserves seven digits of precision in decimal degrees so that any transformation between coordinate formats is reversible without introducing rounding errors.
 
-*Step 2 – Calculate using the following additional parameters in the Calculator*: _Coordinate Source_, _Datum_, _Coordinate Precision_, _GPS Accuracy_, _Distance Units_ (see <<Georeferencing Concepts>>).
+*Step 2 – Calculate using the following additional parameters in the Calculator*: [ui-element]#Coordinate Source#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 ==== Coordinates – Universal Transverse Mercator (UTM)
 
@@ -47,21 +47,21 @@ NOTE: There are many national and local grids derived from UTM and work in the s
 * "56: 301545.2; 7011991.4"
 ====
 
-*Locality Type:* _Geographic feature only_
+*Locality Type:* [ui-element]#Geographic feature only#
 
-Although this is not technically a <<feature>>, the _Geographic feature only_ <<locality-type>> in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^] includes all of the relevant parameters.
+Although this is not technically a <<feature>>, the [ui-element]#Geographic feature only# <<locality-type>> in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^] includes all of the relevant parameters.
 
-*Step 1 – Convert the coordinates*: The <<UTM>> <<coordinates>> must be converted to <<decimal-degrees>> using a UTM to <<latitude,Latitude>>/<<longitude,Longitude>> conversion tool. If the Zone is not given with the UTM coordinates, try to determine it using http://www.dmap.co.uk/utmworld.htm[UTM Grid Zones of the World (Morton 2006)^] and any additional geographic information in the <<locality>> or geography fields combined with a UTM zone map. Use all of the digits of <<precision>> from the conversion in the __Input Latitude__ and _Longitude_. Choose the *Coordinate Source:* _locality description_
+*Step 1 – Convert the coordinates*: The <<UTM>> <<coordinates>> must be converted to <<decimal-degrees>> using a UTM to <<latitude,Latitude>>/<<longitude,Longitude>> conversion tool. If the Zone is not given with the UTM coordinates, try to determine it using http://www.dmap.co.uk/utmworld.htm[UTM Grid Zones of the World (Morton 2006)^] and any additional geographic information in the <<locality>> or geography fields combined with a UTM zone map. Use all of the digits of <<precision>> from the conversion in the [ui-element]#Input Latitude# and [ui-element]#Longitude#. Choose the [ui-element]#Coordinate Source:# [ui-element]#Locality description#
 
 NOTE: UTM coordinates are sometimes truncated to fewer than 7 digits in the northing and 6 digits in the easting, signifying a less precise location. To make a coordinate conversion, add zeros to the right of each coordinate to make 7 digits overall in the northing and 6 digits in the easting.
 
-*Step 2 – Determine geographic radial*: If the UTM coordinates have 7 digits in the northing and 6 digits in the easting, the <<geographic-radial>> is 0.707 m (because the coordinates distinguish to the nearest meter and the geographic radial is half the diagonal of the 1 m by 1 m <<grid>> cell). For UTM coordinates with fewer digits of precision see xref:table-default-geographic-radial[xrefstyle="short"]. This <<radial>> covers the <<uncertainty>> from the UTM <<coordinate-precision>>. The _Coordinate Precision_ in the Calculator for this case is the coordinate-precision of the _Input Latitude_ and _Longitude_, which depends on how many digits of <<decimal-degrees>> are copied from the converted latitude and longitude (xref:table-default-geographic-radial[xrefstyle="short"]).
+*Step 2 – Determine geographic radial*: If the UTM coordinates have 7 digits in the northing and 6 digits in the easting, the <<geographic-radial>> is 0.707 m (because the coordinates distinguish to the nearest meter and the geographic radial is half the diagonal of the 1 m by 1 m <<grid>> cell). For UTM coordinates with fewer digits of precision see xref:table-default-geographic-radial[xrefstyle="short"]. This <<radial>> covers the <<uncertainty>> from the UTM <<coordinate-precision>>. The [ui-element]#Coordinate Precision# in the Calculator for this case is the coordinate-precision of the [ui-element]#Input Latitude# and [ui-element]#Longitude#, which depends on how many digits of <<decimal-degrees>> are copied from the converted latitude and longitude (xref:table-default-geographic-radial[xrefstyle="short"]).
 
-*Step 3 – Calculate using the following additional parameters in the Calculator*: _Coordinate Format_, _Datum_, _Coordinate Precision_, _GPS Accuracy/Measurement Error_, and _Distance Units_ (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the Calculator*: [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy/Measurement Error#, and [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 ==== Coordinates – Grid Systems
 
-<<locality,Locality>> is a <<grid>> reference (see {gbp}#grids[Grids^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^], such as the 100 m square grids extensively used in Europe, Quarter Degree Square Grids (QDS) as used in South Africa, and the Public Land Survey System (PLSS) system of Townships andSection (TRS) used in the mid- and western USA. Townships in the PLSS system are usually square and six miles on each side, with 36 one-mile by one-mile sections. Be aware that not all townships are square, however, as some were adjusted to conform to administrative or natural boundaries (rivers, for example). Numbered Townships are not unique descriptions without a <<meridian>>, which often is not given in a locality description. The meridian must be inferred from a Principal Meridian map using other information in the locality description. Similar subdivisions are used in other countries, and should be calculated in a similar way, once the sizes of the cells have been determined (see xref:table-default-geographic-radial[xrefstyle="short"]). Map sheets (quadrangles) are sometimes used and can also be calculated as a grid system. Note that, unlike geographic grids, QDS grids are referenced from the top left corner.
+<<locality,Locality>> is a <<grid>> reference (see {gbp}#grids[Grids^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]), such as the 100 m square grids extensively used in Europe, Quarter Degree Square Grids (QDS) as used in South Africa, and the Public Land Survey System (PLSS) system of Townships andSection (TRS) used in the mid- and western USA. Townships in the PLSS system are usually square and six miles on each side, with 36 one-mile by one-mile sections. Be aware that not all townships are square, however, as some were adjusted to conform to administrative or natural boundaries (rivers, for example). Numbered Townships are not unique descriptions without a <<meridian>>, which often is not given in a locality description. The meridian must be inferred from a Principal Meridian map using other information in the locality description. Similar subdivisions are used in other countries, and should be calculated in a similar way, once the sizes of the cells have been determined (see xref:table-default-geographic-radial[xrefstyle="short"]). Map sheets (quadrangles) are sometimes used and can also be calculated as a grid system. Note that, unlike geographic grids, QDS grids are referenced from the top left corner.
 
 .{blank}
 [caption=Examples]
@@ -71,13 +71,13 @@ NOTE: UTM coordinates are sometimes truncated to fewer than 7 digits in the nort
 * "TQ2387" (Ordnance Survey National Grid)
 ====
 
-*Locality Type:* _Geographic feature only_
+*Locality Type:* [ui-element]#Geographic feature only#
 
-*Step 1 – Determine the coordinates: Determine as for <<Feature – with Obvious Spatial Extent>>. Use the <<coordinates>> for the <<corrected-center>> of the named grid cell.
+*Step 1 – Determine the coordinates*: Determine as for <<Feature – with Obvious Spatial Extent>>. Use the <<coordinates>> for the <<corrected-center>> of the named grid cell.
 
 NOTE: Usually the grid is made up of bounding boxes, so determining the corrected center should be easy.
 
 *Step 2 – Determine the geographic radial*: As for <<Feature – with Obvious Spatial Extent>>. See xref:table-default-geographic-radial[xrefstyle="short"] for <<radial,radials>> of regularly shaped Townships, Sections, and subsections.
 
-*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator]*: _Coordinate Source_, _Coordinate Format_, _Datum_, _Coordinate Precision_, _Measurement Error_, and _Distance Units_ (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error#, and [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 

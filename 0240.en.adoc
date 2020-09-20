@@ -18,7 +18,7 @@ The most important type of vagueness in a locality description is one in which s
 
 *Georeferencing procedure*: If some part of the locality description is in question, but aside from that there is <<location>> information that is not in question, use the unquestioned part of the locality to determine the <<locality-type>> and <<georeference>> it normally following the appropriate method. Document in term:dwc[georeferenceRemarks] what had to be disregarded in order to georeference the locality in question.
 
-If the entire locality is in question, do not georeference it and document in term:dwc[georeferenceRemarks] the reason for not georeferencing (_e.g. "locality in question").
+If the entire locality is in question, do not georeference it and document in term:dwc[georeferenceRemarks] the reason for not georeferencing (e.g. "locality in question").
 
 ==== Cannot Be Located
 
@@ -53,7 +53,7 @@ At times the <<locality>> cannot be distinguished from among multiple possible c
 * "San Isidro"
 ====
 
-*Locality Type:* _Geographic feature only_
+*Locality Type:* [ui-element]#Geographic feature only#
 
 If there are multiple distinct nearby places with the same name and no further information to distinguish between the possibilities, such as "Battle Mountain" and the nearby town with the same name, treat the combination of them as the <<feature>> (xref:img-nearby-features[xrefstyle="short"]) and follow the procedure for the appropriate <<locality-type>>. Make note of the multiple possibilities and the procedure used in term:dwc[georeferenceRemarks].
 

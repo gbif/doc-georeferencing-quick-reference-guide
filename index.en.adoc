@@ -14,6 +14,8 @@
 :icons: font
 :pagenums:
 :license: https://creativecommons.org/licenses/by-sa/4.0/
+// Special style for UI elements
+:docinfo: shared-head
 :sectnumlevels: 4
 :xrefstyle: basic
 :xrefstyle: short
