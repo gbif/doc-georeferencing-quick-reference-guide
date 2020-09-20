@@ -141,7 +141,7 @@ Step 1: The <<UTM>> <<coordinates>> must be converted to <<decimal-degrees>> usi
 
 // TODO extra section link here
 
-Step 2: *Determine <<radial>>*: If the UTM coordinates have 7 digits in the <<northing>> and 6 digits in the <<easting>>, the <<geographic-radial>> is 0.707 m. For UTM coordinates with fewer digits of <<precision>> see xref:table-default-geographic-radial[xrefstyle="short"] (§2.1.2).
+Step 2: *Determine <<radial>>*: If the UTM coordinates have 7 digits in the <<northing>> and 6 digits in the <<easting>>, the <<geographic-radial>> is 0.707 m. For UTM coordinates with fewer digits of <<precision>> see <<table-default-geographic-radial>> (§2.1.2).
 
 |<<Coordinates – Grid Systems,§2.3.3 Grid Systems>>
 a|

@@ -17,17 +17,16 @@
 // Special style for UI elements
 :docinfo: shared-head
 :sectnumlevels: 4
-:xrefstyle: basic
 :xrefstyle: short
 :section-refsig: §
-ifdef::backend-pdf[]
-:xrefstyle: full
-:section-refsig: §
-endif::backend-pdf[]
 
 // Shorthand for links to the other two documents
 :gbp: link:../../../georeferencing-best-practices/1.0/en/
 :gcm: link:../../../georeferencing-calculator-manual/1.0/en/
+ifdef::backend-pdf[]
+:gbp: link:https://docs.gbif.org/georeferencing-best-practices/1.0/en/
+:gcm: link:https://docs.gbif.org/georeferencing-calculator-manual/1.0/en/
+endif::backend-pdf[]
 
 ifdef::backend-html5[]
 languageLinks:combined[]
