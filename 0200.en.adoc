@@ -174,7 +174,7 @@ image::img/web/property-boundary.png[width=615,align="center"]
 
 ===== Feature – Path
 
-A <<path>> is a linear <<feature,features>> such as a road, trail, river, stream, contour line, <<boundary>>, <<transect>>, track of an animal’s movements, tow, trawl, etc. The <<locality>> may also refer to part (or subdivision) of a bigger path.
+A <<path>> is a linear <<feature>> such as a road, trail, river, stream, contour line, <<boundary>>, <<transect>>, track of an animal’s movements, tow, trawl, etc. The <<locality>> may also refer to part (or subdivision) of a bigger path.
 
 NOTE: A path may cross over itself, for example, as with the track of an animal’s movements.
 
