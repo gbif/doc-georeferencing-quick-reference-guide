@@ -99,4 +99,4 @@ The <<locality>> refers to a captive animal, a cultivated plant or from some oth
 * "San Diego Wild Animal Park"
 ====
 
-<<georeference,Georeference>> the locality normally based on the <<locality-type>> and <<feature>>. Retain the <<location>> (e.g. zoo) along with its <<georeference>>, as for other localities in this Guide, but be sure to record the nature of its provenance (cultivated, captive, washed ashore, etc.) in term:dwc[georeferenceRemarks] or the <<Darwin-Core>> term term:dwc[establishmentMeans].
+<<georeference,Georeference>> the locality normally based on the <<locality-type>> and <<feature>>. Retain the <<location>> (e.g. zoo) along with its <<georeference>>, as for other localities in this Guide, but be sure to record the nature of its provenance (cultivated, captive, washed ashore, etc.) in term:dwc[georeferenceRemarks] or the <<Darwin-Core>> term term:dwc[degreeOfEstablishment].
