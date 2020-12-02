@@ -51,7 +51,7 @@ term:dwc[dwc:georeferenceSources]::  A list (concatenated and separated) of maps
 .{blank}
 [caption=Examples]
 ====
-USGS 1:24000 Florence Montana Quad +
+USGS 1:24000 Florence Montana Quad 1967 +
 Terrametrics 2008 Google Earth +
 Wieczorek C & J Wieczorek (2020) Georeferencing Calculator, version yyyymmdd. Available: http://georeferencing.org/georefcalculator/gc.html.
 ====
