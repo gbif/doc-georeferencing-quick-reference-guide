@@ -97,14 +97,14 @@ A third way to estimate the distance on the ground is a simplification of the se
 
 *Step 1 – Determine the feature boundaries*: Find the <<boundary>> of the intersection of the reference <<feature>> with the <<path>> as you would for <<feature-junction-intersection-crossing-confluence,Feature – Junction, Intersection, Crossing, Confluence>> (<<img-offset-narrow-path>>).
 
-*Step 2 – Determine the starting feature coordinates and  geographic radial*: Once the <<boundary>> of the starting <<feature>> has been determined, use the same method to determine the <<corrected-center>> and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the corrected center to the furthest point on the boundary of the starting feature (<<img-offset-narrow-path>>B). Enter the length of the geographic radial in [ui-element]#Radial of Feature# in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^].
+*Step 2 – Determine the starting feature coordinates and length of the matching path*: Once the <<boundary>> of the starting <<feature>> has been determined, find the midpoint along the path within the boundary of the feature it intersects with (<<img-offset-narrow-path>>B). Note the distance along the path from the midpoint to the boundary of the feature it intersects in the direction of the offset. Enter the length of that segment in [ui-element]#Radial of Feature# in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^].
 
-*Step 3 – Enter the [ui-element]#Input Latitude# and [ui-element]#Longitude#*: Enter the coordinates of the <<offset>> position, which can be determined by measuring the length along the midline of the path from the corrected center of the starting feature to the distance given in the <<locality>> description. See the notes on map scale and accumulated <<error>> in <<Offset – Distance along a Path>>.
+**Step 3 – Enter the [ui-element]#Input Latitude# and [ui-element]#Longitude#*: Enter the coordinates of the <<offset>> position, which can be determined by measuring the length along the midline of the path from the midpoint found in the previous step to the distance along the path given in the <<locality>> description. See the notes on map scale and accumulated <<error>> in <<Offset – Distance along a Path>>.
 
 *Step 4 – Calculate using the following additional parameters in the Calculator*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).
 
 [#img-offset-narrow-path]
-.A locality of the type Offset along a path where the path is narrow, specifically, along a road "east of" a feature. *A*: Inset showing the  boundary, corrected center ⓐ, and geographic radial ⓑ of the intersection of the path and the starting feature. *B*: The corrected center ⓐ and the offset ⓓ measured along the road.
+.A locality of the type "Offset along a path" where the path is narrow, specifically, along a road "east of" a feature. *A*: Inset showing the boundary, midpoint ⓐ, and half the distance along the path inside the feature ⓑ. *B*: The midpoint ⓐ and the offset ⓓ measured along the road.
 image::img/web/offset-narrow-path.png[width=584,align="center"]
 
 ===== Offset along a Wide Path
