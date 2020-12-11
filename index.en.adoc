@@ -19,6 +19,8 @@
 :sectnumlevels: 4
 :xrefstyle: short
 :section-refsig: §
+// Enable mathematical processing with stem:[]
+:stem:
 
 // Shorthand for links to the other two documents
 :gbp: link:../../../georeferencing-best-practices/1.0/en/
