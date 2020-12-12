@@ -58,7 +58,7 @@ At times the <<locality>> cannot be distinguished from among multiple possible c
 If there are multiple distinct nearby places with the same name and no further information to distinguish between the possibilities, such as "Battle Mountain" and the nearby town with the same name, treat the combination of them as the <<feature>> (<<img-nearby-features>>) and follow the procedure for the appropriate <<locality-type>>. Make note of the multiple possibilities and the procedure used in term:dwc[georeferenceRemarks].
 
 [#img-nearby-features]
-.The boundaries for two distinct nearby features with the same name, with center ⓒ, corrected center ⓐ, and geographic radial ⓑ covering both possible interpretations of the locality.
+.The boundaries for two distinct nearby features with the same name, with center *c*, corrected center *a*, and geographic radial *b* covering both possible interpretations of the locality.
 image::img/web/nearby-features.png[width=341,align="center"]
 
 ===== Multiple Unrelated Features

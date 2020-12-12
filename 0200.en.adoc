@@ -38,7 +38,7 @@ NOTE: Record the source (including date) used to determine the boundaries (see t
 *Step 4 – Calculate using the following additional parameters*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, and [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-obvious-spatial-extent]
-.A. Boundary only, and B. center ⓐ of the smallest enclosing circle and geographic radial ⓑ of a feature with obvious spatial extent. The center ⓐ falls within the boundaries and thus needs no correction.
+.A. Boundary only, and B. center *a* of the smallest enclosing circle and geographic radial *b* of a feature with obvious spatial extent. The center *a* falls within the boundaries and thus needs no correction.
 image::img/web/obvious-spatial-extent.png[width=618,align="center"]
 
 ==== Feature – without Obvious Spatial Extent
@@ -59,7 +59,7 @@ The <<locality>> refers to a geographic <<feature>> that does not have an easily
 For towns without obvious borders one can use the presence of buildings near the <<coordinates>> given for the town to decide where the town ends (<<img-without-obvious-spatial-extent>>). In some cases there might not be such indicators and these will be more subjective. For this reason it is particularly important to document the rationale for the selection of the locality with unclear boundaries.
 
 [#img-without-obvious-spatial-extent]
-.Boundary (lighter dotted line), corrected center ⓐ and geographic radial ⓑ of a town based on the locations of buildings and a well-defined neighbouring town border (denoted by the darker dotted line) on a map.
+.Boundary (lighter dotted line), corrected center *a* and geographic radial *b* of a town based on the locations of buildings and a well-defined neighbouring town border (denoted by the darker dotted line) on a map.
 image::img/web/without-obvious-spatial-extent.png[width=378,align="center"]
 
 Where there are no indicators for the boundary, use the midpoint between the given feature and neighbouring features with similar type, size, or importance to make a rough boundary. Though this boundary may not represent the actual feature very well, it will represent the uncertainty of where the locality is, and that is the major goal of the <<georeference>>.
@@ -67,7 +67,7 @@ Where there are no indicators for the boundary, use the midpoint between the giv
 For small features, where the only indicator on a map is a label and possibly a marker, or where there are only coordinates from a <<gazetteer>> (and no further indicators at those coordinates on a map), a good strategy would be to use a predefined default size based on the feature type (<<img-without-obvious-spatial-extent-default-size>>, <<table-default-geographic-radial>>).
 
 [#img-without-obvious-spatial-extent-default-size]
-.The boundary for a spring determined from the position of its icon on a map ⓐ and a geographic radial ⓑ determined by a default size for the feature type.
+.The boundary for a spring determined from the position of its icon on a map *a* and a geographic radial *b* determined by a default size for the feature type.
 image::img/web/without-obvious-spatial-extent-default-size.png[width=227,align="center"]
 
 // NB was Table 2 in the source document, but there is no Table 1.
@@ -99,7 +99,7 @@ The boundaries between mountains can be determined by using the terrain (valleys
 Always use term:dwc[georeferenceRemarks] to document the decisions made and the reasons for them as well as possible, including the neighbouring features used for reference.
 
 [#img-mountain-boundaries]
-.A. Topographic contours of a group of nearby mountains. B. Rough boundary, corrected center ⓐ and geographic radial ⓑ of a mountain determined by the surrounding valleys, saddles, and plains.
+.A. Topographic contours of a group of nearby mountains. B. Rough boundary, corrected center *a* and geographic radial *b* of a mountain determined by the surrounding valleys, saddles, and plains.
 image::img/web/mountain-boundaries.png[width=574,align="center"]
 
 *Step 2 – Determine the coordinates*: Once the estimated boundary has been determined, use the coordinates of the corrected center (<<img-obvious-spatial-extent>>, <<img-without-obvious-spatial-extent>>, and <<img-mountain-boundaries>>B) as the [ui-element]#Input Latitude# and [ui-element]#Longitude#.
@@ -137,7 +137,7 @@ b. Address boundary not evident – if the exact address cannot be found, estima
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-street-address]
-.Boundary, corrected center ⓐ and geographic radial ⓑ of a street address. *A* has obvious boundaries; *B* has no obvious boundaries, and where it is not possible to tell from the source map whether the location is on one side of the street or the other.
+.Boundary, corrected center *a* and geographic radial *b* of a street address. *A* has obvious boundaries; *B* has no obvious boundaries, and where it is not possible to tell from the source map whether the location is on one side of the street or the other.
 image::img/web/street-address.png[width=613,align="center"]
 
 ===== Feature – Property
@@ -169,7 +169,7 @@ b. Property boundaries not evident – once the outer boundaries are determined,
 *Step 3 – Calculate using the following additional parameters in the Calculator*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-property-boundary]
-.Boundary, corrected center ⓐ and geographic radial ⓑ of a property. *A* has obvious boundaries; *B* has an obvious inner boundary (dark shading) and a less obvious rough outer boundary (lighter shading), where the center of the outer boundary falls within the obvious inner boundary; *C* has an obvious inner boundary (dark shading) and a rough outer boundary (lighter shading), where the center of the outer boundary ⓒ does not fall within the obvious inner boundary.
+.Boundary, corrected center *a* and geographic radial *b* of a property. *A* has obvious boundaries; *B* has an obvious inner boundary (dark shading) and a less obvious rough outer boundary (lighter shading), where the center of the outer boundary falls within the obvious inner boundary; *C* has an obvious inner boundary (dark shading) and a rough outer boundary (lighter shading), where the center of the outer boundary *c* does not fall within the obvious inner boundary.
 image::img/web/property-boundary.png[width=615,align="center"]
 
 ===== Feature – Path
@@ -208,7 +208,7 @@ If the  feature must be treated as a polyline, draw a straight line connecting t
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-paths]
-.Corrected center ⓐ and geographic radial ⓑ for a path. *A*: with boundary of the path as a  shape. *B*: with path as a polyline, showing the midpoint ⓒ between the ends of the path. *C*: Boundary center ⓒ, corrected center ⓐ and geographic radial ⓑ of bounded section of a contour line, in this case an isohypse of 220 m with an elevational uncertainty of 10 m.
+.Corrected center *a* and geographic radial *b* for a path. *A*: with boundary of the path as a  shape. *B*: with path as a polyline, showing the midpoint *c* between the ends of the path. *C*: Boundary center *c*, corrected center *a* and geographic radial *b* of bounded section of a contour line, in this case an isohypse of 220 m with an elevational uncertainty of 10 m.
 image::img/web/paths.png[width=600,align="center"]
 
 ===== Feature – Junction, Intersection, Crossing, Confluence
@@ -234,7 +234,7 @@ For a confluence of two waterways, the boundary is a triangle that consists of t
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-junction]
-.*A*: Crossing of a road and a stream with details of boundary, corrected center ⓐ (with no need for correction) and geographic radial ⓑ of the intersection. *B*: Boundary, corrected center ⓐ and geographic radial ⓑ of a confluence of two rivers.
+.*A*: Crossing of a road and a stream with details of boundary, corrected center *a* (with no need for correction) and geographic radial *b* of the intersection. *B*: Boundary, corrected center *a* and geographic radial *b* of a confluence of two rivers.
 image::img/web/junction.png[width=627,align="center"]
 
 ===== Feature – Cave
@@ -261,7 +261,7 @@ b. Cave extent not evident – if the limits of the cave are not evident: a) use
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-caves]
-.Boundary, corrected center ⓐ and geographic radial ⓑ of a cave. *A*: cave extent known and projected onto the surface. *B*: cave extent not known, but inferred from other evidence. *C*: cave extent not known, but maximum horizontal length known and measured from the entrance.
+.Boundary, corrected center *a* and geographic radial *b* of a cave. *A*: cave extent known and projected onto the surface. *B*: cave extent not known, but inferred from other evidence. *C*: cave extent not known, but maximum horizontal length known and measured from the entrance.
 image::img/web/caves.png[width=617,align="center"]
 
 ===== Feature – Dive Location
@@ -287,7 +287,7 @@ b. Dive extent not evident – if the limits of the dive are not evident, there 
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-dive-location]
-.Boundary,  corrected center ⓐ and geographic radial ⓑ of a dive location. *A*: side view of a dive with extent evident. *B*: top view of a dive location with evident extent, projected onto the surface. *C*: top view of a dive location with extent not evident, but inferred from other evidence.
+.Boundary,  corrected center *a* and geographic radial *b* of a dive location. *A*: side view of a dive with extent evident. *B*: top view of a dive location with evident extent, projected onto the surface. *C*: top view of a dive location with extent not evident, but inferred from other evidence.
 image::img/web/dive-location.png[width=621,align="center"]
 
 ===== Feature – Headwaters of a Waterway
@@ -312,11 +312,11 @@ If the headwater is not designated, use the set of all of the streams upstream o
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-headwater]
-.Overview of a headwater issuing from a stationary waterbody (in this case a lake). Detail of corrected center ⓐ and geographic radial ⓑ.
+.Overview of a headwater issuing from a stationary waterbody (in this case a lake). Detail of corrected center *a* and geographic radial *b*.
 image::img/web/headwater.png[width=588,align="center"]
 
 [#img-watershed]
-.Overview of a watershed as the headwater of a river Ⓡ with detail showing the boundaries of the upstream tributaries of R, with center ⓒ, corrected center ⓐ and geographic radial ⓑ.
+.Overview of a watershed as the headwater of a river Ⓡ with detail showing the boundaries of the upstream tributaries of R, with center *c*, corrected center *a* and geographic radial *b*.
 image::img/web/watershed.png[width=587,align="center"]
 
 ===== Feature – near a Feature
@@ -344,7 +344,7 @@ NOTE: The buffer distance for the extension is arbitrary – it is hard to defen
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-near-a-feature]
-.Boundary, corrected center ⓐ and geographic radial ⓑ of an interpretation of locality type _near a Feature_ with a boundary extended a fixed distance in all directions, in this case 10 km. *A*: Boundary extended a fixed distance in all directions with no neighbouring conflicts. *B*: Boundary extended a fixed distance in all directions except in the area overlapping a similar feature, where it extends half the distance to the neighbouring feature.
+.Boundary, corrected center *a* and geographic radial *b* of an interpretation of locality type _near a Feature_ with a boundary extended a fixed distance in all directions, in this case 10 km. *A*: Boundary extended a fixed distance in all directions with no neighbouring conflicts. *B*: Boundary extended a fixed distance in all directions except in the area overlapping a similar feature, where it extends half the distance to the neighbouring feature.
 image::img/web/near-a-feature.png[width=486,align="center"]
 
 ===== Feature – between Two Features
@@ -368,7 +368,7 @@ The <<locality>> description uses the pattern "between A and B", where A and B a
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Radial of Feature#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-between-two-features]
-.*A*: Boundary, corrected center ⓐ and geographic radial ⓑ of two features. *B*: Coordinates ⓒ and geographic radial ⓓ of the interpretation of _between Two Features_.
+.*A*: Boundary, corrected center *a* and geographic radial *b* of two features. *B*: Coordinates *c* and geographic radial *d* of the interpretation of _between Two Features_.
 image::img/web/between-two-features.png[width=582,align="center"]
 
 ===== Feature – between Two Paths
@@ -394,5 +394,5 @@ NOTE: Paths may cross each other one or more times, with the area between switch
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-between-two-paths]
-.Boundary, corrected center ⓐ and geographic radial ⓑ for a location between two paths (light shaded area), with location restricted by an administrative boundary (dashed line). *A*: Paths do not cross. *B*: Paths cross each other multiple times.
+.Boundary, corrected center *a* and geographic radial *b* for a location between two paths (light shaded area), with location restricted by an administrative boundary (dashed line). *A*: Paths do not cross. *B*: Paths cross each other multiple times.
 image::img/web/between-two-paths.png[width=564,align="center"]
