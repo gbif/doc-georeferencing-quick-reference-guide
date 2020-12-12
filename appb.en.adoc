@@ -16,44 +16,44 @@ Sometimes determining the corrected center and geographic radial of a feature ca
 
 ==== Linear Feature
 
-*Step 1 – Find the midpoint of the segment (*a*) that joins the two most distant points of the <<geometry>> (thick line, <<img-linear-feature>>).
+*Step 1* – Find the midpoint of the segment (*a*) that joins the two most distant points of the <<geometry>> (thick line, <<img-linear-feature>>).
 
-*Step 2 - The midpoint is the corrected center (*a*, <<img-linear-feature>>). The geographic radial is the distance from there to either end of the line segment (*b*, <<img-linear-feature-radial>>).
+*Step 2* - The midpoint is the corrected center (*a*, <<img-linear-feature>>). The geographic radial is the distance from there to either end of the line segment (*b*, <<img-linear-feature-radial>>).
 
 ==== Elongate Convex Feature
 
-*Step 1 – Find the midpoint of the segment (*a*) that joins the two most distant points of the geometry (thick line, <<img-convex-elongate-feature>>).
+*Step 1* – Find the midpoint of the segment (*a*) that joins the two most distant points of the geometry (thick line, <<img-convex-elongate-feature>>).
 
-*Step 2 - If the midpoint is within or on the <<boundary>> of the geometry and there is no point within the geometry that is further away than the two points of the chosen segment (which one can determine by eye or with a ruler or with a tool to make a circle), then the midpoint is already the corrected center (*a*, geographic radial *b*, <<img-convex-elongate-feature-corrected>>).
+*Step 2* - If the midpoint is within or on the <<boundary>> of the geometry and there is no point within the geometry that is further away than the two points of the chosen segment (which one can determine by eye or with a ruler or with a tool to make a circle), then the midpoint is already the corrected center (*a*, geographic radial *b*, <<img-convex-elongate-feature-radial>>).
 
 ==== Not Obviously Elongate Convex Feature
 
-*Step 1 – Find the midpoint (*a*) of the segment that joins the two most distant points of the geometry (thick line, <<img-convex-feature>>). Draw a circle with center at the midpoint and diameter up to the two ends of the segment.
+*Step 1* – Find the midpoint (*a*) of the segment that joins the two most distant points of the geometry (thick line, <<img-convex-feature>>). Draw a circle with center at the midpoint and diameter up to the two ends of the segment.
 
-*Step 2 - If any point of the geometry falls outside the circle, move the circle so that the farthest spaced vertices of the geometry are equally far outside the new circle (solid circle, center *b*, <<img-convex-feature-corrected>>).
+*Step 2* - If any point of the geometry falls outside the circle, move the circle so that the farthest spaced vertices of the geometry are equally far outside the new circle (solid circle, center *b*, <<img-convex-feature-corrected>>).
 
-*Step 3 - Increase the radius of the circle, without moving the center, to just include the three most distant points of the geometry. The center of this circle (*b*) is the corrected center with geographic radial *c* (<<img-convex-feature-radial>>)).
+*Step 3* - Increase the radius of the circle, without moving the center, to just include the three most distant points of the geometry. The center of this circle (*b*) is the corrected center with geographic radial *c* (<<img-convex-feature-radial>>)).
 
 ==== Simple Concave Feature (center within the feature)
 
-*Step 1 – Find the midpoint (*a*) of the segment that joins the two most distant points of the geometry (thick line, <<img-concave-feature>>). Draw a circle with center at the midpoint and diameter up to the two ends of the segment.
+*Step 1* – Find the midpoint (*a*) of the segment that joins the two most distant points of the geometry (thick line, <<img-concave-feature>>). Draw a circle with center at the midpoint and diameter up to the two ends of the segment (dotted circle <<img-concave-feature-corrected>>).
 
-*Step 2 - If any point of the geometry falls outside the circle, move the circle so that the three farthest spaced vertices of the geometry are equally far outside the new circle (solid circle, center *b*, <<img-concave-feature-corrected>>).
+*Step 2* - If any point of the geometry falls outside the circle, move the circle so that the three farthest spaced vertices of the geometry are equally far outside the new circle (solid circle, center *b*, <<img-concave-feature-corrected>>).
 
-*Step 3 - Increase the radius of the circle, without moving the center, to just include the most distant points of the geometry. The center of this circle (*b*) is the corrected center with geographic radial *c* (<<img-concave-feature-radial>>)).
+*Step 3* - Increase the radius of the circle, without moving the center, to just include the most distant points of the geometry. The center of this circle (*b*) is the corrected center with geographic radial *c* (<<img-concave-feature-radial>>)).
 
 ==== Complex Concave Feature (center outside the feature)
 
-*Step 1 – Find the midpoint (*a*) of the segment that joins the two most distant points of the geometry (thick line, <<img-concave-complex-feature>>). Draw a circle with center at the midpoint and diameter up to the two ends of the segment.
+*Step 1* – Find the midpoint (*a*) of the segment that joins the two most distant points of the geometry (thick line, <<img-concave-complex-feature>>). Draw a circle with center at the midpoint and diameter up to the two ends of the segment.
 
-*Step 2 - Move the circle so that the center falls on the border of the geometry and the vertices that are farthest spaced are equally far outside the new circle (solid circle, center *b*, <<img-concave-complex-feature-corrected>>).
+*Step 2* - Move the circle so that the center falls on the border of the geometry and the vertices that are farthest spaced are equally far outside the new circle (solid circle, center *b*, <<img-concave-complex-feature-corrected>>).
 
-*Step 3 - Increase the radius of the circle, without moving the center, until the circle includes the farthest spaced vertices. The center of this circle (*c*) is the corrected center (geographic radial *d*, <<img-concave-complex-feature-radial>>).
+*Step 3* - Increase the radius of the circle, without moving the center, until the circle includes the farthest spaced vertices. The center of this circle (*c*) is the corrected center (geographic radial *d*, <<img-concave-complex-feature-radial>>).
 
 ==== Curvilinear Feature
 
-*Step 1 – Find the midpoint (*a*) of the segment that joins the two most distant points of the geometry (thick line, <<img-curvilinear-feature>>). Draw a circle with center at the midpoint and diameter up to the two ends of the segment.
+*Step 1* – Find the midpoint (*a*) of the segment that joins the two most distant points of the geometry (thick line, <<img-curvilinear-feature>>). Draw a circle with center at the midpoint and diameter up to the two ends of the segment.
 
-*Step 2 - Move the circle so that the center falls on the border of the geometry and the vertices farthest from there are equally far outside the new circle (solid circle, center *b*, <<img-curvilinear-feature-corrected>>).
+*Step 2* - Move the circle so that the center falls on the border of the geometry and the vertices farthest from there are equally far outside the new circle (solid circle, center *b*, <<img-curvilinear-feature-corrected>>).
 
-*Step 3 - Increase the radius of the circle, without moving the center, until the circle includes the farthest spaced vertices. The center of this circle (*c*) is the corrected center (geographic radial *d*, <<img-curvilinear-feature-radial>>).
+*Step 3* - Increase the radius of the circle, without moving the center, until the circle includes the farthest spaced vertices. The center of this circle (*c*) is the corrected center (geographic radial *d*, <<img-curvilinear-feature-radial>>).
