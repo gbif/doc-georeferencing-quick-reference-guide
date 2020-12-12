@@ -16,7 +16,7 @@ Sometimes determining the corrected center and geographic radial of a feature ca
 
 ==== Linear Feature
 [#table-linear-feature]
-[%autowidth,cols="20%,80%"]
+[cols="20%,80%"]
 |===
 h|
 h|Method
@@ -37,7 +37,7 @@ a|
 ==== Elongate Convex Feature
 
 [#table-elongate-convex-feature]
-[%autowidth,cols="20%,80%"]
+[cols="20%,80%"]
 |===
 h|
 h|Method
@@ -58,7 +58,7 @@ a|
 ==== Not Obviously Elongate Convex Feature
 
 [#table-convex-feature]
-[%autowidth,cols="20%,80%"]
+[cols="20%,80%"]
 |===
 h|
 h|Method
@@ -85,7 +85,7 @@ a|
 ==== Simple Concave Feature (center within the feature)
 
 [#table-concave-feature]
-[%autowidth,cols="20%,80%"]
+[cols="20%,80%"]
 |===
 h|
 h|Method
@@ -112,7 +112,7 @@ a|
 ==== Complex Concave Feature (center outside the feature)
 
 [#table-concave-complex-feature]
-[%autowidth,cols="20%,80%"]
+[cols="20%,80%"]
 |===
 h|
 h|Method
@@ -139,7 +139,7 @@ a|
 ==== Curvilinear Feature
 
 [#table-curvilinear-feature]
-[%autowidth,cols="20%,80%"]
+[cols="20%,80%"]
 |===
 h|
 h|Method
