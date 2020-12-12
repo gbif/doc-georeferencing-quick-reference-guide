@@ -62,7 +62,7 @@ The <<locality>> consists of a direction from a <<feature>> without any distance
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-offset-heading]
-.A locality "east of" a feature, but bounded on the east by an administrative border (dotted line). *A*: Boundary and corrected center ⓐ of the starting feature. The cone to the east forms part of the new boundary with corrected center (ⓒ, no need for correction) and geographic radial ⓓ. *B*: Similar to A, but with an intervening feature to the northeast before the border.
+.A locality "east of" a feature, but bounded on the east by an administrative border (dotted line). *A*: Boundary and corrected center *a* of the starting feature. The cone to the east forms part of the new boundary with corrected center (*c*, no need for correction) and geographic radial *d*. *B*: Similar to A, but with an intervening feature to the northeast before the border.
 image::img/web/offset-heading.png[width=501,align="center"]
 
 ==== Offset – Distance along a Path
@@ -104,7 +104,7 @@ A third way to estimate the distance on the ground is a simplification of the se
 *Step 4 – Calculate using the following additional parameters in the Calculator*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).
 
 [#img-offset-narrow-path]
-.A locality of the type "Offset along a path" where the path is narrow, specifically, along a road "east of" a feature. *A*: Inset showing the boundary, midpoint ⓐ, and half the distance along the path inside the feature ⓑ. *B*: The midpoint ⓐ and the offset ⓓ measured along the road.
+.A locality of the type "Offset along a path" where the path is narrow, specifically, along a road "east of" a feature. *A*: Inset showing the boundary, midpoint *a*, and half the distance along the path inside the feature *b*. *B*: The midpoint *a* and the offset *d* measured along the road.
 image::img/web/offset-narrow-path.png[width=584,align="center"]
 
 ===== Offset along a Wide Path
@@ -130,7 +130,7 @@ image::img/web/offset-narrow-path.png[width=584,align="center"]
 *Step 5 – Final path boundary corrected center and geographic radial*: Once you have determined the boundary of the final path boundary from *Step 4*, treat as for <<Feature – with Obvious Spatial Extent>>, namely, find the corrected center of the final path boundary and measure the distance from there to the furthest point on the boundary. Use the coordinates of the corrected center for the resulting [ui-element]#Latitude# and [ui-element]#Longitude# and use the length of the geographic radial of the final path boundary as the final [ui-element]#Uncertainty#. Use all of the rest of the output values from the calculation in *Step 4* in the final georeference. No new calculation has to be made for this step.
 
 [#img-offset-wide-path]
-.Determination of the final coordinates and geographic radial for a locality of the type [ui-element]#Offset along path#, where the path is wide enough that there are multiple reasonable routes within it, in this case a river. *A*: Boundary, corrected center (a₁) and geographic radial (b₁) for the starting feature. *B*: Offsets (x) along varies routes along the wider path, buffers of uncertainty (u) forward and backward along the possible paths, and the boundary (red dotted segments) defined by the buffers. *C*: Boundary, corrected center (a₂) and geographic radial (b₂) for the section of the river covered by the distance X downstream from the corrected center of the starting feature (a₁) buffered by the uncertainties (u).
+.Determination of the final coordinates and geographic radial for a locality of the type [ui-element]#Offset along path#, where the path is wide enough that there are multiple reasonable routes within it, in this case a river. *A*: Boundary, corrected center (a₁) and geographic radial (b₁) for the starting feature. *B*: Offsets (x) along various routes along the wider path, buffers of uncertainty (u) forward and backward along the possible paths, and the boundary (red dotted segments) defined by the buffers. *C*: Boundary, corrected center (a₂) and geographic radial (b₂) for the section of the river covered by the distance X downstream from the corrected center of the starting feature (a₁) buffered by the uncertainties (u).
 image::img/web/offset-wide-path.png[width=593,align="center"]
 
 ===== Offset along Multiple Possible Paths
@@ -177,7 +177,7 @@ NOTE: Where localities have two orthogonal measurements in them, it should alway
 *Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source,# [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#North or South Offset Distance, East or West Offset Distance#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).
 
 [#img-offset-orthogonal-direction]
-.Example of offsets (ⓧ, and ⓨ) in orthogonal directions from the corrected center ⓐ of a feature with radial ⓑ. By convention the headings are exactly in the specified directions and contribute no uncertainty due to direction precision.
+.Example of offsets (*x*, and *y*) in orthogonal directions from the corrected center *a* of a feature with radial *b*. By convention the headings are exactly in the specified directions and contribute no uncertainty due to direction precision.
 image::img/web/offset-orthogonal-direction.jpg[width=392,align="center"]
 
 ==== Offset – Distance at a Heading
