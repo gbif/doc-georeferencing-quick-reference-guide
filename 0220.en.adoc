@@ -104,7 +104,7 @@ A third way to estimate the distance on the ground is a simplification of the se
 *Step 4 – Calculate using the following additional parameters in the Calculator*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).
 
 [#img-offset-narrow-path]
-.A locality of the type "Offset along a path" where the path is narrow, specifically, along a road "east of" a feature. *A*: Inset showing the boundary, midpoint *a*, and half the distance along the path inside the feature *b*. *B*: The midpoint *a* and the offset *d* measured along the road.
+.A locality of the type "Offset along a path" where the path is narrow, specifically, along a road "east of" a feature. *A*: Inset showing the boundary, midpoint *a*, and half the distance along the path inside the feature *b*. *B*: The midpoint *a* and the offset *c* measured along the road.
 image::img/web/offset-narrow-path.png[width=584,align="center"]
 
 ===== Offset along a Wide Path

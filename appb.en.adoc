@@ -133,7 +133,7 @@ a|
 image::img/web/concave-complex-feature-radial.png[width=120,align="center"]
 
 a|
-*Step 3* - Increase the radius of the circle, without moving the center, until the circle includes the farthest spaced vertices. The center of this circle (*c*) is the corrected center (geographic radial *d*).
+*Step 3* - Increase the radius of the circle, without moving the center, until the circle includes the farthest spaced vertices. The center of this circle (*c*) is the corrected center (geographic radial *c*).
 |===
 
 ==== Curvilinear Feature
