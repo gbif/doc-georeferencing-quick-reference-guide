@@ -54,6 +54,8 @@ include::0240.en.adoc[]
 
 include::glossary.en.adoc[]
 
+include::acknowledgements.en.adoc[]
+
 include::bibliography.en.adoc[]
 
 include::appa.en.adoc[]
