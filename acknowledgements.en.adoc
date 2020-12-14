@@ -1,0 +1,8 @@
+== Acknowledgements
+
+Many people have contributed ideas to this document and its precursors, either directly or indirectly through discussions at meetings, publications, or in email correspondence. We refer you to the earlier document for those we acknowledged there.
+
+The people we would like to particularly acknowledge for this document include Arturo H. Ariño, Ricardo Ortiz Gallego, Quentin Groom, Kyle Kopas, Erica Krimmel, and Nelson Rios. We would further like to acknowledge the staff at the GBIF Secretariat, especially Laura Russell, Kyle Copas, and Matthew Blissett who provided support for the project in which this document was solicited.
+
+
+

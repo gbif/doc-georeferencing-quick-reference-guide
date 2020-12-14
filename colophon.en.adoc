@@ -16,8 +16,6 @@ https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio], https://orcid.org/000
 
 === Contributors
 
-// TODO
-
 === Licence
 
 The document _Georeferencing Quick Reference Guide_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
