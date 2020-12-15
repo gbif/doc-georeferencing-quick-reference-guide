@@ -4,7 +4,7 @@ This is a practical guide for <<georeference,georeferencing>>. It describes the 
 
 The http://georeferencing.org/docs/GeoreferencingQuickGuide.pdf[first version of the Guide (Wieczorek et al. 2012)^]), was an adaptation of http://georeferencing.org/docs/georeffordummy.xls[Georeferencing for Dummies (Spencer et al. 2008)^]. It explains the recommended georeferencing procedures for the most commonly encountered type of <<locality,localities>>. This Guide should be used in parallel with {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^], which contains the theoretical background and more detailed information about concepts used here.
 
-Underlined terms throughout this document (e.g. <<accuracy>>) link to definitions in the <<Glossary>>. Terms in italics (e.g. [ui-element]#Input Latitude#) refer to fields and/or labels in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator (Wieczorek & Wieczorek 2020)^] (hereafter referred to as 'the Calculator'). Darwin Core terms are displayed in monospace (e.g. term:dwc[georeferenceRemarks]) in all GBIF digital documentation.
+Underlined terms throughout this document (e.g. <<accuracy>>) link to definitions in the <<Glossary>>. Terms in italics (e.g. [ui-element]#Input Latitude#) refer to fields and/or labels in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator (Wieczorek & Wieczorek 2020)^] (hereafter referred to as 'the Calculator'). Darwin Core terms are displayed in monospace (e.g. term:dwc[dwc:georeferenceRemarks]) in all GBIF digital documentation.
 
 At the end of this document is a <<key-to-locality-types,Georeference Quick Reference Guide Key to Locality Types>>, which contains a quick summary of the protocols for the most common <<locality-type,locality types>>, described in detail in the sections of this guide.
 
@@ -130,7 +130,7 @@ Latitudes in <<decimal-degrees,decimal degrees>> north of the equator are positi
 
 Labelled as [ui-element]#Input Longitude# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]. The <<geographic-coordinates,geographic coordinate>> east or west of the <<prime-meridian,prime meridian>> (an arc between the north and south poles where <<longitude>> is 0) that represents the starting point for a <<georeference>> calculation and depends on the <<locality-type>>.
 
-Longitudes in <<decimal-degrees,decimal degrees>> east of the prime meridian>> are positive by convention, while longitudes to the west are negative. The Calculator supports three degree-based geographic-coordinate formats for <<latitude>> and longitude: <<decimal-degrees,decimal degrees>> (−71.5246934), degrees decimal minutes (71° 31.482") and <<DMS,degrees-minutes-and-seconds>> (71° 31' 28.90" W).
+Longitudes in <<decimal-degrees,decimal degrees>> east of the prime meridian are positive by convention, while longitudes to the west are negative. The Calculator supports three degree-based geographic-coordinate formats for <<latitude>> and longitude: <<decimal-degrees,decimal degrees>> (−71.5246934), degrees decimal minutes (71° 31.482") and <<DMS,degrees-minutes-and-seconds>> (71° 31' 28.90" W).
 
 ==== Coordinate Source
 
