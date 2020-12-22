@@ -1,4 +1,4 @@
-== Georeferencing Methods for Locality Type
+== Georeferencing Methods by Locality Type
 
 === Geographic Feature only
 
@@ -48,7 +48,8 @@ The <<locality>> refers to a geographic <<feature>> that does not have an easily
 .{blank}
 [caption=Examples]
 ====
-* "Pampa Grande" as a region, "Mt Hypipamee" +
+* "Pampa Grande" as a region + 
+* "Mt Hypipamee" +
 * "Great Barrier Reef"
 ====
 
@@ -89,7 +90,7 @@ h|Feature Type h|Default <<geographic-radial>>
 |Grid (e.g. UTM), 10 m precision |7 m
 |Grid (e.g. UTM), 100 m precision |71 m
 |Grid (e.g. UTM), 1 km precision |707 m
-|Grid, ¼ degree *precision* (at equator)† |39226 m
+|Grid, ¼ degree precision (at equator)† |39226 m
 |===
 
 † <<grid,Grids>> based on <<geographic-coordinates,geographic coordinates>>, such as Quarter Degree Squares, are not square, nor are they constant. They vary in size and shape by <<latitude>>. See {gbp}#table-uncertainty[table^] in {gbp}#uncertainty-related-to-coordinate-precision[Uncertainty Related to Coordinate Precision in Georeferencing Best Practices (Chapman & Wieczorek 2020)^].
@@ -130,14 +131,14 @@ The <<locality>> is a street address – usually with a number, a street name, a
 
 a. Address <<boundary>> evident – if the map shows the <<extent>> of the address clearly, determine the boundary exactly as you would for a feature with an Obvious Spatial Extent (<<img-street-address>>A); (see <<Feature – with Obvious Spatial Extent>>).
 
-b. Address boundary not evident – if the exact address cannot be found, estimate the boundary as well as possible, such as the block that it must be on (<<img-street-address>>B), as for <<Feature – without Obvious Spatial Extent>>. Many addresses reflect a <<grid>> system of labelling addresses. For instance, addresses between 12th Street and 13th Street would lie between 1200 and 1300.
+b. Address boundary not evident – if the exact address cannot be found, estimate the boundary as well as possible, such as the block that it must be on (<<img-street-address>>B), as for <<Feature – without Obvious Spatial Extent>>. Many addresses reflect a <<grid>> system. For instance, addresses between 12th Street and 13th Street would lie between 1200 and 1300.
 
 *Step 2 – Determine the coordinates and measure the geographic radial*: Once the boundary has been determined, use the same method to determine the coordinates and <<geographic-radial,geographic radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center,corrected center>> to the furthest point on the boundary of the feature.
 
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-street-address]
-.Boundary, corrected center *a* and geographic radial *b* of a street address. *A* has obvious boundaries; *B* has no obvious boundaries, and where it is not possible to tell from the source map whether the location is on one side of the street or the other.
+.Boundary, corrected center *a* and geographic radial *b* of a street address. *A* has obvious boundaries; *B* has no obvious boundaries, and it is not possible to tell from the source map whether the location is on one side of the street or the other.
 image::img/web/street-address.png[width=613,align="center"]
 
 ===== Feature – Property
@@ -156,15 +157,15 @@ The <<locality>> is a property – a ranch, rancho, station, farm, finca, grange
 
 *Step 1 – Determine the feature boundaries*: Locate the property using whatever sources you can. You may have to resort to a cadastral map.
 
-a. Property <<boundary,boundaries>> evident – if the map shows the <<extent>> of the property, determine the boundary exactly as you would for <<Feature – with Obvious Spatial Extent>>).
+a. Property <<boundary>> evident – if the map shows the <<extent>> of the property, determine the boundary exactly as you would for <<Feature – with Obvious Spatial Extent>>).
 
-b. Property boundaries not evident – if the full extent of the property cannot be found, it should still be possible to determine some part of it confidently, and the rest with less certainty. Delimit the outer, uncertain feature boundaries as usual by following <<Feature – without Obvious Spatial Extent>>. In addition, determine the boundaries of the part of the property that is obvious following <<Feature – with Obvious Spatial Extent>>.
+b. Property boundary not evident – if the full extent of the property cannot be found, it should still be possible to determine some part of it confidently, and the rest with less certainty. Delimit the outer, uncertain feature boundaries as usual by following <<Feature – without Obvious Spatial Extent>>. In addition, determine the boundaries of the part of the property that is obvious following <<Feature – with Obvious Spatial Extent>>.
 
 *Step 2 – Determine the coordinates and geographic radial*:
 
-a. Property boundaries evident – once the boundary is determined, determine the <<coordinates>> and <<geographic-radial,geographic radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center,corrected center>> to the furthest point on the boundary of the feature (<<img-property-boundary>>A).
+a. Property boundary evident – once the boundary is determined, determine the <<coordinates>> and <<geographic-radial,geographic radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center,corrected center>> to the furthest point on the boundary of the feature (<<img-property-boundary>>A).
 
-b. Property boundaries not evident – once the outer boundaries are determined, use them to find coordinates as for <<Feature – with Obvious Spatial Extent>>, namely find the center of the <<smallest-enclosing-circle,smallest enclosing circle>> containing the outer, uncertain  boundary. If that center falls within the inner, confident boundary, use it to determine the geographic radial by finding the distance from that point to the furthest point on the uncertain boundary (<<img-property-boundary>>B). If the center does not fall in or on the confident inner boundary, let the <<corrected-center,corrected center>> be a point on the inner confident boundary that minimizes the geographic radial to the outer uncertain boundary (<<img-property-boundary>>C).
+b. Property boundary not evident – once the outer boundaries are determined, use them to find coordinates as for <<Feature – with Obvious Spatial Extent>>, namely find the center of the <<smallest-enclosing-circle,smallest enclosing circle>> containing the outer, uncertain  boundary. If that center falls within the inner, confident boundary, use it to determine the geographic radial by finding the distance from that point to the furthest point on the uncertain boundary (<<img-property-boundary>>B). If the center does not fall in or on the confident inner boundary, let the <<corrected-center,corrected center>> be a point on the inner confident boundary that minimizes the geographic radial to the outer uncertain boundary (<<img-property-boundary>>C).
 
 *Step 3 – Calculate using the following additional parameters in the Calculator*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
@@ -193,13 +194,15 @@ NOTE: A path may cross over itself, for example, as with the track of an animal�
 
 NOTE: Paths are susceptible to change over time, so it may be best to find a map source from the period during which the event occurred. The scale is important when looking at a path on a map, as smaller scale maps reduce the complexity shown, with corners cut off, and with loops (oxbows, billabongs), etc. often not shown.
 
-*Contour Lines* — these are linear features defined by <<elevation>> or <<depth>>. The horizontal width of the buffer around the contour line depends on the <<uncertainty>> in elevation due either to an elevational range, or due to the imprecision in the elevation recorded. For example, if the elevational range is given as 100-200 m, then the boundary of the feature defined by the contours would contain the horizontal area between the contours at 100 m and 200 m.
+*Contour Lines* — these are linear features defined by <<elevation>> or <<depth>>. The horizontal width of the buffer around the contour line depends on the <<uncertainty>> in elevation or depth due to a combination of the stated range and the imprecision with which the value was recorded.
 
-The determination of the boundary would be similar for an elevational buffer defined by the uncertainty in elevation. For example, if the elevation is given as 220 m, the elevational precision would be to the nearest 10 m and the boundary would be defined by the contours 210 m and 230 m.
+If a single value is given for an elevation (or depth knowing that the location was at the bottom of a waterbody), treat the path as a linear feature with a buffer around it, where the buffer is a vertical distance from the contour, not a horizontal one. The size of the vertical buffer should be equal to the precision with which the elevation is recorded. For example, if the precision is 100 feet (e.g. the precision of an elevation recorded as "2600 ft"), then the buffer is 100 vertical feet. Determine the shape of the feature using lines interpolated (or measured) one half of the buffer distance below the given contour and one half the buffer distance above the given contour (e.g. at 2550 feet and 2650 feet for the elevation example "2600 ft").
+
+If an elevational range is given (e.g. 100-200 m), it is difficult to know whether the range was intended to encompass uncertainties in elevation or just the elevational bounds for the Location. To be conservative, we have to assume that it does not account for uncertainty in elevation and we need to add a buffer as described above around the upper and lower limits of the given range. For the example "100 - 200 m" the buffer is 100 m, so the lower boundary of the shape would be at 100 - 50 = 50 m and the upper boundary would be defined by 200 + 50 = 250 m.
 
 NOTE: Buffers might require interpolation on a topographic map if they do not correspond with the printed contour lines (<<img-paths>>C).
 
-These considerations apply equally to depth and <<bathymetry>> where contours are available, bearing in mind that some bathymetric contours are quite coarse.
+These considerations can apply equally to <<bathymetry>> where contours are available, bearing in mind that some bathymetric contours are quite coarse and that most depths given in locality descriptions are actually above the bottom of the waterbody.
 
 *Step 2 – Determine the coordinates and geographic radial*: If the boundary can be determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the corrected-center to the furthest point on the boundary of the feature (<<img-paths>>A).
 
@@ -208,7 +211,7 @@ If the  feature must be treated as a polyline, draw a straight line connecting t
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-paths]
-.Corrected center *a* and geographic radial *b* for a path. *A*: with boundary of the path as a  shape. *B*: with path as a polyline, showing the midpoint *c* between the ends of the path. *C*: Boundary center *c*, corrected center *a* and geographic radial *b* of bounded section of a contour line, in this case an isohypse of 220 m with an elevational uncertainty of 10 m.
+.Corrected center *a* and geographic radial *b* for a path. *A*: with boundary of the path as a  shape. *B*: with path as a polyline, showing the midpoint *c* between the ends of the path. *C*: uncorrected center *c* of a boundary, corrected center *a* and geographic radial *b* of bounded section of a contour line, in this case an isohypse of 220 m with an elevational uncertainty of 10 m.
 image::img/web/paths.png[width=600,align="center"]
 
 ===== Feature – Junction, Intersection, Crossing, Confluence
@@ -276,7 +279,7 @@ The <<locality>> is a marine or freshwater diving site. Commonly recorded using 
 
 *Locality Type:* [ui-element]#Geographic feature only#
 
-*Step 1 – Determine the feature boundaries*: Locate the <<extent>> of the dive as a 3D-shape, which should be projected perpendicularly onto the water surface. Determine the <<boundary>> of that projection in the horizontal plane (i.e. the <<geographic-boundary>>) (<<img-dive-location>>).
+*Step 1 – Determine the feature boundaries*: Locate the <<extent>> of the dive as a 3D-shape, which should be projected perpendicularly onto the water surface. Determine the <<boundary>> of that projection on the horizontal plane (i.e. the <<geographic-boundary>>) (<<img-dive-location>>).
 
 a. Dive <<extent>> evident – underwater <<location,locations>> are often recorded as a distance, <<direction>> and water <<depth>> from the entry point. Below the surface there may be a "trajectory" with a three dimensional aspect that includes a horizontal component and a minimum and maximum water depth. Use these to circumscribe the boundary on the surface (see <<img-dive-location>>A and {gbp}#three-dimensional-shapes[Three Dimensional Shapes^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]).
 
@@ -287,12 +290,12 @@ b. Dive extent not evident – if the limits of the dive are not evident, there 
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-dive-location]
-.Boundary,  corrected center *a* and geographic radial *b* of a dive location. *A*: side view of a dive with extent evident. *B*: top view of a dive location with evident extent, projected onto the surface. *C*: top view of a dive location with extent not evident, but inferred from other evidence.
+.Determination of the corrected center *a* and geographic radial *b* of a dive location. *A*: side view of a dive. *B*: top view of a dive location with evident extent, projected onto the surface. *C*: top view of a dive location with extent not evident, but inferred from other evidence (in this case, an island).
 image::img/web/dive-location.png[width=621,align="center"]
 
 ===== Feature – Headwaters of a Waterway
 
-The headwater of a waterway may or may not be well defined. For most sizeable rivers a headwater is designated. If not, there is no universally agreed upon definition for a headwater. A reasonable interpretation might be the beginning of the most upstream first order stream that is a tributary of the named waterway. However, there is no guarantee that the author of the <<locality>> description used that definition. Therefore, we recommend the conservative solution that includes the watershed of all of the streams of lower order than the waterway mentioned.
+The headwater of a waterway may or may not be well defined. For most sizeable rivers a headwater is designated. If not, there is no universally agreed upon definition for a headwater. A reasonable interpretation might be the beginning of the most upstream first order stream that is a tributary of the named waterway. However, there is no guarantee that the author of the <<locality>> description used that definition. Therefore, we recommend the conservative solution that includes the watershed of all of the tributary streams of lower order than the waterway mentioned.
 
 .{blank}
 [caption=Examples]
@@ -303,7 +306,7 @@ The headwater of a waterway may or may not be well defined. For most sizeable ri
 
 *Locality Type:* [ui-element]#Geographic feature only#
 
-*Step 1 – Determine the feature boundaries*: When the position of a headwater is well known, the feature is just the spring, lake, marsh, or beginning of the stream as generally accepted and treat as <<Feature – with Obvious Spatial Extent>>. If the headwater issues from a stationary waterbody such as a spring or lake, the feature is a line segment or polyline across the area where the water flows out of the stationary waterbody. In the latter case, treat the <<boundary>> as for a <<path>> (see <<Feature – Path>>), albeit a short one, as it is transverse to the flow of the waterway (<<img-headwater>>).
+*Step 1 – Determine the feature boundaries*: Sometimes the position of a headwater is well known, e.g. it originates in a spring, lake, marsh, or a generally accepted beginning of a stream. If the headwater issues from a stationary waterbody such as a spring or lake, the feature is a line segment or polyline across the area where the water flows out of the stationary waterbody. In the latter case, treat the <<boundary>> as for a <<path>> (see <<Feature – Path>>), albeit a short one, as it is transverse to the flow of the waterway (<<img-headwater>>).
 
 If the headwater is not designated, use the set of all of the streams upstream of the waterway mentioned. Draw the least convex polygon containing the entire set of streams as the *boundary* (<<img-watershed>>).
 
@@ -312,11 +315,11 @@ If the headwater is not designated, use the set of all of the streams upstream o
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-headwater]
-.Overview of a headwater issuing from a stationary waterbody (in this case a lake). Detail of corrected center *a* and geographic radial *b*.
+.Overview of a headwater issuing from a stationary waterbody (in this case a lake), with detail of the corrected center *a* and geographic radial *b*.
 image::img/web/headwater.png[width=588,align="center"]
 
 [#img-watershed]
-.Overview of a watershed as the headwater of a river Ⓡ with detail showing the boundaries of the upstream tributaries of R, with center *c*, corrected center *a* and geographic radial *b*.
+.Overview of a watershed as the headwater of a river *R* with detail showing the boundaries of the upstream tributaries of *R*, with center *c*, corrected center *a* and geographic radial *b*.
 image::img/web/watershed.png[width=587,align="center"]
 
 ===== Feature – near a Feature
@@ -328,23 +331,24 @@ The <<locality>> is given with a proximity to a <<feature>>, usually written as 
 ====
 * "before Ceibas" +
 * "near Dina Huapi" +
-* "off Rottnest island" , "adjacent to the railway underpass on Smith Street"
+* "off Rottnest island" + 
+* "adjacent to the railway underpass on Smith Street"
 ====
 
 *Locality Type:* [ui-element]#Geographic feature only#
 
-*Step 1 – Determine the feature boundaries*: First determine the <<boundary>> of the feature itself based on the feature type, either as <<Feature – with Obvious Spatial Extent>>, or as <<Feature – without Obvious Spatial Extent>>. Then, to account for the proximity indicator, extend that boundary outward for a fixed distance in all directions (<<img-near-a-feature>>A). Call this the "extended feature". If the extension overlaps the extension of any other similar feature, modify the boundary in the shared space to be half the distance between the nearest boundaries between the two features (<<img-near-a-feature>>B).
+*Step 1 – Determine the feature boundaries*: First determine the <<boundary>> of the feature that is mentioned in the description, based on the feature type, either as <<Feature – with Obvious Spatial Extent>>, or as <<Feature – without Obvious Spatial Extent>>. Then, to account for the proximity indicator, extend that boundary outward for a fixed distance in all directions (<<img-near-a-feature>>A). Call this the "extended feature". If the extension overlaps the extension of any other similar feature, modify the boundary in the shared space to be half the distance between the nearest boundaries between the two features (<<img-near-a-feature>>B).
 
-NOTE: Neighbouring features were not necessarily there at the time the locality was recorded, nor were they necessarily the same size. The feature of interest may have changed size in the time between the recording of the locality and the time when the map you use was made. These considerations add to the vagaries associated with this type of locality and underline the importance to never describe localities in this way.
+NOTE: At the time the locality was recorded, neighbouring features might not have necessarily been in the same place as they are now. Also, features may have changed size in the time between the recording of the locality and the time when the map you use was made. These considerations add to the vagaries associated with this type of locality and underline the importance to never describe localities in this way.
 
-NOTE: The buffer distance for the extension is arbitrary – it is hard to defend any given value as a default. Make a judgement and imagine what the person who recorded the locality meant. Document the rationale and decisions made in georeferenceRemarks. Remember, one goal of a georeference is that it is repeatable.
+NOTE: The buffer distance for the extension is arbitrary – it is hard to defend any given value as a default. Make a judgement and imagine what the person who recorded the locality meant. Document the rationale and decisions made in term:dwc[dwc:georeferenceRemarks].
 
-*Step 2 – Determine the coordinates and geographic radial:*: Once the boundary of the extended feature has been determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary of the extended feature.
+*Step 2 – Determine the coordinates and geographic radial:* Once the boundary of the extended feature has been determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary of the extended feature.
 
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-near-a-feature]
-.Boundary, corrected center *a* and geographic radial *b* of an interpretation of locality type _near a Feature_ with a boundary extended a fixed distance in all directions, in this case 10 km. *A*: Boundary extended a fixed distance in all directions with no neighbouring conflicts. *B*: Boundary extended a fixed distance in all directions except in the area overlapping a similar feature, where it extends half the distance to the neighbouring feature.
+.Boundary, corrected center *a* and geographic radial *b* of an interpretation of locality type "_near a Feature_" with a boundary extended a fixed distance in all directions, in this case 10 km. *A*: Boundary extended a fixed distance in all directions with no neighbouring conflicts. *B*: Boundary extended a fixed distance in all directions except in the area overlapping a similar feature, where it extends half the distance to the neighbouring feature.
 image::img/web/near-a-feature.png[width=486,align="center"]
 
 ===== Feature – between Two Features
@@ -363,12 +367,12 @@ The <<locality>> description uses the pattern "between A and B", where A and B a
 
 *Step 1 – Determine the feature boundaries*: Determine the <<boundary,boundaries>> of each feature as <<Feature – with Obvious Spatial Extent>> or <<Feature – without Obvious Spatial Extent>> (<<img-between-two-features>>A).
 
-*Step 2 – Determine the coordinates and geographic radial*: Once you have determined the boundaries of the two feature, find their <<corrected-center,corrected-centers>>, as for <<Feature – with Obvious Spatial Extent>>. Use the midpoint between the <<corrected-center>> of the two features (<<img-between-two-features>>B) to determine the <<coordinates>> of the <<location>> between the features. The <<geographic-radial>> of the location between the two features is half the distance between the corrected centers of the features (<<img-between-two-features>>B).
+*Step 2 – Determine the coordinates and geographic radial*: Once you have determined the boundaries of the two features, find their <<corrected-center,corrected-centers>>, as for <<Feature – with Obvious Spatial Extent>>. Use the midpoint between the <<corrected-centers>> of the two features to determine the <<coordinates>> of the <<location>> between the features (<<img-between-two-features>>B). The <<geographic-radial>> of the location between the two features is half the distance between the corrected centers of the features (<<img-between-two-features>>B).
 
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Radial of Feature#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-between-two-features]
-.*A*: Boundary, corrected center *a* and geographic radial *b* of two features. *B*: Coordinates *c* and geographic radial *d* of the interpretation of _between Two Features_.
+.*A*: Boundary, corrected center *a* and geographic radial *b* of two features. *B*: Coordinates *c* and geographic radial *d* of the interpretation of a location of the type "_between Two Features_".
 image::img/web/between-two-features.png[width=582,align="center"]
 
 ===== Feature – between Two Paths
@@ -387,9 +391,9 @@ The <<locality>> describes a <<location>> between two <<path,paths>> (two roads,
 
 *Step 1 – Determine the feature boundaries*: Create a <<boundary>> that includes the two paths and any other boundaries that terminate those paths (e.g. the border of a given administrative division) (<<img-between-two-paths>>A).
 
-NOTE: Paths may cross each other one or more times, with the area between switching from one side of each path to the other, resulting in a *boundary* consisting of multiple polygons (<<img-between-two-paths>>B).
+NOTE: Paths may cross each other one or more times, with the area between switching from one side of each path to the other, resulting in a boundary consisting of multiple polygons (<<img-between-two-paths>>B).
 
-*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the corrected center to the furthest point on the boundary of the <<feature>>.
+*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> of the corrected center and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the corrected center to the furthest point on the boundary of the <<feature>>.
 
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
