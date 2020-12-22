@@ -201,7 +201,7 @@ NOTE: Buffers might require interpolation on a topographic map if they do not co
 
 These considerations apply equally to depth and <<bathymetry>> where contours are available, bearing in mind that some bathymetric contours are quite coarse.
 
-*Step 2 – Determine the coordinates and geographic radial*: If the boundary can be determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the corrected-center to the furthest point on the boundary of the feature (<<img-paths>>A).
+*Step 2 – Determine the coordinates and geographic radial*: If the boundary can be determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the corrected center to the furthest point on the boundary of the feature (<<img-paths>>A).
 
 If the  feature must be treated as a polyline, draw a straight line connecting the ends of the polyline and determine its midpoint. If the midpoint falls on the polyline, that will be the center (no need for correction), and the geographic radial will be the distance from that point to either of the endpoints of the polyline. If the midpoint does not fall on the polyline, move it to the point on the polyline that minimizes the distance to both endpoints. This is the corrected center and the distance to the endpoints is the geographic radial (<<img-paths>>B).
 
@@ -363,7 +363,7 @@ The <<locality>> description uses the pattern "between A and B", where A and B a
 
 *Step 1 – Determine the feature boundaries*: Determine the <<boundary,boundaries>> of each feature as <<Feature – with Obvious Spatial Extent>> or <<Feature – without Obvious Spatial Extent>> (<<img-between-two-features>>A).
 
-*Step 2 – Determine the coordinates and geographic radial*: Once you have determined the boundaries of the two feature, find their <<corrected-center,corrected-centers>>, as for <<Feature – with Obvious Spatial Extent>>. Use the midpoint between the <<corrected-center>> of the two features (<<img-between-two-features>>B) to determine the <<coordinates>> of the <<location>> between the features. The <<geographic-radial>> of the location between the two features is half the distance between the corrected centers of the features (<<img-between-two-features>>B).
+*Step 2 – Determine the coordinates and geographic radial*: Once you have determined the boundaries of the two feature, find their <<corrected-center,corrected centers>>, as for <<Feature – with Obvious Spatial Extent>>. Use the midpoint between the corrected centers of the two features (<<img-between-two-features>>B) to determine the <<coordinates>> of the <<location>> between the features. The <<geographic-radial>> of the location between the two features is half the distance between the corrected centers of the features (<<img-between-two-features>>B).
 
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Radial of Feature#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
