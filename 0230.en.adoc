@@ -3,7 +3,7 @@
 .**Definition**
 [NOTE]
 ====
-The locality consists of a point represented by **coordinates**, which may be in the form of geographic coordinates latitude and longitude), Universal Transverse Mercator (UTM), Quarter Degree Squares (QDS), metric grids, map sheets, or any number of other Cartesian reference systems
+The locality consists of a point represented by **coordinates**, which may be in the form of geographic coordinates (latitude and longitude), Universal Transverse Mercator (UTM), Quarter Degree Squares (QDS), metric grids, map sheets, or any number of other Cartesian reference systems
 ====
 
 ==== Coordinates – Geographic Coordinates
@@ -14,7 +14,7 @@ The <<locality>> consists of a point represented by <<latitude>> and <<longitude
 * degrees and decimal minutes (DDM)
 * <<decimal-degrees>> (DD)
 
-Records should also contain a hemisphere indicator ('E' or 'W' and 'N' or 'S' for DMS and DDM formats; '−' for west or south in DD format). For maritime <<location,locations>>, the coordinates must come from a <<GPS-receiver,GPS receiver>> or a map. If there is no information that would suggest a particular [ui-element]#Coordinate Source#, use a map of 1:150000 scale, as this is a realistic conservative selection.
+Records should also contain a hemisphere indicator ('E' or 'W' and 'N' or 'S' for DMS and DDM formats in English; '−' for west or south in DD format). For maritime <<location,locations>>, if there is no information that would suggest a particular [ui-element]#Coordinate Source#, use a map of 1:150000 scale, as this is a realistic conservative selection.
 
 .{blank}
 [caption=Examples]
@@ -36,15 +36,14 @@ NOTE: The http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calc
 
 The <<locality>> consists of a point represented by <<coordinates,coordinate>> information in the form of <<UTM,Universal Transverse Mercator (UTM)>> or a related <<coordinate-system>>. For UTM or equivalent coordinates, a Zone should ALWAYS be included to make sure that the <<longitude>> is not ambiguous. Zones are often not reported where a region (e.g. Tasmania) falls completely within one UTM zone. Be aware that UTM zones are valid only between 84°N and 80°S. For details on dealing with UTM Coordinates see {gbp}#universal-transverse-mercator-utm-coordinates[Universal Transverse Mercator (UTM) Coordinates^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^].
 
-NOTE: There are many national and local grids derived from UTM and work in the same way, such as the Australian Map Grid (AMG).
+NOTE: There are many national and local grids derived from UTM and that work in the same way, such as the Australian Map Grid (AMG).
 
 .{blank}
 [caption=Examples]
 ====
-* "N 4291492 E 456156","N4291 E456" +
-* "UTM N 4291492; E 456156" (Note: no zone cited), "AMG Zone 56, x: 301545 y: 7011991" +
-* "30T 699582 m east 5709431 m north" +
-* "56: 301545.2; 7011991.4"
+* "N 4291492 E 456156" +
+* "AMG Zone 56, x: 301545 y: 7011991" +
+* "30T 699582 m east 5709431 m north"
 ====
 
 *Locality Type:* [ui-element]#Geographic feature only#
@@ -61,7 +60,7 @@ NOTE: UTM coordinates are sometimes truncated to fewer than 7 digits in the nort
 
 ==== Coordinates – Grid Systems
 
-<<locality,Locality>> is a <<grid>> reference (see {gbp}#grids[Grids^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]), such as the 100 m square grids extensively used in Europe, Quarter Degree Square Grids (QDS) as used in South Africa, and the Public Land Survey System (PLSS) system of Townships andSection (TRS) used in the mid- and western USA. Townships in the PLSS system are usually square and six miles on each side, with 36 one-mile by one-mile sections. Be aware that not all townships are square, however, as some were adjusted to conform to administrative or natural boundaries (rivers, for example). Numbered Townships are not unique descriptions without a <<meridian>>, which often is not given in a locality description. The meridian must be inferred from a Principal Meridian map using other information in the locality description. Similar subdivisions are used in other countries, and should be calculated in a similar way, once the sizes of the cells have been determined (see <<table-default-geographic-radial>>). Map sheets (quadrangles) are sometimes used and can also be calculated as a grid system. Note that, unlike geographic grids, QDS grids are referenced from the top left corner.
+<<locality,Locality>> is a <<grid>> reference (see {gbp}#grids[Grids^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]), such as the 100 m square grids extensively used in Europe, Quarter Degree Square Grids (QDS) as used in South Africa, and the Public Land Survey System (PLSS) system of Townships andSection (TRS) used in the mid- and western USA. Townships in the PLSS system are usually square and six miles on each side, with 36 one-mile by one-mile sections. Be aware that not all townships are square, however, as some were adjusted to conform to administrative or natural boundaries (rivers, for example). Numbered Townships are not unique descriptions without a <<meridian>>, which often is not given in a locality description. The meridian must then be inferred from a Principal Meridian map using other information in the locality description. Similar subdivisions are used in other countries, and should be calculated in a similar way, once the sizes of the cells have been determined (see <<table-default-geographic-radial>>). Map sheets (quadrangles) are sometimes used and can also be calculated as a grid system. Note that, unlike geographic grids, QDS grids are referenced from the top left corner.
 
 .{blank}
 [caption=Examples]
@@ -73,9 +72,7 @@ NOTE: UTM coordinates are sometimes truncated to fewer than 7 digits in the nort
 
 *Locality Type:* [ui-element]#Geographic feature only#
 
-*Step 1 – Determine the coordinates*: Determine as for <<Feature – with Obvious Spatial Extent>>. Use the <<coordinates>> for the <<corrected-center>> of the named grid cell.
-
-NOTE: Usually the grid is made up of bounding boxes, so determining the corrected center should be easy.
+*Step 1 – Determine the coordinates*: Determine as for <<Feature – with Obvious Spatial Extent>>. Use the <<coordinates>> for the <<corrected-center>> of the named grid cell. Usually a grid is made up of bounding boxes, so determining the corrected center should be easy.
 
 *Step 2 – Determine the geographic radial*: As for <<Feature – with Obvious Spatial Extent>>. See <<table-default-geographic-radial>> for <<radial,radials>> of regularly shaped Townships, Sections, and subsections.
 
