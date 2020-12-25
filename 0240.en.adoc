@@ -1,6 +1,6 @@
 === Difficult Localities
 
-At times, <<locality>> descriptions are fraught with vagueness. This may be due to any number of reasons, but in particular relates to historic collections in areas that at the time may have had no named <<feature,features>> to reference. See the section {gbp}#difficult-localities[Difficult Localities^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^].
+At times, <<locality>> descriptions are fraught with vagueness. This may be due to any number of reasons, but in particular relates to historic collections in areas that at may have had no named <<feature,features>> to reference at the time when the locality was recorded. See the section {gbp}#difficult-localities[Difficult Localities^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^].
 
 A cause of vagueness may be incorrect data entry and it is recommended that checking the original catalogues, ledgers, field notes, specimen labels, etc. be the first step in removing the vagaries of a locality so that it can be <<georeference,georeferenced>> with confidence.
 
@@ -16,13 +16,13 @@ The most important type of vagueness in a locality description is one in which s
 * "Bakersfield?"
 ====
 
-*Georeferencing procedure*: If some part of the locality description is in question, but aside from that there is <<location>> information that is not in question, use the unquestioned part of the locality to determine the <<locality-type>> and <<georeference>> it normally following the appropriate method. Document in term:dwc[georeferenceRemarks] what had to be disregarded in order to georeference the locality in question.
+*Georeferencing procedure*: If some part of the locality description is in question, but aside from that there is <<location>> information that is not in question, use the unquestioned part of the locality to determine the <<locality-type>> and <<georeference>> it normally following the appropriate method. Document in term:dwc[georeferenceRemarks] what had to be disregarded in order to georeference the locality in question. For example, for a locality “Argentina: Misiones, possibly Puerto Iguazú”, georeference “Misiones”, which is the most specific part of the locality that is not in question.
 
 If the entire locality is in question, do not georeference it and document in term:dwc[georeferenceRemarks] the reason for not georeferencing (e.g. "locality in question").
 
 ==== Cannot Be Located
 
-The cited <<locality>> cannot be found. This may be for any number of reasons, including:
+The cited <<locality>> cannot be found, and there is no other location information in the record (e.g. no administrative divisions cited). This may be for any number of reasons, including:
 
 * There is no locality information cited.
 * The <<location>> fields contain other than location information.
@@ -34,7 +34,7 @@ The cited <<locality>> cannot be found. This may be for any number of reasons, i
 * "locality not recorded" +
 * "Bob Jones" +
 * "summit" +
-* "El Dorado"
+* "200 m"
 ====
 
 Do not <<georeference>> these localities. These recommendations apply to all <<locality-type,locality types>>. Document in term:dwc[georeferenceRemarks] the reason for not georeferencing, e.g. "locality cannot be found with available references". Fill in the term:dwc[georeferenceSources] so that others do not waste time using the same resources to track down the locality.
@@ -58,7 +58,7 @@ At times the <<locality>> cannot be distinguished from among multiple possible c
 If there are multiple distinct nearby places with the same name and no further information to distinguish between the possibilities, such as "Battle Mountain" and the nearby town with the same name, treat the combination of them as the <<feature>> (<<img-nearby-features>>) and follow the procedure for the appropriate <<locality-type>>. Make note of the multiple possibilities and the procedure used in term:dwc[georeferenceRemarks].
 
 [#img-nearby-features]
-.The boundaries for two distinct nearby features with the same name, with center *c*, corrected center *a*, and geographic radial *b* covering both possible interpretations of the locality.
+.The boundaries for two distinct nearby features with the same name, with center *c*, corrected center *a*, and geographic radial *b* covering the combination of both possible interpretations of the locality.
 image::img/web/nearby-features.png[width=341,align="center"]
 
 ===== Multiple Unrelated Features
@@ -67,36 +67,40 @@ image::img/web/nearby-features.png[width=341,align="center"]
 [caption=Examples]
 ====
 * "Laguna Blanca" (could refer to distinct lagoons or municipalities in at least five different countries) +
-* "Washington Street" (could refer to multiple streets in different states)
+* "Washington Street" (could refer to multiple streets in different places)
 ====
 
 Do not <<georeference>>. Document in term:dwc[georeferenceRemarks] the reason for not georeferencing, e.g. "there are multiple possible unrelated features matching the one in the locality description".
 
 ==== Demonstrably Inconsistent
 
-The <<locality>> description contains irreconcilable inconsistencies – assertions that can not all be simultaneously true. Do not <<georeference>> these. Document in term:dwc[georeferenceRemarks] the reason for not georeferencing, e.g. "locality contains irreconcilable inconsistencies".
+The <<locality>> description contains irreconcilable inconsistencies – assertions that can not all be simultaneously true. Do not <<georeference>> these localities. Document in term:dwc[georeferenceRemarks] the reason for not georeferencing, e.g. "locality contains irreconcilable inconsistencies".
 
-A common source of inconsistency occurs when the locality description does not match the geopolitical subdivision of which it is supposed to be a part (e.g. "Missoula County, Idaho"). <<elevation,Elevation>> is another possible source of inconsistency, especially since elevation data are notoriously inaccurate (see {gbp}#elements-elevation[Elevation^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]. It is difficult to know which part of the locality is the one in <<error>> and a risk to judge that one part of the description should take precedence over another. Rather than determine <<coordinates>> for such localities, annotate the locality in term:dwc[georeferenceRemarks] with the nature of the inconsistency (e.g. "Missoula County not in Idaho") and refer the locality to the source institution for reconciliation.
+A common source of inconsistency occurs when the locality description does not match the geopolitical subdivision of which it is supposed to be a part (e.g. "Missoula County, Idaho"). <<elevation,Elevation>> is another possible source of inconsistency, especially since elevation data are notoriously inaccurate (see {gbp}#elements-elevation[Elevation^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). It is difficult to know which part of the locality is the one in <<error>> and a risk to judge that one part of the description should take precedence over another. Rather than determine <<coordinates>> for such localities, annotate the locality in term:dwc[georeferenceRemarks] with the nature of the inconsistency (e.g. "Missoula County not in Idaho") and refer the locality to the source institution for reconciliation.
 
 .{blank}
 [caption=Examples]
 ====
-* "Sonoma County side of the Gualala River, Mendocino County" +
+* "Sonoma County side of the Gualala River, Mendocino County" (where the river runs between the counties mentioned) +
 * "10 mi W of Bakersfield, 6000 ft" (There is no place anywhere near 10 mi W of Bakersfield at an elevation of 6000 ft) +
 * "5 mi N of Delano, Kern Co." (5 mi N would put the locality in Tulare Co.)
 ====
 
 ==== Cultivated or Captive
 
-The <<locality>> refers to a captive animal, a cultivated plant or from some other non-natural occurrence. The locality cited is often that of a zoo, aquarium, botanical garden, etc. (see {gbp}#dealing-with-non-natural-occurrences[Dealing with Non-natural Occurrences^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^].
+The <<locality>> is recorded in association with a captive animal, a cultivated plant or some other non-natural occurrence. The locality cited is often that of a zoo, aquarium, botanical garden, etc. (see {gbp}#dealing-with-non-natural-occurrences[Dealing with Non-natural Occurrences^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^].
+
+NOTE: The fact that an organism is recorded in a place out of its known or assumed natural distribution range does not constitute a problem from the point of view of locating that organism. Therefore, the determination of a georeference should not have any issues aside from those exclusively derived from the locality description itself (as seen for other cases above). This kind of information should instead be captured in the Darwin Core term term:dwc[degreeOfEstablishment].
+
+NOTE: If you are georeferencing based on location information only, and not together with the associated occurrence records, you may not have an easy way to capture other kinds of information (e.g. provenance, dates, degree of establishment, etc.). In these cases, it is recommended to amend the original occurrence records that contain the given locality to avoid any loss of information.
 
 .{blank}
 [caption=Examples]
 ====
-* "lab born" +
+* "lab born, University of Oregon" +
 * "bait shop" +
 * "Cultivated in Botanic Gardens from seed obtained from Bourke, NSW." +
 * "San Diego Wild Animal Park"
 ====
 
-<<georeference,Georeference>> the locality normally based on the <<locality-type>> and <<feature>>. Retain the <<location>> (e.g. zoo) along with its <<georeference>>, as for other localities in this Guide, but be sure to record the nature of its provenance (cultivated, captive, washed ashore, etc.) in term:dwc[georeferenceRemarks] or the <<Darwin-Core>> term term:dwc[degreeOfEstablishment].
+<<georeference,Georeference>> the locality normally based on the <<locality-type>> and <<feature>>. Retain the <<location>> (e.g. zoo) along with its <<georeference>>, as for other localities in this Guide, but be sure to record the nature of its provenance (cultivated, captive, washed ashore, etc.) in the <<Darwin-Core>> term term:dwc[degreeOfEstablishment].
