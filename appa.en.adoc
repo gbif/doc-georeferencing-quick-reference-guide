@@ -24,7 +24,7 @@ a|
 image::img/web/key-obvious-extent.jpg[width=109,align="center"]
 
 a|
-Step 1: Determine <<feature>> <<boundary,boundaries>>.
+Step 1: Determine the <<feature>> <<boundary,boundaries>>.
 
 Step 2: Determine the <<coordinates>> of the <<corrected-center>> of the feature for [ui-element]#Input Latitude# and [ui-element]#Longitude#.
 
@@ -36,7 +36,7 @@ a|
 image::img/web/key-without-obvious-extent.jpg[width=108,align="center"]
 
 a|
-Step 1: Estimate <<feature>> <<boundary,boundaries>> using known information from the map, record, or other documentation.
+Step 1: Estimate the <<feature>> <<boundary,boundaries>> using known information from a map, record, or other documentation.
 
 Step 2: Determine the <<coordinates>> of the <<corrected-center>> of the estimated feature boundaries as the [ui-element]#Input Latitude# and [ui-element]#Longitude#.
 
@@ -68,13 +68,13 @@ h|Locality Type
 h|Calculation Steps
 
 |<<Offsets,§2.2 Offsets>>
-|An <<offset>> is a displacement from a reference <<location>>, usually used in conjunction with <<heading>> to give a distance and direction from a <<feature>>.
+|An <<offset>> is a displacement from a reference <<location>>, usually used in conjunction with a <<heading>> to give a distance and direction from a <<feature>>.
 
 |<<Offset – Distance only,§2.2.1 Distance only>>
 a|
-Step 1: Determine the <<feature>> <<boundary,boundaries>> using the method for <<Geographic Feature only,Geographic Feature only (§2.1)>> except that the distance to use for the buffer is the distance given in the <<locality>> description, and there is no need to account for the proximity of other features.
+Step 1: Determine the <<feature>> <<boundary,boundaries>> using the method for <<Geographic Feature only,Geographic Feature only (§2.1)>> and add a buffer that is the distance given in the <<locality>> description, and there is no need to account for the proximity of other features.
 
-Step 2: Determine <<coordinates>> and <<geographic-radial>>. [ui-element]#Offset Distance# = 0. [ui-element]#Distance Precision# = <<precision>> with which a distance was described in the <<locality>>.
+Step 2: Determine the <<coordinates>> of the <<corrected-center>> and the <<geographic-radial>>. [ui-element]#Offset Distance# = 0. [ui-element]#Distance Precision# = <<precision>> with which the distance was recorded in the <<locality>> description.
 
 a|
 <<Offset – Heading only,§2.2.2 Heading only>>
@@ -82,14 +82,14 @@ a|
 image::img/web/key-heading-only.jpg[width=115,align="center"]
 
 a|
-Step 1: Determine <<feature>> <<boundary,boundaries>> using method for <<Feature – with Obvious Spatial Extent,Feature – with Obvious Spatial Extent (§2.1.1)>>. Account for the <<offset>> at a <<heading>> using information in the <<locality>> record, or until reaching the proximity of another similar feature, whichever is nearer the original feature. Call this the "extended feature".
+Step 1: Determine the <<feature>> <<boundary,boundaries>> using the appropriate method for <<Geographic Feature only,Geographic Feature only (§2.1)>>. Account for the <<offset>> at a <<heading>> using other information in the record, or until reaching the proximity of another similar feature, whichever is nearer the original feature. Call this the "extended feature".
 
-Step 2: Determine and use the <<coordinates>> and <<radial>> of the extended feature.
+Step 2: Determine and use the <<coordinates>> and <<geographic-radial>> of the extended feature.
 
 a|
 <<Offset – Distance along a Path,§2.2.3 Distance along a Path>>
 
-|Georeferencing consists of a reference <<feature>> to start from and a distance to travel along a <<path>>. The path is usually <<Offset along a Narrow Path,Narrow (§2.2.3.1)>> or <<Offset along a Wide Path,Wide (§2.2.3.2)>>. At times there may be <<Offset along Multiple Possible Paths,Multiple Possible Paths (§2.2.3.3)>>. Please reference the appropriate section for specific instructions.
+|The <<locality>> consists of a reference <<feature>> to start from and a distance to travel along a <<path>>. The path can be <<Offset along a Narrow Path,Narrow (§2.2.3.1)>> or <<Offset along a Wide Path,Wide (§2.2.3.2)>>. At times there may be <<Offset along Multiple Possible Paths,Multiple Possible Paths (§2.2.3.3)>>. Please reference the appropriate section for specific instructions.
 
 a|
 <<Offset – Distance along Orthogonal Directions,§2.2.4 Distance along Orthogonal Directions>>
@@ -97,20 +97,19 @@ a|
 image::img/web/key-distance-orthogonal-direction.jpg[width=119,align="center"]
 
 a|
-Step 1: Determine the <<boundary>> of the <<feature>> based on feature *type*.
+Step 1: Determine the <<boundary>> of the <<feature>> using the appropriate method for <<Geographic Feature only,Geographic Feature only (§2.1)>>.
 
-Step 2: Determine and use the <<coordinates>> of the <<corrected-center>> of the estimated feature boundaries as the [ui-element]#Input Latitude# and [ui-element]#Longitude#.
+Step 2: Determine and use the <<coordinates>> of the <<corrected-center>> and <<geographic-radial>> of the estimated feature boundaries as the [ui-element]#Input Latitude# and [ui-element]#Longitude#.
 
 |<<Offset – Distance at a Heading,§2.2.5 Distance at a Heading>>
 a|
-Step 1: Determine the starting <<feature>>.
+Step 1: Determine the starting <<feature>> using the appropriate method for <<Geographic Feature only,Geographic Feature only (§2.1)>>.
 
 Step 2: Determine and use the starting feature <<coordinates>> and the <<geographic-radial>>.
 
-|<<Offset – Distances from Two Distinct Paths,§2.2.6 Distances from Two Distinct Paths>> a|
-When the <<locality>> consists of orthogonal <<offset>> distances, one from each of two distinct <<path,paths>>.
-
-Step 1: Determine the starting <<feature>>.
+|<<Offset – Distances from Two Distinct Paths,§2.2.6 Distances from Two Distinct Paths>> 
+a|
+Step 1: Determine the starting <<feature>> using the appropriate method for <<Geographic Feature only,Geographic Feature only (§2.1)>>.
 
 Step 2: Determine and use the starting feature <<coordinates>> and the <<geographic-radial>>.
 |===
@@ -128,7 +127,7 @@ h|Calculation Steps
 |The <<locality>> consists of a point represented by <<latitude>> and <<longitude>> in one of various <<coordinate-format,coordinate formats>>.
 
 |<<Coordinates – Geographic Coordinates,§2.3.1 Geographic Coordinates>>
-|Step 1: Enter the <<coordinates>> in the format they were captured from the <<GPS>> or from the verbatim <<locality>>.
+|Step 1: Use the <<coordinates>> in the format they were captured from a <<GPS>> or from the verbatim <<locality>> as the [ui-element]#Input Latitude# and [ui-element]#Longitude#.
 
 |<<Coordinates – Universal Transverse Mercator (UTM),§2.3.2 Universal Transverse Mercator (UTM)>>
 a|
@@ -138,13 +137,13 @@ Step 1: The <<UTM>> <<coordinates>> must be converted to <<decimal-degrees>> usi
 
 // TODO extra section link here
 
-Step 2: *Determine <<radial>>*: If the UTM coordinates have 7 digits in the <<northing>> and 6 digits in the <<easting>>, the <<geographic-radial>> is 0.707 m. For UTM coordinates with fewer digits of <<precision>> see <<table-default-geographic-radial>> (§2.1.2).
+Step 2: Determine the <<geographic-radial>>: If the UTM coordinates have 7 digits in the <<northing>> and 6 digits in the <<easting>>, the geographic radial is 0.707 m. For UTM coordinates with fewer digits of <<precision>> see <<table-default-geographic-radial>> (§2.1.2).
 
 |<<Coordinates – Grid Systems,§2.3.3 Grid Systems>>
 a|
-Step 1: Determine the <<coordinates>> as for a <<Feature – with Obvious Spatial Extent,Feature – with Obvious Spatial Extent (§2.1.1)>>. Use the coordinates for the <<corrected-center>> of the named <<grid>> cell.
+Step 1: Determine the <<coordinates>> of the grid cell as for a <<Feature – with Obvious Spatial Extent,Feature – with Obvious Spatial Extent (§2.1.1)>>. Use the coordinates for the <<corrected-center>> of the named <<grid>> cell.
 
-Step 2: Measure the <<geographic-radial>>.
+Step 2: Determine the <<geographic-radial>>.
 
 |===
 
@@ -157,7 +156,7 @@ h|Locality Type
 h|Calculation Steps
 
 |<<Difficult Localities,§2.4 Difficult Localities>>
-|The <<locality>> is vague. It is recommended to check the original catalogues, ledgers, field notes, specimen labels, etc. as a first step to resolve the vagaries.
+|The <<locality>> is vague or presents other challenges. It is recommended to check the original catalogues, ledgers, field notes, specimen labels, etc. as a first step to resolve the vagaries.
 
 |<<Dubious Locations,§2.4.1 Dubious Locations>>
 a|
@@ -175,20 +174,20 @@ b. The <<location>> fields contain other than *location* information;
 
 c. The <<feature>>(s) cannot be found with available references.
 
-Do not <<georeference>> these localities. Document in term:dwc[georeferenceRemarks].
+Do not <<georeference>> these localities. Document in term:dwc[georeferenceRemarks] (e.g. "locality cannot be found with available references").
 
 |<<More than One Matching Feature,§2.4.3 More than One Matching Feature>>
 a|
 Multiple related <<feature,features>>: If there are multiple distinct nearby places with the same name and no further information to distinguish between the possibilities, treat the combination of them as the feature and follow the procedure for the appropriate <<locality-type>>. Document in term:dwc[georeferenceRemarks].
 
-Multiple unrelated features: Do not <<georeference>>. Document in term:dwc[georeferenceRemarks].
+Multiple unrelated features: Do not <<georeference>>. Document in term:dwc[georeferenceRemarks] (e.g. "there are multiple possible unrelated features matching the one in the locality description").
 
 |<<Demonstrably Inconsistent,§2.4.4 Demonstrably Inconsistent>>
 |The <<locality>> description contains irreconcilable inconsistencies – assertions that can not all be simultaneously true. Do not <<georeference>>. Document in term:dwc[georeferenceRemarks].
 
 |<<Cultivated or Captive,§2.4.5 Cultivated or Captive>>
 a|
-Refers to a captive animal, a cultivated plant or [ui-element]#event# from some other non-natural occurrence. The <<locality>> cited is often that of a zoo, aquarium, or botanical garden.
+The <<locality>> is associated with a captive animal, a cultivated plant or an [ui-element]#event# from some other non-natural occurrence. The <<locality>> cited is often that of a zoo, aquarium, or botanical garden.
 
-<<georeference,Georeference>> the locality normally based on the <<locality-type>> and <<feature>>. Document in term:dwc[georeferenceRemarks].
+<<georeference,Georeference>> the locality normally based on the <<locality-type>> and <<feature>>. Document the nature of the provenance using the term term:dwc[degreeOfEstablishment].
 |===
