@@ -76,7 +76,7 @@ Do not <<georeference>>. Document in term:dwc[georeferenceRemarks] the reason fo
 
 The <<locality>> description contains irreconcilable inconsistencies – assertions that can not all be simultaneously true. Do not <<georeference>> these localities. Document in term:dwc[georeferenceRemarks] the reason for not georeferencing, e.g. "locality contains irreconcilable inconsistencies".
 
-A common source of inconsistency occurs when the locality description does not match the geopolitical subdivision of which it is supposed to be a part (e.g. "Missoula County, Idaho"). <<elevation,Elevation>> is another possible source of inconsistency, especially since elevation data are notoriously inaccurate (see {gbp}#elements-elevation[Elevation^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). It is difficult to know which part of the locality is the one in <<error>> and a risk to judge that one part of the description should take precedence over another. Rather than determine <<coordinates>> for such localities, annotate the locality in term:dwc[georeferenceRemarks] with the nature of the inconsistency (e.g. "Missoula County not in Idaho") and refer the locality to the source institution for reconciliation.
+A common source of inconsistency occurs when the locality description does not match the geopolitical subdivision of which it is supposed to be a part (e.g. "Missoula County, Idaho"). <<elevation,Elevation>> is another possible source of inconsistency, especially since elevation data are notoriously inaccurate (see {gbp}#elements-elevation[Elevation^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). It is difficult to know which part of the locality is the one in <<error>> and a risk to judge that one part of the description should take precedence over another. 
 
 .{blank}
 [caption=Examples]
@@ -85,6 +85,8 @@ A common source of inconsistency occurs when the locality description does not m
 * "10 mi W of Bakersfield, 6000 ft" (There is no place anywhere near 10 mi W of Bakersfield at an elevation of 6000 ft) +
 * "5 mi N of Delano, Kern Co." (5 mi N would put the locality in Tulare Co.)
 ====
+
+Do not <<georeference>>. Rather than determine <<coordinates>> for such localities, annotate the locality in term:dwc[georeferenceRemarks] with the nature of the inconsistency (e.g. "Missoula County not in Idaho") and refer the locality to the source institution for reconciliation.
 
 ==== Cultivated or Captive
 
