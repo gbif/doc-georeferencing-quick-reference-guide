@@ -279,7 +279,7 @@ The <<locality>> is a marine or freshwater diving site. Commonly recorded using 
 
 *Locality Type:* [ui-element]#Geographic feature only#
 
-*Step 1 – Determine the feature boundaries*: Locate the <<extent>> of the dive as a 3D-shape, which should be projected perpendicularly onto the water surface. Determine the <<boundary>> of that projection on the horizontal plane (i.e. the <<geographic-boundary>>) (<<img-dive-location>>).
+*Step 1 – Determine the feature boundaries*: Locate the <<extent>> of the dive as a 3D shape, which should be projected perpendicularly onto the water surface. Determine the <<boundary>> of that projection on the horizontal plane (i.e. the <<geographic-boundary>>) (<<img-dive-location>>).
 
 a. Dive <<extent>> evident – underwater <<location,locations>> are often recorded as a distance, <<direction>> and water <<depth>> from the entry point. Below the surface there may be a "trajectory" with a three dimensional aspect that includes a horizontal component and a minimum and maximum water depth. Use these to circumscribe the boundary on the surface (see <<img-dive-location>>A and {gbp}#three-dimensional-shapes[Three Dimensional Shapes^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]).
 
@@ -367,7 +367,7 @@ The <<locality>> description uses the pattern "between A and B", where A and B a
 
 *Step 1 – Determine the feature boundaries*: Determine the <<boundary,boundaries>> of each feature as <<Feature – with Obvious Spatial Extent>> or <<Feature – without Obvious Spatial Extent>> (<<img-between-two-features>>A).
 
-*Step 2 – Determine the coordinates and geographic radial*: Once you have determined the boundaries of the two features, find their <<corrected-center,corrected-centers>>, as for <<Feature – with Obvious Spatial Extent>>. Use the midpoint between the <<corrected-centers>> of the two features to determine the <<coordinates>> of the <<location>> between the features (<<img-between-two-features>>B). The <<geographic-radial>> of the location between the two features is half the distance between the corrected centers of the features (<<img-between-two-features>>B).
+*Step 2 – Determine the coordinates and geographic radial*: Once you have determined the boundaries of the two features, find their <<corrected-center,corrected centers>>, as for <<Feature – with Obvious Spatial Extent>>. Use the midpoint between the corrected centers of the two features to determine the <<coordinates>> of the <<location>> between the features (<<img-between-two-features>>B). The <<geographic-radial>> of the location between the two features is half the distance between the corrected centers of the features (<<img-between-two-features>>B).
 
 *Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Radial of Feature#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
