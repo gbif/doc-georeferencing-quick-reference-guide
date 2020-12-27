@@ -106,7 +106,7 @@ Selecting a locality type will configure the Calculator to show all of the param
 [#s-corrected-center]
 ==== Corrected Center
 
-The <<corrected-center,corrected center>> is the point within a <<location>>, or on its <<boundary>>, that minimizes the <<geographic-radial,geographic radial>> (see <<Radial of Feature>>). This point is obtained by finding the <<smallest-enclosing-circle,smallest enclosing circle>> that contains the entire <<feature>>, and then taking the center of that circle (<<img-corrected-center>>A). If that center does not fall on or inside the boundaries of the feature, find the smallest-enclosing-circle that contains the entire feature, *but* has its center on the boundary of the feature (<<img-corrected-center>>B). Note that in the corrected case, the new circle, and hence the <<radial>>, will always be larger than the uncorrected one. In the http://georeferencing.org/georefcalculator/gc.html[Calculator^], the <<coordinates>> corresponding to the corrected center are labelled as [ui-element]#Input Latitude# and [ui-element]#Input Longitude#. See <<Appendix B: Methods to Find the Corrected Center and Geographic Radial>> for techniques to determine the corrected center.
+The <<corrected-center,corrected center>> is the point within a <<location>>, or on its <<boundary>>, that minimizes the <<geographic-radial,geographic radial>> (see <<Radial of Feature>>). This point is obtained by finding the <<smallest-enclosing-circle,smallest enclosing circle>> that contains the entire <<feature>>, and then taking the center of that circle (<<img-corrected-center>>A). If that center does not fall on or inside the boundaries of the feature, find the smallest enclosing circle that contains the entire feature, *but* has its center on the boundary of the feature (<<img-corrected-center>>B). Note that in the corrected case, the new circle, and hence the <<radial>>, will always be larger than the uncorrected one. In the http://georeferencing.org/georefcalculator/gc.html[Calculator^], the <<coordinates>> corresponding to the corrected center are labelled as [ui-element]#Input Latitude# and [ui-element]#Input Longitude#. See <<Appendix B: Methods to Find the Corrected Center and Geographic Radial>> for techniques to determine the corrected center.
 
 
 [#img-corrected-center]
@@ -124,14 +124,14 @@ NOTE: The final <<georeference>> will have a geographic radial distinct from the
 
 Labelled as [ui-element]#Input Latitude# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]. The <<geographic-coordinates,geographic coordinate>> north or south of the equator (where <<latitude>> is 0) that represents the starting point for a <<georeference>> calculation and depends on the <<locality-type,locality type>>.
 
-Latitudes in <<decimal-degrees,decimal degrees>> north of the equator are positive by convention, while latitudes to the south are negative. The Calculator supports three degree-based geographic-coordinate formats for latitude and <<longitude>>: <<decimal-degrees>> (e.g. −41.0570673), degrees decimal minutes (e.g. 41° 3.424") and <<DMS,degrees-minutes-and-seconds>> (e.g. 41° 3' 25.44" S).
+Latitudes in <<decimal-degrees,decimal degrees>> north of the equator are positive by convention, while latitudes to the south are negative. The Calculator supports three degree-based geographic coordinate formats for latitude and <<longitude>>: <<decimal-degrees>> (e.g. −41.0570673), degrees decimal minutes (e.g. 41° 3.424") and <<DMS,degrees minutes and seconds>> (e.g. 41° 3' 25.44" S).
 
 [#s-longitude]
 ==== Longitude
 
 Labelled as [ui-element]#Input Longitude# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]. The <<geographic-coordinates,geographic coordinate>> east or west of the <<prime-meridian,prime meridian>> (an arc between the north and south poles where <<longitude>> is 0) that represents the starting point for a <<georeference>> calculation and depends on the <<locality-type>>.
 
-Longitudes in <<decimal-degrees,decimal degrees>> east of the prime meridian are positive by convention, while longitudes to the west are negative. The Calculator supports three degree-based geographic-coordinate formats for <<latitude>> and longitude: <<decimal-degrees,decimal degrees>> (−71.5246934), degrees decimal minutes (71° 31.482") and <<DMS,degrees-minutes-and-seconds>> (71° 31' 28.90" W).
+Longitudes in <<decimal-degrees,decimal degrees>> east of the prime meridian are positive by convention, while longitudes to the west are negative. The Calculator supports three degree-based geographic coordinate formats for <<latitude>> and longitude: <<decimal-degrees,decimal degrees>> (−71.5246934), degrees decimal minutes (71° 31.482") and <<DMS,degrees minutes and seconds>> (71° 31' 28.90" W).
 
 ==== Coordinate Source
 
@@ -144,7 +144,7 @@ This term is related to, but *NOT* the same as, the <<Darwin-Core>> term term:dw
 [#s-coordinate-format]
 ==== Coordinate Format
 
-The [ui-element]#Coordinate Format# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] defines the representation of the original <<geographic-coordinates,geographic coordinates>> (<<decimal-degrees>>, <<DMS,degrees-minutes-and-seconds>> (DMS) or degrees decimal minutes) of the <<coordinates,coordinate>> source.
+The [ui-element]#Coordinate Format# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] defines the representation of the original <<geographic-coordinates,geographic coordinates>> (<<decimal-degrees>>, <<DMS,degrees minutes and seconds>> (DMS) or degrees decimal minutes) of the <<coordinates,coordinate>> source.
 
 NOTE: When the calculation type is not “Coordinates only”, the original coordinates are often used to find the general vicinity of the <<location>> on a map, after which the process of determining the <<corrected-center,corrected center>> provides the new coordinates. The Coordinate Format to use in the Calculator in this case is the <<coordinate-format,coordinate format>> on the map from which the corrected center was determined, not the coordinate format of the original source used to determine the general vicinity on the map. For example, suppose the original coordinates came from a <<gazetteer>> in DMS, but the <<boundary>> and corrected center of the <<feature>> were determined from Google Maps, the Coordinate Format would be decimal degrees, not DMS.
 
