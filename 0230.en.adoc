@@ -72,7 +72,7 @@ NOTE: UTM coordinates are sometimes truncated to fewer than 7 digits in the nort
 
 *Locality Type:* [ui-element]#Geographic feature only#
 
-*Step 1 – Determine the coordinates*: Determine as for <<Feature – with Obvious Spatial Extent>>. Use the <<coordinates>> for the <<corrected-center>> of the named grid cell. Usually a grid is made up of bounding boxes, so determining the corrected center should be easy.
+*Step 1 – Determine the coordinates*: Determine as for <<Feature – with Obvious Spatial Extent>>. Use the <<coordinates>> for the <<corrected-center>> of the named grid cell. Usually a grid is made up of <<bounding-box,bounding boxes>>, so determining the corrected center should be easy.
 
 *Step 2 – Determine the geographic radial*: As for <<Feature – with Obvious Spatial Extent>>. See <<table-default-geographic-radial>> for <<radial,radials>> of regularly shaped Townships, Sections, and subsections.
 
