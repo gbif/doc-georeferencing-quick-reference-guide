@@ -35,7 +35,7 @@ NOTE: Record the source (including date) used to determine the boundaries (see t
 
 *Step 3 – Measure the geographic radial*: Measure the distance from the <<corrected-center,corrected center>> to the furthest point on the <<boundary>> of the <<feature>> ("*b*" in <<img-obvious-spatial-extent>>B) as the [ui-element]#Radial of Feature#.
 
-*Step 4 – Calculate using the following additional parameters*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, and [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
+*Step 4 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, and [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-obvious-spatial-extent]
 .A. Boundary only, and B. center *a* of the smallest enclosing circle and geographic radial *b* of a feature with obvious spatial extent. The center *a* falls within the boundaries and thus needs no correction.
@@ -107,7 +107,7 @@ image::img/web/mountain-boundaries.png[width=574,align="center"]
 
 *Step 3 – Measure the geographic radial*: Once the rough boundary and the coordinates of the corrected center have been determined, find the geographic radial as the [ui-element]#Radial of Feature# by measuring the distance from the corrected center to the furthest point on the estimated boundary of the feature.
 
-*Step 4 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
+*Step 4 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 ==== Feature – Special Cases
 
@@ -135,7 +135,7 @@ b. Address boundary not evident – if the exact address cannot be found, estima
 
 *Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, use the same method to determine the coordinates and <<geographic-radial,geographic radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center,corrected center>> to the furthest point on the boundary of the feature.
 
-*Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-street-address]
 .Boundary, corrected center *a* and geographic radial *b* of a street address. *A* has obvious boundaries; *B* has no obvious boundaries, and it is not possible to tell from the source map whether the location is on one side of the street or the other.
@@ -167,7 +167,7 @@ a. Property boundary evident – once the boundary is determined, determine the 
 
 b. Property boundary not evident – once the outer boundaries are determined, use them to find coordinates as for <<Feature – with Obvious Spatial Extent>>, namely find the center of the <<smallest-enclosing-circle,smallest enclosing circle>> containing the outer, uncertain  boundary. If that center falls within the inner, confident boundary, use it to determine the geographic radial by finding the distance from that point to the furthest point on the uncertain boundary (<<img-property-boundary>>B). If the center does not fall in or on the confident inner boundary, let the <<corrected-center,corrected center>> be a point on the inner confident boundary that minimizes the geographic radial to the outer uncertain boundary (<<img-property-boundary>>C).
 
-*Step 3 – Calculate using the following additional parameters in the Calculator*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-property-boundary]
 .Boundary, corrected center *a* and geographic radial *b* of a property. *A* has obvious boundaries; *B* has an obvious inner boundary (dark shading) and a less obvious rough outer boundary (lighter shading), where the center of the outer boundary falls within the obvious inner boundary; *C* has an obvious inner boundary (dark shading) and a rough outer boundary (lighter shading), where the center of the outer boundary *c* does not fall within the obvious inner boundary.
@@ -208,7 +208,7 @@ These considerations can apply equally to <<bathymetry>> where contours are avai
 
 If the  feature must be treated as a polyline, draw a straight line connecting the ends of the polyline and determine its midpoint. If the midpoint falls on the polyline, that will be the center (no need for correction), and the geographic radial will be the distance from that point to either of the endpoints of the polyline. If the midpoint does not fall on the polyline, move it to the point on the polyline that minimizes the distance to both endpoints. This is the corrected center and the distance to the endpoints is the geographic radial (<<img-paths>>B).
 
-*Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-paths]
 .Corrected center *a* and geographic radial *b* for a path. *A*: with boundary of the path as a  shape. *B*: with path as a polyline, showing the midpoint *c* between the ends of the path. *C*: uncorrected center *c* of a boundary, corrected center *a* and geographic radial *b* of bounded section of a contour line, in this case an isohypse of 220 m with an elevational uncertainty of 10 m.
@@ -234,7 +234,7 @@ For a confluence of two waterways, the boundary is a triangle that consists of t
 
 *Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, use the same method to determine the <<coordinates>> and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature (<<img-junction>>B).
 
-*Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-junction]
 .*A*: Crossing of a road and a stream with details of boundary, corrected center *a* (with no need for correction) and geographic radial *b* of the intersection. *B*: Boundary, corrected center *a* and geographic radial *b* of a confluence of two rivers.
@@ -261,7 +261,7 @@ b. Cave extent not evident – if the limits of the cave are not evident: a) use
 
 *Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, use the same method to determine the coordinates and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature.
 
-*Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-caves]
 .Boundary, corrected center *a* and geographic radial *b* of a cave. *A*: cave extent known and projected onto the surface. *B*: cave extent not known, but inferred from other evidence. *C*: cave extent not known, but maximum horizontal length known and measured from the entrance.
@@ -287,7 +287,7 @@ b. Dive extent not evident – if the limits of the dive are not evident, there 
 
 *Step 2 – Determine the coordinates and geographic radial*: Treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary of the feature.
 
-*Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-dive-location]
 .Determination of the corrected center *a* and geographic radial *b* of a dive location. *A*: side view of a dive. *B*: top view of a dive location with evident extent, projected onto the surface. *C*: top view of a dive location with extent not evident, but inferred from other evidence (in this case, an island).
@@ -312,7 +312,7 @@ If the headwater is not designated, use the set of all of the streams upstream o
 
 *Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary. The corrected center should be on a waterbody within the boundaries.
 
-*Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-headwater]
 .Overview of a headwater issuing from a stationary waterbody (in this case a lake), with detail of the corrected center *a* and geographic radial *b*.
@@ -345,7 +345,7 @@ NOTE: The buffer distance for the extension is arbitrary – it is hard to defen
 
 *Step 2 – Determine the coordinates and geographic radial:* Once the boundary of the extended feature has been determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary of the extended feature.
 
-*Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-near-a-feature]
 .Boundary, corrected center *a* and geographic radial *b* of an interpretation of locality type "_near a Feature_" with a boundary extended a fixed distance in all directions, in this case 10 km. *A*: Boundary extended a fixed distance in all directions with no neighbouring conflicts. *B*: Boundary extended a fixed distance in all directions except in the area overlapping a similar feature, where it extends half the distance to the neighbouring feature.
@@ -369,7 +369,7 @@ The <<locality>> description uses the pattern "between A and B", where A and B a
 
 *Step 2 – Determine the coordinates and geographic radial*: Once you have determined the boundaries of the two features, find their <<corrected-center,corrected centers>>, as for <<Feature – with Obvious Spatial Extent>>. Use the midpoint between the corrected centers of the two features to determine the <<coordinates>> of the <<location>> between the features (<<img-between-two-features>>B). The <<geographic-radial>> of the location between the two features is half the distance between the corrected centers of the features (<<img-between-two-features>>B).
 
-*Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Radial of Feature#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Radial of Feature#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-between-two-features]
 .*A*: Boundary, corrected center *a* and geographic radial *b* of two features. *B*: Coordinates *c* and geographic radial *d* of the interpretation of a location of the type "_between Two Features_".
@@ -395,7 +395,7 @@ NOTE: Paths may cross each other one or more times, with the area between switch
 
 *Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> of the corrected center and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the corrected center to the furthest point on the boundary of the <<feature>>.
 
-*Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-between-two-paths]
 .Boundary, corrected center *a* and geographic radial *b* for a location between two paths (light shaded area), with location restricted by an administrative boundary (dashed line). *A*: Paths do not cross. *B*: Paths cross each other multiple times.
