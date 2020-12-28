@@ -26,7 +26,7 @@ NOTE: "The true value is not known, but only estimated, the accuracy of the meas
 
 [[coordinates]]coordinates:: A set of values that define a position within a <<coordinate-system>>. <<coordinates,Coordinates>> are used to represent <<location,locations>> in space relative to other locations.
 
-[[corrected-center]]corrected center:: The point within a <<location>>, or on its <<boundary>>, that minimizes the <<geographic-radial>> of the location. This point is obtained by making the <<smallest-enclosing-circle>> that contains the entire <<feature>>, and then taking the center of that circle. If that center does not fall inside the boundaries of the feature, make the smallest enclosing circle that has its center on the boundary of the feature. Note that in the second case, the new circle, and hence the <<radial>>, will always be larger than the uncorrected one (see {qrg}#img-corrected-center[illustration]).
+[[corrected-center]]corrected center:: The point within a <<location>>, or on its <<boundary>>, that minimizes the <<geographic-radial>> of the location. This point is obtained by making the <<smallest-enclosing-circle>> that contains the entire <<feature>>, and then taking the center of that circle. If that center does not fall inside the boundaries of the feature, make the smallest enclosing circle that has its center on the boundary of the feature. Note that in the second case, the new circle, and hence the <<radial>>, will always be larger than the uncorrected one (see <<img-corrected-center>>).
 
 [[Darwin-Core]]Darwin Core:: A standard for exchanging information about biological diversity (see https://www.tdwg.org/standards/dwc/[Darwin Core]).
 
@@ -48,7 +48,7 @@ NOTE: "The true value is not known, but only estimated, the accuracy of the meas
 
 [[entry-point]]entry point:: The entry point on the surface of the ocean or lake where a diver enters the water and from which all activities are measured. See {gbp}#img-underwater-event[illustration] in {gbp}[_Georeferencing Best Practices_] (Chapman & Wieczorek 2020).
 
-[[error]]error:: The difference between a computed, estimated, or measured value and the accepted true, specified, or theoretically correct value. It encompasses both the <<precision,imprecision>> of a measurement and its inaccuracies. Error can be either random or systematic. If the error is systematic, it is called "<<bias>>". Compare <<accuracy>>, {gbp}#bias[bias], precision, {gbp}#false-precision[false precision] and <<uncertainty>>.
+[[error]]error:: The difference between a computed, estimated, or measured value and the accepted true, specified, or theoretically correct value. It encompasses both the <<precision,imprecision>> of a measurement and its inaccuracies. Error can be either random or systematic. If the error is systematic, it is called "bias". Compare <<accuracy>>, {gbp}#bias[bias], precision, {gbp}#false-precision[false precision] and <<uncertainty>>.
 
 [[extent]]extent:: The entire space within the <<boundary>> a <<location>> actually represents. The extent can be a volume, an area, or a distance.
 
@@ -71,7 +71,7 @@ NOTE: "The true value is not known, but only estimated, the accuracy of the meas
 
 [[georeference]]georeference:: The process (verb) or product (noun) of interpreting a <<locality>> description into a spatially mappable representation using a <<georeferencing-method>>. Compare with <<geocode>>. The usage here is distinct from the concept of <<georeference,georeferencing>> satellite and other imagery (known as georectification).
 
-[[georeferencing-method]]georeferencing method:: The theory, including a set of rules, general procedures and expected outcomes, meant to produce a specific type of spatial representation of a <<locality>>. In this document we discuss three particular methods of representation in detail, the <<shape>> method, the <<bounding-box>> method, and the <<point-radius>> method.
+[[georeferencing-method]]georeferencing method:: The theory, including a set of rules, general procedures and expected outcomes, meant to produce a specific type of spatial representation of a <<locality>>.
 
 [[georeferencing-protocol]]georeferencing protocol:: The set of specific documented steps that can be applied to produce a spatial representation of a <<locality>>, following one or more georeferencing methods.
 
