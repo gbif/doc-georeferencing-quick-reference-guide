@@ -91,7 +91,7 @@ NOTE: "The true value is not known, but only estimated, the accuracy of the meas
 
 [[locality-clause]]locality clause:: A part of a <<locality>> description that can be categorized into one of the <<locality-type,locality types>>, to which a specific <<georeferencing-protocol>> can be applied.
 
-[[locality-type]]locality type:: A category applied to a <<locality-clause>> that determines the specific <<georeferencing-protocol>> that should be applied.
+[[locality-type]]locality type:: A category applied to a <<locality-clause>> that determines the specific <<georeferencing-protocol>> that should be used.
 
 [[location]]location:: A physical space that can be positioned and oriented relative to a reference point, and potentially described in a natural language <<locality>> description. In <<georeference,georeferencing>>, a location can have distinct representations based on distinct {gbp}#rules-of-interpretation[rules of interpretation], each of which is embodied in a <<georeferencing-method>>.
 
@@ -105,7 +105,7 @@ NOTE: "The true value is not known, but only estimated, the accuracy of the meas
 
 [[path]]path:: A route or track between one place and another. In some cases the path may cross itself.
 
-[[point-radius]]point-radius:: A representation of the {gbp}#geographic-component[geographic component] of a <<location>> as <<geographic-coordinates,geographic coordinates>> and a {gbp}#maximum-uncertainty-distance[maximum uncertainty distance]. The <<point-radius>> <<georeferencing-method>> produces <<georeference,georeferences>> that include <<geographic-coordinates>>, a <<coordinate-reference-system>>, and a maximum uncertainty distance that encompasses all of the possible geographic coordinates where a <<locality>> might be interpreted to be. This representation encompasses all of the geographical <<uncertainty,uncertainties>> within a circle. The point-radius method uses ranges to represent the non-geographic descriptors of the location (<<elevation>>, <<depth>>, {gbp}#distance-above-surface[distance above surface]).
+[[point-radius]]point-radius:: A representation of the {gbp}#geographic-component[geographic component] of a <<location>> as <<geographic-coordinates,geographic coordinates>> and a {gbp}#maximum-uncertainty-distance[maximum uncertainty distance]. The point-radius <<georeferencing-method>> produces <<georeference,georeferences>> that include <<geographic-coordinates>>, a <<coordinate-reference-system>>, and a maximum uncertainty distance that encompasses all of the possible geographic coordinates where a <<locality>> might be interpreted to be. This representation encompasses all of the geographical <<uncertainty,uncertainties>> within a circle. The point-radius method uses ranges to represent the non-geographic descriptors of the location (<<elevation>>, <<depth>>, {gbp}#distance-above-surface[distance above surface]).
 
 [[precision]]precision::
 +
