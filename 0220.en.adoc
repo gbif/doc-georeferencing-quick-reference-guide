@@ -38,7 +38,7 @@ The <<locality-type,locality types>> that involve offsets, in addition to the tr
 
 *Distance Precision:* Though the [ui-element]#Offset Distance# is set to zero, the [ui-element]#Distance Precision# should still be set (see <<Distance Precision>>) to account for this source of <<uncertainty>>.
 
-*Step 3 – Calculate using the following additional parameters in the Calculator:* [ui-element]#Coordinate source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error# (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error# (see <<Georeferencing Concepts>>).
 
 ==== Offset – Heading only
 
@@ -59,7 +59,7 @@ The <<locality>> consists of a direction from a <<feature>> without any distance
 
 *Step 2 – Determine the coordinates and geographic radial*: Once you have determined the boundary of the extended feature, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary of the extended feature.
 
-*Step 3 – Calculate using the following additional parameters in the [ui-element]#Calculator#*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 [#img-offset-heading]
 .A locality "east of" a feature, but bounded on the east by an administrative border (dotted line). *A*: Boundary and corrected center *a* of the starting feature. The cone to the east forms part of the new boundary with center *c* (no need for correction) and geographic radial *d*. *B*: Similar to A, but with an intervening feature to the northeast before the border.
@@ -101,7 +101,7 @@ A third way to estimate the distance on the ground is a gross simplification of 
 
 *Step 3 – Enter the [ui-element]#Input Latitude# and [ui-element]#Longitude#*: Enter the coordinates of the <<offset>> position, which can be determined by measuring the length along the midline of the path from the midpoint found in the previous step to the distance along the path given in the <<locality>> description. See the notes on map scale and accumulated <<error>> in <<Offset – Distance along a Path>>.
 
-*Step 4 – Calculate using the following additional parameters in the Calculator*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).
+*Step 4 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).
 
 [#img-offset-narrow-path]
 .A locality of the type "Offset along a path" where the path is narrow, specifically, along a road "east of" a feature. *A*: Inset showing the boundary of the section of the path that intersects the starting feature, midpoint *a*, and half the distance along the path inside the feature *b*. *B*: The midpoint *a* and the offset *c* measured along the road.
@@ -206,7 +206,7 @@ NOTE: The addition of an adverbial modifier to the distance part of a locality d
 
 *Step 2 – Determine the starting feature coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature.
 
-*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georefencing Calculator^]*: [ui-element]#Coordinate Source,# [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Direction#, [ui-element]#Offset Distance#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source,# [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Direction#, [ui-element]#Offset Distance#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).
 
 NOTE: For this type of calculation, the output coordinates are different from the _Input Latitude_ and _Input Longitude_.
 
@@ -228,7 +228,7 @@ Although this is not technically a distance along a path, the choice of this <<l
 
 *Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature.
 
-*Step 3 – Calculate using the following additional parameters in the Calculator*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Radial of Feature#, [ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Radial of Feature#, [ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).
 
 [#img-offset-two-paths]
 .Determination of a place described as an offset from two paths. *A*: Transportation of the paths by their offsets, *x* and *y*, and directions (in this case south and east). *B*: Intersection *a* of the midlines of the transported paths, and their buffers due to distance precision and path width (*u~x~* and *u~y~*). *C*: Boundary, corrected center *c*, and radial *b* of the place described.
