@@ -30,7 +30,7 @@ Records should also contain a hemisphere indicator ('E' or 'W' and 'N' or 'S' fo
 
 NOTE: The http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator] calculates and preserves seven digits of precision in decimal degrees so that any transformation between coordinate formats is reversible without introducing rounding errors.
 
-*Step 2 – Calculate using the following additional parameters in the Calculator*: [ui-element]#Coordinate Source#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
+*Step 2 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 ==== Coordinates – Universal Transverse Mercator (UTM)
 
@@ -56,7 +56,7 @@ NOTE: UTM coordinates are sometimes truncated to fewer than 7 digits in the <<no
 
 *Step 2 – Determine geographic radial*: If the UTM coordinates have 7 digits in the northing and 6 digits in the easting, the <<geographic-radial>> is 0.707 m (because the coordinates distinguish to the nearest meter and the geographic radial is half the diagonal of the 1 m by 1 m <<grid>> cell). For UTM coordinates with fewer digits of precision see <<table-default-geographic-radial>>. This <<radial>> covers the <<uncertainty>> from the UTM <<coordinate-precision>>. The [ui-element]#Coordinate Precision# in the Calculator for this case is the coordinate precision of the [ui-element]#Input Latitude# and [ui-element]#Longitude#, which depends on how many digits of <<decimal-degrees>> are copied from the converted latitude and longitude (<<table-default-geographic-radial>>).
 
-*Step 3 – Calculate using the following additional parameters in the Calculator*: [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy/Measurement Error#, and [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy/Measurement Error#, and [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
 ==== Coordinates – Grid Systems
 
@@ -76,5 +76,5 @@ NOTE: UTM coordinates are sometimes truncated to fewer than 7 digits in the <<no
 
 *Step 2 – Determine the geographic radial*: As for <<Feature – with Obvious Spatial Extent>>. See <<table-default-geographic-radial>> for <<radial,radials>> of regularly shaped Townships, Sections, and subsections.
 
-*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error#, and [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
+*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error#, and [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).
 
