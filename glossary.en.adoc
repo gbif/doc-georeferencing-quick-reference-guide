@@ -16,13 +16,13 @@ NOTE: "The true value is not known, but only estimated, the accuracy of the meas
 
 [[bounding-box]]bounding box:: An area defined by the <<coordinates>> of two diagonally opposite corners of a polygon, where those two corners define the north-south and east-west extremes of the area contained within.
 
-[[coordinate-format]]coordinate format:: The format in which <<coordinates>> are encoded, such as "<<decimal-degrees>>", "<<DMS,degrees minutes seconds>>", "degrees decimal minutes", or Universal Transverse Mercator (<<UTM>>).
+[[coordinate-format]]coordinate format:: The format in which <<coordinates>> are encoded, such as "<<decimal-degrees>>", "<<DMS,degrees minutes seconds>>", "degrees decimal minutes", or <<UTM>>.
 
 [[coordinate-precision]]coordinate precision:: The fraction of a degree corresponding to the number of significant digits in the source <<coordinates>>. For example, if the coordinates are reported to the nearest minute, the <<precision>> is 1/3600th (0.00027778) of a degree; if a <<decimal-degrees,decimal degree>> is reported to two decimal places, the precision is 0.01 of a degree.
 
 [[coordinate-reference-system]]coordinate reference system:: (also {gbp}#spatial-reference-system[spatial reference system]) A <<coordinate-system>> defined in relation to a standard reference or <<datum>>.
 
-[[coordinate-system]]coordinate system:: A geometric system that defines the nature and relationship of the <<coordinates>> it uses to uniquely define positions. Examples include the {gbp}geographic-coordinate-system[geographic coordinate system] and the Universal Transverse Mercator (<<UTM>>) <<coordinate-system>>.
+[[coordinate-system]]coordinate system:: A geometric system that defines the nature and relationship of the <<coordinates>> it uses to uniquely define positions. Examples include the {gbp}geographic-coordinate-system[geographic coordinate system] and the <<UTM>> <<coordinate-system>>.
 
 [[coordinates]]coordinates:: A set of values that define a position within a <<coordinate-system>>. <<coordinates,Coordinates>> are used to represent <<location,locations>> in space relative to other locations.
 
@@ -79,7 +79,7 @@ NOTE: "The true value is not known, but only estimated, the accuracy of the meas
 
 [[GPS-receiver]]GPS (receiver):: The colloquial term used to refer to both GPS and {gbp}#GNSS[GNSS] receivers (including those in smartphones and cameras). A GPS or GNSS receiver is an instrument which, in combination with an inbuilt or separate antenna, is able to receive and interpret radio signals from GNSS satellites and translate them into <<geographic-coordinates>>.
 
-[[grid]]grid:: A network or array of evenly spaced orthogonal lines used to organize space into partitions. Often these are superimposed on a map and used for reference, such as Universal Transverse Mercator (<<UTM>>) grid.
+[[grid]]grid:: A network or array of evenly spaced orthogonal lines used to organize space into partitions. Often these are superimposed on a map and used for reference, such as <<UTM>> grid.
 
 [[ground-zero]]ground zero:: The <<location>> on the land surface directly above a radiolocation point in a cave where the magnetic radiation lines are vertical. See {gbp}#img-vertical-position-in-a-cave[illustration] in {gbp}[_Georeferencing Best Practices_] (Chapman & Wieczorek 2020).
 
