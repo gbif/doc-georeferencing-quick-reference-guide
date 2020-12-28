@@ -27,8 +27,6 @@
 
 - Wieczorek J (2001) MaNIS/HerpNET/ORNIS Georeferencing Guidelines. University of California, Berkeley: Museum of Vertebrate Zoology. http://georeferencing.org/georefcalculator/docs/GeorefGuide.html
 
-- Wieczorek J (2017) Welcome to the Georeferences Questions & Answers page wiki. https://github.com/tdwg/dwc-qa/wiki/Georeferences
-
 - Wieczorek J, Bloom D, Constable H, Fang J, Koo M, Spencer C & Yamamo K (2012) Georeferencing Quick Reference Guide, version 2012-10-08. http://www.herpnet.org/herpnet/documents/GeoreferencingQuickGuide.pdf
 
 - Wieczorek J & Bloom DA (2015) Manual for the Georeferencing Calculator. University of California, Berkeley: Museum of Vertebrate Zoology. http://georeferencing.org/gci2/docs/GeoreferencingCalculatorManualv2.html
