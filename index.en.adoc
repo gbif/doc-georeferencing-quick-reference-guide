@@ -1,4 +1,4 @@
-= Georeferencing Quick Reference Guide [Community review draft]
+= Georeferencing Quick Reference Guide
 :authorcount: 5
 :author_1: Paula F. Zermoglio
 :author_2: Arthur D. Chapman
