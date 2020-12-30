@@ -20,6 +20,8 @@ https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio], https://orcid.org/000
 
 The document _Georeferencing Quick Reference Guide_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
 
+=== Disclaimer
+
 The information in this book represents the professional opinion of the authors, and does not necessarily represent the views of the publisher. While the authors and the publisher have attempted to make this book as accurate and as thorough as possible, the information contained herein is provided on an "As Is" basis, and without any warranties with respect to its accuracy or completeness. The authors and the publisher shall have no liability to any person or entity for any loss or damage caused by using the information provided in this book.
 
 Where there are differences in interpretation between this document and translated versions in languages other than English, the English version remains the original and definitive version.
@@ -30,12 +32,7 @@ https://doi.org/10.35035/e09p-h128
 
 === Document control
 
-Third edition, September 2020 [community review draft]
-
-// include reference to provenance if possible/relevant
-https://doi.org/10.15468/doc-yyyy-yyyy[Second edition], March 2015, by Due Autore and https://orcid.org/0000-0000-0000-0000[Tercio Auteur].
-
-Originally based on an earlier publication, _Towards establishing the special guide to something_.
+Third edition, December 2020
 
 === Cover image
 
