@@ -7,13 +7,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-02-01 17:28+0000\n"
+"POT-Creation-Date: 2021-10-04 08:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Title ===
@@ -431,13 +431,27 @@ msgid ""
 msgstr ""
 
 #. type: Block title
-#: 0100.en.adoc:51 0100.en.adoc:61 0100.en.adoc:71 0100.en.adoc:79 0100.en.adoc:190 0100.en.adoc:203 0200.en.adoc:19 0200.en.adoc:48 0200.en.adoc:120 0200.en.adoc:148 0200.en.adoc:182 0200.en.adoc:221 0200.en.adoc:247 0200.en.adoc:274 0200.en.adoc:300 0200.en.adoc:329 0200.en.adoc:358 0200.en.adoc:382 0220.en.adoc:24 0220.en.adoc:47 0220.en.adoc:88 0220.en.adoc:112 0220.en.adoc:138 0220.en.adoc:163 0220.en.adoc:193 0220.en.adoc:217 0230.en.adoc:19 0230.en.adoc:41 0230.en.adoc:65 0240.en.adoc:11 0240.en.adoc:31 0240.en.adoc:48 0240.en.adoc:66 0240.en.adoc:81 0240.en.adoc:99
+#: 0100.en.adoc:51 0100.en.adoc:61 0100.en.adoc:71 0100.en.adoc:79
+#: 0100.en.adoc:190 0100.en.adoc:203 0200.en.adoc:19 0200.en.adoc:48
+#: 0200.en.adoc:120 0200.en.adoc:148 0200.en.adoc:182 0200.en.adoc:221
+#: 0200.en.adoc:247 0200.en.adoc:274 0200.en.adoc:300 0200.en.adoc:329
+#: 0200.en.adoc:358 0200.en.adoc:382 0220.en.adoc:24 0220.en.adoc:47
+#: 0220.en.adoc:88 0220.en.adoc:112 0220.en.adoc:138 0220.en.adoc:163
+#: 0220.en.adoc:193 0220.en.adoc:217 0230.en.adoc:19 0230.en.adoc:41
+#: 0230.en.adoc:65 0240.en.adoc:11 0240.en.adoc:31 0240.en.adoc:48
+#: 0240.en.adoc:66 0240.en.adoc:81 0240.en.adoc:99
 #, no-wrap
 msgid "{blank}"
 msgstr ""
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
-#: 0100.en.adoc:52 0100.en.adoc:62 0200.en.adoc:20 0200.en.adoc:49 0200.en.adoc:121 0200.en.adoc:149 0200.en.adoc:183 0200.en.adoc:222 0200.en.adoc:248 0200.en.adoc:301 0200.en.adoc:330 0200.en.adoc:359 0200.en.adoc:383 0220.en.adoc:25 0220.en.adoc:48 0220.en.adoc:89 0220.en.adoc:139 0220.en.adoc:164 0220.en.adoc:194 0230.en.adoc:20 0230.en.adoc:42 0230.en.adoc:66 0240.en.adoc:12 0240.en.adoc:32 0240.en.adoc:49 0240.en.adoc:67 0240.en.adoc:82 0240.en.adoc:100
+#: 0100.en.adoc:52 0100.en.adoc:62 0200.en.adoc:20 0200.en.adoc:49
+#: 0200.en.adoc:121 0200.en.adoc:149 0200.en.adoc:183 0200.en.adoc:222
+#: 0200.en.adoc:248 0200.en.adoc:301 0200.en.adoc:330 0200.en.adoc:359
+#: 0200.en.adoc:383 0220.en.adoc:25 0220.en.adoc:48 0220.en.adoc:89
+#: 0220.en.adoc:139 0220.en.adoc:164 0220.en.adoc:194 0230.en.adoc:20
+#: 0230.en.adoc:42 0230.en.adoc:66 0240.en.adoc:12 0240.en.adoc:32
+#: 0240.en.adoc:49 0240.en.adoc:67 0240.en.adoc:82 0240.en.adoc:100
 #, no-wrap
 msgid "Examples"
 msgstr ""
@@ -486,7 +500,8 @@ msgid ""
 msgstr ""
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
-#: 0100.en.adoc:72 0100.en.adoc:80 0200.en.adoc:275 0220.en.adoc:113 0220.en.adoc:218
+#: 0100.en.adoc:72 0100.en.adoc:80 0200.en.adoc:275 0220.en.adoc:113
+#: 0220.en.adoc:218
 #, no-wrap
 msgid "Example"
 msgstr ""
@@ -1255,7 +1270,10 @@ msgid "\"Botany Bay\""
 msgstr ""
 
 #. type: Plain text
-#: 0200.en.adoc:29 0200.en.adoc:57 0200.en.adoc:129 0200.en.adoc:157 0200.en.adoc:192 0200.en.adoc:230 0200.en.adoc:255 0200.en.adoc:281 0200.en.adoc:308 0200.en.adoc:339 0200.en.adoc:367 0200.en.adoc:391 0220.en.adoc:57 0230.en.adoc:50 0230.en.adoc:74 0240.en.adoc:57
+#: 0200.en.adoc:29 0200.en.adoc:57 0200.en.adoc:129 0200.en.adoc:157
+#: 0200.en.adoc:192 0200.en.adoc:230 0200.en.adoc:255 0200.en.adoc:281
+#: 0200.en.adoc:308 0200.en.adoc:339 0200.en.adoc:367 0200.en.adoc:391
+#: 0220.en.adoc:57 0230.en.adoc:50 0230.en.adoc:74 0240.en.adoc:57
 #, no-wrap
 msgid "*Locality Type:* [ui-element]#Geographic feature only#\n"
 msgstr ""
@@ -1622,7 +1640,9 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: 0200.en.adoc:139 0200.en.adoc:171 0200.en.adoc:212 0200.en.adoc:238 0200.en.adoc:265 0200.en.adoc:291 0200.en.adoc:316 0200.en.adoc:349 0200.en.adoc:399 0220.en.adoc:63
+#: 0200.en.adoc:139 0200.en.adoc:171 0200.en.adoc:212 0200.en.adoc:238
+#: 0200.en.adoc:265 0200.en.adoc:291 0200.en.adoc:316 0200.en.adoc:349
+#: 0200.en.adoc:399 0220.en.adoc:63
 #, no-wrap
 msgid ""
 "*Step 3 – Calculate using the following additional parameters in the "
@@ -4157,9 +4177,10 @@ msgid ""
 "1998^])."
 msgstr ""
 
-#. type: Plain text
-#: glossary.en.adoc:12
-msgid "[[bathymetry]]bathymetry::"
+#. type: Labeled list
+#: glossary.en.adoc:11
+#, no-wrap
+msgid "[[bathymetry]]bathymetry"
 msgstr ""
 
 #. type: Plain text
@@ -4882,9 +4903,10 @@ msgid ""
 "above surface])."
 msgstr ""
 
-#. type: Plain text
-#: glossary.en.adoc:111
-msgid "[[precision]]precision::"
+#. type: Labeled list
+#: glossary.en.adoc:110
+#, no-wrap
+msgid "[[precision]]precision"
 msgstr ""
 
 #. type: Plain text
@@ -5206,7 +5228,7 @@ msgstr ""
 #. type: Table
 #: appa.en.adoc:36
 msgid ""
-"  a| Step 1: Determine the <<feature>> <<boundary,boundaries>>.  Step 2: "
+"a| Step 1: Determine the <<feature>> <<boundary,boundaries>>.  Step 2: "
 "Determine the <<coordinates>> of the <<corrected-center>> of the feature for "
 "[ui-element]#Input Latitude# and [ui-element]#Longitude#.  Step 3: Measure "
 "the <<geographic-radial>>.  a| <<Feature – without Obvious Spatial "
@@ -5222,7 +5244,7 @@ msgstr ""
 #. type: Table
 #: appa.en.adoc:50
 msgid ""
-"  a| Step 1: Estimate the <<feature>> <<boundary,boundaries>> using known "
+"a| Step 1: Estimate the <<feature>> <<boundary,boundaries>> using known "
 "information from a map, record, or other documentation.  Step 2: Determine "
 "the <<coordinates>> of the <<corrected-center>> of the estimated feature "
 "boundaries as the [ui-element]#Input Latitude# and [ui-element]#Longitude#.  "
@@ -5322,7 +5344,7 @@ msgstr ""
 #. type: Table
 #: appa.en.adoc:97
 msgid ""
-"  a| Step 1: Determine the <<feature>> <<boundary,boundaries>> using the "
+"a| Step 1: Determine the <<feature>> <<boundary,boundaries>> using the "
 "appropriate method for <<Geographic Feature only,Geographic Feature only "
 "(§2.1)>>. Account for the <<offset>> at a <<heading>> using other "
 "information in the record, or until reaching the proximity of another "
@@ -5348,7 +5370,7 @@ msgstr ""
 #. type: Table
 #: appa.en.adoc:115
 msgid ""
-"  a| Step 1: Determine the <<boundary>> of the <<feature>> using the "
+"a| Step 1: Determine the <<boundary>> of the <<feature>> using the "
 "appropriate method for <<Geographic Feature only,Geographic Feature only "
 "(§2.1)>>.  Step 2: Determine and use the <<coordinates>> of the "
 "<<corrected-center>> and <<geographic-radial>> of the estimated feature "
@@ -5517,7 +5539,8 @@ msgid "Linear Feature"
 msgstr ""
 
 #. type: Table
-#: appb.en.adoc:21 appb.en.adoc:42 appb.en.adoc:63 appb.en.adoc:90 appb.en.adoc:117 appb.en.adoc:144
+#: appb.en.adoc:21 appb.en.adoc:42 appb.en.adoc:63 appb.en.adoc:90
+#: appb.en.adoc:117 appb.en.adoc:144
 #, no-wrap
 msgid ""
 "h|\n"
@@ -5535,7 +5558,7 @@ msgstr ""
 #. type: Table
 #: appb.en.adoc:27
 msgid ""
-"  a| Step 1: Find the midpoint of the segment *a* that joins the two most "
+"a| Step 1: Find the midpoint of the segment *a* that joins the two most "
 "distant points of the <<geometry>> (solid line).  a|"
 msgstr ""
 
@@ -5548,7 +5571,7 @@ msgstr ""
 #. type: Table
 #: appb.en.adoc:31
 msgid ""
-"  a| Step 2: The midpoint is the corrected center *a*. The geographic radial "
+"a| Step 2: The midpoint is the corrected center *a*. The geographic radial "
 "is the distance from there to either end of the line segment *b*."
 msgstr ""
 
@@ -5567,7 +5590,7 @@ msgstr ""
 #. type: Table
 #: appb.en.adoc:48
 msgid ""
-"  a| Step 1: Find the midpoint of the segment *a* that joins the two most "
+"a| Step 1: Find the midpoint of the segment *a* that joins the two most "
 "distant points of the geometry (solid line).  a|"
 msgstr ""
 
@@ -5580,11 +5603,11 @@ msgstr ""
 #. type: Table
 #: appb.en.adoc:52
 msgid ""
-"  a| Step 2: If the midpoint is within or on the <<boundary>> of the "
-"geometry and there is no point within the geometry that is further away than "
-"the two extreme points of the chosen segment (which one can determine by "
-"eye, with a ruler or with a tool to make a circle), then the midpoint is "
-"already the corrected center *a*, with geographic radial *b*."
+"a| Step 2: If the midpoint is within or on the <<boundary>> of the geometry "
+"and there is no point within the geometry that is further away than the two "
+"extreme points of the chosen segment (which one can determine by eye, with a "
+"ruler or with a tool to make a circle), then the midpoint is already the "
+"corrected center *a*, with geographic radial *b*."
 msgstr ""
 
 #. type: Title ====
@@ -5602,7 +5625,7 @@ msgstr ""
 #. type: Table
 #: appb.en.adoc:69 appb.en.adoc:96 appb.en.adoc:123 appb.en.adoc:150
 msgid ""
-"  a| Step 1: Find the midpoint *a* of the segment that joins the two most "
+"a| Step 1: Find the midpoint *a* of the segment that joins the two most "
 "distant points of the geometry (solid line). Draw a circle with center at "
 "the midpoint and diameter up to the two ends of the segment (dotted "
 "circle).  a|"
@@ -5617,7 +5640,7 @@ msgstr ""
 #. type: Table
 #: appb.en.adoc:75
 msgid ""
-"  a| Step 2: If any point of the geometry falls outside the circle, move the "
+"a| Step 2: If any point of the geometry falls outside the circle, move the "
 "circle so that the farthest spaced vertices of the geometry are equally far "
 "outside the new circle (solid circle, with center *b*).  a|"
 msgstr ""
@@ -5631,8 +5654,8 @@ msgstr ""
 #. type: Table
 #: appb.en.adoc:79 appb.en.adoc:106
 msgid ""
-"  a| Step 3: Increase the radius of the circle, without moving the center, "
-"to just include the most distant points of the geometry. The center of this "
+"a| Step 3: Increase the radius of the circle, without moving the center, to "
+"just include the most distant points of the geometry. The center of this "
 "circle *b* is the corrected center with geographic radial *c*."
 msgstr ""
 
@@ -5657,7 +5680,7 @@ msgstr ""
 #. type: Table
 #: appb.en.adoc:102
 msgid ""
-"  a| Step 2: If any point of the geometry falls outside the circle, move the "
+"a| Step 2: If any point of the geometry falls outside the circle, move the "
 "circle so that the three farthest spaced vertices of the geometry are "
 "equally far outside the new circle (solid circle with center *b*).  a|"
 msgstr ""
@@ -5689,7 +5712,7 @@ msgstr ""
 #. type: Table
 #: appb.en.adoc:129
 msgid ""
-"  a| Step 2: Move the circle so that the center falls on the border of the "
+"a| Step 2: Move the circle so that the center falls on the border of the "
 "geometry and the vertices that are farthest spaced are equally far outside "
 "the new circle (solid circle with center *b*).  a|"
 msgstr ""
@@ -5703,7 +5726,7 @@ msgstr ""
 #. type: Table
 #: appb.en.adoc:133 appb.en.adoc:160
 msgid ""
-"  a| Step 3: Increase the radius of the circle, without moving the center to "
+"a| Step 3: Increase the radius of the circle, without moving the center to "
 "just include the most distant points of the geometry. The center of this "
 "circle *b* is the corrected center with geographic radial *c*."
 msgstr ""
@@ -5729,7 +5752,7 @@ msgstr ""
 #. type: Table
 #: appb.en.adoc:156
 msgid ""
-"  a| Step 2: Move the circle so that the center falls on the border of the "
+"a| Step 2: Move the circle so that the center falls on the border of the "
 "geometry and the vertices farthest from there are equally far outside the "
 "new circle (solid circle with center *b*).  a|"
 msgstr ""
