@@ -1,0 +1,3776 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: georeferencing-quick-reference\n"
+"POT-Creation-Date: 2021-02-01 17:28+0000\n"
+"PO-Revision-Date: 2021-06-28 22:22\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: georeferencing-quick-reference\n"
+"X-Crowdin-Project-ID: 438716\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /1.0/translations/index.pot\n"
+"X-Crowdin-File-ID: 566\n"
+
+#. type: Title ===
+#: index.en.adoc:1 appa.en.adoc:3 appb.en.adoc:3
+#, no-wrap
+msgid "Georeferencing Quick Reference Guide"
+msgstr ""
+
+#. type: Plain text
+#: index.en.adoc:35
+msgid "languageLinks:combined[]"
+msgstr ""
+
+#. type: Target for macro image
+#: colophon.en.adoc:3
+#, no-wrap
+msgid "img/web/photo.jpg"
+msgstr ""
+
+#. type: Title ==
+#: colophon.en.adoc:6
+#, no-wrap
+msgid "Colophon"
+msgstr ""
+
+#. type: Title ===
+#: colophon.en.adoc:9
+#, no-wrap
+msgid "Suggested citation"
+msgstr ""
+
+#. type: Plain text
+#: colophon.en.adoc:12
+msgid "Zermoglio PF, Chapman AD, Wieczorek JR, Luna MC & Bloom DA (2020) Georeferencing Quick Reference Guide. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/e09p-h128"
+msgstr ""
+
+#. type: Title ===
+#: colophon.en.adoc:13
+#, no-wrap
+msgid "Authors"
+msgstr ""
+
+#. type: Plain text
+#: colophon.en.adoc:16
+msgid "https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio], https://orcid.org/0000-0003-1700-6962[Arthur D. Chapman], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek], https://orcid.org/0000-0002-6392-8864[Marie Celeste Luna] & https://orcid.org/0000-0003-1273-1807[David A. Bloom]"
+msgstr ""
+
+#. type: Title ===
+#: colophon.en.adoc:17
+#, no-wrap
+msgid "Contributors"
+msgstr ""
+
+#. type: Title ===
+#: colophon.en.adoc:19
+#, no-wrap
+msgid "Licence"
+msgstr ""
+
+#. type: Plain text
+#: colophon.en.adoc:22
+msgid "The document _Georeferencing Quick Reference Guide_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License]."
+msgstr ""
+
+#. type: Title ===
+#: colophon.en.adoc:23
+#, no-wrap
+msgid "Disclaimer"
+msgstr ""
+
+#. type: Plain text
+#: colophon.en.adoc:26
+msgid "The information in this book represents the professional opinion of the authors, and does not necessarily represent the views of the publisher. While the authors and the publisher have attempted to make this book as accurate and as thorough as possible, the information contained herein is provided on an \"As Is\" basis, and without any warranties with respect to its accuracy or completeness. The authors and the publisher shall have no liability to any person or entity for any loss or damage caused by using the information provided in this book."
+msgstr ""
+
+#. type: Plain text
+#: colophon.en.adoc:28
+msgid "Where there are differences in interpretation between this document and translated versions in languages other than English, the English version remains the original and definitive version."
+msgstr ""
+
+#. type: Title ===
+#: colophon.en.adoc:29
+#, no-wrap
+msgid "Persistent URI"
+msgstr ""
+
+#. type: Plain text
+#: colophon.en.adoc:32
+msgid "https://doi.org/10.35035/e09p-h128"
+msgstr ""
+
+#. type: Title ===
+#: colophon.en.adoc:33
+#, no-wrap
+msgid "Document control"
+msgstr ""
+
+#. type: Plain text
+#: colophon.en.adoc:36
+msgid "v1.0, December 2020"
+msgstr ""
+
+#. type: Title ===
+#: colophon.en.adoc:37
+#, no-wrap
+msgid "Cover image"
+msgstr ""
+
+#. type: Plain text
+#: colophon.en.adoc:39
+msgid "Commerson's dolphin (_Cephalorhynchus commersonii_), off the coast of Chubut, Argentina. Photo 2018 Gabriel Laufer via https://www.gbif.org/occurrence/2563539903[iNaturalist research-grade observations], in the public domain under http://creativecommons.org/publicdomain/zero/1.0/[CC0]."
+msgstr ""
+
+#. type: Title ===
+#: 0100.en.adoc:1 appb.en.adoc:9
+#, no-wrap
+msgid "Introduction"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:4
+msgid "This is a practical guide for <<georeference,georeferencing>>. It describes the protocols to determine the shapes of <<feature,features>> and how to use them as the basis for georeferencing with the <<point-radius>> <<georeferencing-method>> (http://georeferencing.org/georefcalculator/docs/GeorefGuide.html[Wieczorek 2001^], https://doi.org/10.1080/13658810412331280211[Wieczorek et al. 2004^], https://doi.org/10.15468/doc-gg7h-s853[Chapman & Wieczorek 2020^]) using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator (Wieczorek & Wieczorek 2020)^], and its associated {gcm}[Georeferencing Calculator Manual (Bloom et al. 2020)^], maps, <<gazetteer,gazetteers>>, and other resources from which <<coordinates>> and spatial <<boundary,boundaries>> for places can be found. This document is a citable <<georeferencing-protocol>>. If a derived protocol is used, a new document with attribution to this Guide should be made publicly available and cited."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:6
+msgid "This Guide is based on a http://georeferencing.org/docs/GeoreferencingQuickGuide.pdf[first version of the Guide (Wieczorek et al. 2012)^]), which was in turn an adaptation of http://georeferencing.org/docs/georeffordummy.xls[Georeferencing for Dummies (Spencer et al. 2008)^]. It explains the recommended georeferencing procedures for the most commonly encountered type of <<locality,localities>>. This Guide should be used in parallel with the {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^], which contains the theoretical background and more detailed information about concepts used here."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:8
+msgid "Underlined terms throughout this document (e.g. <<accuracy>>) link to definitions in the <<Glossary>>. Terms in italics (e.g. [ui-element]#Input Latitude#) refer to fields and/or labels in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator (Wieczorek & Wieczorek 2020)^] (hereafter referred to as 'the Calculator'). Darwin Core terms are displayed in monospace (e.g. term:dwc[dwc:georeferenceRemarks]) in all GBIF digital documentation."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:10
+msgid "At the end of this document is a <<key-to-locality-types,Georeference Quick Reference Guide Key to Locality Types>>, which contains a quick summary of the protocols for the most common <<locality-type,locality types>>, described in detail in the sections of this guide."
+msgstr ""
+
+#. type: Title ===
+#: 0100.en.adoc:11
+#, no-wrap
+msgid "Objectives"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:14
+msgid "This document provides guidance on how to <<georeference>> using the <<point-radius>> <<georeferencing-method,method>>. This Guide also provides the methods for determining the <<boundary,boundaries>> of <<feature,features>>, which form the basis of the <<shape>> georeferencing method."
+msgstr ""
+
+#. type: Title ===
+#: 0100.en.adoc:15
+#, no-wrap
+msgid "Target Audience"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:18
+msgid "This document is a practical guide for anyone who needs to <<georeference>> textual <<locality>> descriptions so that they can be used in spatial filtering or analysis in research, education, or the maintenance of biological collections data."
+msgstr ""
+
+#. type: Title ===
+#: 0100.en.adoc:19
+#, no-wrap
+msgid "Scope"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:22
+msgid "This document is one of three that cover recommended requirements and methods to <<georeference>> <<location,locations>>. It provides a practical how-to guide for putting the theory of the <<point-radius>> <<georeferencing-method>> into practice."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:24
+msgid "The Guide relies on the {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^] for background, definitions, and more detailed explanations of the theory behind the methods and calculations found here and in the Calculator."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:26
+msgid "The third document is the {gcm}[Georeferencing Calculator Manual (Bloom et al. 2020)^], which describes how to use the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]. The Calculator is a browser-based JavaScript application that aids in georeferencing descriptive <<locality,localities>>, and making the calculations necessary to obtain <<geographic-coordinates>> and <<uncertainty,uncertainties>> for locations using the <<point-radius>> method."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:28
+msgid "These documents DO NOT provide guidance on georectifying images or <<geocode,geocoding>> street addresses – distinct operations that are sometimes called \"georeferencing\"."
+msgstr ""
+
+#. type: Title ===
+#: 0100.en.adoc:29
+#, no-wrap
+msgid "Changes from Previous Version"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:33
+msgid "This version of the Guide is a complete remake of its previous edition, reorganized and augmented to include graphical examples of each type of location and detailed steps for how to <<georeference>> them.  There have been a few changes in terminology since the previous edition, which include:"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:35
+msgid "<<extent,Extent>> in the previous version has been changed to <<radial>>. Extent, where retained, is used in a more traditional way to mean the entire space within a <<location>>."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:36
+msgid "\"Named place\" has been replaced with <<feature>>."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:37
+msgid "Where the <<geographic-center>> was recommended in the past, <<corrected-center>> based on the <<geographic-radial>> is now used. This is an important change because the geographic center did not necessarily yield the smallest <<uncertainty>> due to the extent of a feature; the corrected center and geographic radial does."
+msgstr ""
+
+#. type: Title ===
+#: 0100.en.adoc:39
+#, no-wrap
+msgid "Using Darwin Core"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:42
+msgid "<<georeference,Georeferences>> using the methods in this Guide will be of greatest value if as much information as possible is captured about and during the georeferencing process. The https://dwc.tdwg.org/terms/[Darwin Core standard (Darwin Core Maintenance Group 2020)^] defines all of the fields recommended for the capture of reproducible georeferences, as follows:"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:44
+msgid "<<Darwin-Core,Darwin Core>> georeferencing terms:"
+msgstr ""
+
+#. type: Labeled list
+#: 0100.en.adoc:45
+#, no-wrap
+msgid "term:dwc[dwc:decimalLatitude], term:dwc[dwc:decimalLongitude], term:dwc[dwc:geodeticDatum]"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:46
+msgid "the combination of these fields provide the reference for the center of the <<point-radius>> representation of the georeference."
+msgstr ""
+
+#. type: Labeled list
+#: 0100.en.adoc:46
+#, no-wrap
+msgid "term:dwc[dwc:coordinateUncertaintyInMeters]"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:47
+msgid "The horizontal distance in meters from the given term:dwc[decimalLatitude] and term:dwc[decimalLongitude] that describes the <<smallest-enclosing-circle>> that contains the whole of the <<location>>. Leave the value empty if the <<uncertainty>> is unknown, cannot be estimated, or is not applicable (because there are no <<coordinates>>). Zero is not a valid value for this term. This term corresponds with the <<geographic-radial>> of the final georeference."
+msgstr ""
+
+#. type: Labeled list
+#: 0100.en.adoc:47
+#, no-wrap
+msgid "term:dwc[dwc:georeferencedBy], term:dwc[dwc:georeferencedDate]"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:48
+msgid "the individual(s) who last modified the georeference and when that happened. These correspond to the final authority on the georeference in its current state, regardless of who might have worked on previous versions of the georeference."
+msgstr ""
+
+#. type: Labeled list
+#: 0100.en.adoc:48
+#, no-wrap
+msgid "term:dwc[dwc:georeferenceProtocol]"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:49
+msgid "A description or reference to the methods used to determine the <<shape>> using the shape <<georeferencing-method>>, or the coordinates and uncertainty using the point-radius method. If the protocol in this Guide is used unaltered, then the term:dwc[georeferenceProtocol] should be the citation for this document."
+msgstr ""
+
+#. type: Labeled list
+#: 0100.en.adoc:49
+#, no-wrap
+msgid "term:dwc[dwc:georeferenceSources]"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:50
+msgid "A list (concatenated and separated) of maps, <<gazetteer,gazetteers>>, or other resources used to georeference the location, described specifically enough to allow anyone in the future to use the same resources."
+msgstr ""
+
+#. type: Block title
+#: 0100.en.adoc:51 0100.en.adoc:61 0100.en.adoc:71 0100.en.adoc:79 0100.en.adoc:190 0100.en.adoc:203 0200.en.adoc:19 0200.en.adoc:48 0200.en.adoc:120 0200.en.adoc:148 0200.en.adoc:182 0200.en.adoc:221 0200.en.adoc:247 0200.en.adoc:274 0200.en.adoc:300 0200.en.adoc:329 0200.en.adoc:358 0200.en.adoc:382 0220.en.adoc:24 0220.en.adoc:47 0220.en.adoc:88 0220.en.adoc:112 0220.en.adoc:138 0220.en.adoc:163 0220.en.adoc:193 0220.en.adoc:217 0230.en.adoc:19 0230.en.adoc:41 0230.en.adoc:65 0240.en.adoc:11 0240.en.adoc:31 0240.en.adoc:48 0240.en.adoc:66 0240.en.adoc:81 0240.en.adoc:99
+#, no-wrap
+msgid "{blank}"
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: 0100.en.adoc:52 0100.en.adoc:62 0200.en.adoc:20 0200.en.adoc:49 0200.en.adoc:121 0200.en.adoc:149 0200.en.adoc:183 0200.en.adoc:222 0200.en.adoc:248 0200.en.adoc:301 0200.en.adoc:330 0200.en.adoc:359 0200.en.adoc:383 0220.en.adoc:25 0220.en.adoc:48 0220.en.adoc:89 0220.en.adoc:139 0220.en.adoc:164 0220.en.adoc:194 0230.en.adoc:20 0230.en.adoc:42 0230.en.adoc:66 0240.en.adoc:12 0240.en.adoc:32 0240.en.adoc:49 0240.en.adoc:67 0240.en.adoc:82 0240.en.adoc:100
+#, no-wrap
+msgid "Examples"
+msgstr ""
+
+#. type: delimited block =
+#: 0100.en.adoc:57
+msgid "USGS 1:24000 Florence Montana Quad 1967 + Terrametrics 2008 Google Earth + Wieczorek C & J Wieczorek (2020) Georeferencing Calculator, version yyyymmdd. Available: http://georeferencing.org/georefcalculator/gc.html."
+msgstr ""
+
+#. type: Labeled list
+#: 0100.en.adoc:59
+#, no-wrap
+msgid "term:dwc[dwc:georeferenceVerificationStatus]"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:60
+msgid "A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description. Recommended best practice is to use a controlled vocabulary. Note that this verification could only be performed in relation to the occurrence or event that is being recorded."
+msgstr ""
+
+#. type: delimited block =
+#: 0100.en.adoc:67
+msgid "requires verification + verified by collector + verified by curator"
+msgstr ""
+
+#. type: Labeled list
+#: 0100.en.adoc:69
+#, no-wrap
+msgid "term:dwc[dwc:georeferenceRemarks]"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:70
+msgid "Notes or comments out of the ordinary about the georeference, explaining assumptions made in addition or opposition to those formalized in the method referred to in term:dwc[georeferenceProtocol]."
+msgstr ""
+
+#. type: Named 'caption' AttributeList argument for style 'caption'
+#: 0100.en.adoc:72 0100.en.adoc:80 0200.en.adoc:275 0220.en.adoc:113 0220.en.adoc:218
+#, no-wrap
+msgid "Example"
+msgstr ""
+
+#. type: delimited block =
+#: 0100.en.adoc:75
+msgid "assumed distance by road (Hwy. 101)"
+msgstr ""
+
+#. type: Labeled list
+#: 0100.en.adoc:77
+#, no-wrap
+msgid "term:dwc[dwc:locationRemarks]"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:78
+msgid "Notes or comments of interest about the location (not the georeference of the location, which go in term:dwc[georeferenceRemarks])."
+msgstr ""
+
+#. type: delimited block =
+#: 0100.en.adoc:83
+msgid "Villa Epecuen was inundated in November 1985 and ceased to be inhabited until 2009"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:86
+msgid "For additional community discussion and recommendations, see the https://github.com/tdwg/dwc-qa/wiki[Darwin Core Questions & Answers Site^], the https://github.com/tdwg/dwc-qa/wiki/Webinars[Darwin Core Hour Webinars^] and {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
+msgstr ""
+
+#. type: Title ===
+#: 0100.en.adoc:87
+#, no-wrap
+msgid "Georeferencing Concepts"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:91
+msgid "One of the goals of <<georeference,georeferencing>> following best practices is to be sure that enough information is provided in the output so that the georeference is repeatable (see {gbp}#principles-of-best-practice[Principles of Best Practice] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). To that end, this document provides a set of recipes for georeferencing various <<locality-type,locality types>> using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator]. The Calculator allows you to make distinct kinds of calculations based on the locality type (<<s-locality-type>>). When the locality type is chosen from the predefined list, the Calculator presents input boxes for all of the parameters needed for that type of calculation. Note that the locality type is for the most specific <<locality-clause,clause>> in the <<locality>> description (see {gbp}#parsing-the-locality-description[Parsing the Locality Description] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). However, there may be information for other clauses or other parts of the <<location>> record that help to constrain the location and come into play when a <<feature>> <<boundary>> is determined. Many Calculator parameters are used for more than one locality type. Rather than repeat the explanation for each locality type, they are collected here for common reference. Some locality types require specific parameters, for which the corresponding explanations are included in each subsection of <<Georeferencing Methods by Locality Type>>. Refer to the {gcm}[Georeferencing Calculator Manual (Bloom et al. 2020)^] for details about the Calculator not answered in this document."
+msgstr ""
+
+#. type: Title ====
+#: 0100.en.adoc:93
+#, no-wrap
+msgid "Locality Type"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:96
+msgid "The <<locality-type,locality type>> refers to the pattern of the most specific part of a <<locality>> description to be <<georeference,georeferenced>> – the one that determines which calculation method to use. The http://georeferencing.org/georefcalculator/gc.html[Calculator^] has options to compute georeferences for six basic locality types:"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:98
+msgid "<<coordinates,Coordinates>> only"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:99
+msgid "Geographic <<feature>> only"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:100
+msgid "Distance only"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:101
+msgid "Distance along a path"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:102
+msgid "Distance along orthogonal <<direction,directions>>"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:103
+msgid "Distance at a <<heading>>"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:105
+msgid "Selecting a locality type will configure the Calculator to show all of the parameters that need to be set to perform the georeference calculation. This Guide gives specific instructions for how to set the parameters for many different examples of each of the locality types."
+msgstr ""
+
+#. type: Title ====
+#: 0100.en.adoc:107
+#, no-wrap
+msgid "Corrected Center"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:110
+msgid "The <<corrected-center,corrected center>> is the point within a <<location>>, or on its <<boundary>>, that minimizes the <<geographic-radial,geographic radial>> (see <<Radial of Feature>>). This point is obtained by finding the <<smallest-enclosing-circle,smallest enclosing circle>> that contains the entire <<feature>>, and then taking the center of that circle (<<img-corrected-center>>A). If that center does not fall on or inside the boundaries of the feature, find the smallest enclosing circle that contains the entire feature, *but* has its center on the boundary of the feature (<<img-corrected-center>>B). Note that in the corrected case, the new circle, and hence the <<radial>>, will always be larger than the uncorrected one. In the http://georeferencing.org/georefcalculator/gc.html[Calculator^], the <<coordinates>> corresponding to the corrected center are labelled as [ui-element]#Input Latitude# and [ui-element]#Input Longitude#. See <<Appendix B: Methods to Find the Corrected Center and Geographic Radial>> for techniques to determine the corrected center."
+msgstr ""
+
+#. type: Block title
+#: 0100.en.adoc:113
+#, no-wrap
+msgid "A: The center *a* of the smallest enclosing circle of a feature (polygon highlighted in light grey). Note that the center does not fall within the boundary of the feature. B: The corrected center *b*, which is on the boundary of the feature, and the corresponding geographic radial *c*."
+msgstr ""
+
+#. type: Target for macro image
+#: 0100.en.adoc:114
+#, no-wrap
+msgid "img/web/corrected-center.png"
+msgstr ""
+
+#. type: Title ====
+#: 0100.en.adoc:116
+#, no-wrap
+msgid "Radial of Feature"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:119
+msgid "A <<feature>> is a place in the <<locality>> description that has an <<extent>> and can be delimited by a <<boundary>>. The <<geographic-radial,geographic radial>> of the feature (shown as [ui-element]#Radial of Feature# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]) is the distance from the <<corrected-center,corrected center>> of the feature to the furthest point on the <<geographic-boundary,geographic boundary>> of that feature (see <<img-corrected-center>> and {gbp}#extent-of-a-location[Extent of a Location^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). Note that the radial was called \"extent\" in earlier documents and versions of the Calculator. See <<Appendix B: Methods to Find the Corrected Center and Geographic Radial>> for techniques to determine the geographic radial."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:121
+msgid "The final <<georeference>> will have a geographic radial distinct from the geographic radial of any of the features in the <<locality>> description (because it will also encompass all sources of <<uncertainty>>), and once the calculation is performed, this will be displayed in the output from the Calculator in the [ui-element]#Uncertainty# field."
+msgstr ""
+
+#. type: Title ====
+#: 0100.en.adoc:123
+#, no-wrap
+msgid "Latitude"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:126
+msgid "Labelled as [ui-element]#Input Latitude# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]. The <<geographic-coordinates,geographic coordinate>> north or south of the equator (where <<latitude>> is 0) that represents the starting point for a <<georeference>> calculation and depends on the <<locality-type,locality type>>."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:128
+msgid "Latitudes in <<decimal-degrees,decimal degrees>> north of the equator are positive by convention, while latitudes to the south are negative. The Calculator supports three degree-based geographic coordinate formats for latitude and <<longitude>>: <<decimal-degrees>> (e.g. −41.0570673), degrees decimal minutes (e.g. 41° 3.424\") and <<DMS,degrees minutes and seconds>> (e.g. 41° 3' 25.44\" S)."
+msgstr ""
+
+#. type: Title ====
+#: 0100.en.adoc:130
+#, no-wrap
+msgid "Longitude"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:133
+msgid "Labelled as [ui-element]#Input Longitude# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]. The <<geographic-coordinates,geographic coordinate>> east or west of the <<prime-meridian,prime meridian>> (an arc between the north and south poles where <<longitude>> is 0) that represents the starting point for a <<georeference>> calculation and depends on the <<locality-type>>."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:135
+msgid "Longitudes in <<decimal-degrees,decimal degrees>> east of the prime meridian are positive by convention, while longitudes to the west are negative. The Calculator supports three degree-based geographic coordinate formats for <<latitude>> and longitude: <<decimal-degrees,decimal degrees>> (−71.5246934), degrees decimal minutes (71° 31.482\") and <<DMS,degrees minutes and seconds>> (71° 31' 28.90\" W)."
+msgstr ""
+
+#. type: Title ====
+#: 0100.en.adoc:136
+#, no-wrap
+msgid "Coordinate Source"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:139
+msgid "The [ui-element]#Coordinate Source# is the type of resource (map type, <<GPS>>, <<gazetteer>>, <<locality>> description) from which the starting [ui-element]#Input Latitude# and [ui-element]#Longitude# were derived."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:141
+msgid "More often than not, the original <<coordinates>> are used to find the general vicinity of the <<location>> on a map, after which the process of determining the <<corrected-center,corrected center>> provides the new coordinates. The Coordinate Source to use in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] in this case is the map from which the corrected center was determined, not the original source used to determine the general vicinity on the map. For example, suppose the original coordinates came from a gazetteer, but the <<boundary>> and corrected center of the <<feature>> were determined from Google Maps, the Coordinate Source would be \"Google Earth/Maps 2008\", not \"gazetteer\"."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:143
+msgid "This term is related to, but *NOT* the same as, the <<Darwin-Core>> term term:dwc[georeferenceSources], which requires the specific resources used rather than their type. Note that the <<uncertainty,uncertainties>> from the two sources _gazetteer_ and _locality description_ can not be anticipated universally, and therefore do not contribute to the global uncertainty in the calculations. If the <<error>> characteristics of these sources are known, they can be added in the [ui-element]#Measurement Error# field before calculating. If the source [ui-element]#GPS# is selected, the label for [ui-element]#Measurement Error# will change to [ui-element]#GPS Accuracy#, which is where the <<accuracy>> of the <<GPS>> (see {gbp}#using-a-gps[Using a GPS^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]) at the time the coordinates were taken should be entered."
+msgstr ""
+
+#. type: Title ====
+#: 0100.en.adoc:145
+#, no-wrap
+msgid "Coordinate Format"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:148
+msgid "The [ui-element]#Coordinate Format# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] defines the representation of the original <<geographic-coordinates,geographic coordinates>> (<<decimal-degrees>>, <<DMS,degrees minutes and seconds>> (DMS) or degrees decimal minutes) of the <<coordinates,coordinate>> source."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:150
+msgid "When the calculation type is not “Coordinates only”, the original coordinates are often used to find the general vicinity of the <<location>> on a map, after which the process of determining the <<corrected-center,corrected center>> provides the new coordinates. The Coordinate Format to use in the Calculator in this case is the <<coordinate-format,coordinate format>> on the map from which the corrected center was determined, not the coordinate format of the original source used to determine the general vicinity on the map. For example, suppose the original coordinates came from a <<gazetteer>> in DMS, but the <<boundary>> and corrected center of the <<feature>> were determined from Google Maps, the Coordinate Format would be decimal degrees, not DMS."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:152
+msgid "This term is only equivalent to the <<Darwin-Core,Darwin Core>> term term:dwc[verbatimCoordinateSystem] if no conversions had to be performed from the original source to the format used in the _Input Latitude_ and _Input Longitude_ (e.g. if the original coordinates were UTM and you had to convert them to DMS, then the _Coordinate Format_ in the Calculator will be DMS, but the term:dwc[verbatimCoordinateSystem] will be UTM. Selecting the original coordinate format allows the coordinates to be entered in their native format and forces the Calculator to present appropriate options for <<coordinate-precision,coordinate precision>>. Changing the coordinate format will automatically reset the coordinate precision value to _nearest degree_. Be sure to correct this for the actual coordinate precision. The Calculator stores coordinates in decimal degrees to seven decimal places. This is to preserve the correct coordinates in all formats regardless of how many coordinate transformations are done."
+msgstr ""
+
+#. type: Title ====
+#: 0100.en.adoc:154
+#, no-wrap
+msgid "Coordinate Precision"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:157
+msgid "Labelled in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] as [ui-element]#Precision# in the first column of input parameters, this drop-down list is populated with levels of <<precision>> in keeping with the <<coordinate-format,coordinate format>> chosen. For example, with a [ui-element]#Coordinate Format# of [ui-element]#degrees minutes seconds#, an [ui-element]#Input Latitude# of 35° 22' 24\" N and an [ui-element]#Input Longitude# of 105° 22' 28\" W, the [ui-element]#Coordinate Precision# would be [ui-element]#nearest second#. A value of [ui-element]#exact# is any level of precision higher than the otherwise highest precision given on the list. Sources of <<coordinate-precision,coordinate precision>> may include paper or digital maps, digital imagery, <<GPS>>, <<gazetteer,gazetteers>>, or <<locality>> descriptions."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:159
+msgid "The Coordinate Precision to use in the Calculator is the coordinate precision of the source from which the <<corrected-center,corrected center>> was determined, not the coordinate precision of the original source used to determine the general vicinity on the map. For example, suppose the original <<coordinates>> came from a gazetteer, but the <<boundary>> and corrected center of the <<feature>> were determined from Google Maps, the Coordinate Precision would be determined by the number of digits of <<decimal-degrees,decimal degrees>> you captured from the corrected center on Google Maps, not the Coordinate Precision of the coordinates from the original gazetteer entry. If you use all of the digits provided on Google Maps, the Coordinate Precision would be \"exact\"."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:161
+msgid "This term is similar to, but **NOT** the same as, the <<Darwin-Core,Darwin Core>> term term:dwc[coordinatePrecision], which applies to the output coordinates."
+msgstr ""
+
+#. type: Title ====
+#: 0100.en.adoc:163
+#, no-wrap
+msgid "Datum"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:166
+msgid "Defines the position of the origin and orientation of an <<ellipsoid>> upon which the <<coordinates>> are based for the given [ui-element]#Input Latitude# and [ui-element]#Longitude# (see <<coordinate-reference-system, coordinate reference system>>)."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:168
+msgid "The _Datum_ to use in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] is the <<datum>> (or <<ellipsoid>>) of the source from which the <<corrected-center,corrected center>> was determined. For example, suppose the original coordinates came from a <<gazetteer>> with an unknown datum, but the <<boundary>> and corrected center of the <<feature>> were determined from Google Maps, the _Datum_ would be \"WGS84\", not \"datum not recorded.\""
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:170
+msgid "The term [ui-element]#Datum# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] is equivalent to the <<Darwin-Core,Darwin Core>> term term:dwc[geodeticDatum]. The Calculator includes <<ellipsoid,ellipsoids>> on the [ui-element]#Datum# drop-down list, as sometimes that is all that coordinate source shows. The choice of datum in the Calculator has two important effects. The first is the contribution to <<uncertainty>> if the datum of the input coordinates is not known. If the datum and ellipsoid are not known, [ui-element]#datum not recorded# must be selected. Uncertainty due to an unknown datum can be severe and varies geographically in a complex way, with a worst-case contribution of 5359 m (see {gbp}#coordinate-reference-system[Coordinate Reference System^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). The second important effect of the datum selection is to provide the characteristics of the ellipsoid model of the earth, on which the distance calculations depend."
+msgstr ""
+
+#. type: Title ====
+#: 0100.en.adoc:172
+#, no-wrap
+msgid "Direction"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:175
+msgid "The [ui-element]#Direction# in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^] is the <<heading>> given in the <<locality>> description, either as a standard compass point (see https://en.wikipedia.org/wiki/Boxing_the_compass[Boxing the compass^]) or as a number of degrees in the clockwise direction from north. True North is not the same as Magnetic North (see {gbp}#headings[Headings^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). If a heading is known to be a magnetic heading, it will have to be converted into a true heading (see NOAA's https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml[Magnetic Field Calculator^]) before it can be used in the Calculator. If [ui-element]#degrees from N# is selected, a text box will appear to the right of the selection, into which the degree heading should be entered."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:177
+msgid "Some marine locality descriptions reference a direction (azimuth) toward a landmark rather than a heading from the current location (e.g. \"327° to Nubble Lighthouse\"). To make a Distance a heading calculation for such a locality description, use the compass point 180 degrees from the one given in the locality description (147° in the example above) as the Direction."
+msgstr ""
+
+#. type: Title ====
+#: 0100.en.adoc:178
+#, no-wrap
+msgid "Offset Distance"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:181
+msgid "The [ui-element]#Offset Distance# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] is the linear surface distance from a point of origin. <<offset,Offsets>> are used for the [ui-element]#Locality Types# [ui-element]#Distance at a heading# and [ui-element]#Distance only#. If the [ui-element]#Locality Type# [ui-element]#Distance along orthogonal directions# is selected, there are two distinct offsets:"
+msgstr ""
+
+#. type: Labeled list
+#: 0100.en.adoc:182
+#, no-wrap
+msgid "North or South Offset Distance"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:183
+msgid "The distance to the north or south (set with the selection box to the right of the distance text box) of the [ui-element]#Input Latitude#."
+msgstr ""
+
+#. type: Labeled list
+#: 0100.en.adoc:184
+#, no-wrap
+msgid "East or West Offset Distance"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:185
+msgid "The distance to the east or west (set with the selection box to the right of the distance text box) of the [ui-element]#Input Longitude#."
+msgstr ""
+
+#. type: Title ====
+#: 0100.en.adoc:186
+#, no-wrap
+msgid "Distance Units"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:189
+msgid "The [ui-element]#Distance Units# selection denotes the real world units used in the <<locality>> description. It is important to select the original units as given in the description. This is needed to incorporate the <<uncertainty>> from <<distance-precision,Distance Precision>> properly. If the <<locality>> description does not include distance units, use the distance units of the map from which measurements are derived."
+msgstr ""
+
+#. type: delimited block =
+#: 0100.en.adoc:193
+msgid "select [ui-element]#mi# for \"10 mi E (by air) Bakersfield\""
+msgstr ""
+
+#. type: delimited block =
+#: 0100.en.adoc:194
+msgid "select [ui-element]#km# for \"3.2 km SE of Lisbon\""
+msgstr ""
+
+#. type: delimited block =
+#: 0100.en.adoc:195
+msgid "select [ui-element]#km# for measurements in Google Maps where the distance units are set to _km_."
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:198
+msgid "All distances used in a given calculation must use the same units. For example, if an <<offset>> distance was given in miles in the locality description, when entering the <<radial>> value, you must do so in miles."
+msgstr ""
+
+#. type: Title ====
+#: 0100.en.adoc:199
+#, no-wrap
+msgid "Distance Precision"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:202
+msgid "The [ui-element]#Distance Precision#, labelled in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] as [ui-element]#Precision# in the second column of input parameters, refers to the <<precision>> with which a distance was described in a <<locality>> (see {gbp}#uncertainty-related-to-offset-precision[Uncertainty Related to Offset Precision^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). This drop-down list is populated based on the [ui-element]#Distance Units# chosen and contains powers of ten and simple fractions to indicate the precision demonstrated in the verbatim original <<offset>>."
+msgstr ""
+
+#. type: delimited block =
+#: 0100.en.adoc:206
+msgid "select [ui-element]#1 mi# for \"6 mi NE of Davis\""
+msgstr ""
+
+#. type: delimited block =
+#: 0100.en.adoc:207
+msgid "select [ui-element]#¼ km# for \"3.75 km W of Hamilton\""
+msgstr ""
+
+#. type: Title ====
+#: 0100.en.adoc:209
+#, no-wrap
+msgid "Measurement Error"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:212
+msgid "The [ui-element]#Measurement Error# accounts for <<error>> associated with the ability to distinguish one point from another using any measuring tool, such as rulers on paper maps or the measuring tools on Google Maps or Google Earth. The units of measurement must be the same as those in the <<locality>> description as captured in [ui-element]#Distance Units# (see <<Distance Units>>). The [ui-element]#Distance Converter# at the bottom of the http://georeferencing.org/georefcalculator/gc.html[Calculator^] is provided to aid in changing a measurement to the locality description units. For example, a reasonable value for measurement error on a map is 1 mm, which on a map of 1:24,000 scale would be 24 m."
+msgstr ""
+
+#. type: Title ====
+#: 0100.en.adoc:213
+#, no-wrap
+msgid "GPS Accuracy"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:216
+msgid "When [ui-element]#GPS# is selected from the [ui-element]#Coordinate Source# drop-down list, the label for the [ui-element]#Measurement Error# text box changes to [ui-element]#GPS Accuracy#. We recommend entering a value that is at least twice the value given by the <<GPS>> at the time the <<coordinates>> were captured (see {gbp}#uncertainty-due-to-gps[Uncertainty due to GPS^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]. If [ui-element]#GPS Accuracy# is not known, enter 100 m for standard hand-held GPS coordinates taken before 1 May 2000 when Selective Availability was discontinued. After that, use 30 m as a conservative default value."
+msgstr ""
+
+#. type: Title ====
+#: 0100.en.adoc:218
+#, no-wrap
+msgid "Uncertainty"
+msgstr ""
+
+#. type: Plain text
+#: 0100.en.adoc:221
+msgid "The [ui-element]#Uncertainty# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] is the calculated result of the combination of all sources of <<uncertainty>> (<<coordinate-precision>>, unknown <<datum>>, data source, <<GPS>> <<accuracy>>, measurement <<error>>, <<feature>> <<extent>>, distance <<precision>> and <<heading>> <<precision>>) expressed as a linear distance – the <<geographic-radial,geographic radial>> of the <<georeference>> and the <<radial,radius>> in the <<point-radius>> <<georeferencing-method,method>> (https://doi.org/10.1080/13658810412331280211[Wieczorek et al. 2004^]). Along with the [ui-element]#Output Latitude#, [ui-element]#Output Longitude#, and [ui-element]#Datum#, the radius defines a circle containing all of the possible places a <<locality>> description could mean. In the Calculator the [ui-element]#Uncertainty# is given in meters."
+msgstr ""
+
+#. type: Title ==
+#: 0200.en.adoc:1
+#, no-wrap
+msgid "Georeferencing Methods by Locality Type"
+msgstr ""
+
+#. type: Title ===
+#: 0200.en.adoc:3
+#, no-wrap
+msgid "Geographic Feature only"
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:5
+#, no-wrap
+msgid "Definition"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:9
+msgid "The simplest locality descriptions consist of only a named place, or more generally, a feature, which is often listed in a standard gazetteer and can probably be located on a map of the appropriate scale."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:12
+msgid "Despite how they might be presented in a <<gazetteer>> or on a map, <<feature,features>> are not points; they are areas that have a spatial <<extent>>. Some features can have an obvious spatial extent, while others may not. All variations of features are treated in this Guide as one or the other of these two main categories. The basic methodology is to try to determine the <<boundary,boundaries>> of the feature, its <<corrected-center,corrected center>> and a measure of how specific the feature is (defined here by the <<geographic-radial,geographic radial>>). See <<Appendix B: Methods to Find the Corrected Center and Geographic Radial>> for techniques to determine the corrected center and geographic radial for various geometric types of features."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:14
+msgid "Coordinates from geographic indexes such as gazetteers often use reference points that are not necessarily in the center of the feature. For example, a river may be referenced by its mouth, and a town by its main post office, courthouse, or main plaza. It is best to use a visual reference to determine boundaries, centers, and radials. For this reason, it is a good idea to use the gazetteer coordinates to find the feature on a map, and then use the map to find the boundaries, corrected center and geographic radial of the feature."
+msgstr ""
+
+#. type: Title ====
+#: 0200.en.adoc:15
+#, no-wrap
+msgid "Feature – with Obvious Spatial Extent"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:18
+msgid "The <<locality>> refers to a geographic <<feature>> with discernible spatial <<extent>>, i.e. the <<boundary,boundaries>> of the feature can be determined easily (<<img-obvious-spatial-extent>>)."
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:23
+msgid "\"Puerto Madryn\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:24
+msgid "\"Isla Tiburón\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:25
+msgid "\"Yosemite National Park\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:26
+msgid "\"Botany Bay\""
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:29 0200.en.adoc:57 0200.en.adoc:129 0200.en.adoc:157 0200.en.adoc:192 0200.en.adoc:230 0200.en.adoc:255 0200.en.adoc:281 0200.en.adoc:308 0200.en.adoc:339 0200.en.adoc:367 0200.en.adoc:391 0220.en.adoc:57 0230.en.adoc:50 0230.en.adoc:74 0240.en.adoc:57
+#, no-wrap
+msgid "*Locality Type:* [ui-element]#Geographic feature only#\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:31
+#, no-wrap
+msgid "*Step 1 – Determine the feature boundaries*: This step is to determine the <<shape>> that contains the <<feature>>. This is typically done by drawing a polygon around the feature (<<img-obvious-spatial-extent>>A), but some features may require more complex <<geometry,geometries>>, such as multiple polygons.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:33
+msgid "Record the source (including date) used to determine the boundaries (see term:dwc[georeferenceSources])."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:35
+#, no-wrap
+msgid "*Step 2 – Determine the coordinates*: Use the <<coordinates>> of the <<corrected-center,corrected center>> of the <<feature>> (\"*a*\" in <<img-obvious-spatial-extent>>B) as the [ui-element]#Input Latitude# and [ui-element]#Longitude#.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:37
+#, no-wrap
+msgid "*Step 3 – Measure the geographic radial*: Measure the distance from the <<corrected-center,corrected center>> to the furthest point on the <<boundary>> of the <<feature>> (\"*b*\" in <<img-obvious-spatial-extent>>B) as the [ui-element]#Radial of Feature#.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:39
+#, no-wrap
+msgid "*Step 4 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, and [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:41
+#, no-wrap
+msgid "A. Boundary only, and B. center *a* of the smallest enclosing circle and geographic radial *b* of a feature with obvious spatial extent. The center *a* falls within the boundaries and thus needs no correction."
+msgstr ""
+
+#. type: Target for macro image
+#: 0200.en.adoc:42
+#, no-wrap
+msgid "img/web/obvious-spatial-extent.png"
+msgstr ""
+
+#. type: Title ====
+#: 0200.en.adoc:44
+#, no-wrap
+msgid "Feature – without Obvious Spatial Extent"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:47
+msgid "The <<locality>> refers to a geographic <<feature>> that does not have an easily discernible spatial <<boundary>>. Some features may have undefined boundaries (e.g. mountains, unincorporated towns, etc.). Other features may only have a label, with no apparent boundaries or size on a map because they are small or obscured on satellite imagery (e.g. spring, monument, etc.). Another possibility is a feature with only <<coordinates>> from a <<gazetteer>> and no discernible presence on a map."
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:52
+msgid "\"Pampa Grande\" as a region +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:53
+msgid "\"Mt Hypipamee\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:54
+msgid "\"Great Barrier Reef\""
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:59
+#, no-wrap
+msgid "*Step 1 – Estimate the feature boundaries*: Determine the <<boundary,boundaries>> of the <<feature>> as well as possible using visible evidence for the feature on a map. Try to get into the mind of the person who recorded the <<locality>>. Imagine yourself there. What circumstances would influence which feature was recorded and what circumstances would have encouraged them to choose a different feature?\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:61
+msgid "For towns without obvious borders one can use the presence of buildings near the <<coordinates>> given for the town to decide where the town ends (<<img-without-obvious-spatial-extent>>). In some cases there might not be such indicators and these will be more subjective. For this reason it is particularly important to document the rationale for the selection of the locality with unclear boundaries."
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:63
+#, no-wrap
+msgid "Boundary (lighter dotted line), corrected center *a* and geographic radial *b* of a town based on the locations of buildings and a well-defined neighbouring town border (denoted by the darker dotted line) on a map."
+msgstr ""
+
+#. type: Target for macro image
+#: 0200.en.adoc:64
+#, no-wrap
+msgid "img/web/without-obvious-spatial-extent.png"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:67
+msgid "Where there are no indicators for the boundary, use the midpoint between the given feature and neighbouring features with similar type, size, or importance to make a rough boundary. Though this boundary may not represent the actual feature very well, it will represent the uncertainty of where the locality is, and that is the major goal of the <<georeference>>."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:69
+msgid "For small features, where the only indicator on a map is a label and possibly a marker, or where there are only coordinates from a <<gazetteer>> (and no further indicators at those coordinates on a map), a good strategy would be to use a predefined default size based on the feature type (<<img-without-obvious-spatial-extent-default-size>>, <<table-default-geographic-radial>>)."
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:71
+#, no-wrap
+msgid "The boundary for a spring determined from the position of its icon on a map *a* and a geographic radial *b* determined by a default size for the feature type."
+msgstr ""
+
+#. type: Target for macro image
+#: 0200.en.adoc:72
+#, no-wrap
+msgid "img/web/without-obvious-spatial-extent-default-size.png"
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:77
+#, no-wrap
+msgid "List of feature types and the default geographic radial to use. If the feature type you are looking for isn't on the list, use one that is most like the feature type you seek and be sure to document your choice in term:dwc[georeferenceRemarks]."
+msgstr ""
+
+#. type: Table
+#: 0200.en.adoc:94
+#, no-wrap
+msgid "h|Feature Type h|Default <<geographic-radial>>\n"
+"|spring, bore, tank, well, or waterhole |3 m\n"
+"|small stream |3 m\n"
+"|two-lane city streets, two-lane highways intersections |10 m\n"
+"|four-lane highways intersections |20 m\n"
+"|highway intersection, unknown type |15 m\n"
+"|PLSS Township |6828 m\n"
+"|PLSS Section |1138 m\n"
+"|PLSS ¼ Section |570 m\n"
+"|Grid (e.g. UTM), 1 m precision |1 m\n"
+"|Grid (e.g. UTM), 10 m precision |7 m\n"
+"|Grid (e.g. UTM), 100 m precision |71 m\n"
+"|Grid (e.g. UTM), 1 km precision |707 m\n"
+"|Grid, ¼ degree precision (at equator)† |39226 m\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:97
+msgid "† <<grid,Grids>> based on <<geographic-coordinates,geographic coordinates>>, such as Quarter Degree Squares, are not square, nor are they constant. They vary in size and shape by <<latitude>>. See {gbp}#table-uncertainty[table^] in {gbp}#uncertainty-related-to-coordinate-precision[Uncertainty Related to Coordinate Precision in Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:99
+msgid "The boundaries between mountains can be determined by using the terrain (valleys, saddles, and plains) that separate one mountain from others around it (<<img-mountain-boundaries>>)."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:101
+msgid "Always use term:dwc[georeferenceRemarks] to document the decisions made and the reasons for them as well as possible, including the neighbouring features used for reference."
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:103
+#, no-wrap
+msgid "A. Topographic contours of a group of nearby mountains. B. Rough boundary, corrected center *a* and geographic radial *b* of a mountain determined by the surrounding valleys, saddles, and plains."
+msgstr ""
+
+#. type: Target for macro image
+#: 0200.en.adoc:104
+#, no-wrap
+msgid "img/web/mountain-boundaries.png"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:107
+#, no-wrap
+msgid "*Step 2 – Determine the coordinates*: Once the estimated boundary has been determined, use the coordinates of the corrected center (<<img-obvious-spatial-extent>>, <<img-without-obvious-spatial-extent>>, and <<img-mountain-boundaries>>B) as the [ui-element]#Input Latitude# and [ui-element]#Longitude#.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:109
+#, no-wrap
+msgid "*Step 3 – Measure the geographic radial*: Once the rough boundary and the coordinates of the corrected center have been determined, find the geographic radial as the [ui-element]#Radial of Feature# by measuring the distance from the corrected center to the furthest point on the estimated boundary of the feature.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:111
+#, no-wrap
+msgid "*Step 4 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
+msgstr ""
+
+#. type: Title ====
+#: 0200.en.adoc:112
+#, no-wrap
+msgid "Feature – Special Cases"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:115
+msgid "The following are special cases of <<feature,features>> that might or might not have an obvious spatial <<extent>>, depending on the completeness of the information available."
+msgstr ""
+
+#. type: Title =====
+#: 0200.en.adoc:116
+#, no-wrap
+msgid "Feature – Street Address"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:119
+msgid "The <<locality>> is a street address – usually with a number, a street name, and an administrative <<feature>> name."
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:124
+msgid "\"Av. Angel Gallardo 470, Buenos Aires, Argentina\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:125
+msgid "\"1 Orchard Lane, Berkeley, CA\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:126
+msgid "\"21054 Baldersleigh Road, Guyra, NSW\" (indicates that the locality is 21.054 km from the beginning of Baldersleigh Road)."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:131
+#, no-wrap
+msgid "*Step 1 – Determine the feature boundaries*: Locate the address using a site such as Google Maps, Mapquest or OpenStreetMap.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:133
+msgid "Address <<boundary>> evident – if the map shows the <<extent>> of the address clearly, determine the boundary exactly as you would for a feature with an Obvious Spatial Extent (<<img-street-address>>A); (see <<Feature – with Obvious Spatial Extent>>)."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:135
+msgid "Address boundary not evident – if the exact address cannot be found, estimate the boundary as well as possible, such as the block that it must be on (<<img-street-address>>B), as for <<Feature – without Obvious Spatial Extent>>. Many addresses reflect a <<grid>> system. For instance, addresses between 12th Street and 13th Street would lie between 1200 and 1300."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:137
+#, no-wrap
+msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, use the same method to determine the coordinates and <<geographic-radial,geographic radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center,corrected center>> to the furthest point on the boundary of the feature.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:139 0200.en.adoc:171 0200.en.adoc:212 0200.en.adoc:238 0200.en.adoc:265 0200.en.adoc:291 0200.en.adoc:316 0200.en.adoc:349 0200.en.adoc:399 0220.en.adoc:63
+#, no-wrap
+msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:141
+#, no-wrap
+msgid "Boundary, corrected center *a* and geographic radial *b* of a street address. *A* has obvious boundaries; *B* has no obvious boundaries, and it is not possible to tell from the source map whether the location is on one side of the street or the other."
+msgstr ""
+
+#. type: Target for macro image
+#: 0200.en.adoc:142
+#, no-wrap
+msgid "img/web/street-address.png"
+msgstr ""
+
+#. type: Title =====
+#: 0200.en.adoc:144
+#, no-wrap
+msgid "Feature – Property"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:147
+msgid "The <<locality>> is a property – a ranch, rancho, station, farm, finca, grange, granja, estância, plantation, hacienda, fazenda, manor, holding, estate, spread, acreage, orchard, steading, parcel, terreno, etc."
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:152
+msgid "\"Victoria River Station\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:153
+msgid "\"Mathae Ranch\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:154
+msgid "\"Estancia 9 de Julio\""
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:159
+#, no-wrap
+msgid "*Step 1 – Determine the feature boundaries*: Locate the property using whatever sources you can. You may have to resort to a cadastral map.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:161
+msgid "Property <<boundary>> evident – if the map shows the <<extent>> of the property, determine the boundary exactly as you would for <<Feature – with Obvious Spatial Extent>>)."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:163
+msgid "Property boundary not evident – if the full extent of the property cannot be found, it should still be possible to determine some part of it confidently, and the rest with less certainty. Delimit the outer, uncertain feature boundaries as usual by following <<Feature – without Obvious Spatial Extent>>. In addition, determine the boundaries of the part of the property that is obvious following <<Feature – with Obvious Spatial Extent>>."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:165
+#, no-wrap
+msgid "*Step 2 – Determine the coordinates and geographic radial*:\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:167
+msgid "Property boundary evident – once the boundary is determined, determine the <<coordinates>> and <<geographic-radial,geographic radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center,corrected center>> to the furthest point on the boundary of the feature (<<img-property-boundary>>A)."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:169
+msgid "Property boundary not evident – once the outer boundaries are determined, use them to find coordinates as for <<Feature – with Obvious Spatial Extent>>, namely find the center of the <<smallest-enclosing-circle,smallest enclosing circle>> containing the outer, uncertain boundary. If that center falls within the inner, confident boundary, use it to determine the geographic radial by finding the distance from that point to the furthest point on the uncertain boundary (<<img-property-boundary>>B). If the center does not fall in or on the confident inner boundary, let the <<corrected-center,corrected center>> be a point on the inner confident boundary that minimizes the geographic radial to the outer uncertain boundary (<<img-property-boundary>>C)."
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:173
+#, no-wrap
+msgid "Boundary, corrected center *a* and geographic radial *b* of a property. *A* has obvious boundaries; *B* has an obvious inner boundary (dark shading) and a less obvious rough outer boundary (lighter shading), where the center of the outer boundary falls within the obvious inner boundary; *C* has an obvious inner boundary (dark shading) and a rough outer boundary (lighter shading), where the center of the outer boundary *c* does not fall within the obvious inner boundary."
+msgstr ""
+
+#. type: Target for macro image
+#: 0200.en.adoc:174
+#, no-wrap
+msgid "img/web/property-boundary.png"
+msgstr ""
+
+#. type: Title =====
+#: 0200.en.adoc:176
+#, no-wrap
+msgid "Feature – Path"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:179
+msgid "A <<path>> is a linear <<feature>> such as a road, trail, river, stream, contour line, <<boundary>>, <<transect>>, track of an animal’s movements, tow, trawl, etc. The <<locality>> may also refer to part (or subdivision) of a bigger path."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:181
+msgid "A path may cross over itself, for example, as with the track of an animal’s movements."
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:186
+msgid "\"Sacramento River\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:187
+msgid "\"Arroyo Urugua-í\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:188
+msgid "\"Hwy 1\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:189
+msgid "\"along 100 m contour line\""
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:194
+#, no-wrap
+msgid "*Step 1 – Determine the feature boundaries*: As a linear feature, a path is often represented as a series of line segments (i.e. a polyline), with or without a buffer. When viewed on satellite imagery these features (especially rivers) can be quite complex, so a constant buffer around the midline is not a good representation in these cases. When possible, determine the boundary as for any other <<shape>> using <<Feature – with Obvious Spatial Extent>>) (<<img-paths>>A). Otherwise, treat the boundary as a polyline (<<img-paths>>B) and determine the <<corrected-center>> and <<geographic-radial>> as explained below.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:196
+msgid "Paths are susceptible to change over time, so it may be best to find a map source from the period during which the event occurred. The scale is important when looking at a path on a map, as smaller scale maps reduce the complexity shown, with corners cut off, and with loops (oxbows, billabongs), etc. often not shown."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:198
+#, no-wrap
+msgid "*Contour Lines* — these are linear features defined by <<elevation>> or <<depth>>. The horizontal width of the buffer around the contour line depends on the <<uncertainty>> in elevation or depth due to a combination of the stated range and the imprecision with which the value was recorded.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:200
+msgid "If a single value is given for an elevation (or depth knowing that the location was at the bottom of a waterbody), treat the path as a linear feature with a buffer around it, where the buffer is a vertical distance from the contour, not a horizontal one. The size of the vertical buffer should be equal to the precision with which the elevation is recorded. For example, if the precision is 100 feet (e.g. the precision of an elevation recorded as \"2600 ft\"), then the buffer is 100 vertical feet. Determine the shape of the feature using lines interpolated (or measured) one half of the buffer distance below the given contour and one half the buffer distance above the given contour (e.g. at 2550 feet and 2650 feet for the elevation example \"2600 ft\")."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:202
+msgid "If an elevational range is given (e.g. 100-200 m), it is difficult to know whether the range was intended to encompass uncertainties in elevation or just the elevational bounds for the Location. To be conservative, we have to assume that it does not account for uncertainty in elevation and we need to add a buffer as described above around the upper and lower limits of the given range. For the example \"100 - 200 m\" the buffer is 100 m, so the lower boundary of the shape would be at 100 - 50 = 50 m and the upper boundary would be defined by 200 + 50 = 250 m."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:204
+msgid "Buffers might require interpolation on a topographic map if they do not correspond with the printed contour lines (<<img-paths>>C)."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:206
+msgid "These considerations can apply equally to <<bathymetry>> where contours are available, bearing in mind that some bathymetric contours are quite coarse and that most depths given in locality descriptions are actually above the bottom of the waterbody."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:208
+#, no-wrap
+msgid "*Step 2 – Determine the coordinates and geographic radial*: If the boundary can be determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the corrected center to the furthest point on the boundary of the feature (<<img-paths>>A).\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:210
+msgid "If the feature must be treated as a polyline, draw a straight line connecting the ends of the polyline and determine its midpoint. If the midpoint falls on the polyline, that will be the center (no need for correction), and the geographic radial will be the distance from that point to either of the endpoints of the polyline. If the midpoint does not fall on the polyline, move it to the point on the polyline that minimizes the distance to both endpoints. This is the corrected center and the distance to the endpoints is the geographic radial (<<img-paths>>B)."
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:214
+#, no-wrap
+msgid "Corrected center *a* and geographic radial *b* for a path. *A*: with boundary of the path as a  shape. *B*: with path as a polyline, showing the midpoint *c* between the ends of the path. *C*: uncorrected center *c* of a boundary, corrected center *a* and geographic radial *b* of bounded section of a contour line, in this case an isohypse of 220 m with an elevational uncertainty of 10 m."
+msgstr ""
+
+#. type: Target for macro image
+#: 0200.en.adoc:215
+#, no-wrap
+msgid "img/web/paths.png"
+msgstr ""
+
+#. type: Title =====
+#: 0200.en.adoc:217
+#, no-wrap
+msgid "Feature – Junction, Intersection, Crossing, Confluence"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:220
+msgid "The <<locality>> is the junction of two or more <<path,paths>> – roads, a road and a river, the mouth of a river (i.e. where it meets a larger water body), a road or river and an administrative <<boundary>> (e.g. of a park), a road and a contour line, etc."
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:225
+msgid "\"junction of Coora Rd. and E Siparia Rd\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:226
+msgid "\"Where Dalby Road crosses Bunya Mountains National Park Boundary\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:227
+msgid "\"confluence of Rio Claro and Rio La Hondura\""
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:232
+#, no-wrap
+msgid "*Step 1 – Determine the feature boundaries*: Determine the boundary of the junction using routes of highways, roads, and rivers from resources such as Google Maps, Mapquest or OpenStreetMap, road atlases, <<GPS>> navigators, and satellite or aerial images (<<img-junction>>A). Most modern spatial data can be used to determine the actual boundaries. If the only available representation of the junction shows the adjoining paths as lines, then the boundary must be determined as for <<Feature – without Obvious Spatial Extent>>.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:234
+msgid "For a confluence of two waterways, the boundary is a triangle that consists of the two segments at the same <<elevation>> reaching from where the waterways join to the opposite shores at the same elevation, plus the segment that joins those two points on the opposite shores (<<img-junction>>B)."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:236
+#, no-wrap
+msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, use the same method to determine the <<coordinates>> and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature (<<img-junction>>B).\n"
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:240
+#, no-wrap
+msgid "*A*: Crossing of a road and a stream with details of boundary, corrected center *a* (with no need for correction) and geographic radial *b* of the intersection. *B*: Boundary, corrected center *a* and geographic radial *b* of a confluence of two rivers."
+msgstr ""
+
+#. type: Target for macro image
+#: 0200.en.adoc:241
+#, no-wrap
+msgid "img/web/junction.png"
+msgstr ""
+
+#. type: Title =====
+#: 0200.en.adoc:243
+#, no-wrap
+msgid "Feature – Cave"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:246
+msgid "The <<locality>> is a cave, an underground mine, etc. For details of how to record a locality within a cave, see {gbp}#caves[Caves^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:251
+msgid "\"Giant Dome, Hall of Giants, Carlsbad Caverns\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:252
+msgid "\"Cueva de Las Brujas\""
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:257
+#, no-wrap
+msgid "*Step 1 – Determine the feature boundaries*: Locate the cave and/or its main entrance.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:259
+msgid "Cave <<extent>> evident – if a map of all the interior of the cave with measurements and orientation to the surface is available, or if a position can be determined directly above the <<location>> inside the cave using the <<ground-zero>> concept (see {gbp}#determining-location[Determining Location^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]), determine the <<boundary>> as if it is a <<Feature – with Obvious Spatial Extent>> (<<img-caves>>A)."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:261
+msgid "Cave extent not evident – if the limits of the cave are not evident: a) use the nearest identifiable <<feature>> to determine the extent and boundary of the cave, as for <<Feature – without Obvious Spatial Extent>> (<<img-caves>>B); or b) determine the <<coordinates>> of the cave entrance and use any evidence of the size of the cave to circumscribe the boundary as a circle around the entrance with a <<radial,radius>> commensurate with its size (<<img-caves>>C). Document accordingly in term:dwc[georeferenceRemarks]."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:263
+#, no-wrap
+msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, use the same method to determine the coordinates and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature.\n"
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:267
+#, no-wrap
+msgid "Boundary, corrected center *a* and geographic radial *b* of a cave. *A*: cave extent known and projected onto the surface. *B*: cave extent not known, but inferred from other evidence. *C*: cave extent not known, but maximum horizontal length known and measured from the entrance."
+msgstr ""
+
+#. type: Target for macro image
+#: 0200.en.adoc:268
+#, no-wrap
+msgid "img/web/caves.png"
+msgstr ""
+
+#. type: Title =====
+#: 0200.en.adoc:270
+#, no-wrap
+msgid "Feature – Dive Location"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:273
+msgid "The <<locality>> is a marine or freshwater diving site. Commonly recorded using the <<geographic-coordinates>> of the point on the surface where the diver entered the water (i.e. the <<entry-point>>)."
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:278
+msgid "\"Exploratory dive extending in a rough circle of 20 meters diameter between depths of 75 and 100 meters, beginning 100 meters south east of the entry point at a depth of 85 meters.\""
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:283
+#, no-wrap
+msgid "*Step 1 – Determine the feature boundaries*: Locate the <<extent>> of the dive as a 3D shape, which should be projected perpendicularly onto the water surface. Determine the <<boundary>> of that projection on the horizontal plane (i.e. the <<geographic-boundary>>) (<<img-dive-location>>).\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:285
+msgid "Dive <<extent>> evident – underwater <<location,locations>> are often recorded as a distance, <<direction>> and water <<depth>> from the entry point. Below the surface there may be a \"trajectory\" with a three dimensional aspect that includes a horizontal component and a minimum and maximum water depth. Use these to circumscribe the boundary on the surface (see <<img-dive-location>>A and {gbp}#three-dimensional-shapes[Three Dimensional Shapes^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^])."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:287
+msgid "Dive extent not evident – if the limits of the dive are not evident, there is no trajectory, and no distance or direction from the entry point, use a reasonable upper limit for the distance the diver might have been able to cover in a straight line from and back to the entry point. This could vary greatly depending on the diver, the depth reached, equipment used, etc. Use any evidence of the length of the dive to circumscribe the boundary as a circle around the entry point with a <<radial,radius>> commensurate with that length (<<img-dive-location>>B)."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:289
+#, no-wrap
+msgid "*Step 2 – Determine the coordinates and geographic radial*: Treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary of the feature.\n"
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:293
+#, no-wrap
+msgid "Determination of the corrected center *a* and geographic radial *b* of a dive location. *A*: side view of a dive. *B*: top view of a dive location with evident extent, projected onto the surface. *C*: top view of a dive location with extent not evident, but inferred from other evidence (in this case, an island)."
+msgstr ""
+
+#. type: Target for macro image
+#: 0200.en.adoc:294
+#, no-wrap
+msgid "img/web/dive-location.png"
+msgstr ""
+
+#. type: Title =====
+#: 0200.en.adoc:296
+#, no-wrap
+msgid "Feature – Headwaters of a Waterway"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:299
+msgid "The headwater of a waterway may or may not be well defined. For most sizeable rivers a headwater is designated. If not, there is no universally agreed upon definition for a headwater. A reasonable interpretation might be the beginning of the most upstream first order stream that is a tributary of the named waterway. However, there is no guarantee that the author of the <<locality>> description used that definition. Therefore, we recommend the conservative solution that includes the watershed of all of the tributary streams of lower order than the waterway mentioned."
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:304
+msgid "\"headwaters of the Missouri River\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:305
+msgid "\"Cabecera Río Manso\""
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:310
+#, no-wrap
+msgid "*Step 1 – Determine the feature boundaries*: Sometimes the position of a headwater is well known, e.g. it originates in a spring, lake, marsh, or a generally accepted beginning of a stream. If the headwater issues from a stationary waterbody such as a spring or lake, the feature is a line segment or polyline across the area where the water flows out of the stationary waterbody. In the latter case, treat the <<boundary>> as for a <<path>> (see <<Feature – Path>>), albeit a short one, as it is transverse to the flow of the waterway (<<img-headwater>>).\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:312
+msgid "If the headwater is not designated, use the set of all of the streams upstream of the waterway mentioned. Draw the least convex polygon containing the entire set of streams as the *boundary* (<<img-watershed>>)."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:314
+#, no-wrap
+msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary. The corrected center should be on a waterbody within the boundaries.\n"
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:318
+#, no-wrap
+msgid "Overview of a headwater issuing from a stationary waterbody (in this case a lake), with detail of the corrected center *a* and geographic radial *b*."
+msgstr ""
+
+#. type: Target for macro image
+#: 0200.en.adoc:319
+#, no-wrap
+msgid "img/web/headwater.png"
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:322
+#, no-wrap
+msgid "Overview of a watershed as the headwater of a river *R* with detail showing the boundaries of the upstream tributaries of *R*, with center *c*, corrected center *a* and geographic radial *b*."
+msgstr ""
+
+#. type: Target for macro image
+#: 0200.en.adoc:323
+#, no-wrap
+msgid "img/web/watershed.png"
+msgstr ""
+
+#. type: Title =====
+#: 0200.en.adoc:325
+#, no-wrap
+msgid "Feature – near a Feature"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:328
+msgid "The <<locality>> is given with a proximity to a <<feature>>, usually written as \"near\", \"in the vicinity of\", or \"adjacent to\", without any particular <<heading>> or distance. \"Off\" of a locality, often seen in marine locations, is included here, but in this case there is at least one constraint imposed by the shore."
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:333
+msgid "\"before Ceibas\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:334
+msgid "\"near Dina Huapi\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:335
+msgid "\"off Rottnest island\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:336
+msgid "\"adjacent to the railway underpass on Smith Street\""
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:341
+#, no-wrap
+msgid "*Step 1 – Determine the feature boundaries*: First determine the <<boundary>> of the feature that is mentioned in the description, based on the feature type, either as <<Feature – with Obvious Spatial Extent>>, or as <<Feature – without Obvious Spatial Extent>>. Then, to account for the proximity indicator, extend that boundary outward for a fixed distance in all directions (<<img-near-a-feature>>A). Call this the \"extended feature\". If the extension overlaps the extension of any other similar feature, modify the boundary in the shared space to be half the distance between the nearest boundaries between the two features (<<img-near-a-feature>>B).\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:343
+msgid "At the time the locality was recorded, neighbouring features might not have necessarily been in the same place as they are now. Also, features may have changed size in the time between the recording of the locality and the time when the map you use was made. These considerations add to the vagaries associated with this type of locality and underline the importance to never describe localities in this way."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:345
+msgid "The buffer distance for the extension is arbitrary – it is hard to defend any given value as a default. Make a judgement and imagine what the person who recorded the locality meant. Document the rationale and decisions made in term:dwc[dwc:georeferenceRemarks]."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:347
+#, no-wrap
+msgid "*Step 2 – Determine the coordinates and geographic radial:* Once the boundary of the extended feature has been determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary of the extended feature.\n"
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:351
+#, no-wrap
+msgid "Boundary, corrected center *a* and geographic radial *b* of an interpretation of locality type \"_near a Feature_\" with a boundary extended a fixed distance in all directions, in this case 10 km. *A*: Boundary extended a fixed distance in all directions with no neighbouring conflicts. *B*: Boundary extended a fixed distance in all directions except in the area overlapping a similar feature, where it extends half the distance to the neighbouring feature."
+msgstr ""
+
+#. type: Target for macro image
+#: 0200.en.adoc:352
+#, no-wrap
+msgid "img/web/near-a-feature.png"
+msgstr ""
+
+#. type: Title =====
+#: 0200.en.adoc:354
+#, no-wrap
+msgid "Feature – between Two Features"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:357
+msgid "The <<locality>> description uses the pattern \"between A and B\", where A and B are two distinct <<feature,features>>."
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:362
+msgid "\"between Missoula and Florence, Montana\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:363
+msgid "\"Entre Pampa Blanca y Pampa Vieja, Jujuy\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:364
+msgid "\"between Point Reyes and Inverness\""
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:369
+#, no-wrap
+msgid "*Step 1 – Determine the feature boundaries*: Determine the <<boundary,boundaries>> of each feature as <<Feature – with Obvious Spatial Extent>> or <<Feature – without Obvious Spatial Extent>> (<<img-between-two-features>>A).\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:371
+#, no-wrap
+msgid "*Step 2 – Determine the coordinates and geographic radial*: Once you have determined the boundaries of the two features, find their <<corrected-center,corrected centers>>, as for <<Feature – with Obvious Spatial Extent>>. Use the midpoint between the corrected centers of the two features to determine the <<coordinates>> of the <<location>> between the features (<<img-between-two-features>>B). The <<geographic-radial>> of the location between the two features is half the distance between the corrected centers of the features (<<img-between-two-features>>B).\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:373
+#, no-wrap
+msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Radial of Feature#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:375
+#, no-wrap
+msgid "*A*: Boundary, corrected center *a* and geographic radial *b* of two features. *B*: Coordinates *c* and geographic radial *d* of the interpretation of a location of the type \"_between Two Features_\"."
+msgstr ""
+
+#. type: Target for macro image
+#: 0200.en.adoc:376
+#, no-wrap
+msgid "img/web/between-two-features.png"
+msgstr ""
+
+#. type: Title =====
+#: 0200.en.adoc:378
+#, no-wrap
+msgid "Feature – between Two Paths"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:381
+msgid "The <<locality>> describes a <<location>> between two <<path,paths>> (two roads, two rivers, a road and a river, etc.)."
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:386
+msgid "\"between the Great Western Hwy and the railway line\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:387
+msgid "\"between Tanama R. and Clearwater Ck.\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0200.en.adoc:388
+msgid "\"entre Av. Corrientes y Av. Córdoba\" (i.e. two streets that don’t intersect)."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:393
+#, no-wrap
+msgid "*Step 1 – Determine the feature boundaries*: Create a <<boundary>> that includes the two paths and any other boundaries that terminate those paths (e.g. the border of a given administrative division) (<<img-between-two-paths>>A).\n"
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:395
+msgid "Paths may cross each other one or more times, with the area between switching from one side of each path to the other, resulting in a boundary consisting of multiple polygons (<<img-between-two-paths>>B)."
+msgstr ""
+
+#. type: Plain text
+#: 0200.en.adoc:397
+#, no-wrap
+msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> of the corrected center and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the corrected center to the furthest point on the boundary of the <<feature>>.\n"
+msgstr ""
+
+#. type: Block title
+#: 0200.en.adoc:401
+#, no-wrap
+msgid "Boundary, corrected center *a* and geographic radial *b* for a location between two paths (light shaded area), with location restricted by an administrative boundary (dashed line). *A*: Paths do not cross. *B*: Paths cross each other multiple times."
+msgstr ""
+
+#. type: Target for macro image
+#: 0200.en.adoc:402
+#, no-wrap
+msgid "img/web/between-two-paths.png"
+msgstr ""
+
+#. type: Title ===
+#: 0220.en.adoc:1 appa.en.adoc:62
+#, no-wrap
+msgid "Offsets"
+msgstr ""
+
+#. type: Block title
+#: 0220.en.adoc:3 0230.en.adoc:3
+#, no-wrap
+msgid "**Definition**"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:7
+msgid "An *offset* is a displacement from a reference location. An offset is usually used in conjunction with a heading to give a distance and direction from a feature (see {gbp}#offsets[Offsets^] and {gbp}#uncertainty-related-to-offset-precision[Uncertainty Related to Offset Precision^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). There are a variety of ways in which offsets with features and headings are represented in locality descriptions, each with its own methods of spatial interpretation."
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:10
+msgid "In all cases, both for the <<shape>> <<georeferencing-method,method>> and for the <<point-radius>> <<georeferencing-method,method>> using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator], the <<boundary,boundaries>> of the reference <<feature,feature(s)>> are needed. Thus, this section on Offsets will repeatedly refer to features as determined by the methods presented in the various sections of <<Geographic Feature only>>."
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:12
+msgid "The <<locality-type,locality types>> that involve offsets, in addition to the tricky one we have already seen above (\"near a feature\", <<Feature – near a Feature>>), are:"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:14
+msgid "distance only (e.g. \"5 mi from Bakersfield\")"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:15
+msgid "<<heading>> only (e.g. \"North of Bakersfield\")"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:16
+msgid "distance along a <<path>> (e.g. \"13 miles east (by road) from Bakersfield\")"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:17
+msgid "distance along orthogonal <<direction,directions>> (e.g. \"2 miles east and 3 miles north of Bakersfield\")"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:18
+msgid "distance at a heading (e.g. \"10 miles east (by air) from Bakersfield\")"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:19
+msgid "distances from two distinct paths (e.g. \"1.5 miles east of Louisiana State Highway 1026 and 2 miles south of U.S. Highway 190\")"
+msgstr ""
+
+#. type: Title ====
+#: 0220.en.adoc:20
+#, no-wrap
+msgid "Offset – Distance only"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:23
+msgid "<<locality,Locality>> consists of an <<offset>> from a <<feature>> without any direction specified."
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:28
+msgid "\"5 km outside Calgary\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:29
+msgid "\"12 km de Purmamarca\""
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:32
+#, no-wrap
+msgid "*Locality Type:* [ui-element]#Distance only#\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:34
+#, no-wrap
+msgid "*Step 1 – Determine the feature boundaries:* Determine the <<boundary>> of the feature as you would for <<Feature – near a Feature>>, except that the distance to use for the buffer is the distance given in the locality description, and there is no need to account for the proximity of other features.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:36 0220.en.adoc:230
+#, no-wrap
+msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:38
+#, no-wrap
+msgid "*Offset Distance*: Set to 0. The distance has already been incorporated in the determination of the boundary. Use the distance and units given in the locality description to <<georeference>> using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^].\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:40
+#, no-wrap
+msgid "*Distance Precision:* Though the [ui-element]#Offset Distance# is set to zero, the [ui-element]#Distance Precision# should still be set (see <<Distance Precision>>) to account for this source of <<uncertainty>>.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:42
+#, no-wrap
+msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error# (see <<Georeferencing Concepts>>).\n"
+msgstr ""
+
+#. type: Title ====
+#: 0220.en.adoc:43
+#, no-wrap
+msgid "Offset – Heading only"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:46
+msgid "The <<locality>> consists of a direction from a <<feature>> without any distance specified. Note that seldom is such information given alone; there is usually some supporting information. For example, the locality may have higher-level geographic information such as \"East of Albuquerque, Bernalillo County, New Mexico\". This provides a stopping point (the county border), and should allow you to <<georeference>> the locality. Alternatively, there might be another similar feature in the direction of the given <<heading>> that can constrain the <<offset>>."
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:51
+msgid "\"N Palmetto\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:52
+msgid "\"W of Berkeley\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:53
+msgid "\"Saladillo E\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:54
+msgid "\"Al N de Saladillo\""
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:59
+#, no-wrap
+msgid "*Step 1 – Determine the feature boundaries*: First determine the <<boundary>> of the given feature based on the feature type, either as for <<Feature – with Obvious Spatial Extent>>, or as for <<Feature – without Obvious Spatial Extent>>. Then, to account for the offset at a heading, extend that boundary outward in a cone defined by the heading <<uncertainty>> (see {gbp}#offset-direction-only[Offset – Direction Only^] and {gbp}#uncertainty-related-to-heading[Uncertainty Related to Heading^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]) until reaching a constraining boundary imposed by other information in the locality record, or until reaching the proximity of another similar feature, whichever is nearer to the original feature (<<img-offset-heading>>A). Call this the \"extended feature\". If the extension impinges on any similar extension of another similar feature in the cone of the specified heading, modify the boundary in the shared space to be half the distance between the nearest boundaries between the two features (<<img-offset-heading>>B). For example, \"N Palmetto\" could mean \"northern part of Palmetto\" or \"North of Palmetto\". Since we have no way of knowing which was intended, we choose the latter interpretation, which is more inclusive and will entirely contain the less inclusive interpretation. Use the rules for heading uncertainty to determine the angle within which to find the nearest similar feature. For example, for \"N Palmetto\" look for a named place somewhere between NE and NW of Palmetto.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:61
+#, no-wrap
+msgid "*Step 2 – Determine the coordinates and geographic radial*: Once you have determined the boundary of the extended feature, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary of the extended feature.\n"
+msgstr ""
+
+#. type: Block title
+#: 0220.en.adoc:65
+#, no-wrap
+msgid "A locality \"east of\" a feature, but bounded on the east by an administrative border (dotted line). *A*: Boundary and corrected center *a* of the starting feature. The cone to the east forms part of the new boundary with center *c* (no need for correction) and geographic radial *d*. *B*: Similar to A, but with an intervening feature to the northeast before the border."
+msgstr ""
+
+#. type: Target for macro image
+#: 0220.en.adoc:66
+#, no-wrap
+msgid "img/web/offset-heading.png"
+msgstr ""
+
+#. type: Title ====
+#: 0220.en.adoc:68
+#, no-wrap
+msgid "Offset – Distance along a Path"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:71
+msgid "The <<locality>> consists of a reference <<feature>> to start from and a distance to travel along a <<path>> from there. Most of the time there will be just one path that matches the description and it will not be very wide compared to the reference feature, for example, a highway out of a town, or a stream out of a lake. In cases such as these, the <<georeferencing-method>> is relatively simple (see <<Offset along a Narrow Path>>). If the path is wide enough that multiple possible routes could be taken along it, such as in a wide river, the method for dealing with it is a little more complex (see <<Offset along a Wide Path>>). Sometimes there might be multiple distinct possible paths that match the locality description, such as two different roads in the same general matching direction out of a town, and there is a third method to use to find the <<georeference>> (see <<Offset along Multiple Possible Paths>>). In all cases, the georeference will cover a segment of the path or possible paths that includes all the sources of <<uncertainty>>. Though there might be a <<heading>> mentioned in the locality description (e.g. \"9 km S El Bolsón on Ruta 40\"), it serves only to constrain which path or paths are possible, and does not contribute uncertainty due to heading <<precision>>."
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:73
+msgid "The more accumulated curvature there is in the path, the more important it is to measure carefully (and therefore use a map of appropriate scale or zoom), otherwise there will be an accumulated error in the position of the offset. The less detail there is in the map compared to the real path, the greater the overestimate of the actual distance from the starting point to the end point will be because the measurements will be \"cutting corners\" along the whole measured path."
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:75
+msgid "The more accumulated change in elevation there is along a path, the greater the deviation between the distance on the ground and the horizontal distance on a map. The distance on the ground is always greater than the corresponding horizontal distance. This effect is generally not very large, especially considering that localities of the type \"Distance along a Path\" follow a path that is traversable. Traversable roads and rivers can not have abrupt or excessive inclines. The only troublesome case is a walking path through steep terrain. No mainstream tools other than GIS, or measuring in situ again, permit the direct determination of distance on the ground."
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:77
+msgid "First let's get an idea of how large the elevation effect can be, to understand the circumstances under which it is worth making the extra effort to estimate the distance on the ground. An important thing to understand is that the changes in elevation, both up and down, contribute to lengthen the route relative to the horizontal distance. The distance on the ground, on the path, is stem:[sqrt(x^2+y^2)], where stem:[x] is the projected horizontal distance and stem:[y] is the accumulated sum of changes in elevation. Note that the accumulated sum of changes in elevation is not necessarily the same as the final change in elevation between the starting point and the ending point of the trajectory. On a road, there could be ups and downs, and the sum of changes includes both, added as absolute values."
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:79
+msgid "Let's take an extreme case using the steepest road in the world, Baldwin Street in Dunedin, New Zealand. The street has a maximum grade of 35%. For comparison, highways with grades of 6% are usually considered steep enough to merit cautionary signage, and more than about 12% is rare to find. With a 35% grade, stem:[y] is 0.35 times stem:[x]. Set stem:[x = 1] and do the calculation. The distance on the ground would be stem:[sqrt(0.35^2 + 1^2)] or 1.059 (5.9% longer). In a more normal extreme case of a 10% grade, the difference would be just 0.5%. Thus, under normal circumstances the difference is essentially negligible for roads and certainly so for navigable waters."
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:81
+msgid "There are several ways to estimate distances on the ground without specialized tools or GIS. One way is to use an image of the elevation profile, which can be obtained using a screen capture in Google Earth Pro, for example. The image must be distorted so that the scale in both stem:[x] and stem:[y] is the same (1m elevation = 1m horizontal distance). With the image thus flattened, measure along the path of elevation and compare it to the length of the horizontal distance on the image."
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:83
+msgid "A second way to estimate the distance on the ground is to sum all the elevation gains between pair-wise minima and maxima and do the same for all the pair-wise elevation losses. Sum the gains and losses (both as positive, because the rises and falls both contribute to positive length gains). Use that sum as the rise (stem:[y]) in a slope calculation where the run (stem:[x]) is the horizontal length of the path. From stem:[x] and stem:[y], calculate the distance on the ground as above."
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:85
+msgid "A third way to estimate the distance on the ground is a gross simplification of the second method, above. Instead of measuring all pair-wise gains and losses, sum the net changes in elevation along three segments, 1) from the elevation at the beginning of the path to the lowest elevation, 2) the net change from the lowest elevation to the highest elevation, and 3) the net change from the highest elevation to the elevation at the end of the path."
+msgstr ""
+
+#. type: Title =====
+#: 0220.en.adoc:86
+#, no-wrap
+msgid "Offset along a Narrow Path"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:92
+msgid "\"Ruta Nacional 81, 8 km O de Ingeniero Guillermo Nicasio Juárez\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:93
+msgid "\"left bank of the Mississippi River, 16 mi downstream from St. Louis\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:94
+msgid "\"500m up Skeleton Gorge\""
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:97 0220.en.adoc:119 0220.en.adoc:224
+#, no-wrap
+msgid "*Locality Type:* [ui-element]#Distance along path#\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:99
+#, no-wrap
+msgid "*Step 1 – Determine the starting feature boundaries*: Find the <<boundary>> of the starting feature, which is the intersection of the reference <<feature>> with the <<path>> as you would for <<feature-junction-intersection-crossing-confluence,Feature – Junction, Intersection, Crossing, Confluence>> (<<img-offset-narrow-path>>).\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:101
+#, no-wrap
+msgid "*Step 2 – Determine the starting feature coordinates and length of the matching path*: Once the <<boundary>> of the starting <<feature>> has been determined, find the midpoint along the path within the boundary of the feature it intersects with (<<img-offset-narrow-path>>B). Note the distance along the path from the midpoint to the boundary of the feature it intersects in the direction of the offset. Enter the length of that segment in [ui-element]#Radial of Feature# in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^].\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:103
+#, no-wrap
+msgid "*Step 3 – Enter the [ui-element]#Input Latitude# and [ui-element]#Longitude#*: Enter the coordinates of the <<offset>> position, which can be determined by measuring the length along the midline of the path from the midpoint found in the previous step to the distance along the path given in the <<locality>> description. See the notes on map scale and accumulated <<error>> in <<Offset – Distance along a Path>>.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:105
+#, no-wrap
+msgid "*Step 4 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).\n"
+msgstr ""
+
+#. type: Block title
+#: 0220.en.adoc:107
+#, no-wrap
+msgid "A locality of the type \"Offset along a path\" where the path is narrow, specifically, along a road \"east of\" a feature. *A*: Inset showing the boundary of the section of the path that intersects the starting feature, midpoint *a*, and half the distance along the path inside the feature *b*. *B*: The midpoint *a* and the offset *c* measured along the road."
+msgstr ""
+
+#. type: Target for macro image
+#: 0220.en.adoc:108
+#, no-wrap
+msgid "img/web/offset-narrow-path.png"
+msgstr ""
+
+#. type: Title =====
+#: 0220.en.adoc:110
+#, no-wrap
+msgid "Offset along a Wide Path"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:116
+msgid "\"Mississippi River, 16 mi downstream from St. Louis\""
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:121
+#, no-wrap
+msgid "*Step 1 – Determine the starting feature boundaries*: Find the center of the starting feature, which is the intersection of the reference <<feature>> with the <<path>> as you would for <<feature-junction-intersection-crossing-confluence,Feature – Junction, Intersection, Crossing, Confluence>> (<<img-offset-wide-path>>A).\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:123
+#, no-wrap
+msgid "*Step 2 – Determine the starting feature coordinates and geographic radial*: Once the <<boundary>> of the starting feature has been determined, use the same method to determine the <<corrected-center>> and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the corrected center to the furthest point on the boundary of the starting feature (<<img-offset-wide-path>>A).\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:125
+#, no-wrap
+msgid "*Step 3 – Calculate preliminary uncertainties*: Calculate a preliminary <<uncertainty>> by entering the geographic radial from *Step 1* into the [ui-element]#Radial of feature# in the {gcm}[Georeferencing Calculator] and fill in the rest of the parameters for the [ui-element]#Distance along path# <<locality-type>>.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:127
+#, no-wrap
+msgid "*Additional parameters for Step 4*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:129
+#, no-wrap
+msgid "*Step 4 – Final path boundary*: The objective of this step is to estimate a boundary around the set of possible paths matching the description. To do so, we need to trace at least three of the possible paths. The first of these paths is from the coordinates of *Step 2* along one side of the wide path to a distance equal to the offset distance given in the locality description. The second path is similar, but along the opposite side of the wide path starting at a point of equal elevation and tracing along that opposite side. The third path is from the coordinates of Step 2, along the middle of the wide path (or the deepest channel if locatable in the case of a waterway) to as far as to the offset distance given in the locality description. If there are other reasonably likely paths that are very different from these three, trace them in a similar manner. Each of these paths terminate at an X in the example in <<img-offset-wide-path>>B. From each of these termination points, trace both forward and backward to a distance equal to the uncertainty determined in *Step 3* (the segments of the paths marked with u in <<img-offset-wide-path>>B). The outer endpoints of all the segments marked with u form a polygon (<<img-offset-wide-path>>B). This polygon is the final path boundary we seek.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:131
+#, no-wrap
+msgid "*Step 5 – Final corrected center and geographic radial*: Once you have determined the boundary of the final boundary from *Step 4*, treat as for <<Feature – with Obvious Spatial Extent>>, namely, find the corrected center of the final path boundary and measure the distance from there to the furthest point on the boundary. Use the coordinates of the corrected center for the resulting [ui-element]#Latitude# and [ui-element]#Longitude# and use the length of the geographic radial of the final path boundary as the final [ui-element]#Uncertainty#. Use all of the rest of the output values from the calculation in *Step 4* in the final georeference. No new calculation has to be made for this step.\n"
+msgstr ""
+
+#. type: Block title
+#: 0220.en.adoc:133
+#, no-wrap
+msgid "Determination of the final coordinates and geographic radial for a locality of the type [ui-element]#Offset along path#, where the path is wide enough that there are multiple reasonable routes within it, in this case a river. *A*: Boundary, corrected center *a₁* and geographic radial *b₁* for the starting feature. *B*: Offsets *x* along various routes along the wider path, buffers of uncertainty *u* forward and backward along the possible paths, and the boundary (red dotted segments) defined by the buffers. *C*: Boundary, corrected center *a₂* and geographic radial *b₂* of the final path, that is, the section of the river covered by the distance X downstream from the corrected center of the starting feature *a₁* buffered by the uncertainties *u*."
+msgstr ""
+
+#. type: Target for macro image
+#: 0220.en.adoc:134
+#, no-wrap
+msgid "img/web/offset-wide-path.png"
+msgstr ""
+
+#. type: Title =====
+#: 0220.en.adoc:136
+#, no-wrap
+msgid "Offset along Multiple Possible Paths"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:142
+msgid "\"15km al O de Rosario por ruta\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:143
+msgid "“5 km up Cox River from the coast, Limmen NP, NT, Australia” (Cox River is a delta with several arms)."
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:146
+#, no-wrap
+msgid "*Locality Type:* As the <<locality-type>> of the possible <<path,paths>>.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:148
+#, no-wrap
+msgid "*Step 1 – Determine the starting feature boundaries*: Find the center of the intersection of the reference <<feature>> with each path as you would for <<feature-junction-intersection-crossing-confluence,Feature – Junction, Intersection, Crossing, Confluence>> (<<img-offset-multiple-paths>>A).\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:150
+#, no-wrap
+msgid "*Step 2 – Determine the boundaries for distinct paths*: For each of the distinct possible paths, determine the final <<boundary,boundaries>> of the path segment as for <<Offset along a Narrow Path>> or <<Offset along a Wide Path>>, as appropriate (<<img-offset-multiple-paths>>B).\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:152
+#, no-wrap
+msgid "*Step 3 – Determine the final coordinates and geographic radial*: Treat the set of boundaries from *Step 2* and the minimum area between them as parts of the same feature. Find the <<corrected-center>> and <<geographic-radial>> for this combined feature (<<img-offset-multiple-paths>>B). Use the <<coordinates>> of the corrected center of this combined feature for the resulting [ui-element]#Input Latitude# and [ui-element]#Longitude# and use the length of the geographic radial of the combined feature as the final <<uncertainty>>. No further calculation is necessary.\n"
+msgstr ""
+
+#. type: Block title
+#: 0220.en.adoc:154
+#, no-wrap
+msgid "Determination of the input coordinates and geographic radial for a [ui-element]#Locality Type Offset along path# where there are multiple possible paths matching the locality description, in this case two roads out of a town. *A*: Inset showing the boundaries, midpoints (*a₁* and *a₂*), and distances from midpoints to outer edges (shown as geographic radials *b₁* and *b₂*) of the intersections of the paths and the starting feature. *B*: Boundary, corrected center *a₃* and geographic radial *b₃* for the combination of the two road sections, each defined by offsets at a distance X along the respective paths from their respective midpoints in the starting feature, plus or minus the uncertainties determined for the [ui-element]#Distance along a Path# locality type *u*."
+msgstr ""
+
+#. type: Target for macro image
+#: 0220.en.adoc:155
+#, no-wrap
+msgid "img/web/offset-multiple-paths.jpg"
+msgstr ""
+
+#. type: Title ====
+#: 0220.en.adoc:157
+#, no-wrap
+msgid "Offset – Distance along Orthogonal Directions"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:160
+msgid "The <<locality,locality>> consists of a linear distance in each of two orthogonal <<direction,directions>> from a <<feature>>. For more information and details see {gbp}#offset-along-orthogonal-directions[Offset along Orthogonal Directions^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:162
+msgid "Where localities have two orthogonal measurements in them, it should always be assumed that the measurements are \"by air\" unless there is a reference that indicates otherwise."
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:167
+msgid "\"6 km N and 4 km W of Welna\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:168
+msgid "\"2 mi E and 1.5 mi N of Kandy\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:169
+msgid "\"2 miles north, 1 mile east of Boulder Falls, Boulder County, Colorado\""
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:172
+#, no-wrap
+msgid "*Locality Type:* [ui-element]#Distance along orthogonal directions#\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:174 0220.en.adoc:206
+#, no-wrap
+msgid "*Step 1 – Determine the starting feature boundaries*: Determine the <<boundary>> of the <<feature>> based on whatever the feature type is, either as for <<Feature – with Obvious Spatial Extent>>, or as for <<Feature – without Obvious Spatial Extent>>.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:176
+#, no-wrap
+msgid "*Step 2 – Determine the starting feature coordinates and geographic radial*: Once the boundary of the starting feature has been determined, use the same method to determine the <<corrected-center>> and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the corrected center to the furthest point on the boundary of the starting feature (<<img-offset-orthogonal-direction>>).\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:178
+#, no-wrap
+msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source,# [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#North or South Offset Distance, East or West Offset Distance#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:180 0220.en.adoc:212
+msgid "For this type of calculation, the output coordinates are different from the _Input Latitude_ and _Input Longitude_."
+msgstr ""
+
+#. type: Block title
+#: 0220.en.adoc:182
+#, no-wrap
+msgid "Example of offsets (*x*, and *y*) in orthogonal directions from the corrected center *a* of a feature with radial *b*. By convention the headings are exactly in the specified directions and contribute no uncertainty due to direction precision."
+msgstr ""
+
+#. type: Target for macro image
+#: 0220.en.adoc:183
+#, no-wrap
+msgid "img/web/offset-orthogonal-direction.jpg"
+msgstr ""
+
+#. type: Title ====
+#: 0220.en.adoc:185
+#, no-wrap
+msgid "Offset – Distance at a Heading"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:188
+msgid "The <<locality,locality>> consists of a distance in a given <<direction>> from a single <<feature>>. Such localities sometimes contain an explicit indicator of how the distance was measured, (e.g. \"by air\", \"air miles W of\", \"due N of\", \"as the crow flies\", \"by road\", \"downstream from\", etc.). Without such an indicator the interpretation is a matter of judgement, which should be documented in term:dwc[georeferenceRemarks]."
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:190
+msgid "Since an offset at a heading \"by air\" will usually encompass the alternative by a path anyway, the former is the recommended locality type to use if there is no indication to the contrary. You can increase the maximum uncertainty to encompass the other option. This recommendation applies if you don’t have a compelling reason to use <<Offset – Distance along a Path>>)."
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:192
+msgid "The addition of an adverbial modifier to the distance part of a locality description (e.g. \"about 25 km WNW Campinas\"), while an honest observation, should not affect the determination of the <<geographic-coordinates>> or the overall <<uncertainty>>."
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:197
+msgid "\"50 miles W of Las Vegas\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:198
+msgid "\"10.2 km E de Amamá\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:199
+msgid "\"16 mi downstream from St Louis on the Mississippi River\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:200
+msgid "\"about 25 km WNW of Campinas\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:201
+msgid "\"10 mi E (by air) Yerevan\""
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:204
+#, no-wrap
+msgid "*Locality Type:* [ui-element]#Distance at a heading#\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:208
+#, no-wrap
+msgid "*Step 2 – Determine the starting feature coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:210
+#, no-wrap
+msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source,# [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Direction#, [ui-element]#Offset Distance#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).\n"
+msgstr ""
+
+#. type: Title ====
+#: 0220.en.adoc:213
+#, no-wrap
+msgid "Offset – Distances from Two Distinct Paths"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:216
+msgid "The <<locality,locality>> consists of orthogonal <<offset>> distances, one from each of two distinct <<path,paths>>."
+msgstr ""
+
+#. type: delimited block =
+#: 0220.en.adoc:221
+msgid "\"1.5 mi E LA Hwy. 1026 and 2 mi S U.S. 190\""
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:226
+msgid "Although this is not technically a distance along a path, the choice of this <<locality-type>> in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^] will allow all of the relevant parameters to be entered."
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:228
+#, no-wrap
+msgid "*Step 1 – Determine the feature boundaries*: Determine the <<boundary,boundaries>> of the area matching the locality description by \"transporting\" each path by its given offset distance and <<direction>>. The transported paths will then overlap, each one having its corresponding buffer due to <<distance-precision,distance precision>> and path widths around it. This overlap of the two buffered areas defines the <<extent>> of the place described (<<img-offset-two-paths>>). Draw the boundary around the overlapping area.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0220.en.adoc:232
+#, no-wrap
+msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Radial of Feature#, [ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).\n"
+msgstr ""
+
+#. type: Block title
+#: 0220.en.adoc:234
+#, no-wrap
+msgid "Determination of a place described as an offset from two paths. *A*: Transportation of the paths by their offsets, *x* and *y*, and directions (in this case south and east). *B*: Intersection *a* of the midlines of the transported paths, and their buffers due to distance precision and path width (*u~x~* and *u~y~*). *C*: Boundary, corrected center *c*, and radial *b* of the place described."
+msgstr ""
+
+#. type: Target for macro image
+#: 0220.en.adoc:235
+#, no-wrap
+msgid "img/web/offset-two-paths.png"
+msgstr ""
+
+#. type: Title ===
+#: 0230.en.adoc:1 appa.en.adoc:118
+#, no-wrap
+msgid "Coordinates"
+msgstr ""
+
+#. type: delimited block =
+#: 0230.en.adoc:7
+msgid "The locality consists of a point represented by **coordinates**, which may be in the form of geographic coordinates (latitude and longitude), Universal Transverse Mercator (UTM), Quarter Degree Squares (QDS), metric grids, map sheets, or any number of other Cartesian reference systems"
+msgstr ""
+
+#. type: Title ====
+#: 0230.en.adoc:9
+#, no-wrap
+msgid "Coordinates – Geographic Coordinates"
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:12
+msgid "The <<locality>> consists of a point represented by <<latitude>> and <<longitude>> <<coordinates>> in one of various <<coordinate-format,coordinate formats>>:"
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:14
+msgid "<<DMS,degrees minutes and seconds>> (DMS)"
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:15
+msgid "degrees and decimal minutes (DDM)"
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:16
+msgid "<<decimal-degrees>> (DD)"
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:18
+msgid "Records should also contain a hemisphere indicator ('E' or 'W' and 'N' or 'S' for DMS and DDM formats in English; '−' for west or south in DD format). For maritime <<location,locations>>, if there is no information that would suggest a particular [ui-element]#Coordinate Source#, use a map of 1:150000 scale, as this is a realistic conservative selection."
+msgstr ""
+
+#. type: delimited block =
+#: 0230.en.adoc:23
+msgid "\"36º 31' 21.4\" N; 114º 09' 50.6\" W\" (DMS) +"
+msgstr ""
+
+#. type: delimited block =
+#: 0230.en.adoc:24
+msgid "\"36º 31.4566’N; 114º 09.8433’W\" (DDM) +"
+msgstr ""
+
+#. type: delimited block =
+#: 0230.en.adoc:25
+msgid "\"−36.524276; −114.164055\" (DD using minus signs to indicate southern and western hemispheres)."
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:28
+#, no-wrap
+msgid "*Locality Type:* [ui-element]#Coordinates only#\n"
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:30
+#, no-wrap
+msgid "*Step 1 – Enter the coordinates*: Enter the <<coordinates>> in the format they were captured from the <<GPS>> or from the verbatim <<locality>> (<<decimal-degrees>>, degrees decimal minutes, or <<DMS,degrees minutes seconds>>) with all of the given digits of <<precision>>.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:32
+msgid "The http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator] calculates and preserves seven digits of precision in decimal degrees so that any transformation between coordinate formats is reversible without introducing rounding errors."
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:34
+#, no-wrap
+msgid "*Step 2 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
+msgstr ""
+
+#. type: Title ====
+#: 0230.en.adoc:35
+#, no-wrap
+msgid "Coordinates – Universal Transverse Mercator (UTM)"
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:38
+msgid "The <<locality>> consists of a point represented by <<coordinates,coordinate>> information in the form of <<UTM,Universal Transverse Mercator (UTM)>> or a related <<coordinate-system>>. For UTM or equivalent coordinates, a Zone should ALWAYS be included to make sure that the <<longitude>> is not ambiguous. Zones are often not reported where a region (e.g. Tasmania) falls completely within one UTM zone. Be aware that UTM zones are valid only between 84°N and 80°S. For details on dealing with UTM Coordinates see {gbp}#universal-transverse-mercator-utm-coordinates[Universal Transverse Mercator (UTM) Coordinates^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:40
+msgid "There are many national and local grids derived from UTM and that work in the same way, such as the Australian Map Grid (AMG)."
+msgstr ""
+
+#. type: delimited block =
+#: 0230.en.adoc:45
+msgid "\"N 4291492 E 456156\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0230.en.adoc:46
+msgid "\"AMG Zone 56, x: 301545 y: 7011991\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0230.en.adoc:47
+msgid "\"30T 699582 m east 5709431 m north\""
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:52
+msgid "Although this is not technically a <<feature>>, the [ui-element]#Geographic feature only# <<locality-type>> in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^] includes all of the relevant parameters."
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:54
+#, no-wrap
+msgid "*Step 1 – Convert the coordinates*: The <<UTM>> <<coordinates>> must be converted to <<decimal-degrees>> using a UTM to <<latitude,Latitude>>/<<longitude,Longitude>> conversion tool. If the Zone is not given with the UTM coordinates, try to determine it using http://www.dmap.co.uk/utmworld.htm[UTM Grid Zones of the World (Morton 2006)^] and any additional geographic information in the <<locality>> or geography fields combined with a UTM zone map. Use all of the digits of <<precision>> from the conversion in the [ui-element]#Input Latitude# and [ui-element]#Longitude#. Choose the [ui-element]#Coordinate Source:# [ui-element]#Locality description#\n"
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:56
+msgid "UTM coordinates are sometimes truncated to fewer than 7 digits in the <<northing>> and 6 digits in the <<easting>>, signifying a less precise location. To make a coordinate conversion, add zeros to the right of each coordinate to make 7 digits overall in the northing and 6 digits in the easting."
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:58
+#, no-wrap
+msgid "*Step 2 – Determine geographic radial*: If the UTM coordinates have 7 digits in the northing and 6 digits in the easting, the <<geographic-radial>> is 0.707 m (because the coordinates distinguish to the nearest meter and the geographic radial is half the diagonal of the 1 m by 1 m <<grid>> cell). For UTM coordinates with fewer digits of precision see <<table-default-geographic-radial>>. This <<radial>> covers the <<uncertainty>> from the UTM <<coordinate-precision>>. The [ui-element]#Coordinate Precision# in the Calculator for this case is the coordinate precision of the [ui-element]#Input Latitude# and [ui-element]#Longitude#, which depends on how many digits of <<decimal-degrees>> are copied from the converted latitude and longitude (<<table-default-geographic-radial>>).\n"
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:60
+#, no-wrap
+msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy/Measurement Error#, and [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
+msgstr ""
+
+#. type: Title ====
+#: 0230.en.adoc:61
+#, no-wrap
+msgid "Coordinates – Grid Systems"
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:64
+msgid "<<locality,Locality>> is a <<grid>> reference (see {gbp}#grids[Grids^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]), such as the 100 m square grids extensively used in Europe, Quarter Degree Square Grids (QDS) as used in South Africa, and the Public Land Survey System (PLSS) system of Townships andSection (TRS) used in the mid- and western USA. Townships in the PLSS system are usually square and six miles on each side, with 36 one-mile by one-mile sections. Be aware that not all townships are square, however, as some were adjusted to conform to administrative or natural boundaries (rivers, for example). Numbered Townships are not unique descriptions without a <<meridian>>, which often is not given in a locality description. The meridian must then be inferred from a Principal Meridian map using other information in the locality description. Similar subdivisions are used in other countries, and should be calculated in a similar way, once the sizes of the cells have been determined (see <<table-default-geographic-radial>>). Map sheets (quadrangles) are sometimes used and can also be calculated as a grid system. Note that, unlike geographic grids, QDS grids are referenced from the top left corner."
+msgstr ""
+
+#. type: delimited block =
+#: 0230.en.adoc:69
+msgid "\"E of Bakersfield, T29S R29E Sec. 34 NE ¼\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0230.en.adoc:70
+msgid "\"QDS 3218CB\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0230.en.adoc:71
+msgid "\"TQ2387\" (Ordnance Survey National Grid)"
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:76
+#, no-wrap
+msgid "*Step 1 – Determine the coordinates*: Determine as for <<Feature – with Obvious Spatial Extent>>. Use the <<coordinates>> for the <<corrected-center>> of the named grid cell. Usually a grid is made up of <<bounding-box,bounding boxes>>, so determining the corrected center should be easy.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:78
+#, no-wrap
+msgid "*Step 2 – Determine the geographic radial*: As for <<Feature – with Obvious Spatial Extent>>. See <<table-default-geographic-radial>> for <<radial,radials>> of regularly shaped Townships, Sections, and subsections.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0230.en.adoc:80
+#, no-wrap
+msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error#, and [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
+msgstr ""
+
+#. type: Title ===
+#: 0240.en.adoc:1 appa.en.adoc:150
+#, no-wrap
+msgid "Difficult Localities"
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:4
+msgid "At times, <<locality>> descriptions are fraught with vagueness. This may be due to any number of reasons, but in particular relates to historic collections in areas that at may have had no named <<feature,features>> to reference at the time when the locality was recorded. See the section {gbp}#difficult-localities[Difficult Localities^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:6
+msgid "A cause of vagueness may be incorrect data entry and it is recommended that checking the original catalogues, ledgers, field notes, specimen labels, etc. be the first step in removing the vagaries of a locality so that it can be <<georeference,georeferenced>> with confidence."
+msgstr ""
+
+#. type: Title ====
+#: 0240.en.adoc:7
+#, no-wrap
+msgid "Dubious Locations"
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:10
+msgid "The most important type of vagueness in a locality description is one in which some or all of the locality is explicitly in question."
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:15
+msgid "\"possibly Isla Boca Brava\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:16
+msgid "\"presumably central Chile\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:17
+msgid "\"Bakersfield?\""
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:20
+#, no-wrap
+msgid "*Georeferencing procedure*: If some part of the locality description is in question, but aside from that there is <<location>> information that is not in question, use the unquestioned part of the locality to determine the <<locality-type>> and <<georeference>> it normally following the appropriate method. Document in term:dwc[georeferenceRemarks] what had to be disregarded in order to georeference the locality in question. For example, for a locality “Argentina: Misiones, possibly Puerto Iguazú”, georeference “Misiones”, which is the most specific part of the locality that is not in question.\n"
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:22
+msgid "If the entire locality is in question, do not georeference it and document in term:dwc[georeferenceRemarks] the reason for not georeferencing (e.g. \"locality in question\")."
+msgstr ""
+
+#. type: Title ====
+#: 0240.en.adoc:23
+#, no-wrap
+msgid "Cannot Be Located"
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:26
+msgid "The cited <<locality>> cannot be found, and there is no other location information in the record (e.g. no administrative divisions cited). This may be for any number of reasons, including:"
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:28
+msgid "There is no locality information cited."
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:29
+msgid "The <<location>> fields contain other than location information."
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:30
+msgid "The <<feature,feature(s)>> cannot be found with available references."
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:35
+msgid "\"locality not recorded\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:36
+msgid "\"Bob Jones\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:37
+msgid "\"summit\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:38
+msgid "\"200 m\""
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:41
+msgid "Do not <<georeference>> these localities. These recommendations apply to all <<locality-type,locality types>>. Document in term:dwc[georeferenceRemarks] the reason for not georeferencing, e.g. \"locality cannot be found with available references\". Fill in the term:dwc[georeferenceSources] so that others do not waste time using the same resources to track down the locality."
+msgstr ""
+
+#. type: Title ====
+#: 0240.en.adoc:42
+#, no-wrap
+msgid "More than One Matching Feature"
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:45
+msgid "At times the <<locality>> cannot be distinguished from among multiple possible candidates because the geographical <<feature>> in the locality description has multiple matches."
+msgstr ""
+
+#. type: Title =====
+#: 0240.en.adoc:46
+#, no-wrap
+msgid "Multiple Related Nearby Features"
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:52
+msgid "\"Nahuel Huapi\" (could refer to a national park or a lake within it) +"
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:53
+msgid "\"Battle Mountain\" (could refer to a mountain or a nearby town) +"
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:54
+msgid "\"San Isidro\""
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:59
+msgid "If there are multiple distinct nearby places with the same name and no further information to distinguish between the possibilities, such as \"Battle Mountain\" and the nearby town with the same name, treat the combination of them as the <<feature>> (<<img-nearby-features>>) and follow the procedure for the appropriate <<locality-type>>. Make note of the multiple possibilities and the procedure used in term:dwc[georeferenceRemarks]."
+msgstr ""
+
+#. type: Block title
+#: 0240.en.adoc:61
+#, no-wrap
+msgid "The boundaries for two distinct nearby features with the same name, with center *c*, corrected center *a*, and geographic radial *b* covering the combination of both possible interpretations of the locality."
+msgstr ""
+
+#. type: Target for macro image
+#: 0240.en.adoc:62
+#, no-wrap
+msgid "img/web/nearby-features.png"
+msgstr ""
+
+#. type: Title =====
+#: 0240.en.adoc:64
+#, no-wrap
+msgid "Multiple Unrelated Features"
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:70
+msgid "\"Laguna Blanca\" (could refer to distinct lagoons or municipalities in at least five different countries) +"
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:71
+msgid "\"Washington Street\" (could refer to multiple streets in different places)"
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:74
+msgid "Do not <<georeference>>. Document in term:dwc[georeferenceRemarks] the reason for not georeferencing, e.g. \"there are multiple possible unrelated features matching the one in the locality description\"."
+msgstr ""
+
+#. type: Title ====
+#: 0240.en.adoc:75
+#, no-wrap
+msgid "Demonstrably Inconsistent"
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:78
+msgid "The <<locality>> description contains irreconcilable inconsistencies – assertions that can not all be simultaneously true. Do not <<georeference>> these localities. Document in term:dwc[georeferenceRemarks] the reason for not georeferencing, e.g. \"locality contains irreconcilable inconsistencies\"."
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:80
+msgid "A common source of inconsistency occurs when the locality description does not match the geopolitical subdivision of which it is supposed to be a part (e.g. \"Missoula County, Idaho\"). <<elevation,Elevation>> is another possible source of inconsistency, especially since elevation data are notoriously inaccurate (see {gbp}#elements-elevation[Elevation^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). It is difficult to know which part of the locality is the one in <<error>> and a risk to judge that one part of the description should take precedence over another."
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:85
+msgid "\"Sonoma County side of the Gualala River, Mendocino County\" (where the river runs between the counties mentioned) +"
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:86
+msgid "\"10 mi W of Bakersfield, 6000 ft\" (There is no place anywhere near 10 mi W of Bakersfield at an elevation of 6000 ft) +"
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:87
+msgid "\"5 mi N of Delano, Kern Co.\" (5 mi N would put the locality in Tulare Co.)"
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:90
+msgid "Do not <<georeference>>. Rather than determine <<coordinates>> for such localities, annotate the locality in term:dwc[georeferenceRemarks] with the nature of the inconsistency (e.g. \"Missoula County not in Idaho\") and refer the locality to the source institution for reconciliation."
+msgstr ""
+
+#. type: Title ====
+#: 0240.en.adoc:91
+#, no-wrap
+msgid "Cultivated or Captive"
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:94
+msgid "The <<locality>> is recorded in association with a captive animal, a cultivated plant or some other non-natural occurrence. The locality cited is often that of a zoo, aquarium, botanical garden, etc. (see {gbp}#dealing-with-non-natural-occurrences[Dealing with Non-natural Occurrences^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:96
+msgid "The fact that an organism is recorded in a place out of its known or assumed natural distribution range does not constitute a problem from the point of view of locating that organism. Therefore, the determination of a georeference should not have any issues aside from those exclusively derived from the locality description itself (as seen for other cases above). This kind of information should instead be captured in the Darwin Core term term:dwc[degreeOfEstablishment]."
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:98
+msgid "If you are georeferencing based on location information only, and not together with the associated occurrence records, you may not have an easy way to capture other kinds of information (e.g. provenance, dates, degree of establishment, etc.). In these cases, it is recommended to amend the original occurrence records that contain the given locality to avoid any loss of information."
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:103
+msgid "\"lab born, University of Oregon\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:104
+msgid "\"bait shop\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:105
+msgid "\"Cultivated in Botanic Gardens from seed obtained from Bourke, NSW.\" +"
+msgstr ""
+
+#. type: delimited block =
+#: 0240.en.adoc:106
+msgid "\"San Diego Wild Animal Park\""
+msgstr ""
+
+#. type: Plain text
+#: 0240.en.adoc:108
+msgid "<<georeference,Georeference>> the locality normally based on the <<locality-type>> and <<feature>>. Retain the <<location>> (e.g. zoo) along with its <<georeference>>, as for other localities in this Guide, but be sure to record the nature of its provenance (cultivated, captive, washed ashore, etc.) in the <<Darwin-Core>> term term:dwc[degreeOfEstablishment]."
+msgstr ""
+
+#. type: Title ==
+#: glossary.en.adoc:2
+#, no-wrap
+msgid "Glossary"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:5
+msgid "The purpose of this glossary is to describe important concepts in accordance with the intended meaning in this document, the associated {gbp}[*_Georeferencing Best Practices_*] (Chapman & Wieczorek 2020) and the https://doi.org/10.35035/gdwq-3v93[Georeferencing Calculator Manual^] (Bloom et al. 2020). These concepts are treated in broader contexts in many other sources. We have adapted the terms presented here from many sources including Wikipedia (as of November, 2019), the ESRI Dictionary (as of November, 2019) (https://support.esri.com/en/other-resources/gis-dictionary/browse/[ESRI n.d.^]), and various articles within https://doi.org/10.4135/9781412953962[Kemp 2008^]."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:7
+#, no-wrap
+msgid "[[accuracy]]accuracy"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:8
+msgid "The closeness of an estimated value (for example, measured or computed) to a standard or accepted (\"true\") value. Antonym: inaccuracy Compare <<error>>, {gbp}#bias[bias], <<precision>>, {gbp}#false-precision[false precision] and <<uncertainty>>."
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:10
+msgid "\"The true value is not known, but only estimated, the accuracy of the measured quantity is also unknown. Therefore, accuracy of coordinate information can only be estimated.\" (ftp://glonass-center.ru/REPORTS/OLD/NRCAN/Accuracy_Standards.pdf[Geodetic Survey Division 1996^], https://www.fgdc.gov/standards/projects/accuracy/part3/chapter3[FGDC 1998^])."
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:12
+msgid "[[bathymetry]]bathymetry::"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:13
+msgid "The measure of <<depth>> of water in oceans, seas and lakes."
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:14
+msgid "The shapes of underwater terrains, including underwater topography and sea floor mapping."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:15
+#, no-wrap
+msgid "[[boundary]]boundary"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:16
+msgid "The spatial divide between what is inside a <<location>> and what is outside of it."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:17
+#, no-wrap
+msgid "[[bounding-box]]bounding box"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:18
+msgid "An area defined by the <<coordinates>> of two diagonally opposite corners of a polygon, where those two corners define the north-south and east-west extremes of the area contained within."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:19
+#, no-wrap
+msgid "[[coordinate-format]]coordinate format"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:20
+msgid "The format in which <<coordinates>> are encoded, such as \"<<decimal-degrees>>\", \"<<DMS,degrees minutes seconds>>\", \"degrees decimal minutes\", or <<UTM>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:21
+#, no-wrap
+msgid "[[coordinate-precision]]coordinate precision"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:22
+msgid "The fraction of a degree corresponding to the number of significant digits in the source <<coordinates>>. For example, if the coordinates are reported to the nearest minute, the <<precision>> is 1/3600th (0.00027778) of a degree; if a <<decimal-degrees,decimal degree>> is reported to two decimal places, the precision is 0.01 of a degree."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:23
+#, no-wrap
+msgid "[[coordinate-reference-system]]coordinate reference system"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:24
+msgid "(also {gbp}#spatial-reference-system[spatial reference system]) A <<coordinate-system>> defined in relation to a standard reference or <<datum>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:25
+#, no-wrap
+msgid "[[coordinate-system]]coordinate system"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:26
+msgid "A geometric system that defines the nature and relationship of the <<coordinates>> it uses to uniquely define positions. Examples include the {gbp}geographic-coordinate-system[geographic coordinate system] and the <<UTM>> <<coordinate-system>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:27
+#, no-wrap
+msgid "[[coordinates]]coordinates"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:28
+msgid "A set of values that define a position within a <<coordinate-system>>. <<coordinates,Coordinates>> are used to represent <<location,locations>> in space relative to other locations."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:29
+#, no-wrap
+msgid "[[corrected-center]]corrected center"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:30
+msgid "The point within a <<location>>, or on its <<boundary>>, that minimizes the <<geographic-radial>> of the location. This point is obtained by making the <<smallest-enclosing-circle>> that contains the entire <<feature>>, and then taking the center of that circle. If that center does not fall inside the boundaries of the feature, make the smallest enclosing circle that has its center on the boundary of the feature. Note that in the second case, the new circle, and hence the <<radial>>, will always be larger than the uncorrected one (see <<img-corrected-center>>)."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:31
+#, no-wrap
+msgid "[[Darwin-Core]]Darwin Core"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:32
+msgid "A standard for exchanging information about biological diversity (see https://www.tdwg.org/standards/dwc/[Darwin Core])."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:33
+#, no-wrap
+msgid "[[datum]]datum"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:34
+msgid "A set of one or more parameters that serve as a reference or basis for the calculation of other parameters https://www.iso.org/standard/74039.html[ISO 19111^]. A datum defines the position of the origin, the scale, and the orientation of the axes of a <<coordinate-system>>. For <<georeference,georeferencing>> purposes, a datum may be a {gbp}#geodetic-datum[geodetic datum] or a {gbp}#vertical-datum[vertical datum]."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:35
+#, no-wrap
+msgid "[[decimal-degrees]]decimal degrees"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:36
+msgid "Degrees expressed as a single real number (e.g. −22.343456). Note that <<latitude,latitudes>> south of the equator are negative, as are <<longitude,longitudes>> west of the <<prime-meridian>> to −180 degrees. See also {gbp}#decimal-latitude[decimal latitude] and {gbp}#decimal-longitude[decimal longitude]."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:37
+#, no-wrap
+msgid "[[depth]]depth"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:38
+msgid "A measurement of the vertical distance below a {gbp}#vertical-datum[vertical datum]. In this document, we try to modify the term to signify the medium in which the measurement is made. Thus, \"water depth\" is the vertical distance below an air-water interface in a waterbody (ocean, lake, river, sinkhole, etc.). Compare {gbp}#distance-above-surface[distance above surface]. Depth is always a non-negative number."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:39
+#, no-wrap
+msgid "[[direction]]direction"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:40
+msgid "_see_ <<heading>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:41
+#, no-wrap
+msgid "[[DMS]]DMS"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:42
+msgid "Degrees, minutes and seconds – one of the most common formats for expressing <<geographic-coordinates>> on maps. A degree is divided into 60 minutes of arc and each minute is divided into 60 seconds of arc. Degrees, minutes and seconds are denoted by the symbols °, ′, ″. Degrees of <<latitude>> are integers between 0 and 90, and should be followed by an indicator for the hemisphere (e.g. N or S). Degrees of <<longitude>> are integers between 0 and 180, and should be followed by an indicator for the hemisphere (e.g. E or W)."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:43
+#, no-wrap
+msgid "[[easting]]easting"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:44
+msgid "Within a <<coordinate-reference-system>> (e.g. as provided by a <<GPS>> or a map <<grid>> reference system), the line representing eastward distance from a reference <<meridian>> on a map."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:45
+#, no-wrap
+msgid "[[elevation]]elevation"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:46
+msgid "A measurement of the vertical distance of a land or water surface above a {gbp}#vertical-datum[vertical datum]. On maps, the reference <<datum>> is generally some interpretation of {gbp}:mean-sea-level[mean sea level] or the {gbp}#geoid[geoid], while in devices using <<GPS>>/{gbp}#GNSS[GNSS], the reference datum is the <<ellipsoid>> of the {gbp}#geodetic-datum[geodetic datum] to which the GPS unit is configured, though the device may make corrections to report the elevation above mean sea level or the geoid. Elevations that are above a reference point should be expressed as positive numbers, while those below should be negative. Compare <<depth>>, {gbp}#distance-above-surface[distance above surface], and {gbp}#altitude[altitude]."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:47
+#, no-wrap
+msgid "[[ellipsoid]]ellipsoid"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:48
+msgid "A three-dimensional, closed geometric <<shape>>, all planar sections of which are ellipses or circles. An ellipsoid has three independent axes. If an ellipsoid is made by rotating an ellipse about one of its axes, then two axes of the ellipsoid are the same, and it is called an ellipsoid of revolution. When used to represent a model of the earth, the ellipsoid is an oblate ellipsoid of revolution made by rotating an ellipse about its minor axis."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:49
+#, no-wrap
+msgid "[[entry-point]]entry point"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:50
+msgid "The entry point on the surface of the ocean or lake where a diver enters the water and from which all activities are measured. See {gbp}#img-underwater-event[illustration] in {gbp}[_Georeferencing Best Practices_] (Chapman & Wieczorek 2020)."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:51
+#, no-wrap
+msgid "[[error]]error"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:52
+msgid "The difference between a computed, estimated, or measured value and the accepted true, specified, or theoretically correct value. It encompasses both the <<precision,imprecision>> of a measurement and its inaccuracies. Error can be either random or systematic. If the error is systematic, it is called \"bias\". Compare <<accuracy>>, {gbp}#bias[bias], precision, {gbp}#false-precision[false precision] and <<uncertainty>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:53
+#, no-wrap
+msgid "[[extent]]extent"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:54
+msgid "The entire space within the <<boundary>> a <<location>> actually represents. The extent can be a volume, an area, or a distance."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:55
+#, no-wrap
+msgid "[[feature]]feature"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:56
+msgid "An object of observation, measurement, or reference that can be represented spatially. Often categorized into \"feature types\" (e.g. mountain, road, populated place, etc.) and given names for specific instances (e.g. \"Mount Everest\", \"Ruta 40\", \"Istanbul\"), which are also sometimes referred to as \"named places\", \"place names\" or \"toponyms\"."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:57
+#, no-wrap
+msgid "[[gazetteer]]gazetteer"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:58
+msgid "An index of geographical <<feature,features>> and their <<location,locations>>, often with <<geographic-coordinates>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:59
+#, no-wrap
+msgid "[[geocode]]geocode"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:60
+msgid "The process (verb) or product (noun) of determining the <<coordinates>> for a street address. It is also sometimes used as a synonym for <<georeference>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:61
+#, no-wrap
+msgid "[[geographic-boundary]]geographic boundary"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:62
+msgid "The representation in <<geographic-coordinates>> of a vertical projection of a <<boundary>> onto a model of the surface of the Earth."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:63
+#, no-wrap
+msgid "[[geographic-center]]geographic center"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:64
+msgid "The midpoint of the extremes of <<latitude>> and <<longitude>> of a <<feature>>. Geographic centers are relatively easy to determine, but they generally do not correspond to the center obtained by a least circumscribing circle. For that reason it is not recommended to use a geographic center for any application in <<georeference,georeferencing>>. Compare <<corrected-center>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:65
+#, no-wrap
+msgid "[[geographic-coordinates]]geographic coordinates"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:66
+msgid "A measurement of a <<location>> on the Earth's surface expressed as <<latitude>> and <<longitude>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:67
+#, no-wrap
+msgid "[[geographic-radial]]geographic radial"
+msgstr ""
+
+#.  TODO chopped off the rest of this.
+#. type: Plain text
+#: glossary.en.adoc:69
+msgid "The distance from the <<corrected-center>> of a <<location>> to the furthest point on the <<geographic-boundary>> of that location. The geographical radial is what contributes to calculations of the {gbp}#maximum-uncertainty-distance[maximum uncertainty distance] using the <<point-radius>> <<georeferencing-method>>. The term geographic radial, as defined here, replaces its equivalent \"extent\" used in the early versions of this _Quick Reference Guide_ and related documents."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:70
+#, no-wrap
+msgid "[[geometry]]geometry"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:71
+msgid "The measures and properties of points, lines, and surfaces. Geometry is used to represent the {gbp}#geographic-component[geographic component] of <<location,locations>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:72
+#, no-wrap
+msgid "[[georeference]]georeference"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:73
+msgid "The process (verb) or product (noun) of interpreting a <<locality>> description into a spatially mappable representation using a <<georeferencing-method>>. Compare with <<geocode>>. The usage here is distinct from the concept of <<georeference,georeferencing>> satellite and other imagery (known as georectification)."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:74
+#, no-wrap
+msgid "[[georeferencing-method]]georeferencing method"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:75
+msgid "The theory, including a set of rules, general procedures and expected outcomes, meant to produce a specific type of spatial representation of a <<locality>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:76
+#, no-wrap
+msgid "[[georeferencing-protocol]]georeferencing protocol"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:77
+msgid "The set of specific documented steps that can be applied to produce a spatial representation of a <<locality>>, following one or more georeferencing methods."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:78
+#, no-wrap
+msgid "[[GPS]]GPS"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:79
+msgid "Global Positioning System, a satellite-based system used for determining positions on or near the Earth. Orbiting satellites transmit radio signals that allow a receiver to calculate its own <<location>> as <<coordinates>> and <<elevation>>, sometimes with <<accuracy>> estimates. See also GNSS of which GPS is one example. See also <<GPS-receiver>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:80
+#, no-wrap
+msgid "[[GPS-receiver]]GPS (receiver)"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:81
+msgid "The colloquial term used to refer to both GPS and {gbp}#GNSS[GNSS] receivers (including those in smartphones and cameras). A GPS or GNSS receiver is an instrument which, in combination with an inbuilt or separate antenna, is able to receive and interpret radio signals from GNSS satellites and translate them into <<geographic-coordinates>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:82
+#, no-wrap
+msgid "[[grid]]grid"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:83
+msgid "A network or array of evenly spaced orthogonal lines used to organize space into partitions. Often these are superimposed on a map and used for reference, such as <<UTM>> grid."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:84
+#, no-wrap
+msgid "[[ground-zero]]ground zero"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:85
+msgid "The <<location>> on the land surface directly above a radiolocation point in a cave where the magnetic radiation lines are vertical. See {gbp}#img-vertical-position-in-a-cave[illustration] in {gbp}[_Georeferencing Best Practices_] (Chapman & Wieczorek 2020)."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:86
+#, no-wrap
+msgid "[[heading]]heading"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:87
+msgid "Compass direction such as east or northwest, or sometimes given as degrees clockwise from north. Usually used in conjunction with <<offset>> to give a distance and direction from a <<feature>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:88
+#, no-wrap
+msgid "[[latitude]]latitude"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:89
+msgid "The angular distance of a point north or south of the equator."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:90
+#, no-wrap
+msgid "[[locality]]locality"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:91
+msgid "The verbal representation of a <<location>>, also sometimes called _locality description_."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:92
+#, no-wrap
+msgid "[[locality-clause]]locality clause"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:93
+msgid "A part of a <<locality>> description that can be categorized into one of the <<locality-type,locality types>>, to which a specific <<georeferencing-protocol>> can be applied."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:94
+#, no-wrap
+msgid "[[locality-type]]locality type"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:95
+msgid "A category applied to a <<locality-clause>> that determines the specific <<georeferencing-protocol>> that should be used."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:96
+#, no-wrap
+msgid "[[location]]location"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:97
+msgid "A physical space that can be positioned and oriented relative to a reference point, and potentially described in a natural language <<locality>> description. In <<georeference,georeferencing>>, a location can have distinct representations based on distinct {gbp}#rules-of-interpretation[rules of interpretation], each of which is embodied in a <<georeferencing-method>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:98
+#, no-wrap
+msgid "[[longitude]]longitude"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:99
+msgid "The angular distance of a point east or west of a <<prime-meridian>> at a given <<latitude>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:100
+#, no-wrap
+msgid "[[meridian]]meridian"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:101
+msgid "A line on the surface of the Earth where all of the <<location,locations>> have the same <<longitude>>. Compare {gbp}#antimeridian[antimeridian] and <<prime-meridian>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:102
+#, no-wrap
+msgid "[[northing]]northing"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:103
+msgid "Within a <<coordinate-reference-system>> (e.g. as provided by a <<GPS>> or a map <<grid>> reference system), the line representing northward distance from a reference <<latitude>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:104
+#, no-wrap
+msgid "[[offset]]offset"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:105
+msgid "A displacement from a reference <<location>>. Usually used in conjunction with <<heading>> to give a distance and <<direction>> from a <<feature>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:106
+#, no-wrap
+msgid "[[path]]path"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:107
+msgid "A route or track between one place and another. In some cases the path may cross itself."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:108
+#, no-wrap
+msgid "[[point-radius]]point-radius"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:109
+msgid "A representation of the {gbp}#geographic-component[geographic component] of a <<location>> as <<geographic-coordinates,geographic coordinates>> and a {gbp}#maximum-uncertainty-distance[maximum uncertainty distance]. The point-radius <<georeferencing-method>> produces <<georeference,georeferences>> that include <<geographic-coordinates>>, a <<coordinate-reference-system>>, and a maximum uncertainty distance that encompasses all of the possible geographic coordinates where a <<locality>> might be interpreted to be. This representation encompasses all of the geographical <<uncertainty,uncertainties>> within a circle. The point-radius method uses ranges to represent the non-geographic descriptors of the location (<<elevation>>, <<depth>>, {gbp}#distance-above-surface[distance above surface])."
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:111
+msgid "[[precision]]precision::"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:114
+msgid "The closeness of a repeated set of observations of the same quantity to one another – a measure of control over random <<error>>."
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:115
+msgid "With values, it describes the finest unit of measurement used to express that value (e.g. if a record is reported to the nearest second, the precision is 1/3600^th^ of a degree; if a <<decimal-degrees,decimal degree>> is reported to two decimal places, the precision is 0.01 of a degree)."
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:118
+msgid "Antonym: imprecision. Compare <<accuracy>>, <<error>>, {gbp}#bias[bias], {gbp}#false-precision[false precision], and <<uncertainty>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:119
+#, no-wrap
+msgid "[[prime-meridian]]prime meridian"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:120
+msgid "The set of <<location,locations>> with <<longitude>> designated as 0 degrees east and west, to which all other longitudes are referenced. The Greenwich <<meridian>> is internationally recognized as the <<prime-meridian>> for many popular and official purposes."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:121
+#, no-wrap
+msgid "[[radial]]radial"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:122
+msgid "The distance from a center point (e.g. the <<corrected-center,corrected>> or <<geographic-center>>) within a <<location>> to the furthest point on the outermost <<boundary>> of that location. See also <<geographic-radial>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:123
+#, no-wrap
+msgid "[[shape]]shape"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:124
+msgid "synonym of {gbp}#footprint[footprint]. A representation of the {gbp}#geographic-component[geographic component] of a location as a <<geometry>>. The result of a <<georeferencing-method,shape georeferencing method>> includes a shape as the geographic component of the <<georeference>>, which contains the set of all possible <<geographic-coordinates>> where a <<location>> might be interpreted to be. This representation encompasses all of the geographical <<uncertainty,uncertainties>> within the geometry given. The shape method uses ranges to represent the non-geographic descriptors of the location (<<elevation>>, <<depth>>, {gbp}#distance-above-surface[distance above surface])."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:125
+#, no-wrap
+msgid "[[smallest-enclosing-circle]]smallest enclosing circle"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:126
+msgid "A circle with the smallest radius (<<radial>>) that contains all of a given set of points (or a given <<shape>>) on a surface (see https://en.wikipedia.org/wiki/Smallest-circle_problem[_Smallest-circle problem_]). This is seldom the same as the <<geographic-center>>, nor the midpoint between two most distant <<geographic-coordinates>> of a <<location>>."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:127
+#, no-wrap
+msgid "[[transect]]transect"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:128
+msgid "A <<path>> along which observations, measurements, or samples are made. Transects are often recorded as a starting <<location>> and a terminating location."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:129
+#, no-wrap
+msgid "[[uncertainty]]uncertainty"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:130
+msgid "A measure of the incompleteness of one’s knowledge or information about an unknown quantity whose true value could be established if complete knowledge and a perfect measuring device were available (<<cullen,Cullen & Frey 1999>>). <<georeferencing-method,Georeferencing methods>> codify how to incorporate uncertainties from a variety of sources (including <<accuracy>> and <<precision>>) in the interpretation of a <<location>>. Compare accuracy, <<error>>, {gbp}#bias[bias], precision, and {gbp}#false-precision[false precision]."
+msgstr ""
+
+#. type: Labeled list
+#: glossary.en.adoc:131
+#, no-wrap
+msgid "[[UTM]]Universal Transverse Mercator UTM"
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:132
+msgid "A standardized <<coordinate-system>> based on a metric rectangular <<grid>> system and a division of the Earth into sixty 6-degree longitudinal zones. The scope of UTM covers from 84° N to 80° S. (See {gbp}#universal-transverse-mercator-utm-coordinates[Universal Transverse Mercator (UTM) Coordinates] in {gbp}[_Georeferencing Best Practices_] (Chapman & Wieczorek 2020))."
+msgstr ""
+
+#. type: Plain text
+#: glossary.en.adoc:133 bibliography.en.adoc:36
+msgid "<<<"
+msgstr ""
+
+#. type: Title ==
+#: bibliography.en.adoc:2
+#, no-wrap
+msgid "References"
+msgstr ""
+
+#. type: Plain text
+#: bibliography.en.adoc:5
+msgid "Bloom DA, Wieczorek JR, Zermoglio PF (2020) Georeferencing Calculator Manual. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/gdwq-3v93"
+msgstr ""
+
+#. type: Plain text
+#: bibliography.en.adoc:7
+msgid "Chapman AD & Wieczorek J (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853"
+msgstr ""
+
+#. type: Plain text
+#: bibliography.en.adoc:9
+msgid "Chapman AD, Muñoz MES & Koch I (2005) Environmental Information: Placing Biodiversity Phenomena in an Ecological and Environmental Context. Biodiversity Informatics 2: 24-41. https://doi.org/10.17161/bi.v2i0.5"
+msgstr ""
+
+#. type: Plain text
+#: bibliography.en.adoc:11
+msgid "[[cullen]]Cullen AC & Frey HC (1999) Probabilistic Techniques in Exposure Assessment: A Handbook for Dealing with Variability and Uncertainty in Models and Inputs. New York: Plenum Press."
+msgstr ""
+
+#. type: Plain text
+#: bibliography.en.adoc:13
+msgid "ESRI (n.d.) GIS Dictionary. https://support.esri.com/en/other-resources/gis-dictionary/browse/"
+msgstr ""
+
+#. type: Plain text
+#: bibliography.en.adoc:15
+msgid "FGDC (1998) Geospatial Positioning Accuracy Standards, Part 3: National Standards for Spatial Data Accuracy. FGDC-STD-007.3-1998. Reston, Va., USA. https://www.fgdc.gov/standards/projects/accuracy/part3/chapter3"
+msgstr ""
+
+#. type: Plain text
+#: bibliography.en.adoc:17
+msgid "Frazier C, Neville T, Giermakowski JT & Racz G (2004) The INRAM Protocol for Georeferencing Biological Museum Specimen Records, version 1.3. Zenodo. http://doi.org/10.5281/zenodo.3235003"
+msgstr ""
+
+#. type: Plain text
+#: bibliography.en.adoc:19
+msgid "Geodetic Survey Division (1996) Accuracy Standards for Positioning, Version 1.0: Ottawa, Canada: Natural Resources Canada. ftp://glonass-center.ru/REPORTS/OLD/NRCAN/Accuracy_Standards.pdf"
+msgstr ""
+
+#. type: Plain text
+#: bibliography.en.adoc:21
+msgid "Kemp KK (2008) Encyclopedia of Geographic Information Science. Los Angeles: Sage Publications. https://doi.org/10.4135/9781412953962"
+msgstr ""
+
+#. type: Plain text
+#: bibliography.en.adoc:23
+msgid "Spencer C, Yamamoto K, Fang J, Constable H, Koo M, & Wieczorek J (2008) Georeferencing for Dummies. http://georeferencing.org/docs/georeffordummy.xls"
+msgstr ""
+
+#. type: Plain text
+#: bibliography.en.adoc:25
+msgid "TDWG (2018) Darwin Core quick reference guide. Biodiversity Information Standards (TDWG). https://dwc.tdwg.org/terms/"
+msgstr ""
+
+#. type: Plain text
+#: bibliography.en.adoc:27
+msgid "Wieczorek C & Wieczorek J (2020) Georeferencing Calculator, version 20191217en. Rauthiflor LLC. http://georeferencing.org/georefcalculator/gc.html"
+msgstr ""
+
+#. type: Plain text
+#: bibliography.en.adoc:29
+msgid "Wieczorek J (2001) MaNIS/HerpNET/ORNIS Georeferencing Guidelines. University of California, Berkeley: Museum of Vertebrate Zoology. http://georeferencing.org/georefcalculator/docs/GeorefGuide.html"
+msgstr ""
+
+#. type: Plain text
+#: bibliography.en.adoc:31
+msgid "Wieczorek J, Bloom D, Constable H, Fang J, Koo M, Spencer C & Yamamo K (2012) Georeferencing Quick Reference Guide, version 2012-10-08. http://www.herpnet.org/herpnet/documents/GeoreferencingQuickGuide.pdf"
+msgstr ""
+
+#. type: Plain text
+#: bibliography.en.adoc:33
+msgid "Wieczorek J & Bloom DA (2015) Manual for the Georeferencing Calculator. University of California, Berkeley: Museum of Vertebrate Zoology. http://georeferencing.org/gci2/docs/GeoreferencingCalculatorManualv2.html"
+msgstr ""
+
+#. type: Plain text
+#: bibliography.en.adoc:35
+msgid "Wieczorek J, Guo Q & Hijmans R (2004) The point-radius method for georeferencing locality descriptions and calculating associated uncertainty. International Journal of Geographical Information Science. 18: 745-767. https://doi.org/10.1080/13658810412331280211"
+msgstr ""
+
+#. type: Title ==
+#: appa.en.adoc:7
+#, no-wrap
+msgid "Appendix A: Key to Locality Types"
+msgstr ""
+
+#. type: Title ===
+#: appa.en.adoc:9
+#, no-wrap
+msgid "Features"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:24
+#, no-wrap
+msgid "h|Locality Type\n"
+"h|Calculation Steps\n\n"
+"|<<Geographic Feature only,§2.1 Geographic Feature only>>\n"
+"|The <<locality>> description consists only of a <<feature>>, which is often listed in a standard <<gazetteer>> and can probably be located on a map. Remember: <<feature,features>> are not points; they have a spatial <<extent>>.\n\n"
+"a|\n"
+"<<Feature – with Obvious Spatial Extent,§2.1.1 With Obvious Extent>>\n\n"
+msgstr ""
+
+#. type: Target for macro image
+#: appa.en.adoc:24
+#, no-wrap
+msgid "img/web/key-obvious-extent.jpg"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:36
+msgid "  a| Step 1: Determine the <<feature>> <<boundary,boundaries>>.  Step 2: Determine the <<coordinates>> of the <<corrected-center>> of the feature for [ui-element]#Input Latitude# and [ui-element]#Longitude#.  Step 3: Measure the <<geographic-radial>>.  a| <<Feature – without Obvious Spatial Extent,§2.1.2 Without Obvious Extent>>"
+msgstr ""
+
+#. type: Target for macro image
+#: appa.en.adoc:36
+#, no-wrap
+msgid "img/web/key-without-obvious-extent.jpg"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:50
+msgid "  a| Step 1: Estimate the <<feature>> <<boundary,boundaries>> using known information from a map, record, or other documentation.  Step 2: Determine the <<coordinates>> of the <<corrected-center>> of the estimated feature boundaries as the [ui-element]#Input Latitude# and [ui-element]#Longitude#.  Step 3: Measure the <<geographic-radial>>.  |<<Feature – Special Cases,§2.1.3 Special Cases>> a| _Special Cases_ all follow the same process as **<<feature,features>>** with or without an obvious spatial **<<extent>>**, but may have some special considerations. For details see:"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:51
+msgid "<<Feature – Street Address,Street Address (§2.1.3.1)>> +"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:52
+msgid "<<Feature – Property,Property (§2.1.3.2)>> +"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:53
+msgid "<<Feature – Path,Path (§2.1.3.3)>> +"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:54
+msgid "<<feature-junction-intersection-crossing-confluence,Junction, Intersection, Crossing, Confluence (§2.1.3.4)>> +"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:55
+msgid "<<Feature – Cave,Cave (§2.1.3.5)>> +"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:56
+msgid "<<Feature – Dive Location,Dive Location (§2.1.3.6)>> +"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:57
+msgid "<<Feature – Headwaters of a Waterway,Headwaters of a Waterway (§2.1.3.7)>> +"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:58
+msgid "<<Feature – near a Feature,near a Feature (§2.1.3.8)>> +"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:59
+msgid "<<Feature – between Two Features,between Two Features (§2.1.3.9)>> +"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:60
+msgid "<<Feature – between Two Paths,between Two Paths (§2.1.3.10)>>"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:82
+#, no-wrap
+msgid "h|Locality Type\n"
+"h|Calculation Steps\n\n"
+"|<<Offsets,§2.2 Offsets>>\n"
+"|An <<offset>> is a displacement from a reference <<location>>, usually used in conjunction with a <<heading>> to give a distance and direction from a <<feature>>.\n\n"
+"|<<Offset – Distance only,§2.2.1 Distance only>>\n"
+"a|\n"
+"Step 1: Determine the <<feature>> <<boundary,boundaries>> using the method for <<Geographic Feature only,Geographic Feature only (§2.1)>> and add a buffer that is the distance given in the <<locality>> description, and there is no need to account for the proximity of other features.\n\n"
+"Step 2: Determine the <<coordinates>> of the <<corrected-center>> and the <<geographic-radial>>. [ui-element]#Offset Distance# = 0. [ui-element]#Distance Precision# = <<precision>> with which the distance was recorded in the <<locality>> description.\n\n"
+"a|\n"
+"<<Offset – Heading only,§2.2.2 Heading only>>\n\n"
+msgstr ""
+
+#. type: Target for macro image
+#: appa.en.adoc:82
+#, no-wrap
+msgid "img/web/key-heading-only.jpg"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:97
+msgid "  a| Step 1: Determine the <<feature>> <<boundary,boundaries>> using the appropriate method for <<Geographic Feature only,Geographic Feature only (§2.1)>>. Account for the <<offset>> at a <<heading>> using other information in the record, or until reaching the proximity of another similar feature, whichever is nearer the original feature. Call this the \"extended feature\".  Step 2: Determine and use the <<coordinates>> and <<geographic-radial>> of the extended feature.  a| <<Offset – Distance along a Path,§2.2.3 Distance along a Path>> |The <<locality>> consists of a reference <<feature>> to start from and a distance to travel along a <<path>>. The path can be <<Offset along a Narrow Path,Narrow (§2.2.3.1)>> or <<Offset along a Wide Path,Wide (§2.2.3.2)>>. At times there may be <<Offset along Multiple Possible Paths,Multiple Possible Paths (§2.2.3.3)>>. Please reference the appropriate section for specific instructions.  a| <<Offset – Distance along Orthogonal Directions,§2.2.4 Distance along Orthogonal Directions>>"
+msgstr ""
+
+#. type: Target for macro image
+#: appa.en.adoc:97
+#, no-wrap
+msgid "img/web/key-distance-orthogonal-direction.jpg"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:115
+msgid "  a| Step 1: Determine the <<boundary>> of the <<feature>> using the appropriate method for <<Geographic Feature only,Geographic Feature only (§2.1)>>.  Step 2: Determine and use the <<coordinates>> of the <<corrected-center>> and <<geographic-radial>> of the estimated feature boundaries as the [ui-element]#Input Latitude# and [ui-element]#Longitude#.  |<<Offset – Distance at a Heading,§2.2.5 Distance at a Heading>> a| Step 1: Determine the starting <<feature>> using the appropriate method for <<Geographic Feature only,Geographic Feature only (§2.1)>>.  Step 2: Determine and use the starting feature <<coordinates>> and the <<geographic-radial>>.  |<<Offset – Distances from Two Distinct Paths,§2.2.6 Distances from Two Distinct Paths>> a| Step 1: Determine the starting <<feature>> using the appropriate method for <<Geographic Feature only,Geographic Feature only (§2.1)>>.  Step 2: Determine and use the starting feature <<coordinates>> and the <<geographic-radial>>."
+msgstr ""
+
+#.  TODO extra section link here
+#. type: Table
+#: appa.en.adoc:148
+#, no-wrap
+msgid "h|Locality Type\n"
+"h|Calculation Steps\n\n"
+"|<<Coordinates,§2.3 Coordinates>>\n"
+"|The <<locality>> consists of a point represented by <<latitude>> and <<longitude>> in one of various <<coordinate-format,coordinate formats>>.\n\n"
+"|<<Coordinates – Geographic Coordinates,§2.3.1 Geographic Coordinates>>\n"
+"|Step 1: Use the <<coordinates>> in the format they were captured from a <<GPS>> or from the verbatim <<locality>> as the [ui-element]#Input Latitude# and [ui-element]#Longitude#.\n\n"
+"|<<Coordinates – Universal Transverse Mercator (UTM),§2.3.2 Universal Transverse Mercator (UTM)>>\n"
+"a|\n"
+"Although this is not technically a <<feature>>, the <<Geographic Feature only,Geographic Feature only (§2.1)>> <<locality-type>> in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator (Wieczorek & Wieczorek 2020)^] includes all of the relevant parameters.\n\n"
+"Step 1: The <<UTM>> <<coordinates>> must be converted to <<decimal-degrees>> using a UTM to <<latitude,Latitude>>/<<longitude,Longitude>> conversion tool. The UTM Zone is required to do this.\n\n\n"
+"Step 2: Determine the <<geographic-radial>>: If the UTM coordinates have 7 digits in the <<northing>> and 6 digits in the <<easting>>, the geographic radial is 0.707 m. For UTM coordinates with fewer digits of <<precision>> see <<table-default-geographic-radial>> (§2.1.2).\n\n"
+"|<<Coordinates – Grid Systems,§2.3.3 Grid Systems>>\n"
+"a|\n"
+"Step 1: Determine the <<coordinates>> of the grid cell as for a <<Feature – with Obvious Spatial Extent,Feature – with Obvious Spatial Extent (§2.1.1)>>. Use the coordinates for the <<corrected-center>> of the named <<grid>> cell.\n\n"
+"Step 2: Determine the <<geographic-radial>>.\n\n"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:171
+#, no-wrap
+msgid "h|Locality Type\n"
+"h|Calculation Steps\n\n"
+"|<<Difficult Localities,§2.4 Difficult Localities>>\n"
+"|The <<locality>> is vague or presents other challenges. It is recommended to check the original catalogues, ledgers, field notes, specimen labels, etc. as a first step to resolve the vagaries.\n\n"
+"|<<Dubious Locations,§2.4.1 Dubious Locations>>\n"
+"a|\n"
+"If some part of the <<locality>> description is in question, but there is locality information that is not in question, use the unquestioned part of the locality to determine the <<locality-type>> and <<georeference>> following the appropriate method.\n\n"
+"If the entire locality is in question, do not <<georeference>> and document in term:dwc[georeferenceRemarks] the reason for not <<georeference,georeferencing>> (e.g. \"locality in question\").\n\n"
+"|<<Cannot Be Located,§2.4.2 Cannot Be Located>>\n"
+"a|\n"
+"The cited <<locality>> cannot be found. Reasons may include:\n\n"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:173
+#, no-wrap
+msgid "There is no locality information cited;\n\n"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:175
+#, no-wrap
+msgid "The <<location>> fields contain other than *location* information;\n\n"
+msgstr ""
+
+#. type: Table
+#: appa.en.adoc:193
+#, no-wrap
+msgid "The <<feature>>(s) cannot be found with available references.\n\n"
+"Do not <<georeference>> these localities. Document in term:dwc[georeferenceRemarks] (e.g. \"locality cannot be found with available references\").\n\n"
+"|<<More than One Matching Feature,§2.4.3 More than One Matching Feature>>\n"
+"a|\n"
+"Multiple related <<feature,features>>: If there are multiple distinct nearby places with the same name and no further information to distinguish between the possibilities, treat the combination of them as the feature and follow the procedure for the appropriate <<locality-type>>. Document in term:dwc[georeferenceRemarks].\n\n"
+"Multiple unrelated features: Do not <<georeference>>. Document in term:dwc[georeferenceRemarks] (e.g. \"there are multiple possible unrelated features matching the one in the locality description\").\n\n"
+"|<<Demonstrably Inconsistent,§2.4.4 Demonstrably Inconsistent>>\n"
+"|The <<locality>> description contains irreconcilable inconsistencies – assertions that can not all be simultaneously true. Do not <<georeference>>. Document in term:dwc[georeferenceRemarks].\n\n"
+"|<<Cultivated or Captive,§2.4.5 Cultivated or Captive>>\n"
+"a|\n"
+"The <<locality>> is associated with a captive animal, a cultivated plant or an [ui-element]#event# from some other non-natural occurrence. The <<locality>> cited is often that of a zoo, aquarium, or botanical garden.\n\n"
+"<<georeference,Georeference>> the locality normally based on the <<locality-type>> and <<feature>>. Document the nature of the provenance using the term term:dwc[degreeOfEstablishment].\n"
+msgstr ""
+
+#. type: Title ==
+#: appb.en.adoc:7
+#, no-wrap
+msgid "Appendix B: Methods to Find the Corrected Center and Geographic Radial"
+msgstr ""
+
+#. type: Plain text
+#: appb.en.adoc:12
+msgid "Sometimes determining the <<corrected-center,corrected center>> and <<geographic-radial,geographic radial>> of a <<feature>> can be difficult to do \"by eye.\" It usually requires repeated trial and error moving and adjusting the radius of circles to narrow in on the final result. Here we share some simple methods to aid in finding the corrected center and geographic radial based on the geometric shape of the feature of interest."
+msgstr ""
+
+#. type: Title ====
+#: appb.en.adoc:13
+#, no-wrap
+msgid "Linear Feature"
+msgstr ""
+
+#. type: Table
+#: appb.en.adoc:21 appb.en.adoc:42 appb.en.adoc:63 appb.en.adoc:90 appb.en.adoc:117 appb.en.adoc:144
+#, no-wrap
+msgid "h|\n"
+"h|Method\n\n"
+"a|\n"
+msgstr ""
+
+#. type: Target for macro image
+#: appb.en.adoc:21
+#, no-wrap
+msgid "img/web/linear-feature.png"
+msgstr ""
+
+#. type: Table
+#: appb.en.adoc:27
+msgid "  a| Step 1: Find the midpoint of the segment *a* that joins the two most distant points of the <<geometry>> (solid line).  a|"
+msgstr ""
+
+#. type: Target for macro image
+#: appb.en.adoc:27
+#, no-wrap
+msgid "img/web/linear-feature-radial.png"
+msgstr ""
+
+#. type: Table
+#: appb.en.adoc:31
+msgid "  a| Step 2: The midpoint is the corrected center *a*. The geographic radial is the distance from there to either end of the line segment *b*."
+msgstr ""
+
+#. type: Title ====
+#: appb.en.adoc:33
+#, no-wrap
+msgid "Elongate Convex Feature"
+msgstr ""
+
+#. type: Target for macro image
+#: appb.en.adoc:42
+#, no-wrap
+msgid "img/web/convex-elongate-feature.png"
+msgstr ""
+
+#. type: Table
+#: appb.en.adoc:48
+msgid "  a| Step 1: Find the midpoint of the segment *a* that joins the two most distant points of the geometry (solid line).  a|"
+msgstr ""
+
+#. type: Target for macro image
+#: appb.en.adoc:48
+#, no-wrap
+msgid "img/web/convex-elongate-feature-radial.png"
+msgstr ""
+
+#. type: Table
+#: appb.en.adoc:52
+msgid "  a| Step 2: If the midpoint is within or on the <<boundary>> of the geometry and there is no point within the geometry that is further away than the two extreme points of the chosen segment (which one can determine by eye, with a ruler or with a tool to make a circle), then the midpoint is already the corrected center *a*, with geographic radial *b*."
+msgstr ""
+
+#. type: Title ====
+#: appb.en.adoc:54
+#, no-wrap
+msgid "Not Obviously Elongate Convex Feature"
+msgstr ""
+
+#. type: Target for macro image
+#: appb.en.adoc:63
+#, no-wrap
+msgid "img/web/convex-feature.png"
+msgstr ""
+
+#. type: Table
+#: appb.en.adoc:69 appb.en.adoc:96 appb.en.adoc:123 appb.en.adoc:150
+msgid "  a| Step 1: Find the midpoint *a* of the segment that joins the two most distant points of the geometry (solid line). Draw a circle with center at the midpoint and diameter up to the two ends of the segment (dotted circle).  a|"
+msgstr ""
+
+#. type: Target for macro image
+#: appb.en.adoc:69
+#, no-wrap
+msgid "img/web/convex-feature-corrected.png"
+msgstr ""
+
+#. type: Table
+#: appb.en.adoc:75
+msgid "  a| Step 2: If any point of the geometry falls outside the circle, move the circle so that the farthest spaced vertices of the geometry are equally far outside the new circle (solid circle, with center *b*).  a|"
+msgstr ""
+
+#. type: Target for macro image
+#: appb.en.adoc:75
+#, no-wrap
+msgid "img/web/convex-feature-radial.png"
+msgstr ""
+
+#. type: Table
+#: appb.en.adoc:79 appb.en.adoc:106
+msgid "  a| Step 3: Increase the radius of the circle, without moving the center, to just include the most distant points of the geometry. The center of this circle *b* is the corrected center with geographic radial *c*."
+msgstr ""
+
+#. type: Title ====
+#: appb.en.adoc:81
+#, no-wrap
+msgid "Simple Concave Feature (center within the feature)"
+msgstr ""
+
+#. type: Target for macro image
+#: appb.en.adoc:90
+#, no-wrap
+msgid "img/web/concave-feature.png"
+msgstr ""
+
+#. type: Target for macro image
+#: appb.en.adoc:96
+#, no-wrap
+msgid "img/web/concave-feature-corrected.png"
+msgstr ""
+
+#. type: Table
+#: appb.en.adoc:102
+msgid "  a| Step 2: If any point of the geometry falls outside the circle, move the circle so that the three farthest spaced vertices of the geometry are equally far outside the new circle (solid circle with center *b*).  a|"
+msgstr ""
+
+#. type: Target for macro image
+#: appb.en.adoc:102
+#, no-wrap
+msgid "img/web/concave-feature-radial.png"
+msgstr ""
+
+#. type: Title ====
+#: appb.en.adoc:108
+#, no-wrap
+msgid "Complex Concave Feature (center outside the feature)"
+msgstr ""
+
+#. type: Target for macro image
+#: appb.en.adoc:117
+#, no-wrap
+msgid "img/web/concave-complex-feature.png"
+msgstr ""
+
+#. type: Target for macro image
+#: appb.en.adoc:123
+#, no-wrap
+msgid "img/web/concave-complex-feature-corrected.png"
+msgstr ""
+
+#. type: Table
+#: appb.en.adoc:129
+msgid "  a| Step 2: Move the circle so that the center falls on the border of the geometry and the vertices that are farthest spaced are equally far outside the new circle (solid circle with center *b*).  a|"
+msgstr ""
+
+#. type: Target for macro image
+#: appb.en.adoc:129
+#, no-wrap
+msgid "img/web/concave-complex-feature-radial.png"
+msgstr ""
+
+#. type: Table
+#: appb.en.adoc:133 appb.en.adoc:160
+msgid "  a| Step 3: Increase the radius of the circle, without moving the center to just include the most distant points of the geometry. The center of this circle *b* is the corrected center with geographic radial *c*."
+msgstr ""
+
+#. type: Title ====
+#: appb.en.adoc:135
+#, no-wrap
+msgid "Curvilinear Feature"
+msgstr ""
+
+#. type: Target for macro image
+#: appb.en.adoc:144
+#, no-wrap
+msgid "img/web/curvilinear-feature.png"
+msgstr ""
+
+#. type: Target for macro image
+#: appb.en.adoc:150
+#, no-wrap
+msgid "img/web/curvilinear-feature-corrected.png"
+msgstr ""
+
+#. type: Table
+#: appb.en.adoc:156
+msgid "  a| Step 2: Move the circle so that the center falls on the border of the geometry and the vertices farthest from there are equally far outside the new circle (solid circle with center *b*).  a|"
+msgstr ""
+
+#. type: Target for macro image
+#: appb.en.adoc:156
+#, no-wrap
+msgid "img/web/curvilinear-feature-radial.png"
+msgstr ""
+
