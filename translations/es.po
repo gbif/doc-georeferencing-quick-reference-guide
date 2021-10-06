@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-04 08:12+0000\n"
-"PO-Revision-Date: 2021-10-06 19:10\n"
+"PO-Revision-Date: 2021-10-06 20:16\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -274,29 +274,29 @@ msgstr "term:dwc[dwc:georeferencedBy] (Georreferenciado por), term:dwc[dwc:geore
 #. type: Plain text
 #: 0100.en.adoc:48
 msgid "the individual(s) who last modified the georeference and when that happened. These correspond to the final authority on the georeference in its current state, regardless of who might have worked on previous versions of the georeference."
-msgstr ""
+msgstr "El o los individuos que modificaron por última vez la georreferencia y cuándo se llevó a cabo la modificación. Estas personas corresponden a la autoridad final sobre la georreferencia en su estado actual, independientemente de quién hubiera podido trabajar en versiones anteriores de la georreferencia."
 
 #. type: Labeled list
 #: 0100.en.adoc:48
 #, no-wrap
 msgid "term:dwc[dwc:georeferenceProtocol]"
-msgstr ""
+msgstr "term:dwc[dwc:georeferenceProtocol] (Protocolo de georreferenciación)"
 
 #. type: Plain text
 #: 0100.en.adoc:49
 msgid "A description or reference to the methods used to determine the <<shape>> using the shape <<georeferencing-method>>, or the coordinates and uncertainty using the point-radius method. If the protocol in this Guide is used unaltered, then the term:dwc[georeferenceProtocol] should be the citation for this document."
-msgstr ""
+msgstr "Descripción o referencia a los métodos utilizados para determinar la <<forma>> cuando se usa el <<método-de-georreferenciación>> o las coordenadas y la incertidumbre cuando se usa el método <<punto-radio>>. Si el protocolo de esta Guía se usa sin alterar, entonces el term:dwc[georeferenceProtocol] (Protocolo de georreferenciación) debe ser la cita para este documento."
 
 #. type: Labeled list
 #: 0100.en.adoc:49
 #, no-wrap
 msgid "term:dwc[dwc:georeferenceSources]"
-msgstr ""
+msgstr "term:dwc[dwc:georeferenceSources] (Fuentes de georreferenciación)"
 
 #. type: Plain text
 #: 0100.en.adoc:50
 msgid "A list (concatenated and separated) of maps, <<gazetteer,gazetteers>>, or other resources used to georeference the location, described specifically enough to allow anyone in the future to use the same resources."
-msgstr ""
+msgstr "Una lista (concatenada y separada) de mapas, <<gacetero,gaceteros>> u otros recursos utilizados para georreferenciar la ubicación. La descripción, debe ser suficientemente específica como para permitir que cualquiera en el futuro haga uso de los mismos recursos."
 
 #. type: Block title
 #: 0100.en.adoc:51 0100.en.adoc:61 0100.en.adoc:71 0100.en.adoc:79
@@ -310,7 +310,7 @@ msgstr ""
 #: 0240.en.adoc:66 0240.en.adoc:81 0240.en.adoc:99
 #, no-wrap
 msgid "{blank}"
-msgstr ""
+msgstr "{blank}"
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: 0100.en.adoc:52 0100.en.adoc:62 0200.en.adoc:20 0200.en.adoc:49
@@ -322,72 +322,72 @@ msgstr ""
 #: 0240.en.adoc:49 0240.en.adoc:67 0240.en.adoc:82 0240.en.adoc:100
 #, no-wrap
 msgid "Examples"
-msgstr ""
+msgstr "Ejemplos"
 
 #. type: delimited block =
 #: 0100.en.adoc:57
 msgid "USGS 1:24000 Florence Montana Quad 1967 + Terrametrics 2008 Google Earth + Wieczorek C & J Wieczorek (2020) Georeferencing Calculator, version yyyymmdd. Available: http://georeferencing.org/georefcalculator/gc.html."
-msgstr ""
+msgstr "USGS 1:24000 Florence Montana Quad 1967 + Terrametrics 2008 Google Earth + Wieczorek C & J Wieczorek (2020) Calculadora de Georreferenciación, versión ddmmaa. Disponible en: http://georeferencing.org/georefcalculator/gc.html."
 
 #. type: Labeled list
 #: 0100.en.adoc:59
 #, no-wrap
 msgid "term:dwc[dwc:georeferenceVerificationStatus]"
-msgstr ""
+msgstr "term:dwc[dwc:georeferenceVerificationStatus] (Estado de la verificación de la georreferenciación)"
 
 #. type: Plain text
 #: 0100.en.adoc:60
 msgid "A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description. Recommended best practice is to use a controlled vocabulary. Note that this verification could only be performed in relation to the occurrence or event that is being recorded."
-msgstr ""
+msgstr "Una descripción categórica del grado en que la georreferencia ha sido verificada como la mejor representación posible de la descripción espacial. Una buena práctica recomendada es usar un vocabulario controlado. Tenga en cuenta que esta verificación sólo se puede realizar en relación con el registro o evento que se está documentando."
 
 #. type: delimited block =
 #: 0100.en.adoc:67
 msgid "requires verification + verified by collector + verified by curator"
-msgstr ""
+msgstr "requiere verificación + verificada por el colector + verificada por el curador"
 
 #. type: Labeled list
 #: 0100.en.adoc:69
 #, no-wrap
 msgid "term:dwc[dwc:georeferenceRemarks]"
-msgstr ""
+msgstr "term:dwc[dwc:georeferenceRemarks] (Comentarios de la georreferenciación)"
 
 #. type: Plain text
 #: 0100.en.adoc:70
 msgid "Notes or comments out of the ordinary about the georeference, explaining assumptions made in addition or opposition to those formalized in the method referred to in term:dwc[georeferenceProtocol]."
-msgstr ""
+msgstr "Notas o comentarios fuera de lo común sobre la georreferencia, explicando supuestos hechos en adición o en oposición a aquellos formalizados en el método referido en el term:dwc[georeferenceProtocol] (Protocolo de georreferenciación)."
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: 0100.en.adoc:72 0100.en.adoc:80 0200.en.adoc:275 0220.en.adoc:113
 #: 0220.en.adoc:218
 #, no-wrap
 msgid "Example"
-msgstr ""
+msgstr "Ejemplo"
 
 #. type: delimited block =
 #: 0100.en.adoc:75
 msgid "assumed distance by road (Hwy. 101)"
-msgstr ""
+msgstr "distancia asumida por carretera (Hwy. 101)"
 
 #. type: Labeled list
 #: 0100.en.adoc:77
 #, no-wrap
 msgid "term:dwc[dwc:locationRemarks]"
-msgstr ""
+msgstr "term:dwc[dwc:locationRemarks] (Comentarios de la ubicación)"
 
 #. type: Plain text
 #: 0100.en.adoc:78
 msgid "Notes or comments of interest about the location (not the georeference of the location, which go in term:dwc[georeferenceRemarks])."
-msgstr ""
+msgstr "Notas o comentarios de interés sobre la ubicación (no sobre la georreferencia de la ubicación, las cuales deben ir en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación))."
 
 #. type: delimited block =
 #: 0100.en.adoc:83
 msgid "Villa Epecuen was inundated in November 1985 and ceased to be inhabited until 2009"
-msgstr ""
+msgstr "La Villa Epecuen estaba inundada en noviembre de 1985 y dejó de estar habitada hasta el 2009"
 
 #. type: Plain text
 #: 0100.en.adoc:86
 msgid "For additional community discussion and recommendations, see the https://github.com/tdwg/dwc-qa/wiki[Darwin Core Questions & Answers Site^], the https://github.com/tdwg/dwc-qa/wiki/Webinars[Darwin Core Hour Webinars^] and {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
-msgstr ""
+msgstr "Para más información y recomendaciones sobre la comunidad, vea el https://github.com/tdwg/dwc-qa/wiki[Sitio de preguntas y respuestas del Darwin Core^], los https://github.com/tdwg/dwc-qa/wiki/Webinars[Webinars Darwin Core Hour^] y {gbp}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]."
 
 #. type: Title ===
 #: 0100.en.adoc:87
