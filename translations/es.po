@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-04 08:12+0000\n"
-"PO-Revision-Date: 2021-10-06 17:09\n"
+"PO-Revision-Date: 2021-10-06 18:10\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -151,7 +151,7 @@ msgstr "Los términos subrayados a lo largo de este documento (por ejemplo, <<ex
 #. type: Plain text
 #: 0100.en.adoc:10
 msgid "At the end of this document is a <<key-to-locality-types,Georeference Quick Reference Guide Key to Locality Types>>, which contains a quick summary of the protocols for the most common <<locality-type,locality types>>, described in detail in the sections of this guide."
-msgstr "Al final de este documento hay una <<key-to-locality-types,Guía de referencia rápida de georreferenciación para los tipos de localidades>> que contiene un breve resumen de los protocolos para los <<tipo de localidad,tipos de localidades>> más comunes, descritos en detalle en las secciones de esta guía."
+msgstr "Al final de este documento hay una <<key-to-locality-types,Guía de referencia rápida de georreferenciación para los tipos de localidades>> que contiene un breve resumen de los protocolos para los <<tipo-de-localidad, tipos de localidades>> más comunes, descritos en detalle en las secciones de esta guía."
 
 #. type: Title ===
 #: 0100.en.adoc:11
@@ -162,76 +162,76 @@ msgstr "Objetivos"
 #. type: Plain text
 #: 0100.en.adoc:14
 msgid "This document provides guidance on how to <<georeference>> using the <<point-radius>> <<georeferencing-method,method>>. This Guide also provides the methods for determining the <<boundary,boundaries>> of <<feature,features>>, which form the basis of the <<shape>> georeferencing method."
-msgstr ""
+msgstr "Este documento ofrece orientaciones sobre cómo <<georreferencia, georreferenciar>> usando el <<método-de-georreferenciación,método>> <<radio-punto>>. También, proporciona los métodos para determinar los <<límite,límites>> de <<entidad-geográfica,entidades-geográficas>>, los cuales son la base del método <<forma geométrica>> de georreferencia."
 
 #. type: Title ===
 #: 0100.en.adoc:15
 #, no-wrap
 msgid "Target Audience"
-msgstr ""
+msgstr "Público objetivo"
 
 #. type: Plain text
 #: 0100.en.adoc:18
 msgid "This document is a practical guide for anyone who needs to <<georeference>> textual <<locality>> descriptions so that they can be used in spatial filtering or analysis in research, education, or the maintenance of biological collections data."
-msgstr ""
+msgstr "Este documento es una guía práctica para cualquiera que necesite <<georreferencia, georreferenciar>> descripciones textuales de <<localidad, localidades>> para que puedan ser usadas en filtros espaciales o en análisis para investigación, educación o el mantenimiento de datos biológicos de colecciones."
 
 #. type: Title ===
 #: 0100.en.adoc:19
 #, no-wrap
 msgid "Scope"
-msgstr ""
+msgstr "Alcance"
 
 #. type: Plain text
 #: 0100.en.adoc:22
 msgid "This document is one of three that cover recommended requirements and methods to <<georeference>> <<location,locations>>. It provides a practical how-to guide for putting the theory of the <<point-radius>> <<georeferencing-method>> into practice."
-msgstr ""
+msgstr "Este documento es uno de los tres que cubre los requisitos y métodos recomendados para <<georreferencia,georreferenciar>> <<ubicación,ubicaciones>>. Provee una guía práctica para poner en acción la teoría del <<método-de-georreferenciación>> <<radio-punto>>."
 
 #. type: Plain text
 #: 0100.en.adoc:24
 msgid "The Guide relies on the {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^] for background, definitions, and more detailed explanations of the theory behind the methods and calculations found here and in the Calculator."
-msgstr ""
+msgstr "La Guía se basa en las {gbp}[Buenas Prácticas de Georreferenciación (Chapman y Wieczorek 2020)^] como fuente de antedecedentes, definiciones y explicaciones más detalladas de la teoría detrás de los métodos y cálculos encontrados aquí y en la Calculadora."
 
 #. type: Plain text
 #: 0100.en.adoc:26
 msgid "The third document is the {gcm}[Georeferencing Calculator Manual (Bloom et al. 2020)^], which describes how to use the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]. The Calculator is a browser-based JavaScript application that aids in georeferencing descriptive <<locality,localities>>, and making the calculations necessary to obtain <<geographic-coordinates>> and <<uncertainty,uncertainties>> for locations using the <<point-radius>> method."
-msgstr ""
+msgstr "El tercer documento es el {gcm}[Manual del cálculo de georreferenciación (Bloom et al. 2020)^], que describe cómo utilizar la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación^]. La Calculadora es una aplicación JavaScript basada en navegadores que ayuda en la georeferenciación de <<localidad,localidades>> descritas y en los cálculos necesario para obtener <<coordenadas geográficas>> e <<incertidumbre,incertidumbres>> para ubicaciones usando el método <<radio-punto>>."
 
 #. type: Plain text
 #: 0100.en.adoc:28
 msgid "These documents DO NOT provide guidance on georectifying images or <<geocode,geocoding>> street addresses – distinct operations that are sometimes called \"georeferencing\"."
-msgstr ""
+msgstr "Estos documentos NO proporcionan orientación sobre la georrectificación de imágenes o <<geocodificar,geocodificación>> de direcciones, operaciones distintas a las que a veces se refieren como \"georreferenciación\"."
 
 #. type: Title ===
 #: 0100.en.adoc:29
 #, no-wrap
 msgid "Changes from Previous Version"
-msgstr ""
+msgstr "Cambios respecto a la versión anterior"
 
 #. type: Plain text
 #: 0100.en.adoc:33
 msgid "This version of the Guide is a complete remake of its previous edition, reorganized and augmented to include graphical examples of each type of location and detailed steps for how to <<georeference>> them.  There have been a few changes in terminology since the previous edition, which include:"
-msgstr ""
+msgstr "Esta edición de la Guía fue completamente rehecha respecto a su versión anterior. Fue reorganizada y aumentada para incluir ejemplos gráficos de cada tipo de ubicación y pasos detallados sobre cómo <<georreferencia, georreferenciarlos>>. Se han producido algunos cambios en la terminología desde la versión anterior, que incluyen:"
 
 #. type: Plain text
 #: 0100.en.adoc:35
 msgid "<<extent,Extent>> in the previous version has been changed to <<radial>>. Extent, where retained, is used in a more traditional way to mean the entire space within a <<location>>."
-msgstr ""
+msgstr "<<extensión,Extensión>> de la versión anterior se ha cambiado a <<radio>>. Extensión, donde aún se conserva, se usa de una manera más tradicional para referirse a todo el espacio dentro de una <<ubicación>>."
 
 #. type: Plain text
 #: 0100.en.adoc:36
 msgid "\"Named place\" has been replaced with <<feature>>."
-msgstr ""
+msgstr "\"Lugar designado\" ha sido reemplazado por <<entidad geográfica>>."
 
 #. type: Plain text
 #: 0100.en.adoc:37
 msgid "Where the <<geographic-center>> was recommended in the past, <<corrected-center>> based on the <<geographic-radial>> is now used. This is an important change because the geographic center did not necessarily yield the smallest <<uncertainty>> due to the extent of a feature; the corrected center and geographic radial does."
-msgstr ""
+msgstr "Donde en el pasado se recomendó <<centro-geográfico>>, ahora se usa <<centro-corregido>> basado en el <<radio-geográfico>>. Este es un cambio importante porque el centro geográfico no necesariamente ha producido la menor <<incertidumbre>> debido a la magnitud de una entidad geográfica en particular. Por el contrario, el centro corregido y el radio geográfico si lo hacen."
 
 #. type: Title ===
 #: 0100.en.adoc:39
 #, no-wrap
 msgid "Using Darwin Core"
-msgstr ""
+msgstr "Usando el Darwin Core"
 
 #. type: Plain text
 #: 0100.en.adoc:42
