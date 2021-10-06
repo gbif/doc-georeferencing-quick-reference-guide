@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-04 08:12+0000\n"
-"PO-Revision-Date: 2021-10-06 18:10\n"
+"PO-Revision-Date: 2021-10-06 19:10\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -236,40 +236,40 @@ msgstr "Usando el Darwin Core"
 #. type: Plain text
 #: 0100.en.adoc:42
 msgid "<<georeference,Georeferences>> using the methods in this Guide will be of greatest value if as much information as possible is captured about and during the georeferencing process. The https://dwc.tdwg.org/terms/[Darwin Core standard (Darwin Core Maintenance Group 2020)^] defines all of the fields recommended for the capture of reproducible georeferences, as follows:"
-msgstr ""
+msgstr "Las <<georreferencia, georreferencias>> que usen los métodos de esta guía serán de gran valor si sobre y durante el proceso de georreferenciación se captura la mayor cantidad de información. A continuación se definen todos los elementos recomendados por el https://dwc.tdwg.org/terms/[Estandar Darwin Core(Darwin Core Maintenance Group 2020)^] para la captura de georreferencias reproducibles:"
 
 #. type: Plain text
 #: 0100.en.adoc:44
 msgid "<<Darwin-Core,Darwin Core>> georeferencing terms:"
-msgstr ""
+msgstr "Términos de georreferenciación del <<Darwin-Core,Darwin Core>>:"
 
 #. type: Labeled list
 #: 0100.en.adoc:45
 #, no-wrap
 msgid "term:dwc[dwc:decimalLatitude], term:dwc[dwc:decimalLongitude], term:dwc[dwc:geodeticDatum]"
-msgstr ""
+msgstr "term:dwc[dwc:decimalLatitude] (Latitud decimal), term:dwc[dwc:decimalLongitude] (Longitud decimal), term:dwc[dwc:geodeticDatum] (Dato geodésico)"
 
 #. type: Plain text
 #: 0100.en.adoc:46
 msgid "the combination of these fields provide the reference for the center of the <<point-radius>> representation of the georeference."
-msgstr ""
+msgstr "la combinación de estos campos proporciona la referencia para el centro de la <<point-radius>> representación de la georeferencia."
 
 #. type: Labeled list
 #: 0100.en.adoc:46
 #, no-wrap
 msgid "term:dwc[dwc:coordinateUncertaintyInMeters]"
-msgstr ""
+msgstr "term:dwc[dwc:coordinateUncertaintyInMeters] (Incertidumbre de las coordenadas en metros)"
 
 #. type: Plain text
 #: 0100.en.adoc:47
 msgid "The horizontal distance in meters from the given term:dwc[decimalLatitude] and term:dwc[decimalLongitude] that describes the <<smallest-enclosing-circle>> that contains the whole of the <<location>>. Leave the value empty if the <<uncertainty>> is unknown, cannot be estimated, or is not applicable (because there are no <<coordinates>>). Zero is not a valid value for this term. This term corresponds with the <<geographic-radial>> of the final georeference."
-msgstr ""
+msgstr "La distancia horizontal en metros de la term:dwc[decimalLatitude] (latitud decimal) y la term:dwc[decimalLongitude] (longitud decimal) que describe el <<círculo-mínimo>> que contiene toda la <<ubicación>>. Deje el elemento vacío si la <<incertidumbre>> es desconocida, no puede ser estimada o no es aplicable (porque no hay <<coordenadas>>). Cero no es un valor válido para este término. Este término corresponde al <<radio-geográfico>> de la georreferencia final."
 
 #. type: Labeled list
 #: 0100.en.adoc:47
 #, no-wrap
 msgid "term:dwc[dwc:georeferencedBy], term:dwc[dwc:georeferencedDate]"
-msgstr ""
+msgstr "term:dwc[dwc:georeferencedBy] (Georreferenciado por), term:dwc[dwc:georeferencedDate] (Fecha de georreferenciación)"
 
 #. type: Plain text
 #: 0100.en.adoc:48
