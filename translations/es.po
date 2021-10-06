@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-04 08:12+0000\n"
-"PO-Revision-Date: 2021-10-04 14:08\n"
+"PO-Revision-Date: 2021-10-06 16:06\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -20,118 +20,118 @@ msgstr ""
 #: index.en.adoc:1 appa.en.adoc:3 appb.en.adoc:3
 #, no-wrap
 msgid "Georeferencing Quick Reference Guide"
-msgstr ""
+msgstr "Guía Rápida de Georreferenciación"
 
 #. type: Plain text
 #: index.en.adoc:35
 msgid "languageLinks:combined[]"
-msgstr ""
+msgstr "languageLinks:combined[]"
 
 #. type: Target for macro image
 #: colophon.en.adoc:3
 #, no-wrap
 msgid "img/web/photo.jpg"
-msgstr ""
+msgstr "img/web/photo.jpg"
 
 #. type: Title ==
 #: colophon.en.adoc:6
 #, no-wrap
 msgid "Colophon"
-msgstr ""
+msgstr "Colofón"
 
 #. type: Title ===
 #: colophon.en.adoc:9
 #, no-wrap
 msgid "Suggested citation"
-msgstr ""
+msgstr "Citación sugerida"
 
 #. type: Plain text
 #: colophon.en.adoc:12
 msgid "Zermoglio PF, Chapman AD, Wieczorek JR, Luna MC & Bloom DA (2020) Georeferencing Quick Reference Guide. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/e09p-h128"
-msgstr ""
+msgstr "Zermoglio PF, Chapman AD, Wieczorek JR, Luna MC & Bloom DA (2020) Guía Rápida de Georreferenciación. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/e09p-h128"
 
 #. type: Title ===
 #: colophon.en.adoc:13
 #, no-wrap
 msgid "Authors"
-msgstr ""
+msgstr "Autores"
 
 #. type: Plain text
 #: colophon.en.adoc:16
 msgid "https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio], https://orcid.org/0000-0003-1700-6962[Arthur D. Chapman], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek], https://orcid.org/0000-0002-6392-8864[Marie Celeste Luna] & https://orcid.org/0000-0003-1273-1807[David A. Bloom]"
-msgstr ""
+msgstr "https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio], https://orcid.org/0000-0003-1700-6962[Arthur D. Chapman], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek], https://orcid.org/0000-0002-6392-8864[Marie Celeste Luna] & https://orcid.org/0000-0003-1273-1807[David A. Bloom]"
 
 #. type: Title ===
 #: colophon.en.adoc:17
 #, no-wrap
 msgid "Contributors"
-msgstr ""
+msgstr "Colaboradores"
 
 #. type: Title ===
 #: colophon.en.adoc:19
 #, no-wrap
 msgid "Licence"
-msgstr ""
+msgstr "Licencia"
 
 #. type: Plain text
 #: colophon.en.adoc:22
 msgid "The document _Georeferencing Quick Reference Guide_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License]."
-msgstr ""
+msgstr "Este documento _Guía Rápida de Georreferenciación_ Se publica bajo una licencia https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Atribución-CompartirIgual 4.0 Internacional]."
 
 #. type: Title ===
 #: colophon.en.adoc:23
 #, no-wrap
 msgid "Disclaimer"
-msgstr ""
+msgstr "Descargo de responsabilidad"
 
 #. type: Plain text
 #: colophon.en.adoc:26
 msgid "The information in this book represents the professional opinion of the authors, and does not necessarily represent the views of the publisher. While the authors and the publisher have attempted to make this book as accurate and as thorough as possible, the information contained herein is provided on an \"As Is\" basis, and without any warranties with respect to its accuracy or completeness. The authors and the publisher shall have no liability to any person or entity for any loss or damage caused by using the information provided in this book."
-msgstr ""
+msgstr "La información en este libro representa la opinión profesional de los autores y no representa necesariamente las opiniones del editor. Los autores y el editor han intentado hacer este libro lo más preciso y minucioso posible, sin embargo, la información contenida en esta publicación se proporciona sobre la base \"Como es\" y sin ninguna garantía con respecto a su exactitud o integridad. Los autores y el editor no tendrán ninguna responsabilidad ante ninguna persona o entidad por cualquier pérdida o daño causado por el uso de la información proporcionada en este libro."
 
 #. type: Plain text
 #: colophon.en.adoc:28
 msgid "Where there are differences in interpretation between this document and translated versions in languages other than English, the English version remains the original and definitive version."
-msgstr ""
+msgstr "Donde haya diferencias de interpretación entre este documento y las versiones traducidas en idiomas distintos del inglés, la versión en inglés sigue siendo la original y definitiva."
 
 #. type: Title ===
 #: colophon.en.adoc:29
 #, no-wrap
 msgid "Persistent URI"
-msgstr ""
+msgstr "URI persistente"
 
 #. type: Plain text
 #: colophon.en.adoc:32
 msgid "https://doi.org/10.35035/e09p-h128"
-msgstr ""
+msgstr "https://doi.org/10.35035/e09p-h128"
 
 #. type: Title ===
 #: colophon.en.adoc:33
 #, no-wrap
 msgid "Document control"
-msgstr ""
+msgstr "Control del documento"
 
 #. type: Plain text
 #: colophon.en.adoc:36
 msgid "v1.0, December 2020"
-msgstr ""
+msgstr "v1.0, Diciembre 2020"
 
 #. type: Title ===
 #: colophon.en.adoc:37
 #, no-wrap
 msgid "Cover image"
-msgstr ""
+msgstr "Imagen de portada"
 
 #. type: Plain text
 #: colophon.en.adoc:39
 msgid "Commerson's dolphin (_Cephalorhynchus commersonii_), off the coast of Chubut, Argentina. Photo 2018 Gabriel Laufer via https://www.gbif.org/occurrence/2563539903[iNaturalist research-grade observations], in the public domain under http://creativecommons.org/publicdomain/zero/1.0/[CC0]."
-msgstr ""
+msgstr "Delfín de Commerson (_Cephalorhynchus commersonii_), frente a la costa de Chubut, Argentina. Foto 2018 Gabriel Laufer vía https://www.gbif.org/occurrence/2563539903[iNaturalist research-grade observations], in the public domain under http://creativecommons.org/publicdomain/zero/1.0/[CC0]."
 
 #. type: Title ===
 #: 0100.en.adoc:1 appb.en.adoc:9
 #, no-wrap
 msgid "Introduction"
-msgstr ""
+msgstr "Introducción"
 
 #. type: Plain text
 #: 0100.en.adoc:4
