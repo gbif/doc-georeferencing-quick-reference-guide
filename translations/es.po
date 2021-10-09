@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-04 08:12+0000\n"
-"PO-Revision-Date: 2021-10-09 19:12\n"
+"PO-Revision-Date: 2021-10-09 20:12\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -414,27 +414,27 @@ msgstr ""
 #. type: Plain text
 #: 0100.en.adoc:98
 msgid "<<coordinates,Coordinates>> only"
-msgstr ""
+msgstr "Únicamente <<coordenadas,Coordenadas>>"
 
 #. type: Plain text
 #: 0100.en.adoc:99
 msgid "Geographic <<feature>> only"
-msgstr ""
+msgstr "Únicamente <<entidad-geográfica>>"
 
 #. type: Plain text
 #: 0100.en.adoc:100
 msgid "Distance only"
-msgstr ""
+msgstr "Únicamente distancia"
 
 #. type: Plain text
 #: 0100.en.adoc:101
 msgid "Distance along a path"
-msgstr ""
+msgstr "Distancia a lo largo de una ruta"
 
 #. type: Plain text
 #: 0100.en.adoc:102
 msgid "Distance along orthogonal <<direction,directions>>"
-msgstr ""
+msgstr "Distancia a lo largo de <<dirección, direcciones>> ortogonales"
 
 #. type: Plain text
 #: 0100.en.adoc:103
