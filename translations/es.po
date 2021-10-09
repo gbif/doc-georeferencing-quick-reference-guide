@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-04 08:12+0000\n"
-"PO-Revision-Date: 2021-10-07 02:32\n"
+"PO-Revision-Date: 2021-10-09 19:12\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -398,13 +398,13 @@ msgstr "Conceptos de georreferenciación"
 #. type: Plain text
 #: 0100.en.adoc:91
 msgid "One of the goals of <<georeference,georeferencing>> following best practices is to be sure that enough information is provided in the output so that the georeference is repeatable (see {gbp}#principles-of-best-practice[Principles of Best Practice] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). To that end, this document provides a set of recipes for georeferencing various <<locality-type,locality types>> using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator]. The Calculator allows you to make distinct kinds of calculations based on the locality type (<<s-locality-type>>). When the locality type is chosen from the predefined list, the Calculator presents input boxes for all of the parameters needed for that type of calculation. Note that the locality type is for the most specific <<locality-clause,clause>> in the <<locality>> description (see {gbp}#parsing-the-locality-description[Parsing the Locality Description] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). However, there may be information for other clauses or other parts of the <<location>> record that help to constrain the location and come into play when a <<feature>> <<boundary>> is determined. Many Calculator parameters are used for more than one locality type. Rather than repeat the explanation for each locality type, they are collected here for common reference. Some locality types require specific parameters, for which the corresponding explanations are included in each subsection of <<Georeferencing Methods by Locality Type>>. Refer to the {gcm}[Georeferencing Calculator Manual (Bloom et al. 2020)^] for details about the Calculator not answered in this document."
-msgstr ""
+msgstr "Uno de los objetivos de <<georreferencia,georreferenciar>> siguiendo las buenas prácticas es estar seguro de proporcionar suficiente información en el producto como para que la georreferencia se pueda replicar (ver {gbp}#principios-de-buenas-prácticas[Principios de buenas prácticas] en {gbp}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). Para ello, este documento proporciona un conjunto de pasos para georreferenciar distintos <<tipo-de-localidad,tipos de localidades>> usando la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación]. La Calculadora permite hacer distintos cálculos basados en el tipo de localidad (<<s-tipo-de-localidad>>). Al elegir el tipo de localidad de la lista predefinida, la Calculadora muestra unas cajas para ingresar todos los parámetros necesarios para ese tipo de cálculo en particular. Tenga en cuenta que el tipo de localidad se define con base en la <<claúsula-de-la-localidad,claúsula>> más específica presente en la descripción de la <<localidad>> (ver {gbp}#parsing-the-locality-description[Parsing the Locality Description] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). Sin embargo, puede haber información para otras cláusulas u otros detalles del registro de la <<ubicación>> que ayudan a restringir la ubicación y pueden entrar en juego cuando se determina el <<límite>> de una <<entidad-geográfica>>. Varios parámetros de la Calculadora se usan para más de un tipo de localidad. En lugar de repetir la explicación para cada tipo de localidad, se reunen aquí para una referencia común. Algunos tipos de localidades requieren parámetros específicos, las explicaciones correspondientes se incluyen en cada subsección de <<Georeferencing Methods by Locality Type>>. Consulte el {gcm}[Manual del cálculo de georreferenciación (Bloom et al. 2020)^] para detalles sobre la Calculadora que no están contenidos en este documento."
 
 #. type: Title ====
 #: 0100.en.adoc:93
 #, no-wrap
 msgid "Locality Type"
-msgstr ""
+msgstr "Tipo de localidad"
 
 #. type: Plain text
 #: 0100.en.adoc:96
