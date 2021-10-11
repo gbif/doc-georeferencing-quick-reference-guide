@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-10 11:44\n"
+"PO-Revision-Date: 2021-10-11 01:41\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -439,18 +439,18 @@ msgstr "Distancia a lo largo de <<dirección, direcciones>> ortogonales"
 #. type: Plain text
 #: 0100.en.adoc:103
 msgid "Distance at a <<heading>>"
-msgstr ""
+msgstr "Distancia desde una <<orientación>>"
 
 #. type: Plain text
 #: 0100.en.adoc:105
 msgid "Selecting a locality type will configure the Calculator to show all of the parameters that need to be set to perform the georeference calculation. This Guide gives specific instructions for how to set the parameters for many different examples of each of the locality types."
-msgstr ""
+msgstr "Al seleccionar un tipo de localidad se configurará la Calculadora para que muestre todos los parámetros que se deben establecer para calcular la georreferencia. Esta guía proporciona instrucciones específicas sobre cómo configurar los parámetros para varios ejemplos de los tipos de localidad."
 
 #. type: Title ====
 #: 0100.en.adoc:107
 #, no-wrap
 msgid "Corrected Center"
-msgstr ""
+msgstr "Centro Corregido"
 
 #. type: Plain text
 #: 0100.en.adoc:110
