@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-11 01:41\n"
+"PO-Revision-Date: 2021-10-11 02:41\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -409,7 +409,7 @@ msgstr "Tipo de localidad"
 #. type: Plain text
 #: 0100.en.adoc:96
 msgid "The <<locality-type,locality type>> refers to the pattern of the most specific part of a <<locality>> description to be <<georeference,georeferenced>> – the one that determines which calculation method to use. The http://georeferencing.org/georefcalculator/gc.html[Calculator^] has options to compute georeferences for six basic locality types:"
-msgstr ""
+msgstr "El <<tipo-de-localidad,tipo de localidad>> se refiere al patrón de la parte más específica de la descripción de una <<localidad>> a ser <<georreferencia,georreferenciada>>, es decir, el que determina qué método de cálculo utilizar. La http://georeferencing.org/georefcalculator/gc.html[Calculadora] tiene opciones para calcular georreferencias para seis tipos básicos de localidad:"
 
 #. type: Plain text
 #: 0100.en.adoc:98
@@ -455,30 +455,30 @@ msgstr "Centro Corregido"
 #. type: Plain text
 #: 0100.en.adoc:110
 msgid "The <<corrected-center,corrected center>> is the point within a <<location>>, or on its <<boundary>>, that minimizes the <<geographic-radial,geographic radial>> (see <<Radial of Feature>>). This point is obtained by finding the <<smallest-enclosing-circle,smallest enclosing circle>> that contains the entire <<feature>>, and then taking the center of that circle (<<img-corrected-center>>A). If that center does not fall on or inside the boundaries of the feature, find the smallest enclosing circle that contains the entire feature, *but* has its center on the boundary of the feature (<<img-corrected-center>>B). Note that in the corrected case, the new circle, and hence the <<radial>>, will always be larger than the uncorrected one. In the http://georeferencing.org/georefcalculator/gc.html[Calculator^], the <<coordinates>> corresponding to the corrected center are labelled as [ui-element]#Input Latitude# and [ui-element]#Input Longitude#. See <<Appendix B: Methods to Find the Corrected Center and Geographic Radial>> for techniques to determine the corrected center."
-msgstr ""
+msgstr "El <<centro-corregido,centro corregido>> es el punto dentro de un <<ubicación>>, o en su <<límite>>, que minimiza el <<radio geográfico>> (ver <<Radio de la Entidad Geográfica>>). Este punto se obtiene al encontrar el <<círculo mínimo>> que contenga todo la <<entidad geográfica>> y luego tomando el centro de ese círculo (<<img-corrected-center>>A). Si el centro no cae sobre o dentro de los límites de la entidad geográfica, es necesario encontrar el círculo mínimo que contenga toda la entidad geográfica *pero* que tenga su centro en el límite de la entidad (<<img-corrected-center>>B). Tenga en cuenta que en el caso corregido, el nuevo círculo y por lo tanto el <<radio>>, siempre será más grande que el círculo sin corregir. En la http://georeferencing.org/georefcalculator/gc.html[Calculadora^], las <<coordenadas>> correspondientes al centro corregido están etiquetadas como [ui-element]#Latitud de entrada# y [ui-element]#Longitud de entrada#. Vea <<Apéndice B: Métodos para Encontrar el Centro Corregido y el Radio Geográfico>> para conocer las técnicas para determinar el centro corregido."
 
 #. type: Block title
 #: 0100.en.adoc:113
 #, no-wrap
 msgid "A: The center *a* of the smallest enclosing circle of a feature (polygon highlighted in light grey). Note that the center does not fall within the boundary of the feature. B: The corrected center *b*, which is on the boundary of the feature, and the corresponding geographic radial *c*."
-msgstr ""
+msgstr "R: El centro *a* del círculo mínimo de una entidad geográfica (polígono resaltado en gris claro). Tenga en cuenta que el centro no está dentro del límite de la entidad. B: El centro corregido *b* se encuentra dentro del límite de la entidad y el radial geográfico correspondiente *c*."
 
 #. type: Target for macro image
 #: 0100.en.adoc:114
 #, no-wrap
 msgid "img/web/corrected-center.png"
-msgstr ""
+msgstr "img/web/corrected-center.png"
 
 #. type: Title ====
 #: 0100.en.adoc:116
 #, no-wrap
 msgid "Radial of Feature"
-msgstr ""
+msgstr "Radio de una Entidad Geográfica"
 
 #. type: Plain text
 #: 0100.en.adoc:119
 msgid "A <<feature>> is a place in the <<locality>> description that has an <<extent>> and can be delimited by a <<boundary>>. The <<geographic-radial,geographic radial>> of the feature (shown as [ui-element]#Radial of Feature# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]) is the distance from the <<corrected-center,corrected center>> of the feature to the furthest point on the <<geographic-boundary,geographic boundary>> of that feature (see <<img-corrected-center>> and {gbp}#extent-of-a-location[Extent of a Location^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). Note that the radial was called \"extent\" in earlier documents and versions of the Calculator. See <<Appendix B: Methods to Find the Corrected Center and Geographic Radial>> for techniques to determine the geographic radial."
-msgstr ""
+msgstr "Una <<entidad geográfica>> es un lugar en la descripción de una <<localidad>> que tiene una <<extensión>> y puede ser delimitada por un <<límite>>. El <<radio geográfico>> de la entidad (se encuentra como [ui-element]#Radial of Feature# en http://georeferencing.org/georefcalculator/gc.html[la Calculadora^])) es la distancia desde el <<centro corregido>> de la entidad hasta el punto más lejano en el <<límite geográfico>> de esa entidad (ver <<img-corrected-center>> y {gbp}#extensión-de-una-ubicación[Extensión de una Ubicación^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]). Tenga en cuenta que en documentos anteriores y versiones anteriores de la Calculadora el radio se llamaba \"extensión\". Vea <<Apéndice B: Métodos para Encontrar el Centro Corregido y el Radio Geográfico>> para conocer las técnicas para determinar el centro corregido."
 
 #. type: Plain text
 #: 0100.en.adoc:121
