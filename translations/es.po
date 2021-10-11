@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-11 02:41\n"
+"PO-Revision-Date: 2021-10-11 03:37\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -483,55 +483,55 @@ msgstr "Una <<entidad geográfica>> es un lugar en la descripción de una <<loca
 #. type: Plain text
 #: 0100.en.adoc:121
 msgid "The final <<georeference>> will have a geographic radial distinct from the geographic radial of any of the features in the <<locality>> description (because it will also encompass all sources of <<uncertainty>>), and once the calculation is performed, this will be displayed in the output from the Calculator in the [ui-element]#Uncertainty# field."
-msgstr ""
+msgstr "La <<georreferencia>> final tendrá un radio geográfico diferente del radio geográfico de cualquiera de las entidades presentes en la descripción de la <<localidad>> (pues también abarcará todas las fuentes de <<incertidumbre>>), una vez realizado el cálculo, este se mostrará en el resultado de la Calculadora en el campo [ui-element]#Incertidumbre."
 
 #. type: Title ====
 #: 0100.en.adoc:123
 #, no-wrap
 msgid "Latitude"
-msgstr ""
+msgstr "Latitud"
 
 #. type: Plain text
 #: 0100.en.adoc:126
 msgid "Labelled as [ui-element]#Input Latitude# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]. The <<geographic-coordinates,geographic coordinate>> north or south of the equator (where <<latitude>> is 0) that represents the starting point for a <<georeference>> calculation and depends on the <<locality-type,locality type>>."
-msgstr ""
+msgstr "Etiquetada como [ui-element]#Input Latitude# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^]. La <<coordenadas geográficas, coordenada geográfica>> al norte o sur del ecuador (donde la <<latitud>> es 0) representa el punto de partida para el cálculo de una <<georreferencia>> y depende del <<tipo de localidad>>."
 
 #. type: Plain text
 #: 0100.en.adoc:128
 msgid "Latitudes in <<decimal-degrees,decimal degrees>> north of the equator are positive by convention, while latitudes to the south are negative. The Calculator supports three degree-based geographic coordinate formats for latitude and <<longitude>>: <<decimal-degrees>> (e.g. −41.0570673), degrees decimal minutes (e.g. 41° 3.424\") and <<DMS,degrees minutes and seconds>> (e.g. 41° 3' 25.44\" S)."
-msgstr ""
+msgstr "Por convención, las latitudes en <<grados decimales>> al norte del ecuador son positivas mientras que las latitudes hacia el sur son negativas. La Calculadora admite tres formatos de coordenadas geográficas basados en grados para la latitud y la <<longitud>>: <<grados decimales>> (p. ej., –41.0570673), grados minutos decimales (p. ej., 41° 3.424\") y <<GMS,grados, minutos, y segundos>> (p. ej., 41° 3' 25.44\" S)."
 
 #. type: Title ====
 #: 0100.en.adoc:130
 #, no-wrap
 msgid "Longitude"
-msgstr ""
+msgstr "Longitud"
 
 #. type: Plain text
 #: 0100.en.adoc:133
 msgid "Labelled as [ui-element]#Input Longitude# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]. The <<geographic-coordinates,geographic coordinate>> east or west of the <<prime-meridian,prime meridian>> (an arc between the north and south poles where <<longitude>> is 0) that represents the starting point for a <<georeference>> calculation and depends on the <<locality-type>>."
-msgstr ""
+msgstr "Etiquetada como [ui-element]#Input Longitude# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^]. La <<coordenadas-geográficas, coordenada geográfica>> este o oeste del <<meridiano cero>> (un arco entre los polos norte y sur donde la <<longitud>> es 0) representa el punto de partida para el cálculo de una <<georreferencia>> y depende del <<tipo de localidad>>."
 
 #. type: Plain text
 #: 0100.en.adoc:135
 msgid "Longitudes in <<decimal-degrees,decimal degrees>> east of the prime meridian are positive by convention, while longitudes to the west are negative. The Calculator supports three degree-based geographic coordinate formats for <<latitude>> and longitude: <<decimal-degrees,decimal degrees>> (−71.5246934), degrees decimal minutes (71° 31.482\") and <<DMS,degrees minutes and seconds>> (71° 31' 28.90\" W)."
-msgstr ""
+msgstr "Por convención, las longitudes en <<grados decimales>> al este del meridiano cero son positivas mientras que las longitudes al oeste son negativas. La Calculadora admite tres formatos de coordenadas geográficas basados en grados para la <<latitud>> y la longitud: <<grados decimales>> (p. ej., −71.5246934), grados minutos decimales (p. ej., 71° 31.482\") y <<GMS,grados, minutos, y segundos>> (p. ej., 71° 31' 28.90\" W)."
 
 #. type: Title ====
 #: 0100.en.adoc:136
 #, no-wrap
 msgid "Coordinate Source"
-msgstr ""
+msgstr "Fuente de la coordenada"
 
 #. type: Plain text
 #: 0100.en.adoc:139
 msgid "The [ui-element]#Coordinate Source# is the type of resource (map type, <<GPS>>, <<gazetteer>>, <<locality>> description) from which the starting [ui-element]#Input Latitude# and [ui-element]#Longitude# were derived."
-msgstr ""
+msgstr "La [ui-element]#Coordinate Source# es la clase de recurso (tipo de mapa, <<GPS>>, <<gacetero> >, descripción de la <<localidad>>) del cual se derivaron la [ui-element]#Latitud# and [ui-element]#Longitud# de entrada iniciales."
 
 #. type: Plain text
 #: 0100.en.adoc:141
 msgid "More often than not, the original <<coordinates>> are used to find the general vicinity of the <<location>> on a map, after which the process of determining the <<corrected-center,corrected center>> provides the new coordinates. The Coordinate Source to use in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] in this case is the map from which the corrected center was determined, not the original source used to determine the general vicinity on the map. For example, suppose the original coordinates came from a gazetteer, but the <<boundary>> and corrected center of the <<feature>> were determined from Google Maps, the Coordinate Source would be \"Google Earth/Maps 2008\", not \"gazetteer\"."
-msgstr ""
+msgstr "Comúnmente se usan las <<coordenadas>> originales para encontrar las inmediaciones de la <<ubicación>> en un mapa, posteriormente, la determinación del <<centro corregido>> produce las nuevas coordenadas. En este caso, la fuente de coordenadas a usar en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] es el mapa desde el cual se determinó el centro corregido, no la fuente original usada para determinar las inmediaciones en el mapa. Por ejemplo, supongamos que las coordenadas originales procedían de un gacetero, pero el <<límite>> y el centro corregido de la <<entidad geográfica>> se determinaron a partir de Google Maps, la Fuente de la Coordenada sería \"Google Earth/Maps 2008\", no \"gacetero\"."
 
 #. type: Plain text
 #: 0100.en.adoc:143
@@ -542,7 +542,7 @@ msgstr ""
 #: 0100.en.adoc:145
 #, no-wrap
 msgid "Coordinate Format"
-msgstr ""
+msgstr "Formato de la Coordenada"
 
 #. type: Plain text
 #: 0100.en.adoc:148
@@ -563,7 +563,7 @@ msgstr ""
 #: 0100.en.adoc:154
 #, no-wrap
 msgid "Coordinate Precision"
-msgstr ""
+msgstr "Precisión de la coordenada"
 
 #. type: Plain text
 #: 0100.en.adoc:157
