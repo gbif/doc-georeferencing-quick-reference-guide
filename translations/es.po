@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-19 21:47\n"
+"PO-Revision-Date: 2021-10-19 22:43\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1378,7 +1378,7 @@ msgstr "\"Buceo exploratorio extendiendose en un círculo aproximado de 20 metro
 #: 0200.en.adoc:283
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Locate the <<extent>> of the dive as a 3D shape, which should be projected perpendicularly onto the water surface. Determine the <<boundary>> of that projection on the horizontal plane (i.e. the <<geographic-boundary>>) (<<img-dive-location>>).\n"
-msgstr "*Paso 1 – Determinar los límites de las características*: Localice la <<extensión>> de la inmersión como una forma 3D, que deben proyectarse perpendicularmente sobre la superficie del agua. Determine el <<límite>> de esa proyección en el plano horizontal (es decir, el <<límite-geográfico, límite geográfico>>) (<<img-dive-location>>).\n"
+msgstr "*Paso 1 – Determinar los límites de la entidad geográfica*: Localice la <<extensión>> de la inmersión como una forma 3D, que deben proyectarse perpendicularmente sobre la superficie del agua. Determine el <<límite>> de esa proyección en el plano horizontal (es decir, el <<límite-geográfico, límite geográfico>>) (<<img-dive-location>>).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:285
@@ -1433,7 +1433,7 @@ msgstr "\"Cabecera Río Manso\""
 #: 0200.en.adoc:310
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Sometimes the position of a headwater is well known, e.g. it originates in a spring, lake, marsh, or a generally accepted beginning of a stream. If the headwater issues from a stationary waterbody such as a spring or lake, the feature is a line segment or polyline across the area where the water flows out of the stationary waterbody. In the latter case, treat the <<boundary>> as for a <<path>> (see <<Feature – Path>>), albeit a short one, as it is transverse to the flow of the waterway (<<img-headwater>>).\n"
-msgstr "*Paso 1 - Determinar los límites de la característica*: A veces la posición de la cabecera es bien conocida, por ejemplo tiene su origen en un manantial, lago, pantano o es un comienzo generalmente aceptado de un torrente. Si la cabecera se origina desde un cuerpo de agua estacionario como un manantial o lago, la entidad geográfica es un segmento de línea o una polilínea a través del área en la que fluye el agua fuera del cuerpo estacionario. En este último caso, trate a los <<límites>> como a una <<ruta>> (ver <<Entidad: Ruta>>), aunque corta pues es transversal al flujo de la vía navegable (<<img-headwater>>).\n"
+msgstr "*Paso 1 - Determinar los límites de la entidad geográfica*: A veces la posición de la cabecera es bien conocida, por ejemplo tiene su origen en un manantial, lago, pantano o es un comienzo generalmente aceptado de un torrente. Si la cabecera se origina desde un cuerpo de agua estacionario como un manantial o lago, la entidad geográfica es un segmento de línea o una polilínea a través del área en la que fluye el agua fuera del cuerpo estacionario. En este último caso, trate a los <<límites>> como a una <<ruta>> (ver <<Entidad: Ruta>>), aunque corta pues es transversal al flujo de la vía navegable (<<img-headwater>>).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:312
@@ -1565,13 +1565,13 @@ msgstr "\"entre Point Reyes e Inverness\""
 #: 0200.en.adoc:369
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Determine the <<boundary,boundaries>> of each feature as <<Feature – with Obvious Spatial Extent>> or <<Feature – without Obvious Spatial Extent>> (<<img-between-two-features>>A).\n"
-msgstr "*Paso 1 – Determinar los límites de la característica*: Determine los <<límite, límites>> de cada característica como si fuera una <<Entidad Geográfica con una Extensión Espacial Obvia>> o una <<Entidad Geográfica sin una Extensión Espacial Obvia>> (<<img-between-two-features>>A).\n"
+msgstr "*Paso 1 – Determinar los límites de la entidad geográfica*: Determine los <<límite, límites>> de cada característica como si fuera una <<Entidad Geográfica con una Extensión Espacial Obvia>> o una <<Entidad Geográfica sin una Extensión Espacial Obvia>> (<<img-between-two-features>>A).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:371
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once you have determined the boundaries of the two features, find their <<corrected-center,corrected centers>>, as for <<Feature – with Obvious Spatial Extent>>. Use the midpoint between the corrected centers of the two features to determine the <<coordinates>> of the <<location>> between the features (<<img-between-two-features>>B). The <<geographic-radial>> of the location between the two features is half the distance between the corrected centers of the features (<<img-between-two-features>>B).\n"
-msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez haya determinado los límites de las dos entidades, encuentre su <<centro-corregido, centros corregidos>>, como para una <<Entidad con Límites Espaciales Obvios>>. Use el punto medio entre los centros corregidos de las dos entidades para determinar las <<coordenadas>> de la <<ubicación>> que está entre las características (<<img-between-two-features>>B). El <<radio-geográfico, radio geográfico>> de la ubicación entre las dos características es la mitad de la distancia entre los centros corregidos de las entidades (<<img-between-two-features>>B).\n"
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez haya determinado los límites de las dos entidades, encuentre sus <<centro-corregido, centros corregidos>>, como para una <<Entidad con Límites Espaciales Obvios>>. Use el punto medio entre los centros corregidos de las dos entidades para determinar las <<coordenadas>> de la <<ubicación>> que está entre ellas (<<img-between-two-features>>B). El <<radio-geográfico, radio geográfico>> de la ubicación entre las dos entidades es la mitad de la distancia entre los centros corregidos de las entidades (<<img-between-two-features>>B).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:373
@@ -1626,109 +1626,109 @@ msgstr "*Paso 1 – Determinar los límites de la entidad*: Cree un <<límite>> 
 #. type: Plain text
 #: 0200.en.adoc:395
 msgid "Paths may cross each other one or more times, with the area between switching from one side of each path to the other, resulting in a boundary consisting of multiple polygons (<<img-between-two-paths>>B)."
-msgstr ""
+msgstr "Las rutas pueden cruzarse una o más veces, con el área entre ellas cambiando de un lado a otro, dando como resultado un límite compuesto por múltiples polígonos (<<img-between-two-paths>>B)."
 
 #. type: Plain text
 #: 0200.en.adoc:397
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> of the corrected center and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the corrected center to the furthest point on the boundary of the <<feature>>.\n"
-msgstr ""
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez que haya determinado el límite, obtenga las <<coordenadas>> del centro corregido y el <<radio-geográfico, radio geográfico>> como para una <<Entidad con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las coordenadas del centro corregido hasta el punto más lejano en el límite de la <<entidad-geográfica, entidad geográfica>>.\n"
 
 #. type: Block title
 #: 0200.en.adoc:401
 #, no-wrap
 msgid "Boundary, corrected center *a* and geographic radial *b* for a location between two paths (light shaded area), with location restricted by an administrative boundary (dashed line). *A*: Paths do not cross. *B*: Paths cross each other multiple times."
-msgstr ""
+msgstr "Límite, centro corregido *a* y radio geográfico *b* para una ubicación entre dos rutas (área sombreada clara), con ubicación restringida por un límite administrativo (línea punteada). *A*: Las rutas no se cruzan *B*: Las rutas se cruzan varias veces."
 
 #. type: Target for macro image
 #: 0200.en.adoc:402
 #, no-wrap
 msgid "img/web/between-two-paths.png"
-msgstr ""
+msgstr "img/web/between-two-paths.png"
 
 #. type: Title ===
 #: 0220.en.adoc:1 appa.en.adoc:62
 #, no-wrap
 msgid "Offsets"
-msgstr ""
+msgstr "Desplazamientos"
 
 #. type: Block title
 #: 0220.en.adoc:3 0230.en.adoc:3
 #, no-wrap
 msgid "**Definition**"
-msgstr ""
+msgstr "**Definición**"
 
 #. type: delimited block =
 #: 0220.en.adoc:7
 msgid "An *offset* is a displacement from a reference location. An offset is usually used in conjunction with a heading to give a distance and direction from a feature (see {gbp}#offsets[Offsets^] and {gbp}#uncertainty-related-to-offset-precision[Uncertainty Related to Offset Precision^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). There are a variety of ways in which offsets with features and headings are represented in locality descriptions, each with its own methods of spatial interpretation."
-msgstr ""
+msgstr "Un *desplazamiento* es un movimiento desde una ubicación de referencia. Los desplazamientos se usan normalmente junto con una orientación geográfica para dar una distancia y dirección desde una entidad (ver {gbp}#desplazamientos[Desplazamientos^] y {gbp}#incertidumbre-relacionada-con-la-precisión-de-un-desplazamiento[Incertidumbre Relacionada con la Precisión de un Desplazamiento^] in {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]). Hay una variedad de formas en las que los desplazamientos con ubicaciones y orientaciones están representados en las descripciones de las localidades, cada uno con sus propios métodos de interpretación espacial."
 
 #. type: Plain text
 #: 0220.en.adoc:10
 msgid "In all cases, both for the <<shape>> <<georeferencing-method,method>> and for the <<point-radius>> <<georeferencing-method,method>> using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator], the <<boundary,boundaries>> of the reference <<feature,feature(s)>> are needed. Thus, this section on Offsets will repeatedly refer to features as determined by the methods presented in the various sections of <<Geographic Feature only>>."
-msgstr ""
+msgstr "En todos los casos, tanto para el <<método-de-georreferenciación,método>> de <<forma-geométrica,forma geométrica>> como para el <<método-de-georreferenciación,método>> <<radio-punto>> al usar la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación], los <<límite, límites>> de la <<entidad,entidad(es)>> de referencia son necesarios. Por esto, esta sección sobre Desplazamientos se referirá repetidamente a las entidades determinadas por los métodos presentados en las distintas secciones de <<Solo Entidad Geográfica>>."
 
 #. type: Plain text
 #: 0220.en.adoc:12
 msgid "The <<locality-type,locality types>> that involve offsets, in addition to the tricky one we have already seen above (\"near a feature\", <<Feature – near a Feature>>), are:"
-msgstr ""
+msgstr "Los <<tipo-de-localidad,tipos de localidad>> que involucran desplazamientos, además del tipo complicado que ya vimos anteriormente (\"cerca de una entidad geográfica\", <<Entidad Geográfica: cerca de una Entidad Geográfica>>), son:"
 
 #. type: Plain text
 #: 0220.en.adoc:14
 msgid "distance only (e.g. \"5 mi from Bakersfield\")"
-msgstr ""
+msgstr "solo distancia (p. ej. \"5 mi desde Bakersfield\")"
 
 #. type: Plain text
 #: 0220.en.adoc:15
 msgid "<<heading>> only (e.g. \"North of Bakersfield\")"
-msgstr ""
+msgstr "solo <<desplezamiento>> (p. ej. \"al norte de Bakersfield\")"
 
 #. type: Plain text
 #: 0220.en.adoc:16
 msgid "distance along a <<path>> (e.g. \"13 miles east (by road) from Bakersfield\")"
-msgstr ""
+msgstr "distancia a lo largo de una <<ruta>> (p. ej. \"13 millas al este (por carretera) de Bakersfield)"
 
 #. type: Plain text
 #: 0220.en.adoc:17
 msgid "distance along orthogonal <<direction,directions>> (e.g. \"2 miles east and 3 miles north of Bakersfield\")"
-msgstr ""
+msgstr "distancia a lo largo de <<dirección,direcciones>> ortogonales (p. ej., \"2 millas al este y 3 millas al norte de Bakersfield\")"
 
 #. type: Plain text
 #: 0220.en.adoc:18
 msgid "distance at a heading (e.g. \"10 miles east (by air) from Bakersfield\")"
-msgstr ""
+msgstr "distancia en una orientación cardinal (p. ej. \"10 millas al este (por aire) de Bakersfield\")"
 
 #. type: Plain text
 #: 0220.en.adoc:19
 msgid "distances from two distinct paths (e.g. \"1.5 miles east of Louisiana State Highway 1026 and 2 miles south of U.S. Highway 190\")"
-msgstr ""
+msgstr "distancias desde dos rutas distintas (por ejemplo, \"1.5 millas al este de Louisiana State Highway 1026 y 2 millas al sur de U.S. Highway 190\")"
 
 #. type: Title ====
 #: 0220.en.adoc:20
 #, no-wrap
 msgid "Offset – Distance only"
-msgstr ""
+msgstr "Desplazamiento: Solo Distancia"
 
 #. type: Plain text
 #: 0220.en.adoc:23
 msgid "<<locality,Locality>> consists of an <<offset>> from a <<feature>> without any direction specified."
-msgstr ""
+msgstr "La <<localidad>> consiste en un <<desplazamiento>> desde una <<entidad-geográfica,entidad geográfica>> sin ninguna dirección especificada."
 
 #. type: delimited block =
 #: 0220.en.adoc:28
 msgid "\"5 km outside Calgary\" +"
-msgstr ""
+msgstr "\"5 km fuera de Calgary\" +"
 
 #. type: delimited block =
 #: 0220.en.adoc:29
 msgid "\"12 km de Purmamarca\""
-msgstr ""
+msgstr "\"12 km desde Purmamarca\""
 
 #. type: Plain text
 #: 0220.en.adoc:32
 #, no-wrap
 msgid "*Locality Type:* [ui-element]#Distance only#\n"
-msgstr ""
+msgstr "*Tipo de localidad:* [ui-element]#Solo Distancia#\n"
 
 #. type: Plain text
 #: 0220.en.adoc:34
