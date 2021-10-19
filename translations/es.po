@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-19 16:37\n"
+"PO-Revision-Date: 2021-10-19 17:33\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1338,81 +1338,81 @@ msgstr "Cueva con una <<extensión>> evidente: si hay disponible un mapa de todo
 #. type: Plain text
 #: 0200.en.adoc:261
 msgid "Cave extent not evident – if the limits of the cave are not evident: a) use the nearest identifiable <<feature>> to determine the extent and boundary of the cave, as for <<Feature – without Obvious Spatial Extent>> (<<img-caves>>B); or b) determine the <<coordinates>> of the cave entrance and use any evidence of the size of the cave to circumscribe the boundary as a circle around the entrance with a <<radial,radius>> commensurate with its size (<<img-caves>>C). Document accordingly in term:dwc[georeferenceRemarks]."
-msgstr ""
+msgstr "Cueva con una extensión no evidente: si los límites de la cueva no son evidentes: a) use la <<entidad-geográfica, entidad geográfica>> identificable más cercana para determinar la extensión y el límite de la cueva como para una <<Entidad Geográfica con una Extensión Espacial Evidente>> (<<img-caves>>B); o b) determine las <<coordenadas>> de la entrada de la cueva y use cualquier evidencia del tamaño de la cueva para circunscribir el límite como un círculo alrededor de la entrada con un <<radio,radio>> proporcional a su tamaño (<<img-caves>>C). Documente como corresponde en term:dwc[georeferenceRemarks] (Comentarios de la Georreferenciación)."
 
 #. type: Plain text
 #: 0200.en.adoc:263
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, use the same method to determine the coordinates and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature.\n"
-msgstr ""
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez haya determinado el límite, use el mismo método para determinar las coordenadas y el <<radio-geográfico, radio geográfico>> como para una <<Entidad con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad.\n"
 
 #. type: Block title
 #: 0200.en.adoc:267
 #, no-wrap
 msgid "Boundary, corrected center *a* and geographic radial *b* of a cave. *A*: cave extent known and projected onto the surface. *B*: cave extent not known, but inferred from other evidence. *C*: cave extent not known, but maximum horizontal length known and measured from the entrance."
-msgstr ""
+msgstr "Límite, centro corregido *a* y radio geográfico *b* de una cueva. *A*: extensión de la cueva conocida y proyectada sobre la superficie. *B*: la extensión de la cueva no se conoce pero se inferir por otra evidencia. *C*: la extensión de la cueva no se conoce, pero la longitud horizontal máxima es conocida y medida desde la entrada."
 
 #. type: Target for macro image
 #: 0200.en.adoc:268
 #, no-wrap
 msgid "img/web/caves.png"
-msgstr ""
+msgstr "img/web/caves.png"
 
 #. type: Title =====
 #: 0200.en.adoc:270
 #, no-wrap
 msgid "Feature – Dive Location"
-msgstr ""
+msgstr "Entidad Geográfica: Ubicación de Buceo"
 
 #. type: Plain text
 #: 0200.en.adoc:273
 msgid "The <<locality>> is a marine or freshwater diving site. Commonly recorded using the <<geographic-coordinates>> of the point on the surface where the diver entered the water (i.e. the <<entry-point>>)."
-msgstr ""
+msgstr "La <<localidad>> es una ubicación de buceo marino o de agua fresca. Comúnmente se registra usando el <<coordenadas-geográficas, coordenadas geográficas>> del punto en la superficie donde el buzo entró al agua (es decir, el <<punto-de-entrada, punto de entrada>>)."
 
 #. type: delimited block =
 #: 0200.en.adoc:278
 msgid "\"Exploratory dive extending in a rough circle of 20 meters diameter between depths of 75 and 100 meters, beginning 100 meters south east of the entry point at a depth of 85 meters.\""
-msgstr ""
+msgstr "\"Buceo exploratorio extendiendose en un círculo aproximado de 20 metros de diámetro en profundidades entre 75 y 100 metros, comenzando 100 metros al sureste del punto de entrada a una profundidad de 85 metros.\""
 
 #. type: Plain text
 #: 0200.en.adoc:283
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Locate the <<extent>> of the dive as a 3D shape, which should be projected perpendicularly onto the water surface. Determine the <<boundary>> of that projection on the horizontal plane (i.e. the <<geographic-boundary>>) (<<img-dive-location>>).\n"
-msgstr ""
+msgstr "*Paso 1 – Determinar los límites de las características*: Localice la <<extensión>> de la inmersión como una forma 3D, que deben proyectarse perpendicularmente sobre la superficie del agua. Determine el <<límite>> de esa proyección en el plano horizontal (es decir, el <<límite-geográfico, límite geográfico>>) (<<img-dive-location>>).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:285
 msgid "Dive <<extent>> evident – underwater <<location,locations>> are often recorded as a distance, <<direction>> and water <<depth>> from the entry point. Below the surface there may be a \"trajectory\" with a three dimensional aspect that includes a horizontal component and a minimum and maximum water depth. Use these to circumscribe the boundary on the surface (see <<img-dive-location>>A and {gbp}#three-dimensional-shapes[Three Dimensional Shapes^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^])."
-msgstr ""
+msgstr "Buceo con una <<extensión>> evidente: las <<ubicación,ubicaciones>> bajo el agua se registran a menudo como una distancia, la <<dirección>> y la <<profundidad>> del agua desde el punto de entrada. Debajo de la superficie puede haber una \"trayectoria\" con un aspecto tridimensional que incluye un componente horizontal y una profundidad mínima y máxima del agua. Uselos para circunscribir el límite en la superficie (ver <<img-dive-location>>A y {gbp}#formas-tridimensionales[Las Formas Tridimensionales^] en {gbp}[Buenas Prácticas de Georreferenciación(Chapman & Wieczorek 2020)^])."
 
 #. type: Plain text
 #: 0200.en.adoc:287
 msgid "Dive extent not evident – if the limits of the dive are not evident, there is no trajectory, and no distance or direction from the entry point, use a reasonable upper limit for the distance the diver might have been able to cover in a straight line from and back to the entry point. This could vary greatly depending on the diver, the depth reached, equipment used, etc. Use any evidence of the length of the dive to circumscribe the boundary as a circle around the entry point with a <<radial,radius>> commensurate with that length (<<img-dive-location>>B)."
-msgstr ""
+msgstr "Buceo con una <<extensión>> no evidente: si los límites de la inmersión no son evidentes, no hay trayectoria, ni distancia ni dirección desde el punto de entrada, use un límite superior razonable para la distancia que el buceador pudo haber cubierto en una línea recta desde y hacia el punto de entrada. Esto puede variar mucho dependiendo del buzo, la profundidad alcanzada, el equipo utilizado, etc. Use cualquier evidencia de la longitud de la inmersión para circunscribir el límite como un círculo alrededor del punto de entrada con un <<radio>> proporcional a esa longitud (<<img-dive-location>>B)."
 
 #. type: Plain text
 #: 0200.en.adoc:289
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary of the feature.\n"
-msgstr ""
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Trate la entidad como una <<Entidad Geográfica con una Extensión Espacial obvia>>, es decir, mida la distancia desde las <<coordenadas>> del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad.\n"
 
 #. type: Block title
 #: 0200.en.adoc:293
 #, no-wrap
 msgid "Determination of the corrected center *a* and geographic radial *b* of a dive location. *A*: side view of a dive. *B*: top view of a dive location with evident extent, projected onto the surface. *C*: top view of a dive location with extent not evident, but inferred from other evidence (in this case, an island)."
-msgstr ""
+msgstr "Determinación del centro corregido *a* y radio geográfico *b* de una ubicación de buceo. *A*: vista lateral de una inmersión *B*: vista superior de una ubicación de buceo con una extensión evidente, proyectada en la superficie. *C*: vista superior de un lugar de buceo con una extensión no evidente pero inferida desde otra evidencia (en este caso, una isla)."
 
 #. type: Target for macro image
 #: 0200.en.adoc:294
 #, no-wrap
 msgid "img/web/dive-location.png"
-msgstr ""
+msgstr "img/web/dive-location.png"
 
 #. type: Title =====
 #: 0200.en.adoc:296
 #, no-wrap
 msgid "Feature – Headwaters of a Waterway"
-msgstr ""
+msgstr "Entidad Geográfica: Cabeceras de una Vía Navegable"
 
 #. type: Plain text
 #: 0200.en.adoc:299
