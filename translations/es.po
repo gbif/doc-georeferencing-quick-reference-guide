@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-19 22:43\n"
+"PO-Revision-Date: 2021-10-19 23:41\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -194,7 +194,7 @@ msgstr "La Guía se basa en las {gbp}[Buenas Prácticas de Georreferenciación (
 #. type: Plain text
 #: 0100.en.adoc:26
 msgid "The third document is the {gcm}[Georeferencing Calculator Manual (Bloom et al. 2020)^], which describes how to use the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]. The Calculator is a browser-based JavaScript application that aids in georeferencing descriptive <<locality,localities>>, and making the calculations necessary to obtain <<geographic-coordinates>> and <<uncertainty,uncertainties>> for locations using the <<point-radius>> method."
-msgstr "El tercer documento es el {gcm}[Manual del cálculo de georreferenciación (Bloom et al. 2020)^], que describe cómo utilizar la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación^]. La Calculadora es una aplicación JavaScript basada en navegadores que ayuda en la georeferenciación de <<localidad,localidades>> descritas y en los cálculos necesario para obtener <<coordenadas geográficas>> e <<incertidumbre,incertidumbres>> para ubicaciones usando el método <<radio-punto>>."
+msgstr "El tercer documento es el {gcm}[Manual del cálculo de georreferenciación (Bloom et al. 2020)^], que describe cómo utilizar la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]. La Calculadora es una aplicación JavaScript basada en navegadores que ayuda en la georeferenciación de <<localidad,localidades>> descritas y en los cálculos necesario para obtener <<coordenadas geográficas>> e <<incertidumbre,incertidumbres>> para ubicaciones usando el método <<radio-punto>>."
 
 #. type: Plain text
 #: 0100.en.adoc:28
@@ -1734,62 +1734,62 @@ msgstr "*Tipo de localidad:* [ui-element]#Solo Distancia#\n"
 #: 0220.en.adoc:34
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries:* Determine the <<boundary>> of the feature as you would for <<Feature – near a Feature>>, except that the distance to use for the buffer is the distance given in the locality description, and there is no need to account for the proximity of other features.\n"
-msgstr ""
+msgstr "*Paso 1 – Determinar los límites de la entidad geográfica:* Determine el <<límite>> de la entidad como lo haría para una <<Entidad Geográfica: <<Entidad Geográfica: cerca de una Entidad Geográfica>>>, excepto que la distancia que se usa para el buffer es la distancia dada en la descripción de la localidad y no hay necesidad de tener en cuenta la proximidad de otras entidades.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:36 0220.en.adoc:230
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature.\n"
-msgstr ""
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez que se haya determinado el límite, obtenga las <<coordenadas>> y el <<radio-geográfico, radio geográfico>> al igual que para una <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:38
 #, no-wrap
 msgid "*Offset Distance*: Set to 0. The distance has already been incorporated in the determination of the boundary. Use the distance and units given in the locality description to <<georeference>> using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^].\n"
-msgstr ""
+msgstr "*Distancia de desplazamiento*: Establezca en 0. La distancia ya ha sido incorporada en la determinación del límite. Utilice la distancia y las unidades dadas en la descripción de la localidad para la <<georreferencia>> usando la hhttp://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^].\n"
 
 #. type: Plain text
 #: 0220.en.adoc:40
 #, no-wrap
 msgid "*Distance Precision:* Though the [ui-element]#Offset Distance# is set to zero, the [ui-element]#Distance Precision# should still be set (see <<Distance Precision>>) to account for this source of <<uncertainty>>.\n"
-msgstr ""
+msgstr "*Precisión de la Distancia:* Aunque la [ui-element]#Distancia de Desplazamiento# está establecida en cero, la [ui-element]#Precisión de la Distancia# todavía debe establecerse (ver <<Precisión de la Distancia>>) para tener en cuenta esta fuente de <<incertidumbre>>.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:42
 #, no-wrap
 msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error# (see <<Georeferencing Concepts>>).\n"
-msgstr ""
+msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Fuente de las Coordenadas#, [ui-element]#Formato de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Error de la medición# (ver <<Conceptos de Georreferenciación>>).\n"
 
 #. type: Title ====
 #: 0220.en.adoc:43
 #, no-wrap
 msgid "Offset – Heading only"
-msgstr ""
+msgstr "Desplazamiento: Solo Orientanción Cardinal"
 
 #. type: Plain text
 #: 0220.en.adoc:46
 msgid "The <<locality>> consists of a direction from a <<feature>> without any distance specified. Note that seldom is such information given alone; there is usually some supporting information. For example, the locality may have higher-level geographic information such as \"East of Albuquerque, Bernalillo County, New Mexico\". This provides a stopping point (the county border), and should allow you to <<georeference>> the locality. Alternatively, there might be another similar feature in the direction of the given <<heading>> that can constrain the <<offset>>."
-msgstr ""
+msgstr "La <<localidad>> consiste en una dirección desde una <<entidad-geográfica, entidad geográfica>> sin ninguna distancia especificada. Tenga en cuenta que rara vez se da esa información sola; normalmente hay alguna información de apoyo. Por ejemplo, la localidad puede tener información geográfica de más alto nivel como \"al este de Albuquerque, Condado de Bernalillo, Nuevo México\". Esto proporciona un punto de parada (la frontera del condado) y debería permitirle <<georreferencia, georreferenciar>> la localidad. Alternativamente, puede haber otra entidad similar en la dirección de la <<orientación>> dada que puede restringir el <<desplazamiento>>."
 
 #. type: delimited block =
 #: 0220.en.adoc:51
 msgid "\"N Palmetto\" +"
-msgstr ""
+msgstr "\"N Palmetto\" +"
 
 #. type: delimited block =
 #: 0220.en.adoc:52
 msgid "\"W of Berkeley\" +"
-msgstr ""
+msgstr "\"O de Berkeley\" +"
 
 #. type: delimited block =
 #: 0220.en.adoc:53
 msgid "\"Saladillo E\" +"
-msgstr ""
+msgstr "\"Saladillo E\" +"
 
 #. type: delimited block =
 #: 0220.en.adoc:54
 msgid "\"Al N de Saladillo\""
-msgstr ""
+msgstr "\"Al N de Saladillo\""
 
 #. type: Plain text
 #: 0220.en.adoc:59
