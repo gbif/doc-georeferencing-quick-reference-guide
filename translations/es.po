@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-19 00:14\n"
+"PO-Revision-Date: 2021-10-19 01:14\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1133,7 +1133,7 @@ msgstr "*Paso 2 – Determine las coordenadas geográficas y el radio geográfic
 #. type: Plain text
 #: 0200.en.adoc:167
 msgid "Property boundary evident – once the boundary is determined, determine the <<coordinates>> and <<geographic-radial,geographic radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center,corrected center>> to the furthest point on the boundary of the feature (<<img-property-boundary>>A)."
-msgstr ""
+msgstr "Propiedad con un límite evidente: una vez que el límite haya sido determinado, determine las <<coordenadas>> y el <<radio-geográfico,radio geográfico>> como para <<Entidad Geográfica, con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad (<<img-property-boundary>>A)."
 
 #. type: Plain text
 #: 0200.en.adoc:169
@@ -1150,7 +1150,7 @@ msgstr ""
 #: 0200.en.adoc:174
 #, no-wrap
 msgid "img/web/property-boundary.png"
-msgstr ""
+msgstr "img/web/property-boundary.png"
 
 #. type: Title =====
 #: 0200.en.adoc:176
