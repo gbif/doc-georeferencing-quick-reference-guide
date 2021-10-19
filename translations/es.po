@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-19 14:23\n"
+"PO-Revision-Date: 2021-10-19 15:26\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -136,7 +136,7 @@ msgstr "Introducción"
 #. type: Plain text
 #: 0100.en.adoc:4
 msgid "This is a practical guide for <<georeference,georeferencing>>. It describes the protocols to determine the shapes of <<feature,features>> and how to use them as the basis for georeferencing with the <<point-radius>> <<georeferencing-method>> (http://georeferencing.org/georefcalculator/docs/GeorefGuide.html[Wieczorek 2001^], https://doi.org/10.1080/13658810412331280211[Wieczorek et al. 2004^], https://doi.org/10.15468/doc-gg7h-s853[Chapman & Wieczorek 2020^]) using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator (Wieczorek & Wieczorek 2020)^], and its associated {gcm}[Georeferencing Calculator Manual (Bloom et al. 2020)^], maps, <<gazetteer,gazetteers>>, and other resources from which <<coordinates>> and spatial <<boundary,boundaries>> for places can be found. This document is a citable <<georeferencing-protocol>>. If a derived protocol is used, a new document with attribution to this Guide should be made publicly available and cited."
-msgstr "Esta es una guía práctica para la <<georreferencia,georreferenciación>>. Describe los protocolos para determinar las formas de las <<entidad geográfica,entidades geográficas>> y cómo usarlos como base para la georeferenciación con el <<método de georreferenciación>> <<radio-punto>>> (http://georeferencing.org/georefcalculator/docs/GeorefGuide.html[Wieczorek 2001^], https://doi.org/10.1080/13658810412331280211[Wieczorek et al. 2004^], https://doi.org/10.15468/doc-gg7h-s853[Chapman & Wieczorek 2020^]) usando la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación (Wieczorek & Wieczorek 2020)^] y los asociados {gcm}[Manual del cálculo de georreferenciación (Bloom et al. 2020)^], mapas, <<<gacetero,gaceteros>>> y otros recursos a partir de los cuales se pueden encontrar <<coordenadas>> y <<límite,límites>> espaciales para lugares. Este documento es un <<protocolo de georreferenciación>> citable. Si se usa un protocolo derivado, un nuevo documento con atribución a esta Guía debería estar disponible públicamente y ser citado."
+msgstr "Esta es una guía práctica para la <<georreferencia,georreferenciación>>. Describe los protocolos para determinar las formas geométricas de las <<entidad geográfica,entidades geográficas>> y cómo usarlas como base para la georeferenciación con el <<método de georreferenciación>> <<radio-punto>>> (http://georeferencing.org/georefcalculator/docs/GeorefGuide.html[Wieczorek 2001^], https://doi.org/10.1080/13658810412331280211[Wieczorek et al. 2004^], https://doi.org/10.15468/doc-gg7h-s853[Chapman & Wieczorek 2020^]) usando la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación (Wieczorek & Wieczorek 2020)^] y los asociados {gcm}[Manual del cálculo de georreferenciación (Bloom et al. 2020)^], mapas, <<<gacetero,gaceteros>>> y otros recursos a partir de los cuales se pueden encontrar <<coordenadas>> y <<límite,límites>> espaciales para lugares. Este documento es un <<protocolo de georreferenciación>> citable. Si se usa un protocolo derivado, un nuevo documento con atribución a esta Guía debería estar disponible públicamente y ser citado."
 
 #. type: Plain text
 #: 0100.en.adoc:6
@@ -285,7 +285,7 @@ msgstr "term:dwc[dwc:georeferenceProtocol] (Protocolo de georreferenciación)"
 #. type: Plain text
 #: 0100.en.adoc:49
 msgid "A description or reference to the methods used to determine the <<shape>> using the shape <<georeferencing-method>>, or the coordinates and uncertainty using the point-radius method. If the protocol in this Guide is used unaltered, then the term:dwc[georeferenceProtocol] should be the citation for this document."
-msgstr "Descripción o referencia a los métodos utilizados para determinar la <<forma>> cuando se usa el <<método-de-georreferenciación>> o las coordenadas y la incertidumbre cuando se usa el método <<punto-radio>>. Si el protocolo de esta Guía se usa sin alterar, entonces el term:dwc[georeferenceProtocol] (Protocolo de georreferenciación) debe ser la cita para este documento."
+msgstr "Descripción o referencia a los métodos utilizados para determinar la <<forma-geométrica, forma geométrica>> cuando se usa el <<método-de-georreferenciación>> o las coordenadas y la incertidumbre cuando se usa el método <<punto-radio>>. Si el protocolo de esta Guía se usa sin alterar, entonces el term:dwc[georeferenceProtocol] (Protocolo de georreferenciación) debe ser la cita para este documento."
 
 #. type: Labeled list
 #: 0100.en.adoc:49
@@ -812,7 +812,7 @@ msgstr "*Tipo de localidad:* [ui-element]#Solo entidad geográfica#\n"
 #: 0200.en.adoc:31
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: This step is to determine the <<shape>> that contains the <<feature>>. This is typically done by drawing a polygon around the feature (<<img-obvious-spatial-extent>>A), but some features may require more complex <<geometry,geometries>>, such as multiple polygons.\n"
-msgstr "*Paso 1 – Determine los límites de las entidades*: En este paso se determina el <<shape>> que contiene la <<entidad-geográfica, entidad geográfica>>. Normalmente, esto se hace dibujando un polígono alrededor de la entidad (<<img-obvious-spatial-extent>>A), pero algunas características pueden requerir <<geometría,geometrías>> más complejas como polígonos múltiples.\n"
+msgstr "*Paso 1 – Determine los límites de las entidades*: En este paso se determina el <<forma-geométrica, forma geométrica>> que contiene la <<entidad-geográfica, entidad geográfica>>. Normalmente, esto se hace dibujando un polígono alrededor de la entidad (<<img-obvious-spatial-extent>>A), pero algunas características pueden requerir <<geometría,geometrías>> más complejas como polígonos múltiples.\n"
 
 #. type: Plain text
 #: 0200.en.adoc:33
@@ -1192,7 +1192,7 @@ msgstr "\"a lo largo de 100 m isolínea\""
 #: 0200.en.adoc:194
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: As a linear feature, a path is often represented as a series of line segments (i.e. a polyline), with or without a buffer. When viewed on satellite imagery these features (especially rivers) can be quite complex, so a constant buffer around the midline is not a good representation in these cases. When possible, determine the boundary as for any other <<shape>> using <<Feature – with Obvious Spatial Extent>>) (<<img-paths>>A). Otherwise, treat the boundary as a polyline (<<img-paths>>B) and determine the <<corrected-center>> and <<geographic-radial>> as explained below.\n"
-msgstr "*Paso 1 – Determinar los límites de las características*: Como una entidad geográfica lineal, las rutas se representan a menudo como una serie de segmentos de una línea (p. ej. un polígono), con o sin un buffer. Cuando se ven en imágenes satelitales, estas entidad (especialmente los ríos) pueden ser bastante complejas, por lo que un buffer constante alrededor de la línea media no es una buena representación en estos casos. Cuando sea posible, determine el límite como para cualquier otro <<shape>> usando <<Entidad Geográfica con una Extensión Espacial Obvia>>) (<<img-paths>>A). De lo contrario, trate el límite como un polilínea (<<img-paths>>B) y determine el <<centro-corregido>> y el <<radio-geográfico>> como se explica a continuación.\n"
+msgstr "*Paso 1 – Determinar los límites de las características*: Como una entidad geográfica lineal, las rutas se representan a menudo como una serie de segmentos de una línea (p. ej. un polígono), con o sin un buffer. Cuando se ven en imágenes satelitales, estas entidad (especialmente los ríos) pueden ser bastante complejas, por lo que un buffer constante alrededor de la línea media no es una buena representación en estos casos. Cuando sea posible, determine el límite como para cualquier otra <<forma-geométrica, forma geométrica>> usando <<Entidad Geográfica con una Extensión Espacial Obvia>>) (<<img-paths>>A). De lo contrario, trate el límite como un polilínea (<<img-paths>>B) y determine el <<centro-corregido>> y el <<radio-geográfico>> como se explica a continuación.\n"
 
 #. type: Plain text
 #: 0200.en.adoc:196
@@ -1208,100 +1208,100 @@ msgstr "*Isolíneas* — estas son entidades lineales definidas por la <<elevaci
 #. type: Plain text
 #: 0200.en.adoc:200
 msgid "If a single value is given for an elevation (or depth knowing that the location was at the bottom of a waterbody), treat the path as a linear feature with a buffer around it, where the buffer is a vertical distance from the contour, not a horizontal one. The size of the vertical buffer should be equal to the precision with which the elevation is recorded. For example, if the precision is 100 feet (e.g. the precision of an elevation recorded as \"2600 ft\"), then the buffer is 100 vertical feet. Determine the shape of the feature using lines interpolated (or measured) one half of the buffer distance below the given contour and one half the buffer distance above the given contour (e.g. at 2550 feet and 2650 feet for the elevation example \"2600 ft\")."
-msgstr ""
+msgstr "Si se da un solo valor para una elevación (o profundidad sabiendo que la ubicación estaba en el fondo de un cuerpo de agua), trate la ruta como una característica lineal con un buffer a su alrededor, donde el buffer es una distancia vertical desde la isolínea, no una distancia horizontal. El tamaño del buffer vertical debe ser igual a la precisión con la que se registra la elevación. Por ejemplo, si la precisión es de 100 pies (p. ej., la precisión de una elevación registrada como \"2600 ft\"), entonces el buffer es de 100 pies verticales. Determine la forma geométrica de la entidad usando líneas interpoladas (o medidas) una mitad de la distancia del buffer bajo de la isolínea dada y una mitad de la distancia del buffer sobre la isolínea dada(p. ej. A 2550 pies y 2650 pies para el ejemplo de elevación \"2600 pies\")."
 
 #. type: Plain text
 #: 0200.en.adoc:202
 msgid "If an elevational range is given (e.g. 100-200 m), it is difficult to know whether the range was intended to encompass uncertainties in elevation or just the elevational bounds for the Location. To be conservative, we have to assume that it does not account for uncertainty in elevation and we need to add a buffer as described above around the upper and lower limits of the given range. For the example \"100 - 200 m\" the buffer is 100 m, so the lower boundary of the shape would be at 100 - 50 = 50 m and the upper boundary would be defined by 200 + 50 = 250 m."
-msgstr ""
+msgstr "Si se da un rango de elevación (p. ej. 100-200 m), es difícil saber si el rango estaba pensado para incluir las incertidumbres en la elevación o sólo los límites elevacionales de la ubicación. Para ser conservadores, tenemos que asumir que no tiene en cuenta la incertidumbre en la elevación y debemos añadir un buffer como se describe anteriormente alrededor de los límites superiores e inferiores del rango dado. Para el ejemplo \"100 - 200 m\" el buffer es de 100 m, por lo que el límite inferior de la entidad sería de 100 - 50 = 50 m y el límite superior se definiría por 200 + 50 = 250 m."
 
 #. type: Plain text
 #: 0200.en.adoc:204
 msgid "Buffers might require interpolation on a topographic map if they do not correspond with the printed contour lines (<<img-paths>>C)."
-msgstr ""
+msgstr "Los buffers pueden requerir interpolación en un mapa topográfico si no corresponden con las isolíneas impresas (<<img-paths>>C)."
 
 #. type: Plain text
 #: 0200.en.adoc:206
 msgid "These considerations can apply equally to <<bathymetry>> where contours are available, bearing in mind that some bathymetric contours are quite coarse and that most depths given in locality descriptions are actually above the bottom of the waterbody."
-msgstr ""
+msgstr "Estas consideraciones pueden aplicarse igualmente a la <<batimetría>> cuando las isolíneas están disponibles, teniendo en cuenta que algunas son bastante gruesas y que la mayoría de las profundidades dadas en las descripciones de la localidad realmente se encuentran por encima del fondo del cuerpo del agua."
 
 #. type: Plain text
 #: 0200.en.adoc:208
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: If the boundary can be determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the corrected center to the furthest point on the boundary of the feature (<<img-paths>>A).\n"
-msgstr ""
+msgstr "*Paso 2 - Determinar las coordenadas y el radio geográfico*: Si el límite puede ser determinado, trate la entidad como <<Entidad con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las **<<coordenadas>>** del centro corregido hasta el punto más lejano en el límite de la entidad (<<img-paths>>A).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:210
 msgid "If the feature must be treated as a polyline, draw a straight line connecting the ends of the polyline and determine its midpoint. If the midpoint falls on the polyline, that will be the center (no need for correction), and the geographic radial will be the distance from that point to either of the endpoints of the polyline. If the midpoint does not fall on the polyline, move it to the point on the polyline that minimizes the distance to both endpoints. This is the corrected center and the distance to the endpoints is the geographic radial (<<img-paths>>B)."
-msgstr ""
+msgstr "Si la entidad debe ser tratada como una polilínea, dibuje una línea recta que conecte los extremos del polilínea y determine su punto medio. Si el punto medio cae en el polilínea, ese será el centro (sin necesidad de corrección) y el radio geográfico será la distancia desde ese punto hasta cualquiera de los extremos. Si el punto medio no cae en la polilínea, muévalo al punto sobre la polilínea que minimiza la distancia a ambos extremos. Este es el centro corregido y la distancia a los extremos es el radio geográfico (<<img-paths>>B)."
 
 #. type: Block title
 #: 0200.en.adoc:214
 #, no-wrap
 msgid "Corrected center *a* and geographic radial *b* for a path. *A*: with boundary of the path as a  shape. *B*: with path as a polyline, showing the midpoint *c* between the ends of the path. *C*: uncorrected center *c* of a boundary, corrected center *a* and geographic radial *b* of bounded section of a contour line, in this case an isohypse of 220 m with an elevational uncertainty of 10 m."
-msgstr ""
+msgstr "Centro corregido *a* y radio geográfico *b* para una ruta. *A*: con el límite de la ruta como una forma geométrica. *B*: con una ruta como polilínea, mostrando el punto medio *c* entre los extremos de la ruta. *C*: centro sin corregir *c* de un límite, centro corregido *a* y radio geográfico *b* de una sección limitada de una isolínea, es este caso una isohipsa de 220 m una una incertidumbre elevacional de 10 m."
 
 #. type: Target for macro image
 #: 0200.en.adoc:215
 #, no-wrap
 msgid "img/web/paths.png"
-msgstr ""
+msgstr "img/web/paths.png"
 
 #. type: Title =====
 #: 0200.en.adoc:217
 #, no-wrap
 msgid "Feature – Junction, Intersection, Crossing, Confluence"
-msgstr ""
+msgstr "Entidad Geográfica: Cruce, Intersección, Paso, Confluencia"
 
 #. type: Plain text
 #: 0200.en.adoc:220
 msgid "The <<locality>> is the junction of two or more <<path,paths>> – roads, a road and a river, the mouth of a river (i.e. where it meets a larger water body), a road or river and an administrative <<boundary>> (e.g. of a park), a road and a contour line, etc."
-msgstr ""
+msgstr "La <<localidad>> es un cruce de dos o mas <<ruta,rutas>>. Una vía, una vía y un río, la desembocadura de un río (p. ej. donde se encuentra con un cuerpo de agua más grande), una vía o río con un <<límite>> administrativo (p. ej. de un parque), una vía y una isolínea, etc."
 
 #. type: delimited block =
 #: 0200.en.adoc:225
 msgid "\"junction of Coora Rd. and E Siparia Rd\" +"
-msgstr ""
+msgstr "\"cruce de Coora Rd. y E Siparia Rd\" +"
 
 #. type: delimited block =
 #: 0200.en.adoc:226
 msgid "\"Where Dalby Road crosses Bunya Mountains National Park Boundary\" +"
-msgstr ""
+msgstr "\"Donde Dalby Road cruza el límite del Parque Nacional de Montañas Bunya\" +"
 
 #. type: delimited block =
 #: 0200.en.adoc:227
 msgid "\"confluence of Rio Claro and Rio La Hondura\""
-msgstr ""
+msgstr "\"confluencia de Río Claro y Río La Hondura\""
 
 #. type: Plain text
 #: 0200.en.adoc:232
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Determine the boundary of the junction using routes of highways, roads, and rivers from resources such as Google Maps, Mapquest or OpenStreetMap, road atlases, <<GPS>> navigators, and satellite or aerial images (<<img-junction>>A). Most modern spatial data can be used to determine the actual boundaries. If the only available representation of the junction shows the adjoining paths as lines, then the boundary must be determined as for <<Feature – without Obvious Spatial Extent>>.\n"
-msgstr ""
+msgstr "*Paso 1 - Determinar los límites de la entidad*: Determine el límite del cruce mediante el recorrido de autopistas, rutas y ríos usando recursos como Google Maps, Mapquest u OpenStreetMap, atlas de carreteras, navegadores <<GPS>> e imágenes staelitales o aéreas (<<img-junction>>A). La mayoría de los datos espaciales modernos se pueden usar para determinar los límites actuales. Si la única representación disponible del cruce muestra las rutas adyacentes como líneas, entonces el límite debe determinarse como para una <<Entidad Geográfica sin una Extensión Espacial Obvia>>.\n"
 
 #. type: Plain text
 #: 0200.en.adoc:234
 msgid "For a confluence of two waterways, the boundary is a triangle that consists of the two segments at the same <<elevation>> reaching from where the waterways join to the opposite shores at the same elevation, plus the segment that joins those two points on the opposite shores (<<img-junction>>B)."
-msgstr ""
+msgstr "Para una confluencia de dos vías acuáticas, el límite es un triángulo que consiste en los dos segmentos que se encuentran a la misma <<elevación>> y que van desde donde se cruzan las vías acuáticas hasta las costas opuestas en la misma elevación, más el segmento que une a esos dos puntos desde las costas opuestas(<<img-junction>>B)."
 
 #. type: Plain text
 #: 0200.en.adoc:236
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, use the same method to determine the <<coordinates>> and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature (<<img-junction>>B).\n"
-msgstr ""
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez se ha determinado el límite, determine las <<coordenadas>> y el <radio-geográfico, radio geográfico>> usando el mismo método como para una <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, medir la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad geográfica (<<img-junction>>B).\n"
 
 #. type: Block title
 #: 0200.en.adoc:240
 #, no-wrap
 msgid "*A*: Crossing of a road and a stream with details of boundary, corrected center *a* (with no need for correction) and geographic radial *b* of the intersection. *B*: Boundary, corrected center *a* and geographic radial *b* of a confluence of two rivers."
-msgstr ""
+msgstr "*A*: Cruce de una vía y un torrente con detalles del límite, centro corregido *a* (sin necesidad de corrección) y radio geográfico *b* de la intersección. *B*: límite, centro corregido *a* y radio geográfico *b* de una confluencia de dos ríos."
 
 #. type: Target for macro image
 #: 0200.en.adoc:241
 #, no-wrap
 msgid "img/web/junction.png"
-msgstr ""
+msgstr "img/web/junction.png"
 
 #. type: Title =====
 #: 0200.en.adoc:243
