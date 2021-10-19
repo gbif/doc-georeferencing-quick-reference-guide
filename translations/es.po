@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-19 20:45\n"
+"PO-Revision-Date: 2021-10-19 21:47\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1192,7 +1192,7 @@ msgstr "\"a lo largo de 100 m isolínea\""
 #: 0200.en.adoc:194
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: As a linear feature, a path is often represented as a series of line segments (i.e. a polyline), with or without a buffer. When viewed on satellite imagery these features (especially rivers) can be quite complex, so a constant buffer around the midline is not a good representation in these cases. When possible, determine the boundary as for any other <<shape>> using <<Feature – with Obvious Spatial Extent>>) (<<img-paths>>A). Otherwise, treat the boundary as a polyline (<<img-paths>>B) and determine the <<corrected-center>> and <<geographic-radial>> as explained below.\n"
-msgstr "*Paso 1 – Determinar los límites de las características*: Como una entidad geográfica lineal, las rutas se representan a menudo como una serie de segmentos de una línea (p. ej. un polígono), con o sin un buffer. Cuando se ven en imágenes satelitales, estas entidad (especialmente los ríos) pueden ser bastante complejas, por lo que un buffer constante alrededor de la línea media no es una buena representación en estos casos. Cuando sea posible, determine el límite como para cualquier otra <<forma-geométrica, forma geométrica>> usando <<Entidad Geográfica con una Extensión Espacial Obvia>>) (<<img-paths>>A). De lo contrario, trate el límite como un polilínea (<<img-paths>>B) y determine el <<centro-corregido>> y el <<radio-geográfico>> como se explica a continuación.\n"
+msgstr "*Paso 1 – Determinar los límites de la entidad geográfica*: Como una entidad geográfica lineal, las rutas se representan a menudo como una serie de segmentos de una línea (p. ej. un polígono), con o sin un buffer. Cuando se ven en imágenes satelitales, estas entidad (especialmente los ríos) pueden ser bastante complejas, por lo que un buffer constante alrededor de la línea media no es una buena representación en estos casos. Cuando sea posible, determine el límite como para cualquier otra <<forma-geométrica, forma geométrica>> usando <<Entidad Geográfica con una Extensión Espacial Obvia>>) (<<img-paths>>A). De lo contrario, trate el límite como un polilínea (<<img-paths>>B) y determine el <<centro-corregido>> y el <<radio-geográfico>> como se explica a continuación.\n"
 
 #. type: Plain text
 #: 0200.en.adoc:196
@@ -1549,79 +1549,79 @@ msgstr "La descripción de la <<localidad>> usa el patrón \"entre A y B\", dond
 #. type: delimited block =
 #: 0200.en.adoc:362
 msgid "\"between Missoula and Florence, Montana\" +"
-msgstr ""
+msgstr "\"entre Missoula y Florence, Montana\" +"
 
 #. type: delimited block =
 #: 0200.en.adoc:363
 msgid "\"Entre Pampa Blanca y Pampa Vieja, Jujuy\" +"
-msgstr ""
+msgstr "\"Entre Pampa Blanca y Pampa Vieja, Jujuy\" +"
 
 #. type: delimited block =
 #: 0200.en.adoc:364
 msgid "\"between Point Reyes and Inverness\""
-msgstr ""
+msgstr "\"entre Point Reyes e Inverness\""
 
 #. type: Plain text
 #: 0200.en.adoc:369
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Determine the <<boundary,boundaries>> of each feature as <<Feature – with Obvious Spatial Extent>> or <<Feature – without Obvious Spatial Extent>> (<<img-between-two-features>>A).\n"
-msgstr ""
+msgstr "*Paso 1 – Determinar los límites de la característica*: Determine los <<límite, límites>> de cada característica como si fuera una <<Entidad Geográfica con una Extensión Espacial Obvia>> o una <<Entidad Geográfica sin una Extensión Espacial Obvia>> (<<img-between-two-features>>A).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:371
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once you have determined the boundaries of the two features, find their <<corrected-center,corrected centers>>, as for <<Feature – with Obvious Spatial Extent>>. Use the midpoint between the corrected centers of the two features to determine the <<coordinates>> of the <<location>> between the features (<<img-between-two-features>>B). The <<geographic-radial>> of the location between the two features is half the distance between the corrected centers of the features (<<img-between-two-features>>B).\n"
-msgstr ""
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez haya determinado los límites de las dos entidades, encuentre su <<centro-corregido, centros corregidos>>, como para una <<Entidad con Límites Espaciales Obvios>>. Use el punto medio entre los centros corregidos de las dos entidades para determinar las <<coordenadas>> de la <<ubicación>> que está entre las características (<<img-between-two-features>>B). El <<radio-geográfico, radio geográfico>> de la ubicación entre las dos características es la mitad de la distancia entre los centros corregidos de las entidades (<<img-between-two-features>>B).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:373
 #, no-wrap
 msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Radial of Feature#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
-msgstr ""
+msgstr "*Paso 3 – Hacer el cálculo usano los siguientes parámetros adicionales en lahttp://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Orígen de las Coordenadas#, [ui-element]#Formato de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Radio de la Entidad#, [ui-element]#Exactitud del GPS#/[ui-element]#Error de la medición#, [ui-element]#Unidades de la distancia# (ver <<Conceptos de Georreferenciación>>).\n"
 
 #. type: Block title
 #: 0200.en.adoc:375
 #, no-wrap
 msgid "*A*: Boundary, corrected center *a* and geographic radial *b* of two features. *B*: Coordinates *c* and geographic radial *d* of the interpretation of a location of the type \"_between Two Features_\"."
-msgstr ""
+msgstr "*A*: Límite, centro corregido*a* y radio geográfico *b* de dos entidades. *B*: Coordenadas *c* y radio geográfico *d* de la interpretación de una ubicación del tipo \"_entre dos Entidades Geográficas_\"."
 
 #. type: Target for macro image
 #: 0200.en.adoc:376
 #, no-wrap
 msgid "img/web/between-two-features.png"
-msgstr ""
+msgstr "img/web/between-two-features.png"
 
 #. type: Title =====
 #: 0200.en.adoc:378
 #, no-wrap
 msgid "Feature – between Two Paths"
-msgstr ""
+msgstr "Entidad Geográfica: entre Dos Rutas"
 
 #. type: Plain text
 #: 0200.en.adoc:381
 msgid "The <<locality>> describes a <<location>> between two <<path,paths>> (two roads, two rivers, a road and a river, etc.)."
-msgstr ""
+msgstr "La <<localidad>> describe una <<ubicación>> entre dos <<ruta,rutas>> (dos caminos, dos ríos, un camino y un río, etc.)."
 
 #. type: delimited block =
 #: 0200.en.adoc:386
 msgid "\"between the Great Western Hwy and the railway line\" +"
-msgstr ""
+msgstr "\"entre Great Western Highway y la línea ferroviaria\" +"
 
 #. type: delimited block =
 #: 0200.en.adoc:387
 msgid "\"between Tanama R. and Clearwater Ck.\" +"
-msgstr ""
+msgstr "\"entre el Río Tanama y Clear water Ck.\" +"
 
 #. type: delimited block =
 #: 0200.en.adoc:388
 msgid "\"entre Av. Corrientes y Av. Córdoba\" (i.e. two streets that don’t intersect)."
-msgstr ""
+msgstr "\"entre Av. Corrientes y Av. Córdoba\" (es decir, dos calles que no se intersectan)."
 
 #. type: Plain text
 #: 0200.en.adoc:393
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Create a <<boundary>> that includes the two paths and any other boundaries that terminate those paths (e.g. the border of a given administrative division) (<<img-between-two-paths>>A).\n"
-msgstr ""
+msgstr "*Paso 1 – Determinar los límites de la entidad*: Cree un <<límite>> que incluya las dos rutas y cualquier otro límite que pongan fin a esas rutas (p. ej. el borde de una determinada división administrativa) (<<img-between-two-paths>>A).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:395
