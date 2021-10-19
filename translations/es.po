@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-19 01:14\n"
+"PO-Revision-Date: 2021-10-19 12:56\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -772,7 +772,7 @@ msgstr "Las coordenadas de los índices geográficos, como los gaceteros, a menu
 #: 0200.en.adoc:15
 #, no-wrap
 msgid "Feature – with Obvious Spatial Extent"
-msgstr "Entidad Geográfica, con una Extensión Espacial Obvia"
+msgstr "Entidad Geográfica con una Extensión Espacial Obvia"
 
 #. type: Plain text
 #: 0200.en.adoc:18
@@ -806,7 +806,7 @@ msgstr "\"Bahía de Botany\""
 #: 0220.en.adoc:57 0230.en.adoc:50 0230.en.adoc:74 0240.en.adoc:57
 #, no-wrap
 msgid "*Locality Type:* [ui-element]#Geographic feature only#\n"
-msgstr "*Tipo de localidad:* [ui-element]#solo Entidad Geográfica#\n"
+msgstr "*Tipo de localidad:* [ui-element]#Solo entidad geográfica#\n"
 
 #. type: Plain text
 #: 0200.en.adoc:31
@@ -853,7 +853,7 @@ msgstr "img/web/obvious-spatial-extent.png"
 #: 0200.en.adoc:44
 #, no-wrap
 msgid "Feature – without Obvious Spatial Extent"
-msgstr "Entidad Geográfica, sin una Extensión Espacial Obvia"
+msgstr "Entidad Geográfica sin una Extensión Espacial Obvia"
 
 #. type: Plain text
 #: 0200.en.adoc:47
