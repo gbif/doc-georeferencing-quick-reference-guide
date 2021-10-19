@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-18 14:19\n"
+"PO-Revision-Date: 2021-10-19 00:14\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1091,44 +1091,44 @@ msgstr "Entidad Geográfica, Propiedad"
 #. type: Plain text
 #: 0200.en.adoc:147
 msgid "The <<locality>> is a property – a ranch, rancho, station, farm, finca, grange, granja, estância, plantation, hacienda, fazenda, manor, holding, estate, spread, acreage, orchard, steading, parcel, terreno, etc."
-msgstr ""
+msgstr "La <<localidad>> es una propiedad: un rancho, estación, granja, finca, estância, plantación, hacienda, fazenda, casa de campo, terreno, parcela, etc."
 
 #. type: delimited block =
 #: 0200.en.adoc:152
 msgid "\"Victoria River Station\" +"
-msgstr ""
+msgstr "\"Estación Río Victoria\"+"
 
 #. type: delimited block =
 #: 0200.en.adoc:153
 msgid "\"Mathae Ranch\" +"
-msgstr ""
+msgstr "\"Rancho Mathae\" +"
 
 #. type: delimited block =
 #: 0200.en.adoc:154
 msgid "\"Estancia 9 de Julio\""
-msgstr ""
+msgstr "\"Estancia 9 de Julio\""
 
 #. type: Plain text
 #: 0200.en.adoc:159
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Locate the property using whatever sources you can. You may have to resort to a cadastral map.\n"
-msgstr ""
+msgstr "*Paso 1 - Determinar los límites de las entidades*: Localice la propiedad usando todos los recursos que pueda. Puede que necesite recurrir a un mapa catastral.\n"
 
 #. type: Plain text
 #: 0200.en.adoc:161
 msgid "Property <<boundary>> evident – if the map shows the <<extent>> of the property, determine the boundary exactly as you would for <<Feature – with Obvious Spatial Extent>>)."
-msgstr ""
+msgstr "Propiedad con un <<límite>> evidente - si el mapa muestra la <<extensión>> de la propiedad, determine el límite exactamente a como lo haría para una <<Entidad Geográfica, con una Extensión Espacial Obvia>>."
 
 #. type: Plain text
 #: 0200.en.adoc:163
 msgid "Property boundary not evident – if the full extent of the property cannot be found, it should still be possible to determine some part of it confidently, and the rest with less certainty. Delimit the outer, uncertain feature boundaries as usual by following <<Feature – without Obvious Spatial Extent>>. In addition, determine the boundaries of the part of the property that is obvious following <<Feature – with Obvious Spatial Extent>>."
-msgstr ""
+msgstr "Propiedad con un límite no evidente - si no puede encontrar la extensión total de la propiedad, debería ser posible determinar al menos una parte de ella con alguna confianza y el resto con certeza menor. Delimite los límites externos como es usual siguiendo <<<<Entidad Geográfica, sin una Extensión Espacial Obvia>>. Adicionalmente, determine los límites obvios de la propiedad siguiendo <<Entidad Geográfica, con una Extensión Espacial Obvia>>."
 
 #. type: Plain text
 #: 0200.en.adoc:165
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*:\n"
-msgstr ""
+msgstr "*Paso 2 – Determine las coordenadas geográficas y el radio geográfico*:\n"
 
 #. type: Plain text
 #: 0200.en.adoc:167
