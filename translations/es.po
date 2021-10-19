@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-19 19:49\n"
+"PO-Revision-Date: 2021-10-19 20:45\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1422,129 +1422,129 @@ msgstr "La cabecera de una vía navegable puede o no estar bien definida. Para l
 #. type: delimited block =
 #: 0200.en.adoc:304
 msgid "\"headwaters of the Missouri River\" +"
-msgstr ""
+msgstr "\"Cabeceras del Río Missouri\"+"
 
 #. type: delimited block =
 #: 0200.en.adoc:305
 msgid "\"Cabecera Río Manso\""
-msgstr ""
+msgstr "\"Cabecera Río Manso\""
 
 #. type: Plain text
 #: 0200.en.adoc:310
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Sometimes the position of a headwater is well known, e.g. it originates in a spring, lake, marsh, or a generally accepted beginning of a stream. If the headwater issues from a stationary waterbody such as a spring or lake, the feature is a line segment or polyline across the area where the water flows out of the stationary waterbody. In the latter case, treat the <<boundary>> as for a <<path>> (see <<Feature – Path>>), albeit a short one, as it is transverse to the flow of the waterway (<<img-headwater>>).\n"
-msgstr ""
+msgstr "*Paso 1 - Determinar los límites de la característica*: A veces la posición de la cabecera es bien conocida, por ejemplo tiene su origen en un manantial, lago, pantano o es un comienzo generalmente aceptado de un torrente. Si la cabecera se origina desde un cuerpo de agua estacionario como un manantial o lago, la entidad geográfica es un segmento de línea o una polilínea a través del área en la que fluye el agua fuera del cuerpo estacionario. En este último caso, trate a los <<límites>> como a una <<ruta>> (ver <<Entidad: Ruta>>), aunque corta pues es transversal al flujo de la vía navegable (<<img-headwater>>).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:312
 msgid "If the headwater is not designated, use the set of all of the streams upstream of the waterway mentioned. Draw the least convex polygon containing the entire set of streams as the *boundary* (<<img-watershed>>)."
-msgstr ""
+msgstr "Si la cabecera no ha sido designada, use el conjunto de todos los arroyos río arriba de la vía navegable mencionada. Dibuje el mínimo polígono convexo que contenga todo el conjunto de arroyos como el *límite* (<img-watershed>)."
 
 #. type: Plain text
 #: 0200.en.adoc:314
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary. The corrected center should be on a waterbody within the boundaries.\n"
-msgstr ""
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez que el límite ha sido determinado, trate la entidad como una <<Entidad con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las <<coordenadas>> del <<centro-corregido, centro corregido>> hasta el punto más lejano del límite. El centro corregido debe estar en un cuerpo de agua dentro de los límites.\n"
 
 #. type: Block title
 #: 0200.en.adoc:318
 #, no-wrap
 msgid "Overview of a headwater issuing from a stationary waterbody (in this case a lake), with detail of the corrected center *a* and geographic radial *b*."
-msgstr ""
+msgstr "Vista general de una cabecera que surge desde un cuerpo de agua estacionario (en este caso un lago), con detalle al centro corregido *a* y el radio geográfico *b*."
 
 #. type: Target for macro image
 #: 0200.en.adoc:319
 #, no-wrap
 msgid "img/web/headwater.png"
-msgstr ""
+msgstr "img/web/headwater.png"
 
 #. type: Block title
 #: 0200.en.adoc:322
 #, no-wrap
 msgid "Overview of a watershed as the headwater of a river *R* with detail showing the boundaries of the upstream tributaries of *R*, with center *c*, corrected center *a* and geographic radial *b*."
-msgstr ""
+msgstr "Vista general de una cuenca como la cabecera de un río *R* con detalles mostrando los límites de los afluentes río arriba de *R*, con un centro *c*, un centro corregido *a* y un radio geográfico *b*."
 
 #. type: Target for macro image
 #: 0200.en.adoc:323
 #, no-wrap
 msgid "img/web/watershed.png"
-msgstr ""
+msgstr "img/web/watershed.png"
 
 #. type: Title =====
 #: 0200.en.adoc:325
 #, no-wrap
 msgid "Feature – near a Feature"
-msgstr ""
+msgstr "Entidad Geográfica: cerca de una Entidad Geográfica"
 
 #. type: Plain text
 #: 0200.en.adoc:328
 msgid "The <<locality>> is given with a proximity to a <<feature>>, usually written as \"near\", \"in the vicinity of\", or \"adjacent to\", without any particular <<heading>> or distance. \"Off\" of a locality, often seen in marine locations, is included here, but in this case there is at least one constraint imposed by the shore."
-msgstr ""
+msgstr "La <<localidad>> se da con una proximidad a una <<entidad-geográfica, entidad-geográfica>>, normalmente escrito como \"cercano\", \"en las inmediaciones de\" o \"adyacente a\" sin ninguna <<orientación geográfica>> o distancia. \"Fuera de\" de una localidad, a menudo vista en ubicaciones marinas, se incluye aquí, pero en este caso hay al menos una restricción impuesta por la orilla."
 
 #. type: delimited block =
 #: 0200.en.adoc:333
 msgid "\"before Ceibas\" +"
-msgstr ""
+msgstr "\"antes de Ceibas\" +"
 
 #. type: delimited block =
 #: 0200.en.adoc:334
 msgid "\"near Dina Huapi\" +"
-msgstr ""
+msgstr "\"cerca de Dina Huapi\" +"
 
 #. type: delimited block =
 #: 0200.en.adoc:335
 msgid "\"off Rottnest island\" +"
-msgstr ""
+msgstr "\"fuera de la isla Rottnest\" +"
 
 #. type: delimited block =
 #: 0200.en.adoc:336
 msgid "\"adjacent to the railway underpass on Smith Street\""
-msgstr ""
+msgstr "\"junto al paso subterráneo del ferrocarril en Smith Street\""
 
 #. type: Plain text
 #: 0200.en.adoc:341
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: First determine the <<boundary>> of the feature that is mentioned in the description, based on the feature type, either as <<Feature – with Obvious Spatial Extent>>, or as <<Feature – without Obvious Spatial Extent>>. Then, to account for the proximity indicator, extend that boundary outward for a fixed distance in all directions (<<img-near-a-feature>>A). Call this the \"extended feature\". If the extension overlaps the extension of any other similar feature, modify the boundary in the shared space to be half the distance between the nearest boundaries between the two features (<<img-near-a-feature>>B).\n"
-msgstr ""
+msgstr "*Paso 1 - Determinar los límites de la entidad geográfica*: Primero determine el <<límite>> de la entidad mencionada en la descripción basado en el tipo de entidad, ya sea como una <<Entidad Geográfica con una Extensión Espacial Obvia>> o como una <<Entidad Geográfica sin una Extensión Espacial Obvia>>. Luego, para tener en cuenta el indicador de proximidad, extienda ese límite hacia afuera en una distancia fija en todas las direcciones (<<img-near-a-feature>>A). Llame a esto la \"entidad extendida\". Si la extensión se superpone con la extensión de cualquier otra entidad similar, modifique el límite en el espacio compartido para que sea la mitad de la distancia entre los límites más cercanos de las dos entidades (<<img-near-a-feature>>B).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:343
 msgid "At the time the locality was recorded, neighbouring features might not have necessarily been in the same place as they are now. Also, features may have changed size in the time between the recording of the locality and the time when the map you use was made. These considerations add to the vagaries associated with this type of locality and underline the importance to never describe localities in this way."
-msgstr ""
+msgstr "En el momento en que se registró la localidad es posible que las entidades vecinas no estuvieran necesariamente en el mismo lugar que ahora. Además, las entidades pueden haber cambiado de tamaño en el tiempo entre el registro de la localidad y el tiempo en que se hizo el mapa que usted utilizó. Estas consideraciones añaden a las variaciones asociadas a este tipo de localidad y resaltan la importancia de nunca describir las localidades de esta manera."
 
 #. type: Plain text
 #: 0200.en.adoc:345
 msgid "The buffer distance for the extension is arbitrary – it is hard to defend any given value as a default. Make a judgement and imagine what the person who recorded the locality meant. Document the rationale and decisions made in term:dwc[dwc:georeferenceRemarks]."
-msgstr ""
+msgstr "La distancia de buffer para esta extensión es arbitraria, es difícil defender cualquier valor dado como predeterminado. Haga un juicio e imagínese lo que quería decir la persona que registro la localidad. Documente el razonamiento y las decisiones tomadas en el término: dwc[dwc:georeferenceRemarks] (Comentarios de la georreferenciación)."
 
 #. type: Plain text
 #: 0200.en.adoc:347
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial:* Once the boundary of the extended feature has been determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary of the extended feature.\n"
-msgstr ""
+msgstr "*Paso 2 - Determinar las coordenadas y el radio geográfico:* Una vez que haya determinado el límite de la entidad extendida, tratela como una <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las <<coordenadas>> del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad extendida.\n"
 
 #. type: Block title
 #: 0200.en.adoc:351
 #, no-wrap
 msgid "Boundary, corrected center *a* and geographic radial *b* of an interpretation of locality type \"_near a Feature_\" with a boundary extended a fixed distance in all directions, in this case 10 km. *A*: Boundary extended a fixed distance in all directions with no neighbouring conflicts. *B*: Boundary extended a fixed distance in all directions except in the area overlapping a similar feature, where it extends half the distance to the neighbouring feature."
-msgstr ""
+msgstr "Límite, centro corregido *a* y radio geográfico *b* de una interpretación del tipo de localidad \"_cerca de una Entidad Geográfica_\" con un límite extendido una distancia fija en todas las direcciones, en este caso 10 km. *A*: El límite extendido una distancia fija en todas las direcciones sin conflictos vecinos. *B*: Límite extendido una distancia fija en todas las direcciones excepto en el área superpuesta con otra característica similar, donde se extiende la mitad de la distancia hasta la característica vecina."
 
 #. type: Target for macro image
 #: 0200.en.adoc:352
 #, no-wrap
 msgid "img/web/near-a-feature.png"
-msgstr ""
+msgstr "img/web/near-a-feature.png"
 
 #. type: Title =====
 #: 0200.en.adoc:354
 #, no-wrap
 msgid "Feature – between Two Features"
-msgstr ""
+msgstr "Entidad Geográfica: entre Dos Entidades Geográficas"
 
 #. type: Plain text
 #: 0200.en.adoc:357
 msgid "The <<locality>> description uses the pattern \"between A and B\", where A and B are two distinct <<feature,features>>."
-msgstr ""
+msgstr "La descripción de la <<localidad>> usa el patrón \"entre A y B\", donde A y B son dos <<entidad-geográfica,entidades geográficas>> diferentes."
 
 #. type: delimited block =
 #: 0200.en.adoc:362
