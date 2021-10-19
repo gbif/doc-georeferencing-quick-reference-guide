@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-19 15:26\n"
+"PO-Revision-Date: 2021-10-19 16:37\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1307,33 +1307,33 @@ msgstr "img/web/junction.png"
 #: 0200.en.adoc:243
 #, no-wrap
 msgid "Feature – Cave"
-msgstr ""
+msgstr "Entidad Geográfica: Cueva"
 
 #. type: Plain text
 #: 0200.en.adoc:246
 msgid "The <<locality>> is a cave, an underground mine, etc. For details of how to record a locality within a cave, see {gbp}#caves[Caves^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
-msgstr ""
+msgstr "La <<localidad>> es una cueva, una mina subterránea, etc. Para obtener detalles sobre cómo registrar una localidad dentro de una cueva, consulte {gbp}#cuevas[Cuevas^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]."
 
 #. type: delimited block =
 #: 0200.en.adoc:251
 msgid "\"Giant Dome, Hall of Giants, Carlsbad Caverns\" +"
-msgstr ""
+msgstr "\"Domo Gigante, Sala de los Gigantes, Cavernas de Carlsbad\""
 
 #. type: delimited block =
 #: 0200.en.adoc:252
 msgid "\"Cueva de Las Brujas\""
-msgstr ""
+msgstr "\"Cueva de Las Brujas\""
 
 #. type: Plain text
 #: 0200.en.adoc:257
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Locate the cave and/or its main entrance.\n"
-msgstr ""
+msgstr "*Paso 1 - Determinar los límites de la característica*: Localice la cueva y/o su entrada principal.\n"
 
 #. type: Plain text
 #: 0200.en.adoc:259
 msgid "Cave <<extent>> evident – if a map of all the interior of the cave with measurements and orientation to the surface is available, or if a position can be determined directly above the <<location>> inside the cave using the <<ground-zero>> concept (see {gbp}#determining-location[Determining Location^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]), determine the <<boundary>> as if it is a <<Feature – with Obvious Spatial Extent>> (<<img-caves>>A)."
-msgstr ""
+msgstr "Cueva con una <<extensión>> evidente: si hay disponible un mapa de todo el interior de la cueva con mediciones y orientación geográfica hacia la superficie o si se puede determinar una posición directamente encima de la <<ubicación>> dentro de la cueva usando el concepto de <<cota-cero, cota cero>> (ver {gbp}#determinando-la-ubicación[Determinando la Ubicación^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]), determine el <<límite>> como si fuera una <<Entidad Geográfica con una Extensión Espacial Obvia>> (<<img-caves>>A)."
 
 #. type: Plain text
 #: 0200.en.adoc:261
