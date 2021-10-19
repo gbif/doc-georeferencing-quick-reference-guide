@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-19 17:33\n"
+"PO-Revision-Date: 2021-10-19 19:49\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1417,7 +1417,7 @@ msgstr "Entidad Geográfica: Cabeceras de una Vía Navegable"
 #. type: Plain text
 #: 0200.en.adoc:299
 msgid "The headwater of a waterway may or may not be well defined. For most sizeable rivers a headwater is designated. If not, there is no universally agreed upon definition for a headwater. A reasonable interpretation might be the beginning of the most upstream first order stream that is a tributary of the named waterway. However, there is no guarantee that the author of the <<locality>> description used that definition. Therefore, we recommend the conservative solution that includes the watershed of all of the tributary streams of lower order than the waterway mentioned."
-msgstr ""
+msgstr "La cabecera de una vía navegable puede o no estar bien definida. Para la mayoría de ríos importantes hay una cabecera designada. Si no es así, no existe un consenso universal sobre la definición de una cabecera. Una interpretación razonable podría ser el comienzo del arroyo de primer orden que se encuentra más aguas arriba y que es un afluente de esa vía navegable en particular. Sin embargo, no hay garantía de que el autor de la descripción de la <<localidad>> haya usado esa definición. Por lo tanto, recomendamos la solución conservadora que incluye la cuenca de agua de todos los arroyos afluentes de menor orden que la vía navegable en cuestión."
 
 #. type: delimited block =
 #: 0200.en.adoc:304
