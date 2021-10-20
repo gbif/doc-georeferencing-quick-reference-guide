@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-20 14:22\n"
+"PO-Revision-Date: 2021-10-20 15:18\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1844,12 +1844,12 @@ msgstr "Primero, vamos a darnos una idea de cuán grande puede ser el efecto de 
 #. type: Plain text
 #: 0220.en.adoc:79
 msgid "Let's take an extreme case using the steepest road in the world, Baldwin Street in Dunedin, New Zealand. The street has a maximum grade of 35%. For comparison, highways with grades of 6% are usually considered steep enough to merit cautionary signage, and more than about 12% is rare to find. With a 35% grade, stem:[y] is 0.35 times stem:[x]. Set stem:[x = 1] and do the calculation. The distance on the ground would be stem:[sqrt(0.35^2 + 1^2)] or 1.059 (5.9% longer). In a more normal extreme case of a 10% grade, the difference would be just 0.5%. Thus, under normal circumstances the difference is essentially negligible for roads and certainly so for navigable waters."
-msgstr ""
+msgstr "Tomemos un caso extremo usando la carretera más empinada del mundo, Baldwin Street en Dunedin, Nueva Zelanda. La calle tiene un grado máximo del 35%. En comparación, las autopistas con grados de 6% suelen considerarse lo suficientemente empinadas como para tener señales de cuidado y es raro encontrar carreteras con más del 12%. Con un grado del 35%, stem:[y] es 0.35 veces stem:[x]. Establezca el stem:[x = 1] y haga el cálculo. La distancia en el campo sería de stem:[sqrt(0.35^2 + 1^2)] o 1.059 (5.9% más largo). En un caso extremo más normal con un 10% de grado, la diferencia sería de apenas 0,5%. Por lo tanto, en circunstancias normales, la diferencia es esencialmente insignificante para las carreteras y sin duda para las aguas navegables."
 
 #. type: Plain text
 #: 0220.en.adoc:81
 msgid "There are several ways to estimate distances on the ground without specialized tools or GIS. One way is to use an image of the elevation profile, which can be obtained using a screen capture in Google Earth Pro, for example. The image must be distorted so that the scale in both stem:[x] and stem:[y] is the same (1m elevation = 1m horizontal distance). With the image thus flattened, measure along the path of elevation and compare it to the length of the horizontal distance on the image."
-msgstr ""
+msgstr "Existen varias formas de estimar las distancias en el campo sin herramientas especializadas ni GIS. Una forma es usando una imagen del perfil de elevación, que se puede obtener mediante una captura de pantalla en Google Earth Pro, por ejemplo. La imagen debe ser distorsionada para que la escala en stem:[x] y stem:[y] sea la misma (1m de altura = 1m distancia horizontal). Con la imagen aplanada de esta manera, mida a lo largo de la ruta la elevación y compárela con la longitud de la distancia horizontal en la imagen."
 
 #. type: Plain text
 #: 0220.en.adoc:83
@@ -1865,34 +1865,34 @@ msgstr ""
 #: 0220.en.adoc:86
 #, no-wrap
 msgid "Offset along a Narrow Path"
-msgstr ""
+msgstr "Desplazamiento a lo Largo de una Ruta Angosta"
 
 #. type: delimited block =
 #: 0220.en.adoc:92
 msgid "\"Ruta Nacional 81, 8 km O de Ingeniero Guillermo Nicasio Juárez\" +"
-msgstr ""
+msgstr "\"Ruta Nacional 81, 8 km O de Ingeniero Guillermo Nicasio Juárez\" +"
 
 #. type: delimited block =
 #: 0220.en.adoc:93
 msgid "\"left bank of the Mississippi River, 16 mi downstream from St. Louis\" +"
-msgstr ""
+msgstr "\"orilla izquierda del río Mississipi, 16 mi río abajo de St. Louis\" +"
 
 #. type: delimited block =
 #: 0220.en.adoc:94
 msgid "\"500m up Skeleton Gorge\""
-msgstr ""
+msgstr "\"500m arriba de Skeleton Gorge\""
 
 #. type: Plain text
 #: 0220.en.adoc:97 0220.en.adoc:119 0220.en.adoc:224
 #, no-wrap
 msgid "*Locality Type:* [ui-element]#Distance along path#\n"
-msgstr ""
+msgstr "*Tipo de localidad:* [ui-element]#Distancia a lo largo de una ruta#\n"
 
 #. type: Plain text
 #: 0220.en.adoc:99
 #, no-wrap
 msgid "*Step 1 – Determine the starting feature boundaries*: Find the <<boundary>> of the starting feature, which is the intersection of the reference <<feature>> with the <<path>> as you would for <<feature-junction-intersection-crossing-confluence,Feature – Junction, Intersection, Crossing, Confluence>> (<<img-offset-narrow-path>>).\n"
-msgstr ""
+msgstr "*Paso 1 – Determinar los límites de la entidad inicial*: Encuentre el <<límite>> de la entidad inicial, la cual es la intersección de la <<entidad-geográfica>> de referencia con la <<ruta>> como lo haría para una <<entidad-geográfica-cruve-intersección-paso-confluencia,Entidad Geográfica: Cruce, Intersección, Paso, Confluencia >> (<<img-offset-narrow-path>>).\n"
 
 #. type: Plain text
 #: 0220.en.adoc:101
@@ -1922,7 +1922,7 @@ msgstr ""
 #: 0220.en.adoc:108
 #, no-wrap
 msgid "img/web/offset-narrow-path.png"
-msgstr ""
+msgstr "img/web/offset-narrow-path.png"
 
 #. type: Title =====
 #: 0220.en.adoc:110
