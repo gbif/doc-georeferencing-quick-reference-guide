@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-20 20:23\n"
+"PO-Revision-Date: 2021-10-20 21:34\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1854,12 +1854,12 @@ msgstr "Existen varias formas de estimar las distancias en el campo sin herramie
 #. type: Plain text
 #: 0220.en.adoc:83
 msgid "A second way to estimate the distance on the ground is to sum all the elevation gains between pair-wise minima and maxima and do the same for all the pair-wise elevation losses. Sum the gains and losses (both as positive, because the rises and falls both contribute to positive length gains). Use that sum as the rise (stem:[y]) in a slope calculation where the run (stem:[x]) is the horizontal length of the path. From stem:[x] and stem:[y], calculate the distance on the ground as above."
-msgstr ""
+msgstr "Una segunda forma de estimar la distancia en el campo es sumando todas las ganancias de elevación entre mínimos y maximos de forma pareada y hacer lo mismo para todos los pares de pérdidas de elevación. Sume las ganancias y pérdidas (ambas como positivas, porque las subidas y bajadas contribuyen a ganancias positivas de longitud). Use esa suma como la elevación (stem:[y]) en el cálculo de una pendiente donde el avance (stem:[x]) es la longitud horizontal de la ruta. Usando stem:[x] y stem:[y] calcule la distancia en el campo como se indicó arriba."
 
 #. type: Plain text
 #: 0220.en.adoc:85
 msgid "A third way to estimate the distance on the ground is a gross simplification of the second method, above. Instead of measuring all pair-wise gains and losses, sum the net changes in elevation along three segments, 1) from the elevation at the beginning of the path to the lowest elevation, 2) the net change from the lowest elevation to the highest elevation, and 3) the net change from the highest elevation to the elevation at the end of the path."
-msgstr ""
+msgstr "Una tercera forma de estimar la distancia en el campo es una simplificación a groso modo del segundo método. En lugar de medir todas las ganancias y pérdidas pareadas, sume los cambios netos en la elevación a lo largo de tres segmentos, 1) entre la elevación al inicio de la ruta y la elevación más baja, 2) el cambio neto entre la elevación más baja y la más alta y 3) el cambio neto entre la elevación más alta y la elevación al final de la ruta."
 
 #. type: Title =====
 #: 0220.en.adoc:86
@@ -1892,7 +1892,7 @@ msgstr "*Tipo de localidad:* [ui-element]#Distancia a lo largo de una ruta#\n"
 #: 0220.en.adoc:99
 #, no-wrap
 msgid "*Step 1 – Determine the starting feature boundaries*: Find the <<boundary>> of the starting feature, which is the intersection of the reference <<feature>> with the <<path>> as you would for <<feature-junction-intersection-crossing-confluence,Feature – Junction, Intersection, Crossing, Confluence>> (<<img-offset-narrow-path>>).\n"
-msgstr "*Paso 1 – Determinar los límites de la entidad inicial*: Encuentre el <<límite>> de la entidad inicial, la cual es la intersección de la <<entidad-geográfica>> de referencia con la <<ruta>> como lo haría para una <<entidad-geográfica-cruve-intersección-paso-confluencia,Entidad Geográfica: Cruce, Intersección, Paso, Confluencia >> (<<img-offset-narrow-path>>).\n"
+msgstr "*Paso 1 – Determinar los límites de la entidad geográfica de inicio*: Encuentre el <<límite>> de la entidad inicial, la cual es la intersección de la <<entidad-geográfica>> de referencia con la <<ruta>> como lo haría para una <<entidad-geográfica-cruve-intersección-paso-confluencia,Entidad Geográfica: Cruce, Intersección, Paso, Confluencia >> (<<img-offset-narrow-path>>).\n"
 
 #. type: Plain text
 #: 0220.en.adoc:101
@@ -1939,77 +1939,77 @@ msgstr "\"Río Mississippi, 16 mi río abajo de St. Louis\""
 #: 0220.en.adoc:121
 #, no-wrap
 msgid "*Step 1 – Determine the starting feature boundaries*: Find the center of the starting feature, which is the intersection of the reference <<feature>> with the <<path>> as you would for <<feature-junction-intersection-crossing-confluence,Feature – Junction, Intersection, Crossing, Confluence>> (<<img-offset-wide-path>>A).\n"
-msgstr ""
+msgstr "*Paso 1 – Determinar los límites de la entidad geográfica de inicio*: Encuentre el centro de la entidad de inicio, el cual corresponde a la intersección entre la <<entidad-geográfica, entidad geográfica>> de referencia y la <<ruta>> como lo haría para <<entidad-geográfica-cruve-intersección-paso-confluencia,Entidad Geográfica: Cruce, Intersección, Paso, Confluencia >> (<<img-offset-wide-path>>A).\n"
 
 #. type: Plain text
 #: 0220.en.adoc:123
 #, no-wrap
 msgid "*Step 2 – Determine the starting feature coordinates and geographic radial*: Once the <<boundary>> of the starting feature has been determined, use the same method to determine the <<corrected-center>> and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the corrected center to the furthest point on the boundary of the starting feature (<<img-offset-wide-path>>A).\n"
-msgstr ""
+msgstr "*Paso 2 – Determinar las coordenadas de la entidad geográfica de inicio y el radio geográfico*: Una vez que el <<límite>> de la entidad de inicio haya sido determinado, use el mismo método para determinar el <<centro-corregido>> y <<radio-geográfico>> como para una <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las <<coordenadas>> del centro corregido hasta el punto más lejano en el límite de la entidad de inicio (<<img-offset-wide-path>>A).\n"
 
 #. type: Plain text
 #: 0220.en.adoc:125
 #, no-wrap
 msgid "*Step 3 – Calculate preliminary uncertainties*: Calculate a preliminary <<uncertainty>> by entering the geographic radial from *Step 1* into the [ui-element]#Radial of feature# in the {gcm}[Georeferencing Calculator] and fill in the rest of the parameters for the [ui-element]#Distance along path# <<locality-type>>.\n"
-msgstr ""
+msgstr "*Paso 3 - Calcular incertidumbres preliminares*: Calcule una <<incertidumbre>> preliminar ingresando el radio geográfico del *Paso 1* en el [ui-element]#Radial de la entidad# en la {gcm}[Calculadora de Georreferencia] y rellene el resto de los parámetros para el <<tipo-de-localidad>> [ui-element]#Distancia a lo Largo de una Ruta#.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:127
 #, no-wrap
 msgid "*Additional parameters for Step 4*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).\n"
-msgstr ""
+msgstr "*Parámetros adicionales para el paso 4*: [ui-element]#Fuente de las Coordenadas#, [ui-element]#Formato de las Coordendas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Error de Medición#, [ui-element]#Unidades de la Distancia#, [ui-element]#Precisión de la dDstancia# (ver <<Conceptos de Georreferenciación>>).\n"
 
 #. type: Plain text
 #: 0220.en.adoc:129
 #, no-wrap
 msgid "*Step 4 – Final path boundary*: The objective of this step is to estimate a boundary around the set of possible paths matching the description. To do so, we need to trace at least three of the possible paths. The first of these paths is from the coordinates of *Step 2* along one side of the wide path to a distance equal to the offset distance given in the locality description. The second path is similar, but along the opposite side of the wide path starting at a point of equal elevation and tracing along that opposite side. The third path is from the coordinates of Step 2, along the middle of the wide path (or the deepest channel if locatable in the case of a waterway) to as far as to the offset distance given in the locality description. If there are other reasonably likely paths that are very different from these three, trace them in a similar manner. Each of these paths terminate at an X in the example in <<img-offset-wide-path>>B. From each of these termination points, trace both forward and backward to a distance equal to the uncertainty determined in *Step 3* (the segments of the paths marked with u in <<img-offset-wide-path>>B). The outer endpoints of all the segments marked with u form a polygon (<<img-offset-wide-path>>B). This polygon is the final path boundary we seek.\n"
-msgstr ""
+msgstr "*Paso 4 – Límite de la ruta final*: El objetivo de este paso es estimar un límite alrededor del conjunto de posibles rutas que coincidan con la descripción. Para ello, hay que trazar al menos tres de las rutas posibles. La primera de estas rutas va desde las coordenadas del *Paso 2*, a lo largo de un lado de la ruta ancha, hasta una distancia igual a la distancia de desplazamiento dada en la descripción de la localidad. La segunda ruta es similar pero a lo largo del lado opuesto de la ruta ancha, comenzando en un punto de igual elevación y trazamos a lo largo de ese lado opuesto. La tercera ruta va desde las coordenadas del Paso 2, a lo largo de la mitad del camino ancho (o el canal más profundo si se puede localizar en el caso de una vía de navegable), tan lejos como la distancia de desplazamiento dada en la descripción de la localidad. Si hay otros caminos razonablemente probables que sean muy diferentes a estos tres trácelos de una manera similar. Cada una de estas rutas termina en una X en el ejemplo de la <<img-offset-wide-path>>B. Desde cada uno de estos puntos finales, trace tanto hacia adelante como hacia atrás una distancia igual a la incertidumbre determinada en el *Paso 3* (los segmentos de las rutas marcados con una u en <<img-offset-wide-path>>B). Los puntos finales externos de todos los segmentos marcados con u forman un polígono (<<img-offset-wide-path>>B). Este polígono es el límite de la ruta final que buscamos.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:131
 #, no-wrap
 msgid "*Step 5 – Final corrected center and geographic radial*: Once you have determined the boundary of the final boundary from *Step 4*, treat as for <<Feature – with Obvious Spatial Extent>>, namely, find the corrected center of the final path boundary and measure the distance from there to the furthest point on the boundary. Use the coordinates of the corrected center for the resulting [ui-element]#Latitude# and [ui-element]#Longitude# and use the length of the geographic radial of the final path boundary as the final [ui-element]#Uncertainty#. Use all of the rest of the output values from the calculation in *Step 4* in the final georeference. No new calculation has to be made for this step.\n"
-msgstr ""
+msgstr "*Paso 5 – Centro corregido y radio geográfico finales*: Una vez que haya determinado el límite del límite final en el *Paso 4*, trate la entidad como una <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, encuentre el centro corregido de la ruta final y mida la distancia desde allí hasta el punto más lejano en el límite. Use las coordenadas del centro corregido para la [ui-element]#Latitud# y [ui-element]#Longitude# resultantes y use la longitud del radio geográfico del límite de la ruta final como la [ui-element]#Incertidumbre# final. Use el resto de valores de salida del cálculo del *Paso 4* en la georreferencia final. No hay necesidad de hacer un nuevo cálculo para este paso.\n"
 
 #. type: Block title
 #: 0220.en.adoc:133
 #, no-wrap
 msgid "Determination of the final coordinates and geographic radial for a locality of the type [ui-element]#Offset along path#, where the path is wide enough that there are multiple reasonable routes within it, in this case a river. *A*: Boundary, corrected center *a₁* and geographic radial *b₁* for the starting feature. *B*: Offsets *x* along various routes along the wider path, buffers of uncertainty *u* forward and backward along the possible paths, and the boundary (red dotted segments) defined by the buffers. *C*: Boundary, corrected center *a₂* and geographic radial *b₂* of the final path, that is, the section of the river covered by the distance X downstream from the corrected center of the starting feature *a₁* buffered by the uncertainties *u*."
-msgstr ""
+msgstr "Determinación de las coordenadas y radio geográfico finales para una localidad del tipo [ui-element]#Desplazamiento a lo largo de una ruta#, donde la ruta es lo suficientemente ancha como para que hayan múltiples rutas razonables dentro de ella, en este caso un río. *A*: Límite, centro corregido *a1* y radio geográfico *b1* para la característica inicial. *B*: Desplazamientos *x* a lo largo de las varias rutas dentro del camino más amplio, buffers de incertidumbre *u* hacia adelante y hacia atrás a lo largo de las posibles rutas y el límite (segmentos de puntos rojos) definido por los buffers. *C*: Límite, centro corregido *a2* y radio geográfico *b2* de la ruta final, es decir, la sección del río cubierta por la distancia X aguas abajo del centro corregido de la característica de inicio *a1* dentro del buffer determinado por las incertidumbres *u*."
 
 #. type: Target for macro image
 #: 0220.en.adoc:134
 #, no-wrap
 msgid "img/web/offset-wide-path.png"
-msgstr ""
+msgstr "img/web/offset-wide-path.png"
 
 #. type: Title =====
 #: 0220.en.adoc:136
 #, no-wrap
 msgid "Offset along Multiple Possible Paths"
-msgstr ""
+msgstr "Desplazamiento a lo Largo de Múltiples Rutas Posibles"
 
 #. type: delimited block =
 #: 0220.en.adoc:142
 msgid "\"15km al O de Rosario por ruta\" +"
-msgstr ""
+msgstr "\"15km al O de Rosario por ruta\" +"
 
 #. type: delimited block =
 #: 0220.en.adoc:143
 msgid "“5 km up Cox River from the coast, Limmen NP, NT, Australia” (Cox River is a delta with several arms)."
-msgstr ""
+msgstr "“5 km por el Río Cox desde la costa, Limmen NP, NT, Australia”, (El Río Cox es un delta con varios brazos)."
 
 #. type: Plain text
 #: 0220.en.adoc:146
 #, no-wrap
 msgid "*Locality Type:* As the <<locality-type>> of the possible <<path,paths>>.\n"
-msgstr ""
+msgstr "*Tipo de localidad:* Como el <<tipo-de-localidad>> de las <<ruta,rutas>> posibles.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:148
 #, no-wrap
 msgid "*Step 1 – Determine the starting feature boundaries*: Find the center of the intersection of the reference <<feature>> with each path as you would for <<feature-junction-intersection-crossing-confluence,Feature – Junction, Intersection, Crossing, Confluence>> (<<img-offset-multiple-paths>>A).\n"
-msgstr ""
+msgstr "*Paso 1 – Determinar los límites de la entidad de inicio*: Encuentre el centro de la intersección de la <<entidad>> de referencia con cada ruta como lo haría para <<entidad-geográfica-cruve-intersección-paso-confluencia,Entidad Geográfica: Cruce, Intersección, Paso, Confluencia >> (<<img-offset-multiple-paths>>A).\n"
 
 #. type: Plain text
 #: 0220.en.adoc:150
