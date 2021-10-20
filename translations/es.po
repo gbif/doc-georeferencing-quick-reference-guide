@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-20 15:18\n"
+"PO-Revision-Date: 2021-10-20 17:01\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1928,12 +1928,12 @@ msgstr "img/web/offset-narrow-path.png"
 #: 0220.en.adoc:110
 #, no-wrap
 msgid "Offset along a Wide Path"
-msgstr ""
+msgstr "Desplazamiento a lo largo de una Ruta Ancha"
 
 #. type: delimited block =
 #: 0220.en.adoc:116
 msgid "\"Mississippi River, 16 mi downstream from St. Louis\""
-msgstr ""
+msgstr "\"Río Mississippi, 16 mi río abajo de St. Louis\""
 
 #. type: Plain text
 #: 0220.en.adoc:121
