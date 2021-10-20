@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-20 21:34\n"
+"PO-Revision-Date: 2021-10-20 22:37\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -434,7 +434,7 @@ msgstr "Distancia por ruta"
 #. type: Plain text
 #: 0100.en.adoc:102
 msgid "Distance along orthogonal <<direction,directions>>"
-msgstr "Distancia por <<dirección, direcciones>> ortogonales"
+msgstr "Distancia a lo largo de <<dirección, direcciones>> ortogonales"
 
 #. type: Plain text
 #: 0100.en.adoc:103
@@ -626,7 +626,7 @@ msgstr "Distancia de Desplazamiento"
 #. type: Plain text
 #: 0100.en.adoc:181
 msgid "The [ui-element]#Offset Distance# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] is the linear surface distance from a point of origin. <<offset,Offsets>> are used for the [ui-element]#Locality Types# [ui-element]#Distance at a heading# and [ui-element]#Distance only#. If the [ui-element]#Locality Type# [ui-element]#Distance along orthogonal directions# is selected, there are two distinct offsets:"
-msgstr "La [ui-element]#Distancia de Desplazamiento# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] es la distancia lineal desde un punto de origen. Los <<desplazamiento, desplazamientos>> se usan para los [ui-element]#Tipos de Localidades# [ui-element]#Distancia desde una orientación cardinal# y [ui-element]#Sólo distancia#.Si selecciona el [ui-element]#Tipo de Localidad# [ui-element]#Distancia por direcciones ortogonales# hay dos desplazamientos posibles:"
+msgstr "La [ui-element]#Distancia de Desplazamiento# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] es la distancia lineal desde un punto de origen. Los <<desplazamiento, desplazamientos>> se usan para los [ui-element]#Tipos de Localidades# [ui-element]#Distancia desde una orientación cardinal# y [ui-element]#Sólo distancia#.Si selecciona el [ui-element]#Tipo de Localidad# [ui-element]#Distancia a lo largo de direcciones ortogonales# hay dos desplazamientos posibles:"
 
 #. type: Labeled list
 #: 0100.en.adoc:182
@@ -1945,7 +1945,7 @@ msgstr "*Paso 1 – Determinar los límites de la entidad geográfica de inicio*
 #: 0220.en.adoc:123
 #, no-wrap
 msgid "*Step 2 – Determine the starting feature coordinates and geographic radial*: Once the <<boundary>> of the starting feature has been determined, use the same method to determine the <<corrected-center>> and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the corrected center to the furthest point on the boundary of the starting feature (<<img-offset-wide-path>>A).\n"
-msgstr "*Paso 2 – Determinar las coordenadas de la entidad geográfica de inicio y el radio geográfico*: Una vez que el <<límite>> de la entidad de inicio haya sido determinado, use el mismo método para determinar el <<centro-corregido>> y <<radio-geográfico>> como para una <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las <<coordenadas>> del centro corregido hasta el punto más lejano en el límite de la entidad de inicio (<<img-offset-wide-path>>A).\n"
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico de la entidad geográfica de inicio*: Una vez que el <<límite>> de la entidad de inicio haya sido determinado, use el mismo método para determinar el <<centro-corregido>> y <<radio-geográfico>> como para una <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las <<coordenadas>> del centro corregido hasta el punto más lejano en el límite de la entidad de inicio (<<img-offset-wide-path>>A).\n"
 
 #. type: Plain text
 #: 0220.en.adoc:125
@@ -2009,109 +2009,109 @@ msgstr "*Tipo de localidad:* Como el <<tipo-de-localidad>> de las <<ruta,rutas>>
 #: 0220.en.adoc:148
 #, no-wrap
 msgid "*Step 1 – Determine the starting feature boundaries*: Find the center of the intersection of the reference <<feature>> with each path as you would for <<feature-junction-intersection-crossing-confluence,Feature – Junction, Intersection, Crossing, Confluence>> (<<img-offset-multiple-paths>>A).\n"
-msgstr "*Paso 1 – Determinar los límites de la entidad de inicio*: Encuentre el centro de la intersección de la <<entidad>> de referencia con cada ruta como lo haría para <<entidad-geográfica-cruve-intersección-paso-confluencia,Entidad Geográfica: Cruce, Intersección, Paso, Confluencia >> (<<img-offset-multiple-paths>>A).\n"
+msgstr "*Paso 1 – Determinar los límites de la entidad de inicio*: Encuentre el centro de la intersección de la <<entidad-geográfica>> de referencia con cada ruta como lo haría para <<entidad-geográfica-cruve-intersección-paso-confluencia,Entidad Geográfica: Cruce, Intersección, Paso, Confluencia >> (<<img-offset-multiple-paths>>A).\n"
 
 #. type: Plain text
 #: 0220.en.adoc:150
 #, no-wrap
 msgid "*Step 2 – Determine the boundaries for distinct paths*: For each of the distinct possible paths, determine the final <<boundary,boundaries>> of the path segment as for <<Offset along a Narrow Path>> or <<Offset along a Wide Path>>, as appropriate (<<img-offset-multiple-paths>>B).\n"
-msgstr ""
+msgstr "*Paso 2 – Determinar los límites para las distintas rutas*: Para cada una de las posibles rutas distintas, determine los <<límite,límites>> finales de los segmentos de la ruta como lo haría para un <<Desplazamiento a lo Largo de una Ruta Angosta>> o un <<Desplazamiento a lo Largo de una Ruta Ancha>>, según sea apropiado (<<img-offset-multiple-paths>>B).\n"
 
 #. type: Plain text
 #: 0220.en.adoc:152
 #, no-wrap
 msgid "*Step 3 – Determine the final coordinates and geographic radial*: Treat the set of boundaries from *Step 2* and the minimum area between them as parts of the same feature. Find the <<corrected-center>> and <<geographic-radial>> for this combined feature (<<img-offset-multiple-paths>>B). Use the <<coordinates>> of the corrected center of this combined feature for the resulting [ui-element]#Input Latitude# and [ui-element]#Longitude# and use the length of the geographic radial of the combined feature as the final <<uncertainty>>. No further calculation is necessary.\n"
-msgstr ""
+msgstr "*Paso 3 – Determinar las coordenadas y radios geográficos finales*: Trate el conjunto de límites del *Paso 2* y el área mínima entre ellos como partes de la misma entidad geográfica. Encuentre el <<centro-corregido>> y el <<radio-geográfico>> para esta entidad combinada (<<img-offset-multiple-paths>>B). Use las <<coordenadas>> del centro corregido de la entidad combinada para la [ui-element]#Latitud# y [ui-element]#Longitud# de entrada y use la longitud del radio geográfico de la entidad combinada como la <<incertidumbre>> final. No se necesita ningún cálculo adicional.\n"
 
 #. type: Block title
 #: 0220.en.adoc:154
 #, no-wrap
 msgid "Determination of the input coordinates and geographic radial for a [ui-element]#Locality Type Offset along path# where there are multiple possible paths matching the locality description, in this case two roads out of a town. *A*: Inset showing the boundaries, midpoints (*a₁* and *a₂*), and distances from midpoints to outer edges (shown as geographic radials *b₁* and *b₂*) of the intersections of the paths and the starting feature. *B*: Boundary, corrected center *a₃* and geographic radial *b₃* for the combination of the two road sections, each defined by offsets at a distance X along the respective paths from their respective midpoints in the starting feature, plus or minus the uncertainties determined for the [ui-element]#Distance along a Path# locality type *u*."
-msgstr ""
+msgstr "Determinación de las coordenadas de entrada y radio geográfico para un [ui-element]#Tipo de Localidad Desplazamiento a lo Largo de una Ruta# donde hay múltiples rutas posibles que coinciden con la descripción de la localidad, en este caso dos caminos a las fueras de una ciudad. *A*: Recuadro que muestra los límites, puntos medios (*a1* y *a2*) y distancias desde los puntos medios hasta los bordes externos (mostrados como radios geográficos *b1* y *b2*) de las intersecciones entre los caminos y la entidad de inicio. *B*: Límite, centro corregido *a3* y radio geográfico *b3* para la combinación de las dos secciones de los caminos, cada uno definido por desplazamientos de una distancia X a lo largo de las respectivas rutas desde los respectivos puntos medios en la entidad de inicio más o menos las incertidumbres determinadas para el tipo de localidad [ui-element]#Distancia a lo largo de una ruta# *u*."
 
 #. type: Target for macro image
 #: 0220.en.adoc:155
 #, no-wrap
 msgid "img/web/offset-multiple-paths.jpg"
-msgstr ""
+msgstr "img/web/offset-multiple-paths.jpg"
 
 #. type: Title ====
 #: 0220.en.adoc:157
 #, no-wrap
 msgid "Offset – Distance along Orthogonal Directions"
-msgstr ""
+msgstr "Desplazamiento: Distancia a lo largo de Direcciones Ortogonales"
 
 #. type: Plain text
 #: 0220.en.adoc:160
 msgid "The <<locality,locality>> consists of a linear distance in each of two orthogonal <<direction,directions>> from a <<feature>>. For more information and details see {gbp}#offset-along-orthogonal-directions[Offset along Orthogonal Directions^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
-msgstr ""
+msgstr "La <<localidad,localidad>> consiste en una distancia lineal en cada una de las dos <<dirección,direcciones>> ortogonales desde una <<entidad-geográfica>>. Para obtener más información y detalles, consulte {gbp}#desplazamiento-a-lo-largo-de-las-direcciones-ortogonales[Desplazamiento a lo largo de las Direcciones Ortogonales^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]."
 
 #. type: Plain text
 #: 0220.en.adoc:162
 msgid "Where localities have two orthogonal measurements in them, it should always be assumed that the measurements are \"by air\" unless there is a reference that indicates otherwise."
-msgstr ""
+msgstr "Donde las localidades tengan dos mediciones ortogonales en ellas, siempre se debe asumir que las mediciones son \"por aire\" a menos que haya una referencia que indique lo contrario."
 
 #. type: delimited block =
 #: 0220.en.adoc:167
 msgid "\"6 km N and 4 km W of Welna\" +"
-msgstr ""
+msgstr "\"6 km N y 4 km O de Welna\" +"
 
 #. type: delimited block =
 #: 0220.en.adoc:168
 msgid "\"2 mi E and 1.5 mi N of Kandy\" +"
-msgstr ""
+msgstr "\"2 mi E y 1.5 mi N de Kandy\" +"
 
 #. type: delimited block =
 #: 0220.en.adoc:169
 msgid "\"2 miles north, 1 mile east of Boulder Falls, Boulder County, Colorado\""
-msgstr ""
+msgstr "\"2 millas al norte, 1 milla al este de Boulder Falls, Condado de Boulder, Colorado\""
 
 #. type: Plain text
 #: 0220.en.adoc:172
 #, no-wrap
 msgid "*Locality Type:* [ui-element]#Distance along orthogonal directions#\n"
-msgstr ""
+msgstr "*Tipo de localidad:* [ui-element]#Distancia a lo largo de direcciones ortogonales#\n"
 
 #. type: Plain text
 #: 0220.en.adoc:174 0220.en.adoc:206
 #, no-wrap
 msgid "*Step 1 – Determine the starting feature boundaries*: Determine the <<boundary>> of the <<feature>> based on whatever the feature type is, either as for <<Feature – with Obvious Spatial Extent>>, or as for <<Feature – without Obvious Spatial Extent>>.\n"
-msgstr ""
+msgstr "*Paso 1 – Determinar los límites de la entidad de inicio*: Determine el <<límite>> de la <<entidad-geográfica>> basado en cualquier tipo de entidad que sea, ya sea como para una <<Entidad Geográfica con una Extensión Espacial Obvia>> o como para una <<Entidad Geográfica sin una Extensión Espacial Obvia>>.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:176
 #, no-wrap
 msgid "*Step 2 – Determine the starting feature coordinates and geographic radial*: Once the boundary of the starting feature has been determined, use the same method to determine the <<corrected-center>> and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the corrected center to the furthest point on the boundary of the starting feature (<<img-offset-orthogonal-direction>>).\n"
-msgstr ""
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico de la entidad geográfica de inicio*: Una vez que se ha determinado el límite de la entidad de inicio, use el mismo método para determinar el <<centro-corregido>> y el <<radio-geográfico>> como para una <<Entidad con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las <<coordenadas>> del centro corregido hasta el punto más lejano en el límite de la entidad de inicio (<<img-offset-orthogonal-direction>>).\n"
 
 #. type: Plain text
 #: 0220.en.adoc:178
 #, no-wrap
 msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source,# [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#North or South Offset Distance, East or West Offset Distance#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).\n"
-msgstr ""
+msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Fuente de las Coordenadas,# [ui-element]#Formato de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Distancia de Desplazamiento Norte o Sur, Distancia de Desplazamiento Este u Oeste, [ui-element]#Precisión del GPS#/[ui-element]#Error de la Medición#, [ui-element]#Unidades de la Distancia#, [ui-element]#Precisión de la Distancia# (ver <<Conceptos de Georreferenciación>>).\n"
 
 #. type: Plain text
 #: 0220.en.adoc:180 0220.en.adoc:212
 msgid "For this type of calculation, the output coordinates are different from the _Input Latitude_ and _Input Longitude_."
-msgstr ""
+msgstr "Para este tipo de cálculo, las coordenadas de salida son diferentes de la _Latitud de entrada_ y la _Longitud de entrada_."
 
 #. type: Block title
 #: 0220.en.adoc:182
 #, no-wrap
 msgid "Example of offsets (*x*, and *y*) in orthogonal directions from the corrected center *a* of a feature with radial *b*. By convention the headings are exactly in the specified directions and contribute no uncertainty due to direction precision."
-msgstr ""
+msgstr "Ejemplo de desplazamientos (*x*, y *y*) en direcciones ortogonales desde el centro corregido *a* de una característica con radio *b*. Por convención, las orientaciones cardinales están exactamente en las direcciones especificadas y no contribuyen a la incertidumbre debido a la precisión de la dirección."
 
 #. type: Target for macro image
 #: 0220.en.adoc:183
 #, no-wrap
 msgid "img/web/offset-orthogonal-direction.jpg"
-msgstr ""
+msgstr "img/web/offset-orthogonal-direction.jpg"
 
 #. type: Title ====
 #: 0220.en.adoc:185
 #, no-wrap
 msgid "Offset – Distance at a Heading"
-msgstr ""
+msgstr "Desplazamiento: Distancia en una Orientación Cardinal"
 
 #. type: Plain text
 #: 0220.en.adoc:188
