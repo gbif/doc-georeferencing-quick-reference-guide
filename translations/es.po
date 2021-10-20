@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-20 17:01\n"
+"PO-Revision-Date: 2021-10-20 20:23\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1898,25 +1898,25 @@ msgstr "*Paso 1 – Determinar los límites de la entidad inicial*: Encuentre el
 #: 0220.en.adoc:101
 #, no-wrap
 msgid "*Step 2 – Determine the starting feature coordinates and length of the matching path*: Once the <<boundary>> of the starting <<feature>> has been determined, find the midpoint along the path within the boundary of the feature it intersects with (<<img-offset-narrow-path>>B). Note the distance along the path from the midpoint to the boundary of the feature it intersects in the direction of the offset. Enter the length of that segment in [ui-element]#Radial of Feature# in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^].\n"
-msgstr ""
+msgstr "*Paso 2 – Determinar las coordenadas de la entidad geográfica de inicio y la longitud de la ruta de coincidencia*: Una vez que el <<límite>> de la <<entidad-geográfica>> de inicio haya sido determinado, encuentre el punto medio de la ruta dentro del límite de la entidad con la que se intersecta (<<img-offset-narrow-path>>B). Tenga en cuenta la distancia a lo largo de la ruta desde el punto medio hasta el límite de la entidad que intersecta en la dirección del desplazamiento. Introduzca la longitud de ese segmento en [ui-element]#Radial de la Entidad# en http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^].\n"
 
 #. type: Plain text
 #: 0220.en.adoc:103
 #, no-wrap
 msgid "*Step 3 – Enter the [ui-element]#Input Latitude# and [ui-element]#Longitude#*: Enter the coordinates of the <<offset>> position, which can be determined by measuring the length along the midline of the path from the midpoint found in the previous step to the distance along the path given in the <<locality>> description. See the notes on map scale and accumulated <<error>> in <<Offset – Distance along a Path>>.\n"
-msgstr ""
+msgstr "*Paso 3 – Introducir la [ui-element]#Latitud# y [ui-element]#Longitud de entrada#*: Introduzca las coordenadas de la posición del <<desplazamiento>>, que puede determinarse midiendo la longitud a lo largo de la línea media de la ruta desde el punto medio encontrado en el paso anterior, hasta la distancia a lo largo de la ruta dada en la descripción de la <<localidad>>. Ver las notas sobre la escala del mapa y el <<error>> acumulado en <<Desplazamiento: Distancia a lo Largo de una Ruta>>.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:105
 #, no-wrap
 msgid "*Step 4 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).\n"
-msgstr ""
+msgstr "*Paso 4 – Hacer el cálculo usando los siguientes parámetros adicionales en http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Fuente de las Coordenadas#, [ui-element]#Formato de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las coordenadas#, [ui-element]#Error de la medición#, [ui-element]#Unidades de la distancia#, [ui-element]#Precisión de la distancia# (ver <<Conceptos de Georreferenciación>>).\n"
 
 #. type: Block title
 #: 0220.en.adoc:107
 #, no-wrap
 msgid "A locality of the type \"Offset along a path\" where the path is narrow, specifically, along a road \"east of\" a feature. *A*: Inset showing the boundary of the section of the path that intersects the starting feature, midpoint *a*, and half the distance along the path inside the feature *b*. *B*: The midpoint *a* and the offset *c* measured along the road."
-msgstr ""
+msgstr "Una localidad del tipo \"Desplazamiento a lo largo de una ruta\" donde la ruta es estrecha, específicamente, a lo largo de una carretera \"al este de\" una entidad. *A*: recuadro que muestra el límite de la entidad de la ruta que intersecta la entidad de inicio, el punto medio *a* y la mitad de la distancia a lo largo de la ruta dentro de los límites de la entidad *b*. *B*: El punto medio *a* y el desplazamiento *c* medido a lo largo del camino."
 
 #. type: Target for macro image
 #: 0220.en.adoc:108
