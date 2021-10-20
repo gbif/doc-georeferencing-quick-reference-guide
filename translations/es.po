@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-20 22:37\n"
+"PO-Revision-Date: 2021-10-20 23:54\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -2116,142 +2116,142 @@ msgstr "Desplazamiento: Distancia en una Orientación Cardinal"
 #. type: Plain text
 #: 0220.en.adoc:188
 msgid "The <<locality,locality>> consists of a distance in a given <<direction>> from a single <<feature>>. Such localities sometimes contain an explicit indicator of how the distance was measured, (e.g. \"by air\", \"air miles W of\", \"due N of\", \"as the crow flies\", \"by road\", \"downstream from\", etc.). Without such an indicator the interpretation is a matter of judgement, which should be documented in term:dwc[georeferenceRemarks]."
-msgstr ""
+msgstr "La <<localidad,localidad>> consiste en una distancia en una <<dirección>> dada desde una sola <<entidad-geográfica, entidad geográfica>>. Tales localidades a veces contienen un indicador explícito de cómo se midió la distancia (p. ej. \"por aire\", \"millas aéreas al O de\", \"al N de\", \"en línea recta\", \"por carretera, \"río abajo de\", etc.). Sin tal indicador, la interpretación es una cuestión de juicio que debería ser documentada en el term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación)."
 
 #. type: Plain text
 #: 0220.en.adoc:190
 msgid "Since an offset at a heading \"by air\" will usually encompass the alternative by a path anyway, the former is the recommended locality type to use if there is no indication to the contrary. You can increase the maximum uncertainty to encompass the other option. This recommendation applies if you don’t have a compelling reason to use <<Offset – Distance along a Path>>)."
-msgstr ""
+msgstr "Dado que un desplazamiento en una orientación \"por aire\" usualmente englobará la alternativa \"por una ruta\", la primera es el tipo de localidad que se recomienda usar si no hay indicios de lo contrario. Puede aumentar la incertidumbre máxima para englobar la otra opción. Esta recomendación se aplica si no tiene una razón convincente para usar <<Desplazamiento: Distancia a lo largo de una Ruta>>)."
 
 #. type: Plain text
 #: 0220.en.adoc:192
 msgid "The addition of an adverbial modifier to the distance part of a locality description (e.g. \"about 25 km WNW Campinas\"), while an honest observation, should not affect the determination of the <<geographic-coordinates>> or the overall <<uncertainty>>."
-msgstr ""
+msgstr "La adición de un adverbio modificador a la distancia de una descripción de una localidad (p. ej. \"aproximadamente a 25 km de Campinas ONO\"), aunque es una observación honesta, no debe afectar la determinación de las <<coordenadas-geográficas>> o la <<incertidumbre>> total."
 
 #. type: delimited block =
 #: 0220.en.adoc:197
 msgid "\"50 miles W of Las Vegas\" +"
-msgstr ""
+msgstr "\"50 millas al O de Las Vegas\" +"
 
 #. type: delimited block =
 #: 0220.en.adoc:198
 msgid "\"10.2 km E de Amamá\" +"
-msgstr ""
+msgstr "\"10.2 km al E de Amamá\" +"
 
 #. type: delimited block =
 #: 0220.en.adoc:199
 msgid "\"16 mi downstream from St Louis on the Mississippi River\" +"
-msgstr ""
+msgstr "\"16 mi río abajo de St Louis en el Río Mississipi\" +"
 
 #. type: delimited block =
 #: 0220.en.adoc:200
 msgid "\"about 25 km WNW of Campinas\" +"
-msgstr ""
+msgstr "\"a unos 25 km de ONO de Campinas\" +"
 
 #. type: delimited block =
 #: 0220.en.adoc:201
 msgid "\"10 mi E (by air) Yerevan\""
-msgstr ""
+msgstr "\"10 mi E (por aire) de Yerevan\""
 
 #. type: Plain text
 #: 0220.en.adoc:204
 #, no-wrap
 msgid "*Locality Type:* [ui-element]#Distance at a heading#\n"
-msgstr ""
+msgstr "*Tipo de localidad:* [ui-element]#Distancia en una Orientación Cardinal#\n"
 
 #. type: Plain text
 #: 0220.en.adoc:208
 #, no-wrap
 msgid "*Step 2 – Determine the starting feature coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature.\n"
-msgstr ""
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico de la entidad geográfica de inicio*: Una vez que el límite haya sido determinado, obtenga las <<coordenadas>> y el <<radio-geográfico>> al igual que para una <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido> hasta el punto más lejano en el límite de la entidad.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:210
 #, no-wrap
 msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source,# [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Direction#, [ui-element]#Offset Distance#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).\n"
-msgstr ""
+msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Fuente de las Coordenadas,# [ui-element]#Formato de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Dirección#, [ui-element]#Distancia de Desplazamiento#, [ui-element]#Exactitud del GPS#/[ui-element]#Error de la Medición#, [ui-element]#Unidades de la Distancia#, [ui-element]#Precisión de la Distancia# (ver <<Conceptos de Georreferenciación>>).\n"
 
 #. type: Title ====
 #: 0220.en.adoc:213
 #, no-wrap
 msgid "Offset – Distances from Two Distinct Paths"
-msgstr ""
+msgstr "Desplazamiento: Distancia desde dos Rutas Distintas"
 
 #. type: Plain text
 #: 0220.en.adoc:216
 msgid "The <<locality,locality>> consists of orthogonal <<offset>> distances, one from each of two distinct <<path,paths>>."
-msgstr ""
+msgstr "La <<localidad,localidad>> consiste de distancias ortogonales de <<desplazamiento>>, una por cada dos <<ruta,rutas>> distintas."
 
 #. type: delimited block =
 #: 0220.en.adoc:221
 msgid "\"1.5 mi E LA Hwy. 1026 and 2 mi S U.S. 190\""
-msgstr ""
+msgstr "\"1.5 mi al E de LA Highway. 1026 y 2 mi al S de U.S. 190\""
 
 #. type: Plain text
 #: 0220.en.adoc:226
 msgid "Although this is not technically a distance along a path, the choice of this <<locality-type>> in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^] will allow all of the relevant parameters to be entered."
-msgstr ""
+msgstr "Aunque tecnicamente no es una distancia a lo largo de una ruta, elegir este <<tipo-de-localidad,tipo de localidad>> en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^] permitirá introducir todos los parámetros relevantes."
 
 #. type: Plain text
 #: 0220.en.adoc:228
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Determine the <<boundary,boundaries>> of the area matching the locality description by \"transporting\" each path by its given offset distance and <<direction>>. The transported paths will then overlap, each one having its corresponding buffer due to <<distance-precision,distance precision>> and path widths around it. This overlap of the two buffered areas defines the <<extent>> of the place described (<<img-offset-two-paths>>). Draw the boundary around the overlapping area.\n"
-msgstr ""
+msgstr "*Paso 1 – Determinar los límites de la entidad geográfica*: Determine los <<límite, límites>> del área que coincide con la descripción de la localidad \"transportando\" cada ruta por la distancia y <<dirección>> de desplazamiento dada. Las rutas transportadas se superpondrán, cada una con su buffer correspondiente debido a la <<precisión-de-la-distancia, precisión de la distancia>> y el ancho de las rutas alrededor. Esta superposición de las dos áreas de buffer define la <<extensión>> del lugar descrito (<<img-offset-two-paths>>). Dibuje el límite alrededor del área de superposición.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:232
 #, no-wrap
 msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Radial of Feature#, [ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).\n"
-msgstr ""
+msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferencia^]*: [ui-element]#Fuente de las Coordenadas#, [ui-element]#Formato de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Radial de la Entidad#, [ui-element]#Error de la Medición#, [ui-element]#Unidades de la Distancia#, [ui-element]#Precisión de la Distancia# (ver <<Conceptos de Georreferenciación>>).\n"
 
 #. type: Block title
 #: 0220.en.adoc:234
 #, no-wrap
 msgid "Determination of a place described as an offset from two paths. *A*: Transportation of the paths by their offsets, *x* and *y*, and directions (in this case south and east). *B*: Intersection *a* of the midlines of the transported paths, and their buffers due to distance precision and path width (*u~x~* and *u~y~*). *C*: Boundary, corrected center *c*, and radial *b* of the place described."
-msgstr ""
+msgstr "Determinación de un lugar descrito como un desplazamiento a partir de dos rutas. *A*: Transporte de las rutas por sus desplazamientos, *x* y *y* y direcciones (en este caso sur y este). *B*: Intersección *a* de las líneas medias de las rutas transportadas y sus buffers debido a la precisión de la distancia y el ancho de la ruta (*u~x~* y *u~y~*). *C*: Límite, centro corregido *c*, y radio *b* del lugar descrito."
 
 #. type: Target for macro image
 #: 0220.en.adoc:235
 #, no-wrap
 msgid "img/web/offset-two-paths.png"
-msgstr ""
+msgstr "img/web/offset-two-paths.png"
 
 #. type: Title ===
 #: 0230.en.adoc:1 appa.en.adoc:118
 #, no-wrap
 msgid "Coordinates"
-msgstr ""
+msgstr "Coordenadas"
 
 #. type: delimited block =
 #: 0230.en.adoc:7
 msgid "The locality consists of a point represented by **coordinates**, which may be in the form of geographic coordinates (latitude and longitude), Universal Transverse Mercator (UTM), Quarter Degree Squares (QDS), metric grids, map sheets, or any number of other Cartesian reference systems"
-msgstr ""
+msgstr "La localidad consiste en un punto representado por **coordenadas**, puede estar en forma de coordenadas geográficas (latitud y longitud), Universal Transversal de Mercator (UTM), Cuadrículas de Cuarto de Grado (QDS), grillas métricas, hojas de mapas, o cualquier otra cantidad de sistemas de referencia cartesianos"
 
 #. type: Title ====
 #: 0230.en.adoc:9
 #, no-wrap
 msgid "Coordinates – Geographic Coordinates"
-msgstr ""
+msgstr "Coordenadas: Coordenadas Geográficas"
 
 #. type: Plain text
 #: 0230.en.adoc:12
 msgid "The <<locality>> consists of a point represented by <<latitude>> and <<longitude>> <<coordinates>> in one of various <<coordinate-format,coordinate formats>>:"
-msgstr ""
+msgstr "La <<localidad>> consiste en un punto representado por <<coordenadas>> <<latitud>> y <<longitud>> en uno de varios <<fortmato-de-las-coordenadas, formatos de coordenadas>>:"
 
 #. type: Plain text
 #: 0230.en.adoc:14
 msgid "<<DMS,degrees minutes and seconds>> (DMS)"
-msgstr ""
+msgstr "<<GMS,grados minutos segundos>> (GMS)"
 
 #. type: Plain text
 #: 0230.en.adoc:15
 msgid "degrees and decimal minutes (DDM)"
-msgstr ""
+msgstr "grados y minutos decimales (DDM)"
 
 #. type: Plain text
 #: 0230.en.adoc:16
 msgid "<<decimal-degrees>> (DD)"
-msgstr ""
+msgstr "<<grados-decimales>> (DD)"
 
 #. type: Plain text
 #: 0230.en.adoc:18
