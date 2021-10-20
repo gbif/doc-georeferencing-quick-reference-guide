@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-19 23:41\n"
+"PO-Revision-Date: 2021-10-20 00:42\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1795,25 +1795,25 @@ msgstr "\"Al N de Saladillo\""
 #: 0220.en.adoc:59
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: First determine the <<boundary>> of the given feature based on the feature type, either as for <<Feature – with Obvious Spatial Extent>>, or as for <<Feature – without Obvious Spatial Extent>>. Then, to account for the offset at a heading, extend that boundary outward in a cone defined by the heading <<uncertainty>> (see {gbp}#offset-direction-only[Offset – Direction Only^] and {gbp}#uncertainty-related-to-heading[Uncertainty Related to Heading^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]) until reaching a constraining boundary imposed by other information in the locality record, or until reaching the proximity of another similar feature, whichever is nearer to the original feature (<<img-offset-heading>>A). Call this the \"extended feature\". If the extension impinges on any similar extension of another similar feature in the cone of the specified heading, modify the boundary in the shared space to be half the distance between the nearest boundaries between the two features (<<img-offset-heading>>B). For example, \"N Palmetto\" could mean \"northern part of Palmetto\" or \"North of Palmetto\". Since we have no way of knowing which was intended, we choose the latter interpretation, which is more inclusive and will entirely contain the less inclusive interpretation. Use the rules for heading uncertainty to determine the angle within which to find the nearest similar feature. For example, for \"N Palmetto\" look for a named place somewhere between NE and NW of Palmetto.\n"
-msgstr ""
+msgstr "*Paso 1 - Determinar los límites de la entidad*: Primero determine el <<límite>> de la entidad geográfica dada basándose en el tipo de entidad, ya sea como para una <<Entidad Geográfica con una Extensión Espacial Obvia>> o como para una <<Entidad Geográfica sin una Extensión Espacial Obvia>>. Luego, para tener en cuenta el desplazamiento hacia una orientación cardinal, extienda ese límite en un cono definido por la <<incertidumbre>> de la orientación (ver {gbp}#sólo-dirección-de-desplazamiento[Sólo Dirección de Desplazamiento^] y {gbp}#incertidumbre-relacionada-con-la-orientación[Incertidumbre Relacionada con la Orientación ^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]) hasta alcanzar un límite de restricción impuesto por otra información en el registro de localidad o hasta llegar al límite de otra entidad similar, cualquiera que esté más cerca de la entidad original (<<img-offset-heading>>A). Llame a esto la \"entidad extendida\". Si la extensión incide sobre cualquier extensión similar de otra entidad similar en el cono de la orientación especificada, modifique el límite en el espacio compartido para que sea la mitad de la distancia entre los límites más cercanos entre las dos entidades (<<img-offset-heading>>B). Por ejemplo, \"N Palmetto\" podría significar \"parte norte de Palmetto\" o \"norte de Palmetto\". Puesto que no tenemos forma de saber cuál de las dos se pretendía, elegimos la última interpretación, que es más inclusivo y contendrá la interpretación menos inclusiva en su totalidad. Use las reglas para la incertidumbre de la orientación para determinar el ángulo dentro del cual encontrar la característica similar más cercana. Por ejemplo, para \"N Palmetto\" busque un lugar con nombre en algún lugar entre NE y NO de Palmetto.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:61
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once you have determined the boundary of the extended feature, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary of the extended feature.\n"
-msgstr ""
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez que haya determinado el límite de la característica extendida, tratela como una <<Entidad con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las <<coordenadas>> del <<centro-corregido>> hasta el punto más lejano en el límite de la entidad extendida.\n"
 
 #. type: Block title
 #: 0220.en.adoc:65
 #, no-wrap
 msgid "A locality \"east of\" a feature, but bounded on the east by an administrative border (dotted line). *A*: Boundary and corrected center *a* of the starting feature. The cone to the east forms part of the new boundary with center *c* (no need for correction) and geographic radial *d*. *B*: Similar to A, but with an intervening feature to the northeast before the border."
-msgstr ""
+msgstr "Una localidad \"al este de\" una entidad pero delimitada en el este por una frontera administrativa (línea punteada). *A*: Centro y límite corregido *a* de la entidad inicial. El cono al este forma parte del nuevo límite con el centro *c* (sin necesidad de corrección) y el radio geográfico *d*. *B*: Similar a A, pero con una característica que interviene al noreste antes del límite."
 
 #. type: Target for macro image
 #: 0220.en.adoc:66
 #, no-wrap
 msgid "img/web/offset-heading.png"
-msgstr ""
+msgstr "img/web/offset-heading.png"
 
 #. type: Title ====
 #: 0220.en.adoc:68
