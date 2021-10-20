@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-20 00:42\n"
+"PO-Revision-Date: 2021-10-20 13:25\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1819,7 +1819,7 @@ msgstr "img/web/offset-heading.png"
 #: 0220.en.adoc:68
 #, no-wrap
 msgid "Offset – Distance along a Path"
-msgstr ""
+msgstr "Desplazamiento: Distancia a lo Largo de una Ruta"
 
 #. type: Plain text
 #: 0220.en.adoc:71
