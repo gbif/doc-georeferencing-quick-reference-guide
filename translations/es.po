@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-21 14:09\n"
+"PO-Revision-Date: 2021-10-21 15:07\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -2972,343 +2972,344 @@ msgstr "[[geographic-center]]centro geográfico"
 #. type: Plain text
 #: glossary.en.adoc:64
 msgid "The midpoint of the extremes of <<latitude>> and <<longitude>> of a <<feature>>. Geographic centers are relatively easy to determine, but they generally do not correspond to the center obtained by a least circumscribing circle. For that reason it is not recommended to use a geographic center for any application in <<georeference,georeferencing>>. Compare <<corrected-center>>."
-msgstr ""
+msgstr "El punto medio entre la <<latitud>> y <<longitud>> mas alejados de una <<geometría>>. Los centros geográficos son relativamente fáciles de determinar, pero por lo general no corresponden con el centro de un círculo de menor diámetro. Por esta razón, no se recomienda utilizar un centro geográfico para ninguna aplicación en <<georreferencia,georreferenciación>>. Compare con <<centro-corregido>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:65
 #, no-wrap
 msgid "[[geographic-coordinates]]geographic coordinates"
-msgstr ""
+msgstr "[[coordenadas-geográficas]]coordenadas geográficas"
 
 #. type: Plain text
 #: glossary.en.adoc:66
 msgid "A measurement of a <<location>> on the Earth's surface expressed as <<latitude>> and <<longitude>>."
-msgstr ""
+msgstr "Medición de la <<ubicación>> sobre la superficie de la tierra expresada como <<latitud>> y <<longitud>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:67
 #, no-wrap
 msgid "[[geographic-radial]]geographic radial"
-msgstr ""
+msgstr "[[radio-geográfico]]radio geográfico"
 
 #.  TODO chopped off the rest of this.
 #. type: Plain text
 #: glossary.en.adoc:69
 msgid "The distance from the <<corrected-center>> of a <<location>> to the furthest point on the <<geographic-boundary>> of that location. The geographical radial is what contributes to calculations of the {gbp}#maximum-uncertainty-distance[maximum uncertainty distance] using the <<point-radius>> <<georeferencing-method>>. The term geographic radial, as defined here, replaces its equivalent \"extent\" used in the early versions of this _Quick Reference Guide_ and related documents."
-msgstr ""
+msgstr "La distancia desde el <<centro-corregido>> de una <<ubicación>> hasta el punto más lejos en el <<límite-geográfico>> de esa ubicación. El radio geográfico contribuye a los cálculos de la {gbp}#distancia-máxima-de-incertidumbre[distancia máxima de incertidumbre] usando el <<método-de-georreferenciación>> <<radio-punto>>. El término radio geográfico, tal y como se define aquí, reemplaza su equivalente \"extensión\" utilizado en las primeras versiones de esta _Guía Rápida de Georreferenciación_ y documentos relacionados."
 
 #. type: Labeled list
 #: glossary.en.adoc:70
 #, no-wrap
 msgid "[[geometry]]geometry"
-msgstr ""
+msgstr "[[geometría]]geometría"
 
 #. type: Plain text
 #: glossary.en.adoc:71
 msgid "The measures and properties of points, lines, and surfaces. Geometry is used to represent the {gbp}#geographic-component[geographic component] of <<location,locations>>."
-msgstr ""
+msgstr "Las medidas y propiedades de puntos, líneas y superficies (polígonos). La geometría se utiliza para representar el {gbp}#componente-geográfico[componente geográfico] de una <<ubicación>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:72
 #, no-wrap
 msgid "[[georeference]]georeference"
-msgstr ""
+msgstr "[[georreferencia]]georreferencia"
 
 #. type: Plain text
 #: glossary.en.adoc:73
 msgid "The process (verb) or product (noun) of interpreting a <<locality>> description into a spatially mappable representation using a <<georeferencing-method>>. Compare with <<geocode>>. The usage here is distinct from the concept of <<georeference,georeferencing>> satellite and other imagery (known as georectification)."
-msgstr ""
+msgstr "El proceso (verbo) o producto (sustantivo) de interpretar la descripción de una <<localidad>> en una representación espacializable usando un <<método de georreferenciación>>. Comparar con <<geocodificación>>. El uso aquí es distinto del concepto de <<georreferencia,georreferenciación>> satelital y de imágenes (conocido como georrectificación)."
 
 #. type: Labeled list
 #: glossary.en.adoc:74
 #, no-wrap
 msgid "[[georeferencing-method]]georeferencing method"
-msgstr ""
+msgstr "[[método-de-georreferenciación]]método de georreferenciación"
 
 #. type: Plain text
 #: glossary.en.adoc:75
 msgid "The theory, including a set of rules, general procedures and expected outcomes, meant to produce a specific type of spatial representation of a <<locality>>."
-msgstr ""
+msgstr "Teoría que incluye un conjunto de reglas, procedimientos generales y resultados esperados, destinados a producir un tipo específico de representación espacial de una <<localidad>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:76
 #, no-wrap
 msgid "[[georeferencing-protocol]]georeferencing protocol"
-msgstr ""
+msgstr "[[protocolo-de-georreferenciación]]protocolo de georreferenciación"
 
 #. type: Plain text
 #: glossary.en.adoc:77
 msgid "The set of specific documented steps that can be applied to produce a spatial representation of a <<locality>>, following one or more georeferencing methods."
-msgstr ""
+msgstr "El conjunto de pasos documentados específicos que se pueden aplicar para producir una representación espacial de una <<localidad>>, siguiendo uno o más métodos de georeferenciación."
 
 #. type: Labeled list
 #: glossary.en.adoc:78
 #, no-wrap
 msgid "[[GPS]]GPS"
-msgstr ""
+msgstr "[[GPS]]GPS"
 
 #. type: Plain text
 #: glossary.en.adoc:79
 msgid "Global Positioning System, a satellite-based system used for determining positions on or near the Earth. Orbiting satellites transmit radio signals that allow a receiver to calculate its own <<location>> as <<coordinates>> and <<elevation>>, sometimes with <<accuracy>> estimates. See also GNSS of which GPS is one example. See also <<GPS-receiver>>."
-msgstr ""
+msgstr "Sistema de Posicionamiento Global. Un sistema basado en satélites utilizado para determinar posiciones espaciales sobre la Tierra o cerca de esta. Los satélites orbitacionales transmiten señales de radio que permiten a un receptor calcular su propia <<ubicación>> como <<coordenadas>> y <<elevación>>, a veces con estimaciones de <<exactitud>>. Ver también GNSS del cual el GPS es un ejemplo. Ver también <<Receptor-GPS, GPS (receptor)>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:80
 #, no-wrap
 msgid "[[GPS-receiver]]GPS (receiver)"
-msgstr ""
+msgstr "[[GPS-receiver]]GPS (receptor)"
 
 #. type: Plain text
 #: glossary.en.adoc:81
 msgid "The colloquial term used to refer to both GPS and {gbp}#GNSS[GNSS] receivers (including those in smartphones and cameras). A GPS or GNSS receiver is an instrument which, in combination with an inbuilt or separate antenna, is able to receive and interpret radio signals from GNSS satellites and translate them into <<geographic-coordinates>>."
-msgstr ""
+msgstr "El término coloquial utilizado para referirse tanto al GPS como a los receptores {gbp}#GNSS[GNSS] (incluyendo los de teléfonos inteligentes y cámaras). Un receptor GPS o GNSS es un instrumento que en combinación con una antena incorporada o separada, es capaz de recibir e interpretar señales de radio de los satélites GNSS y traducirlas en <<coordenadas-geográficas>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:82
 #, no-wrap
 msgid "[[grid]]grid"
-msgstr ""
+msgstr "[[grilla]]grilla"
 
 #. type: Plain text
 #: glossary.en.adoc:83
 msgid "A network or array of evenly spaced orthogonal lines used to organize space into partitions. Often these are superimposed on a map and used for reference, such as <<UTM>> grid."
-msgstr ""
+msgstr "Una red o matriz de líneas ortogonales uniformemente espaciadas que se utilizan para organizar el espacio en particiones. A menudo estos son superpuestos en un mapa y usados como referencia, así como la grilla <<UTM>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:84
 #, no-wrap
 msgid "[[ground-zero]]ground zero"
-msgstr ""
+msgstr "[[cota-cero]]cota cero"
 
 #. type: Plain text
 #: glossary.en.adoc:85
 msgid "The <<location>> on the land surface directly above a radiolocation point in a cave where the magnetic radiation lines are vertical. See {gbp}#img-vertical-position-in-a-cave[illustration] in {gbp}[_Georeferencing Best Practices_] (Chapman & Wieczorek 2020)."
-msgstr ""
+msgstr "La <<ubicación>> en la superficie directamente sobre un punto de radiolocación en una cueva donde las líneas de radiación magnética son verticales. Ver{gbp}#img-vertical-position-in-a-cave[illustration] en {gbp}[_Buenas Prácticas de Georreferenciación_] (Chapman & Wieczorek 2020)."
 
 #. type: Labeled list
 #: glossary.en.adoc:86
 #, no-wrap
 msgid "[[heading]]heading"
-msgstr ""
+msgstr "[[orientación-cardinal]]orientación-cardinal"
 
 #. type: Plain text
 #: glossary.en.adoc:87
 msgid "Compass direction such as east or northwest, or sometimes given as degrees clockwise from north. Usually used in conjunction with <<offset>> to give a distance and direction from a <<feature>>."
-msgstr ""
+msgstr "Dirección cardinal (de brújula) como este o noroeste o a veces dada como grados en sentido de las agujas del reloj partiendo desde el norte. Generalmente usado en combinación con un <<desplazamiento>> para señalar una dirección y distancia desde una <<entidad-geográfica>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:88
 #, no-wrap
 msgid "[[latitude]]latitude"
-msgstr ""
+msgstr "[[latitud]]latitud"
 
 #. type: Plain text
 #: glossary.en.adoc:89
 msgid "The angular distance of a point north or south of the equator."
-msgstr ""
+msgstr "La distancia angular de un punto al norte o sur del ecuador."
 
 #. type: Labeled list
 #: glossary.en.adoc:90
 #, no-wrap
 msgid "[[locality]]locality"
-msgstr ""
+msgstr "[[localidad]]localidad"
 
 #. type: Plain text
 #: glossary.en.adoc:91
 msgid "The verbal representation of a <<location>>, also sometimes called _locality description_."
-msgstr ""
+msgstr "La representación verbal de una <<ubicación>>, también llamada a veces _descripción de la localidad_."
 
 #. type: Labeled list
 #: glossary.en.adoc:92
 #, no-wrap
 msgid "[[locality-clause]]locality clause"
-msgstr ""
+msgstr "[[claúsula-de-la-localidad]]claúsula de la localidad"
 
 #. type: Plain text
 #: glossary.en.adoc:93
 msgid "A part of a <<locality>> description that can be categorized into one of the <<locality-type,locality types>>, to which a specific <<georeferencing-protocol>> can be applied."
-msgstr ""
+msgstr "Parte de una descripción de la <<localidad>> que puede ser categorizada en un <<tipo-de-localidad>> al que se puede aplicar un <<protocolo-de-georreferenciación>> específico."
 
 #. type: Labeled list
 #: glossary.en.adoc:94
 #, no-wrap
 msgid "[[locality-type]]locality type"
-msgstr ""
+msgstr "[[tipo-de-localidad]]tipo de localidad"
 
 #. type: Plain text
 #: glossary.en.adoc:95
 msgid "A category applied to a <<locality-clause>> that determines the specific <<georeferencing-protocol>> that should be used."
-msgstr ""
+msgstr "Una categoría aplicada a una <<claúsula-de-la-localidad>> que determina el <<protocolo-de-georreferenciación>> específico que debe ser utilizado."
 
 #. type: Labeled list
 #: glossary.en.adoc:96
 #, no-wrap
 msgid "[[location]]location"
-msgstr ""
+msgstr "[[ubicación]]ubicación"
 
 #. type: Plain text
 #: glossary.en.adoc:97
 msgid "A physical space that can be positioned and oriented relative to a reference point, and potentially described in a natural language <<locality>> description. In <<georeference,georeferencing>>, a location can have distinct representations based on distinct {gbp}#rules-of-interpretation[rules of interpretation], each of which is embodied in a <<georeferencing-method>>."
-msgstr ""
+msgstr "Un espacio físico que puede posicionarse y orientarse de manera relativa a un punto de referencia y potencialmente descrito en un lenguaje natural en la descripción de la <<localidad>>. En la <<georeferencia,georreferenciación>>, una ubicación puede tener distintas representaciones basadas en diferentes {gbp}#reglas-de-interpretación[reglas-de-interpretación], cada una de las cuales está incorporada en un <<método-de-georreferenciación>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:98
 #, no-wrap
 msgid "[[longitude]]longitude"
-msgstr ""
+msgstr "[[longitud]]longitud"
 
 #. type: Plain text
 #: glossary.en.adoc:99
 msgid "The angular distance of a point east or west of a <<prime-meridian>> at a given <<latitude>>."
-msgstr ""
+msgstr "La distancia angular de un punto al este o oeste del <<meridiano-cero>> a una <<latitud>> determinada."
 
 #. type: Labeled list
 #: glossary.en.adoc:100
 #, no-wrap
 msgid "[[meridian]]meridian"
-msgstr ""
+msgstr "[[meridiano]]meridiano"
 
 #. type: Plain text
 #: glossary.en.adoc:101
 msgid "A line on the surface of the Earth where all of the <<location,locations>> have the same <<longitude>>. Compare {gbp}#antimeridian[antimeridian] and <<prime-meridian>>."
-msgstr ""
+msgstr "Una línea en la superficie de la tierra donde todas las <<ubicación,ubicaciones>> tienen la misma <<longitud>>. Comparar con {gbp}#antimeridiano[antimeridiano] y <<meridiano-cero>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:102
 #, no-wrap
 msgid "[[northing]]northing"
-msgstr ""
+msgstr "[[northing]]norte"
 
 #. type: Plain text
 #: glossary.en.adoc:103
 msgid "Within a <<coordinate-reference-system>> (e.g. as provided by a <<GPS>> or a map <<grid>> reference system), the line representing northward distance from a reference <<latitude>>."
-msgstr ""
+msgstr "Dentro de un <<sistema-de-coordenadas-de-referencia>> (p. ej. como el proporcionado por un <<GPS>> o un un mapa de <<grilla,grillas>> bajo un sistema de referencia específico), la línea que representa la distancia hacia el norte desde una <<latitud>> de referencia."
 
 #. type: Labeled list
 #: glossary.en.adoc:104
 #, no-wrap
 msgid "[[offset]]offset"
-msgstr ""
+msgstr "[[desplazamiento]]desplazamiento"
 
 #. type: Plain text
 #: glossary.en.adoc:105
 msgid "A displacement from a reference <<location>>. Usually used in conjunction with <<heading>> to give a distance and <<direction>> from a <<feature>>."
-msgstr ""
+msgstr "Un desplazamiento desde una <<ubicación>> de referencia. Generalmente utilizado en conjunto con una <<orientación-cardinal>> para dar una distancia y orientación desde una <<entidad-geográfica>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:106
 #, no-wrap
 msgid "[[path]]path"
-msgstr ""
+msgstr "[[ruta]]ruta"
 
 #. type: Plain text
 #: glossary.en.adoc:107
 msgid "A route or track between one place and another. In some cases the path may cross itself."
-msgstr ""
+msgstr "Ruta o camino entre un lugar y otro. En algunos casos el camino puede cruzarse a si mismo."
 
 #. type: Labeled list
 #: glossary.en.adoc:108
 #, no-wrap
 msgid "[[point-radius]]point-radius"
-msgstr ""
+msgstr "[[radio-punto]]radio-punto"
 
 #. type: Plain text
 #: glossary.en.adoc:109
 msgid "A representation of the {gbp}#geographic-component[geographic component] of a <<location>> as <<geographic-coordinates,geographic coordinates>> and a {gbp}#maximum-uncertainty-distance[maximum uncertainty distance]. The point-radius <<georeferencing-method>> produces <<georeference,georeferences>> that include <<geographic-coordinates>>, a <<coordinate-reference-system>>, and a maximum uncertainty distance that encompasses all of the possible geographic coordinates where a <<locality>> might be interpreted to be. This representation encompasses all of the geographical <<uncertainty,uncertainties>> within a circle. The point-radius method uses ranges to represent the non-geographic descriptors of the location (<<elevation>>, <<depth>>, {gbp}#distance-above-surface[distance above surface])."
-msgstr ""
+msgstr "Representación del {gbp}#componente-geográfico[componente geográfico] de una <<ubicación>> a partir de sus <<coordenadas-geográficas>> y una {gbp}#distancia-máxima-de-incertidumbre[distancia-máxima-de-incertidumbre]. El <<método-de-georreferenciación>> radio-punto produce <<georreferencia,georreferencias>> que incluyen <<coordenadas-geográficas>>, un <<sistema-de-coordenadas-de-referencia>> y una distancia máxima de incertidumbre que cubre todas las posibles coordenadas geográficas donde podría interpretarse que está una <<localidad>>. Esta representación enmarca todas las <<incertidumbre,incertidumbres>> geográficas dentro de un círculo. El método radio-punto utiliza rangos para representar otros atributos no geográficos de la ubicación (<<elevación>>, <<profundidad>>,{gbp}#distancia-sobre-la-superficie[distancia-sobre-la-superficie])."
 
 #. type: Labeled list
 #: glossary.en.adoc:110
 #, no-wrap
 msgid "[[precision]]precision"
-msgstr ""
+msgstr "[[precisión]]precisión"
 
 #. type: Plain text
 #: glossary.en.adoc:114
 msgid "The closeness of a repeated set of observations of the same quantity to one another – a measure of control over random <<error>>."
-msgstr ""
+msgstr "La cercanía entre un conjunto repetido de observaciones de la misma cantidad entre sí. Una medida de control sobre el <<error>> aleatorio."
 
 #. type: Plain text
 #: glossary.en.adoc:115
 msgid "With values, it describes the finest unit of measurement used to express that value (e.g. if a record is reported to the nearest second, the precision is 1/3600^th^ of a degree; if a <<decimal-degrees,decimal degree>> is reported to two decimal places, the precision is 0.01 of a degree)."
-msgstr ""
+msgstr "Con valores, describe la mejor unidad de medida utilizada para expresar ese valor (p. ej. si un registro se reporta al segundo más cercano, la precisión es 1/3600 ^ de un grado; si un <<grados decimales,grado decimal>> es reportado a dos decimales, la precisión es 0. 1 de grado)."
 
 #. type: Plain text
 #: glossary.en.adoc:118
 msgid "Antonym: imprecision. Compare <<accuracy>>, <<error>>, {gbp}#bias[bias], {gbp}#false-precision[false precision], and <<uncertainty>>."
-msgstr ""
+msgstr "Antónimo: imprecisión. Comparar con <<exactitud>>, <<error>>, {gbp}#sesgo[sesgo], {gbp}#falsa-precisión[falsa precisión] e <<incertidumbre>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:119
 #, no-wrap
 msgid "[[prime-meridian]]prime meridian"
-msgstr ""
+msgstr "[[prime-meridian]]meridiano cero"
 
 #. type: Plain text
 #: glossary.en.adoc:120
 msgid "The set of <<location,locations>> with <<longitude>> designated as 0 degrees east and west, to which all other longitudes are referenced. The Greenwich <<meridian>> is internationally recognized as the <<prime-meridian>> for many popular and official purposes."
-msgstr ""
+msgstr "Conjunto de <<ubicación,ubicaciones>> con <<longitud>> designada como 0 grados este y oeste, a partir del cuál se referencian todas las longitudes. El <<meridiano>> de Greenwich es reconocido internacionalmente como el <<meridiano-cero>> para muchos propósitos populares y oficiales."
 
 #. type: Labeled list
 #: glossary.en.adoc:121
 #, no-wrap
 msgid "[[radial]]radial"
-msgstr ""
+msgstr "[[radio]]radio"
 
 #. type: Plain text
 #: glossary.en.adoc:122
 msgid "The distance from a center point (e.g. the <<corrected-center,corrected>> or <<geographic-center>>) within a <<location>> to the furthest point on the outermost <<boundary>> of that location. See also <<geographic-radial>>."
-msgstr ""
+msgstr "Distancia desde un punto central (p. ej. el <<centro-corregido,centro corregido>> o <<centro-geográfico>>) dentro de una <<ubicación>> al punto más lejano del <<límite>> de esa ubicación. Ver también <<radio-geográfico>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:123
 #, no-wrap
 msgid "[[shape]]shape"
-msgstr ""
+msgstr "[[forma-geométrica]]forma geométrica"
 
 #. type: Plain text
 #: glossary.en.adoc:124
 msgid "synonym of {gbp}#footprint[footprint]. A representation of the {gbp}#geographic-component[geographic component] of a location as a <<geometry>>. The result of a <<georeferencing-method,shape georeferencing method>> includes a shape as the geographic component of the <<georeference>>, which contains the set of all possible <<geographic-coordinates>> where a <<location>> might be interpreted to be. This representation encompasses all of the geographical <<uncertainty,uncertainties>> within the geometry given. The shape method uses ranges to represent the non-geographic descriptors of the location (<<elevation>>, <<depth>>, {gbp}#distance-above-surface[distance above surface])."
-msgstr ""
+msgstr "sinónimo de {gbp}#footprint[footprint]. Una representación del {gbp}#componente-geográfico[componente geográfico] de una ubicación a partir de una <<geometría>>. El resultado de la aplicación de un <<método-de-georreferenciación, método de georreferenciación de formas geométricas>> incluye una forma geométrica como componente geográfico de la <<georreferencia>>, que contiene el conjunto de todas las posibles <<coordenadas-geográficas>> donde se podría interpretar que está una <<ubicación>>. Esta representación engloba toda la <<incertidumbre>> geográfica dentro de la geometría resultante. El método de forma geométrica utiliza rangos para representar los atributos no geográficos de la ubicación (<<elevación>>, <<profundidad>>, \n"
+"{gbp}#distancia-sobre-la-superficie[distancia sobre la superficie])."
 
 #. type: Labeled list
 #: glossary.en.adoc:125
 #, no-wrap
 msgid "[[smallest-enclosing-circle]]smallest enclosing circle"
-msgstr ""
+msgstr "[[círculo-mínimo]]círculo mínimo"
 
 #. type: Plain text
 #: glossary.en.adoc:126
 msgid "A circle with the smallest radius (<<radial>>) that contains all of a given set of points (or a given <<shape>>) on a surface (see https://en.wikipedia.org/wiki/Smallest-circle_problem[_Smallest-circle problem_]). This is seldom the same as the <<geographic-center>>, nor the midpoint between two most distant <<geographic-coordinates>> of a <<location>>."
-msgstr ""
+msgstr "Un círculo de menor radio (<<radio>>) que contiene todo un conjunto de puntos determinado (o una <<forma-geométrica>> dada) ubicados sobre una superficie (ver https://es.wikipedia.org/wiki/Problema_del_círculo_mínimo[_problema del círculo mínimo_^]). Este rara vez es el mismo que aquel obtenido a partir del <<centro geográfico>>, o del punto medio entre las dos <<coordenadas geográficas>> mas distantes de una <<ubicación>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:127
 #, no-wrap
 msgid "[[transect]]transect"
-msgstr ""
+msgstr "[[transecto]]transecto"
 
 #. type: Plain text
 #: glossary.en.adoc:128
 msgid "A <<path>> along which observations, measurements, or samples are made. Transects are often recorded as a starting <<location>> and a terminating location."
-msgstr ""
+msgstr "Una <<ruta>> a lo largo de la cual se hacen observaciones, mediciones o se toman muestras. Los transectos frecuentemente se registran con una <<ubicación>> inicial y una ubicación final."
 
 #. type: Labeled list
 #: glossary.en.adoc:129
 #, no-wrap
 msgid "[[uncertainty]]uncertainty"
-msgstr ""
+msgstr "[[incertidumbre]]incertidumbre"
 
 #. type: Plain text
 #: glossary.en.adoc:130
 msgid "A measure of the incompleteness of one’s knowledge or information about an unknown quantity whose true value could be established if complete knowledge and a perfect measuring device were available (<<cullen,Cullen & Frey 1999>>). <<georeferencing-method,Georeferencing methods>> codify how to incorporate uncertainties from a variety of sources (including <<accuracy>> and <<precision>>) in the interpretation of a <<location>>. Compare accuracy, <<error>>, {gbp}#bias[bias], precision, and {gbp}#false-precision[false precision]."
-msgstr ""
+msgstr "Medida de la falta de completitud del conocimiento o información de uno sobre una cantidad desconocida cuyo valor real podría establecerse si se dispusieran de un conocimiento completo y un dispositivo de medición perfecto (<<cullen,Cullen & Frey 1999>>). Los <<método de georreferenciación,Métodos de georreferenciación>> establecen cómo incorporar la incertidumbre desde una variedad de fuentes (incluyendo <<exactitud>> y <<precisión>>) en la interpretación de la <<ubicación>>. Comparar con <<exactitud>>, <<error>>, {gbp}#sesgo[sesgo], precisión, and {gbp}#falsa-precisión[falsa precisión]."
 
 #. type: Labeled list
 #: glossary.en.adoc:131
 #, no-wrap
 msgid "[[UTM]]Universal Transverse Mercator UTM"
-msgstr ""
+msgstr "[[UTM]]Universal Transversa de Mercator (UTM)"
 
 #. type: Plain text
 #: glossary.en.adoc:132
