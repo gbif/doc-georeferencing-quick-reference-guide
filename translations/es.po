@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-20 23:54\n"
+"PO-Revision-Date: 2021-10-21 00:57\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -2256,22 +2256,22 @@ msgstr "<<grados-decimales>> (DD)"
 #. type: Plain text
 #: 0230.en.adoc:18
 msgid "Records should also contain a hemisphere indicator ('E' or 'W' and 'N' or 'S' for DMS and DDM formats in English; '−' for west or south in DD format). For maritime <<location,locations>>, if there is no information that would suggest a particular [ui-element]#Coordinate Source#, use a map of 1:150000 scale, as this is a realistic conservative selection."
-msgstr ""
+msgstr "Los registros también deben contener un indicador del hemisferio ('O' o 'E' y 'N' o 'S' para formatos DMS y DDM en inglés; '−' para el oeste o el sur en formato DD). Para <<ubicación,ubicaciones>> maritimas, si no hay información que sugiera una [ui-element]#Fuente de las Coordenadas# particular, use un mapa de escala 1:150000, ya que esta es una selección realista y conservadora."
 
 #. type: delimited block =
 #: 0230.en.adoc:23
 msgid "\"36º 31' 21.4\" N; 114º 09' 50.6\" W\" (DMS) +"
-msgstr ""
+msgstr "\"36o 31' 21.4\" N; 114o 09' 50.6\" W\" (DMS) +"
 
 #. type: delimited block =
 #: 0230.en.adoc:24
 msgid "\"36º 31.4566’N; 114º 09.8433’W\" (DDM) +"
-msgstr ""
+msgstr "\"36o 31.4566’N; 114o 09.8433’W\" (DDM) +"
 
 #. type: delimited block =
 #: 0230.en.adoc:25
 msgid "\"−36.524276; −114.164055\" (DD using minus signs to indicate southern and western hemispheres)."
-msgstr ""
+msgstr "\"-36.524276; -114.164055\" (DD usando el signo menos para indicar hemisferios meridionales y occidentales)."
 
 #. type: Plain text
 #: 0230.en.adoc:28
