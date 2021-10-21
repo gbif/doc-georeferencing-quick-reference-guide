@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-21 16:07\n"
+"PO-Revision-Date: 2021-10-21 17:10\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -2359,7 +2359,7 @@ msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adiciona
 #: 0230.en.adoc:61
 #, no-wrap
 msgid "Coordinates – Grid Systems"
-msgstr "Coordenadas: Sistema de Grillas"
+msgstr "Coordenadas: Sistemas de Grillas"
 
 #. type: Plain text
 #: 0230.en.adoc:64
@@ -2613,7 +2613,7 @@ msgstr "No <<georreferencia, georreferencie>>. En lugar de determinar las <<coor
 #: 0240.en.adoc:91
 #, no-wrap
 msgid "Cultivated or Captive"
-msgstr "Cultivado o Capturado"
+msgstr "Cultivado o Cautivo"
 
 #. type: Plain text
 #: 0240.en.adoc:94
@@ -3346,82 +3346,82 @@ msgstr "Referencias"
 #. type: Plain text
 #: bibliography.en.adoc:5
 msgid "Bloom DA, Wieczorek JR, Zermoglio PF (2020) Georeferencing Calculator Manual. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/gdwq-3v93"
-msgstr ""
+msgstr "Bloom DA, Wieczorek JR, Zermoglio PF (2020) Georeferencing Calculator Manual. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/gdwq-3v93"
 
 #. type: Plain text
 #: bibliography.en.adoc:7
 msgid "Chapman AD & Wieczorek J (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853"
-msgstr ""
+msgstr "Chapman AD & Wieczorek J (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853"
 
 #. type: Plain text
 #: bibliography.en.adoc:9
 msgid "Chapman AD, Muñoz MES & Koch I (2005) Environmental Information: Placing Biodiversity Phenomena in an Ecological and Environmental Context. Biodiversity Informatics 2: 24-41. https://doi.org/10.17161/bi.v2i0.5"
-msgstr ""
+msgstr "Chapman AD, Muñoz MES & Koch I (2005) Environmental Information: Placing Biodiversity Phenomena in an Ecological and Environmental Context. Biodiversity Informatics 2: 24-41. https://doi.org/10.17161/bi.v2i0.5"
 
 #. type: Plain text
 #: bibliography.en.adoc:11
 msgid "[[cullen]]Cullen AC & Frey HC (1999) Probabilistic Techniques in Exposure Assessment: A Handbook for Dealing with Variability and Uncertainty in Models and Inputs. New York: Plenum Press."
-msgstr ""
+msgstr "[[cullen]]Cullen AC & Frey HC (1999) Probabilistic Techniques in Exposure Assessment: A Handbook for Dealing with Variability and Uncertainty in Models and Inputs. New York: Plenum Press."
 
 #. type: Plain text
 #: bibliography.en.adoc:13
 msgid "ESRI (n.d.) GIS Dictionary. https://support.esri.com/en/other-resources/gis-dictionary/browse/"
-msgstr ""
+msgstr "ESRI (n.d.) GIS Dictionary. https://support.esri.com/en/other-resources/gis-dictionary/browse/"
 
 #. type: Plain text
 #: bibliography.en.adoc:15
 msgid "FGDC (1998) Geospatial Positioning Accuracy Standards, Part 3: National Standards for Spatial Data Accuracy. FGDC-STD-007.3-1998. Reston, Va., USA. https://www.fgdc.gov/standards/projects/accuracy/part3/chapter3"
-msgstr ""
+msgstr "FGDC (1998) Geospatial Positioning Accuracy Standards, Part 3: National Standards for Spatial Data Accuracy. FGDC-STD-007.3-1998. Reston, Va., USA. https://www.fgdc.gov/standards/projects/accuracy/part3/chapter3"
 
 #. type: Plain text
 #: bibliography.en.adoc:17
 msgid "Frazier C, Neville T, Giermakowski JT & Racz G (2004) The INRAM Protocol for Georeferencing Biological Museum Specimen Records, version 1.3. Zenodo. http://doi.org/10.5281/zenodo.3235003"
-msgstr ""
+msgstr "Frazier C, Neville T, Giermakowski JT & Racz G (2004) The INRAM Protocol for Georeferencing Biological Museum Specimen Records, version 1.3. Zenodo. http://doi.org/10.5281/zenodo.3235003"
 
 #. type: Plain text
 #: bibliography.en.adoc:19
 msgid "Geodetic Survey Division (1996) Accuracy Standards for Positioning, Version 1.0: Ottawa, Canada: Natural Resources Canada. ftp://glonass-center.ru/REPORTS/OLD/NRCAN/Accuracy_Standards.pdf"
-msgstr ""
+msgstr "Geodetic Survey Division (1996) Accuracy Standards for Positioning, Version 1.0: Ottawa, Canada: Natural Resources Canada. ftp://glonass-center.ru/REPORTS/OLD/NRCAN/Accuracy_Standards.pdf"
 
 #. type: Plain text
 #: bibliography.en.adoc:21
 msgid "Kemp KK (2008) Encyclopedia of Geographic Information Science. Los Angeles: Sage Publications. https://doi.org/10.4135/9781412953962"
-msgstr ""
+msgstr "Kemp KK (2008) Encyclopedia of Geographic Information Science. Los Angeles: Sage Publications. https://doi.org/10.4135/9781412953962"
 
 #. type: Plain text
 #: bibliography.en.adoc:23
 msgid "Spencer C, Yamamoto K, Fang J, Constable H, Koo M, & Wieczorek J (2008) Georeferencing for Dummies. http://georeferencing.org/docs/georeffordummy.xls"
-msgstr ""
+msgstr "Spencer C, Yamamoto K, Fang J, Constable H, Koo M, & Wieczorek J (2008) Georeferencing for Dummies. http://georeferencing.org/docs/georeffordummy.xls"
 
 #. type: Plain text
 #: bibliography.en.adoc:25
 msgid "TDWG (2018) Darwin Core quick reference guide. Biodiversity Information Standards (TDWG). https://dwc.tdwg.org/terms/"
-msgstr ""
+msgstr "TDWG (2018) Darwin Core quick reference guide. Biodiversity Information Standards (TDWG). https://dwc.tdwg.org/terms/"
 
 #. type: Plain text
 #: bibliography.en.adoc:27
 msgid "Wieczorek C & Wieczorek J (2020) Georeferencing Calculator, version 20191217en. Rauthiflor LLC. http://georeferencing.org/georefcalculator/gc.html"
-msgstr ""
+msgstr "Wieczorek C & Wieczorek J (2020) Georeferencing Calculator, version 20191217en. Rauthiflor LLC. http://georeferencing.org/georefcalculator/gc.html"
 
 #. type: Plain text
 #: bibliography.en.adoc:29
 msgid "Wieczorek J (2001) MaNIS/HerpNET/ORNIS Georeferencing Guidelines. University of California, Berkeley: Museum of Vertebrate Zoology. http://georeferencing.org/georefcalculator/docs/GeorefGuide.html"
-msgstr ""
+msgstr "Wieczorek J (2001) MaNIS/HerpNET/ORNIS Georeferencing Guidelines. University of California, Berkeley: Museum of Vertebrate Zoology. http://georeferencing.org/georefcalculator/docs/GeorefGuide.html"
 
 #. type: Plain text
 #: bibliography.en.adoc:31
 msgid "Wieczorek J, Bloom D, Constable H, Fang J, Koo M, Spencer C & Yamamo K (2012) Georeferencing Quick Reference Guide, version 2012-10-08. http://www.herpnet.org/herpnet/documents/GeoreferencingQuickGuide.pdf"
-msgstr ""
+msgstr "Wieczorek J, Bloom D, Constable H, Fang J, Koo M, Spencer C & Yamamo K (2012) Georeferencing Quick Reference Guide, version 2012-10-08. http://www.herpnet.org/herpnet/documents/GeoreferencingQuickGuide.pdf"
 
 #. type: Plain text
 #: bibliography.en.adoc:33
 msgid "Wieczorek J & Bloom DA (2015) Manual for the Georeferencing Calculator. University of California, Berkeley: Museum of Vertebrate Zoology. http://georeferencing.org/gci2/docs/GeoreferencingCalculatorManualv2.html"
-msgstr ""
+msgstr "Wieczorek J & Bloom DA (2015) Manual for the Georeferencing Calculator. University of California, Berkeley: Museum of Vertebrate Zoology. http://georeferencing.org/gci2/docs/GeoreferencingCalculatorManualv2.html"
 
 #. type: Plain text
 #: bibliography.en.adoc:35
 msgid "Wieczorek J, Guo Q & Hijmans R (2004) The point-radius method for georeferencing locality descriptions and calculating associated uncertainty. International Journal of Geographical Information Science. 18: 745-767. https://doi.org/10.1080/13658810412331280211"
-msgstr ""
+msgstr "Wieczorek J, Guo Q & Hijmans R (2004) The point-radius method for georeferencing locality descriptions and calculating associated uncertainty. International Journal of Geographical Information Science. 18: 745-767. https://doi.org/10.1080/13658810412331280211"
 
 #. type: Title ==
 #: appa.en.adoc:7
@@ -3588,7 +3588,21 @@ msgid "h|Locality Type\n"
 "a|\n"
 "Step 1: Determine the <<coordinates>> of the grid cell as for a <<Feature – with Obvious Spatial Extent,Feature – with Obvious Spatial Extent (§2.1.1)>>. Use the coordinates for the <<corrected-center>> of the named <<grid>> cell.\n\n"
 "Step 2: Determine the <<geographic-radial>>.\n\n"
-msgstr ""
+msgstr "h|Tipo de Localidad\n"
+"h|Pasos para el Cálculo\n\n"
+"|<<Coordenadas,§2.3 Coordenadas>>\n"
+"|La <<localidad>> consiste en un punto representado por <<latitud>> y <<longitud>> en uno de los varios <<formato-de-las-coordenadas, formatos de coordenadas>>.\n\n"
+"|<<Coordenadas: Coordenadas Geográficas,§2.3.1 Coordenadas Geográficas>>\n"
+"|Paso 1: Use las <<coordenadas>> en el formato que fueron capturados desde un <<GPS>> o desde la <<localidad>> original como la [ui-element]#Latitud# y [ui-element]#Longitud de entrada#.\n\n"
+"|<<Coordenadas: Universal Transversa de Mercator (UTM),§2.3.2 Universal Transversa de Mercator (UTM)>>\n"
+"a|\n"
+"Aunque técnicamente no es una <<entidad-geográfica>>, el <<tipo-de-localidad>> <<Solo Entidad Geográfica,Solo Entidad Geográfica(§2.1)>> en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación (Wieczorek & Wieczorek 2020)^] incluye todos los parámetros relevantes.\n\n"
+"Paso 1: Las <<coordenadas>> <<UTM>> deben ser convertidas a <<grados-decimales>> usando una herramienta de conversión UTM a <<latitud,Latitud>>/<<longitud,Longitud>>. Para esto se requiere la zona UTM.\n\n\n"
+"Paso 2: Determinar el <<radio-geográfico>>: Si las coordenadas UTM tienen 7 cifras en el <<norte>> y 6 cifras en el <<este>>, el radial geográfico es 0. 07 m. Para las coordenadas UTM con menos dígitos de <<precisión>> ver <<table-default-geographic-radial>> (§2.1.2).\n\n"
+"|<<Coordenadas: Sistemas de Grillas,§2.3.3 Sistemas de Grillas>>\n"
+"a|\n"
+"Paso 1: Determina las <<coordenadas>> de la grilla de celda como para una <<Entidad Geográfica con una Extensión Espacial Obvia,Entidad Geográfica con una Extensión Espacial Obvia(§2.1.1)>>. Use las coordenadas para el <<centro-corregido>> de la <<grilla>> de celda en cuestión.\n\n"
+"Paso 2: Determinar el <<radio-geográfico>>.\n\n"
 
 #. type: Table
 #: appa.en.adoc:171
@@ -3604,19 +3618,29 @@ msgid "h|Locality Type\n"
 "|<<Cannot Be Located,§2.4.2 Cannot Be Located>>\n"
 "a|\n"
 "The cited <<locality>> cannot be found. Reasons may include:\n\n"
-msgstr ""
+msgstr "h|Tipo de Localidad\n"
+"h|Pasos para el Cálculo\n\n"
+"|<<Localidades Difíciles,§2.4 Localidades Difíciles>>\n"
+"|La <<localidad>> es imprecisa o presenta otros desafíos. Se recomienda verificar en los catálogos originales, libros de registro, notas de campo, etiquetas de especímenes, etc. como primer paso para resolver las imprecisiones.\n\n"
+"|<<Ubicaciones Dudosas,§2.4.1 Ubicaciones Dudosas>>\n"
+"a|\n"
+"Si alguna parte de la descripción de la <<localidad>> está en duda, pero hay información de la localidad que no lo está, utilice la parte sin dudas para determinar el <<tipo-de-localidad>> y <<georreferencia,georreferencie>> siguiendo el método apropiado.\n\n"
+"Si toda la localidad está en duda, no <<georreferencie>> y documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación) la razón por la que no <<georreferencia,georreferenció>> (p. ej. \"localidad en duda\").\n\n"
+"|<<No se Puede Ubicar,§2.4.2 No se Puede Ubicar>>\n"
+"a|\n"
+"La <<localidad>> nombrada no puede ser encontrada. Las razones pueden incluir:\n\n"
 
 #. type: Table
 #: appa.en.adoc:173
 #, no-wrap
 msgid "There is no locality information cited;\n\n"
-msgstr ""
+msgstr "No se menciona información sobre la localidad;\n\n"
 
 #. type: Table
 #: appa.en.adoc:175
 #, no-wrap
 msgid "The <<location>> fields contain other than *location* information;\n\n"
-msgstr ""
+msgstr "Los campos de la <<localidad>> contienen otra información que no sea sobre la *ubicación*;\n\n"
 
 #. type: Table
 #: appa.en.adoc:193
@@ -3633,24 +3657,35 @@ msgid "The <<feature>>(s) cannot be found with available references.\n\n"
 "a|\n"
 "The <<locality>> is associated with a captive animal, a cultivated plant or an [ui-element]#event# from some other non-natural occurrence. The <<locality>> cited is often that of a zoo, aquarium, or botanical garden.\n\n"
 "<<georeference,Georeference>> the locality normally based on the <<locality-type>> and <<feature>>. Document the nature of the provenance using the term term:dwc[degreeOfEstablishment].\n"
-msgstr ""
+msgstr "La <<entidad-geográfica>> no se puede encontrar con las referencias disponibles.\n\n"
+"No <<georreferencie>> estas localidades. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación; p. ej. \"no se puede encontrar la localidad con las referencias disponibles\").\n\n"
+"|<<Más de una Entidad Geográfica Coincidente,§2.4.3 Más de una Entidad Geográfica Coincidente>>\n"
+"a|\n"
+"Múltiples <<entidad-geográfica, entidades geográficas>> relacionadas: Si hay varios lugares cercanos distintos con el mismo nombre y no hay más información para distinguir entre las posibilidades, trate la combinación de ellos como la entidad geográfica y siga el procedimiento para el correspondiente <<tipo-de-localidad>>. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación).\n\n"
+"Múltiples entidades geográficas no relacionadas: No <<georreferencie>>. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación; p.ej. \"hay múltiples entidades geográficas no relacionadas que coinciden con la de la descripción de la localidad\").\n\n"
+"|<<Demostrablemente Inconsistente,§2.4.4 Demostrablemente Inconsistente>>\n"
+"|La descripción de la <<localidad>> contiene inconsistencias irreconciliables, afirmaciones que no pueden ser verdaderas simultáneamente. No <<georreferencie>>. Documente en término:dwc[georeferenceRemarks] (Comentarios de la georreferenciación).\n\n"
+"|<<Cultivado o Cautivo,§2.4.5 Cultivado o Cautivo>>\n"
+"a|\n"
+"La <<localidad>> está asociada con un animal cautivo, una planta cultivada o un [ui-element]#evento# de algún otro registro no natural. La <<localidad>> mencionado es a menudo un zoológico, acuario o jardín botánico.\n\n"
+"<<georreferencia,Georreferencie>> la localidad normalmente basada en los <<tipo-de-localidad,tipos de localidad>> y de <<entidad-geográfica>>. Documente la naturaleza de la procedencia usando el term:dwc[degreeOfEstablishment] (Grado de establecimiento).\n"
 
 #. type: Title ==
 #: appb.en.adoc:7
 #, no-wrap
 msgid "Appendix B: Methods to Find the Corrected Center and Geographic Radial"
-msgstr ""
+msgstr "Apéndice B: Métodos para Encontrar el Centro Corregido y Radio Geográfico"
 
 #. type: Plain text
 #: appb.en.adoc:12
 msgid "Sometimes determining the <<corrected-center,corrected center>> and <<geographic-radial,geographic radial>> of a <<feature>> can be difficult to do \"by eye.\" It usually requires repeated trial and error moving and adjusting the radius of circles to narrow in on the final result. Here we share some simple methods to aid in finding the corrected center and geographic radial based on the geometric shape of the feature of interest."
-msgstr ""
+msgstr "A veces determinar el <<centro-corregido, radio geográfico>> y <<radio-geográfico, radio geográfico>> de una <<entidad-geográfica>> puede ser difícil hacer \"a ojo\". Por lo general, se requiere una repetición del ensayo y error moviendo y ajustando el radio de los círculos para acotar el resultado final. Aquí compartimos algunos métodos sencillos para ayudar a encontrar el centro corregido y el radio geográfico basado en la forma geométrica de la entidad de interés."
 
 #. type: Title ====
 #: appb.en.adoc:13
 #, no-wrap
 msgid "Linear Feature"
-msgstr ""
+msgstr "Entidad Geográfica Lineal"
 
 #. type: Table
 #: appb.en.adoc:21 appb.en.adoc:42 appb.en.adoc:63 appb.en.adoc:90
@@ -3659,186 +3694,188 @@ msgstr ""
 msgid "h|\n"
 "h|Method\n\n"
 "a|\n"
-msgstr ""
+msgstr "h|\n"
+"h|Método\n\n"
+"a|\n"
 
 #. type: Target for macro image
 #: appb.en.adoc:21
 #, no-wrap
 msgid "img/web/linear-feature.png"
-msgstr ""
+msgstr "img/web/linear-feature.png"
 
 #. type: Table
 #: appb.en.adoc:27
 msgid "a| Step 1: Find the midpoint of the segment *a* that joins the two most distant points of the <<geometry>> (solid line).  a|"
-msgstr ""
+msgstr "a| Paso 1: encuentre el punto medio del segmento *a* que une los dos puntos más distantes de la <<geometría>> (línea sólida). a|"
 
 #. type: Target for macro image
 #: appb.en.adoc:27
 #, no-wrap
 msgid "img/web/linear-feature-radial.png"
-msgstr ""
+msgstr "img/web/linear-feature-radial.png"
 
 #. type: Table
 #: appb.en.adoc:31
 msgid "a| Step 2: The midpoint is the corrected center *a*. The geographic radial is the distance from there to either end of the line segment *b*."
-msgstr ""
+msgstr "a| Paso 2: El punto medio es el centro corregido *a*. El radio geográfico es la distancia desde allí hasta cualquiera de los extremos del segmento de línea *b*."
 
 #. type: Title ====
 #: appb.en.adoc:33
 #, no-wrap
 msgid "Elongate Convex Feature"
-msgstr ""
+msgstr "Entidad Geográfica Convexa Elongada"
 
 #. type: Target for macro image
 #: appb.en.adoc:42
 #, no-wrap
 msgid "img/web/convex-elongate-feature.png"
-msgstr ""
+msgstr "img/web/convex-elongate-feature.png"
 
 #. type: Table
 #: appb.en.adoc:48
 msgid "a| Step 1: Find the midpoint of the segment *a* that joins the two most distant points of the geometry (solid line).  a|"
-msgstr ""
+msgstr "a| Paso 1: Encuentre el punto medio del segmento *a* que une a los dos puntos más distantes de la geometría (línea sólida). a|"
 
 #. type: Target for macro image
 #: appb.en.adoc:48
 #, no-wrap
 msgid "img/web/convex-elongate-feature-radial.png"
-msgstr ""
+msgstr "img/web/convex-elongate-feature-radial.png"
 
 #. type: Table
 #: appb.en.adoc:52
 msgid "a| Step 2: If the midpoint is within or on the <<boundary>> of the geometry and there is no point within the geometry that is further away than the two extreme points of the chosen segment (which one can determine by eye, with a ruler or with a tool to make a circle), then the midpoint is already the corrected center *a*, with geographic radial *b*."
-msgstr ""
+msgstr "a| Paso 2: Si el punto medio está dentro o sobre el <<límite>> de la geometría y no hay un punto dentro de la geometría que esté más lejos que los dos puntos extremos del segmento elegido (que se puede determinar a ojo, con una regla o con una herramienta para hacer un círculo), entonces el punto medio ya es el centro corregido *a*, con radio geográfico *b*."
 
 #. type: Title ====
 #: appb.en.adoc:54
 #, no-wrap
 msgid "Not Obviously Elongate Convex Feature"
-msgstr ""
+msgstr "Entidad Geográfica Convexa No Obviamente Alargada"
 
 #. type: Target for macro image
 #: appb.en.adoc:63
 #, no-wrap
 msgid "img/web/convex-feature.png"
-msgstr ""
+msgstr "img/web/convex-feature.png"
 
 #. type: Table
 #: appb.en.adoc:69 appb.en.adoc:96 appb.en.adoc:123 appb.en.adoc:150
 msgid "a| Step 1: Find the midpoint *a* of the segment that joins the two most distant points of the geometry (solid line). Draw a circle with center at the midpoint and diameter up to the two ends of the segment (dotted circle).  a|"
-msgstr ""
+msgstr "a| Paso 1: Encuentre el punto medio *a* del segmento que une a los dos puntos más distantes de la geometría (línea sólida). Dibuje un círculo con centro en el punto medio y diámetro hasta los dos extremos del segmento (círculo punteado). a|"
 
 #. type: Target for macro image
 #: appb.en.adoc:69
 #, no-wrap
 msgid "img/web/convex-feature-corrected.png"
-msgstr ""
+msgstr "img/web/convex-feature-corrected.png"
 
 #. type: Table
 #: appb.en.adoc:75
 msgid "a| Step 2: If any point of the geometry falls outside the circle, move the circle so that the farthest spaced vertices of the geometry are equally far outside the new circle (solid circle, with center *b*).  a|"
-msgstr ""
+msgstr "a| Paso 2: Si cualquier punto de la geometría cae fuera del círculo, mueva el círculo para que los extremos más lejanos de la geometría estén igualmente fuera del nuevo círculo (círculo sólido, con centro *b*). a|"
 
 #. type: Target for macro image
 #: appb.en.adoc:75
 #, no-wrap
 msgid "img/web/convex-feature-radial.png"
-msgstr ""
+msgstr "img/web/convex-feature-radial.png"
 
 #. type: Table
 #: appb.en.adoc:79 appb.en.adoc:106
 msgid "a| Step 3: Increase the radius of the circle, without moving the center, to just include the most distant points of the geometry. The center of this circle *b* is the corrected center with geographic radial *c*."
-msgstr ""
+msgstr "a| Paso 3: Aumente el radio del círculo, sin mover el centro, para incluir los puntos más distantes de la geometría. El centro de este círculo *b* es el centro corregido con radio geográfico *c*."
 
 #. type: Title ====
 #: appb.en.adoc:81
 #, no-wrap
 msgid "Simple Concave Feature (center within the feature)"
-msgstr ""
+msgstr "Entidad Geográfica Concava Simple (centro dentro de la entidad)"
 
 #. type: Target for macro image
 #: appb.en.adoc:90
 #, no-wrap
 msgid "img/web/concave-feature.png"
-msgstr ""
+msgstr "img/web/concave-feature.png"
 
 #. type: Target for macro image
 #: appb.en.adoc:96
 #, no-wrap
 msgid "img/web/concave-feature-corrected.png"
-msgstr ""
+msgstr "img/web/concave-feature-corrected.png"
 
 #. type: Table
 #: appb.en.adoc:102
 msgid "a| Step 2: If any point of the geometry falls outside the circle, move the circle so that the three farthest spaced vertices of the geometry are equally far outside the new circle (solid circle with center *b*).  a|"
-msgstr ""
+msgstr "a| Paso 2: Si cualquier punto de la geometría cae fuera del círculo, mueva el círculo para que los tres puntos más lejanos de la geometría estén igualmente fuera del nuevo círculo (círculo sólido con centro *b*). a|"
 
 #. type: Target for macro image
 #: appb.en.adoc:102
 #, no-wrap
 msgid "img/web/concave-feature-radial.png"
-msgstr ""
+msgstr "img/web/concave-feature-radial.png"
 
 #. type: Title ====
 #: appb.en.adoc:108
 #, no-wrap
 msgid "Complex Concave Feature (center outside the feature)"
-msgstr ""
+msgstr "Entidad Geográfica Concava Compleja (centro afuera de la entidad)"
 
 #. type: Target for macro image
 #: appb.en.adoc:117
 #, no-wrap
 msgid "img/web/concave-complex-feature.png"
-msgstr ""
+msgstr "img/web/concave-complex-feature.png"
 
 #. type: Target for macro image
 #: appb.en.adoc:123
 #, no-wrap
 msgid "img/web/concave-complex-feature-corrected.png"
-msgstr ""
+msgstr "img/web/concave-complex-feature-corrected.png"
 
 #. type: Table
 #: appb.en.adoc:129
 msgid "a| Step 2: Move the circle so that the center falls on the border of the geometry and the vertices that are farthest spaced are equally far outside the new circle (solid circle with center *b*).  a|"
-msgstr ""
+msgstr "a| Paso 2: Mueva el círculo para que el centro caiga en el borde de la geometría y los puntos que están más alejados están igualmente fuera del nuevo círculo (círculo sólido con centro *b*). a|"
 
 #. type: Target for macro image
 #: appb.en.adoc:129
 #, no-wrap
 msgid "img/web/concave-complex-feature-radial.png"
-msgstr ""
+msgstr "img/web/concave-complex-feature-radial.png"
 
 #. type: Table
 #: appb.en.adoc:133 appb.en.adoc:160
 msgid "a| Step 3: Increase the radius of the circle, without moving the center to just include the most distant points of the geometry. The center of this circle *b* is the corrected center with geographic radial *c*."
-msgstr ""
+msgstr "a| Paso 3: Aumente el radio del círculo, sin mover el centro para incluir los puntos más distantes de la geometría. El centro de este círculo *b* es el centro corregido con radio geográfico *c*."
 
 #. type: Title ====
 #: appb.en.adoc:135
 #, no-wrap
 msgid "Curvilinear Feature"
-msgstr ""
+msgstr "Entidad Geográfica Curvilinea"
 
 #. type: Target for macro image
 #: appb.en.adoc:144
 #, no-wrap
 msgid "img/web/curvilinear-feature.png"
-msgstr ""
+msgstr "img/web/curvilinear-feature.png"
 
 #. type: Target for macro image
 #: appb.en.adoc:150
 #, no-wrap
 msgid "img/web/curvilinear-feature-corrected.png"
-msgstr ""
+msgstr "img/web/curvilinear-feature-corrected.png"
 
 #. type: Table
 #: appb.en.adoc:156
 msgid "a| Step 2: Move the circle so that the center falls on the border of the geometry and the vertices farthest from there are equally far outside the new circle (solid circle with center *b*).  a|"
-msgstr ""
+msgstr "a| Paso 2: Mueva el círculo para que el centro caiga en el borde de la geometría y los puntos más lejanos del centro están igualmente fuera del nuevo círculo (círculo sólido con centro *b*). a|"
 
 #. type: Target for macro image
 #: appb.en.adoc:156
 #, no-wrap
 msgid "img/web/curvilinear-feature-radial.png"
-msgstr ""
+msgstr "img/web/curvilinear-feature-radial.png"
 
