@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-21 15:07\n"
+"PO-Revision-Date: 2021-10-21 16:07\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -419,7 +419,7 @@ msgstr "Sólo <<coordenadas,coordenadas>>"
 #. type: Plain text
 #: 0100.en.adoc:99
 msgid "Geographic <<feature>> only"
-msgstr "Sólo una <<entidad-geográfica, Entidad Geográfica>>"
+msgstr "Solo <<entidad-geográfica, Entidad Geográfica>>"
 
 #. type: Plain text
 #: 0100.en.adoc:100
@@ -745,7 +745,7 @@ msgstr "Métodos de Georreferenciación por Tipo de Localidad"
 #: 0200.en.adoc:3
 #, no-wrap
 msgid "Geographic Feature only"
-msgstr "Sólo Entidad Geográfica"
+msgstr "Solo Entidad Geográfica"
 
 #. type: Block title
 #: 0200.en.adoc:5
@@ -3314,34 +3314,34 @@ msgstr "[[UTM]]Universal Transversa de Mercator (UTM)"
 #. type: Plain text
 #: glossary.en.adoc:132
 msgid "A standardized <<coordinate-system>> based on a metric rectangular <<grid>> system and a division of the Earth into sixty 6-degree longitudinal zones. The scope of UTM covers from 84° N to 80° S. (See {gbp}#universal-transverse-mercator-utm-coordinates[Universal Transverse Mercator (UTM) Coordinates] in {gbp}[_Georeferencing Best Practices_] (Chapman & Wieczorek 2020))."
-msgstr ""
+msgstr "<<sistema-de-coordenadas, Sistema de coordenadas>> estandarizado basado en un sistema de <<grilla, grillas>> métrico rectangular y una división de la tierra en 60 zonas longitudinales de 6 grados. El alcance del sistema UTM cubre desde los 84° N hasta 80° S. (Ver {gbp}#coordenadas-universal-transversa-de-mercator[Coordendas Universal Transversa de Mercator (UTM)] in {gbp}[_Buenas Prácticas de Georreferenciación_] (Chapman & Wieczorek 2020))."
 
 #. type: Plain text
 #: glossary.en.adoc:133 bibliography.en.adoc:36
 msgid "<<<"
-msgstr ""
+msgstr "<<<"
 
 #. type: Title ==
 #: acknowledgements.en.adoc:1
 #, no-wrap
 msgid "Acknowledgements"
-msgstr ""
+msgstr "Agradecimientos"
 
 #. type: Plain text
 #: acknowledgements.en.adoc:4
 msgid "Many people have contributed ideas to this document and its precursors, either directly or indirectly through discussions at meetings, publications, or in email correspondence. We refer you to the earlier document for those we acknowledged there."
-msgstr ""
+msgstr "Muchas personas han aportado ideas a este documento y a sus precursores, directa o indirectamente a través de discusiones en reuniones, publicaciones o en correspondencia por correo electrónico. Le remitimos al documento anterior para aquellos que hemos reconocido allí."
 
 #. type: Plain text
 #: acknowledgements.en.adoc:6
 msgid "The people we would like to particularly acknowledge for this document include Arturo H. Ariño, Ricardo Ortiz Gallego, Quentin Groom, Kyle Kopas, Erica Krimmel, and Nelson Rios. We would further like to acknowledge the staff at the GBIF Secretariat, especially Laura Russell, Kyle Copas, and Matthew Blissett who provided support for the project in which this document was solicited."
-msgstr ""
+msgstr "Las personas que nos gustaría reconocer especialmente por este documento incluyen a Arturo H. Arinuto, Ricardo Ortiz Gallego, Quentin Groom, Kyle Kopas, Erica Krimmel y Nelson Rios. Quisiéramos también reconocer al personal de GBIF, especialmente a Laura Russell, Kyle Copas, y Matthew Blissett quienes prestaron apoyo al proyecto en el que se solicitó este documento."
 
 #. type: Title ==
 #: bibliography.en.adoc:2
 #, no-wrap
 msgid "References"
-msgstr ""
+msgstr "Referencias"
 
 #. type: Plain text
 #: bibliography.en.adoc:5
@@ -3427,13 +3427,13 @@ msgstr ""
 #: appa.en.adoc:7
 #, no-wrap
 msgid "Appendix A: Key to Locality Types"
-msgstr ""
+msgstr "Apéndice A: Clave a los Tipos de Localidades"
 
 #. type: Title ===
 #: appa.en.adoc:9
 #, no-wrap
 msgid "Features"
-msgstr ""
+msgstr "Entidades Geográficas"
 
 #. type: Table
 #: appa.en.adoc:24
@@ -3444,79 +3444,84 @@ msgid "h|Locality Type\n"
 "|The <<locality>> description consists only of a <<feature>>, which is often listed in a standard <<gazetteer>> and can probably be located on a map. Remember: <<feature,features>> are not points; they have a spatial <<extent>>.\n\n"
 "a|\n"
 "<<Feature – with Obvious Spatial Extent,§2.1.1 With Obvious Extent>>\n\n"
-msgstr ""
+msgstr "h|Tipo de Localidad\n"
+"h|Pasos para el Cálculo\n\n"
+"|<<Solo Entidad Geográfica,§2.1 Solo Entidad Geográfica>>\n"
+"|La descripción de la <<localidad>> consiste sólo de una <<entidad-geográfica>>, que a menudo se encuentra en un <<gacetero>> estandar y que probablemente se puede ubicar en un mapa. Recuerde: las <<entidad-geográfica, entidades geográficas>> no son puntos; tienen una <<extensión>> espacial.\n\n"
+"a|\n"
+"<<Entidad Geográfica con una Extensión Espacial Obvia,§2.1.1 Con una Extensión Espacial Obvia>>\n\n"
 
 #. type: Target for macro image
 #: appa.en.adoc:24
 #, no-wrap
 msgid "img/web/key-obvious-extent.jpg"
-msgstr ""
+msgstr "img/web/key-obvious-extent.jpg"
 
 #. type: Table
 #: appa.en.adoc:36
 msgid "a| Step 1: Determine the <<feature>> <<boundary,boundaries>>.  Step 2: Determine the <<coordinates>> of the <<corrected-center>> of the feature for [ui-element]#Input Latitude# and [ui-element]#Longitude#.  Step 3: Measure the <<geographic-radial>>.  a| <<Feature – without Obvious Spatial Extent,§2.1.2 Without Obvious Extent>>"
-msgstr ""
+msgstr "a| Paso 1: Determinar los <<límite,límites>> de la <<entidad-geográfica>>. Paso 2: Determinar las <<coordenadas>> del <<centro-corregido>> de la entidad para la [ui-element]#Latitud# y [ui-element]#Longitud de entrada#. Paso 3: Medir el <<radio-geográfico>>. a| <<Entidad Geográfica sin una Extensión Espacial Obvia,§2.1.2 Sin una Extensión Espacial Obvia>>"
 
 #. type: Target for macro image
 #: appa.en.adoc:36
 #, no-wrap
 msgid "img/web/key-without-obvious-extent.jpg"
-msgstr ""
+msgstr "img/web/key-without-obvious-extent.jpg"
 
 #. type: Table
 #: appa.en.adoc:50
 msgid "a| Step 1: Estimate the <<feature>> <<boundary,boundaries>> using known information from a map, record, or other documentation.  Step 2: Determine the <<coordinates>> of the <<corrected-center>> of the estimated feature boundaries as the [ui-element]#Input Latitude# and [ui-element]#Longitude#.  Step 3: Measure the <<geographic-radial>>.  |<<Feature – Special Cases,§2.1.3 Special Cases>> a| _Special Cases_ all follow the same process as **<<feature,features>>** with or without an obvious spatial **<<extent>>**, but may have some special considerations. For details see:"
-msgstr ""
+msgstr "a| Paso 1: Estimar los <<límite,límites>> de la <<entidad-geográfica>> usando información conocida de un mapa, registro u otra documentación. Paso 2: Usando los límites estimados de la entidad geográfica determinar las <<coordenadas>> del <<centro-corregido>>  como [ui-element]#Latitud# y [ui-element]#Longitude de entrada#. Paso 3: Medir el <<radio-geográfico>>. |<<Entidades Geográficas: Casos Especiales,§2.1.3 Casos Especiales>> a| Todos los _Casos especiales_ siguen el mismo proceso que las **<<entidad-geográfica,entidades-geográficas>>** con o sin una **<<extensión>>** espacial obvia, pero puede tener algunas consideraciones especiales. Para más detalles vea:"
 
 #. type: Table
 #: appa.en.adoc:51
 msgid "<<Feature – Street Address,Street Address (§2.1.3.1)>> +"
-msgstr ""
+msgstr "<Entidad Geográfica: Dirección de una Calle,Dirección de una Calle (§2.1.3.1)>"
 
 #. type: Table
 #: appa.en.adoc:52
 msgid "<<Feature – Property,Property (§2.1.3.2)>> +"
-msgstr ""
+msgstr "<<ntidad Geográfica: Propiedad,Propiedad (§2.1.3.2)>> +"
 
 #. type: Table
 #: appa.en.adoc:53
 msgid "<<Feature – Path,Path (§2.1.3.3)>> +"
-msgstr ""
+msgstr "<<Entidad Geográfica: Ruta, Ruta (§2.1.3.3)>> +"
 
 #. type: Table
 #: appa.en.adoc:54
 msgid "<<feature-junction-intersection-crossing-confluence,Junction, Intersection, Crossing, Confluence (§2.1.3.4)>> +"
-msgstr ""
+msgstr "<<entidad-geográfica-cruce-intersección-paso-confluencia, Cruce, Intersección, Paso, Confluencia (§2.1.3.4)>>"
 
 #. type: Table
 #: appa.en.adoc:55
 msgid "<<Feature – Cave,Cave (§2.1.3.5)>> +"
-msgstr ""
+msgstr "<<Entidad Geográfica: Cueva,Cueva (§2.1.3.5)>>"
 
 #. type: Table
 #: appa.en.adoc:56
 msgid "<<Feature – Dive Location,Dive Location (§2.1.3.6)>> +"
-msgstr ""
+msgstr "<<Entidad Geográfica: Ubicación de Buceo,Ubicación de Buceo(§2.1.3.6)>>"
 
 #. type: Table
 #: appa.en.adoc:57
 msgid "<<Feature – Headwaters of a Waterway,Headwaters of a Waterway (§2.1.3.7)>> +"
-msgstr ""
+msgstr "<<Entidad Geográfica: Cabeceras de una Vía Navegable, Cabeceras de una Vía Navegable(§2.1.3.7)>>"
 
 #. type: Table
 #: appa.en.adoc:58
 msgid "<<Feature – near a Feature,near a Feature (§2.1.3.8)>> +"
-msgstr ""
+msgstr "<<Entidad Geográfica: cerca de una Entidad Geográfica,cerca de una Entidad Geográfica (§2.1.3.8)>>"
 
 #. type: Table
 #: appa.en.adoc:59
 msgid "<<Feature – between Two Features,between Two Features (§2.1.3.9)>> +"
-msgstr ""
+msgstr "<<Entidad Geográfica: entre Dos Entidades Geográficas,entre Dos Entidades Geográficas (§2.1.3.9)>>"
 
 #. type: Table
 #: appa.en.adoc:60
 msgid "<<Feature – between Two Paths,between Two Paths (§2.1.3.10)>>"
-msgstr ""
+msgstr "<<Entidad Geográfica: entre Dos Rutas,entre Dos Rutas (§2.1.3.10)>>"
 
 #. type: Table
 #: appa.en.adoc:82
@@ -3531,29 +3536,38 @@ msgid "h|Locality Type\n"
 "Step 2: Determine the <<coordinates>> of the <<corrected-center>> and the <<geographic-radial>>. [ui-element]#Offset Distance# = 0. [ui-element]#Distance Precision# = <<precision>> with which the distance was recorded in the <<locality>> description.\n\n"
 "a|\n"
 "<<Offset – Heading only,§2.2.2 Heading only>>\n\n"
-msgstr ""
+msgstr "h|Tipo de Localidad\n"
+"h|Pasos para el Cálculo\n\n"
+"|<<Desplazamientos,§2.2 Desplazamientos>>\n"
+"|Un <<desplazamiento>> es un movimiento desde una <<ubicación>> de referencia, usualmente se usa en conjunto con una <<orientación-cardinal>> para dar una distancia y dirección desde un <<entidad-geográfica>>.\n\n"
+"|<<Sólo Distancia de Desplazamiento,§2.2.1 Solo Distancia>>\n"
+"a|\n"
+"Paso 1: Determinar los <<límite,límites>> de la <<entidad>> usando el método para <<Solo Entidad Geográfica,Solo Entidad Geográfica (§2.1)>> y añadir un buffer correspondiente a la distancia dada en la descripción de la <<localidad>>. No hay necesidad de tener en cuenta la proximidad a otras características.\n\n"
+"Paso 2: Determinar las <<coordenadas>> del <<centro-corregido>> y el <<radio-geográfico>>. [ui-element]#Distancia de Desplazamiento# = 0. [ui-element]#Precisión de la Distancia# = <<precisión>> con la cual se registró la distancia en la descripción de la <<localidad>>.\n\n"
+"a|\n"
+"<<Desplazamiento: Solo Orientanción Cardinal,§2.2.2 Solo Orientanción Cardinal>>\n\n"
 
 #. type: Target for macro image
 #: appa.en.adoc:82
 #, no-wrap
 msgid "img/web/key-heading-only.jpg"
-msgstr ""
+msgstr "img/web/key-heading-only.jpg"
 
 #. type: Table
 #: appa.en.adoc:97
 msgid "a| Step 1: Determine the <<feature>> <<boundary,boundaries>> using the appropriate method for <<Geographic Feature only,Geographic Feature only (§2.1)>>. Account for the <<offset>> at a <<heading>> using other information in the record, or until reaching the proximity of another similar feature, whichever is nearer the original feature. Call this the \"extended feature\".  Step 2: Determine and use the <<coordinates>> and <<geographic-radial>> of the extended feature.  a| <<Offset – Distance along a Path,§2.2.3 Distance along a Path>> |The <<locality>> consists of a reference <<feature>> to start from and a distance to travel along a <<path>>. The path can be <<Offset along a Narrow Path,Narrow (§2.2.3.1)>> or <<Offset along a Wide Path,Wide (§2.2.3.2)>>. At times there may be <<Offset along Multiple Possible Paths,Multiple Possible Paths (§2.2.3.3)>>. Please reference the appropriate section for specific instructions.  a| <<Offset – Distance along Orthogonal Directions,§2.2.4 Distance along Orthogonal Directions>>"
-msgstr ""
+msgstr "a| Paso 1: Determinar los <<límite,límites>> de la <<entidad-geográfica>> usando el método apropiado para <<Solo Entidad Geográfica,Solo Entidad Geográfica (§2.1)>>. Considere el <<desplazamiento>> en una <<orientación-cardinal>> usando otra información en el registro o hasta llegar a la proximidad de otra entidad similar, cualquiera que esté más cerca de la entidad original. Llame a esto la \"entidad extendida\". Paso 2: Determinar y usar las <<coordenadas>> y el <<radio-geográfico>> de la entidad extendida. a| <<Desplazamiento: Distancia a lo Largo de una Ruta,§2.2.3 Distancia a lo Largo de una Ruta>> |La <<localidad>> consiste en una <<entidad-geográfica>> de referencia desde la cual empezar y una distancia para viajar a lo largo de una <<ruta>>. La ruta puede ser <<Desplazamiento a lo Largo de una Ruta Angosta,Angosta (§2.2.3.1)>> o <<Desplazamiento a lo Largo de una Ruta Ancha,Ancha (§2.2.3.2)>>. A veces puede haber <<Desplazamiento a lo Largo de Múltiples Rutas Posibles,Múltiples Rutas Posibles (§2.2.3.3)>>. Por favor diríjase a la sección apropiada para instrucciones específicas| <<Desplazamiento: Distancia a lo largo de Direcciones Ortogonales,§2.2.4 Distancia a lo largo de Direcciones Ortogonales>>"
 
 #. type: Target for macro image
 #: appa.en.adoc:97
 #, no-wrap
 msgid "img/web/key-distance-orthogonal-direction.jpg"
-msgstr ""
+msgstr "img/web/key-distance-orthogonal-direction.jpg"
 
 #. type: Table
 #: appa.en.adoc:115
 msgid "a| Step 1: Determine the <<boundary>> of the <<feature>> using the appropriate method for <<Geographic Feature only,Geographic Feature only (§2.1)>>.  Step 2: Determine and use the <<coordinates>> of the <<corrected-center>> and <<geographic-radial>> of the estimated feature boundaries as the [ui-element]#Input Latitude# and [ui-element]#Longitude#.  |<<Offset – Distance at a Heading,§2.2.5 Distance at a Heading>> a| Step 1: Determine the starting <<feature>> using the appropriate method for <<Geographic Feature only,Geographic Feature only (§2.1)>>.  Step 2: Determine and use the starting feature <<coordinates>> and the <<geographic-radial>>.  |<<Offset – Distances from Two Distinct Paths,§2.2.6 Distances from Two Distinct Paths>> a| Step 1: Determine the starting <<feature>> using the appropriate method for <<Geographic Feature only,Geographic Feature only (§2.1)>>.  Step 2: Determine and use the starting feature <<coordinates>> and the <<geographic-radial>>."
-msgstr ""
+msgstr "a| Paso 1: Determina el <<límite>> de la <<entidad-geográfica>> usando el método apropiado para <<Solo Entidad Geográfica,Solo Entidad Geográfica (§2.1)>>. Paso 2: Determinar y usar las <<coordenadas>> del <<centro-corregido>> y el <<radio-geográfico>> de los límites estimados de la entidad como la [ui-element]#Latitud# y [ui-element]#Longitud de entrada#. |<<Desplazamiento: Distancia en una Orientación Cardinal,§2.2.5Distancia en una Orientación Cardinal>> a| Paso 1: Determinar la <<entidad-geográfica>> de inicio usando el método apropiado para <<Solo Entidad Geográfica,Solo Entidad Geográfica (§2.1)>>. Paso 2: Determinar y usar las <<coordenadas>> de la entidad de inicio y el <<radio-geográfico>>. |<<Desplazamiento: Distancia desde dos Rutas Distintas,§2.2.6 Distancia desde dos Rutas Distintas>> a| Paso 1: Determina la <<entidad-geográfica>> de inicio utilizando el método apropiado para <<Solo Entidad Geográfica,Solo Entidad Geográfica (§2.1)>>. Paso 2: Determinar y utilizar las <<coordenadas>> y el <<radio-geográfico>> de la entidad de inicio."
 
 #.  TODO extra section link here
 #. type: Table
