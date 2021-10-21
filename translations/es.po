@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-21 10:01\n"
+"PO-Revision-Date: 2021-10-21 11:10\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -2310,94 +2310,94 @@ msgstr "La <<localidad>> consiste en un punto representado por información de <
 #. type: Plain text
 #: 0230.en.adoc:40
 msgid "There are many national and local grids derived from UTM and that work in the same way, such as the Australian Map Grid (AMG)."
-msgstr ""
+msgstr "Hay muchas grillas nacionales y locales derivadas de UTM y que funcionan de la misma manera, como la Grilla de Mapas Australiana (AMG)."
 
 #. type: delimited block =
 #: 0230.en.adoc:45
 msgid "\"N 4291492 E 456156\" +"
-msgstr ""
+msgstr "\"N 4291492 E 456156\" +"
 
 #. type: delimited block =
 #: 0230.en.adoc:46
 msgid "\"AMG Zone 56, x: 301545 y: 7011991\" +"
-msgstr ""
+msgstr "\"Zona AMG 56, x: 301545 y: 7011991\" +"
 
 #. type: delimited block =
 #: 0230.en.adoc:47
 msgid "\"30T 699582 m east 5709431 m north\""
-msgstr ""
+msgstr "\"30T 699582 m este 5709431 m norte\""
 
 #. type: Plain text
 #: 0230.en.adoc:52
 msgid "Although this is not technically a <<feature>>, the [ui-element]#Geographic feature only# <<locality-type>> in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^] includes all of the relevant parameters."
-msgstr ""
+msgstr "Aunque técnicamente esto no es una <<entidad-geográfica>>, el <<tipo-de-localidad, tipo de localidad>> [ui-element]#Solo entidad geográfica# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^] incluye todos los parámetros relevantes."
 
 #. type: Plain text
 #: 0230.en.adoc:54
 #, no-wrap
 msgid "*Step 1 – Convert the coordinates*: The <<UTM>> <<coordinates>> must be converted to <<decimal-degrees>> using a UTM to <<latitude,Latitude>>/<<longitude,Longitude>> conversion tool. If the Zone is not given with the UTM coordinates, try to determine it using http://www.dmap.co.uk/utmworld.htm[UTM Grid Zones of the World (Morton 2006)^] and any additional geographic information in the <<locality>> or geography fields combined with a UTM zone map. Use all of the digits of <<precision>> from the conversion in the [ui-element]#Input Latitude# and [ui-element]#Longitude#. Choose the [ui-element]#Coordinate Source:# [ui-element]#Locality description#\n"
-msgstr ""
+msgstr "*Paso 1 – Convertir las coordenadas*: Las <<coordenadas>> <<UTM>> deben ser convertidas a <<grados-decimales>> usando una herramienta de conversión UTM a <<latitud,Latitud>>/<<longitud,Longitud>>. Si la Zona no se especifica con las coordenadas UTM, intente determinarla usando http://www.dmap.co.uk/utmworld.htm[UTM Grid Zones of the World (Morton 2006)^] y cualquier información geográfica adicional que se encuentre en los campos <<localidad>> o geografía combinados con un mapa de zonas UTM. Use todas las cifrras de <<precisión>> de la conversión en la [ui-element]#Latitud# y la [ui-element]#Longitud de entrada#. Elija la [ui-element]#Fuente de las Coordenada:# [ui-element]#Localidad Textual#\n"
 
 #. type: Plain text
 #: 0230.en.adoc:56
 msgid "UTM coordinates are sometimes truncated to fewer than 7 digits in the <<northing>> and 6 digits in the <<easting>>, signifying a less precise location. To make a coordinate conversion, add zeros to the right of each coordinate to make 7 digits overall in the northing and 6 digits in the easting."
-msgstr ""
+msgstr "Las coordenadas UTM a veces se truncan a menos de 7 cifras en el <<norte>> y 6 cifras en el <<este>>, significando una ubicación menos precisa. Para hacer una conversión de coordenadas, añada ceros a la derecha de cada coordenada para tener 7 cifras en general en el norte y 6 cifras en el este."
 
 #. type: Plain text
 #: 0230.en.adoc:58
 #, no-wrap
 msgid "*Step 2 – Determine geographic radial*: If the UTM coordinates have 7 digits in the northing and 6 digits in the easting, the <<geographic-radial>> is 0.707 m (because the coordinates distinguish to the nearest meter and the geographic radial is half the diagonal of the 1 m by 1 m <<grid>> cell). For UTM coordinates with fewer digits of precision see <<table-default-geographic-radial>>. This <<radial>> covers the <<uncertainty>> from the UTM <<coordinate-precision>>. The [ui-element]#Coordinate Precision# in the Calculator for this case is the coordinate precision of the [ui-element]#Input Latitude# and [ui-element]#Longitude#, which depends on how many digits of <<decimal-degrees>> are copied from the converted latitude and longitude (<<table-default-geographic-radial>>).\n"
-msgstr ""
+msgstr "*Paso 2 – Determinar el radio geográfico*: Si las coordenadas UTM tienen 7 cifras en el norte y 6 cifras en el este, el <<radio-geográfico>> es 0. 07 m (porque las coordenadas distinguen al metro más cercano y el radio geográfico es la mitad de la diagonal de una celda de grilla de 1 m en 1 m). Para las coordenadas UTM con menos cifras de precisión ver <<tabla-radio-geográfico-predeterminado>>. Este <<radio>> cubre la <<incertidumbre>> de la <<precisión-de-las-coordendas>> UTM. La [ui-element]#Precisión de las Coordenadas# en la Calculadora en este caso es la precisión de las coordenadas de la [ui-element]#Latitud# y la [ui-element]#Longitud de entrada#, la cual depende de cuántos cifras de <<grados-decimales>> se copian de la latitud y longitud convertidas (<<tabla-radio-geográfico-predeterminado>>).\n"
 
 #. type: Plain text
 #: 0230.en.adoc:60
 #, no-wrap
 msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy/Measurement Error#, and [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
-msgstr ""
+msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Formato de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Exactitud del GPS/Error de la Medición#, y [ui-element]#Unidades de la Distancia# (ver <<Conceptos de Georreferenciación>>).\n"
 
 #. type: Title ====
 #: 0230.en.adoc:61
 #, no-wrap
 msgid "Coordinates – Grid Systems"
-msgstr ""
+msgstr "Coordenadas: Sistema de Grillas"
 
 #. type: Plain text
 #: 0230.en.adoc:64
 msgid "<<locality,Locality>> is a <<grid>> reference (see {gbp}#grids[Grids^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]), such as the 100 m square grids extensively used in Europe, Quarter Degree Square Grids (QDS) as used in South Africa, and the Public Land Survey System (PLSS) system of Townships andSection (TRS) used in the mid- and western USA. Townships in the PLSS system are usually square and six miles on each side, with 36 one-mile by one-mile sections. Be aware that not all townships are square, however, as some were adjusted to conform to administrative or natural boundaries (rivers, for example). Numbered Townships are not unique descriptions without a <<meridian>>, which often is not given in a locality description. The meridian must then be inferred from a Principal Meridian map using other information in the locality description. Similar subdivisions are used in other countries, and should be calculated in a similar way, once the sizes of the cells have been determined (see <<table-default-geographic-radial>>). Map sheets (quadrangles) are sometimes used and can also be calculated as a grid system. Note that, unlike geographic grids, QDS grids are referenced from the top left corner."
-msgstr ""
+msgstr "La <<localidad>> es una <<grilla>> de referencia (ver {gbp}#grillas[Grillas^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman y Wieczorek 2020)^]), como las grillas cuadradas de 100 m ampliamente utilizadas en Europa, Cuadrículas de Cuarto de Grado (QDS) usadas en Sudáfrica y el sistema Public Land Survey System (PLSS) de Townships andSection (TRS) usado en el centro y oeste de los Estados Unidos. Los Municipios en el sistema PLSS suelen ser cuadrados y de seis millas en cada lado, con 36 secciones de una milla por una milla. Sin embargo, tenga en cuenta que no todos los municipios son cuadrados, ya que algunos fueron ajustadas para acomodarse a los límites administrativos o naturales (ríos, por ejemplo). Los municipios numerados no son descripciones únicas sin un <<meridiano>>, el cual a menudo no se da en la descripción de una localidad. El meridiano entonces debe ser inferido de un mapa de Meridiano Principal usando otra información que este en la descripción de la localidad. Las subdivisiones similares se utilizan en otros países y deben calcularse de manera similar una vez que se haya determinado el tamaño de las celdas (ver <<tabla-radio-geográfico-predeterminado>>). Los mapas análogos (cuadrángulos) se usan a veces y también se pueden calcular como un sistema de grillas. Tenga en cuenta que, a diferencia de las grillas geográficas, las grillas QDS se referencian desde la esquina superior izquierda."
 
 #. type: delimited block =
 #: 0230.en.adoc:69
 msgid "\"E of Bakersfield, T29S R29E Sec. 34 NE ¼\" +"
-msgstr ""
+msgstr "\"E de Bakersfield, T29S R29E Sec. 34 NE ¼\" +"
 
 #. type: delimited block =
 #: 0230.en.adoc:70
 msgid "\"QDS 3218CB\" +"
-msgstr ""
+msgstr "\"QDS 3218CB\" +"
 
 #. type: delimited block =
 #: 0230.en.adoc:71
 msgid "\"TQ2387\" (Ordnance Survey National Grid)"
-msgstr ""
+msgstr "\"TQ2387\" (Ordnance Survey National Grid)"
 
 #. type: Plain text
 #: 0230.en.adoc:76
 #, no-wrap
 msgid "*Step 1 – Determine the coordinates*: Determine as for <<Feature – with Obvious Spatial Extent>>. Use the <<coordinates>> for the <<corrected-center>> of the named grid cell. Usually a grid is made up of <<bounding-box,bounding boxes>>, so determining the corrected center should be easy.\n"
-msgstr ""
+msgstr "*Paso 1 - Determinar las coordenadas*: Determine como para una <<Entidad Geográfica con una Extensión Espacial Obvia>>. Use las <<coordenadas>> para el <<centro-corregido>> de la nombrada grilla de celda. Por lo general, una grilla se compone de <<caja-delimitadora,cajas delimitadoras>>, por lo que determinar el centro corregido debe ser fácil.\n"
 
 #. type: Plain text
 #: 0230.en.adoc:78
 #, no-wrap
 msgid "*Step 2 – Determine the geographic radial*: As for <<Feature – with Obvious Spatial Extent>>. See <<table-default-geographic-radial>> for <<radial,radials>> of regularly shaped Townships, Sections, and subsections.\n"
-msgstr ""
+msgstr "*Paso 2 – Determina el radio geográfico*: Como para una <<Entidad con una Extensión Espacial Obvia>>. Ver <<tabla-radio-geográfico-predeterminado>> para <<radio,radios>> de los Municipios, Secciones y subsecciones.\n"
 
 #. type: Plain text
 #: 0230.en.adoc:80
 #, no-wrap
 msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error#, and [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
-msgstr ""
+msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Fuente de las Coordenadas#, [ui-element]#Formato de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Error de la Medición#, y [ui-element]#Unidades de la Distancia# (ver <<Conceptos de Georreferenciación>>).\n"
 
 #. type: Title ===
 #: 0240.en.adoc:1 appa.en.adoc:150
