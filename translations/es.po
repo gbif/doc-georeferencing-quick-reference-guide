@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-21 11:10\n"
+"PO-Revision-Date: 2021-10-21 12:09\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -2403,43 +2403,43 @@ msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adiciona
 #: 0240.en.adoc:1 appa.en.adoc:150
 #, no-wrap
 msgid "Difficult Localities"
-msgstr ""
+msgstr "Localidades Difíciles"
 
 #. type: Plain text
 #: 0240.en.adoc:4
 msgid "At times, <<locality>> descriptions are fraught with vagueness. This may be due to any number of reasons, but in particular relates to historic collections in areas that at may have had no named <<feature,features>> to reference at the time when the locality was recorded. See the section {gbp}#difficult-localities[Difficult Localities^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
-msgstr ""
+msgstr "A veces, las descripciones de las <<localidad,localidades>> están llenas de imprecisiones. Esto puede deberse a una serie de razones pero en particular se relaciona con las colecciones históricas en áreas en las que no habían <<entidad-geográfica,entidades geográficas>> nombradas para referenciar en el momento en que se registró la localidad. Vea la sección {gbp}#localidades-difíciles[Localidades Difíciles^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman y Wieczorek 2020)^]."
 
 #. type: Plain text
 #: 0240.en.adoc:6
 msgid "A cause of vagueness may be incorrect data entry and it is recommended that checking the original catalogues, ledgers, field notes, specimen labels, etc. be the first step in removing the vagaries of a locality so that it can be <<georeference,georeferenced>> with confidence."
-msgstr ""
+msgstr "Una causa de imprecisión puede ser el ingreso incorrecto de los datos y se recomienda que verificar los catálogos originales, libros de registro, notas de campo, etiquetas de especímenes, etc. sea el primer paso para eliminar las imprecisiones de una localidad para que pueda ser <<georreferencia, georreferenciada>> con confianza."
 
 #. type: Title ====
 #: 0240.en.adoc:7
 #, no-wrap
 msgid "Dubious Locations"
-msgstr ""
+msgstr "Ubicaciones Dudosas"
 
 #. type: Plain text
 #: 0240.en.adoc:10
 msgid "The most important type of vagueness in a locality description is one in which some or all of the locality is explicitly in question."
-msgstr ""
+msgstr "El tipo más importante de imprecisión en la descripción de una localidad es aquella en la que parte o la totalidad de la localidad está explícitamente en duda."
 
 #. type: delimited block =
 #: 0240.en.adoc:15
 msgid "\"possibly Isla Boca Brava\" +"
-msgstr ""
+msgstr "\"posiblemente Isla Boca Brava\" +"
 
 #. type: delimited block =
 #: 0240.en.adoc:16
 msgid "\"presumably central Chile\" +"
-msgstr ""
+msgstr "\"supuestamente Chile central\" +"
 
 #. type: delimited block =
 #: 0240.en.adoc:17
 msgid "\"Bakersfield?\""
-msgstr ""
+msgstr "\"Bakersfield?\""
 
 #. type: Plain text
 #: 0240.en.adoc:20
