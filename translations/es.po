@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-21 12:09\n"
+"PO-Revision-Date: 2021-10-21 13:08\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -2347,7 +2347,7 @@ msgstr "Las coordenadas UTM a veces se truncan a menos de 7 cifras en el <<norte
 #: 0230.en.adoc:58
 #, no-wrap
 msgid "*Step 2 – Determine geographic radial*: If the UTM coordinates have 7 digits in the northing and 6 digits in the easting, the <<geographic-radial>> is 0.707 m (because the coordinates distinguish to the nearest meter and the geographic radial is half the diagonal of the 1 m by 1 m <<grid>> cell). For UTM coordinates with fewer digits of precision see <<table-default-geographic-radial>>. This <<radial>> covers the <<uncertainty>> from the UTM <<coordinate-precision>>. The [ui-element]#Coordinate Precision# in the Calculator for this case is the coordinate precision of the [ui-element]#Input Latitude# and [ui-element]#Longitude#, which depends on how many digits of <<decimal-degrees>> are copied from the converted latitude and longitude (<<table-default-geographic-radial>>).\n"
-msgstr "*Paso 2 – Determinar el radio geográfico*: Si las coordenadas UTM tienen 7 cifras en el norte y 6 cifras en el este, el <<radio-geográfico>> es 0. 07 m (porque las coordenadas distinguen al metro más cercano y el radio geográfico es la mitad de la diagonal de una celda de grilla de 1 m en 1 m). Para las coordenadas UTM con menos cifras de precisión ver <<tabla-radio-geográfico-predeterminado>>. Este <<radio>> cubre la <<incertidumbre>> de la <<precisión-de-las-coordendas>> UTM. La [ui-element]#Precisión de las Coordenadas# en la Calculadora en este caso es la precisión de las coordenadas de la [ui-element]#Latitud# y la [ui-element]#Longitud de entrada#, la cual depende de cuántos cifras de <<grados-decimales>> se copian de la latitud y longitud convertidas (<<tabla-radio-geográfico-predeterminado>>).\n"
+msgstr "*Paso 2 – Determinar el radio geográfico*: Si las coordenadas UTM tienen 7 cifras en el norte y 6 cifras en el este, el <<radio-geográfico>> es 0. 07 m (porque las coordenadas distinguen al metro más cercano y el radio geográfico es la mitad de la diagonal de una celda de grilla de 1 m en 1 m). Para las coordenadas UTM con menos cifras de precisión ver <<tabla-radio-geográfico-predeterminado>>. Este <<radio>> cubre la <<incertidumbre>> de la <<precisión-de-las-coordendas>> UTM. La [ui-element]#Precisión de las Coordenadas# en la Calculadora en este caso es la precisión de las coordenadas de la [ui-element]#Latitud# y la [ui-element]#Longitud de entrada#, la cual depende de cuántos cifras de <<grados-decimales>> se copian de la latitud y longitud convertidas (<<table-default-geographic-radial>>).\n"
 
 #. type: Plain text
 #: 0230.en.adoc:60
@@ -2364,7 +2364,7 @@ msgstr "Coordenadas: Sistema de Grillas"
 #. type: Plain text
 #: 0230.en.adoc:64
 msgid "<<locality,Locality>> is a <<grid>> reference (see {gbp}#grids[Grids^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]), such as the 100 m square grids extensively used in Europe, Quarter Degree Square Grids (QDS) as used in South Africa, and the Public Land Survey System (PLSS) system of Townships andSection (TRS) used in the mid- and western USA. Townships in the PLSS system are usually square and six miles on each side, with 36 one-mile by one-mile sections. Be aware that not all townships are square, however, as some were adjusted to conform to administrative or natural boundaries (rivers, for example). Numbered Townships are not unique descriptions without a <<meridian>>, which often is not given in a locality description. The meridian must then be inferred from a Principal Meridian map using other information in the locality description. Similar subdivisions are used in other countries, and should be calculated in a similar way, once the sizes of the cells have been determined (see <<table-default-geographic-radial>>). Map sheets (quadrangles) are sometimes used and can also be calculated as a grid system. Note that, unlike geographic grids, QDS grids are referenced from the top left corner."
-msgstr "La <<localidad>> es una <<grilla>> de referencia (ver {gbp}#grillas[Grillas^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman y Wieczorek 2020)^]), como las grillas cuadradas de 100 m ampliamente utilizadas en Europa, Cuadrículas de Cuarto de Grado (QDS) usadas en Sudáfrica y el sistema Public Land Survey System (PLSS) de Townships andSection (TRS) usado en el centro y oeste de los Estados Unidos. Los Municipios en el sistema PLSS suelen ser cuadrados y de seis millas en cada lado, con 36 secciones de una milla por una milla. Sin embargo, tenga en cuenta que no todos los municipios son cuadrados, ya que algunos fueron ajustadas para acomodarse a los límites administrativos o naturales (ríos, por ejemplo). Los municipios numerados no son descripciones únicas sin un <<meridiano>>, el cual a menudo no se da en la descripción de una localidad. El meridiano entonces debe ser inferido de un mapa de Meridiano Principal usando otra información que este en la descripción de la localidad. Las subdivisiones similares se utilizan en otros países y deben calcularse de manera similar una vez que se haya determinado el tamaño de las celdas (ver <<tabla-radio-geográfico-predeterminado>>). Los mapas análogos (cuadrángulos) se usan a veces y también se pueden calcular como un sistema de grillas. Tenga en cuenta que, a diferencia de las grillas geográficas, las grillas QDS se referencian desde la esquina superior izquierda."
+msgstr "La <<localidad>> es una <<grilla>> de referencia (ver {gbp}#grillas[Grillas^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman y Wieczorek 2020)^]), como las grillas cuadradas de 100 m ampliamente utilizadas en Europa, Cuadrículas de Cuarto de Grado (QDS) usadas en Sudáfrica y el sistema Public Land Survey System (PLSS) de Townships andSection (TRS) usado en el centro y oeste de los Estados Unidos. Los Municipios en el sistema PLSS suelen ser cuadrados y de seis millas en cada lado, con 36 secciones de una milla por una milla. Sin embargo, tenga en cuenta que no todos los municipios son cuadrados, ya que algunos fueron ajustadas para acomodarse a los límites administrativos o naturales (ríos, por ejemplo). Los municipios numerados no son descripciones únicas sin un <<meridiano>>, el cual a menudo no se da en la descripción de una localidad. El meridiano entonces debe ser inferido de un mapa de Meridiano Principal usando otra información que este en la descripción de la localidad. Las subdivisiones similares se utilizan en otros países y deben calcularse de manera similar una vez que se haya determinado el tamaño de las celdas (ver <<table-default-geographic-radial>>). Los mapas análogos (cuadrángulos) se usan a veces y también se pueden calcular como un sistema de grillas. Tenga en cuenta que, a diferencia de las grillas geográficas, las grillas QDS se referencian desde la esquina superior izquierda."
 
 #. type: delimited block =
 #: 0230.en.adoc:69
@@ -2391,7 +2391,7 @@ msgstr "*Paso 1 - Determinar las coordenadas*: Determine como para una <<Entidad
 #: 0230.en.adoc:78
 #, no-wrap
 msgid "*Step 2 – Determine the geographic radial*: As for <<Feature – with Obvious Spatial Extent>>. See <<table-default-geographic-radial>> for <<radial,radials>> of regularly shaped Townships, Sections, and subsections.\n"
-msgstr "*Paso 2 – Determina el radio geográfico*: Como para una <<Entidad con una Extensión Espacial Obvia>>. Ver <<tabla-radio-geográfico-predeterminado>> para <<radio,radios>> de los Municipios, Secciones y subsecciones.\n"
+msgstr "*Paso 2 – Determina el radio geográfico*: Como para una <<Entidad con una Extensión Espacial Obvia>>. Ver <<table-default-geographic-radial>> para <<radio,radios>> de los Municipios, Secciones y subsecciones.\n"
 
 #. type: Plain text
 #: 0230.en.adoc:80
@@ -2445,215 +2445,215 @@ msgstr "\"Bakersfield?\""
 #: 0240.en.adoc:20
 #, no-wrap
 msgid "*Georeferencing procedure*: If some part of the locality description is in question, but aside from that there is <<location>> information that is not in question, use the unquestioned part of the locality to determine the <<locality-type>> and <<georeference>> it normally following the appropriate method. Document in term:dwc[georeferenceRemarks] what had to be disregarded in order to georeference the locality in question. For example, for a locality “Argentina: Misiones, possibly Puerto Iguazú”, georeference “Misiones”, which is the most specific part of the locality that is not in question.\n"
-msgstr ""
+msgstr "*Proceso de Georreferenciación*: Si alguna parte de la descripción de la localidad está en duda pero aparte de eso hay información de la <<ubicación>> que no lo está, use la parte sin dudas de la localidad para determinar el <<tipo-de-localidad>> y <<georreferencia, georreferencie>> normalmente siguiendo el método apropiado. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación) lo que hubo que ignorar para poder georreferenciar la localidad en duda. Por ejemplo, para una localidad “Argentina: Misiones, posiblemente Puerto Iguazú”, georreferencie “Misiones”, que es la parte más específica que no está en duda de la localidad.\n"
 
 #. type: Plain text
 #: 0240.en.adoc:22
 msgid "If the entire locality is in question, do not georeference it and document in term:dwc[georeferenceRemarks] the reason for not georeferencing (e.g. \"locality in question\")."
-msgstr ""
+msgstr "Si toda la localidad está en duda, no la georreferencie y documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación) la razón por la cual no se georreferenció (p. ej., \"localidad en duda\")."
 
 #. type: Title ====
 #: 0240.en.adoc:23
 #, no-wrap
 msgid "Cannot Be Located"
-msgstr ""
+msgstr "No se Puede Ubicar"
 
 #. type: Plain text
 #: 0240.en.adoc:26
 msgid "The cited <<locality>> cannot be found, and there is no other location information in the record (e.g. no administrative divisions cited). This may be for any number of reasons, including:"
-msgstr ""
+msgstr "La <<localidad>> mencionada no se puede encontrar y no hay otra información sobre la ubicación en el registro (p. ej. no se han mencionado divisiones administrativas). Esto puede deberse a varias razones, incluyendo:"
 
 #. type: Plain text
 #: 0240.en.adoc:28
 msgid "There is no locality information cited."
-msgstr ""
+msgstr "No se menciona información sobre la localidad."
 
 #. type: Plain text
 #: 0240.en.adoc:29
 msgid "The <<location>> fields contain other than location information."
-msgstr ""
+msgstr "Los campos de <<ubicación>> contienen otra información que no es de la ubicación."
 
 #. type: Plain text
 #: 0240.en.adoc:30
 msgid "The <<feature,feature(s)>> cannot be found with available references."
-msgstr ""
+msgstr "La(s) <<entidad-geográfica, entidad(es) geográfica(s)>> no se puede encontrar con las referencias disponibles."
 
 #. type: delimited block =
 #: 0240.en.adoc:35
 msgid "\"locality not recorded\" +"
-msgstr ""
+msgstr "\"localidad sin registrar\" +"
 
 #. type: delimited block =
 #: 0240.en.adoc:36
 msgid "\"Bob Jones\" +"
-msgstr ""
+msgstr "\"Bob Jones\" +"
 
 #. type: delimited block =
 #: 0240.en.adoc:37
 msgid "\"summit\" +"
-msgstr ""
+msgstr "\"cumbre\" +"
 
 #. type: delimited block =
 #: 0240.en.adoc:38
 msgid "\"200 m\""
-msgstr ""
+msgstr "\"200 m\""
 
 #. type: Plain text
 #: 0240.en.adoc:41
 msgid "Do not <<georeference>> these localities. These recommendations apply to all <<locality-type,locality types>>. Document in term:dwc[georeferenceRemarks] the reason for not georeferencing, e.g. \"locality cannot be found with available references\". Fill in the term:dwc[georeferenceSources] so that others do not waste time using the same resources to track down the locality."
-msgstr ""
+msgstr "No <<georreferencia, georreferencie>> estas localidades. Estas recomendaciones aplican para todos los <<tipos-de-localidades, tipos de localidades>>. Documente la razón para no georreferenciar en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación), p. ej. \"la localidad no se puede encontrar con las referencias disponibles\". Llene el term:dwc[georeferenceSources] (Fuente de georreferenciación) para que otros no pierdan el tiempo usando los mismos recursos para localizar la localidad."
 
 #. type: Title ====
 #: 0240.en.adoc:42
 #, no-wrap
 msgid "More than One Matching Feature"
-msgstr ""
+msgstr "Más de una Entidad Geográfica Coincidente"
 
 #. type: Plain text
 #: 0240.en.adoc:45
 msgid "At times the <<locality>> cannot be distinguished from among multiple possible candidates because the geographical <<feature>> in the locality description has multiple matches."
-msgstr ""
+msgstr "A veces la <<localidad>> no se puede distinguir entre varios posibles candidatos porque la <<entidad-geográfica>> en la descripción de la localidad tiene varias coincidencias."
 
 #. type: Title =====
 #: 0240.en.adoc:46
 #, no-wrap
 msgid "Multiple Related Nearby Features"
-msgstr ""
+msgstr "Múltiples Entidades Geográficas Cercanas Relacionadas"
 
 #. type: delimited block =
 #: 0240.en.adoc:52
 msgid "\"Nahuel Huapi\" (could refer to a national park or a lake within it) +"
-msgstr ""
+msgstr "\"Nahuel Huapi\" (podría referirse a el parque nacional o a el lago dentro de el) +"
 
 #. type: delimited block =
 #: 0240.en.adoc:53
 msgid "\"Battle Mountain\" (could refer to a mountain or a nearby town) +"
-msgstr ""
+msgstr "\"Batlle Mountain\" (podría referirse a una montaña o a una ciudad cercana) +"
 
 #. type: delimited block =
 #: 0240.en.adoc:54
 msgid "\"San Isidro\""
-msgstr ""
+msgstr "\"San Isidro\""
 
 #. type: Plain text
 #: 0240.en.adoc:59
 msgid "If there are multiple distinct nearby places with the same name and no further information to distinguish between the possibilities, such as \"Battle Mountain\" and the nearby town with the same name, treat the combination of them as the <<feature>> (<<img-nearby-features>>) and follow the procedure for the appropriate <<locality-type>>. Make note of the multiple possibilities and the procedure used in term:dwc[georeferenceRemarks]."
-msgstr ""
+msgstr "Si hay varios lugares cercanos distintos con el mismo nombre y no hay más información para poder distinguir entre las posibilidades, como \"Battle Mountain\" y la ciudad cercana con el mismo nombre, trate la combinación de ellos como la <<entidad-geográfica>> (<<img-nearby-features>>) y siga el proceso para el <<tipo-de-localidad>> correspondiente. Tome nota de las múltiples posibilidades y del procedimiento usado en el term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación)."
 
 #. type: Block title
 #: 0240.en.adoc:61
 #, no-wrap
 msgid "The boundaries for two distinct nearby features with the same name, with center *c*, corrected center *a*, and geographic radial *b* covering the combination of both possible interpretations of the locality."
-msgstr ""
+msgstr "Los límites para dos entidades geográficas cercanas distintas con el mismo nombre, con el centro *c*, el centro corregido *a* y el radio geográfico *b* que cubren la combinación de ambas interpretaciones posibles de la localidad."
 
 #. type: Target for macro image
 #: 0240.en.adoc:62
 #, no-wrap
 msgid "img/web/nearby-features.png"
-msgstr ""
+msgstr "img/web/nearby-features.png"
 
 #. type: Title =====
 #: 0240.en.adoc:64
 #, no-wrap
 msgid "Multiple Unrelated Features"
-msgstr ""
+msgstr "Múltiples Características no Relacionadas"
 
 #. type: delimited block =
 #: 0240.en.adoc:70
 msgid "\"Laguna Blanca\" (could refer to distinct lagoons or municipalities in at least five different countries) +"
-msgstr ""
+msgstr "\"Laguna Blanca\" (podría referirse a lagunas o municipios distintos en al menos cinco países diferentes) +"
 
 #. type: delimited block =
 #: 0240.en.adoc:71
 msgid "\"Washington Street\" (could refer to multiple streets in different places)"
-msgstr ""
+msgstr "\"Washington Street\" (podría referirse a múltiples calles en diferentes lugares)"
 
 #. type: Plain text
 #: 0240.en.adoc:74
 msgid "Do not <<georeference>>. Document in term:dwc[georeferenceRemarks] the reason for not georeferencing, e.g. \"there are multiple possible unrelated features matching the one in the locality description\"."
-msgstr ""
+msgstr "No <<gerreferencia, georreferencie>>. Documente en term:dwc[georeferenceRemarks](Comentarios de la georreferenciación) la razón por la que no se georreferencio, p. ej. \"hay múltiples entidades geográficas no relacionadas que coinciden con la de la descripción de la localidad\"."
 
 #. type: Title ====
 #: 0240.en.adoc:75
 #, no-wrap
 msgid "Demonstrably Inconsistent"
-msgstr ""
+msgstr "Demostrablemente Inconsistente"
 
 #. type: Plain text
 #: 0240.en.adoc:78
 msgid "The <<locality>> description contains irreconcilable inconsistencies – assertions that can not all be simultaneously true. Do not <<georeference>> these localities. Document in term:dwc[georeferenceRemarks] the reason for not georeferencing, e.g. \"locality contains irreconcilable inconsistencies\"."
-msgstr ""
+msgstr "La descripción de la <<localidad>> contiene inconsistencias irreconciliables, afirmaciones que no pueden ser simultáneamente verdaderas. No <<georreferencia, georreferencie>> estas localidades. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación) la razón para no georreferenciar, p. ej. \"la localidad contiene inconsistencias irreconciliables\"."
 
 #. type: Plain text
 #: 0240.en.adoc:80
 msgid "A common source of inconsistency occurs when the locality description does not match the geopolitical subdivision of which it is supposed to be a part (e.g. \"Missoula County, Idaho\"). <<elevation,Elevation>> is another possible source of inconsistency, especially since elevation data are notoriously inaccurate (see {gbp}#elements-elevation[Elevation^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). It is difficult to know which part of the locality is the one in <<error>> and a risk to judge that one part of the description should take precedence over another."
-msgstr ""
+msgstr "Una fuente común de inconsistencias ocurre cuando la descripción de la localidad no coincide con la subdivisión geopolítica de la que se supone que es parte (p. ej.\"Condado de Missoula, Idaho\"). La <<elevación>> es otra posible fuente de inconsistencias, especialmente dado que los datos de elevación son notoriamente inexactos (ver {gbp}#elements-elevación^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]). Es difícil saber qué parte de la localidad es la que contiene el <<error>> y es un riesgo juzgar que una parte de la descripción debe tener prioridad sobre otra."
 
 #. type: delimited block =
 #: 0240.en.adoc:85
 msgid "\"Sonoma County side of the Gualala River, Mendocino County\" (where the river runs between the counties mentioned) +"
-msgstr ""
+msgstr "\"Condado de Sonoma al lado del Río Gualalala, Condado de Mendocino\" (donde el río pasa entre los condados mencionados) +"
 
 #. type: delimited block =
 #: 0240.en.adoc:86
 msgid "\"10 mi W of Bakersfield, 6000 ft\" (There is no place anywhere near 10 mi W of Bakersfield at an elevation of 6000 ft) +"
-msgstr ""
+msgstr "\"10 mi O de Bakersfield, 6000 pies\" (No hay ningún lugar cerca de 10 mi W de Bakersfield a una elevación de 6000 pies) +"
 
 #. type: delimited block =
 #: 0240.en.adoc:87
 msgid "\"5 mi N of Delano, Kern Co.\" (5 mi N would put the locality in Tulare Co.)"
-msgstr ""
+msgstr "\"5 mi N de Delano, Kern Co.\" (5 mi N ubica la localidad de Tulare Co.)"
 
 #. type: Plain text
 #: 0240.en.adoc:90
 msgid "Do not <<georeference>>. Rather than determine <<coordinates>> for such localities, annotate the locality in term:dwc[georeferenceRemarks] with the nature of the inconsistency (e.g. \"Missoula County not in Idaho\") and refer the locality to the source institution for reconciliation."
-msgstr ""
+msgstr "No <<georreferencia, georreferencie>>. En lugar de determinar las <<coordenadas>> para tales localidades, anote la localidad en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación) con la naturaleza de la inconsistencia (p. ej. \"Condado de Missoula no queda en Idaho\") y remita la localidad a la institución fuente para una reconciliación."
 
 #. type: Title ====
 #: 0240.en.adoc:91
 #, no-wrap
 msgid "Cultivated or Captive"
-msgstr ""
+msgstr "Cultivado o Capturado"
 
 #. type: Plain text
 #: 0240.en.adoc:94
 msgid "The <<locality>> is recorded in association with a captive animal, a cultivated plant or some other non-natural occurrence. The locality cited is often that of a zoo, aquarium, botanical garden, etc. (see {gbp}#dealing-with-non-natural-occurrences[Dealing with Non-natural Occurrences^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
-msgstr ""
+msgstr "La <<localidad>> se registra en asociación con un animal cautivo, una planta cultivada o algún otro registro no natural. La localidad citada es a menudo la de un zoológico, acuario, jardín botánico, etc. (vea {gbp}#lidiando-con-registros-no-naturales[Lidiando con Registros no Naturales^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman y Wieczorek 2020)^]."
 
 #. type: Plain text
 #: 0240.en.adoc:96
 msgid "The fact that an organism is recorded in a place out of its known or assumed natural distribution range does not constitute a problem from the point of view of locating that organism. Therefore, the determination of a georeference should not have any issues aside from those exclusively derived from the locality description itself (as seen for other cases above). This kind of information should instead be captured in the Darwin Core term term:dwc[degreeOfEstablishment]."
-msgstr ""
+msgstr "El hecho de que un organismo se registre en un lugar fuera de su rango de distribución natural conocido o asumido, no constituye un problema desde el punto de vista de ubicar ese organismo. Por lo tanto, la determinación de una georreferencia no debería tener ningún problema aparte de los derivados exclusivamente de la descripción de la localidad en sí misma (como se ve en otros casos anteriores). Este tipo de información debería ser capturada en el término de Darwin Core term:dwc[degreeOfEstablishment] (Grado de establecimiento)."
 
 #. type: Plain text
 #: 0240.en.adoc:98
 msgid "If you are georeferencing based on location information only, and not together with the associated occurrence records, you may not have an easy way to capture other kinds of information (e.g. provenance, dates, degree of establishment, etc.). In these cases, it is recommended to amend the original occurrence records that contain the given locality to avoid any loss of information."
-msgstr ""
+msgstr "Si está georreferenciando basándose únicamente en la información de la ubicación y no junto con los registros de presencia asociados, es posible que no tenga una manera fácil de capturar otro tipo de información (p. ej. procedencia, fechas, grado de establecimiento, etc.). En estos casos, se recomienda modificar los registros de presencia originales que contengan la localidad dada para evitar cualquier pérdida de información."
 
 #. type: delimited block =
 #: 0240.en.adoc:103
 msgid "\"lab born, University of Oregon\" +"
-msgstr ""
+msgstr "\"nacido en laboratorio, Universidad de Oregon\" +"
 
 #. type: delimited block =
 #: 0240.en.adoc:104
 msgid "\"bait shop\" +"
-msgstr ""
+msgstr "\"tienda de cebo\" +"
 
 #. type: delimited block =
 #: 0240.en.adoc:105
 msgid "\"Cultivated in Botanic Gardens from seed obtained from Bourke, NSW.\" +"
-msgstr ""
+msgstr "\"Cultivado en jardines botánicos a partir de semillas obtenidas de Bourke, NSW.\" +"
 
 #. type: delimited block =
 #: 0240.en.adoc:106
 msgid "\"San Diego Wild Animal Park\""
-msgstr ""
+msgstr "\"San Diego Wild Animal Park\""
 
 #. type: Plain text
 #: 0240.en.adoc:108
 msgid "<<georeference,Georeference>> the locality normally based on the <<locality-type>> and <<feature>>. Retain the <<location>> (e.g. zoo) along with its <<georeference>>, as for other localities in this Guide, but be sure to record the nature of its provenance (cultivated, captive, washed ashore, etc.) in the <<Darwin-Core>> term term:dwc[degreeOfEstablishment]."
-msgstr ""
+msgstr "<<georreferencia Georreferencie>> con normalidad basado en el <<tipo-de-localidad>> y de <<entidad-geográfica>>. Retenga la <<ubicación>> (p. ej. zoológico) junto con la <<georreferencia>>, como para otras localidades de esta Guía, pero asegúrese de registrar la naturaleza de su procedencia (cultivado, cautivo, arrastrado hasta la playa, etc.) en el término del <<Darwin-Core>> term:dwc[degreeOfEstablishment] (Grado de establecimiento)."
 
 #. type: Title ==
 #: glossary.en.adoc:2
