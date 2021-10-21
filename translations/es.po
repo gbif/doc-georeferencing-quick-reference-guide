@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-21 01:52\n"
+"PO-Revision-Date: 2021-10-21 10:01\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -2305,7 +2305,7 @@ msgstr "Coordenadas: Universal Transversa de Mercator (UTM)"
 #. type: Plain text
 #: 0230.en.adoc:38
 msgid "The <<locality>> consists of a point represented by <<coordinates,coordinate>> information in the form of <<UTM,Universal Transverse Mercator (UTM)>> or a related <<coordinate-system>>. For UTM or equivalent coordinates, a Zone should ALWAYS be included to make sure that the <<longitude>> is not ambiguous. Zones are often not reported where a region (e.g. Tasmania) falls completely within one UTM zone. Be aware that UTM zones are valid only between 84°N and 80°S. For details on dealing with UTM Coordinates see {gbp}#universal-transverse-mercator-utm-coordinates[Universal Transverse Mercator (UTM) Coordinates^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
-msgstr ""
+msgstr "La <<localidad>> consiste en un punto representado por información de <<coordenadas,coordenada>> en forma de <<UTM, Universal Transversa de Mercator (UTM)>> o un <<sistema-de-coordenadas>> relacionado. Para las coordenadas UTM o equivalentes, SIEMPRE se debe incluir una zona para asegurarse de que la <<longitud>> no es ambigua. A menudo no se reportan las zonas donde una región (p. ej. Tasmania) cae completamente dentro de una zona UTM. Tenga en cuenta que las zonas UTM son válidas solo entre 84°N y 80°S. Para más detalles sobre cómo lidiar con las Coordenadas UTM vea {gbp}#coordenadas-universal-transversa-de-mercator[Coordenadas Universal Transversa de Mercator (UTM)^] en {gbp}[Buenas Prácticas de Georreferenciación(Chapman y Wieczorek 2020)^]."
 
 #. type: Plain text
 #: 0230.en.adoc:40
