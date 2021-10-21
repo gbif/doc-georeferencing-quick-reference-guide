@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-21 20:55\n"
+"PO-Revision-Date: 2021-10-21 22:11\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -2840,7 +2840,7 @@ msgstr "[[dirección]]dirección"
 #. type: Plain text
 #: glossary.en.adoc:40
 msgid "_see_ <<heading>>."
-msgstr "_ver_<<orientación-cardinal>>."
+msgstr "_ver_ <<orientación-cardinal>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:41
@@ -2934,7 +2934,7 @@ msgstr "Un objeto de observación, medida o referencia que puede ser representad
 #: glossary.en.adoc:57
 #, no-wrap
 msgid "[[gazetteer]]gazetteer"
-msgstr "[[gazetteer]]gacetero"
+msgstr "[[gacetero]]gacetero"
 
 #. type: Plain text
 #: glossary.en.adoc:58
@@ -2967,7 +2967,7 @@ msgstr "Representación en <<coordenadas-geográficas>> del <<límite>> de una p
 #: glossary.en.adoc:63
 #, no-wrap
 msgid "[[geographic-center]]geographic center"
-msgstr "[[geographic-center]]centro geográfico"
+msgstr "[[centro-geográfico]]centro geográfico"
 
 #. type: Plain text
 #: glossary.en.adoc:64
@@ -3056,7 +3056,7 @@ msgstr "Sistema de Posicionamiento Global. Un sistema basado en satélites utili
 #: glossary.en.adoc:80
 #, no-wrap
 msgid "[[GPS-receiver]]GPS (receiver)"
-msgstr "[[GPS-receiver]]GPS (receptor)"
+msgstr "[[GPS-receptor]]GPS (receptor)"
 
 #. type: Plain text
 #: glossary.en.adoc:81
@@ -3177,7 +3177,7 @@ msgstr "Una línea en la superficie de la tierra donde todas las <<ubicación,ub
 #: glossary.en.adoc:102
 #, no-wrap
 msgid "[[northing]]northing"
-msgstr "[[northing]]norte"
+msgstr "[[norte]]norte"
 
 #. type: Plain text
 #: glossary.en.adoc:103
@@ -3242,7 +3242,7 @@ msgstr "Antónimo: imprecisión. Comparar con <<exactitud>>, <<error>>, {gbp}#se
 #: glossary.en.adoc:119
 #, no-wrap
 msgid "[[prime-meridian]]prime meridian"
-msgstr "[[prime-meridian]]meridiano cero"
+msgstr "[[meridiano-cero]]meridiano cero"
 
 #. type: Plain text
 #: glossary.en.adoc:120
