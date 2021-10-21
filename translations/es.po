@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-21 00:57\n"
+"PO-Revision-Date: 2021-10-21 01:52\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -2277,30 +2277,30 @@ msgstr "\"-36.524276; -114.164055\" (DD usando el signo menos para indicar hemis
 #: 0230.en.adoc:28
 #, no-wrap
 msgid "*Locality Type:* [ui-element]#Coordinates only#\n"
-msgstr ""
+msgstr "*Tipo de localidad:* [ui-element]#Solo Coordenadas#\n"
 
 #. type: Plain text
 #: 0230.en.adoc:30
 #, no-wrap
 msgid "*Step 1 – Enter the coordinates*: Enter the <<coordinates>> in the format they were captured from the <<GPS>> or from the verbatim <<locality>> (<<decimal-degrees>>, degrees decimal minutes, or <<DMS,degrees minutes seconds>>) with all of the given digits of <<precision>>.\n"
-msgstr ""
+msgstr "*Paso 1 – Introducir las coordenadas*: Introduzca las <<coordenadas>> en el formato que fueron capturadas desde el <<GPS>> o desde la <<localidad>> original (<<grados-decimales>>, grados minutos decimales, o <<GMS,grados minutos segundos>>) con todas las cifras de <<precisión>> dados.\n"
 
 #. type: Plain text
 #: 0230.en.adoc:32
 msgid "The http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator] calculates and preserves seven digits of precision in decimal degrees so that any transformation between coordinate formats is reversible without introducing rounding errors."
-msgstr ""
+msgstr "La http://georeferencing.org/georefcalculator/gc.html[Calculadora de Gerreferenciación] calcula y preserva siete cifras de precisión en grados decimales para que cualquier transformación entre formatos de coordenadas sea reversible sin introducir errores de redondeo."
 
 #. type: Plain text
 #: 0230.en.adoc:34
 #, no-wrap
 msgid "*Step 2 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
-msgstr ""
+msgstr "*Paso 2 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Gerreferenciación]*: [ui-element]#Fuente de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Precisión del GPS#, [ui-element]#Unidades de la Distancia# (ver <<Conceptos de Georreferenciación>>).\n"
 
 #. type: Title ====
 #: 0230.en.adoc:35
 #, no-wrap
 msgid "Coordinates – Universal Transverse Mercator (UTM)"
-msgstr ""
+msgstr "Coordenadas: Universal Transversa de Mercator (UTM)"
 
 #. type: Plain text
 #: 0230.en.adoc:38
