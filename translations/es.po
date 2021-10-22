@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-22 15:03\n"
+"PO-Revision-Date: 2021-10-22 16:21\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -404,7 +404,7 @@ msgstr "Uno de los objetivos de <<georreferencia,georreferenciar>> siguiendo las
 #: 0100.en.adoc:93
 #, no-wrap
 msgid "Locality Type"
-msgstr "Tipo de localidad"
+msgstr "Tipo de Localidad"
 
 #. type: Plain text
 #: 0100.en.adoc:96
@@ -429,7 +429,7 @@ msgstr "Sólo distancia"
 #. type: Plain text
 #: 0100.en.adoc:101
 msgid "Distance along a path"
-msgstr "Distancia por ruta"
+msgstr "Distancia a lo largo de una ruta"
 
 #. type: Plain text
 #: 0100.en.adoc:102
@@ -455,13 +455,13 @@ msgstr "Centro Corregido"
 #. type: Plain text
 #: 0100.en.adoc:110
 msgid "The <<corrected-center,corrected center>> is the point within a <<location>>, or on its <<boundary>>, that minimizes the <<geographic-radial,geographic radial>> (see <<Radial of Feature>>). This point is obtained by finding the <<smallest-enclosing-circle,smallest enclosing circle>> that contains the entire <<feature>>, and then taking the center of that circle (<<img-corrected-center>>A). If that center does not fall on or inside the boundaries of the feature, find the smallest enclosing circle that contains the entire feature, *but* has its center on the boundary of the feature (<<img-corrected-center>>B). Note that in the corrected case, the new circle, and hence the <<radial>>, will always be larger than the uncorrected one. In the http://georeferencing.org/georefcalculator/gc.html[Calculator^], the <<coordinates>> corresponding to the corrected center are labelled as [ui-element]#Input Latitude# and [ui-element]#Input Longitude#. See <<Appendix B: Methods to Find the Corrected Center and Geographic Radial>> for techniques to determine the corrected center."
-msgstr "El <<centro-corregido,centro corregido>> es el punto dentro de un <<ubicación>>, o en su <<límite>>, que minimiza el <<radio geográfico>> (ver <<Radio de la Entidad Geográfica>>). Este punto se obtiene al encontrar el <<círculo mínimo>> que contenga todo la <<entidad geográfica>> y luego tomando el centro de ese círculo (<<img-corrected-center>>A). Si el centro no cae sobre o dentro de los límites de la entidad geográfica, es necesario encontrar el círculo mínimo que contenga toda la entidad geográfica *pero* que tenga su centro en el límite de la entidad (<<img-corrected-center>>B). Tenga en cuenta que en el caso corregido, el nuevo círculo y por lo tanto el <<radio>>, siempre será más grande que el círculo sin corregir. En la http://georeferencing.org/georefcalculator/gc.html[Calculadora^], las <<coordenadas>> correspondientes al centro corregido están etiquetadas como [ui-element]#Latitud de entrada# y [ui-element]#Longitud de entrada#. Vea <<Apéndice B: Métodos para Encontrar el Centro Corregido y el Radio Geográfico>> para conocer las técnicas para determinar el centro corregido."
+msgstr "El <<centro-corregido,centro corregido>> es el punto dentro de una <<ubicación>>, o en su <<límite>>, que minimiza el <<radio-geográfico, radio geográfico>> (ver <<Radio de la Entidad Geográfica,Radio de la Entidad Geográfica>>). Este punto se obtiene encontrando el <<círculo-mínimo,círculo mínimo>> que contiene todo la <<entidad geográfica>> y luego tomando el centro de ese círculo (<<img-corrected-center>>A). Si el centro no cae sobre o dentro de los límites de la entidad geográfica, es necesario encontrar el círculo mínimo que contenga toda la entidad geográfica *pero* que tenga su centro en el límite de la entidad (<<img-corrected-center>>B). Tenga en cuenta que en el caso corregido, el nuevo círculo y por lo tanto el <<radio>>, siempre será más grande que el círculo sin corregir. En la http://georeferencing.org/georefcalculator/gc.html[Calculadora^], las <<coordenadas>> correspondientes al centro corregido están etiquetadas como [ui-element]#Latitud de entrada# y [ui-element]#Longitud de entrada#. Vea <<Apéndice B: Métodos para Encontrar el Centro Corregido y el Radio Geográfico>> para conocer las técnicas para determinar el centro corregido."
 
 #. type: Block title
 #: 0100.en.adoc:113
 #, no-wrap
 msgid "A: The center *a* of the smallest enclosing circle of a feature (polygon highlighted in light grey). Note that the center does not fall within the boundary of the feature. B: The corrected center *b*, which is on the boundary of the feature, and the corresponding geographic radial *c*."
-msgstr "R: El centro *a* del círculo mínimo de una entidad geográfica (polígono resaltado en gris claro). Tenga en cuenta que el centro no está dentro del límite de la entidad. B: El centro corregido *b* se encuentra dentro del límite de la entidad y el radial geográfico correspondiente *c*."
+msgstr "R: El centro *a* del círculo mínimo de una entidad geográfica (polígono resaltado en gris claro). Observe que el centro no está dentro del límite de la entidad. B: El centro corregido *b* que se encuentra dentro del límite de la entidad y el radio geográfico correspondiente *c*."
 
 #. type: Target for macro image
 #: 0100.en.adoc:114
@@ -473,17 +473,17 @@ msgstr "img/web/corrected-center.png"
 #: 0100.en.adoc:116
 #, no-wrap
 msgid "Radial of Feature"
-msgstr "Radio de una Entidad Geográfica"
+msgstr "Radio de la Entidad Geográfica"
 
 #. type: Plain text
 #: 0100.en.adoc:119
 msgid "A <<feature>> is a place in the <<locality>> description that has an <<extent>> and can be delimited by a <<boundary>>. The <<geographic-radial,geographic radial>> of the feature (shown as [ui-element]#Radial of Feature# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]) is the distance from the <<corrected-center,corrected center>> of the feature to the furthest point on the <<geographic-boundary,geographic boundary>> of that feature (see <<img-corrected-center>> and {gbp}#extent-of-a-location[Extent of a Location^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). Note that the radial was called \"extent\" in earlier documents and versions of the Calculator. See <<Appendix B: Methods to Find the Corrected Center and Geographic Radial>> for techniques to determine the geographic radial."
-msgstr "Una <<entidad geográfica>> es un lugar en la descripción de una <<localidad>> que tiene una <<extensión-geográfica, extensión>> y puede ser delimitada por un <<límite>>. El <<radio geográfico>> de la entidad (se encuentra como [ui-element]#Radio de la Entidad# en http://georeferencing.org/georefcalculator/gc.html[la Calculadora^])) es la distancia desde el <<centro corregido>> de la entidad hasta el punto más lejano en el <<límite geográfico>> de esa entidad (ver <<img-corrected-center>> y {gbp}#extensión-de-una-ubicación[Extensión de una Ubicación^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]). Tenga en cuenta que en documentos anteriores y versiones anteriores de la Calculadora el radio se llamaba \"extensión\". Vea <<Apéndice B: Métodos para Encontrar el Centro Corregido y el Radio Geográfico>> para conocer las técnicas para determinar el centro corregido."
+msgstr "Una <<entidad geográfica>> es un lugar en la descripción de una <<localidad>> que tiene una <<extensión-geográfica, extensión>> y puede ser delimitada por un <<límite>>. El <<radio geográfico>> de la entidad (mostrado como [ui-element]#Radio de la Entidad# en http://georeferencing.org/georefcalculator/gc.html[la Calculadora^])) es la distancia desde el <<centro corregido>> de la entidad hasta el punto más lejano en el <<límite geográfico>> de esa entidad (ver <<img-corrected-center>> y {gbp}#extensión-de-una-ubicación[Extensión de una Ubicación^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]). Tenga en cuenta que en documentos anteriores y versiones anteriores de la Calculadora el radio se llamaba \"extensión\". Vea <<Apéndice B: Métodos para Encontrar el Centro Corregido y el Radio Geográfico>> para conocer las técnicas para determinar el centro corregido."
 
 #. type: Plain text
 #: 0100.en.adoc:121
 msgid "The final <<georeference>> will have a geographic radial distinct from the geographic radial of any of the features in the <<locality>> description (because it will also encompass all sources of <<uncertainty>>), and once the calculation is performed, this will be displayed in the output from the Calculator in the [ui-element]#Uncertainty# field."
-msgstr "La <<georreferencia>> final tendrá un radio geográfico diferente del radio geográfico de cualquiera de las entidades presentes en la descripción de la <<localidad>> (pues también abarcará todas las fuentes de <<incertidumbre>>), una vez realizado el cálculo, este se mostrará en el resultado de la Calculadora en el campo [ui-element]#Incertidumbre."
+msgstr "La <<georreferencia>> final tendrá un radio geográfico diferente del radio geográfico de cualquiera de las entidades presentes en la descripción de la <<localidad>> (porque también abarcará todas las fuentes de <<incertidumbre>>), una vez realizado el cálculo, este se mostrará en el resultado de la Calculadora en el campo [ui-element]#Incertidumbre#."
 
 #. type: Title ====
 #: 0100.en.adoc:123
@@ -494,12 +494,12 @@ msgstr "Latitud"
 #. type: Plain text
 #: 0100.en.adoc:126
 msgid "Labelled as [ui-element]#Input Latitude# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]. The <<geographic-coordinates,geographic coordinate>> north or south of the equator (where <<latitude>> is 0) that represents the starting point for a <<georeference>> calculation and depends on the <<locality-type,locality type>>."
-msgstr "Etiquetada como [ui-element]#Latitud de Entrada# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^]. La <<coordenadas geográficas, coordenada geográfica>> al norte o sur del ecuador (donde la <<latitud>> es 0) representa el punto de partida para el cálculo de una <<georreferencia>> y depende del <<tipo de localidad>>."
+msgstr "Etiquetada como [ui-element]#Input Latitude# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^]. Es la <<coordenadas-geográficas, coordenada geográfica>> al norte o sur del ecuador (donde la <<latitud>> es 0) que representa el punto de partida para el cálculo de una <<georreferencia>> y depende del <<tipo de localidad>>."
 
 #. type: Plain text
 #: 0100.en.adoc:128
 msgid "Latitudes in <<decimal-degrees,decimal degrees>> north of the equator are positive by convention, while latitudes to the south are negative. The Calculator supports three degree-based geographic coordinate formats for latitude and <<longitude>>: <<decimal-degrees>> (e.g. −41.0570673), degrees decimal minutes (e.g. 41° 3.424\") and <<DMS,degrees minutes and seconds>> (e.g. 41° 3' 25.44\" S)."
-msgstr "Por convención, las latitudes en <<grados decimales>> al norte del ecuador son positivas mientras que las latitudes hacia el sur son negativas. La Calculadora admite tres formatos de coordenadas geográficas basados en grados para la latitud y la <<longitud>>: <<grados decimales>> (p. ej., –41.0570673), grados minutos decimales (p. ej., 41° 3.424\") y <<GMS,grados, minutos, y segundos>> (p. ej., 41° 3' 25.44\" S)."
+msgstr "Por convención, las latitudes en <<grados decimales>> al norte del ecuador son positivas mientras que las latitudes hacia el sur son negativas. La Calculadora admite tres formatos de coordenadas geográficas basadas en grados para la latitud y la <<longitud>>: <<grados decimales>> (p. ej., –41.0570673), grados minutos decimales (p. ej., 41° 3.424\") y <<GMS,grados, minutos, y segundos>> (p. ej., 41° 3' 25.44\" S)."
 
 #. type: Title ====
 #: 0100.en.adoc:130
@@ -510,75 +510,75 @@ msgstr "Longitud"
 #. type: Plain text
 #: 0100.en.adoc:133
 msgid "Labelled as [ui-element]#Input Longitude# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]. The <<geographic-coordinates,geographic coordinate>> east or west of the <<prime-meridian,prime meridian>> (an arc between the north and south poles where <<longitude>> is 0) that represents the starting point for a <<georeference>> calculation and depends on the <<locality-type>>."
-msgstr "Etiquetada como [ui-element]#Input Longitude# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^]. La <<coordenadas-geográficas, coordenada geográfica>> este o oeste del <<meridiano cero>> (un arco entre los polos norte y sur donde la <<longitud>> es 0) representa el punto de partida para el cálculo de una <<georreferencia>> y depende del <<tipo de localidad>>."
+msgstr "Etiquetada como [ui-element]#Longitud de Entrada# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^]. Es la <<coordenadas-geográficas, coordenada geográfica>> al este o oeste del <<meridiano cero>> (un arco entre los polos norte y sur donde la <<longitud>> es 0) que representa el punto de partida para el cálculo de una <<georreferencia>> y depende del <<tipo de localidad>>."
 
 #. type: Plain text
 #: 0100.en.adoc:135
 msgid "Longitudes in <<decimal-degrees,decimal degrees>> east of the prime meridian are positive by convention, while longitudes to the west are negative. The Calculator supports three degree-based geographic coordinate formats for <<latitude>> and longitude: <<decimal-degrees,decimal degrees>> (−71.5246934), degrees decimal minutes (71° 31.482\") and <<DMS,degrees minutes and seconds>> (71° 31' 28.90\" W)."
-msgstr "Por convención, las longitudes en <<grados decimales>> al este del meridiano cero son positivas mientras que las longitudes al oeste son negativas. La Calculadora admite tres formatos de coordenadas geográficas basados en grados para la <<latitud>> y la longitud: <<grados decimales>> (p. ej., −71.5246934), grados minutos decimales (p. ej., 71° 31.482\") y <<GMS,grados, minutos, y segundos>> (p. ej., 71° 31' 28.90\" W)."
+msgstr "Por convención, las longitudes en <<grados decimales>> al este del meridiano cero son positivas mientras que las longitudes al oeste son negativas. La Calculadora admite tres formatos de coordenadas geográficas basadas en grados para la <<latitud>> y la longitud: <<grados decimales>> (p. ej., −71.5246934), grados minutos decimales (p. ej., 71° 31.482\") y <<GMS,grados, minutos, y segundos>> (p. ej., 71° 31' 28.90\" W)."
 
 #. type: Title ====
 #: 0100.en.adoc:136
 #, no-wrap
 msgid "Coordinate Source"
-msgstr "Fuente de la coordenada"
+msgstr "Fuente de las coordenadas"
 
 #. type: Plain text
 #: 0100.en.adoc:139
 msgid "The [ui-element]#Coordinate Source# is the type of resource (map type, <<GPS>>, <<gazetteer>>, <<locality>> description) from which the starting [ui-element]#Input Latitude# and [ui-element]#Longitude# were derived."
-msgstr "La [ui-element]#Fuente de las Coordenadas# es la clase de recurso (tipo de mapa, <<GPS>>, <<gacetero> >, descripción de la <<localidad>>) del cual se derivaron la [ui-element]#Latitud# and [ui-element]#Longitud# de entrada iniciales."
+msgstr "La [ui-element]#Fuente de las Coordenadas# es el tipo de recurso (tipo de mapa, <<GPS>>, <<gacetero> >, descripción de la <<localidad>>) del cual se derivaron la [ui-element]#Latitud# and [ui-element]#Longitud# de entrada iniciales."
 
 #. type: Plain text
 #: 0100.en.adoc:141
 msgid "More often than not, the original <<coordinates>> are used to find the general vicinity of the <<location>> on a map, after which the process of determining the <<corrected-center,corrected center>> provides the new coordinates. The Coordinate Source to use in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] in this case is the map from which the corrected center was determined, not the original source used to determine the general vicinity on the map. For example, suppose the original coordinates came from a gazetteer, but the <<boundary>> and corrected center of the <<feature>> were determined from Google Maps, the Coordinate Source would be \"Google Earth/Maps 2008\", not \"gazetteer\"."
-msgstr "Comúnmente se usan las <<coordenadas>> originales para encontrar las inmediaciones de la <<ubicación>> en un mapa, posteriormente, la determinación del <<centro corregido>> produce las nuevas coordenadas. En este caso, la fuente de coordenadas a usar en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] es el mapa desde el cual se determinó el centro corregido, no la fuente original usada para determinar las inmediaciones en el mapa. Por ejemplo, supongamos que las coordenadas originales procedían de un gacetero, pero el <<límite>> y el centro corregido de la <<entidad geográfica>> se determinaron a partir de Google Maps, la Fuente de la Coordenada sería \"Google Earth/Maps 2008\", no \"gacetero\"."
+msgstr "Comúnmente se usan las <<coordenadas>> originales para encontrar las inmediaciones de la <<ubicación>> en un mapa, posteriormente, la determinación del <<centro corregido>> produce las nuevas coordenadas. En este caso, la fuente de coordenadas a usar en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] es el mapa desde el cual se determinó el centro corregido, no la fuente original usada para determinar las inmediaciones en el mapa. Por ejemplo, supongamos que las coordenadas originales procedían de un gacetero, pero el <<límite>> y el centro corregido de la <<entidad geográfica>> fueron determinados a partir de Google Maps, la Fuente de la Coordenada sería \"Google Earth/Maps 2008\", no \"gacetero\"."
 
 #. type: Plain text
 #: 0100.en.adoc:143
 msgid "This term is related to, but *NOT* the same as, the <<Darwin-Core>> term term:dwc[georeferenceSources], which requires the specific resources used rather than their type. Note that the <<uncertainty,uncertainties>> from the two sources _gazetteer_ and _locality description_ can not be anticipated universally, and therefore do not contribute to the global uncertainty in the calculations. If the <<error>> characteristics of these sources are known, they can be added in the [ui-element]#Measurement Error# field before calculating. If the source [ui-element]#GPS# is selected, the label for [ui-element]#Measurement Error# will change to [ui-element]#GPS Accuracy#, which is where the <<accuracy>> of the <<GPS>> (see {gbp}#using-a-gps[Using a GPS^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]) at the time the coordinates were taken should be entered."
-msgstr "Este término está relacionado con, pero *NO* es el mismo que, el término del <<Darwin-Core>>: dwc[georeferenceSources] (Fuentes de georreferenciación) que se refiere los recursos específicos que fueron utilizados, en lugar de su tipo. Tenga en cuenta que las <<incertidumbre,incertidumbres>> de las fuentes _gaceteros_ y _descripción de una localidad_ no pueden ser anticipados universalmente, por lo tanto, no contribuyen a la incertidumbre global en los cálculos. Si se conocen las características del <<error>> de estas fuentes, se pueden añadir en el campo [ui-element]#Error de Medición# antes de hacer el cálculo. Si selecciona la fuente [ui-element]#GPS#, la etiqueta para [ui-element]#Error de Medición# cambiará a [ui-element]#GPS Accuracy# donde debe introducirse <<exactitud>> del <<GPS>> (ver {gbp}#usando-un-gps[Usando un GPS^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman y Wieczorek 2020)^]) en el momento en que se tomaron las coordenadas."
+msgstr "Este término está relacionado con, pero *NO* es el mismo que, el término del <<Darwin-Core>> term:dwc[georeferenceSources] (Fuentes de georreferenciación) que se refiere los recursos específicos que fueron utilizados, en lugar de su tipo. Tenga en cuenta que las <<incertidumbre,incertidumbres>> de las fuentes _gaceteros_ y _descripción de una localidad_ no pueden ser anticipados universalmente, por lo tanto, no contribuyen a la incertidumbre global en los cálculos. Si se conocen las características del <<error>> de estas fuentes, se pueden añadir en el campo [ui-element]#Error de Medición# antes de hacer el cálculo. Si selecciona la fuente [ui-element]#GPS#, la etiqueta para [ui-element]#Error de la Medición# cambiará a [ui-element]#Exactitud del GPS# donde debe introducirse la <<exactitud>> del <<GPS>> (ver {gbp}#usando-un-gps[Usando un GPS^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman y Wieczorek 2020)^]) en el momento en que se tomaron las coordenadas."
 
 #. type: Title ====
 #: 0100.en.adoc:145
 #, no-wrap
 msgid "Coordinate Format"
-msgstr "Formato de la Coordenada"
+msgstr "Formato de las Coordenadas"
 
 #. type: Plain text
 #: 0100.en.adoc:148
 msgid "The [ui-element]#Coordinate Format# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] defines the representation of the original <<geographic-coordinates,geographic coordinates>> (<<decimal-degrees>>, <<DMS,degrees minutes and seconds>> (DMS) or degrees decimal minutes) of the <<coordinates,coordinate>> source."
-msgstr "El término [ui-element]#Formato de las Coordenadas# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] define la representación de las <<coordenadas-geográficas, coordenadas geográficas>> originales (<<grados-decimales>>, <<GMS,grados minutos segundos>> (GMS) o grados decimales minutos) de la fuente de la <<coordenada,coordenada>>."
+msgstr "El término [ui-element]#Formato de las Coordenadas# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] determina la representación de las <<coordenadas-geográficas, coordenadas geográficas>> originales (<<grados-decimales>>, <<GMS,grados minutos segundos>> (GMS) o grados decimales minutos) de la fuente de la <<coordenadas,coordenada>>."
 
 #. type: Plain text
 #: 0100.en.adoc:150
 msgid "When the calculation type is not “Coordinates only”, the original coordinates are often used to find the general vicinity of the <<location>> on a map, after which the process of determining the <<corrected-center,corrected center>> provides the new coordinates. The Coordinate Format to use in the Calculator in this case is the <<coordinate-format,coordinate format>> on the map from which the corrected center was determined, not the coordinate format of the original source used to determine the general vicinity on the map. For example, suppose the original coordinates came from a <<gazetteer>> in DMS, but the <<boundary>> and corrected center of the <<feature>> were determined from Google Maps, the Coordinate Format would be decimal degrees, not DMS."
-msgstr "Cuando el tipo de cálculo es diferente a \"Solo coordenadas\", usualmente se usan las coordenadas originales para encontrar las inmediaciones de la <<ubicación>> en un mapa y luego el proceso de determinar el <<centro-corregido, centro corregido>> proporciona las nuevas coordenadas. En este caso, el Formato de Coordenadas a usar en la Calculadora es el <<formato-de-coordenada, formato de coordenada>> del mapa desde el cual se determinó el centro corregido, no el de la fuente original usada para determinar las inmediaciones en el mapa. Por ejemplo, suponga que las coordenadas originales provenían de un <<gacetero>> en GMS, pero el <<límite>> y el centro corregido de la <<entidad geográfica>> fueron determinados a partir de Google Maps, el Formato de Coordenadas sería grados decimales, no GMS."
+msgstr "Cuando el tipo de cálculo es diferente a \"Solo coordenadas\", usualmente se usan las coordenadas originales para encontrar las inmediaciones de la <<ubicación>> en un mapa y luego el proceso de determinar el <<centro-corregido, centro corregido>> proporciona las nuevas coordenadas. En este caso, el Formato de Coordenadas a usar en la Calculadora es el <<formato-de-las-coordenadas, formato de coordenadas>> del mapa desde el cual se determinó el centro corregido, no el de la fuente original usada para determinar las inmediaciones en el mapa. Por ejemplo, suponga que las coordenadas originales provenían de un <<gacetero>> en GMS, pero el <<límite>> y el centro corregido de la <<entidad geográfica>> fueron determinados a partir de Google Maps, el Formato de Coordenadas sería grados decimales, no GMS."
 
 #. type: Plain text
 #: 0100.en.adoc:152
 msgid "This term is only equivalent to the <<Darwin-Core,Darwin Core>> term term:dwc[verbatimCoordinateSystem] if no conversions had to be performed from the original source to the format used in the _Input Latitude_ and _Input Longitude_ (e.g. if the original coordinates were UTM and you had to convert them to DMS, then the _Coordinate Format_ in the Calculator will be DMS, but the term:dwc[verbatimCoordinateSystem] will be UTM. Selecting the original coordinate format allows the coordinates to be entered in their native format and forces the Calculator to present appropriate options for <<coordinate-precision,coordinate precision>>. Changing the coordinate format will automatically reset the coordinate precision value to _nearest degree_. Be sure to correct this for the actual coordinate precision. The Calculator stores coordinates in decimal degrees to seven decimal places. This is to preserve the correct coordinates in all formats regardless of how many coordinate transformations are done."
-msgstr "Este término es equivalente al término term:dwc[verbatimCoordinateSystem] (Sistema original de coordenadas) del <<Darwin-Core,Darwin Core>> solamente si no fue necesario realizar ninguna conversión desde la fuente original al formato usado en la _Latitud de entrada_ y _Longitud de entrada_ (p. ej. Si las coordenadas originales eran UTM y usted tuvo que convertirlas a GMS, entonces el _Formato de Coordenada_ en la Calculadora será GMS pero el term:dwc[verbatimCoordinateSystem] (Sistema original de coordenadas) será UTM. Seleccionar el formato original de coordenadas permite que las coordenadas se introduzcan en su formato nativo y fuerza a la Calculadora a presentar las opciones apropiadas para la <<precisión-de-las-coordenadas,precisión de las coordenadas>>. Cambiar el formato de coordenadas restablecerá automáticamente el valor de la precisión de las coordenadas al _grado más cercano_. Asegúrese de corregir esto para obtener la precisión real de las coordenadas. La Calculadora almacena coordenadas en grados decimales hasta con siete cifras decimales. Esto permite que se conserven las coordenadas correctas en todos los formatos, independientemente de cuántas transformaciones se hagan a las coordenadas."
+msgstr "Este término es equivalente al término term:dwc[verbatimCoordinateSystem] (Sistema original de coordenadas) del <<Darwin-Core,Darwin Core>> solamente si no fue necesario realizar ninguna conversión desde la fuente original al formato usado en la _Latitud de entrada_ y _Longitud de entrada_ (p. ej. Si las coordenadas originales eran UTM y usted tuvo que convertirlas a GMS, entonces el _Formato de Coordenada_ en la Calculadora será GMS pero el term:dwc[verbatimCoordinateSystem] será UTM). Seleccionar el formato original de coordenadas permite que las coordenadas se introduzcan en su formato nativo y fuerza a la Calculadora a presentar las opciones apropiadas para la <<precisión-de-las-coordenadas,precisión de las coordenadas>>. Cambiar el formato de coordenadas restablecerá automáticamente el valor de la precisión de las coordenadas al _grado más cercano_. Asegúrese de corregir esto para obtener la precisión real de las coordenadas. La Calculadora almacena coordenadas en grados decimales hasta con siete cifras decimales. Esto permite que se conserven las coordenadas correctas en todos los formatos, independientemente de cuántas transformaciones se hagan."
 
 #. type: Title ====
 #: 0100.en.adoc:154
 #, no-wrap
 msgid "Coordinate Precision"
-msgstr "Precisión de la coordenada"
+msgstr "Precisión de las coordenadas"
 
 #. type: Plain text
 #: 0100.en.adoc:157
 msgid "Labelled in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] as [ui-element]#Precision# in the first column of input parameters, this drop-down list is populated with levels of <<precision>> in keeping with the <<coordinate-format,coordinate format>> chosen. For example, with a [ui-element]#Coordinate Format# of [ui-element]#degrees minutes seconds#, an [ui-element]#Input Latitude# of 35° 22' 24\" N and an [ui-element]#Input Longitude# of 105° 22' 28\" W, the [ui-element]#Coordinate Precision# would be [ui-element]#nearest second#. A value of [ui-element]#exact# is any level of precision higher than the otherwise highest precision given on the list. Sources of <<coordinate-precision,coordinate precision>> may include paper or digital maps, digital imagery, <<GPS>>, <<gazetteer,gazetteers>>, or <<locality>> descriptions."
-msgstr "Etiquetado en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] como [ui-element]#Precisión# en la primera columna de parámetros de entrada, esta lista desplegable está poblada con niveles de <<precisión>> de acuerdo con el <<formato-de-las-coordenadas, formato de las coordenadas>> elegido. Por ejemplo con un [ui-element]#Formato de las Coordenadas# de [ui-element]#grados minutos segundos#, una [ui-element]#Latitud de entrada# de 35° 22' 24\" N y una [ui-element]#longitud de entrada# de 105° 22' 28\" W, la [ui-element]#precisión de las coordenadas# sería [ui-element]#segundo más cercano#. Un valor de [ui-element]#exacto# es cualquier nivel de precisión mayor que la máxima precisión dada en la lista. Las fuentes de <<precisión-de-las-coordenadas, precisión de las coordenadas>> pueden incluir mapas digitales o en físico, imágenes digitales, <<GPS>>, <<gacetero,gacetero>> o descripciones de <<localidad>>."
+msgstr "Etiquetado en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] como [ui-element]#Precisión# en la primera columna de parámetros de entrada, esta lista desplegable contiene niveles de <<precisión>> de acuerdo con el <<formato-de-las-coordenadas, formato de las coordenadas>> elegido. Por ejemplo con un [ui-element]#Formato de Coordenadas# de [ui-element]#grados minutos segundos#, una [ui-element]#Latitud de entrada# de 35° 22' 24\" N y una [ui-element]#Longitud de entrada# de 105° 22' 28\" W, la [ui-element]# precisión de las coordenadas# sería [ui-element]#segundo más cercano#. Un valor de [ui-element]#exacto# es cualquier nivel de precisión mayor que la máxima precisión dada en la lista. Las fuentes de <<precisión-de-las-coordenadas, precisión de las coordenadas>> pueden incluir mapas digitales o en físico, imágenes digitales, <<GPS>>, <<gacetero,gacetero>> o descripciones de <<localidad>>."
 
 #. type: Plain text
 #: 0100.en.adoc:159
 msgid "The Coordinate Precision to use in the Calculator is the coordinate precision of the source from which the <<corrected-center,corrected center>> was determined, not the coordinate precision of the original source used to determine the general vicinity on the map. For example, suppose the original <<coordinates>> came from a gazetteer, but the <<boundary>> and corrected center of the <<feature>> were determined from Google Maps, the Coordinate Precision would be determined by the number of digits of <<decimal-degrees,decimal degrees>> you captured from the corrected center on Google Maps, not the Coordinate Precision of the coordinates from the original gazetteer entry. If you use all of the digits provided on Google Maps, the Coordinate Precision would be \"exact\"."
-msgstr "La Precisión de las Coordenadas a usar en la Calculadora corresponde a la precisión de las coordenadas de la fuente desde la cual se calculó el <<centro-corregido,centro corregido>>, no la precisión de las coordenadas de la fuente original usada para determinar las inmediaciones en un mapa. Por ejemplo, suponga que las coordenadas originales provenían de un <<gacetero>>, pero el <<límite>> y el centro corregido de la <<entidad geográfica>> fueron determinados a partir de Google Maps, la Precisión de las Coordenadas estaría determinada por el número de cifras de <<grados-decimales, grados decimales>> que usted capturó del centro corregido en Google Maps, no por la Precisión de las Coordenadas de la entrada original de coordenadas desde el gacetero. Si usa todas las cifras dadas por Google Maps, la Precisión de las Coordenadas sería \"exacto\"."
+msgstr "La Precisión de Coordenadas a usar en la Calculadora corresponde a la precisión de las coordenadas de la fuente desde la cual se calculó el <<centro-corregido,centro corregido>>, no la precisión de las coordenadas de la fuente original usada para determinar las inmediaciones en un mapa. Por ejemplo, suponga que las coordenadas originales provenían de un <<gacetero>>, pero el <<límite>> y el centro corregido de la <<entidad geográfica>> fueron determinados a partir de Google Maps, la Precisión de las Coordenadas estaría determinada por el número de cifras de <<grados-decimales, grados decimales>> que usted capturó del cálculo del centro corregido en Google Maps, no por la precisión de las coordenadas originales desde el gacetero. Si usa todas las cifras dadas por Google Maps, la Precisión de las Coordenadas sería \"exacto\"."
 
 #. type: Plain text
 #: 0100.en.adoc:161
 msgid "This term is similar to, but **NOT** the same as, the <<Darwin-Core,Darwin Core>> term term:dwc[coordinatePrecision], which applies to the output coordinates."
-msgstr "Este término es similar a, pero **NO** el mismo que, el término term:dwc[coordinatePrecision] (Precisión de las coordenadas) del <<Darwin-Core,Darwin Core>>, el cual se aplica a las coordenadas de salida."
+msgstr "Este término es similar a, pero **NO** el mismo que, el término term:dwc[coordinatePrecision] (Precisión de las coordenadas) del <<Darwin-Core,Darwin Core>>, el cual se aplica a las coordenadas resultantes."
 
 #. type: Title ====
 #: 0100.en.adoc:163
@@ -589,7 +589,7 @@ msgstr "Datum"
 #. type: Plain text
 #: 0100.en.adoc:166
 msgid "Defines the position of the origin and orientation of an <<ellipsoid>> upon which the <<coordinates>> are based for the given [ui-element]#Input Latitude# and [ui-element]#Longitude# (see <<coordinate-reference-system, coordinate reference system>>)."
-msgstr "Define la posición del origen y la orientación de un <<elipsoide>> en el que se basan las <<coordenadas>> para la [ui-element]#Latitud de entrada# y la [ui-element]#Longitud# (ver <<sistema-de-coordenadas-de-referencia, sistema de coordenadas de referencia>>)."
+msgstr "Define la posición del origen y la orientación de un <<elipsoide>> en el que se basan las <<coordenadas>> para la [ui-element]#Latitud# y la [ui-element]#Longitud de entrada# (ver <<sistema-de-coordenadas-de-referencia, sistema de coordenadas de referencia>>)."
 
 #. type: Plain text
 #: 0100.en.adoc:168
@@ -599,7 +599,7 @@ msgstr "El _Datum_ a usar en la http://georeferencing.org/georefcalculator/gc.ht
 #. type: Plain text
 #: 0100.en.adoc:170
 msgid "The term [ui-element]#Datum# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] is equivalent to the <<Darwin-Core,Darwin Core>> term term:dwc[geodeticDatum]. The Calculator includes <<ellipsoid,ellipsoids>> on the [ui-element]#Datum# drop-down list, as sometimes that is all that coordinate source shows. The choice of datum in the Calculator has two important effects. The first is the contribution to <<uncertainty>> if the datum of the input coordinates is not known. If the datum and ellipsoid are not known, [ui-element]#datum not recorded# must be selected. Uncertainty due to an unknown datum can be severe and varies geographically in a complex way, with a worst-case contribution of 5359 m (see {gbp}#coordinate-reference-system[Coordinate Reference System^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). The second important effect of the datum selection is to provide the characteristics of the ellipsoid model of the earth, on which the distance calculations depend."
-msgstr "El término [ui-element]#Datum# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] es equivalente al término term:dwc[geodeticDatum] del <<Darwin-Core, Darwin Core>>. La Calculadora incluye <<elipsoide,elipsoides>> en la lista desplegable [ui-element]#Datum# pues a veces es todo lo que muestra la fuente de las coordenadas. La elección del datum en la Calculadora tiene dos efectos importantes. El primero es la contribución a la <<incertidumbre>> si se desconoce el datum de las coordenadas de entrada. Si se desconoce el datum y el elipsoide se debe seleccionar [ui-element]#datum no registrado#. La incertidumbre debida a un datum desconocido puede ser grave y varía geográficamente de una manera compleja, con una contribución en el peor caso de 5359 m ({gbp}#sistema-de-coordenadas-de-referencia[sistema de coordenadas de referencia^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]). El segundo efecto importante de la selección del datum es proporcionar las características del modelo elipsoide de la tierra, del cual dependen los cálculos de la distancia."
+msgstr "El término [ui-element]#Datum# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] es equivalente al término term:dwc[geodeticDatum] del <<Darwin-Core, Darwin Core>>. La Calculadora incluye <<elipsoide,elipsoides>> en la lista desplegable [ui-element]#Datum# pues a veces es todo lo que se muestra la fuente de las coordenadas. La elección del datum en la Calculadora tiene dos efectos importantes. El primero es la contribución a la <<incertidumbre>> si se desconoce el datum de las coordenadas de entrada. Si se desconoce el datum y el elipsoide se debe seleccionar [ui-element]#datum no registrado#. La incertidumbre debida a un datum desconocido puede ser grave y varía geográficamente de una manera compleja, con una contribución en el peor de los casos de 5359 m ({gbp}#sistema-de-coordenadas-de-referencia[sistema de coordenadas de referencia^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]). El segundo efecto importante de la selección del datum es proporcionar las características del modelo elipsoide de la tierra, del cual dependen los cálculos de la distancia."
 
 #. type: Title ====
 #: 0100.en.adoc:172
@@ -610,12 +610,12 @@ msgstr "Dirección"
 #. type: Plain text
 #: 0100.en.adoc:175
 msgid "The [ui-element]#Direction# in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^] is the <<heading>> given in the <<locality>> description, either as a standard compass point (see https://en.wikipedia.org/wiki/Boxing_the_compass[Boxing the compass^]) or as a number of degrees in the clockwise direction from north. True North is not the same as Magnetic North (see {gbp}#headings[Headings^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). If a heading is known to be a magnetic heading, it will have to be converted into a true heading (see NOAA's https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml[Magnetic Field Calculator^]) before it can be used in the Calculator. If [ui-element]#degrees from N# is selected, a text box will appear to the right of the selection, into which the degree heading should be entered."
-msgstr "La [ui-element]#Dirección# en la http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^] es la <<orientación cardinal>> proporcionada en la descripción de una <<localidad>>, puede ser un punto estándar tomado con una brújula (ver https://es.wikipedia.org/wiki/Puntos_del_comp%C3%A1s[Puntos del Compás^]) o un número de grados en el sentido de las agujas del reloj desde el norte. El Norte Verdadero no es lo mismo que Norte Magnético (ver {gbp}#orientaciones-cardinales[Orientaciones Cardinales^] en {gbp}[Buenas Prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). Si se sabe que una orientación cardinal es una orientación cardinal magnética, tendrá que convertirse en una orientación verdadera (ver https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml[Magnetic Field Calculator (Calculadora del Campo Magnético)^]) antes de que se pueda usar en la Calculadora. Si selecciona [ui-element]#grados desde N#, aparecerá un cuadro de texto a la derecha de la selección en el que debe escribir cuál es el grado de la orientación cardinal."
+msgstr "La [ui-element]#Dirección# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^] es la <<orientación-cardinal, orientación cardinal>> proporcionada en la descripción de una <<localidad>>, puede ser un punto estándar tomado con una brújula (ver https://es.wikipedia.org/wiki/Puntos_del_comp%C3%A1s[Puntos del Compás^]) o un número de grados en el sentido de las agujas del reloj desde el norte. El Norte Verdadero no es lo mismo que Norte Magnético (ver {gbp}#orientaciones-cardinales[Orientaciones Cardinales^] en {gbp}[Buenas Prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). Si se sabe que una orientación es una orientación cardinal magnética, tendrá que convertirse en una orientación cardinal verdadera (ver https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml[Magnetic Field Calculator (Calculadora del Campo Magnético)^]) antes de que se pueda usar en la Calculadora. Si selecciona [ui-element]#grados desde N#, aparecerá un cuadro de texto a la derecha de la selección en el que debe escribir cuál es el grado de la orientación cardinal."
 
 #. type: Plain text
 #: 0100.en.adoc:177
 msgid "Some marine locality descriptions reference a direction (azimuth) toward a landmark rather than a heading from the current location (e.g. \"327° to Nubble Lighthouse\"). To make a Distance a heading calculation for such a locality description, use the compass point 180 degrees from the one given in the locality description (147° in the example above) as the Direction."
-msgstr "Algunas descripciones de localidades marinas referencian una dirección (azimuth) hacia un punto de referencia en vez de una orientación cardinal desde la ubicación actual (p. ej. \"327° del Faro de Waipapa Point\"). Para hacer de una Distancia una orientación cardinal para una descripción de una localidad en específico, use el punto de compás que se encuentra a 180 grados desde la Dirección dada en la descripción de la localidad (147º en el ejemplo anterior). "
+msgstr "Algunas descripciones de localidades marinas referencian una dirección (azimuth) hacia un punto de referencia, en vez de una orientación cardinal desde la ubicación actual (p. ej. \"327° del Faro de Waipapa Point\"). Para convertir una Distancia en un cálculo de orientación cardinal para este tipo de descripciones de localidad, use el punto de compás a 180 grados desde la Dirección dada en la descripción de la localidad (147º en el ejemplo anterior)."
 
 #. type: Title ====
 #: 0100.en.adoc:178
@@ -637,7 +637,7 @@ msgstr "Distancia de Desplazamiento al Norte o Sur"
 #. type: Plain text
 #: 0100.en.adoc:183
 msgid "The distance to the north or south (set with the selection box to the right of the distance text box) of the [ui-element]#Input Latitude#."
-msgstr "La distancia al norte o sur (establecer con el recuadro de selección a la derecha del cuadro de texto de distancia) de la [ui-element]#Latitud de entrada#."
+msgstr "La distancia al norte o al sur (establecer con el recuadro de selección a la derecha del cuadro de texto de distancia) de la [ui-element]#Latitud de entrada#."
 
 #. type: Labeled list
 #: 0100.en.adoc:184
@@ -648,7 +648,7 @@ msgstr "Distancia al Este u Oeste"
 #. type: Plain text
 #: 0100.en.adoc:185
 msgid "The distance to the east or west (set with the selection box to the right of the distance text box) of the [ui-element]#Input Longitude#."
-msgstr "La distancia al este u oeste (establecer con el recuadro de selección a la derecha del cuadro de texto de distancia) de la [ui-element]#Longitud de entrada#."
+msgstr "La distancia al este o al oeste (establecer con el recuadro de selección a la derecha del cuadro de texto de distancia) de la [ui-element]#Longitud de entrada#."
 
 #. type: Title ====
 #: 0100.en.adoc:186
@@ -3674,7 +3674,7 @@ msgstr "La <<entidad-geográfica>> no se puede encontrar con las referencias dis
 #: appb.en.adoc:7
 #, no-wrap
 msgid "Appendix B: Methods to Find the Corrected Center and Geographic Radial"
-msgstr "Apéndice B: Métodos para Encontrar el Centro Corregido y Radio Geográfico"
+msgstr "Apéndice B: Métodos para Encontrar el Centro Corregido y el Radio Geográfico"
 
 #. type: Plain text
 #: appb.en.adoc:12
