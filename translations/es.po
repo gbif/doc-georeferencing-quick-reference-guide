@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-22 13:56\n"
+"PO-Revision-Date: 2021-10-22 15:03\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -225,7 +225,7 @@ msgstr "\"Lugar designado\" ha sido reemplazado por <<entidad geográfica>>."
 #. type: Plain text
 #: 0100.en.adoc:37
 msgid "Where the <<geographic-center>> was recommended in the past, <<corrected-center>> based on the <<geographic-radial>> is now used. This is an important change because the geographic center did not necessarily yield the smallest <<uncertainty>> due to the extent of a feature; the corrected center and geographic radial does."
-msgstr "Donde en el pasado se recomendó <<centro-geográfico>>, ahora se usa <<centro-corregido>> basado en el <<radio-geográfico>>. Este es un cambio importante porque el centro geográfico no necesariamente ha producido la menor <<incertidumbre>> debido a la magnitud de una entidad geográfica en particular. Por el contrario, el centro corregido y el radio geográfico si lo hacen."
+msgstr "Donde en el pasado se recomendó el uso del <<centro-geográfico>>, ahora se usa el <<centro-corregido>> basado en el <<radio-geográfico>>. Este es un cambio importante porque el centro geográfico no necesariamente ha conducido a la menor <<incertidumbre>> debido a la extensión de la entidad geográfica, por el contrario, el centro corregido y el radio geográfico si lo hacen."
 
 #. type: Title ===
 #: 0100.en.adoc:39
@@ -236,12 +236,12 @@ msgstr "Usando el Darwin Core"
 #. type: Plain text
 #: 0100.en.adoc:42
 msgid "<<georeference,Georeferences>> using the methods in this Guide will be of greatest value if as much information as possible is captured about and during the georeferencing process. The https://dwc.tdwg.org/terms/[Darwin Core standard (Darwin Core Maintenance Group 2020)^] defines all of the fields recommended for the capture of reproducible georeferences, as follows:"
-msgstr "Las <<georreferencia, georreferencias>> que usen los métodos de esta guía serán de gran valor si se captura la mayor cantidad de información durante el proceso de georreferenciación y sobre este. A continuación se definen todos los elementos recomendados por el https://dwc.tdwg.org/terms/[Estandar Darwin Core(Darwin Core Maintenance Group 2020)^] para la captura de georreferencias reproducibles:"
+msgstr "Las <<georreferencia, georreferencias>> que usen los métodos de esta guía serán de gran valor si se captura la mayor cantidad de información sobre la georreferenciación durante el proceso. A continuación se definen todos los elementos recomendados por el https://dwc.tdwg.org/terms/[Estandar Darwin Core(Darwin Core Maintenance Group 2020)^] para la captura de georreferencias reproducibles:"
 
 #. type: Plain text
 #: 0100.en.adoc:44
 msgid "<<Darwin-Core,Darwin Core>> georeferencing terms:"
-msgstr "Términos de georreferenciación del <<Darwin-Core,Darwin Core>>:"
+msgstr "Conceptos de georreferenciación del <<Darwin-Core,Darwin Core>>:"
 
 #. type: Labeled list
 #: 0100.en.adoc:45
@@ -252,7 +252,7 @@ msgstr "term:dwc[dwc:decimalLatitude] (Latitud decimal), term:dwc[dwc:decimalLon
 #. type: Plain text
 #: 0100.en.adoc:46
 msgid "the combination of these fields provide the reference for the center of the <<point-radius>> representation of the georeference."
-msgstr "la combinación de estos campos proporciona la referencia para el centro de la <<point-radius>> representación de la georeferencia."
+msgstr "la combinación de estos campos proporciona la referencia para el centro de la representación <<radio-punto>> de la georreferencia."
 
 #. type: Labeled list
 #: 0100.en.adoc:46
@@ -263,7 +263,7 @@ msgstr "term:dwc[dwc:coordinateUncertaintyInMeters] (Incertidumbre de las coorde
 #. type: Plain text
 #: 0100.en.adoc:47
 msgid "The horizontal distance in meters from the given term:dwc[decimalLatitude] and term:dwc[decimalLongitude] that describes the <<smallest-enclosing-circle>> that contains the whole of the <<location>>. Leave the value empty if the <<uncertainty>> is unknown, cannot be estimated, or is not applicable (because there are no <<coordinates>>). Zero is not a valid value for this term. This term corresponds with the <<geographic-radial>> of the final georeference."
-msgstr "La distancia horizontal en metros de la term:dwc[decimalLatitude] (latitud decimal) y la term:dwc[decimalLongitude] (longitud decimal) que describe el <<círculo-mínimo>> que contiene toda la <<ubicación>>. Deje el elemento vacío si la <<incertidumbre>> es desconocida, no puede ser estimada o no es aplicable (porque no hay <<coordenadas>>). Cero no es un valor válido para este término. Este término corresponde al <<radio-geográfico>> de la georreferencia final."
+msgstr "La distancia horizontal en metros de la term:dwc[decimalLatitude] (latitud decimal) y la term:dwc[decimalLongitude] (longitud decimal) que describe el <<círculo-mínimo>> que contiene la totalidad de la <<ubicación>>. Deje el elemento vacío si la <<incertidumbre>> es desconocida, no se puede estimar o no es aplicable (porque no hay <<coordenadas>>). Cero no es un valor válido para este elemento. Este elemento corresponde al <<radio-geográfico>> de la georreferencia final."
 
 #. type: Labeled list
 #: 0100.en.adoc:47
@@ -274,7 +274,7 @@ msgstr "term:dwc[dwc:georeferencedBy] (Georreferenciado por), term:dwc[dwc:geore
 #. type: Plain text
 #: 0100.en.adoc:48
 msgid "the individual(s) who last modified the georeference and when that happened. These correspond to the final authority on the georeference in its current state, regardless of who might have worked on previous versions of the georeference."
-msgstr "El o los individuos que modificaron por última vez la georreferencia y cuándo se llevó a cabo la modificación. Estas personas corresponden a la autoridad final sobre la georreferencia en su estado actual, independientemente de quién hubiera podido trabajar en versiones anteriores de la georreferencia."
+msgstr "el o los individuos que modificaron por última vez la georreferencia y cuándo se llevó a cabo la modificación. Estas personas corresponden a la autoridad final sobre la georreferencia en su estado actual, independientemente de quién pudo haber trabajar en versiones anteriores de la georreferencia."
 
 #. type: Labeled list
 #: 0100.en.adoc:48
@@ -285,7 +285,7 @@ msgstr "term:dwc[dwc:georeferenceProtocol] (Protocolo de georreferenciación)"
 #. type: Plain text
 #: 0100.en.adoc:49
 msgid "A description or reference to the methods used to determine the <<shape>> using the shape <<georeferencing-method>>, or the coordinates and uncertainty using the point-radius method. If the protocol in this Guide is used unaltered, then the term:dwc[georeferenceProtocol] should be the citation for this document."
-msgstr "Descripción o referencia a los métodos utilizados para determinar la <<forma-geométrica, forma geométrica>> cuando se usa el <<método-de-georreferenciación>> o las coordenadas y la incertidumbre cuando se usa el método <<punto-radio>>. Si el protocolo de esta Guía se usa sin alterar, entonces el term:dwc[georeferenceProtocol] (Protocolo de georreferenciación) debe ser la cita para este documento."
+msgstr "Descripción o referencia a los métodos utilizados para determinar la <<forma-geométrica, forma geométrica>> cuando se usa el <<método-de-georreferenciación>> de formas geométricas o las coordenadas y la incertidumbre cuando se usa el método <<radio-punto>>. Si el protocolo de esta Guía se usa sin alterar, entonces el term:dwc[georeferenceProtocol] (Protocolo de georreferenciación) debe ser la cita bibliográfica para este documento."
 
 #. type: Labeled list
 #: 0100.en.adoc:49
@@ -296,7 +296,7 @@ msgstr "term:dwc[dwc:georeferenceSources] (Fuentes de georreferenciación)"
 #. type: Plain text
 #: 0100.en.adoc:50
 msgid "A list (concatenated and separated) of maps, <<gazetteer,gazetteers>>, or other resources used to georeference the location, described specifically enough to allow anyone in the future to use the same resources."
-msgstr "Una lista (concatenada y separada) de mapas, <<gacetero,gaceteros>> u otros recursos utilizados para georreferenciar la ubicación. La descripción, debe ser suficientemente específica como para permitir que cualquiera en el futuro haga uso de los mismos recursos."
+msgstr "Una lista (en una fila continua y separada) de mapas, <<gacetero,gaceteros>> u otros recursos utilizados para georreferenciar la ubicación. La descripción debe ser lo suficientemente específica como para permitir que cualquiera en el futuro haga uso de los mismos recursos."
 
 #. type: Block title
 #: 0100.en.adoc:51 0100.en.adoc:61 0100.en.adoc:71 0100.en.adoc:79
@@ -338,7 +338,7 @@ msgstr "term:dwc[dwc:georeferenceVerificationStatus] (Estado de la verificación
 #. type: Plain text
 #: 0100.en.adoc:60
 msgid "A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description. Recommended best practice is to use a controlled vocabulary. Note that this verification could only be performed in relation to the occurrence or event that is being recorded."
-msgstr "Una descripción categórica del grado en que la georreferencia ha sido verificada como la mejor representación posible de la descripción espacial. Una buena práctica recomendada es usar un vocabulario controlado. Tenga en cuenta que esta verificación sólo se puede realizar en relación con el registro o evento que se está documentando."
+msgstr "Una descripción categórica de la medida en que se ha verificado la georreferencia para representar, de la mejor manera, la descripción espacial. Se recomienda el uso del vocabulario controlado. Tenga en cuenta que esta verificación sólo se puede llevar a cabo en relación con el registro o evento que está siendo documentando."
 
 #. type: delimited block =
 #: 0100.en.adoc:67
@@ -354,7 +354,7 @@ msgstr "term:dwc[dwc:georeferenceRemarks] (Comentarios de la georreferenciación
 #. type: Plain text
 #: 0100.en.adoc:70
 msgid "Notes or comments out of the ordinary about the georeference, explaining assumptions made in addition or opposition to those formalized in the method referred to in term:dwc[georeferenceProtocol]."
-msgstr "Notas o comentarios fuera de lo común sobre la georreferencia, explicando supuestos hechos en adición o en oposición a aquellos formalizados en el método referido en el term:dwc[georeferenceProtocol] (Protocolo de georreferenciación)."
+msgstr "Notas o comentarios fuera de lo común sobre la georreferencia que explican los supuestos hechos en adición o en oposición a aquellos formalizados en el método referido en el term:dwc[georeferenceProtocol] (Protocolo de georreferenciación)."
 
 #. type: Named 'caption' AttributeList argument for style 'caption'
 #: 0100.en.adoc:72 0100.en.adoc:80 0200.en.adoc:275 0220.en.adoc:113
@@ -377,7 +377,7 @@ msgstr "term:dwc[dwc:locationRemarks] (Comentarios de la ubicación)"
 #. type: Plain text
 #: 0100.en.adoc:78
 msgid "Notes or comments of interest about the location (not the georeference of the location, which go in term:dwc[georeferenceRemarks])."
-msgstr "Notas o comentarios de interés sobre la ubicación (no sobre la georreferencia de la ubicación, las cuales deben ir en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación))."
+msgstr "Notas o comentarios de interés sobre la ubicación (no sobre la georreferencia de la ubicación, las cuales deben ir en term:dwc[georeferenceRemarks])."
 
 #. type: delimited block =
 #: 0100.en.adoc:83
@@ -387,7 +387,7 @@ msgstr "La Villa Epecuen estaba inundada en noviembre de 1985 y dejó de estar h
 #. type: Plain text
 #: 0100.en.adoc:86
 msgid "For additional community discussion and recommendations, see the https://github.com/tdwg/dwc-qa/wiki[Darwin Core Questions & Answers Site^], the https://github.com/tdwg/dwc-qa/wiki/Webinars[Darwin Core Hour Webinars^] and {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
-msgstr "Para más información y recomendaciones sobre la comunidad, vea el https://github.com/tdwg/dwc-qa/wiki[Sitio de preguntas y respuestas del Darwin Core^], los https://github.com/tdwg/dwc-qa/wiki/Webinars[Webinars Darwin Core Hour^] y {gbp}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]."
+msgstr "Para más información y recomendaciones de la comunidad, vea el https://github.com/tdwg/dwc-qa/wiki[Sitio de preguntas y respuestas del Darwin Core^], los https://github.com/tdwg/dwc-qa/wiki/Webinars[Webinars Darwin Core Hour^] y {gbp}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]."
 
 #. type: Title ===
 #: 0100.en.adoc:87
@@ -398,7 +398,7 @@ msgstr "Conceptos de georreferenciación"
 #. type: Plain text
 #: 0100.en.adoc:91
 msgid "One of the goals of <<georeference,georeferencing>> following best practices is to be sure that enough information is provided in the output so that the georeference is repeatable (see {gbp}#principles-of-best-practice[Principles of Best Practice] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). To that end, this document provides a set of recipes for georeferencing various <<locality-type,locality types>> using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator]. The Calculator allows you to make distinct kinds of calculations based on the locality type (<<s-locality-type>>). When the locality type is chosen from the predefined list, the Calculator presents input boxes for all of the parameters needed for that type of calculation. Note that the locality type is for the most specific <<locality-clause,clause>> in the <<locality>> description (see {gbp}#parsing-the-locality-description[Parsing the Locality Description] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). However, there may be information for other clauses or other parts of the <<location>> record that help to constrain the location and come into play when a <<feature>> <<boundary>> is determined. Many Calculator parameters are used for more than one locality type. Rather than repeat the explanation for each locality type, they are collected here for common reference. Some locality types require specific parameters, for which the corresponding explanations are included in each subsection of <<Georeferencing Methods by Locality Type>>. Refer to the {gcm}[Georeferencing Calculator Manual (Bloom et al. 2020)^] for details about the Calculator not answered in this document."
-msgstr "Uno de los objetivos de <<georreferencia,georreferenciar>> siguiendo las buenas prácticas es estar seguro de proporcionar suficiente información en el producto como para que la georreferencia se pueda replicar (ver {gbp}#principios-de-buenas-prácticas[Principios de buenas prácticas] en {gbp}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). Para ello, este documento proporciona un conjunto de pasos para georreferenciar distintos <<tipo-de-localidad,tipos de localidades>> usando la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación]. La Calculadora permite hacer distintos cálculos basados en el tipo de localidad (<<s-tipo-de-localidad>>). Al elegir el tipo de localidad de la lista predefinida, la Calculadora muestra unas cajas para ingresar todos los parámetros necesarios para ese tipo de cálculo en particular. Tenga en cuenta que el tipo de localidad se define con base en la <<claúsula-de-la-localidad,claúsula>> más específica presente en la descripción de la <<localidad>> (ver {gbp}#parsing-the-locality-description[Parsing the Locality Description] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). Sin embargo, puede haber información para otras cláusulas u otros detalles del registro de la <<ubicación>> que ayudan a restringir la ubicación y pueden entrar en juego cuando se determina el <<límite>> de una <<entidad-geográfica>>. Varios parámetros de la Calculadora se usan para más de un tipo de localidad. En lugar de repetir la explicación para cada tipo de localidad, se reunen aquí para una referencia común. Algunos tipos de localidades requieren parámetros específicos, las explicaciones correspondientes se incluyen en cada subsección de <<Georeferencing Methods by Locality Type>>. Consulte el {gcm}[Manual del cálculo de georreferenciación (Bloom et al. 2020)^] para detalles sobre la Calculadora que no están contenidos en este documento."
+msgstr "Uno de los objetivos de <<georreferencia,georreferenciar>> siguiendo las buenas prácticas es asegurarse de proporcionar suficiente información en el producto como para que la georreferencia se pueda replicar (ver {gbp}#principios-de-buenas-prácticas[Principios de buenas prácticas] en {gbp}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). Para ello, este documento proporciona un conjunto de pasos para georreferenciar distintos <<tipo-de-localidad, tipos de localidad>> usando la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación]. La Calculadora permite hacer distintos cálculos basados en el tipo de localidad (<<s-locality-type>>). Al elegir el tipo de localidad de la lista predefinida, la Calculadora muestra campos de entrada para todos los parámetros necesarios para ese tipo de cálculo en particular. Tenga en cuenta que el tipo de localidad se define con base en la <<claúsula-de-la-localidad,claúsula>> más específica presente en la descripción de la <<localidad>> (ver {gbp}#parsing-the-locality-description[Parsing the Locality Description] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). Sin embargo, puede haber información para otras cláusulas u otros detalles del registro de la <<ubicación>> que ayuden a acotar la ubicación y pueden entrar en juego a la hora de determinar el <<límite>> de una <<entidad-geográfica>>. Varios parámetros de la Calculadora se usan para más de un tipo de localidad. En lugar de repetir la explicación para cada tipo de localidad, se recopilan acá para una referencia común. Algunos tipos de localidades requieren parámetros específicos, las explicaciones correspondientes se incluyen en cada subsección de <<Métodos de Georreferenciación por Tipo de Localidad>>. Consulte el {gcm}[Manual del Cálculo de Georreferenciación (Bloom et al. 2020)^] para detalles sobre la Calculadora que no están en este documento."
 
 #. type: Title ====
 #: 0100.en.adoc:93
@@ -419,7 +419,7 @@ msgstr "Sólo <<coordenadas,coordenadas>>"
 #. type: Plain text
 #: 0100.en.adoc:99
 msgid "Geographic <<feature>> only"
-msgstr "Solo <<entidad-geográfica, Entidad Geográfica>>"
+msgstr "Solo <<entidad-geográfica, entidad geográfica>>"
 
 #. type: Plain text
 #: 0100.en.adoc:100
@@ -439,12 +439,12 @@ msgstr "Distancia a lo largo de <<dirección, direcciones>> ortogonales"
 #. type: Plain text
 #: 0100.en.adoc:103
 msgid "Distance at a <<heading>>"
-msgstr "Distancia desde una <<orientación-cardinal, orientación cardinal>> (en la http://georeferencing.org/georefcalculator/gc.html[Calculator^] como \"distancia desde una dirección\")"
+msgstr "Distancia desde una <<orientación-cardinal, orientación cardinal>> (en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] como \"distancia desde una dirección\")"
 
 #. type: Plain text
 #: 0100.en.adoc:105
 msgid "Selecting a locality type will configure the Calculator to show all of the parameters that need to be set to perform the georeference calculation. This Guide gives specific instructions for how to set the parameters for many different examples of each of the locality types."
-msgstr "Al seleccionar un tipo de localidad se configurará la Calculadora para que muestre todos los parámetros que se deben establecer para calcular la georreferencia. Esta guía proporciona instrucciones específicas sobre cómo configurar los parámetros para varios ejemplos de los tipos de localidad."
+msgstr "Al seleccionar un tipo de localidad se configurará la Calculadora para que muestre todos los parámetros que se deben establecer para calcular la georreferencia. Esta guía proporciona instrucciones específicas sobre cómo establecer los parámetros para varios ejemplos de cada tipo de localidad."
 
 #. type: Title ====
 #: 0100.en.adoc:107
