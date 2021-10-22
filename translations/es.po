@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-21 23:13\n"
+"PO-Revision-Date: 2021-10-22 13:56\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -136,12 +136,12 @@ msgstr "Introducción"
 #. type: Plain text
 #: 0100.en.adoc:4
 msgid "This is a practical guide for <<georeference,georeferencing>>. It describes the protocols to determine the shapes of <<feature,features>> and how to use them as the basis for georeferencing with the <<point-radius>> <<georeferencing-method>> (http://georeferencing.org/georefcalculator/docs/GeorefGuide.html[Wieczorek 2001^], https://doi.org/10.1080/13658810412331280211[Wieczorek et al. 2004^], https://doi.org/10.15468/doc-gg7h-s853[Chapman & Wieczorek 2020^]) using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator (Wieczorek & Wieczorek 2020)^], and its associated {gcm}[Georeferencing Calculator Manual (Bloom et al. 2020)^], maps, <<gazetteer,gazetteers>>, and other resources from which <<coordinates>> and spatial <<boundary,boundaries>> for places can be found. This document is a citable <<georeferencing-protocol>>. If a derived protocol is used, a new document with attribution to this Guide should be made publicly available and cited."
-msgstr "Esta es una guía práctica para la <<georreferencia,georreferenciación>>. Describe los protocolos para determinar las formas geométricas de las <<entidad geográfica,entidades geográficas>> y cómo usarlas como base para la georeferenciación con el <<método de georreferenciación>> <<radio-punto>>> (http://georeferencing.org/georefcalculator/docs/GeorefGuide.html[Wieczorek 2001^], https://doi.org/10.1080/13658810412331280211[Wieczorek et al. 2004^], https://doi.org/10.15468/doc-gg7h-s853[Chapman & Wieczorek 2020^]) usando la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación (Wieczorek & Wieczorek 2020)^] y los asociados {gcm}[Manual del cálculo de georreferenciación (Bloom et al. 2020)^], mapas, <<gacetero,gaceteros>> y otros recursos a partir de los cuales se pueden encontrar <<coordenadas>> y <<límite,límites>> espaciales para lugares. Este documento es un <<protocolo de georreferenciación>> citable. Si se usa un protocolo derivado, un nuevo documento con atribución a esta Guía debería estar disponible públicamente y ser citado."
+msgstr "Esta es una guía práctica para la <<georreferencia,georreferenciación>>. Describe los protocolos para determinar las formas geométricas de las <<entidad geográfica,entidades geográficas>> y cómo usarlas como base para la georeferenciación con el <<método de georreferenciación>> <<radio-punto>>(http://georeferencing.org/georefcalculator/docs/GeorefGuide.html[Wieczorek 2001^], https://doi.org/10.1080/13658810412331280211[Wieczorek et al. 2004^], https://doi.org/10.15468/doc-gg7h-s853[Chapman & Wieczorek 2020^]) usando la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación (Wieczorek & Wieczorek 2020)^] y los asociados {gcm}[Manual del cálculo de georreferenciación (Bloom et al. 2020)^], mapas, <<gacetero,gaceteros>> y otros recursos a partir de los cuales se pueden encontrar <<coordenadas>> y <<límite,límites>> espaciales para lugares. Este documento es un <<protocolo de georreferenciación>> citable. Si se usa un protocolo derivado, un nuevo documento con atribución a esta Guía debería estar disponible públicamente y ser citado."
 
 #. type: Plain text
 #: 0100.en.adoc:6
 msgid "This Guide is based on a http://georeferencing.org/docs/GeoreferencingQuickGuide.pdf[first version of the Guide (Wieczorek et al. 2012)^]), which was in turn an adaptation of http://georeferencing.org/docs/georeffordummy.xls[Georeferencing for Dummies (Spencer et al. 2008)^]. It explains the recommended georeferencing procedures for the most commonly encountered type of <<locality,localities>>. This Guide should be used in parallel with the {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^], which contains the theoretical background and more detailed information about concepts used here."
-msgstr "Esta guía se basa en http://georeferencing.org/docs/GeoreferencingQuickGuide.pdf[primera versión de la Guía (Wieczorek et al. 2012)^]), que a su vez fue una adaptación de http://georeferencing.org/docs/georeffordummy.xls[Georeferencing for Dummies (Spencer et al. 2008)^]. Explica los procedimientos recomendados de georreferenciación para el tipo más común de <<localidad,localidades>>. Esta guía debe usarse en paralelo con las {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^], que contiene los antecedentes teóricos y la información más detallada sobre los conceptos utilizados aquí."
+msgstr "Esta guía se basa en http://georeferencing.org/docs/GeoreferencingQuickGuide.pdf[primera versión de la Guía (Wieczorek et al. 2012)^]), que a su vez fue una adaptación de http://georeferencing.org/docs/georeffordummy.xls[Georeferencing for Dummies (Spencer et al. 2008)^]. Explica los procedimientos recomendados de georreferenciación para el tipo más común de <<localidad,localidades>>. Esta guía debe usarse en paralelo con las {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^], documento que contiene los antecedentes teóricos y la información más detallada sobre los conceptos utilizados aquí."
 
 #. type: Plain text
 #: 0100.en.adoc:8
@@ -162,7 +162,7 @@ msgstr "Objetivos"
 #. type: Plain text
 #: 0100.en.adoc:14
 msgid "This document provides guidance on how to <<georeference>> using the <<point-radius>> <<georeferencing-method,method>>. This Guide also provides the methods for determining the <<boundary,boundaries>> of <<feature,features>>, which form the basis of the <<shape>> georeferencing method."
-msgstr "Este documento ofrece orientaciones sobre cómo <<georreferencia, georreferenciar>> usando el <<método-de-georreferenciación,método>> <<radio-punto>>. También, proporciona los métodos para determinar los <<límite,límites>> de <<entidad-geográfica,entidades-geográficas>>, los cuales son la base del método <<forma geométrica>> de georreferencia."
+msgstr "Este documento ofrece orientaciones sobre cómo <<georreferencia, georreferenciar>> usando el <<método-de-georreferenciación,método>> <<radio-punto>>. También, proporciona los métodos para determinar los <<límite,límites>> de <<entidad-geográfica,entidades geográficas>>, los cuales son la base del método <<forma geométrica>> de georreferencia."
 
 #. type: Title ===
 #: 0100.en.adoc:15
@@ -173,7 +173,7 @@ msgstr "Público objetivo"
 #. type: Plain text
 #: 0100.en.adoc:18
 msgid "This document is a practical guide for anyone who needs to <<georeference>> textual <<locality>> descriptions so that they can be used in spatial filtering or analysis in research, education, or the maintenance of biological collections data."
-msgstr "Este documento es una guía práctica para cualquiera que necesite <<georreferencia, georreferenciar>> descripciones textuales de <<localidad, localidades>> para que puedan ser usadas en filtros espaciales o en análisis para investigación, educación o el mantenimiento de datos biológicos de colecciones."
+msgstr "Este documento es una guía práctica para cualquiera que necesite <<georreferencia, georreferenciar>> descripciones textuales de <<localidad, localidades>>, para que puedan ser usadas en filtros espaciales o en análisis para investigación, educación o el mantenimiento de datos biológicos de colecciones."
 
 #. type: Title ===
 #: 0100.en.adoc:19
@@ -194,12 +194,12 @@ msgstr "La Guía se basa en las {gbp}[Buenas Prácticas de Georreferenciación (
 #. type: Plain text
 #: 0100.en.adoc:26
 msgid "The third document is the {gcm}[Georeferencing Calculator Manual (Bloom et al. 2020)^], which describes how to use the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]. The Calculator is a browser-based JavaScript application that aids in georeferencing descriptive <<locality,localities>>, and making the calculations necessary to obtain <<geographic-coordinates>> and <<uncertainty,uncertainties>> for locations using the <<point-radius>> method."
-msgstr "El tercer documento es el {gcm}[Manual del cálculo de georreferenciación (Bloom et al. 2020)^], que describe cómo utilizar la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]. La Calculadora es una aplicación JavaScript basada en navegadores que ayuda en la georeferenciación de <<localidad,localidades>> descritas y en los cálculos necesario para obtener <<coordenadas geográficas>> e <<incertidumbre,incertidumbres>> para ubicaciones usando el método <<radio-punto>>."
+msgstr "El tercer documento es el {gcm}[Manual del cálculo de georreferenciación (Bloom et al. 2020)^], que describe cómo utilizar la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]. La Calculadora es una aplicación JavaScript basada en navegadores que ayuda en la georeferenciación de <<localidad,localidades>> descriptivas y en los cálculos necesario para obtener <<coordenadas geográficas>> e <<incertidumbre,incertidumbres>> para ubicaciones usando el método <<radio-punto>>."
 
 #. type: Plain text
 #: 0100.en.adoc:28
 msgid "These documents DO NOT provide guidance on georectifying images or <<geocode,geocoding>> street addresses – distinct operations that are sometimes called \"georeferencing\"."
-msgstr "Estos documentos NO proporcionan orientación sobre la georrectificación de imágenes o <<geocodificar,geocodificación>> de direcciones, operaciones distintas a las que a veces se refieren como \"georreferenciación\"."
+msgstr "Estos documentos NO proporcionan orientación sobre la georrectificación de imágenes o <<geocodificar,geocodificación>> de direcciones, operaciones distintas a las que a veces se les llama \"georreferenciación\"."
 
 #. type: Title ===
 #: 0100.en.adoc:29
