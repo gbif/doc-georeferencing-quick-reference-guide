@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-22 23:02\n"
+"PO-Revision-Date: 2021-10-22 23:59\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -3590,7 +3590,7 @@ msgid "h|Locality Type\n"
 "Step 2: Determine the <<geographic-radial>>.\n\n"
 msgstr "h|Tipo de Localidad\n"
 "h|Pasos para el Cálculo\n\n"
-"|<<Coordenadas,§2.3 Coordenadas>>\n"
+"|<<coordenadas,§2.3 Coordenadas>>\n"
 "|La <<localidad>> consiste en un punto representado por <<latitud>> y <<longitud>> en uno de los varios <<formato-de-las-coordenadas, formatos de coordenadas>>.\n\n"
 "|<<Coordenadas: Coordenadas Geográficas,§2.3.1 Coordenadas Geográficas>>\n"
 "|Paso 1: Use las <<coordenadas>> en el formato que fueron capturados desde un <<GPS>> o desde la <<localidad>> original como la [ui-element]#Latitud# y [ui-element]#Longitud de entrada#.\n\n"
@@ -3598,7 +3598,7 @@ msgstr "h|Tipo de Localidad\n"
 "a|\n"
 "Aunque técnicamente no es una <<entidad-geográfica>>, el <<tipo-de-localidad>> <<Solo Entidad Geográfica,Solo Entidad Geográfica(§2.1)>> en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación (Wieczorek & Wieczorek 2020)^] incluye todos los parámetros relevantes.\n\n"
 "Paso 1: Las <<coordenadas>> <<UTM>> deben ser convertidas a <<grados-decimales>> usando una herramienta de conversión UTM a <<latitud,Latitud>>/<<longitud,Longitud>>. Para esto se requiere la zona UTM.\n\n\n"
-"Paso 2: Determinar el <<radio-geográfico>>: Si las coordenadas UTM tienen 7 cifras en el <<norte>> y 6 cifras en el <<este>>, el radial geográfico es 0. 07 m. Para las coordenadas UTM con menos dígitos de <<precisión>> ver <<table-default-geographic-radial>> (§2.1.2).\n\n"
+"Paso 2: Determinar el <<radio-geográfico>>: Si las coordenadas UTM tienen 7 cifras en el <<norte>> y 6 cifras en el <<este>>, el radial geográfico es 0. 07 m. Para las coordenadas UTM con menos cifras de <<precisión>> ver <<table-default-geographic-radial>> (§2.1.2).\n\n"
 "|<<Coordenadas: Sistemas de Grillas,§2.3.3 Sistemas de Grillas>>\n"
 "a|\n"
 "Paso 1: Determina las <<coordenadas>> de la grilla de celda como para una <<Entidad Geográfica con una Extensión Espacial Obvia,Entidad Geográfica con una Extensión Espacial Obvia(§2.1.1)>>. Use las coordenadas para el <<centro-corregido>> de la <<grilla>> de celda en cuestión.\n\n"
@@ -3625,7 +3625,7 @@ msgstr "h|Tipo de Localidad\n"
 "|<<Ubicaciones Dudosas,§2.4.1 Ubicaciones Dudosas>>\n"
 "a|\n"
 "Si alguna parte de la descripción de la <<localidad>> está en duda, pero hay información de la localidad que no lo está, utilice la parte sin dudas para determinar el <<tipo-de-localidad>> y <<georreferencia,georreferencie>> siguiendo el método apropiado.\n\n"
-"Si toda la localidad está en duda, no <<georreferencie>> y documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación) la razón por la que no <<georreferencia,georreferenció>> (p. ej. \"localidad en duda\").\n\n"
+"Si toda la localidad está en duda, no <<georreferencia,georreferencia>> y documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación) la razón por la que no <<georreferencia,georreferenció>> (p. ej. \"localidad en duda\").\n\n"
 "|<<No se Puede Ubicar,§2.4.2 No se Puede Ubicar>>\n"
 "a|\n"
 "La <<localidad>> nombrada no puede ser encontrada. Las razones pueden incluir:\n\n"
@@ -3658,13 +3658,13 @@ msgid "The <<feature>>(s) cannot be found with available references.\n\n"
 "The <<locality>> is associated with a captive animal, a cultivated plant or an [ui-element]#event# from some other non-natural occurrence. The <<locality>> cited is often that of a zoo, aquarium, or botanical garden.\n\n"
 "<<georeference,Georeference>> the locality normally based on the <<locality-type>> and <<feature>>. Document the nature of the provenance using the term term:dwc[degreeOfEstablishment].\n"
 msgstr "La <<entidad-geográfica>> no se puede encontrar con las referencias disponibles.\n\n"
-"No <<georreferencie>> estas localidades. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación; p. ej. \"no se puede encontrar la localidad con las referencias disponibles\").\n\n"
+"No <<georreferencia,georreferencie>> estas localidades. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación; p. ej. \"no se puede encontrar la localidad con las referencias disponibles\").\n\n"
 "|<<Más de una Entidad Geográfica Coincidente,§2.4.3 Más de una Entidad Geográfica Coincidente>>\n"
 "a|\n"
-"Múltiples <<entidad-geográfica, entidades geográficas>> relacionadas: Si hay varios lugares cercanos distintos con el mismo nombre y no hay más información para distinguir entre las posibilidades, trate la combinación de ellos como la entidad geográfica y siga el procedimiento para el correspondiente <<tipo-de-localidad>>. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación).\n\n"
-"Múltiples entidades geográficas no relacionadas: No <<georreferencie>>. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación; p.ej. \"hay múltiples entidades geográficas no relacionadas que coinciden con la de la descripción de la localidad\").\n\n"
+"Múltiples <<entidad-geográfica,entidades geográficas>> relacionadas: Si hay varios lugares cercanos distintos con el mismo nombre y no hay más información para distinguir entre las posibilidades, trate la combinación de ellos como la entidad geográfica y siga el procedimiento para el correspondiente <<tipo-de-localidad>>. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación).\n\n"
+"Múltiples entidades geográficas no relacionadas: No <<georreferencia,georreferencie>>. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación; p.ej. \"hay múltiples entidades geográficas no relacionadas que coinciden con la de la descripción de la localidad\").\n\n"
 "|<<Demostrablemente Inconsistente,§2.4.4 Demostrablemente Inconsistente>>\n"
-"|La descripción de la <<localidad>> contiene inconsistencias irreconciliables, afirmaciones que no pueden ser verdaderas simultáneamente. No <<georreferencie>>. Documente en término:dwc[georeferenceRemarks] (Comentarios de la georreferenciación).\n\n"
+"|La descripción de la <<localidad>> contiene inconsistencias irreconciliables, afirmaciones que no pueden ser verdaderas simultáneamente. No <<georreferencia,georreferencie>>. Documente en término:dwc[georeferenceRemarks] (Comentarios de la georreferenciación).\n\n"
 "|<<Cultivado o Cautivo,§2.4.5 Cultivado o Cautivo>>\n"
 "a|\n"
 "La <<localidad>> está asociada con un animal cautivo, una planta cultivada o un [ui-element]#evento# de algún otro registro no natural. La <<localidad>> mencionado es a menudo un zoológico, acuario o jardín botánico.\n\n"
@@ -3679,7 +3679,7 @@ msgstr "Apéndice B: Métodos para Encontrar el Centro Corregido y el Radio Geog
 #. type: Plain text
 #: appb.en.adoc:12
 msgid "Sometimes determining the <<corrected-center,corrected center>> and <<geographic-radial,geographic radial>> of a <<feature>> can be difficult to do \"by eye.\" It usually requires repeated trial and error moving and adjusting the radius of circles to narrow in on the final result. Here we share some simple methods to aid in finding the corrected center and geographic radial based on the geometric shape of the feature of interest."
-msgstr "A veces determinar el <<centro-corregido, radio geográfico>> y <<radio-geográfico, radio geográfico>> de una <<entidad-geográfica>> puede ser difícil hacer \"a ojo\". Por lo general, se requiere una repetición del ensayo y error moviendo y ajustando el radio de los círculos para acotar el resultado final. Aquí compartimos algunos métodos sencillos para ayudar a encontrar el centro corregido y el radio geográfico basado en la forma geométrica de la entidad de interés."
+msgstr "A veces determinar el <<centro-corregido, centro corregido>> y el <<radio-geográfico, radio geográfico>> de una <<entidad-geográfica>> puede ser difícil hacer \"a ojo\". Por lo general, se requiere una repetición del ensayo y error moviendo y ajustando el radio de los círculos para acotar el resultado final. Aquí compartimos algunos métodos sencillos para ayudar a encontrar el centro corregido y el radio geográfico basado en la forma geométrica de la entidad de interés."
 
 #. type: Title ====
 #: appb.en.adoc:13
@@ -3746,13 +3746,13 @@ msgstr "img/web/convex-elongate-feature-radial.png"
 #. type: Table
 #: appb.en.adoc:52
 msgid "a| Step 2: If the midpoint is within or on the <<boundary>> of the geometry and there is no point within the geometry that is further away than the two extreme points of the chosen segment (which one can determine by eye, with a ruler or with a tool to make a circle), then the midpoint is already the corrected center *a*, with geographic radial *b*."
-msgstr "a| Paso 2: Si el punto medio está dentro o sobre el <<límite>> de la geometría y no hay un punto dentro de la geometría que esté más lejos que los dos puntos extremos del segmento elegido (que se puede determinar a ojo, con una regla o con una herramienta para hacer un círculo), entonces el punto medio ya es el centro corregido *a*, con radio geográfico *b*."
+msgstr "a| Paso 2: Si el punto medio está dentro o sobre el <<límite>> de la geometría y no hay un punto dentro de la geometría que esté más lejos que los dos puntos extremos del segmento elegido (se puede determinar a ojo, con una regla o con una herramienta para hacer un círculo), entonces el punto medio ya es el centro corregido *a*, con radio geográfico *b*."
 
 #. type: Title ====
 #: appb.en.adoc:54
 #, no-wrap
 msgid "Not Obviously Elongate Convex Feature"
-msgstr "Entidad Geográfica Convexa No Obviamente Alargada"
+msgstr "Entidad Geográfica Convexa Obviamente No Alargada"
 
 #. type: Target for macro image
 #: appb.en.adoc:63
