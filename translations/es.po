@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-22 19:09\n"
+"PO-Revision-Date: 2021-10-22 20:59\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -478,7 +478,7 @@ msgstr "Radio de la Entidad Geográfica"
 #. type: Plain text
 #: 0100.en.adoc:119
 msgid "A <<feature>> is a place in the <<locality>> description that has an <<extent>> and can be delimited by a <<boundary>>. The <<geographic-radial,geographic radial>> of the feature (shown as [ui-element]#Radial of Feature# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]) is the distance from the <<corrected-center,corrected center>> of the feature to the furthest point on the <<geographic-boundary,geographic boundary>> of that feature (see <<img-corrected-center>> and {gbp}#extent-of-a-location[Extent of a Location^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). Note that the radial was called \"extent\" in earlier documents and versions of the Calculator. See <<Appendix B: Methods to Find the Corrected Center and Geographic Radial>> for techniques to determine the geographic radial."
-msgstr "Una <<entidad geográfica>> es un lugar en la descripción de una <<localidad>> que tiene una <<extensión-geográfica, extensión>> y puede ser delimitada por un <<límite>>. El <<radio geográfico>> de la entidad (mostrado como [ui-element]#Radio de la Entidad# en http://georeferencing.org/georefcalculator/gc.html[la Calculadora^])) es la distancia desde el <<centro corregido>> de la entidad hasta el punto más lejano en el <<límite geográfico>> de esa entidad (ver <<img-corrected-center>> y {gbp}#extensión-de-una-ubicación[Extensión de una Ubicación^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]). Tenga en cuenta que en documentos anteriores y versiones anteriores de la Calculadora el radio se llamaba \"extensión\". Vea <<Apéndice B: Métodos para Encontrar el Centro Corregido y el Radio Geográfico>> para conocer las técnicas para determinar el centro corregido."
+msgstr "Una <<entidad geográfica>> es un lugar en la descripción de una <<localidad>> que tiene una <<extensión, extensión>> y puede ser delimitada por un <<límite>>. El <<radio geográfico>> de la entidad (mostrado como [ui-element]#Radio de la Entidad# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^])) es la distancia desde el <<centro corregido>> de la entidad hasta el punto más lejano en el <<límite geográfico>> de esa entidad (ver <<img-corrected-center>> y {gbp}#extensión-de-una-ubicación[Extensión de una Ubicación^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]). Tenga en cuenta que en documentos anteriores y versiones anteriores de la Calculadora el radio se llamaba \"extensión\". Vea <<Apéndice B: Métodos para Encontrar el Centro Corregido y el Radio Geográfico>> para conocer las técnicas para determinar el centro corregido."
 
 #. type: Plain text
 #: 0100.en.adoc:121
@@ -499,7 +499,7 @@ msgstr "Etiquetada como [ui-element]#Input Latitude# en la http://georeferencing
 #. type: Plain text
 #: 0100.en.adoc:128
 msgid "Latitudes in <<decimal-degrees,decimal degrees>> north of the equator are positive by convention, while latitudes to the south are negative. The Calculator supports three degree-based geographic coordinate formats for latitude and <<longitude>>: <<decimal-degrees>> (e.g. −41.0570673), degrees decimal minutes (e.g. 41° 3.424\") and <<DMS,degrees minutes and seconds>> (e.g. 41° 3' 25.44\" S)."
-msgstr "Por convención, las latitudes en <<grados decimales>> al norte del ecuador son positivas mientras que las latitudes hacia el sur son negativas. La Calculadora admite tres formatos de coordenadas geográficas basadas en grados para la latitud y la <<longitud>>: <<grados decimales>> (p. ej., –41.0570673), grados minutos decimales (p. ej., 41° 3.424\") y <<GMS,grados, minutos, y segundos>> (p. ej., 41° 3' 25.44\" S)."
+msgstr "Por convención, las latitudes en <<grados decimales>> al norte del ecuador son positivas mientras que las latitudes hacia el sur son negativas. La Calculadora admite tres formatos de coordenadas geográficas basadas en grados para la latitud y la <<longitud>>: <<grados decimales>> (p. ej., –41.0570673), grados minutos decimales (p. ej., 41° 3.424\") y <<GMS,grados minutos y segundos>> (p. ej., 41° 3' 25.44\" S)."
 
 #. type: Title ====
 #: 0100.en.adoc:130
@@ -515,7 +515,7 @@ msgstr "Etiquetada como [ui-element]#Longitud de Entrada# en la http://georefere
 #. type: Plain text
 #: 0100.en.adoc:135
 msgid "Longitudes in <<decimal-degrees,decimal degrees>> east of the prime meridian are positive by convention, while longitudes to the west are negative. The Calculator supports three degree-based geographic coordinate formats for <<latitude>> and longitude: <<decimal-degrees,decimal degrees>> (−71.5246934), degrees decimal minutes (71° 31.482\") and <<DMS,degrees minutes and seconds>> (71° 31' 28.90\" W)."
-msgstr "Por convención, las longitudes en <<grados decimales>> al este del meridiano cero son positivas mientras que las longitudes al oeste son negativas. La Calculadora admite tres formatos de coordenadas geográficas basadas en grados para la <<latitud>> y la longitud: <<grados decimales>> (p. ej., −71.5246934), grados minutos decimales (p. ej., 71° 31.482\") y <<GMS,grados, minutos, y segundos>> (p. ej., 71° 31' 28.90\" W)."
+msgstr "Por convención, las longitudes en <<grados decimales>> al este del meridiano cero son positivas mientras que las longitudes al oeste son negativas. La Calculadora admite tres formatos de coordenadas geográficas basadas en grados para la <<latitud>> y la longitud: <<grados decimales>> (p. ej., −71.5246934), grados minutos decimales (p. ej., 71° 31.482\") y <<GMS,grados minutos y segundos>> (p. ej., 71° 31' 28.90\" W)."
 
 #. type: Title ====
 #: 0100.en.adoc:136
@@ -526,7 +526,7 @@ msgstr "Fuente de las coordenadas"
 #. type: Plain text
 #: 0100.en.adoc:139
 msgid "The [ui-element]#Coordinate Source# is the type of resource (map type, <<GPS>>, <<gazetteer>>, <<locality>> description) from which the starting [ui-element]#Input Latitude# and [ui-element]#Longitude# were derived."
-msgstr "La [ui-element]#Fuente de las Coordenadas# es el tipo de recurso (tipo de mapa, <<GPS>>, <<gacetero> >, descripción de la <<localidad>>) del cual se derivaron la [ui-element]#Latitud# and [ui-element]#Longitud# de entrada iniciales."
+msgstr "La [ui-element]#Fuente de las Coordenadas# es el tipo de recurso (tipo de mapa, <<GPS>>, <<gacetero>>, descripción de la <<localidad>>) del cual se derivaron la [ui-element]#Latitud# and [ui-element]#Longitud# de entrada iniciales."
 
 #. type: Plain text
 #: 0100.en.adoc:141
