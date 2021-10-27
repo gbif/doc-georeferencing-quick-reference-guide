@@ -25,9 +25,13 @@
 // Shorthand for links to the other two documents
 :gbp: link:../../../georeferencing-best-practices/1.0/en/
 :gcm: link:../../../georeferencing-calculator-manual/1.0/en/
+:gbp-es: link:../../../georeferencing-best-practices/1.0/es/
+:gcm-es: link:../../../georeferencing-calculator-manual/1.0/es/
 ifdef::backend-pdf[]
 :gbp: link:https://docs.gbif.org/georeferencing-best-practices/1.0/en/
 :gcm: link:https://docs.gbif.org/georeferencing-calculator-manual/1.0/en/
+:gbp-es: link:https://docs.gbif.org/georeferencing-best-practices/1.0/es/
+:gcm-es: link:https://docs.gbif.org/georeferencing-calculator-manual/1.0/es/
 endif::backend-pdf[]
 
 ifdef::backend-html5[]
