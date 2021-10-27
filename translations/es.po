@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-10-10 11:29+0000\n"
-"PO-Revision-Date: 2021-10-24 23:45\n"
+"PO-Revision-Date: 2021-10-27 13:02\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1583,7 +1583,7 @@ msgstr "*Paso 3 – Hacer el cálculo usano los siguientes parámetros adicional
 #: 0200.en.adoc:375
 #, no-wrap
 msgid "*A*: Boundary, corrected center *a* and geographic radial *b* of two features. *B*: Coordinates *c* and geographic radial *d* of the interpretation of a location of the type \"_between Two Features_\"."
-msgstr "*A*: Límite, centro corregido*a* y radio geográfico *b* de dos entidades. *B*: Coordenadas *c* y radio geográfico *d* de la interpretación de una ubicación del tipo \"_entre dos Entidades Geográficas_\"."
+msgstr "*A*: Límite, centro corregido *a* y radio geográfico *b* de dos entidades. *B*: Coordenadas *c* y radio geográfico *d* de la interpretación de una ubicación del tipo \"_entre dos Entidades Geográficas_\"."
 
 #. type: Target for macro image
 #: 0200.en.adoc:376
@@ -3660,14 +3660,12 @@ msgid "The <<feature>>(s) cannot be found with available references.\n\n"
 msgstr "La <<entidad-geográfica>> no se puede encontrar con las referencias disponibles.\n\n"
 "No <<georreferencia,georreferencie>> estas localidades. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación; p. ej. \"no se puede encontrar la localidad con las referencias disponibles\").\n\n"
 "|<<Más de una Entidad Geográfica Coincidente,§2.4.3 Más de una Entidad Geográfica Coincidente>>\n"
-"a|\n"
-"Múltiples <<entidad-geográfica,entidades geográficas>> relacionadas: Si hay varios lugares cercanos distintos con el mismo nombre y no hay más información para distinguir entre las posibilidades, trate la combinación de ellos como la entidad geográfica y siga el procedimiento para el correspondiente <<tipo-de-localidad>>. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación).\n\n"
+"a|Múltiples <<entidad-geográfica,entidades geográficas>> relacionadas: Si hay varios lugares cercanos distintos con el mismo nombre y no hay más información para distinguir entre las posibilidades, trate la combinación de ellos como la entidad geográfica y siga el procedimiento para el correspondiente <<tipo-de-localidad>>. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación).\n\n"
 "Múltiples entidades geográficas no relacionadas: No <<georreferencia,georreferencie>>. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación; p.ej. \"hay múltiples entidades geográficas no relacionadas que coinciden con la de la descripción de la localidad\").\n\n"
 "|<<Demostrablemente Inconsistente,§2.4.4 Demostrablemente Inconsistente>>\n"
 "|La descripción de la <<localidad>> contiene inconsistencias irreconciliables, afirmaciones que no pueden ser verdaderas simultáneamente. No <<georreferencia,georreferencie>>. Documente en término:dwc[georeferenceRemarks] (Comentarios de la georreferenciación).\n\n"
 "|<<Cultivado o Cautivo,§2.4.5 Cultivado o Cautivo>>\n"
-"a|\n"
-"La <<localidad>> está asociada con un animal cautivo, una planta cultivada o un [ui-element]#evento# de algún otro registro no natural. La <<localidad>> mencionado es a menudo un zoológico, acuario o jardín botánico.\n\n"
+"a|La <<localidad>> está asociada con un animal cautivo, una planta cultivada o un [ui-element]#evento# de algún otro registro no natural. La <<localidad>> mencionado es a menudo un zoológico, acuario o jardín botánico.\n\n"
 "<<georreferencia,Georreferencie>> la localidad normalmente basada en los <<tipo-de-localidad,tipos de localidad>> y de <<entidad-geográfica>>. Documente la naturaleza de la procedencia usando el term:dwc[degreeOfEstablishment] (Grado de establecimiento).\n"
 
 #. type: Title ==
