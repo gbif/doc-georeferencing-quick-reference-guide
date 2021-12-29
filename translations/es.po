@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-11-03 12:39+0000\n"
-"PO-Revision-Date: 2021-12-29 22:22\n"
+"PO-Revision-Date: 2021-12-29 23:19\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: index.en.adoc:1 appa.en.adoc:3 appb.en.adoc:3
 #, no-wrap
 msgid "Georeferencing Quick Reference Guide"
-msgstr "Guía Rápida de Georreferenciación"
+msgstr "Guía rápida de georreferenciación"
 
 #. type: Plain text
 #: index.en.adoc:39
@@ -48,7 +48,7 @@ msgstr "Citación sugerida"
 #. type: Plain text
 #: colophon.en.adoc:12
 msgid "Zermoglio PF, Chapman AD, Wieczorek JR, Luna MC & Bloom DA (2020) Georeferencing Quick Reference Guide. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/e09p-h128"
-msgstr "Zermoglio PF, Chapman AD, Wieczorek JR, Luna MC & Bloom DA (2020) Guía Rápida de Georreferenciación. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/e09p-h128"
+msgstr "Zermoglio PF, Chapman AD, Wieczorek JR, Luna MC & Bloom DA (2020) Guía rápida de georreferenciación. Copenhagen: GBIF Secretariat. https://doi.org/10.35035/e09p-h128"
 
 #. type: Title ===
 #: colophon.en.adoc:13
@@ -76,7 +76,7 @@ msgstr "Licencia"
 #. type: Plain text
 #: colophon.en.adoc:22
 msgid "The document _Georeferencing Quick Reference Guide_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License]."
-msgstr "Este documento _Guía Rápida de Georreferenciación_ Se publica bajo una licencia https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Atribución-CompartirIgual 4.0 Internacional]."
+msgstr "Este documento _Guía rápida de georreferenciación_ Se publica bajo una licencia https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Atribución-CompartirIgual 4.0 Internacional]."
 
 #. type: Title ===
 #: colophon.en.adoc:23
@@ -189,12 +189,12 @@ msgstr "Este documento es uno de los tres que cubre los requisitos y métodos re
 #. type: Plain text
 #: 0100.en.adoc:24
 msgid "The Guide relies on the {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^] for background, definitions, and more detailed explanations of the theory behind the methods and calculations found here and in the Calculator."
-msgstr "La Guía se basa en las {gbp}[Buenas Prácticas de Georreferenciación (Chapman y Wieczorek 2020)^] como fuente de antedecedentes, definiciones y explicaciones más detalladas de la teoría detrás de los métodos y cálculos encontrados aquí y en la Calculadora."
+msgstr "La Guía se basa en las {gbp-es}[buenas prácticas de georreferenciación (Chapman y Wieczorek 2020)^] como fuente de antecedentes, definiciones y explicaciones más detalladas de la teoría que respalda los métodos y cálculos que se encuentran aquí y en la Calculadora."
 
 #. type: Plain text
 #: 0100.en.adoc:26
 msgid "The third document is the {gcm}[Georeferencing Calculator Manual (Bloom et al. 2020)^], which describes how to use the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]. The Calculator is a browser-based JavaScript application that aids in georeferencing descriptive <<locality,localities>>, and making the calculations necessary to obtain <<geographic-coordinates>> and <<uncertainty,uncertainties>> for locations using the <<point-radius>> method."
-msgstr "El tercer documento es el {gcm}[Manual de la Calculadora de Georreferenciación (Bloom et al. 2020)^], que describe cómo utilizar la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]. La Calculadora es una aplicación JavaScript para navegadores web que apoya la georeferenciación de descripciones de <<localidad,localidades>> y los cálculos necesario para obtener <<coordenadas geográficas>> e <<incertidumbre,incertidumbres>> usando el método <<radio-punto>>."
+msgstr "El tercer documento es el {gcm}[Manual de la calculadora de georreferenciación (Bloom et al. 2020)^], que describe cómo utilizar la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación^]. La Calculadora es una aplicación JavaScript para navegadores web que apoya la georreferenciación de descripciones de <<localidad,localidades>> y los cálculos necesario para obtener <<coordenadas geográficas>> e <<incertidumbre,incertidumbres>> usando el método <<radio-punto>>."
 
 #. type: Plain text
 #: 0100.en.adoc:28
@@ -327,7 +327,7 @@ msgstr "Ejemplos"
 #. type: delimited block =
 #: 0100.en.adoc:57
 msgid "USGS 1:24000 Florence Montana Quad 1967 + Terrametrics 2008 Google Earth + Wieczorek C & J Wieczorek (2020) Georeferencing Calculator, version yyyymmdd. Available: http://georeferencing.org/georefcalculator/gc.html."
-msgstr "USGS 1:24000 Florence Montana Quad 1967 + Terrametrics 2008 Google Earth + Wieczorek C & J Wieczorek (2020) Calculadora de Georreferenciación, versión ddmmaa. Disponible en: http://georeferencing.org/georefcalculator/gc.html."
+msgstr "USGS 1:24000 Florence Montana Quad 1967 + Terrametrics 2008 Google Earth + Wieczorek C & J Wieczorek (2020) Calculadora de georreferenciación, version yyyymmdd. Disponible en: http://georeferencing.org/georefcalculator/gc.html."
 
 #. type: Labeled list
 #: 0100.en.adoc:59
@@ -439,7 +439,7 @@ msgstr "Distancia a lo largo de <<dirección, direcciones>> ortogonales"
 #. type: Plain text
 #: 0100.en.adoc:103
 msgid "Distance at a <<heading>>"
-msgstr "Distancia desde una <<orientación-cardinal, orientación cardinal>> (en la http://georeferencing. org/georefcalculator/gc. html[Calculadora^] como \"distancia en una dirección\")"
+msgstr "Distancia desde una <<orientación-cardinal, orientación cardinal>> (en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] como \"distancia en una dirección\")"
 
 #. type: Plain text
 #: 0100.en.adoc:105
