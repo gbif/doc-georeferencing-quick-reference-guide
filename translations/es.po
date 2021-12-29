@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-11-03 12:39+0000\n"
-"PO-Revision-Date: 2021-12-29 20:02\n"
+"PO-Revision-Date: 2021-12-29 21:23\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -141,12 +141,12 @@ msgstr "Esta es una guía práctica de <<georreferencia,georreferenciación>>. D
 #. type: Plain text
 #: 0100.en.adoc:6
 msgid "This Guide is based on a http://georeferencing.org/docs/GeoreferencingQuickGuide.pdf[first version of the Guide (Wieczorek et al. 2012)^]), which was in turn an adaptation of http://georeferencing.org/docs/georeffordummy.xls[Georeferencing for Dummies (Spencer et al. 2008)^]. It explains the recommended georeferencing procedures for the most commonly encountered type of <<locality,localities>>. This Guide should be used in parallel with the {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^], which contains the theoretical background and more detailed information about concepts used here."
-msgstr "Esta guía se basa en http://georeferencing.org/docs/GeoreferencingQuickGuide.pdf[primera versión de la Guía (Wieczorek et al. 2012)^]), que a su vez fue una adaptación de http://georeferencing.org/docs/georeffordummy.xls[Georeferencing for Dummies (Spencer et al. 2008)^]. Explica los procedimientos recomendados de georreferenciación para el tipo más común de <<localidad,localidades>>. Esta guía debe usarse en paralelo con las {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^], documento que contiene los antecedentes teóricos y la información más detallada sobre los conceptos utilizados aquí."
+msgstr "Esta guía se basa en la http://georeferencing.org/docs/GeoreferencingQuickGuide.pdf[primera versión de la Guía (Wieczorek et al. 2012)^]), que a su vez fue una adaptación de http://georeferencing.org/docs/georeffordummy.xls[Georeferencing for Dummies (Spencer et al. 2008)^]. La guía explica los procedimientos recomendados de georreferenciación para el tipo más común de <<localidad,localidades>>. Esta guía debe usarse en paralelo con las {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^], documento que contiene los antecedentes teóricos y la información más detallada sobre los conceptos utilizados aquí."
 
 #. type: Plain text
 #: 0100.en.adoc:8
 msgid "Underlined terms throughout this document (e.g. <<accuracy>>) link to definitions in the <<Glossary>>. Terms in italics (e.g. [ui-element]#Input Latitude#) refer to fields and/or labels in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator (Wieczorek & Wieczorek 2020)^] (hereafter referred to as 'the Calculator'). Darwin Core terms are displayed in monospace (e.g. term:dwc[dwc:georeferenceRemarks]) in all GBIF digital documentation."
-msgstr "Los términos subrayados a lo largo de este documento (por ejemplo, <<exactitud>>) tienen un enlace a las definiciones en el <<Glosario>>. Los términos en cursiva (e.g. [ui-element]#Latitud de entrada#) se refieren a campos y/o etiquetas de la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación (Wieczorek & Wieczorek 2020)^] (de ahora en adelante \"la Calculadora\"). Los términos de Darwin Core se muestran en el tipo de letra monoespaciado (por ejemplo, term:dwc[dwc:georeferenceRemarks]) en toda la documentación digital de GBIF."
+msgstr "Los términos subrayados a lo largo de este documento (por ejemplo, <<exactitud>>) tienen un enlace a las definiciones en el <<Glosario>>. Los términos en cursiva (e.g. [ui-element]#Latitud de entrada#) se refieren a campos y/o etiquetas de la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación (Wieczorek & Wieczorek 2020)^] (de ahora en adelante \"la Calculadora\"). Los términos de Darwin Core se muestran en un tipo de letra monoespaciado (por ejemplo, term:dwc[dwc:georeferenceRemarks]) en toda la documentación digital de GBIF."
 
 #. type: Plain text
 #: 0100.en.adoc:10
@@ -173,7 +173,7 @@ msgstr "Público objetivo"
 #. type: Plain text
 #: 0100.en.adoc:18
 msgid "This document is a practical guide for anyone who needs to <<georeference>> textual <<locality>> descriptions so that they can be used in spatial filtering or analysis in research, education, or the maintenance of biological collections data."
-msgstr "Este documento es una guía práctica para cualquiera que necesite <<georreferencia, georreferenciar>> descripciones textuales de <<localidad, localidades>>, para que puedan ser usadas en filtros espaciales o en análisis para investigación, educación o el mantenimiento de datos biológicos de colecciones."
+msgstr "Este documento es una guía práctica para cualquiera que necesite <<georreferencia, georreferenciar>> descripciones textuales de <<localidad, localidades>>, para que puedan ser filtradas espacialmente o en análisis para investigación, educación o mantenimiento de datos de colecciones biológicas."
 
 #. type: Title ===
 #: 0100.en.adoc:19
@@ -194,12 +194,12 @@ msgstr "La Guía se basa en las {gbp}[Buenas Prácticas de Georreferenciación (
 #. type: Plain text
 #: 0100.en.adoc:26
 msgid "The third document is the {gcm}[Georeferencing Calculator Manual (Bloom et al. 2020)^], which describes how to use the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]. The Calculator is a browser-based JavaScript application that aids in georeferencing descriptive <<locality,localities>>, and making the calculations necessary to obtain <<geographic-coordinates>> and <<uncertainty,uncertainties>> for locations using the <<point-radius>> method."
-msgstr "El tercer documento es el {gcm}[Manual del cálculo de georreferenciación (Bloom et al. 2020)^], que describe cómo utilizar la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]. La Calculadora es una aplicación JavaScript basada en navegadores que ayuda en la georeferenciación de <<localidad,localidades>> descriptivas y en los cálculos necesario para obtener <<coordenadas geográficas>> e <<incertidumbre,incertidumbres>> para ubicaciones usando el método <<radio-punto>>."
+msgstr "El tercer documento es el {gcm}[Manual de la Calculadora de Georreferenciación (Bloom et al. 2020)^], que describe cómo utilizar la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]. La Calculadora es una aplicación JavaScript para navegadores web que apoya la georeferenciación de descripciones de <<localidad,localidades>> y los cálculos necesario para obtener <<coordenadas geográficas>> e <<incertidumbre,incertidumbres>> usando el método <<radio-punto>>."
 
 #. type: Plain text
 #: 0100.en.adoc:28
 msgid "These documents DO NOT provide guidance on georectifying images or <<geocode,geocoding>> street addresses – distinct operations that are sometimes called \"georeferencing\"."
-msgstr "Estos documentos NO proporcionan orientación sobre la georrectificación de imágenes o <<geocodificar,geocodificación>> de direcciones, operaciones distintas a las que a veces se les llama \"georreferenciación\"."
+msgstr "Estos documentos NO proporcionan orientación sobre la georrectificación de imágenes o <<geocodificar,geocodificación>> de direcciones, estas son operaciones distintas a las que también se les llama \"georreferenciación\"."
 
 #. type: Title ===
 #: 0100.en.adoc:29
@@ -210,7 +210,7 @@ msgstr "Cambios respecto a la versión anterior"
 #. type: Plain text
 #: 0100.en.adoc:33
 msgid "This version of the Guide is a complete remake of its previous edition, reorganized and augmented to include graphical examples of each type of location and detailed steps for how to <<georeference>> them.  There have been a few changes in terminology since the previous edition, which include:"
-msgstr "Esta edición de la Guía fue completamente rehecha respecto a su versión anterior. Fue reorganizada y aumentada para incluir ejemplos gráficos de cada tipo de ubicación y pasos detallados sobre cómo <<georreferencia, georreferenciarlos>>. Se han producido algunos cambios en la terminología desde la versión anterior, que incluyen:"
+msgstr "Esta edición de la Guía fue completamente rehecha respecto a su versión anterior. Fue reorganizada y ampliada para incluir ejemplos gráficos de cada tipo de ubicación y pasos detallados sobre cómo <<georreferencia, georreferenciarlos>>. Se han producido algunos cambios en la terminología desde la versión anterior, que incluyen:"
 
 #. type: Plain text
 #: 0100.en.adoc:35
@@ -247,7 +247,7 @@ msgstr "Conceptos de georreferenciación del <<Darwin-Core,Darwin Core>>:"
 #: 0100.en.adoc:45
 #, no-wrap
 msgid "term:dwc[dwc:decimalLatitude], term:dwc[dwc:decimalLongitude], term:dwc[dwc:geodeticDatum]"
-msgstr "term:dwc[dwc:decimalLatitude] (Latitud decimal), term:dwc[dwc:decimalLongitude] (Longitud decimal), term:dwc[dwc:geodeticDatum] (Dato geodésico)"
+msgstr "term:dwc[dwc:decimalLatitude] (Latitud decimal), term:dwc[dwc:decimalLongitude] (Longitud decimal), term:dwc[dwc:geodeticDatum] (Datum geodésico)"
 
 #. type: Plain text
 #: 0100.en.adoc:46
@@ -274,7 +274,7 @@ msgstr "term:dwc[dwc:georeferencedBy] (Georreferenciado por), term:dwc[dwc:geore
 #. type: Plain text
 #: 0100.en.adoc:48
 msgid "the individual(s) who last modified the georeference and when that happened. These correspond to the final authority on the georeference in its current state, regardless of who might have worked on previous versions of the georeference."
-msgstr "el o los individuos que modificaron por última vez la georreferencia y cuándo se llevó a cabo la modificación. Estas personas corresponden a la autoridad final sobre la georreferencia en su estado actual, independientemente de quién pudo haber trabajar en versiones anteriores de la georreferencia."
+msgstr "la o las personas que modificaron la georreferencia por última vez y cuándo se llevó a cabo la modificación. Estas personas corresponden a la autoridad final sobre la georreferencia en su estado actual, independientemente de quién pudo haber trabajado en versiones anteriores de la georreferencia."
 
 #. type: Labeled list
 #: 0100.en.adoc:48
@@ -398,7 +398,7 @@ msgstr "Conceptos de Georreferenciación"
 #. type: Plain text
 #: 0100.en.adoc:91
 msgid "One of the goals of <<georeference,georeferencing>> following best practices is to be sure that enough information is provided in the output so that the georeference is repeatable (see {gbp}#principles-of-best-practice[Principles of Best Practice] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). To that end, this document provides a set of recipes for georeferencing various <<locality-type,locality types>> using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator]. The Calculator allows you to make distinct kinds of calculations based on the locality type (<<s-locality-type>>). When the locality type is chosen from the predefined list, the Calculator presents input boxes for all of the parameters needed for that type of calculation. Note that the locality type is for the most specific <<locality-clause,clause>> in the <<locality>> description (see {gbp}#parsing-the-locality-description[Parsing the Locality Description] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). However, there may be information for other clauses or other parts of the <<location>> record that help to constrain the location and come into play when a <<feature>> <<boundary>> is determined. Many Calculator parameters are used for more than one locality type. Rather than repeat the explanation for each locality type, they are collected here for common reference. Some locality types require specific parameters, for which the corresponding explanations are included in each subsection of <<Georeferencing Methods by Locality Type>>. Refer to the {gcm}[Georeferencing Calculator Manual (Bloom et al. 2020)^] for details about the Calculator not answered in this document."
-msgstr "Uno de los objetivos de <<georreferencia,georreferenciar>> siguiendo las buenas prácticas es asegurarse de proporcionar suficiente información en el producto como para que la georreferencia se pueda replicar (ver {gbp}#principios-de-buenas-prácticas[Principios de buenas prácticas] en {gbp}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). Para ello, este documento proporciona un conjunto de pasos para georreferenciar distintos <<tipo-de-localidad, tipos de localidad>> usando la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación]. La Calculadora permite hacer distintos cálculos basados en el tipo de localidad (<<s-locality-type>>). Al elegir el tipo de localidad de la lista predefinida, la Calculadora muestra campos de entrada para todos los parámetros necesarios para ese tipo de cálculo en particular. Tenga en cuenta que el tipo de localidad se define con base en la <<claúsula-de-la-localidad,claúsula>> más específica presente en la descripción de la <<localidad>> (ver {gbp}#parsing-the-locality-description[Parsing the Locality Description] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). Sin embargo, puede haber información para otras cláusulas u otros detalles del registro de la <<ubicación>> que ayuden a acotar la ubicación y pueden entrar en juego a la hora de determinar el <<límite>> de una <<entidad-geográfica>>. Varios parámetros de la Calculadora se usan para más de un tipo de localidad. En lugar de repetir la explicación para cada tipo de localidad, se recopilan acá para una referencia común. Algunos tipos de localidades requieren parámetros específicos, las explicaciones correspondientes se incluyen en cada subsección de <<Métodos de Georreferenciación por Tipo de Localidad>>. Consulte el {gcm}[Manual del Cálculo de Georreferenciación (Bloom et al. 2020)^] para detalles sobre la Calculadora que no están en este documento."
+msgstr "Uno de los objetivos de <<georreferencia,georreferenciar>> siguiendo las buenas prácticas es asegurarse de proporcionar suficiente información en el producto como para que la georreferencia se pueda replicar (ver {gbp}#principios-de-buenas-prácticas[Principios de buenas prácticas] en {gbp}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). Para ello, este documento proporciona un conjunto de pasos para georreferenciar distintos <<tipo-de-localidad, tipos de localidad>> usando la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación]. La Calculadora permite hacer distintos cálculos basados en el tipo de localidad (<<s-locality-type>>). Al elegir el tipo de localidad de la lista predefinida, la Calculadora muestra campos de entrada para todos los parámetros necesarios para ese tipo de cálculo en particular. Tenga en cuenta que el tipo de localidad se define con base en la <<claúsula-de-la-localidad,claúsula>> más específica presente en la descripción de la <<localidad>> (ver {gbp}#parsing-the-locality-description[Parsing the Locality Description] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). Sin embargo, puede haber información para otras cláusulas u otros detalles del registro de la <<ubicación>> que ayuden a acotar la ubicación y pueden entrar en juego a la hora de determinar el <<límite>> de una <<entidad-geográfica>>. Varios parámetros de la Calculadora se usan para más de un tipo de localidad. En lugar de repetir la explicación para cada tipo de localidad, se recopilan acá para una referencia común. Algunos tipos de localidades requieren parámetros específicos, las explicaciones correspondientes se incluyen en cada subsección de <<Métodos de Georreferenciación por Tipo de Localidad>>. Consulte el {gcm}[Manual de la Calculadora de Georreferenciación (Bloom et al. 2020)^] para detalles sobre la Calculadora que no están en este documento."
 
 #. type: Title ====
 #: 0100.en.adoc:93
@@ -439,7 +439,7 @@ msgstr "Distancia a lo largo de <<dirección, direcciones>> ortogonales"
 #. type: Plain text
 #: 0100.en.adoc:103
 msgid "Distance at a <<heading>>"
-msgstr "Distancia desde una <<orientación-cardinal, orientación cardinal>> (en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] como \"distancia desde una dirección\")"
+msgstr "Distancia desde una <<orientación-cardinal, orientación cardinal>> (en la http://georeferencing. org/georefcalculator/gc. html[Calculadora^] como \"distancia en una dirección\")"
 
 #. type: Plain text
 #: 0100.en.adoc:105
