@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-11-03 12:39+0000\n"
-"PO-Revision-Date: 2021-12-29 21:23\n"
+"PO-Revision-Date: 2021-12-29 22:22\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -494,7 +494,7 @@ msgstr "Latitud"
 #. type: Plain text
 #: 0100.en.adoc:126
 msgid "Labelled as [ui-element]#Input Latitude# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]. The <<geographic-coordinates,geographic coordinate>> north or south of the equator (where <<latitude>> is 0) that represents the starting point for a <<georeference>> calculation and depends on the <<locality-type,locality type>>."
-msgstr "Etiquetada como [ui-element]#Input Latitude# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^]. Es la <<coordenadas-geográficas, coordenada geográfica>> al norte o sur del ecuador (donde la <<latitud>> es 0) que representa el punto de partida para el cálculo de una <<georreferencia>> y depende del <<tipo de localidad>>."
+msgstr "Etiquetada como [ui-element]#Latitud de entrada# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^]. Es la <<coordenadas-geográficas, coordenada geográfica>> al norte o sur del ecuador (donde la <<latitud>> es 0) que representa el punto de partida para el cálculo de una <<georreferencia>> y depende del <<tipo de localidad>>."
 
 #. type: Plain text
 #: 0100.en.adoc:128
@@ -526,7 +526,7 @@ msgstr "Fuente de las coordenadas"
 #. type: Plain text
 #: 0100.en.adoc:139
 msgid "The [ui-element]#Coordinate Source# is the type of resource (map type, <<GPS>>, <<gazetteer>>, <<locality>> description) from which the starting [ui-element]#Input Latitude# and [ui-element]#Longitude# were derived."
-msgstr "La [ui-element]#Fuente de las Coordenadas# es el tipo de recurso (tipo de mapa, <<GPS>>, <<gacetero>>, descripción de la <<localidad>>) del cual se derivaron la [ui-element]#Latitud# and [ui-element]#Longitud# de entrada iniciales."
+msgstr "La [ui-element]#Fuente de las Coordenadas# es el tipo de recurso (tipo de mapa, <<GPS>>, <<gacetero>>, descripción de la <<localidad>>) del cual se derivaron la [ui-element]#Latitud# y [ui-element]#Longitud# de entrada."
 
 #. type: Plain text
 #: 0100.en.adoc:141
