@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-11-03 12:39+0000\n"
-"PO-Revision-Date: 2021-12-29 23:19\n"
+"PO-Revision-Date: 2022-01-10 23:49\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -146,7 +146,7 @@ msgstr "Esta guía se basa en la http://georeferencing.org/docs/GeoreferencingQu
 #. type: Plain text
 #: 0100.en.adoc:8
 msgid "Underlined terms throughout this document (e.g. <<accuracy>>) link to definitions in the <<Glossary>>. Terms in italics (e.g. [ui-element]#Input Latitude#) refer to fields and/or labels in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator (Wieczorek & Wieczorek 2020)^] (hereafter referred to as 'the Calculator'). Darwin Core terms are displayed in monospace (e.g. term:dwc[dwc:georeferenceRemarks]) in all GBIF digital documentation."
-msgstr "Los términos subrayados a lo largo de este documento (por ejemplo, <<exactitud>>) tienen un enlace a las definiciones en el <<Glosario>>. Los términos en cursiva (e.g. [ui-element]#Latitud de entrada#) se refieren a campos y/o etiquetas de la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación (Wieczorek & Wieczorek 2020)^] (de ahora en adelante \"la Calculadora\"). Los términos de Darwin Core se muestran en un tipo de letra monoespaciado (por ejemplo, term:dwc[dwc:georeferenceRemarks]) en toda la documentación digital de GBIF."
+msgstr "Los términos subrayados a lo largo de este documento (por ejemplo, <<exactitud>>) tienen un enlace a las definiciones en el <<Glosario>>. Los términos en cursiva (p. ej., [ui-element]#Latitud de entrada#) se refieren a campos y/o etiquetas de la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación (Wieczorek & Wieczorek 2020)^] (de ahora en adelante \"la Calculadora\"). Los términos de Darwin Core se muestran en un tipo de letra monoespaciado (por ejemplo, term:dwc[dwc:georeferenceRemarks]) en toda la documentación digital de GBIF."
 
 #. type: Plain text
 #: 0100.en.adoc:10
