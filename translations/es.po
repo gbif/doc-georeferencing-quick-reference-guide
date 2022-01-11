@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-11-03 12:39+0000\n"
-"PO-Revision-Date: 2022-01-11 14:54\n"
+"PO-Revision-Date: 2022-01-11 16:03\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -568,7 +568,7 @@ msgstr "Precisión de las coordenadas"
 #. type: Plain text
 #: 0100.en.adoc:157
 msgid "Labelled in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] as [ui-element]#Precision# in the first column of input parameters, this drop-down list is populated with levels of <<precision>> in keeping with the <<coordinate-format,coordinate format>> chosen. For example, with a [ui-element]#Coordinate Format# of [ui-element]#degrees minutes seconds#, an [ui-element]#Input Latitude# of 35° 22' 24\" N and an [ui-element]#Input Longitude# of 105° 22' 28\" W, the [ui-element]#Coordinate Precision# would be [ui-element]#nearest second#. A value of [ui-element]#exact# is any level of precision higher than the otherwise highest precision given on the list. Sources of <<coordinate-precision,coordinate precision>> may include paper or digital maps, digital imagery, <<GPS>>, <<gazetteer,gazetteers>>, or <<locality>> descriptions."
-msgstr "Etiquetado en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] como [ui-element]#Precisión# en la primera columna de parámetros de entrada, esta lista desplegable contiene niveles de <<precisión>> de acuerdo con el <<formato-de-las-coordenadas, formato de las coordenadas>> elegido. Por ejemplo con un [ui-element]#Formato de Coordenadas# de [ui-element]#grados minutos segundos#, una [ui-element]#Latitud de entrada# de 35° 22' 24\" N y una [ui-element]#Longitud de entrada# de 105° 22' 28\" W, la [ui-element]# precisión de las coordenadas# sería [ui-element]#segundo más cercano#. Un valor de [ui-element]#exacto# es cualquier nivel de precisión mayor que la máxima precisión dada en la lista. Las fuentes de <<precisión-de-las-coordenadas, precisión de las coordenadas>> pueden incluir mapas digitales o en físico, imágenes digitales, <<GPS>>, <<gacetero,gacetero>> o descripciones de <<localidad>>."
+msgstr "Etiquetado en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] como [ui-element]#Precisión# en la primera columna de parámetros de entrada, esta lista desplegable contiene niveles de <<precisión>> de acuerdo con el <<formato-de-las-coordenadas, formato de las coordenadas>> elegido. Por ejemplo con un [ui-element]#Formato de Coordenadas# de [ui-element]#grados minutos segundos#, una [ui-element]#Latitud de entrada# de 35° 22' 24\" N y una [ui-element]#Longitud de entrada# de 105° 22' 28\" W, la [ui-element]#precisión de las coordenadas# sería [ui-element]#segundo más cercano#. Un valor de [ui-element]#exacto# es cualquier nivel de precisión mayor que la máxima precisión dada en la lista. Las fuentes de <<precisión-de-las-coordenadas, precisión de las coordenadas>> pueden incluir mapas digitales o en físico, imágenes digitales, <<GPS>>, <<gacetero,gacetero>> o descripciones de <<localidad>>."
 
 #. type: Plain text
 #: 0100.en.adoc:159
@@ -1289,7 +1289,7 @@ msgstr "Para una confluencia de dos vías acuáticas, el límite es un triángul
 #: 0200.en.adoc:236
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, use the same method to determine the <<coordinates>> and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature (<<img-junction>>B).\n"
-msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez se ha determinado el límite, determine las <<coordenadas>> y el <radio-geográfico, radio geográfico>> usando el mismo método como para <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, medir la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad geográfica (<<img-junction>>B).\n"
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez se ha determinado el límite, determine las <<coordenadas>> y el <<radio-geográfico, radio geográfico>> usando el mismo método como para <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, medir la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad geográfica (<<img-junction>>B).\n"
 
 #. type: Block title
 #: 0200.en.adoc:240
@@ -1671,7 +1671,7 @@ msgstr "En todos los casos, tanto para el <<método-de-georreferenciación,méto
 #. type: Plain text
 #: 0220.en.adoc:12
 msgid "The <<locality-type,locality types>> that involve offsets, in addition to the tricky one we have already seen above (\"near a feature\", <<Feature – near a Feature>>), are:"
-msgstr "Los <<tipo-de-localidad,tipos de localidad>> que involucran desplazamientos, además del tipo complicado que ya vimos anteriormente (\"cerca de una entidad geográfica\", <<Entidad Geográfica: cerca de una Entidad Geográfica>>), son:"
+msgstr "Los <<tipo-de-localidad,tipos de localidad>> que involucran desplazamientos, además del tipo complicado que ya vimos anteriormente (\"cerca de una entidad geográfica\", <<Entidad Geográfica: Cerca de una Entidad Geográfica>>), son:"
 
 #. type: Plain text
 #: 0220.en.adoc:14
@@ -1734,7 +1734,7 @@ msgstr "*Tipo de localidad:* [ui-element]#Solo Distancia#\n"
 #: 0220.en.adoc:34
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries:* Determine the <<boundary>> of the feature as you would for <<Feature – near a Feature>>, except that the distance to use for the buffer is the distance given in the locality description, and there is no need to account for the proximity of other features.\n"
-msgstr "*Paso 1 – Determinar los límites de la entidad geográfica:* Determine el <<límite>> de la entidad como lo haría para <<Entidad Geográfica: cerca de una Entidad Geográfica>>>, excepto que la distancia que se usa para el buffer es la distancia dada en la descripción de la localidad y no hay necesidad de tener en cuenta la proximidad a otras entidades.\n"
+msgstr "*Paso 1 – Determinar los límites de la entidad geográfica:* Determine el <<límite>> de la entidad como lo haría para <<Entidad Geográfica: Cerca de una Entidad Geográfica>>, excepto que la distancia que se usa para el buffer es la distancia dada en la descripción de la localidad y no hay necesidad de tener en cuenta la proximidad a otras entidades.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:36 0220.en.adoc:230
@@ -2163,7 +2163,7 @@ msgstr "*Tipo de localidad:* [ui-element]#Distancia en una Orientación Cardinal
 #: 0220.en.adoc:208
 #, no-wrap
 msgid "*Step 2 – Determine the starting feature coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature.\n"
-msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico de la entidad geográfica de inicio*: Una vez que el límite haya sido determinado, obtenga las <<coordenadas>> y el <<radio-geográfico>> al igual que para <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido> hasta el punto más lejano en el límite de la entidad.\n"
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico de la entidad geográfica de inicio*: Una vez que el límite haya sido determinado, obtenga las <<coordenadas>> y el <<radio-geográfico>> al igual que para <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido>> hasta el punto más lejano en el límite de la entidad.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:210
@@ -2587,7 +2587,7 @@ msgstr "La descripción de la <<localidad>> contiene inconsistencias irreconcili
 #. type: Plain text
 #: 0240.en.adoc:80
 msgid "A common source of inconsistency occurs when the locality description does not match the geopolitical subdivision of which it is supposed to be a part (e.g. \"Missoula County, Idaho\"). <<elevation,Elevation>> is another possible source of inconsistency, especially since elevation data are notoriously inaccurate (see {gbp}#elements-elevation[Elevation^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). It is difficult to know which part of the locality is the one in <<error>> and a risk to judge that one part of the description should take precedence over another."
-msgstr "Una fuente común de inconsistencias ocurre cuando la descripción de la localidad no coincide con la subdivisión geopolítica de la que se supone que es parte (p. ej.\"Condado de Missoula, Idaho\"). La <<elevación>> es otra posible fuente de inconsistencias, especialmente dado que los datos de elevación son notoriamente inexactos (ver {gbp}#elements-elevation^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]). Es difícil saber qué parte de la localidad es la que contiene el <<error>> y es un riesgo decidir que una parte de la descripción debe tener prioridad sobre otra."
+msgstr "Una fuente común de inconsistencias ocurre cuando la descripción de la localidad no coincide con la subdivisión geopolítica de la que se supone que es parte (p. ej.\"Condado de Missoula, Idaho\"). La <<elevación>> es otra posible fuente de inconsistencias, especialmente dado que los datos de elevación son notoriamente inexactos (ver {gbp}#elements-elevation[Elevación^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]). Es difícil saber qué parte de la localidad es la que contiene el <<error>> y es un riesgo decidir que una parte de la descripción debe tener prioridad sobre otra."
 
 #. type: delimited block =
 #: 0240.en.adoc:85
@@ -3039,7 +3039,7 @@ msgstr "[[protocolo-de-georreferenciación]]protocolo de georreferenciación"
 #. type: Plain text
 #: glossary.en.adoc:77
 msgid "The set of specific documented steps that can be applied to produce a spatial representation of a <<locality>>, following one or more georeferencing methods."
-msgstr "El conjunto de pasos documentados específicos que se pueden aplicar para producir una representación espacial de una <<localidad>>, siguiendo uno o más métodos de georeferenciación."
+msgstr "El conjunto de pasos documentados específicos que se pueden aplicar para producir una representación espacial de una <<localidad>>, siguiendo uno o más métodos de georreferenciación."
 
 #. type: Labeled list
 #: glossary.en.adoc:78
@@ -3050,7 +3050,7 @@ msgstr "[[GPS]]GPS"
 #. type: Plain text
 #: glossary.en.adoc:79
 msgid "Global Positioning System, a satellite-based system used for determining positions on or near the Earth. Orbiting satellites transmit radio signals that allow a receiver to calculate its own <<location>> as <<coordinates>> and <<elevation>>, sometimes with <<accuracy>> estimates. See also GNSS of which GPS is one example. See also <<GPS-receiver>>."
-msgstr "Sistema de Posicionamiento Global. Un sistema basado en satélites utilizado para determinar posiciones espaciales sobre la Tierra o cerca de esta. Los satélites orbitacionales transmiten señales de radio que permiten a un receptor calcular su propia <<ubicación>> como <<coordenadas>> y <<elevación>>, a veces con estimaciones de <<exactitud>>. Ver también GNSS del cual el GPS es un ejemplo. Ver también <<GPS-Receptor, GPS (receptor)>>."
+msgstr "Sistema de Posicionamiento Global. Un sistema basado en satélites utilizado para determinar posiciones espaciales sobre la Tierra o cerca de esta. Los satélites orbitacionales transmiten señales de radio que permiten a un receptor calcular su propia <<ubicación>> como <<coordenadas>> y <<elevación>>, a veces con estimaciones de <<exactitud>>. Ver también GNSS del cual el GPS es un ejemplo. Ver también <<GPS-receptor, GPS (receptor)>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:80
@@ -3083,7 +3083,7 @@ msgstr "[[cota-cero]]cota cero"
 #. type: Plain text
 #: glossary.en.adoc:85
 msgid "The <<location>> on the land surface directly above a radiolocation point in a cave where the magnetic radiation lines are vertical. See {gbp}#img-vertical-position-in-a-cave[illustration] in {gbp}[_Georeferencing Best Practices_] (Chapman & Wieczorek 2020)."
-msgstr "La <<ubicación>> en la superficie directamente sobre un punto de radiolocación en una cueva donde las líneas de radiación magnética son verticales. Ver{gbp}#img-vertical-position-in-a-cave[illustration] en {gbp}[_Buenas Prácticas de Georreferenciación_] (Chapman & Wieczorek 2020)."
+msgstr "La <<ubicación>> en la superficie directamente sobre un punto de radiolocación en una cueva donde las líneas de radiación magnética son verticales. Ver {gbp}#img-vertical-position-in-a-cave[illustration] en {gbp}[_Buenas Prácticas de Georreferenciación_] (Chapman & Wieczorek 2020)."
 
 #. type: Labeled list
 #: glossary.en.adoc:86
@@ -3149,7 +3149,7 @@ msgstr "[[ubicación]]ubicación"
 #. type: Plain text
 #: glossary.en.adoc:97
 msgid "A physical space that can be positioned and oriented relative to a reference point, and potentially described in a natural language <<locality>> description. In <<georeference,georeferencing>>, a location can have distinct representations based on distinct {gbp}#rules-of-interpretation[rules of interpretation], each of which is embodied in a <<georeferencing-method>>."
-msgstr "Un espacio físico que puede posicionarse y orientarse de manera relativa a un punto de referencia y potencialmente descrito en un lenguaje natural en la descripción de la <<localidad>>. En la <<georeferencia,georreferenciación>>, una ubicación puede tener distintas representaciones basadas en diferentes {gbp}#reglas-de-interpretación[reglas-de-interpretación], cada una de las cuales está incorporada en un <<método-de-georreferenciación,método de georreferenciación>>."
+msgstr "Un espacio físico que puede posicionarse y orientarse de manera relativa a un punto de referencia y potencialmente descrito en un lenguaje natural en la descripción de la <<localidad>>. En la <<georreferencia,georreferenciación>>, una ubicación puede tener distintas representaciones basadas en diferentes {gbp}#reglas-de-interpretación[reglas-de-interpretación], cada una de las cuales está incorporada en un <<método-de-georreferenciación,método de georreferenciación>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:98
@@ -3481,7 +3481,7 @@ msgstr "<<Entidad Geográfica: Dirección de una Calle,Dirección de una Calle (
 #. type: Table
 #: appa.en.adoc:52
 msgid "<<Feature – Property,Property (§2.1.3.2)>> +"
-msgstr "<<ntidad Geográfica: Propiedad,Propiedad (§2.1.3.2)>> +"
+msgstr "<<Entidad Geográfica: Propiedad,Propiedad (§2.1.3.2)>> +"
 
 #. type: Table
 #: appa.en.adoc:53
@@ -3511,7 +3511,7 @@ msgstr "<<Entidad Geográfica: Cabeceras de una Vía Navegable, Cabeceras de una
 #. type: Table
 #: appa.en.adoc:58
 msgid "<<Feature – near a Feature,near a Feature (§2.1.3.8)>> +"
-msgstr "<<Entidad Geográfica: cerca de una Entidad Geográfica,cerca de una Entidad Geográfica (§2.1.3.8)>>"
+msgstr "<<Entidad Geográfica: Cerca de una Entidad Geográfica,cerca de una Entidad Geográfica (§2.1.3.8)>>"
 
 #. type: Table
 #: appa.en.adoc:59
@@ -3540,7 +3540,7 @@ msgstr "h|Tipo de Localidad\n"
 "h|Pasos para el Cálculo\n\n"
 "|<<Desplazamientos,§2.2 Desplazamientos>>\n"
 "|Un <<desplazamiento>> es un movimiento desde una <<ubicación>> de referencia, usualmente se usa en conjunto con una <<orientación-cardinal,orientación cardinal>> para dar una distancia y dirección desde un <<entidad-geográfica,entidad geográfica>>.\n\n"
-"|<<Sólo Distancia de Desplazamiento,§2.2.1 Solo Distancia>>\n"
+"|<<Desplazamiento: Solo Distancia,§2.2.1 Solo Distancia>>\n"
 "a|\n"
 "Paso 1: Determinar los <<límite,límites>> de la <<entidad-geográfica,entidad geográfica>> usando el método para <<Solo Entidad Geográfica,Solo Entidad Geográfica (§2.1)>> y añadir un buffer correspondiente a la distancia dada en la descripción de la <<localidad>>. No hay necesidad de tener en cuenta la proximidad a otras características.\n\n"
 "Paso 2: Determinar las <<coordenadas>> del <<centro-corregido>> y el <<radio-geográfico>>. [ui-element]#Distancia de Desplazamiento# = 0. [ui-element]#Precisión de la Distancia# = <<precisión>> con la cual se registró la distancia en la descripción de la <<localidad>>.\n\n"
@@ -3556,7 +3556,7 @@ msgstr "img/web/key-heading-only.jpg"
 #. type: Table
 #: appa.en.adoc:97
 msgid "a| Step 1: Determine the <<feature>> <<boundary,boundaries>> using the appropriate method for <<Geographic Feature only,Geographic Feature only (§2.1)>>. Account for the <<offset>> at a <<heading>> using other information in the record, or until reaching the proximity of another similar feature, whichever is nearer the original feature. Call this the \"extended feature\".  Step 2: Determine and use the <<coordinates>> and <<geographic-radial>> of the extended feature.  a| <<Offset – Distance along a Path,§2.2.3 Distance along a Path>> |The <<locality>> consists of a reference <<feature>> to start from and a distance to travel along a <<path>>. The path can be <<Offset along a Narrow Path,Narrow (§2.2.3.1)>> or <<Offset along a Wide Path,Wide (§2.2.3.2)>>. At times there may be <<Offset along Multiple Possible Paths,Multiple Possible Paths (§2.2.3.3)>>. Please reference the appropriate section for specific instructions.  a| <<Offset – Distance along Orthogonal Directions,§2.2.4 Distance along Orthogonal Directions>>"
-msgstr "a| Paso 1: Determinar los <<límite,límites>> de la <<entidad-geográfica>> usando el método apropiado para <<Solo Entidad Geográfica,Solo Entidad Geográfica (§2.1)>>. Considere el <<desplazamiento>> en una <<orientación-cardinal>> usando otra información en el registro o hasta llegar a la proximidad de otra entidad similar, cualquiera que esté más cerca de la entidad original. Llame a esto la \"entidad extendida\". Paso 2: Determinar y usar las <<coordenadas>> y el <<radio-geográfico>> de la entidad extendida. a| <<Desplazamiento: Distancia a lo Largo de una Ruta,§2.2.3 Distancia a lo Largo de una Ruta>> |La <<localidad>> consiste en una <<entidad-geográfica>> de referencia desde la cual empezar y una distancia para viajar a lo largo de una <<ruta>>. La ruta puede ser <<Desplazamiento a lo Largo de una Ruta Angosta,Angosta (§2.2.3.1)>> o <<Desplazamiento a lo Largo de una Ruta Ancha,Ancha (§2.2.3.2)>>. A veces puede haber <<Desplazamiento a lo Largo de Múltiples Rutas Posibles,Múltiples Rutas Posibles (§2.2.3.3)>>. Por favor diríjase a la sección apropiada para instrucciones específicas| <<Desplazamiento: Distancia a lo largo de Direcciones Ortogonales,§2.2.4 Distancia a lo largo de Direcciones Ortogonales>>"
+msgstr "a| Paso 1: Determinar los <<límite,límites>> de la <<entidad-geográfica>> usando el método apropiado para <<Solo Entidad Geográfica,Solo Entidad Geográfica (§2.1)>>. Considere el <<desplazamiento>> en una <<orientación-cardinal>> usando otra información en el registro o hasta llegar a la proximidad de otra entidad similar, cualquiera que esté más cerca de la entidad original. Llame a esto la \"entidad extendida\". Paso 2: Determinar y usar las <<coordenadas>> y el <<radio-geográfico>> de la entidad extendida. a| <<Desplazamiento: Distancia a lo Largo de una Ruta,§2.2.3 Distancia a lo Largo de una Ruta>> |La <<localidad>> consiste en una <<entidad-geográfica>> de referencia desde la cual empezar y una distancia para viajar a lo largo de una <<ruta>>. La ruta puede ser <<Desplazamiento a lo Largo de una Ruta Angosta,Angosta (§2.2.3.1)>> o <<Desplazamiento a lo Largo de una Ruta Ancha,Ancha (§2.2.3.2)>>. A veces puede haber <<Desplazamiento a lo Largo de Múltiples Rutas Posibles,Múltiples Rutas Posibles (§2.2.3.3)>>. Por favor diríjase a la sección apropiada para instrucciones específicas. a| <<Desplazamiento: Distancia a lo largo de Direcciones Ortogonales,§2.2.4 Distancia a lo largo de Direcciones Ortogonales>>"
 
 #. type: Target for macro image
 #: appa.en.adoc:97
@@ -3663,7 +3663,7 @@ msgstr "La <<entidad-geográfica>> no se puede encontrar con las referencias dis
 "a|Múltiples <<entidad-geográfica,entidades geográficas>> relacionadas: Si hay varios lugares cercanos distintos con el mismo nombre y no hay más información para distinguir entre las posibilidades, trate la combinación de ellos como la entidad geográfica y siga el procedimiento para el correspondiente <<tipo-de-localidad>>. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación).\n\n"
 "Múltiples entidades geográficas no relacionadas: No <<georreferencia,georreferencie>>. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación; p.ej. \"hay múltiples entidades geográficas no relacionadas que coinciden con la de la descripción de la localidad\").\n\n"
 "|<<Demostrablemente Inconsistente,§2.4.4 Demostrablemente Inconsistente>>\n"
-"|La descripción de la <<localidad>> contiene inconsistencias irreconciliables, afirmaciones que no pueden ser verdaderas simultáneamente. No <<georreferencia,georreferencie>>. Documente en término:dwc[georeferenceRemarks] (Comentarios de la georreferenciación).\n\n"
+"|La descripción de la <<localidad>> contiene inconsistencias irreconciliables, afirmaciones que no pueden ser verdaderas simultáneamente. No <<georreferencia,georreferencie>>. Documente en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación).\n\n"
 "|<<Cultivado o Cautivo,§2.4.5 Cultivado o Cautivo>>\n"
 "a|La <<localidad>> está asociada con un animal cautivo, una planta cultivada o un [ui-element]#evento# de algún otro registro no natural. La <<localidad>> mencionado es a menudo un zoológico, acuario o jardín botánico.\n\n"
 "<<georreferencia,Georreferencie>> la localidad normalmente basada en los <<tipo-de-localidad,tipos de localidad>> y de <<entidad-geográfica>>. Documente la naturaleza de la procedencia usando el term:dwc[degreeOfEstablishment] (Grado de establecimiento).\n"
