@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2021-11-03 12:39+0000\n"
-"PO-Revision-Date: 2022-01-10 23:49\n"
+"PO-Revision-Date: 2022-01-11 14:54\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -3050,7 +3050,7 @@ msgstr "[[GPS]]GPS"
 #. type: Plain text
 #: glossary.en.adoc:79
 msgid "Global Positioning System, a satellite-based system used for determining positions on or near the Earth. Orbiting satellites transmit radio signals that allow a receiver to calculate its own <<location>> as <<coordinates>> and <<elevation>>, sometimes with <<accuracy>> estimates. See also GNSS of which GPS is one example. See also <<GPS-receiver>>."
-msgstr "Sistema de Posicionamiento Global. Un sistema basado en satélites utilizado para determinar posiciones espaciales sobre la Tierra o cerca de esta. Los satélites orbitacionales transmiten señales de radio que permiten a un receptor calcular su propia <<ubicación>> como <<coordenadas>> y <<elevación>>, a veces con estimaciones de <<exactitud>>. Ver también GNSS del cual el GPS es un ejemplo. Ver también <<Receptor-GPS, GPS (receptor)>>."
+msgstr "Sistema de Posicionamiento Global. Un sistema basado en satélites utilizado para determinar posiciones espaciales sobre la Tierra o cerca de esta. Los satélites orbitacionales transmiten señales de radio que permiten a un receptor calcular su propia <<ubicación>> como <<coordenadas>> y <<elevación>>, a veces con estimaciones de <<exactitud>>. Ver también GNSS del cual el GPS es un ejemplo. Ver también <<GPS-Receptor, GPS (receptor)>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:80
