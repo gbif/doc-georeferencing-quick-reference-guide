@@ -110,7 +110,7 @@ The <<corrected-center,corrected center>> is the point within a <<location>>, or
 
 
 [#img-corrected-center]
-.A: The center *a* of the smallest enclosing circle of a feature (polygon highlighted in light grey). Note that the center does not fall within the boundary of the feature. B: The corrected center *b*, which is on the boundary of the feature, and the corresponding geographic radial *c*.
+.A: The center *a* of the smallest enclosing circle of a feature (polygon highlighted in blue). Note that the center does not fall within the boundary of the feature. B: The corrected center *b*, which is on the boundary of the feature, and the corresponding geographic radial *c*.
 image::img/web/corrected-center.png[width=597,align="center"]
 
 ==== Radial of Feature
