@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-01-12 17:44\n"
+"PO-Revision-Date: 2022-01-12 18:45\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -461,7 +461,7 @@ msgstr "El <<centro-corregido,centro corregido>> es el punto dentro de una <<ubi
 #: 0100.en.adoc:113
 #, no-wrap
 msgid "A: The center *a* of the smallest enclosing circle of a feature (polygon highlighted in blue). Note that the center does not fall within the boundary of the feature. B: The corrected center *b*, which is on the boundary of the feature, and the corresponding geographic radial *c*."
-msgstr ""
+msgstr "A: El centro *a* del círculo mínimo de una entidad geográfica (polígono resaltado en gris claro). Observe que el centro no está dentro del límite de la entidad. B: El centro corregido *b* que se encuentra dentro del límite de la entidad y el radio geográfico correspondiente *c*."
 
 #. type: Target for macro image
 #: 0100.en.adoc:114
