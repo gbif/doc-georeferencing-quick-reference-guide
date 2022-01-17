@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-01-12 18:45\n"
+"PO-Revision-Date: 2022-01-17 16:14\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -141,12 +141,12 @@ msgstr "Esta es una guía práctica de <<georreferencia,georreferenciación>>. D
 #. type: Plain text
 #: 0100.en.adoc:6
 msgid "This Guide is based on a http://georeferencing.org/docs/GeoreferencingQuickGuide.pdf[first version of the Guide (Wieczorek et al. 2012)^]), which was in turn an adaptation of http://georeferencing.org/docs/georeffordummy.xls[Georeferencing for Dummies (Spencer et al. 2008)^]. It explains the recommended georeferencing procedures for the most commonly encountered type of <<locality,localities>>. This Guide should be used in parallel with the {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^], which contains the theoretical background and more detailed information about concepts used here."
-msgstr "Esta guía se basa en la http://georeferencing.org/docs/GeoreferencingQuickGuide.pdf[primera versión de la Guía (Wieczorek et al. 2012)^]), que a su vez fue una adaptación de http://georeferencing.org/docs/georeffordummy.xls[Georeferencing for Dummies (Spencer et al. 2008)^]. La guía explica los procedimientos recomendados de georreferenciación para el tipo más común de <<localidad,localidades>>. Esta guía debe usarse en paralelo con las {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^], documento que contiene los antecedentes teóricos y la información más detallada sobre los conceptos utilizados aquí."
+msgstr "Esta guía se basa en la http://georeferencing.org/docs/GeoreferencingQuickGuide.pdf[primera versión de la Guía (Wieczorek et al. 2012)^]), que a su vez fue una adaptación de http://georeferencing.org/docs/georeffordummy.xls[Georeferencing for Dummies (Spencer et al. 2008)^]. La guía explica los procedimientos recomendados de georreferenciación para el tipo más común de <<localidad,localidades>>. Esta guía debe usarse en paralelo con las {gbp}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^], documento que contiene los antecedentes teóricos y la información más detallada sobre los conceptos utilizados aquí."
 
 #. type: Plain text
 #: 0100.en.adoc:8
 msgid "Underlined terms throughout this document (e.g. <<accuracy>>) link to definitions in the <<Glossary>>. Terms in italics (e.g. [ui-element]#Input Latitude#) refer to fields and/or labels in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator (Wieczorek & Wieczorek 2020)^] (hereafter referred to as 'the Calculator'). Darwin Core terms are displayed in monospace (e.g. term:dwc[dwc:georeferenceRemarks]) in all GBIF digital documentation."
-msgstr "Los términos subrayados a lo largo de este documento (por ejemplo, <<exactitud>>) tienen un enlace a las definiciones en el <<Glosario>>. Los términos en cursiva (p. ej., [ui-element]#Latitud de entrada#) se refieren a campos y/o etiquetas de la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación (Wieczorek & Wieczorek 2020)^] (de ahora en adelante \"la Calculadora\"). Los términos de Darwin Core se muestran en un tipo de letra monoespaciado (por ejemplo, term:dwc[dwc:georeferenceRemarks]) en toda la documentación digital de GBIF."
+msgstr "Los términos subrayados a lo largo de este documento (por ejemplo, <<exactitud>>) tienen un enlace a las definiciones en el <<Glosario>>. Los términos en cursiva (p. ej., [ui-element]#Latitud de entrada#) se refieren a campos y/o etiquetas de la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación (Wieczorek & Wieczorek 2020)^] (de ahora en adelante \"la Calculadora\"). Los términos de Darwin Core se muestran en un tipo de letra monoespaciado (por ejemplo, term:dwc[dwc:georeferenceRemarks]) en toda la documentación digital de GBIF."
 
 #. type: Plain text
 #: 0100.en.adoc:10
@@ -3264,7 +3264,7 @@ msgstr "Distancia desde un punto central (p. ej. el <<centro-corregido,centro co
 #: glossary.en.adoc:123
 #, no-wrap
 msgid "[[shape]]shape"
-msgstr "[[forma-geométrica]]forma geométrica"
+msgstr "[[polígono]]polígono"
 
 #. type: Plain text
 #: glossary.en.adoc:124
