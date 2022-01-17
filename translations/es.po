@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-01-17 22:23\n"
+"PO-Revision-Date: 2022-01-17 23:20\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -610,56 +610,56 @@ msgstr "Dirección"
 #. type: Plain text
 #: 0100.en.adoc:175
 msgid "The [ui-element]#Direction# in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^] is the <<heading>> given in the <<locality>> description, either as a standard compass point (see https://en.wikipedia.org/wiki/Boxing_the_compass[Boxing the compass^]) or as a number of degrees in the clockwise direction from north. True North is not the same as Magnetic North (see {gbp}#headings[Headings^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). If a heading is known to be a magnetic heading, it will have to be converted into a true heading (see NOAA's https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml[Magnetic Field Calculator^]) before it can be used in the Calculator. If [ui-element]#degrees from N# is selected, a text box will appear to the right of the selection, into which the degree heading should be entered."
-msgstr "La [ui-element]#Dirección# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^] es la <<orientación-cardinal, orientación cardinal>> proporcionada en la descripción de una <<localidad>>, puede ser un punto estándar tomado con una brújula (ver https://es.wikipedia.org/wiki/Puntos_del_comp%C3%A1s[Puntos del Compás^]) o un número de grados en el sentido de las agujas del reloj desde el norte. El Norte Verdadero no es lo mismo que Norte Magnético (ver {gbp}#orientaciones-cardinales[Orientaciones Cardinales^] en {gbp}[Buenas Prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). Si se sabe que una orientación es una orientación cardinal magnética, tendrá que convertirse en una orientación cardinal verdadera (ver https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml[Magnetic Field Calculator (Calculadora del Campo Magnético)^]) antes de que se pueda usar en la Calculadora. Si selecciona [ui-element]#grados desde N#, aparecerá un cuadro de texto a la derecha de la selección en el que debe escribir cuál es el grado de la orientación cardinal."
+msgstr "La [ui-element]#Dirección# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación^] es la <<orientación-cardinal, orientación cardinal>> proporcionada en la descripción de una <<localidad>>, puede ser un punto estándar tomado con una brújula (ver https://es.wikipedia.org/wiki/Puntos_del_comp%C3%A1s[Puntos del compás^]) o un número de grados en el sentido de las agujas del reloj desde el norte. El Norte Verdadero no es lo mismo que Norte Magnético (ver {gbp-es}#orientaciones-cardinales[Orientaciones cardinales^] en {gbp-es}[Buenas Prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). Si se sabe que una orientación es una orientación cardinal magnética, tendrá que convertirse en una orientación cardinal verdadera (ver https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml[Magnetic Field Calculator (Calculadora del campo magnético)^]) antes de que se pueda usar en la Calculadora. Si selecciona [ui-element]#grados desde N#, aparecerá un cuadro de texto a la derecha de la selección en el que debe escribir cuál es el grado de la orientación cardinal."
 
 #. type: Plain text
 #: 0100.en.adoc:177
 msgid "Some marine locality descriptions reference a direction (azimuth) toward a landmark rather than a heading from the current location (e.g. \"327° to Nubble Lighthouse\"). To make a Distance a heading calculation for such a locality description, use the compass point 180 degrees from the one given in the locality description (147° in the example above) as the Direction."
-msgstr "Algunas descripciones de localidades marinas referencian una dirección (azimuth) hacia un punto de referencia, en vez de una orientación cardinal desde la ubicación actual (p. ej. \"327° del Faro de Waipapa Point\"). Para convertir una Distancia en un cálculo de orientación cardinal para este tipo de descripciones de localidad, use el punto de compás a 180 grados desde la Dirección dada en la descripción de la localidad (147º en el ejemplo anterior)."
+msgstr "Algunas descripciones de localidades marinas referencian una dirección (azimuth) hacia un punto de referencia, en vez de una orientación cardinal desde la ubicación actual (p. ej., \"327° del Faro de Waipapa Point\"). Para convertir una Distancia en un cálculo de orientación cardinal para este tipo de descripciones de localidad, use el punto de compás a 180 grados desde la Dirección dada en la descripción de la localidad (147º en el ejemplo anterior)."
 
 #. type: Title ====
 #: 0100.en.adoc:178
 #, no-wrap
 msgid "Offset Distance"
-msgstr "Distancia de Desplazamiento"
+msgstr "Distancia de desplazamiento"
 
 #. type: Plain text
 #: 0100.en.adoc:181
 msgid "The [ui-element]#Offset Distance# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] is the linear surface distance from a point of origin. <<offset,Offsets>> are used for the [ui-element]#Locality Types# [ui-element]#Distance at a heading# and [ui-element]#Distance only#. If the [ui-element]#Locality Type# [ui-element]#Distance along orthogonal directions# is selected, there are two distinct offsets:"
-msgstr "La [ui-element]#Distancia de Desplazamiento# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] es la distancia lineal desde un punto de origen. Los <<desplazamiento, desplazamientos>> se usan para los [ui-element]#Tipos de Localidades# [ui-element]#Distancia desde una orientación cardinal# y [ui-element]#Sólo distancia#.Si selecciona el [ui-element]#Tipo de Localidad# [ui-element]#Distancia a lo largo de direcciones ortogonales# hay dos desplazamientos posibles:"
+msgstr "La [ui-element]#Distancia de desplazamiento# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] es la distancia lineal desde un punto de origen. Los <<desplazamiento, desplazamientos>> se usan para los [ui-element]#Tipos de localidades# [ui-element]#Distancia desde una orientación cardinal# y [ui-element]#Sólo distancia#.Si selecciona el [ui-element]#Tipo de localidad# [ui-element]#Distancia a lo largo de direcciones ortogonales# hay dos desplazamientos posibles:"
 
 #. type: Labeled list
 #: 0100.en.adoc:182
 #, no-wrap
 msgid "North or South Offset Distance"
-msgstr "Distancia de Desplazamiento al Norte o Sur"
+msgstr "Distancia de desplazamiento al norte o al sur"
 
 #. type: Plain text
 #: 0100.en.adoc:183
 msgid "The distance to the north or south (set with the selection box to the right of the distance text box) of the [ui-element]#Input Latitude#."
-msgstr "La distancia al norte o al sur (establecer con el recuadro de selección a la derecha del cuadro de texto de distancia) de la [ui-element]#Latitud de entrada#."
+msgstr "La distancia al norte o al sur (establecida con el cuadro de selección a la derecha del cuadro de texto de la distancia) de la [ui-element]#Latitud de entrada#."
 
 #. type: Labeled list
 #: 0100.en.adoc:184
 #, no-wrap
 msgid "East or West Offset Distance"
-msgstr "Distancia al Este u Oeste"
+msgstr "Distancia al este o al oeste"
 
 #. type: Plain text
 #: 0100.en.adoc:185
 msgid "The distance to the east or west (set with the selection box to the right of the distance text box) of the [ui-element]#Input Longitude#."
-msgstr "La distancia al este o al oeste (establecer con el recuadro de selección a la derecha del cuadro de texto de distancia) de la [ui-element]#Longitud de entrada#."
+msgstr "La distancia al este o al oeste (establecida con el cuadro de selección a la derecha del cuadro de texto de la distancia) de la [ui-element]#Longitud de entrada#."
 
 #. type: Title ====
 #: 0100.en.adoc:186
 #, no-wrap
 msgid "Distance Units"
-msgstr "Unidades de la Distancia"
+msgstr "Unidades de la distancia"
 
 #. type: Plain text
 #: 0100.en.adoc:189
 msgid "The [ui-element]#Distance Units# selection denotes the real world units used in the <<locality>> description. It is important to select the original units as given in the description. This is needed to incorporate the <<uncertainty>> from <<distance-precision,Distance Precision>> properly. If the <<locality>> description does not include distance units, use the distance units of the map from which measurements are derived."
-msgstr "La selección de las [ui-element]#Unidades de la Distancia# refleja las unidades del mundo real usadas en la descripción de la <<localidad>>. Es importante seleccionar las unidades originales dadas en la descripción. Esto es necesario para incorporar el <<incertidumbre>> de la <<precisión-de-la-distancia,Precisión de la Distancia>> correctamente. Si la descripción de la <<localidad>> no incluye unidades de distancia, use las unidades de distancia del mapa del cual se derivan las mediciones."
+msgstr "La selección de las [ui-element]#Unidades de la distancia# refleja las unidades del mundo real usadas en la descripción de la <<localidad>>. Es importante seleccionar las unidades originales dadas en la descripción. Esto es necesario para incorporar el <<incertidumbre>> de la <<precisión-de-la-distancia,Precisión de la distancia>> correctamente. Si la descripción de la <<localidad>> no incluye unidades de distancia, use las unidades del mapa del cual se derivan las mediciones."
 
 #. type: delimited block =
 #: 0100.en.adoc:193
@@ -685,12 +685,12 @@ msgstr "Todas las distancias usadas en un cálculo determinado deben tener las m
 #: 0100.en.adoc:199
 #, no-wrap
 msgid "Distance Precision"
-msgstr "Precisión de la Distancia"
+msgstr "Precisión de la distancia"
 
 #. type: Plain text
 #: 0100.en.adoc:202
 msgid "The [ui-element]#Distance Precision#, labelled in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] as [ui-element]#Precision# in the second column of input parameters, refers to the <<precision>> with which a distance was described in a <<locality>> (see {gbp}#uncertainty-related-to-offset-precision[Uncertainty Related to Offset Precision^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). This drop-down list is populated based on the [ui-element]#Distance Units# chosen and contains powers of ten and simple fractions to indicate the precision demonstrated in the verbatim original <<offset>>."
-msgstr "La [ui-element]#Precisión de la Distancia#, etiquetada en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] como [ui-element]#Precisión# en la segunda columna de parámetros de entrada, se refiere a la <<precisión>> con la que fue descrita una distancia en una <<localidad>> (ver {gbp}#incertidumbre-relacionada-con-la-precisión-del-desplazamiento[Incertidumbre Relacionada con la Precisión del Desplazamiento^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman y Wieczorek 2020)^]). Esta lista desplegable está poblada con base a la elección de las [ui-element]#Unindades de Distancia# y contiene potencias de diez y fracciones simples para indicar la precisión del <<desplazamiento>> original."
+msgstr "La [ui-element]#Precisión de la distancia#, etiquetada en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] como [ui-element]#Precisión# en la segunda columna de parámetros de entrada, se refiere a la <<precisión>> con la que fue descrita una distancia en una <<localidad>> (ver {gbp-es}#incertidumbre-relacionada-con-la-precisión-del-desplazamiento[Incertidumbre relacionada con la precisión del desplazamiento^] en {gbp-es}[Buenas prácticas de georreferenciación (Chapman y Wieczorek 2020)^]). Esta lista desplegable está poblada con base a la elección de las [ui-element]#Unindades de distancia# y contiene potencias de diez y fracciones simples para indicar la precisión del <<desplazamiento>> original."
 
 #. type: delimited block =
 #: 0100.en.adoc:206
@@ -711,7 +711,7 @@ msgstr "Error de la Medición"
 #. type: Plain text
 #: 0100.en.adoc:212
 msgid "The [ui-element]#Measurement Error# accounts for <<error>> associated with the ability to distinguish one point from another using any measuring tool, such as rulers on paper maps or the measuring tools on Google Maps or Google Earth. The units of measurement must be the same as those in the <<locality>> description as captured in [ui-element]#Distance Units# (see <<Distance Units>>). The [ui-element]#Distance Converter# at the bottom of the http://georeferencing.org/georefcalculator/gc.html[Calculator^] is provided to aid in changing a measurement to the locality description units. For example, a reasonable value for measurement error on a map is 1 mm, which on a map of 1:24,000 scale would be 24 m."
-msgstr "El [ui-element]#Error de la Medición# tiene en cuenta el <<error>> asociado con la capacidad de distinguir un punto de otro usando cualquier herramienta de medición, como las reglas en los mapas físicos o las herramientas de medición en Google Maps o Google Earth. Las unidades de medida deben ser las mismas que las de la descripción de la <<localidad>> como se capturaron en [ui-element]#Unidades de la Distancia# (ver <<Unidades de la Distancia>>). El [ui-element]#Convertidor de Distancias# en la parte inferior de la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] se proporciona para ayudar a convertir una medida a las unidades de descripción de la localidad. Por ejemplo, un valor razonable para el error de medición en un mapa es de 1 mm, que en un mapa de 1:24.000 escala sería de 24 m."
+msgstr "El [ui-element]#Error de la Medición# tiene en cuenta el <<error>> asociado con la capacidad de distinguir un punto de otro usando cualquier herramienta de medición, como las reglas en los mapas físicos o las herramientas de medición en Google Maps o Google Earth. Las unidades de medida deben ser las mismas que las de la descripción de la <<localidad>> como se capturaron en [ui-element]#Unidades de la distancia# (ver <<Unidades de la Distancia>>). El [ui-element]#Convertidor de distancias# ubicado en la parte inferior de la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] se proporciona para ayudar a convertir una medida a las unidades de descripción de la localidad. Por ejemplo, un valor razonable para el error de medición en un mapa es de 1 mm, que en un mapa de 1:24.000 escala sería de 24 m."
 
 #. type: Title ====
 #: 0100.en.adoc:213
@@ -722,7 +722,7 @@ msgstr "Exactitud del GPS"
 #. type: Plain text
 #: 0100.en.adoc:216
 msgid "When [ui-element]#GPS# is selected from the [ui-element]#Coordinate Source# drop-down list, the label for the [ui-element]#Measurement Error# text box changes to [ui-element]#GPS Accuracy#. We recommend entering a value that is at least twice the value given by the <<GPS>> at the time the <<coordinates>> were captured (see {gbp}#uncertainty-due-to-gps[Uncertainty due to GPS^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]. If [ui-element]#GPS Accuracy# is not known, enter 100 m for standard hand-held GPS coordinates taken before 1 May 2000 when Selective Availability was discontinued. After that, use 30 m as a conservative default value."
-msgstr "Cuando se selecciona [ui-element]#GPS# en la lista despegable de la [ui-element]#Fuente de las Coordenadas# la etiqueta para la caja de texto del [ui-element]#Error de Medición# cambia a [ui-element]#Exactitud del GPS#. Le recomendamos ingresar una exactitud que sea al menos el doble del valor mostrado por el <<GPS>> al momento en que se capturaron las <<coordenadas>> (ver {gbp}#incertidumbre-debido-al-gps[Incertidumbre Debido al GPS^] in {gbp}[Buenas Prácticas de Georreferenciación(Chapman & Wieczorek 2020)^]. Si desconoce la [ui-element]#Exactitud del GPS# ingrese un valor de 100 para las coordenadas tomadas antes del 1 de mayo del 2000, cuando se descontinuó Disponibilidad Selectiva, con GPS de mano estándar. Para fechas posteriores, use 30m como un valor conservador predeterminado."
+msgstr "Cuando se selecciona [ui-element]#GPS# en la lista despegable de la [ui-element]#Fuente de las coordenadas# la etiqueta para la caja de texto del [ui-element]#Error de medición# cambia a [ui-element]#Exactitud del GPS#. Le recomendamos ingresar una exactitud que sea al menos el doble del valor mostrado por el <<GPS>> al momento en que se capturaron las <<coordenadas>> (ver {gbp-es}#incertidumbre-debido-al-gps[Incertidumbre debido al GPS^] in {gbp-es}[Buenas Prácticas de Georreferenciación(Chapman & Wieczorek 2020)^]. Si desconoce la [ui-element]#Exactitud del GPS# ingrese un valor de 100 para las coordenadas tomadas antes del 1 de mayo del 2000, cuando se descontinuó la Disponibilidad Selectiva, con un GPS portatil estándar. Para fechas posteriores, use 30m como un valor conservador predeterminado."
 
 #. type: Title ====
 #: 0100.en.adoc:218
@@ -733,19 +733,19 @@ msgstr "Incertidumbre"
 #. type: Plain text
 #: 0100.en.adoc:221
 msgid "The [ui-element]#Uncertainty# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] is the calculated result of the combination of all sources of <<uncertainty>> (<<coordinate-precision>>, unknown <<datum>>, data source, <<GPS>> <<accuracy>>, measurement <<error>>, <<feature>> <<extent>>, distance <<precision>> and <<heading>> <<precision>>) expressed as a linear distance – the <<geographic-radial,geographic radial>> of the <<georeference>> and the <<radial,radius>> in the <<point-radius>> <<georeferencing-method,method>> (https://doi.org/10.1080/13658810412331280211[Wieczorek et al. 2004^]). Along with the [ui-element]#Output Latitude#, [ui-element]#Output Longitude#, and [ui-element]#Datum#, the radius defines a circle containing all of the possible places a <<locality>> description could mean. In the Calculator the [ui-element]#Uncertainty# is given in meters."
-msgstr "La [ui-element]#Incertidumbre# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] es el resultado calculado combinar de todas las fuentes de <<incertidumbre>> (<<precisión-de-las-coordenadas>>, <<datum>> desconocido, fuente de los datos, <<exactitud>> del <<GPS>>, <<error>> de medición, <<extensión, extensión>> de la <<entidad-geográfica, entidad geográfica>>, <<precisión>> de la distancia y <<precisión>> de la <<orientación-cardinal, orientación cardinal>>) expresada como una distancia lineal (el <<radio-geográfico, radio geográfico>> de la <<georreferencia>> y el <<radio>> en el <<método-de-georreferenciación,método>> <<radio-punto>> (https://doi.org/10.1080/13658810412331280211[Wieczorek et al. 2004^])). Junto con la [ui-element]#Latitud de salida#, [ui-element]#Longitud de salida# y el [ui-element]#Datum#, el radio define un círculo que contiene todos los lugares posibles que podría incluir una descripción de una <<localidad>>. En la Calculadora se da la [ui-element]#Incertidumbre# en metros."
+msgstr "La [ui-element]#Incertidumbre# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] es el resultado calculado de la combinación de todas las fuentes de <<incertidumbre>> (<<precisión-de-las-coordenadas>>, <<datum>> desconocido, fuente de los datos, <<exactitud>> del <<GPS>>, <<error>> de medición, <<extensión, extensión>> de la <<entidad-geográfica, entidad geográfica>>, <<precisión>> de la distancia y <<precisión>> de la <<orientación-cardinal, orientación cardinal>>) expresada como una distancia lineal (el <<radio-geográfico, radio geográfico>> de la <<georreferencia>> y el <<radio>> en el <<método-de-georreferenciación,método>> <<radio-punto>> (https://doi.org/10.1080/13658810412331280211[Wieczorek et al. 2004^])). Junto con la [ui-element]#Latitud de salida#, [ui-element]#Longitud de salida# y el [ui-element]#Datum#, el radio define un círculo que contiene todos los lugares posibles que podría incluir una descripción de una <<localidad>>. En la Calculadora se da la [ui-element]#Incertidumbre# en metros."
 
 #. type: Title ==
 #: 0200.en.adoc:1
 #, no-wrap
 msgid "Georeferencing Methods by Locality Type"
-msgstr "Métodos de Georreferenciación por Tipo de Localidad"
+msgstr "Métodos de georreferenciación por tipo de localidad"
 
 #. type: Title ===
 #: 0200.en.adoc:3
 #, no-wrap
 msgid "Geographic Feature only"
-msgstr "Solo Entidad Geográfica"
+msgstr "Solo entidad geográfica"
 
 #. type: Block title
 #: 0200.en.adoc:5
@@ -756,23 +756,23 @@ msgstr "Definición"
 #. type: delimited block =
 #: 0200.en.adoc:9
 msgid "The simplest locality descriptions consist of only a named place, or more generally, a feature, which is often listed in a standard gazetteer and can probably be located on a map of the appropriate scale."
-msgstr "Las descripciones de las localidades más sencillas consisten de un sólo un lugar con un nombre, o más generalmente, una entidad geográfica, que a menudo se indica en un gacetero estándar y que probablemente se puede localizar en un mapa de la escala apropiada."
+msgstr "Las descripciones de localidades más sencillas consisten de un sólo un lugar con un nombre, o más generalmente, de una entidad geográfica, que a menudo se indica en un gacetero estándar y que probablemente se puede localizar en un mapa de la escala apropiada."
 
 #. type: Plain text
 #: 0200.en.adoc:12
 msgid "Despite how they might be presented in a <<gazetteer>> or on a map, <<feature,features>> are not points; they are areas that have a spatial <<extent>>. Some features can have an obvious spatial extent, while others may not. All variations of features are treated in this Guide as one or the other of these two main categories. The basic methodology is to try to determine the <<boundary,boundaries>> of the feature, its <<corrected-center,corrected center>> and a measure of how specific the feature is (defined here by the <<geographic-radial,geographic radial>>). See <<Appendix B: Methods to Find the Corrected Center and Geographic Radial>> for techniques to determine the corrected center and geographic radial for various geometric types of features."
-msgstr "A pesar de cómo pueden presentarse en un <<gacetero>> o en un mapa, las <<entidad-geográfica, entidades geográficas>> no son puntos, son áreas que tienen una <<extensión, extensión>> física. Algunas entidades geográficas pueden tener una extensión espacial evidente mientras que otras no. Todos los tipos de entidades geográficas se tratan en esta Guía como alguna de las siguientes categorías principales. La metodología básica consiste en intentar determinar los <<límite, límites>> de la entidad geográfica, su <<centro-corregido, centro corregido>> y una medida de la especificidad de la entidad geográfica (definida aquí por el <<radio-geográfico,radio geográfico>>). Vea <<Apéndice B: Métodos para Encontrar el Centro Corregido y el Radio Geográfico>> para conocer las técnicas usadas para determinar el centro corregido y el radio geográfico para varios tipos geométricos de entidades geográficas."
+msgstr "A pesar de cómo pueden presentarse en un <<gacetero>> o en un mapa, las <<entidad-geográfica, entidades geográficas>> no son puntos, son áreas que tienen una <<extensión, extensión>> física. Algunas entidades geográficas pueden tener una extensión espacial evidente mientras que otras no. Todos los tipos de entidades geográficas se tratan en esta Guía como alguna de las siguientes categorías principales. La metodología básica consiste en intentar determinar los <<límite, límites>> de la entidad geográfica, su <<centro-corregido, centro corregido>> y una medida de la especificidad de la entidad geográfica (definida aquí por el <<radio-geográfico,radio geográfico>>). Vea <<Apéndice B: Métodos para encontrar el centro corregido y el radio geográfico>> para conocer las técnicas usadas para determinar el centro corregido y el radio geográfico para varios tipos geométricos de entidades geográficas."
 
 #. type: Plain text
 #: 0200.en.adoc:14
 msgid "Coordinates from geographic indexes such as gazetteers often use reference points that are not necessarily in the center of the feature. For example, a river may be referenced by its mouth, and a town by its main post office, courthouse, or main plaza. It is best to use a visual reference to determine boundaries, centers, and radials. For this reason, it is a good idea to use the gazetteer coordinates to find the feature on a map, and then use the map to find the boundaries, corrected center and geographic radial of the feature."
-msgstr "Las coordenadas de los índices geográficos, como los gaceteros, a menudo usan puntos de referencia que no están necesariamente en el centro de la entidad geográfica. Por ejemplo, un río puede ser referenciado por su desembocadura y una ciudad por su oficina principal de correos, palacio de justicia o plaza principal. Es mejor usar una referencia visual para determinar límites, centros y radiales. Por esta razón, es buena idea usar las coordenadas del gacetero para encontrar la entidad geográfica en un mapa y luego usar el mapa para encontrar los límites, el centro corregido y el radio geográfico de la entidad geográfica."
+msgstr "Las coordenadas de los índices geográficos, como los gaceteros, a menudo usan puntos de referencia que no están necesariamente en el centro de la entidad geográfica. Por ejemplo, un río puede ser referenciado por su desembocadura y una ciudad por su oficina principal de correos, palacio de justicia o plaza principal. Es mejor usar una referencia visual para determinar los límites, centros y radios. Por esta razón, es buena idea usar las coordenadas del gacetero para encontrar la entidad geográfica en un mapa y luego usar el mapa para encontrar los límites, el centro corregido y el radio geográfico de la entidad geográfica."
 
 #. type: Title ====
 #: 0200.en.adoc:15
 #, no-wrap
 msgid "Feature – with Obvious Spatial Extent"
-msgstr "Entidad Geográfica con una Extensión Espacial Obvia"
+msgstr "Entidad geográfica con una extensión espacial obvia"
 
 #. type: Plain text
 #: 0200.en.adoc:18
@@ -812,7 +812,7 @@ msgstr "*Tipo de localidad:* [ui-element]#Solo entidad geográfica#\n"
 #: 0200.en.adoc:31
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: This step is to determine the <<shape>> that contains the <<feature>>. This is typically done by drawing a polygon around the feature (<<img-obvious-spatial-extent>>A), but some features may require more complex <<geometry,geometries>>, such as multiple polygons.\n"
-msgstr "*Paso 1 – Determinar los límites de las entidades*: En este paso se determina el <<forma-geométrica, forma geométrica>> que contiene la <<entidad-geográfica, entidad geográfica>>. Normalmente, esto se hace trazando un polígono alrededor de la entidad (<<img-obvious-spatial-extent>>A), pero algunas características pueden requerir <<geometría,geometrías>> más complejas como polígonos múltiples.\n"
+msgstr "*Paso 1 - Determinar los límites de las entidades*: En este paso se determina la <<forma-geométrica, forma geométrica>> que contiene la <<entidad-geográfica, entidad>>. Normalmente, esto se hace trazando un polígono alrededor de la entidad (<<img-obvious-spatial-extent>>A), pero algunas características pueden requerir <<geometría,geometrías>> más complejas como polígonos múltiples.\n"
 
 #. type: Plain text
 #: 0200.en.adoc:33
@@ -829,13 +829,13 @@ msgstr "*Paso 2 – Determinar las coordenadas*: Use las <<coordenadas>> del <<c
 #: 0200.en.adoc:37
 #, no-wrap
 msgid "*Step 3 – Measure the geographic radial*: Measure the distance from the <<corrected-center,corrected center>> to the furthest point on the <<boundary>> of the <<feature>> (\"*b*\" in <<img-obvious-spatial-extent>>B) as the [ui-element]#Radial of Feature#.\n"
-msgstr "*Paso 3 - Medir el radio geográfico*: Mida la distancia desde el <<centro-corregido,centro corregido>> hasta el punto más lejano en el <<límite>> de la <<entidad-geográfica, entidad>> (\"*b*\" en <<img-obvious-spatial-extent>>B) como el [ui-element]#Radio de la Entidad Grográfica#.\n"
+msgstr "*Paso 3 - Medir el radio geográfico*: Mida la distancia desde el <<centro-corregido,centro corregido>> hasta el punto más lejano en el <<límite>> de la <<entidad-geográfica, entidad>> (\"*b*\" en <<img-obvious-spatial-extent>>B) como el [ui-element]#Radio de la entidad geográfica#.\n"
 
 #. type: Plain text
 #: 0200.en.adoc:39
 #, no-wrap
 msgid "*Step 4 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, and [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
-msgstr "*Paso 4 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Fuente de las Coordenadas#, [ui-element]#Formato de Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Precisión del GPS#/[ui-element]#Error de Medición# y [ui-element]#Unidades de Distancia# (ver <<Conceptos de Georreferenciación>>).\n"
+msgstr "*Paso 4 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación^]*: [ui-element]#Fuente de las coordenadas#, [ui-element]#Formato de las coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las coordenadas#, [ui-element]#Precisión del GPS#/[ui-element]#Error de medición# y [ui-element]#Unidades de distancia# (ver <<Conceptos de georreferenciación>>).\n"
 
 #. type: Block title
 #: 0200.en.adoc:41
@@ -853,12 +853,12 @@ msgstr "img/web/obvious-spatial-extent.png"
 #: 0200.en.adoc:44
 #, no-wrap
 msgid "Feature – without Obvious Spatial Extent"
-msgstr "Entidad Geográfica sin una Extensión Espacial Obvia"
+msgstr "Entidad geográfica sin una extensión espacial obvia"
 
 #. type: Plain text
 #: 0200.en.adoc:47
 msgid "The <<locality>> refers to a geographic <<feature>> that does not have an easily discernible spatial <<boundary>>. Some features may have undefined boundaries (e.g. mountains, unincorporated towns, etc.). Other features may only have a label, with no apparent boundaries or size on a map because they are small or obscured on satellite imagery (e.g. spring, monument, etc.). Another possibility is a feature with only <<coordinates>> from a <<gazetteer>> and no discernible presence on a map."
-msgstr "La <<localidad>> se refiere a una <<entidad-geográfica,entidad geográfica>> que no tiene un <<límite>> espacial fácilmente discernible. Algunas entidades pueden tener límites indefinidos (por ejemplo, montañas, ciudades no incorporadas, etc.). Otras entidades pueden tener solo una etiqueta, sin límites o tamaño aparente en un mapa porque son pequeños o pueden estar oscurecidos en imágenes satelitales (p.ej. manantial, monumento, etc.). Otra posibilidad es una entidad con solo <<coordenadas>> de un <<gacetero>> y sin presencia discernible en un mapa."
+msgstr "La <<localidad>> se refiere a una <<entidad-geográfica,entidad geográfica>> que no tiene un <<límite>> espacial fácilmente discernible. Algunas entidades pueden tener límites indefinidos (por ejemplo, montañas, ciudades no incorporadas, etc.). Otras entidades pueden tener solo una etiqueta, sin límites o tamaño aparente en un mapa porque son pequeños o pueden estar oscurecidos en imágenes satelitales (p.ej., un manantial, monumento, etc.). Otra posibilidad es una entidad que solo tenga <<coordenadas>> de un <<gacetero>> y no tenga una presencia discernible en un mapa."
 
 #. type: delimited block =
 #: 0200.en.adoc:52
@@ -879,12 +879,12 @@ msgstr "\"Gran Barrera de Coral\""
 #: 0200.en.adoc:59
 #, no-wrap
 msgid "*Step 1 – Estimate the feature boundaries*: Determine the <<boundary,boundaries>> of the <<feature>> as well as possible using visible evidence for the feature on a map. Try to get into the mind of the person who recorded the <<locality>>. Imagine yourself there. What circumstances would influence which feature was recorded and what circumstances would have encouraged them to choose a different feature?\n"
-msgstr "*Paso 1 – Estimar los límites de la entidad geográfica*: Determine los <<límite, límites>> de la <<entidad-geográfica,entidad geográfica>> tan bien como sea posible usando evidencia visible para la entidad en un mapa. Intente entrar en la mente de la persona que registró la <<localidad>>, imagínese allí. ¿Qué circunstancias habrían influenciado sobre qué entidad fue registrada y qué circunstancias les podrían haber animado a elegir una entidad diferente?\n"
+msgstr "*Paso 1 – Estimar los límites de la entidad geográfica*: Determine los <<límite, límites>> de la <<entidad-geográfica,entidad geográfica>> tan bien como sea posible usando evidencia visible de la entidad en un mapa. Intente entrar en la mente de la persona que registró la <<localidad>>, imagínese allí. ¿Qué circunstancias habrían influenciado sobre qué entidad fue registrada y qué circunstancias les podrían haber animado a elegir una entidad diferente?\n"
 
 #. type: Plain text
 #: 0200.en.adoc:61
 msgid "For towns without obvious borders one can use the presence of buildings near the <<coordinates>> given for the town to decide where the town ends (<<img-without-obvious-spatial-extent>>). In some cases there might not be such indicators and these will be more subjective. For this reason it is particularly important to document the rationale for the selection of the locality with unclear boundaries."
-msgstr "Para las ciudades sin límites obvios se puede usar la presencia de edificios cerca de las <<coordenadas>> dadas para la ciudad en la descripción para decidir dónde termina la ciudad (<<img-without-obvious-spatial-extent>>). En algunos casos puede que no existan tales indicadores y estos serán más subjetivos. Por esta razón es especialmente importante documentar el razonamiento que llevo a la selección de la localidad con límites poco claros."
+msgstr "En el caso de las ciudades sin fronteras evidentes se puede utilizar la presencia de edificios cerca de las <<coordenadas>> dadas para la ciudad con el fin de decidir dónde termina la ciudad (<<img-without-obvious-spatial-extent>>). En algunos casos puede que no existan tales indicadores y estos serán más subjetivos. Por esta razón es especialmente importante documentar el razonamiento que llevo a la selección de la localidad con límites poco claros."
 
 #. type: Block title
 #: 0200.en.adoc:63
@@ -901,12 +901,12 @@ msgstr "img/web/without-obvious-spatial-extent.png"
 #. type: Plain text
 #: 0200.en.adoc:67
 msgid "Where there are no indicators for the boundary, use the midpoint between the given feature and neighbouring features with similar type, size, or importance to make a rough boundary. Though this boundary may not represent the actual feature very well, it will represent the uncertainty of where the locality is, and that is the major goal of the <<georeference>>."
-msgstr "Donde no haya indicadores para el límite, use el punto medio entre la entidad geográfica dada y las entidades vecinas con un tipo, tamaño o importancia similar para establecer un límite aproximado. Aunque este límite puede no representar muy bien la entidad real, representará la incertidumbre de dónde está la localidad y este es el principal objetivo de la <<georreferencia>>."
+msgstr "Donde no haya indicadores para la frontera, use el punto medio entre la entidad geográfica dada y las entidades vecinas con un tipo, tamaño o importancia similar para establecer un límite aproximado. Aunque este límite puede no representar muy bien la entidad real, representará la incertidumbre de dónde está la localidad y este es el principal objetivo de la <<georreferencia>>."
 
 #. type: Plain text
 #: 0200.en.adoc:69
 msgid "For small features, where the only indicator on a map is a label and possibly a marker, or where there are only coordinates from a <<gazetteer>> (and no further indicators at those coordinates on a map), a good strategy would be to use a predefined default size based on the feature type (<<img-without-obvious-spatial-extent-default-size>>, <<table-default-geographic-radial>>)."
-msgstr "Para entidades geográficas pequeñas, donde el único indicador en un mapa es una etiqueta y posiblemente un marcador o donde solo haya coordenadas de un <<gacetero>> (y no existen más indicadores a esas coordenadas en un mapa), una buena estrategia sería usar un tamaño predefinido por defecto basado en el tipo de entidad (<<img-without-obvious-spatial-extent-default-size>>, <<table-default-geographic-radial>>)."
+msgstr "Para entidades geográficas pequeñas, donde el único indicador en un mapa es una etiqueta y posiblemente un marcador, o donde solo haya coordenadas de un <<gacetero>> (y no existen más indicadores a esas coordenadas en un mapa), una buena estrategia sería usar un tamaño predefinido por defecto basado en el tipo de entidad (<<img-without-obvious-spatial-extent-default-size>>, <<table-default-geographic-radial>>)."
 
 #. type: Block title
 #: 0200.en.adoc:71
@@ -961,7 +961,7 @@ msgstr "h|Tipo de Entidad Geográfica h|<<radio-geográfico, Radio geográfico>>
 #. type: Plain text
 #: 0200.en.adoc:97
 msgid "† <<grid,Grids>> based on <<geographic-coordinates,geographic coordinates>>, such as Quarter Degree Squares, are not square, nor are they constant. They vary in size and shape by <<latitude>>. See {gbp}#table-uncertainty[table^] in {gbp}#uncertainty-related-to-coordinate-precision[Uncertainty Related to Coordinate Precision in Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
-msgstr "†Las <<grilla,grillas>> basadas en <<coordenadas-geográficas, coordenada geográficas>>, como los Cuadros de Cuarto de Grado, no son cuadradas ni constantes. Varían en tamaño y forma según la <<latitud>>. Ver {gbp}#table-incertidumbte[tabla^] en {gbp}#incertidumbre-relacionada-con-la-precisión-de-las-coordenadas[Incertidumbre Relacionada con la Precisión de las Coordenadas en Buenas Prácticas de Georreferenciación(Chapman & Wieczorek 2020)^]."
+msgstr "†Las <<grilla,grillas>> basadas en <<coordenadas-geográficas, coordenadas geográficas>>, como los Cuadros de Cuarto de Grado, no son cuadradas ni constantes. Varían en tamaño y forma según la <<latitud>>. Ver {gbp-es}#table-incertidumbte[tabla^] en {gbp-es}#incertidumbre-relacionada-con-la-precisión-de-las-coordenadas[Incertidumbre relacionada con la precisión de las coordenadas en Buenas prácticas de georreferenciación(Chapman & Wieczorek 2020)^]."
 
 #. type: Plain text
 #: 0200.en.adoc:99
@@ -971,7 +971,7 @@ msgstr "Los límites entre montañas se pueden determinar mediante el uso del te
 #. type: Plain text
 #: 0200.en.adoc:101
 msgid "Always use term:dwc[georeferenceRemarks] to document the decisions made and the reasons for them as well as possible, including the neighbouring features used for reference."
-msgstr "Siempre use el term:dwc[georeferenceRemarks] (Comentarios de la Georreferenciación) para documentar las decisiones tomadas y las justificaciones tan bien como sea posible, incluyendo las entidades geográficas vecinas usadas como referencia."
+msgstr "Siempre use el term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación) para documentar las decisiones tomadas y las justificaciones tan bien como sea posible, incluyendo las entidades geográficas vecinas usadas como referencia."
 
 #. type: Block title
 #: 0200.en.adoc:103
@@ -1001,24 +1001,24 @@ msgstr "*Paso 3 - Medir el radio geográfico*: Una vez el límite aproximado y l
 #: 0200.en.adoc:111
 #, no-wrap
 msgid "*Step 4 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
-msgstr "*Paso 4 – Hacer el cálculo usando los siguientes parámetros adicionales en http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Fuente de las Coordenadas#, [ui-element]#Formato de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Precisión del GPS#/[ui-element]#Error de medición#, [ui-element]#Unidades de Distancia# (ver <<Conceptos de Georreferenciación>>).\n"
+msgstr "*Paso 4 – Hacer el cálculo usando los siguientes parámetros adicionales en http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Fuente de las coordenadas#, [ui-element]#Formato de las coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las coordenadas#, [ui-element]#Precisión del GPS#/[ui-element]#Error de medición#, [ui-element]#Unidades de distancia# (ver <<Conceptos de Georreferenciación>>).\n"
 
 #. type: Title ====
 #: 0200.en.adoc:112
 #, no-wrap
 msgid "Feature – Special Cases"
-msgstr "Entidades Geográficas: Casos Especiales"
+msgstr "Entidades geográficas: casos especiales"
 
 #. type: Plain text
 #: 0200.en.adoc:115
 msgid "The following are special cases of <<feature,features>> that might or might not have an obvious spatial <<extent>>, depending on the completeness of the information available."
-msgstr "Los siguientes son casos especiales de <<entidad-geográfica, Entidades Geográficas>> que podrían o no tener una <<extensión>> espacial obvia, dependiendo de la exhaustividad de la información disponible."
+msgstr "Los siguientes son casos especiales de <<entidad-geográfica, entidades geográficas>> que podrían o no tener una <<extensión>> espacial obvia, dependiendo de la exhaustividad de la información disponible."
 
 #. type: Title =====
 #: 0200.en.adoc:116
 #, no-wrap
 msgid "Feature – Street Address"
-msgstr "Entidad Geográfica: Dirección de una Calle"
+msgstr "Entidad geográfica: dirección de una calle"
 
 #. type: Plain text
 #: 0200.en.adoc:119
@@ -1044,23 +1044,23 @@ msgstr "\"21054 Baldersleigh Road, Guyra, NSO\" (indica que la localidad está a
 #: 0200.en.adoc:131
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Locate the address using a site such as Google Maps, Mapquest or OpenStreetMap.\n"
-msgstr "*Paso 1 - Determinar los límites de la entidade*: Localice la dirección usando un sitio como Google Maps, Mapquest u OpenStreetMap.\n"
+msgstr "*Paso 1 - Determinar los límites de la entidad*: Localice la dirección usando un sitio como Google Maps, Mapquest u OpenStreetMap.\n"
 
 #. type: Plain text
 #: 0200.en.adoc:133
 msgid "Address <<boundary>> evident – if the map shows the <<extent>> of the address clearly, determine the boundary exactly as you would for a feature with an Obvious Spatial Extent (<<img-street-address>>A); (see <<Feature – with Obvious Spatial Extent>>)."
-msgstr "Dirección con un <<límite>> evidente - si el mapa muestra la <<extensión, extensión>> de la dirección claramente, determine el límite exactamente como lo haría para una entidad con una Extensión Espacial Obvia (<<img-street-address>>A); (ver <<Entidad Geográfica con una Extensión Espacial Obvia>>)."
+msgstr "Dirección con un <<límite>> evidente: si el mapa muestra la <<extensión, extensión>> de la dirección claramente, determine el límite exactamente como lo haría para una entidad con una Extensión Espacial Obvia (<<img-street-address>>A); (ver <<Entidad geográfica con una extensión espacial obvia>>)."
 
 #. type: Plain text
 #: 0200.en.adoc:135
 msgid "Address boundary not evident – if the exact address cannot be found, estimate the boundary as well as possible, such as the block that it must be on (<<img-street-address>>B), as for <<Feature – without Obvious Spatial Extent>>. Many addresses reflect a <<grid>> system. For instance, addresses between 12th Street and 13th Street would lie between 1200 and 1300."
-msgstr "Dirección con un límite poco evidente - si no puede encontrar la dirección exacta estime el límite de la mejor manera posible, por ejemplo la cuadra en la que se encuentra (<<img-street-address>>B), como se hace en <<Entidad Geográfica sin una Extensión Espacial Obvia>>. Muchas direcciones reflejan un sistema de <<grilla, grillas>>. Por ejemplo, las direcciones entre la calle 12 y la calle 13 se encontrarían entre 1200 y 1300."
+msgstr "Dirección con un límite poco evidente: si no puede encontrar la dirección exacta estime el límite de la mejor manera posible, por ejemplo la cuadra en la que se encuentra (<<img-street-address>>B), como se hace en <<Entidad geográfica sin una extensión espacial obvia>>. Muchas direcciones reflejan un sistema de <<grilla, grillas>>. Por ejemplo, las direcciones entre la calle 12 y la calle 13 se encontrarían entre 1200 y 1300."
 
 #. type: Plain text
 #: 0200.en.adoc:137
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, use the same method to determine the coordinates and <<geographic-radial,geographic radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center,corrected center>> to the furthest point on the boundary of the feature.\n"
-msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez que haya determinado el límite, use el mismo método que para una <<Entidad Geográfica con una Extensión Espacial Obvia>> para determinar las coordenadas y el <<radio-geográfico, radio geográfico>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad.\n"
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez que haya determinado el límite, use el mismo método que para una <<Entidad geográfica con una extensión espacial obvia>> para determinar las coordenadas y el <<radio-geográfico, radio geográfico>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad.\n"
 
 #. type: Plain text
 #: 0200.en.adoc:139 0200.en.adoc:171 0200.en.adoc:212 0200.en.adoc:238
@@ -1068,7 +1068,7 @@ msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez 
 #: 0200.en.adoc:399 0220.en.adoc:63
 #, no-wrap
 msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
-msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Fuente de las Coordenadas#, [ui-element]#Formato de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las coordenadas#, [ui-element]#Precisión del GPS#/[ui-element]#Error de Medición#, [ui-element]#Unidades de Distancia# (ver <<Conceptos de Georreferenciación>>).\n"
+msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Fuente de las coordenadas#, [ui-element]#Formato de las coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las coordenadas#, [ui-element]#Precisión del GPS#/[ui-element]#Error de medición#, [ui-element]#Unidades de distancia# (ver <<Conceptos de georreferenciación>>).\n"
 
 #. type: Block title
 #: 0200.en.adoc:141
@@ -1086,7 +1086,7 @@ msgstr "img/web/street-address.png"
 #: 0200.en.adoc:144
 #, no-wrap
 msgid "Feature – Property"
-msgstr "Entidad Geográfica: Propiedad"
+msgstr "Entidad geográfica: propiedad"
 
 #. type: Plain text
 #: 0200.en.adoc:147
@@ -1096,7 +1096,7 @@ msgstr "La <<localidad>> es una propiedad: un rancho, estación, granja, finca, 
 #. type: delimited block =
 #: 0200.en.adoc:152
 msgid "\"Victoria River Station\" +"
-msgstr "\"Estación Río Victoria\"+"
+msgstr "\"Estación Río Victoria\" +"
 
 #. type: delimited block =
 #: 0200.en.adoc:153
@@ -1117,12 +1117,12 @@ msgstr "*Paso 1 - Determinar los límites de las entidades*: Localice la propied
 #. type: Plain text
 #: 0200.en.adoc:161
 msgid "Property <<boundary>> evident – if the map shows the <<extent>> of the property, determine the boundary exactly as you would for <<Feature – with Obvious Spatial Extent>>)."
-msgstr "Propiedad con un <<límite>> evidente - si el mapa muestra la <<extensión, extensión>> de la propiedad, determine el límite exactamente a como lo haría para una <<Entidad Geográfica con una Extensión Espacial Obvia>>."
+msgstr "Propiedad con un <<límite>> evidente: si el mapa muestra la <<extensión, extensión>> de la propiedad, determine el límite exactamente a como lo haría para una <<Entidad geográfica con una extensión espacial obvia>>."
 
 #. type: Plain text
 #: 0200.en.adoc:163
 msgid "Property boundary not evident – if the full extent of the property cannot be found, it should still be possible to determine some part of it confidently, and the rest with less certainty. Delimit the outer, uncertain feature boundaries as usual by following <<Feature – without Obvious Spatial Extent>>. In addition, determine the boundaries of the part of the property that is obvious following <<Feature – with Obvious Spatial Extent>>."
-msgstr "Propiedad con un límite no evidente - si no puede encontrar la extensión total de la propiedad, debería ser posible determinar al menos una parte de ella con cierta confianza y el resto con una certeza menor. Delimite los límites externos como es usual siguiendo <<Entidad Geográfica sin una Extensión Espacial Obvia>>. Adicionalmente, determine los límites obvios de la propiedad siguiendo <<Entidad Geográfica con una Extensión Espacial Obvia>>."
+msgstr "Propiedad con un límite poco evidente: si no puede encontrar la extensión total de la propiedad, debería ser posible determinar al menos una parte de ella con cierta confianza y el resto con una certeza menor. Delimite los límites externos como es usual siguiendo <<Entidad geográfica sin una extensión espacial obvia>>. Adicionalmente, determine los límites obvios de la propiedad siguiendo <<Entidad geográfica con una extensión espacial obvia>>."
 
 #. type: Plain text
 #: 0200.en.adoc:165
@@ -1133,12 +1133,12 @@ msgstr "*Paso 2 – Determine las coordenadas geográficas y el radio geográfic
 #. type: Plain text
 #: 0200.en.adoc:167
 msgid "Property boundary evident – once the boundary is determined, determine the <<coordinates>> and <<geographic-radial,geographic radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center,corrected center>> to the furthest point on the boundary of the feature (<<img-property-boundary>>A)."
-msgstr "Propiedad con un límite evidente: una vez que haya determinado el límite, determine las <<coordenadas>> y el <<radio-geográfico,radio geográfico>> como para <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad (<<img-property-boundary>>A)."
+msgstr "Propiedad con un límite evidente: una vez que haya determinado el límite, determine las <<coordenadas>> y el <<radio-geográfico,radio geográfico>> como para <<Entidad geográfica con una extensión espacial obvia>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad (<<img-property-boundary>>A)."
 
 #. type: Plain text
 #: 0200.en.adoc:169
 msgid "Property boundary not evident – once the outer boundaries are determined, use them to find coordinates as for <<Feature – with Obvious Spatial Extent>>, namely find the center of the <<smallest-enclosing-circle,smallest enclosing circle>> containing the outer, uncertain boundary. If that center falls within the inner, confident boundary, use it to determine the geographic radial by finding the distance from that point to the furthest point on the uncertain boundary (<<img-property-boundary>>B). If the center does not fall in or on the confident inner boundary, let the <<corrected-center,corrected center>> be a point on the inner confident boundary that minimizes the geographic radial to the outer uncertain boundary (<<img-property-boundary>>C)."
-msgstr "Propiedad sin un límite evidente: una vez que se determinen los límites exteriores, úselos para encontrar las coordenadas como lo hizo para <<Entidad Geográfica sin una Extensión Espacial Obvia>>, es decir, encuentre el centro del <<círculo-mínimo, círculo mínimo>> que contiene el límite exterior e incierto. Si ese centro cae dentro del límite interior y de confianza, úselo para determinar el radio geográfico encontrando la distancia desde ese punto hasta el punto más lejano en el límite incierto (<<img-property-boundary>>B). Si el centro no cae en el límite interno de confianza, permita que el <<centro-corregido, centro corregido>> sea un punto en el límite interior de confianza que minimice el radio geográfico hasta el límite incierto exterior (<<img-property-boundary>>C)."
+msgstr "Propiedad sin un límite evidente: una vez que se determinen los límites exteriores, úselos para encontrar las coordenadas como lo hizo para <<Entidad geográfica sin una extensión espacial obvia>>, es decir, encuentre el centro del <<círculo-mínimo, círculo mínimo>> que contiene el límite exterior e incierto. Si ese centro cae dentro del límite interior y de confianza, úselo para determinar el radio geográfico, encontrando la distancia desde ese punto hasta el punto más lejano en el límite incierto (<<img-property-boundary>>B). Si el centro no cae en el límite interno de confianza, permita que el <<centro-corregido, centro corregido>> sea un punto en el límite interior de confianza que minimice el radio geográfico hasta el límite exterior incierto (<<img-property-boundary>>C)."
 
 #. type: Block title
 #: 0200.en.adoc:173
@@ -1156,17 +1156,17 @@ msgstr "img/web/property-boundary.png"
 #: 0200.en.adoc:176
 #, no-wrap
 msgid "Feature – Path"
-msgstr "Entidad Geográfica: Ruta"
+msgstr "Entidad geográfica: ruta"
 
 #. type: Plain text
 #: 0200.en.adoc:179
 msgid "A <<path>> is a linear <<feature>> such as a road, trail, river, stream, contour line, <<boundary>>, <<transect>>, track of an animal’s movements, tow, trawl, etc. The <<locality>> may also refer to part (or subdivision) of a bigger path."
-msgstr "Una <<ruta>> es una <<entidad-geográfica, entidad geográfica>> lineal, como un camino, trocha, río, arroyo, isolínea, <<límite>>, <<transecto>>, rastro de los movimientos de un animal, arrastre, rastreo, etc. La <<localidad>> también puede referirse a una parte (o subdivisión) de una ruta más grande."
+msgstr "Una <<ruta>> es una <<entidad-geográfica, entidad geográfica>> lineal, como un camino, trocha, río, arroyo, isolínea, <<límite>>, <<transecto>>, trayectoria de los movimientos de un animal, arrastre, rastreo, etc. La <<localidad>> también puede referirse a una parte (o subdivisión) de una ruta más grande."
 
 #. type: Plain text
 #: 0200.en.adoc:181
 msgid "A path may cross over itself, for example, as with the track of an animal’s movements."
-msgstr "Una ruta puede cruzarse a si misma, por ejemplo como con el rastro de los movimientos de un animal."
+msgstr "Una ruta puede cruzarse a si misma, por ejemplo como con la trayectoria de los movimientos de un animal."
 
 #. type: delimited block =
 #: 0200.en.adoc:186
@@ -1181,7 +1181,7 @@ msgstr "\"Arroyo Urugua-í\" +"
 #. type: delimited block =
 #: 0200.en.adoc:188
 msgid "\"Hwy 1\" +"
-msgstr "\"Ruta Estatal de California 1\"+"
+msgstr "\"Ruta Estatal de California 1\" +"
 
 #. type: delimited block =
 #: 0200.en.adoc:189
@@ -1192,7 +1192,7 @@ msgstr "\"a lo largo de 100 m isolínea\""
 #: 0200.en.adoc:194
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: As a linear feature, a path is often represented as a series of line segments (i.e. a polyline), with or without a buffer. When viewed on satellite imagery these features (especially rivers) can be quite complex, so a constant buffer around the midline is not a good representation in these cases. When possible, determine the boundary as for any other <<shape>> using <<Feature – with Obvious Spatial Extent>>) (<<img-paths>>A). Otherwise, treat the boundary as a polyline (<<img-paths>>B) and determine the <<corrected-center>> and <<geographic-radial>> as explained below.\n"
-msgstr "*Paso 1 – Determinar los límites de la entidad geográfica*: Como una entidad geográfica lineal, las rutas se representan a menudo como una serie de segmentos de una línea (p. ej. un polígono), con o sin un buffer. Cuando se ven en imágenes satelitales, estas entidades (especialmente los ríos) pueden ser bastante complejas, por lo que un buffer constante alrededor de la línea media no es una buena representación en estos casos. Cuando sea posible, determine el límite como para cualquier otra <<forma-geométrica, forma geométrica>> usando <<Entidad Geográfica con una Extensión Espacial Obvia>>) (<<img-paths>>A). De lo contrario, trate el límite como un polilínea (<<img-paths>>B) y determine el <<centro-corregido>> y el <<radio-geográfico>> como se explica a continuación.\n"
+msgstr "*Paso 1 – Determinar los límites de la entidad geográfica*: Como una entidad geográfica lineal, las rutas se representan a menudo como una serie de segmentos de una línea (p. ej., un polígono), con o sin un buffer. Cuando se ven en imágenes satelitales, estas entidades (especialmente los ríos) pueden ser bastante complejas, por lo que un buffer constante alrededor de la línea media no es una buena representación en estos casos. Cuando sea posible, determine el límite como para cualquier otra <<forma-geométrica, forma geométrica>> usando <<Entidad geográfica con una extensión espacial obvia>>) (<<img-paths>>A). De lo contrario, trate el límite como un polilínea (<<img-paths>>B) y determine el <<centro-corregido>> y el <<radio-geográfico>> como se explica a continuación.\n"
 
 #. type: Plain text
 #: 0200.en.adoc:196
@@ -1208,12 +1208,12 @@ msgstr "*Isolíneas* — estas son entidades lineales definidas por la <<elevaci
 #. type: Plain text
 #: 0200.en.adoc:200
 msgid "If a single value is given for an elevation (or depth knowing that the location was at the bottom of a waterbody), treat the path as a linear feature with a buffer around it, where the buffer is a vertical distance from the contour, not a horizontal one. The size of the vertical buffer should be equal to the precision with which the elevation is recorded. For example, if the precision is 100 feet (e.g. the precision of an elevation recorded as \"2600 ft\"), then the buffer is 100 vertical feet. Determine the shape of the feature using lines interpolated (or measured) one half of the buffer distance below the given contour and one half the buffer distance above the given contour (e.g. at 2550 feet and 2650 feet for the elevation example \"2600 ft\")."
-msgstr "Si se da un solo valor para una elevación (o profundidad sabiendo que la ubicación estaba en el fondo de un cuerpo de agua), trate la ruta como una característica lineal con un buffer a su alrededor, donde el buffer es una distancia vertical desde la isolínea, no una distancia horizontal. El tamaño del buffer vertical debe ser igual a la precisión con la que se registra la elevación. Por ejemplo, si la precisión es de 100 pies (p. ej., la precisión de una elevación registrada como \"2600 ft\"), entonces el buffer es de 100 pies verticales. Determine la forma geométrica de la entidad usando líneas interpoladas (o medidas) una mitad de la distancia del buffer bajo de la isolínea dada y una mitad de la distancia del buffer sobre la isolínea dada(p. ej. A 2550 pies y 2650 pies para el ejemplo de elevación \"2600 pies\")."
+msgstr "Si se da un solo valor para una elevación (o profundidad sabiendo que la ubicación estaba en el fondo de un cuerpo de agua), trate la ruta como una característica lineal con un buffer a su alrededor, donde el buffer es una distancia vertical desde la isolínea, no una distancia horizontal. El tamaño del buffer vertical debe ser igual a la precisión con la que se registra la elevación. Por ejemplo, si la precisión es de 100 pies (p. ej., la precisión de una elevación registrada como \"2600 ft\"), entonces el buffer es de 100 pies verticales. Determine la forma geométrica de la entidad usando líneas interpoladas (o medidas) una mitad de la distancia del buffer bajo de la isolínea dada y una mitad de la distancia del buffer sobre la isolínea dada(p. ej., a 2550 pies y 2650 pies para el ejemplo de elevación \"2600 pies\")."
 
 #. type: Plain text
 #: 0200.en.adoc:202
 msgid "If an elevational range is given (e.g. 100-200 m), it is difficult to know whether the range was intended to encompass uncertainties in elevation or just the elevational bounds for the Location. To be conservative, we have to assume that it does not account for uncertainty in elevation and we need to add a buffer as described above around the upper and lower limits of the given range. For the example \"100 - 200 m\" the buffer is 100 m, so the lower boundary of the shape would be at 100 - 50 = 50 m and the upper boundary would be defined by 200 + 50 = 250 m."
-msgstr "Si se da un rango de elevación (p. ej. 100-200 m), es difícil saber si el rango estaba pensado para incluir las incertidumbres en la elevación o sólo los límites elevacionales de la ubicación. Para ser conservadores, tenemos que asumir que no tiene en cuenta la incertidumbre en la elevación y debemos añadir un buffer como se describe anteriormente alrededor de los límites superiores e inferiores del rango dado. Para el ejemplo \"100 - 200 m\" el buffer es de 100 m, por lo que el límite inferior de la entidad sería de 100 - 50 = 50 m y el límite superior se definiría por 200 + 50 = 250 m."
+msgstr "Si se da un rango de elevación (p. ej., 100-200 m), es difícil saber si el rango estaba pensado para incluir las incertidumbres en la elevación o sólo los límites elevacionales de la ubicación. Para ser conservadores, tenemos que asumir que no tiene en cuenta la incertidumbre en la elevación y debemos añadir un buffer como se describe anteriormente alrededor de los límites superiores e inferiores del rango dado. Para el ejemplo \"100 - 200 m\" el buffer es de 100 m, por lo que el límite inferior de la entidad sería de 100 - 50 = 50 m y el límite superior se definiría por 200 + 50 = 250 m."
 
 #. type: Plain text
 #: 0200.en.adoc:204
@@ -1229,7 +1229,7 @@ msgstr "Estas consideraciones pueden aplicarse igualmente a la <<batimetría>> c
 #: 0200.en.adoc:208
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: If the boundary can be determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the corrected center to the furthest point on the boundary of the feature (<<img-paths>>A).\n"
-msgstr "*Paso 2 - Determinar las coordenadas y el radio geográfico*: Si el límite puede ser determinado, trate la entidad como una <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las **<<coordenadas>>** del centro corregido hasta el punto más lejano en el límite de la entidad (<<img-paths>>A).\n"
+msgstr "*Paso 2 - Determinar las coordenadas y el radio geográfico*: Si el límite puede ser determinado, trate la entidad como una <<Entidad geográfica con una extensión espacial obvia>>, es decir, mida la distancia desde las **<<coordenadas>>** del centro corregido hasta el punto más lejano en el límite de la entidad (<<img-paths>>A).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:210
@@ -1252,12 +1252,12 @@ msgstr "img/web/paths.png"
 #: 0200.en.adoc:217
 #, no-wrap
 msgid "Feature – Junction, Intersection, Crossing, Confluence"
-msgstr "Entidad Geográfica: Cruce, Intersección, Paso, Confluencia"
+msgstr "Entidad geográfica: cruce, intersección, paso, confluencia"
 
 #. type: Plain text
 #: 0200.en.adoc:220
 msgid "The <<locality>> is the junction of two or more <<path,paths>> – roads, a road and a river, the mouth of a river (i.e. where it meets a larger water body), a road or river and an administrative <<boundary>> (e.g. of a park), a road and a contour line, etc."
-msgstr "La <<localidad>> es un cruce de dos o mas <<ruta,rutas>>. Una vía, una vía y un río, la desembocadura de un río (p. ej. donde se encuentra con un cuerpo de agua más grande), una vía o río con un <<límite>> administrativo (p. ej. de un parque nacional), una vía y una isolínea, etc."
+msgstr "La <<localidad>> es un cruce de dos o mas <<ruta,rutas>>. Una vía, una vía y un río, la desembocadura de un río (p. ej., donde se encuentra con un cuerpo de agua más grande), una vía o río con un <<límite>> administrativo (p. ej., de un parque nacional), una vía y una isolínea, etc."
 
 #. type: delimited block =
 #: 0200.en.adoc:225
@@ -1278,7 +1278,7 @@ msgstr "\"confluencia de Río Claro y Río La Hondura\""
 #: 0200.en.adoc:232
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Determine the boundary of the junction using routes of highways, roads, and rivers from resources such as Google Maps, Mapquest or OpenStreetMap, road atlases, <<GPS>> navigators, and satellite or aerial images (<<img-junction>>A). Most modern spatial data can be used to determine the actual boundaries. If the only available representation of the junction shows the adjoining paths as lines, then the boundary must be determined as for <<Feature – without Obvious Spatial Extent>>.\n"
-msgstr "*Paso 1 - Determinar los límites de la entidad*: Determine el límite del cruce usando el recorrido de autopistas, rutas y ríos usando recursos como Google Maps, Mapquest u OpenStreetMap, atlas de carreteras, navegadores <<GPS>> e imágenes satelitales o aéreas (<<img-junction>>A). La mayoría de los datos espaciales modernos se pueden usar para determinar los límites actuales. Si la única representación disponible del cruce muestra las rutas adyacentes como líneas, entonces el límite debe determinarse como para <<Entidad Geográfica sin una Extensión Espacial Obvia>>.\n"
+msgstr "*Paso 1 - Determinar los límites de la entidad*: Determine el límite del cruce usando el recorrido de autopistas, rutas y ríos usando recursos como Google Maps, Mapquest u OpenStreetMap, atlas de carreteras, navegadores <<GPS>> e imágenes satelitales o aéreas (<<img-junction>>A). La mayoría de los datos espaciales modernos se pueden usar para determinar los límites actuales. Si la única representación disponible del cruce muestra las rutas adyacentes como líneas, entonces el límite debe determinarse como para <<Entidad geográfica sin una extensión espacial obvia>>.\n"
 
 #. type: Plain text
 #: 0200.en.adoc:234
@@ -1289,7 +1289,7 @@ msgstr "Para una confluencia de dos vías acuáticas, el límite es un triángul
 #: 0200.en.adoc:236
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, use the same method to determine the <<coordinates>> and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature (<<img-junction>>B).\n"
-msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez se ha determinado el límite, determine las <<coordenadas>> y el <<radio-geográfico, radio geográfico>> usando el mismo método como para <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, medir la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad geográfica (<<img-junction>>B).\n"
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez se ha determinado el límite, determine las <<coordenadas>> y el <<radio-geográfico, radio geográfico>> usando el mismo método como para <<Entidad geográfica con una extensión espacial obvia>>, es decir, medir la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad geográfica (<<img-junction>>B).\n"
 
 #. type: Block title
 #: 0200.en.adoc:240
@@ -1307,12 +1307,12 @@ msgstr "img/web/junction.png"
 #: 0200.en.adoc:243
 #, no-wrap
 msgid "Feature – Cave"
-msgstr "Entidad Geográfica: Cueva"
+msgstr "Entidad geográfica: cueva"
 
 #. type: Plain text
 #: 0200.en.adoc:246
 msgid "The <<locality>> is a cave, an underground mine, etc. For details of how to record a locality within a cave, see {gbp}#caves[Caves^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
-msgstr "La <<localidad>> es una cueva, una mina subterránea, etc. Para obtener detalles sobre cómo registrar una localidad dentro de una cueva, consulte {gbp}#cuevas[Cuevas^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]."
+msgstr "La <<localidad>> es una cueva, una mina subterránea, etc. Para obtener detalles sobre cómo registrar una localidad dentro de una cueva, consulte {gbp}#cuevas[Cuevas^] en {gbp}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]."
 
 #. type: delimited block =
 #: 0200.en.adoc:251
@@ -1328,23 +1328,23 @@ msgstr "\"Cueva de Las Brujas\""
 #: 0200.en.adoc:257
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Locate the cave and/or its main entrance.\n"
-msgstr "*Paso 1 - Determinar los límites de la característica*: Localice la cueva y/o su entrada principal.\n"
+msgstr "*Paso 1 - Determinar los límites de la entidad geográfica*: Localice la cueva y/o su entrada principal.\n"
 
 #. type: Plain text
 #: 0200.en.adoc:259
 msgid "Cave <<extent>> evident – if a map of all the interior of the cave with measurements and orientation to the surface is available, or if a position can be determined directly above the <<location>> inside the cave using the <<ground-zero>> concept (see {gbp}#determining-location[Determining Location^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]), determine the <<boundary>> as if it is a <<Feature – with Obvious Spatial Extent>> (<<img-caves>>A)."
-msgstr "Cueva con una <<extensión>> evidente: si hay disponible un mapa de todo el interior de la cueva con mediciones y orientación geográfica hacia la superficie o si se puede determinar una posición directamente encima de la <<ubicación>> dentro de la cueva usando el concepto de <<cota-cero, cota cero>> (ver {gbp}#determinando-la-ubicación[Determinando la Ubicación^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]), determine el <<límite>> como para <<Entidad Geográfica con una Extensión Espacial Obvia>> (<<img-caves>>A)."
+msgstr "Cueva con una <<extensión>> evidente: si hay disponible un mapa de todo el interior de la cueva con mediciones y orientación geográfica hacia la superficie o si se puede determinar una posición directamente encima de la <<ubicación>> dentro de la cueva usando el concepto de <<cota-cero, cota cero>> (ver {gbp-es}#determinando-la-ubicación[Determinando la ubicación^] en {gbp-es}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]), determine el <<límite>> como para <<Entidad geográfica con una extensión espacial obvia>> (<<img-caves>>A)."
 
 #. type: Plain text
 #: 0200.en.adoc:261
 msgid "Cave extent not evident – if the limits of the cave are not evident: a) use the nearest identifiable <<feature>> to determine the extent and boundary of the cave, as for <<Feature – without Obvious Spatial Extent>> (<<img-caves>>B); or b) determine the <<coordinates>> of the cave entrance and use any evidence of the size of the cave to circumscribe the boundary as a circle around the entrance with a <<radial,radius>> commensurate with its size (<<img-caves>>C). Document accordingly in term:dwc[georeferenceRemarks]."
-msgstr "Cueva con una extensión no evidente: si los límites de la cueva no son evidentes: a) use la <<entidad-geográfica, entidad geográfica>> identificable más cercana para determinar la extensión y el límite de la cueva como para una <<Entidad Geográfica con una Extensión Espacial Obvia>> (<<img-caves>>B); o b) determine las <<coordenadas>> de la entrada de la cueva y use cualquier evidencia del tamaño de la cueva para circunscribir el límite como un círculo alrededor de la entrada con un <<radio,radio>> proporcional a su tamaño (<<img-caves>>C). Documente como corresponde en term:dwc[georeferenceRemarks] (Comentarios de la Georreferenciación)."
+msgstr "Cueva con una extensión poco evidente: si los límites de la cueva no son evidentes: a) use la <<entidad-geográfica, entidad geográfica>> identificable más cercana para determinar la extensión y el límite de la cueva como para una <<Entidad geográfica con una extensión espacial obvia>> (<<img-caves>>B); o b) determine las <<coordenadas>> de la entrada de la cueva y use cualquier evidencia del tamaño de la cueva para circunscribir el límite como un círculo alrededor de la entrada con un <<radio,radio>> proporcional a su tamaño (<<img-caves>>C). Documente como corresponde en term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación)."
 
 #. type: Plain text
 #: 0200.en.adoc:263
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, use the same method to determine the coordinates and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature.\n"
-msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez haya determinado el límite, use el mismo método para determinar las coordenadas y el <<radio-geográfico, radio geográfico>> como para <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad.\n"
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez haya determinado el límite, use el mismo método para determinar las coordenadas y el <<radio-geográfico, radio geográfico>> como para <<Entidad geográfica con una extensión espacial obvia>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad.\n"
 
 #. type: Block title
 #: 0200.en.adoc:267
@@ -1362,7 +1362,7 @@ msgstr "img/web/caves.png"
 #: 0200.en.adoc:270
 #, no-wrap
 msgid "Feature – Dive Location"
-msgstr "Entidad Geográfica: Ubicación de Buceo"
+msgstr "Entidad geográfica: ubicación de buceo"
 
 #. type: Plain text
 #: 0200.en.adoc:273
@@ -1383,24 +1383,24 @@ msgstr "*Paso 1 – Determinar los límites de la entidad geográfica*: Identifi
 #. type: Plain text
 #: 0200.en.adoc:285
 msgid "Dive <<extent>> evident – underwater <<location,locations>> are often recorded as a distance, <<direction>> and water <<depth>> from the entry point. Below the surface there may be a \"trajectory\" with a three dimensional aspect that includes a horizontal component and a minimum and maximum water depth. Use these to circumscribe the boundary on the surface (see <<img-dive-location>>A and {gbp}#three-dimensional-shapes[Three Dimensional Shapes^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^])."
-msgstr "Buceo con una <<extensión>> evidente: las <<ubicación,ubicaciones>> bajo el agua se registran a menudo como una distancia, la <<dirección>> y la <<profundidad>> del agua desde el punto de entrada. Debajo de la superficie puede haber una \"trayectoria\" con un aspecto tridimensional que incluye un componente horizontal y una profundidad mínima y máxima del agua. Uselos para circunscribir el límite en la superficie (ver <<img-dive-location>>A y {gbp}#formas-tridimensionales[Las Formas Tridimensionales^] en {gbp}[Buenas Prácticas de Georreferenciación(Chapman & Wieczorek 2020)^])."
+msgstr "Buceo con una <<extensión>> evidente: las <<ubicación,ubicaciones>> bajo el agua se registran a menudo como una distancia, la <<dirección>> y la <<profundidad>> del agua desde el punto de entrada. Debajo de la superficie puede haber una \"trayectoria\" con un aspecto tridimensional que incluye un componente horizontal y una profundidad mínima y máxima del agua. Uselos para circunscribir el límite en la superficie (ver <<img-dive-location>>A y {gbp-es}#formas-tridimensionales[Formas tridimensionales^] en {gbp-es}[Buenas prácticas de feorreferenciación(Chapman & Wieczorek 2020)^])."
 
 #. type: Plain text
 #: 0200.en.adoc:287
 msgid "Dive extent not evident – if the limits of the dive are not evident, there is no trajectory, and no distance or direction from the entry point, use a reasonable upper limit for the distance the diver might have been able to cover in a straight line from and back to the entry point. This could vary greatly depending on the diver, the depth reached, equipment used, etc. Use any evidence of the length of the dive to circumscribe the boundary as a circle around the entry point with a <<radial,radius>> commensurate with that length (<<img-dive-location>>B)."
-msgstr "Buceo con una <<extensión>> no evidente: si los límites de la inmersión no son evidentes, no hay trayectoria, ni distancia o dirección desde el punto de entrada, use un límite superior razonable para la distancia que el buceador pudo haber cubierto en una línea recta desde y hacia el punto de entrada. Esto puede variar mucho dependiendo del buzo, la profundidad alcanzada, el equipo utilizado, etc. Use cualquier evidencia de la longitud de la inmersión para circunscribir el límite como un círculo alrededor del punto de entrada con un <<radio>> proporcional a esa longitud (<<img-dive-location>>B)."
+msgstr "Buceo con una <<extensión>> poco evidente: si los límites de la inmersión no son evidentes, no hay trayectoria, ni distancia o dirección desde el punto de entrada, use un límite superior razonable para la distancia que el buceador pudo haber cubierto en una línea recta desde y hacia el punto de entrada. Esto puede variar mucho dependiendo del buzo, la profundidad alcanzada, el equipo utilizado, etc. Use cualquier evidencia de la longitud de la inmersión para circunscribir el límite como un círculo alrededor del punto de entrada con un <<radio>> proporcional a esa longitud (<<img-dive-location>>B)."
 
 #. type: Plain text
 #: 0200.en.adoc:289
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary of the feature.\n"
-msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Trate la entidad como <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las <<coordenadas>> del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad.\n"
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Trate la entidad como <<Entidad geográfica con una extensión espacial obvia>>, es decir, mida la distancia desde las <<coordenadas>> del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad.\n"
 
 #. type: Block title
 #: 0200.en.adoc:293
 #, no-wrap
 msgid "Determination of the corrected center *a* and geographic radial *b* of a dive location. *A*: side view of a dive. *B*: top view of a dive location with evident extent, projected onto the surface. *C*: top view of a dive location with extent not evident, but inferred from other evidence (in this case, an island)."
-msgstr "Determinación del centro corregido *a* y radio geográfico *b* de una ubicación de buceo. *A*: vista lateral de una inmersión *B*: vista superior de una ubicación de buceo con una extensión evidente, proyectada en la superficie. *C*: vista superior de un lugar de buceo con una extensión no evidente pero inferida desde otra evidencia (en este caso, una isla)."
+msgstr "Determinación del centro corregido *a* y radio geográfico *b* de una ubicación de buceo. *A*: vista lateral de una inmersión *B*: vista superior de una ubicación de buceo con una extensión evidente, proyectada en la superficie. *C*: vista superior de un lugar de buceo con una extensión poco evidente pero inferida desde otra evidencia (en este caso, una isla)."
 
 #. type: Target for macro image
 #: 0200.en.adoc:294
@@ -1412,17 +1412,17 @@ msgstr "img/web/dive-location.png"
 #: 0200.en.adoc:296
 #, no-wrap
 msgid "Feature – Headwaters of a Waterway"
-msgstr "Entidad Geográfica: Cabeceras de una Vía Navegable"
+msgstr "Entidad geográfica: cabeceras de una vía navegable"
 
 #. type: Plain text
 #: 0200.en.adoc:299
 msgid "The headwater of a waterway may or may not be well defined. For most sizeable rivers a headwater is designated. If not, there is no universally agreed upon definition for a headwater. A reasonable interpretation might be the beginning of the most upstream first order stream that is a tributary of the named waterway. However, there is no guarantee that the author of the <<locality>> description used that definition. Therefore, we recommend the conservative solution that includes the watershed of all of the tributary streams of lower order than the waterway mentioned."
-msgstr "La cabecera de una vía navegable puede o no estar bien definida. Para la mayoría de ríos importantes hay una cabecera designada. Si no es así, no existe un consenso universal sobre la definición de una cabecera. Una interpretación razonable podría ser el comienzo del arroyo de primer orden que se encuentra más aguas arriba y que es un afluente de esa vía navegable en particular. Sin embargo, no hay garantía de que el autor de la descripción de la <<localidad>> haya usado esa definición. Por lo tanto, recomendamos la solución conservadora la cual abarca la cuenca de agua de todos los arroyos afluentes de menor orden que la vía navegable en cuestión."
+msgstr "La cabecera de una vía navegable puede estar bien definida o no. Para la mayoría de ríos importantes hay una cabecera designada. Si no es así, no existe un consenso universal sobre la definición de una cabecera. Una interpretación razonable podría ser el comienzo del arroyo de primer orden que se encuentra más aguas arriba, y que es un afluente de esa vía navegable en particular. Sin embargo, no hay garantía de que el autor de la descripción de la <<localidad>> haya usado esa definición. Por lo tanto, recomendamos la solución conservadora la cual abarca la cuenca de agua de todos los arroyos afluentes de menor orden que la vía navegable en cuestión."
 
 #. type: delimited block =
 #: 0200.en.adoc:304
 msgid "\"headwaters of the Missouri River\" +"
-msgstr "\"Cabeceras del Río Missouri\"+"
+msgstr "\"Cabeceras del Río Missouri\" +"
 
 #. type: delimited block =
 #: 0200.en.adoc:305
@@ -1433,7 +1433,7 @@ msgstr "\"Cabecera Río Manso\""
 #: 0200.en.adoc:310
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Sometimes the position of a headwater is well known, e.g. it originates in a spring, lake, marsh, or a generally accepted beginning of a stream. If the headwater issues from a stationary waterbody such as a spring or lake, the feature is a line segment or polyline across the area where the water flows out of the stationary waterbody. In the latter case, treat the <<boundary>> as for a <<path>> (see <<Feature – Path>>), albeit a short one, as it is transverse to the flow of the waterway (<<img-headwater>>).\n"
-msgstr "*Paso 1 - Determinar los límites de la entidad geográfica*: A veces la posición de la cabecera es bien conocida, por ejemplo tiene su origen en un manantial, lago, pantano o es un inicio generalmente aceptado de un torrente. Si la cabecera se origina desde un cuerpo de agua estacionario como un manantial o lago, la entidad geográfica es un segmento de línea o una polilínea a través del área en la que fluye el agua fuera del cuerpo estacionario. En este último caso, trate el <<límite>> como a una <<ruta>> (ver <<Entidad Geográfica: Ruta>>), aunque corta pues es transversal al flujo de la vía navegable (<<img-headwater>>).\n"
+msgstr "*Paso 1 - Determinar los límites de la entidad geográfica*: A veces la posición de la cabecera es bien conocida, por ejemplo tiene su origen en un manantial, lago, pantano o es un inicio generalmente aceptado de un torrente. Si la cabecera se origina desde un cuerpo de agua estacionario como un manantial o lago, la entidad geográfica es un segmento de línea o una polilínea a través del área en la que fluye el agua fuera del cuerpo estacionario. En este último caso, trate el <<límite>> como a una <<ruta>> (ver <<Entidad geográfica: ruta>>), aunque corta pues es transversal al flujo de la vía navegable (<<img-headwater>>).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:312
@@ -1444,7 +1444,7 @@ msgstr "Si la cabecera no ha sido designada, use el conjunto de todos los arroyo
 #: 0200.en.adoc:314
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary. The corrected center should be on a waterbody within the boundaries.\n"
-msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez que el límite ha sido determinado, trate la entidad como <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las <<coordenadas>> del <<centro-corregido, centro corregido>> hasta el punto más lejano del límite. El centro corregido debe estar sobre un cuerpo de agua dentro de los límites.\n"
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez que el límite ha sido determinado, trate la entidad como <<Entidad geográfica con una extensión espacial obvia>>, es decir, mida la distancia desde las <<coordenadas>> del <<centro-corregido, centro corregido>> hasta el punto más lejano del límite. El centro corregido debe estar sobre un cuerpo de agua dentro de los límites.\n"
 
 #. type: Block title
 #: 0200.en.adoc:318
@@ -1474,12 +1474,12 @@ msgstr "img/web/watershed.png"
 #: 0200.en.adoc:325
 #, no-wrap
 msgid "Feature – near a Feature"
-msgstr "Entidad Geográfica: Cerca de una Entidad Geográfica"
+msgstr "Entidad geográfica: cerca de una entidad geográfica"
 
 #. type: Plain text
 #: 0200.en.adoc:328
 msgid "The <<locality>> is given with a proximity to a <<feature>>, usually written as \"near\", \"in the vicinity of\", or \"adjacent to\", without any particular <<heading>> or distance. \"Off\" of a locality, often seen in marine locations, is included here, but in this case there is at least one constraint imposed by the shore."
-msgstr "La <<localidad>> se da con una proximidad a una <<entidad-geográfica, entidad geográfica>>, normalmente escrito como \"cercano\", \"en las inmediaciones de\" o \"adyacente a\" sin ninguna <<orientación-cardinal, orientación cardinal>> o distancia. \"Fuera de\" de una localidad, a menudo vista en ubicaciones marinas, se incluye aquí pero en este caso hay al menos una restricción impuesta por la orilla."
+msgstr "La <<localidad>> se da con una proximidad a una <<entidad-geográfica, entidad geográfica>>, normalmente escrito como \"cercano a\", \"en las inmediaciones de\" o \"adyacente a\" sin ninguna <<orientación-cardinal, orientación cardinal>> o distancia. \"Fuera de\" de una localidad, a menudo vista en ubicaciones marinas, se incluye aquí pero en este caso hay al menos una restricción impuesta por la orilla."
 
 #. type: delimited block =
 #: 0200.en.adoc:333
@@ -1505,7 +1505,7 @@ msgstr "\"junto al paso subterráneo del ferrocarril en Smith Street\""
 #: 0200.en.adoc:341
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: First determine the <<boundary>> of the feature that is mentioned in the description, based on the feature type, either as <<Feature – with Obvious Spatial Extent>>, or as <<Feature – without Obvious Spatial Extent>>. Then, to account for the proximity indicator, extend that boundary outward for a fixed distance in all directions (<<img-near-a-feature>>A). Call this the \"extended feature\". If the extension overlaps the extension of any other similar feature, modify the boundary in the shared space to be half the distance between the nearest boundaries between the two features (<<img-near-a-feature>>B).\n"
-msgstr "*Paso 1 - Determinar los límites de la entidad geográfica*: Primero determine el <<límite>> de la entidad mencionada en la descripción basado en el tipo de entidad, ya sea como <<Entidad Geográfica con una Extensión Espacial Obvia>> o como <<Entidad Geográfica sin una Extensión Espacial Obvia>>. Luego, para tener en cuenta el indicador de proximidad, extienda ese límite hacia afuera en una distancia fija en todas las direcciones (<<img-near-a-feature>>A). Llame a esto la \"entidad extendida\". Si la extensión se superpone con la extensión de cualquier otra entidad similar, modifique el límite en el espacio compartido para que sea la mitad de la distancia entre los límites más cercanos de las dos entidades (<<img-near-a-feature>>B).\n"
+msgstr "*Paso 1 - Determinar los límites de la entidad geográfica*: Primero determine el <<límite>> de la entidad mencionada en la descripción basado en el tipo de entidad, ya sea como <<Entidad geográfica con una extensión espacial obvia>> o como <<Entidad geográfica sin una extensión espacial obvia>>. Luego, para tener en cuenta el indicador de proximidad, extienda ese límite hacia afuera en una distancia fija en todas las direcciones (<<img-near-a-feature>>A). Llame a esto la \"entidad extendida\". Si la extensión se superpone con la extensión de cualquier otra entidad similar, modifique el límite en el espacio compartido para que sea la mitad de la distancia entre los límites más cercanos entre las dos entidades (<<img-near-a-feature>>B). \n"
 
 #. type: Plain text
 #: 0200.en.adoc:343
@@ -1521,7 +1521,7 @@ msgstr "La distancia de buffer para la extensión es arbitraria, es difícil def
 #: 0200.en.adoc:347
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial:* Once the boundary of the extended feature has been determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the <<corrected-center>> to the furthest point on the boundary of the extended feature.\n"
-msgstr "*Paso 2 - Determinar las coordenadas y el radio geográfico:* Una vez que haya determinado el límite de la entidad extendida, trátela como <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las <<coordenadas>> del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad extendida.\n"
+msgstr "*Paso 2 - Determinar las coordenadas y el radio geográfico:* Una vez que haya determinado el límite de la entidad extendida, trátela como <<Entidad geográfica con una extensión espacial obvia>>, es decir, mida la distancia desde las <<coordenadas>> del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad extendida.\n"
 
 #. type: Block title
 #: 0200.en.adoc:351
@@ -1539,7 +1539,7 @@ msgstr "img/web/near-a-feature.png"
 #: 0200.en.adoc:354
 #, no-wrap
 msgid "Feature – between Two Features"
-msgstr "Entidad Geográfica: entre Dos Entidades Geográficas"
+msgstr "Entidad geográfica: entre dos entidades geográficas"
 
 #. type: Plain text
 #: 0200.en.adoc:357
@@ -1565,19 +1565,19 @@ msgstr "\"entre Point Reyes e Inverness\""
 #: 0200.en.adoc:369
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Determine the <<boundary,boundaries>> of each feature as <<Feature – with Obvious Spatial Extent>> or <<Feature – without Obvious Spatial Extent>> (<<img-between-two-features>>A).\n"
-msgstr "*Paso 1 – Determinar los límites de la entidad geográfica*: Determine los <<límite, límites>> de cada característica como si fuera <<Entidad Geográfica con una Extensión Espacial Obvia>> o <<Entidad Geográfica sin una Extensión Espacial Obvia>> (<<img-between-two-features>>A).\n"
+msgstr "*Paso 1 – Determinar los límites de la entidad geográfica*: Determine los <<límite, límites>> de cada característica como si fuera <<Entidad geográfica con una extensión espacial obvia>> o <<Entidad geográfica sin una extensión espacial obvia>> (<<img-between-two-features>>A).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:371
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once you have determined the boundaries of the two features, find their <<corrected-center,corrected centers>>, as for <<Feature – with Obvious Spatial Extent>>. Use the midpoint between the corrected centers of the two features to determine the <<coordinates>> of the <<location>> between the features (<<img-between-two-features>>B). The <<geographic-radial>> of the location between the two features is half the distance between the corrected centers of the features (<<img-between-two-features>>B).\n"
-msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez haya determinado los límites de las dos entidades, encuentre sus <<centro-corregido, centros corregidos>>, como para <<Entidad Geográfica con una Extensión Espacial Obvia>>. Use el punto medio entre los centros corregidos de las dos entidades para determinar las <<coordenadas>> de la <<ubicación>> que está entre ellas (<<img-between-two-features>>B). El <<radio-geográfico, radio geográfico>> de la ubicación entre las dos entidades es la mitad de la distancia entre los centros corregidos de las entidades (<<img-between-two-features>>B).\n"
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez haya determinado los límites de las dos entidades, encuentre sus <<centro-corregido, centros corregidos>>, como para <<Entidad geográfica con una extensión espacial obvia>>. Use el punto medio entre los centros corregidos de las dos entidades para determinar las <<coordenadas>> de la <<ubicación>> que está entre ellas (<<img-between-two-features>>B). El <<radio-geográfico, radio geográfico>> de la ubicación entre las dos entidades es la mitad de la distancia entre los centros corregidos de las entidades (<<img-between-two-features>>B).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:373
 #, no-wrap
 msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Radial of Feature#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
-msgstr "*Paso 3 – Hacer el cálculo usano los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Orígen de las Coordenadas#, [ui-element]#Formato de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Radio de la Entidad#, [ui-element]#Exactitud del GPS#/[ui-element]#Error de la medición#, [ui-element]#Unidades de la distancia# (ver <<Conceptos de Georreferenciación>>).\n"
+msgstr "*Paso 3 – Hacer el cálculo usano los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación^]*: [ui-element]#Orígen de las coordenadas#, [ui-element]#Formato de las coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las coordenadas#, [ui-element]#Radio de la entidad#, [ui-element]#Exactitud del GPS#/[ui-element]#Error de la medición#, [ui-element]#Unidades de distancia# (ver <<Conceptos de georreferenciación>>).\n"
 
 #. type: Block title
 #: 0200.en.adoc:375
@@ -1595,7 +1595,7 @@ msgstr "img/web/between-two-features.png"
 #: 0200.en.adoc:378
 #, no-wrap
 msgid "Feature – between Two Paths"
-msgstr "Entidad Geográfica: entre Dos Rutas"
+msgstr "Entidad geográfica: entre dos rutas"
 
 #. type: Plain text
 #: 0200.en.adoc:381
