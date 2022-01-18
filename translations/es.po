@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-01-17 23:20\n"
+"PO-Revision-Date: 2022-01-18 00:27\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1621,7 +1621,7 @@ msgstr "\"entre Av. Corrientes y Av. Córdoba\" (es decir, dos calles que no se
 #: 0200.en.adoc:393
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: Create a <<boundary>> that includes the two paths and any other boundaries that terminate those paths (e.g. the border of a given administrative division) (<<img-between-two-paths>>A).\n"
-msgstr "*Paso 1 – Determinar los límites de la entidad*: Cree un <<límite>> que incluya las dos rutas y cualquier otra barrera que pongan fin a esas rutas (p. ej. el borde de una determinada división administrativa) (<<img-between-two-paths>>A).\n"
+msgstr "*Paso 1 – Determinar los límites de la entidad*: Cree un <<límite>> que incluya las dos rutas y cualquier otra barrera que pongan fin a esas rutas (p. ej., el borde de una determinada división administrativa) (<<img-between-two-paths>>A).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:395
@@ -1632,7 +1632,7 @@ msgstr "Las rutas pueden cruzarse una o más veces, con el área entre ellas cam
 #: 0200.en.adoc:397
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> of the corrected center and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the corrected center to the furthest point on the boundary of the <<feature>>.\n"
-msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez que haya determinado el límite, obtenga las <<coordenadas>> del centro corregido y el <<radio-geográfico, radio geográfico>> como para <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las coordenadas del centro corregido hasta el punto más lejano en el límite de la <<entidad-geográfica, entidad geográfica>>.\n"
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez que haya determinado el límite, obtenga las <<coordenadas>> del centro corregido y el <<radio-geográfico, radio geográfico>> como para <<Entidad geográfica con una extensión espacial obvia>>, es decir, mida la distancia desde las coordenadas del centro corregido hasta el punto más lejano en el límite de la <<entidad-geográfica, entidad geográfica>>.\n"
 
 #. type: Block title
 #: 0200.en.adoc:401
@@ -1661,32 +1661,32 @@ msgstr "**Definición**"
 #. type: delimited block =
 #: 0220.en.adoc:7
 msgid "An *offset* is a displacement from a reference location. An offset is usually used in conjunction with a heading to give a distance and direction from a feature (see {gbp}#offsets[Offsets^] and {gbp}#uncertainty-related-to-offset-precision[Uncertainty Related to Offset Precision^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). There are a variety of ways in which offsets with features and headings are represented in locality descriptions, each with its own methods of spatial interpretation."
-msgstr "Un *desplazamiento* es un movimiento desde una ubicación de referencia. Los desplazamientos se usan normalmente junto con una orientación geográfica para dar una distancia y dirección desde una entidad (ver {gbp}#desplazamientos[Desplazamientos^] e {gbp}#incertidumbre-relacionada-con-la-precisión-de-un-desplazamiento[Incertidumbre Relacionada con la Precisión de un Desplazamiento^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]). Hay una variedad de formas en las que los desplazamientos con ubicaciones y orientaciones están representados en las descripciones de las localidades, cada uno con sus propios métodos de interpretación espacial."
+msgstr "Un *desplazamiento* es un movimiento desde una ubicación de referencia. Los desplazamientos se usan normalmente junto con una orientación geográfica para dar una distancia y dirección desde una entidad (ver {gbp-es}#desplazamientos[Desplazamientos^] e {gbp-es}#incertidumbre-relacionada-con-la-precisión-de-un-desplazamiento[Incertidumbre relacionada con la precisión de un desplazamiento^] en {gbp}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). Hay una variedad de formas en las que los desplazamientos con ubicaciones y orientaciones están representados en las descripciones de las localidades, cada uno con sus propios métodos de interpretación espacial."
 
 #. type: Plain text
 #: 0220.en.adoc:10
 msgid "In all cases, both for the <<shape>> <<georeferencing-method,method>> and for the <<point-radius>> <<georeferencing-method,method>> using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator], the <<boundary,boundaries>> of the reference <<feature,feature(s)>> are needed. Thus, this section on Offsets will repeatedly refer to features as determined by the methods presented in the various sections of <<Geographic Feature only>>."
-msgstr "En todos los casos, tanto para el <<método-de-georreferenciación,método>> <<forma-geométrica,forma geométrica>> como para el <<método-de-georreferenciación,método>> <<radio-punto>> al usar la Calculadora de Georreferenciación, los límites de la <<entidad-geográfica,entidad geográfica>> de referencia son necesarios. Por esto, esta sección sobre Desplazamientos se referirá repetidamente a las entidades determinadas por los métodos presentados en las distintas secciones de <<Solo Entidad Geográfica>>."
+msgstr "En todos los casos, tanto para el <<método-de-georreferenciación,método>> <<forma-geométrica,forma geométrica>> como para el <<método-de-georreferenciación,método>> <<radio-punto>> al usar la Calculadora de georreferenciación, los límites de la <<entidad-geográfica,entidad geográfica>> de referencia son necesarios. Por esto, esta sección sobre Desplazamientos se referirá repetidamente a las entidades determinadas por los métodos presentados en las distintas secciones de <<Solo entidad geográfica>>."
 
 #. type: Plain text
 #: 0220.en.adoc:12
 msgid "The <<locality-type,locality types>> that involve offsets, in addition to the tricky one we have already seen above (\"near a feature\", <<Feature – near a Feature>>), are:"
-msgstr "Los <<tipo-de-localidad,tipos de localidad>> que involucran desplazamientos, además del tipo complicado que ya vimos anteriormente (\"cerca de una entidad geográfica\", <<Entidad Geográfica: Cerca de una Entidad Geográfica>>), son:"
+msgstr "Los <<tipo-de-localidad,tipos de localidad>> que involucran desplazamientos, además del tipo complicado que ya vimos anteriormente (\"cerca de una entidad geográfica\", <<Entidad geográfica: cerca de una entidad geográfica>>), son:"
 
 #. type: Plain text
 #: 0220.en.adoc:14
 msgid "distance only (e.g. \"5 mi from Bakersfield\")"
-msgstr "solo distancia (p. ej. \"5 mi desde Bakersfield\")"
+msgstr "solo distancia (p. ej., \"5 mi desde Bakersfield\")"
 
 #. type: Plain text
 #: 0220.en.adoc:15
 msgid "<<heading>> only (e.g. \"North of Bakersfield\")"
-msgstr "solo <<orientación-cardinal,orientación cardinal>> (p. ej. \"al norte de Bakersfield\")"
+msgstr "solo <<orientación-cardinal,orientación cardinal>> (p. ej., \"al norte de Bakersfield\")"
 
 #. type: Plain text
 #: 0220.en.adoc:16
 msgid "distance along a <<path>> (e.g. \"13 miles east (by road) from Bakersfield\")"
-msgstr "distancia a lo largo de una <<ruta>> (p. ej. \"13 millas al este (por carretera) de Bakersfield)"
+msgstr "distancia a lo largo de una <<ruta>> (p. ej., \"13 millas al este (por carretera) de Bakersfield)"
 
 #. type: Plain text
 #: 0220.en.adoc:17
@@ -1696,18 +1696,18 @@ msgstr "distancia a lo largo de <<dirección,direcciones>> ortogonales (p. ej., 
 #. type: Plain text
 #: 0220.en.adoc:18
 msgid "distance at a heading (e.g. \"10 miles east (by air) from Bakersfield\")"
-msgstr "distancia en una orientación cardinal (p. ej. \"10 millas al este (por aire) de Bakersfield\")"
+msgstr "distancia en una orientación cardinal (p. ej., \"10 millas al este (por aire) de Bakersfield\")"
 
 #. type: Plain text
 #: 0220.en.adoc:19
 msgid "distances from two distinct paths (e.g. \"1.5 miles east of Louisiana State Highway 1026 and 2 miles south of U.S. Highway 190\")"
-msgstr "distancias desde dos rutas distintas (por ejemplo, \"1.5 millas al este de Louisiana State Highway 1026 y 2 millas al sur de U.S. Highway 190\")"
+msgstr "distancias desde dos rutas distintas (p. ej., \"1.5 millas al este de Louisiana State Highway 1026 y 2 millas al sur de U.S. Highway 190\")"
 
 #. type: Title ====
 #: 0220.en.adoc:20
 #, no-wrap
 msgid "Offset – Distance only"
-msgstr "Desplazamiento: Solo Distancia"
+msgstr "Desplazamiento: solo distancia"
 
 #. type: Plain text
 #: 0220.en.adoc:23
@@ -1728,43 +1728,43 @@ msgstr "\"12 km desde Purmamarca\""
 #: 0220.en.adoc:32
 #, no-wrap
 msgid "*Locality Type:* [ui-element]#Distance only#\n"
-msgstr "*Tipo de localidad:* [ui-element]#Solo Distancia#\n"
+msgstr "*Tipo de localidad:* [ui-element]#Solo distancia#\n"
 
 #. type: Plain text
 #: 0220.en.adoc:34
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries:* Determine the <<boundary>> of the feature as you would for <<Feature – near a Feature>>, except that the distance to use for the buffer is the distance given in the locality description, and there is no need to account for the proximity of other features.\n"
-msgstr "*Paso 1 – Determinar los límites de la entidad geográfica:* Determine el <<límite>> de la entidad como lo haría para <<Entidad Geográfica: Cerca de una Entidad Geográfica>>, excepto que la distancia que se usa para el buffer es la distancia dada en la descripción de la localidad y no hay necesidad de tener en cuenta la proximidad a otras entidades.\n"
+msgstr "*Paso 1 – Determinar los límites de la entidad geográfica:* Determine el <<límite>> de la entidad como lo haría para <<Entidad geográfica: cerca de una entidad geográfica>>, excepto que la distancia que se usa para el buffer es la distancia dada en la descripción de la localidad y no hay necesidad de tener en cuenta la proximidad a otras entidades.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:36 0220.en.adoc:230
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature.\n"
-msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez que se haya determinado el límite, obtenga las <<coordenadas>> y el <<radio-geográfico, radio geográfico>> al igual que para <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad.\n"
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez que se haya determinado el límite, obtenga las <<coordenadas>> y el <<radio-geográfico, radio geográfico>> al igual que para <<Entidad geográfica con una extensión espacial obvia>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:38
 #, no-wrap
 msgid "*Offset Distance*: Set to 0. The distance has already been incorporated in the determination of the boundary. Use the distance and units given in the locality description to <<georeference>> using the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^].\n"
-msgstr "*Distancia de desplazamiento*: Establezcala en 0. La distancia ya ha sido incorporada en la determinación del límite. Utilice la distancia y las unidades dadas en la descripción de la localidad para la <<georreferencia>> usando la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^].\n"
+msgstr "*Distancia de desplazamiento*: Establezcala en 0. La distancia ya ha sido incorporada en la determinación del límite. Utilice la distancia y las unidades dadas en la descripción de la localidad para la <<georreferencia>> usando la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación^].\n"
 
 #. type: Plain text
 #: 0220.en.adoc:40
 #, no-wrap
 msgid "*Distance Precision:* Though the [ui-element]#Offset Distance# is set to zero, the [ui-element]#Distance Precision# should still be set (see <<Distance Precision>>) to account for this source of <<uncertainty>>.\n"
-msgstr "*Precisión de la Distancia:* Aunque la [ui-element]#Distancia de Desplazamiento# está establecida en cero, la [ui-element]#Precisión de la Distancia# todavía debe establecerse (ver <<Precisión de la Distancia>>) para tener en cuenta esta fuente de <<incertidumbre>>.\n"
+msgstr "*Precisión de la distancia:* Aunque la [ui-element]#Distancia de desplazamiento# está establecida en cero, la [ui-element]#Precisión de la distancia# todavía debe establecerse (ver <<Precisión de la distancia>>) para tener en cuenta esta fuente de <<incertidumbre>>.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:42
 #, no-wrap
 msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Measurement Error# (see <<Georeferencing Concepts>>).\n"
-msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Fuente de las Coordenadas#, [ui-element]#Formato de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Error de la medición# (ver <<Conceptos de Georreferenciación>>).\n"
+msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación^]*: [ui-element]#Fuente de las coordenadas#, [ui-element]#Formato de las coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las coordenadas#, [ui-element]#Error de la medición# (ver <<Conceptos de Georreferenciación>>).\n"
 
 #. type: Title ====
 #: 0220.en.adoc:43
 #, no-wrap
 msgid "Offset – Heading only"
-msgstr "Desplazamiento: Solo Orientanción Cardinal"
+msgstr "Desplazamiento: solo orientanción cardinal"
 
 #. type: Plain text
 #: 0220.en.adoc:46
