@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-01-19 12:32\n"
+"PO-Revision-Date: 2022-01-19 13:36\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1975,7 +1975,7 @@ msgstr "*Paso 5 – Centro corregido y radio geográfico finales*: Una vez que h
 #: 0220.en.adoc:133
 #, no-wrap
 msgid "Determination of the final coordinates and geographic radial for a locality of the type [ui-element]#Offset along path#, where the path is wide enough that there are multiple reasonable routes within it, in this case a river. *A*: Boundary, corrected center *a₁* and geographic radial *b₁* for the starting feature. *B*: Offsets *x* along various routes along the wider path, buffers of uncertainty *u* forward and backward along the possible paths, and the boundary (red dotted segments) defined by the buffers. *C*: Boundary, corrected center *a₂* and geographic radial *b₂* of the final path, that is, the section of the river covered by the distance X downstream from the corrected center of the starting feature *a₁* buffered by the uncertainties *u*."
-msgstr "Determinación de las coordenadas y radio geográfico finales para una localidad del tipo [ui-element]#Desplazamiento a lo largo de una ruta#, donde la ruta es lo suficientemente ancha como para que existan múltiples rutas razonables dentro de ella, en este caso un río. *A*: Límite, centro corregido *a1* y radio geográfico *b1* para la característica inicial. *B*: Desplazamientos *x* a lo largo de las varias rutas dentro del camino más amplio, buffers de incertidumbre *u* hacia adelante y hacia atrás a lo largo de las posibles rutas y el límite (segmentos de puntos rojos) definido por los buffers. *C*: Límite, centro corregido *a2* y radio geográfico *b2* de la ruta final, es decir, la sección del río cubierta por la distancia X aguas abajo del centro corregido de la característica de inicio *a1* dentro del buffer determinado por las incertidumbres *u*."
+msgstr "Determinación de las coordenadas y radio geográfico finales para una localidad del tipo [ui-element]#Desplazamiento a lo largo de una ruta#, donde la ruta es lo suficientemente ancha como para que existan múltiples rutas razonables dentro de ella, en este caso un río. *A*: Límite, centro corregido *a1* y radio geográfico *b1* para la entidad inicial. *B*: Desplazamientos *x* a lo largo de las varias rutas dentro del camino más amplio, buffers de incertidumbre *u* hacia adelante y hacia atrás a lo largo de las posibles rutas y el límite (segmentos de puntos rojos) definido por los buffers. *C*: Límite, centro corregido *a2* y radio geográfico *b2* de la ruta final, es decir, la sección del río cubierta por la distancia X aguas abajo del centro corregido de la entidad inicial *a1* dentro del buffer determinado por las incertidumbres *u*."
 
 #. type: Target for macro image
 #: 0220.en.adoc:134
@@ -1987,7 +1987,7 @@ msgstr "img/web/offset-wide-path.png"
 #: 0220.en.adoc:136
 #, no-wrap
 msgid "Offset along Multiple Possible Paths"
-msgstr "Desplazamiento a lo Largo de Múltiples Rutas Posibles"
+msgstr "Desplazamiento a lo largo de múltiples rutas posibles"
 
 #. type: delimited block =
 #: 0220.en.adoc:142
@@ -2009,19 +2009,19 @@ msgstr "*Tipo de localidad:* Como el <<tipo-de-localidad>> de las posibles <<rut
 #: 0220.en.adoc:148
 #, no-wrap
 msgid "*Step 1 – Determine the starting feature boundaries*: Find the center of the intersection of the reference <<feature>> with each path as you would for <<feature-junction-intersection-crossing-confluence,Feature – Junction, Intersection, Crossing, Confluence>> (<<img-offset-multiple-paths>>A).\n"
-msgstr "*Paso 1 – Determinar los límites de la entidad de inicio*: Encuentre el centro de la intersección de la <<entidad-geográfica>> de referencia con cada ruta como lo haría para <<entidad-geográfica-cruce-intersección-paso-confluencia,Entidad Geográfica: Cruce, Intersección, Paso, Confluencia >> (<<img-offset-multiple-paths>>A).\n"
+msgstr "*Paso 1 – Determinar los límites de la entidad de inicio*: Encuentre el centro de la intersección de la <<entidad-geográfica>> de referencia con cada ruta como lo haría para <<entidad-geográfica-cruce-intersección-paso-confluencia,Entidad geográfica: cruce, intersección, paso, confluencia >> (<<img-offset-multiple-paths>>A).\n"
 
 #. type: Plain text
 #: 0220.en.adoc:150
 #, no-wrap
 msgid "*Step 2 – Determine the boundaries for distinct paths*: For each of the distinct possible paths, determine the final <<boundary,boundaries>> of the path segment as for <<Offset along a Narrow Path>> or <<Offset along a Wide Path>>, as appropriate (<<img-offset-multiple-paths>>B).\n"
-msgstr "*Paso 2 – Determinar los límites para las distintas rutas*: Para cada una de las posibles rutas distintas, determine los <<límite,límites>> finales de los segmentos de la ruta como lo haría para un <<Desplazamiento a lo Largo de una Ruta Angosta>> o un <<Desplazamiento a lo Largo de una Ruta Ancha>>, según sea apropiado (<<img-offset-multiple-paths>>B).\n"
+msgstr "*Paso 2 – Determinar los límites para las distintas rutas*: Para cada una de las posibles rutas distintas, determine los <<límite,límites>> finales de los segmentos de la ruta como lo haría para un <<Desplazamiento a lo largo de una ruta angosta>> o un <<Desplazamiento a lo largo de una ruta ancha>>, según sea apropiado (<<img-offset-multiple-paths>>B).\n"
 
 #. type: Plain text
 #: 0220.en.adoc:152
 #, no-wrap
 msgid "*Step 3 – Determine the final coordinates and geographic radial*: Treat the set of boundaries from *Step 2* and the minimum area between them as parts of the same feature. Find the <<corrected-center>> and <<geographic-radial>> for this combined feature (<<img-offset-multiple-paths>>B). Use the <<coordinates>> of the corrected center of this combined feature for the resulting [ui-element]#Input Latitude# and [ui-element]#Longitude# and use the length of the geographic radial of the combined feature as the final <<uncertainty>>. No further calculation is necessary.\n"
-msgstr "*Paso 3 – Determinar las coordenadas y radios geográficos finales*: Trate el conjunto de límites del *Paso 2* y el área mínima entre ellos como partes de la misma entidad geográfica. Encuentre el <<centro-corregido>> y el <<radio-geográfico>> para esta entidad combinada (<<img-offset-multiple-paths>>B). Use las <<coordenadas>> del centro corregido de la entidad combinada para la [ui-element]#Latitud# y [ui-element]#Longitud# de entrada y use la longitud del radio geográfico de la entidad combinada como la <<incertidumbre>> final. No se necesita ningún cálculo adicional.\n"
+msgstr "*Paso 3 – Determinar las coordenadas y radios geográficos finales*: Trate el conjunto de límites del *Paso 2* y el área mínima entre ellos como partes de la misma entidad geográfica. Encuentre el <<centro-corregido>> y el <<radio-geográfico>> para esta entidad combinada (<<img-offset-multiple-paths>>B). Use las <<coordenadas>> del centro corregido de la entidad combinada como la [ui-element]#Latitud# y [ui-element]#Longitud# de entrada resultantes y use la longitud del radio geográfico de la entidad combinada como la <<incertidumbre>> final. No se necesita ningún cálculo adicional.\n"
 
 #. type: Block title
 #: 0220.en.adoc:154
@@ -2039,12 +2039,12 @@ msgstr "img/web/offset-multiple-paths.jpg"
 #: 0220.en.adoc:157
 #, no-wrap
 msgid "Offset – Distance along Orthogonal Directions"
-msgstr "Desplazamiento: Distancia a lo largo de Direcciones Ortogonales"
+msgstr "Desplazamiento: distancia a lo largo de direcciones ortogonales"
 
 #. type: Plain text
 #: 0220.en.adoc:160
 msgid "The <<locality,locality>> consists of a linear distance in each of two orthogonal <<direction,directions>> from a <<feature>>. For more information and details see {gbp}#offset-along-orthogonal-directions[Offset along Orthogonal Directions^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
-msgstr "La <<localidad,localidad>> consiste en una distancia lineal en cada una de las dos <<dirección,direcciones>> ortogonales desde una <<entidad-geográfica>>. Para obtener más información y detalles, consulte {gbp}#desplazamiento-a-lo-largo-de-las-direcciones-ortogonales[Desplazamiento a lo largo de las Direcciones Ortogonales^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]."
+msgstr "La <<localidad,localidad>> consiste en una distancia lineal en cada una de las dos <<dirección,direcciones>> ortogonales desde una <<entidad-geográfica>>. Para obtener más información y detalles, consulte {gbp-es}#desplazamiento-a-lo-largo-de-las-direcciones-ortogonales[Desplazamiento a lo largo de las direcciones ortogonales^] en {gbp-es}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]."
 
 #. type: Plain text
 #: 0220.en.adoc:162
@@ -2076,19 +2076,19 @@ msgstr "*Tipo de localidad:* [ui-element]#Distancia a lo largo de direcciones or
 #: 0220.en.adoc:174 0220.en.adoc:206
 #, no-wrap
 msgid "*Step 1 – Determine the starting feature boundaries*: Determine the <<boundary>> of the <<feature>> based on whatever the feature type is, either as for <<Feature – with Obvious Spatial Extent>>, or as for <<Feature – without Obvious Spatial Extent>>.\n"
-msgstr "*Paso 1 – Determinar los límites de la entidad de inicio*: Determine el <<límite>> de la <<entidad-geográfica>> basado en cualquier tipo de entidad que sea, ya sea como para <<Entidad Geográfica con una Extensión Espacial Obvia>> o como para <<Entidad Geográfica sin una Extensión Espacial Obvia>>.\n"
+msgstr "*Paso 1 – Determinar los límites de la entidad inicial*: Determine el <<límite>> de la <<entidad-geográfica>> basado en cualquier tipo de entidad que sea, ya sea como para <<Entidad geográfica con una extensión espacial obvia>> o como para <<Entidad geográfica sin una extensión espacial obvia>>.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:176
 #, no-wrap
 msgid "*Step 2 – Determine the starting feature coordinates and geographic radial*: Once the boundary of the starting feature has been determined, use the same method to determine the <<corrected-center>> and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the <<coordinates>> of the corrected center to the furthest point on the boundary of the starting feature (<<img-offset-orthogonal-direction>>).\n"
-msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico de la entidad geográfica de inicio*: Una vez que se ha determinado el límite de la entidad de inicio, use el mismo método para determinar el <<centro-corregido>> y el <<radio-geográfico>> como para una <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las <<coordenadas>> del centro corregido hasta el punto más lejano en el límite de la entidad de inicio (<<img-offset-orthogonal-direction>>).\n"
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico de la entidad geográfica inicial*: Una vez que se ha determinado el límite de la entidad de inicio, use el mismo método para determinar el <<centro-corregido>> y el <<radio-geográfico>> como para <<Entidad geográfica con una extensión espacial obvia>>, es decir, mida la distancia desde las <<coordenadas>> del centro corregido hasta el punto más lejano en el límite de la entidad de inicio (<<img-offset-orthogonal-direction>>).\n"
 
 #. type: Plain text
 #: 0220.en.adoc:178
 #, no-wrap
 msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source,# [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#North or South Offset Distance, East or West Offset Distance#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).\n"
-msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Fuente de las Coordenadas,# [ui-element]#Formato de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Distancia de Desplazamiento Norte o Sur, Distancia de Desplazamiento Este u Oeste#, [ui-element]#Precisión del GPS#/[ui-element]#Error de la Medición#, [ui-element]#Unidades de la Distancia#, [ui-element]#Precisión de la Distancia# (ver <<Conceptos de Georreferenciación>>).\n"
+msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación^]*: [ui-element]#Fuente de las coordenadas,# [ui-element]#Formato de las coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las coordenadas#, [ui-element]#Distancia de desplazamiento Norte o Sur, Distancia de desplazamiento Este u Oeste#, [ui-element]#Precisión del GPS#/[ui-element]#Error de la medición#, [ui-element]#Unidades de la distancia#, [ui-element]#Precisión de la distancia# (ver <<Conceptos de georreferenciación>>).\n"
 
 #. type: Plain text
 #: 0220.en.adoc:180 0220.en.adoc:212
@@ -2111,22 +2111,22 @@ msgstr "img/web/offset-orthogonal-direction.jpg"
 #: 0220.en.adoc:185
 #, no-wrap
 msgid "Offset – Distance at a Heading"
-msgstr "Desplazamiento: Distancia en una Orientación Cardinal"
+msgstr "Desplazamiento: distancia en una orientación cardinal"
 
 #. type: Plain text
 #: 0220.en.adoc:188
 msgid "The <<locality,locality>> consists of a distance in a given <<direction>> from a single <<feature>>. Such localities sometimes contain an explicit indicator of how the distance was measured, (e.g. \"by air\", \"air miles W of\", \"due N of\", \"as the crow flies\", \"by road\", \"downstream from\", etc.). Without such an indicator the interpretation is a matter of judgement, which should be documented in term:dwc[georeferenceRemarks]."
-msgstr "La <<localidad,localidad>> consiste en una distancia en una <<dirección>> dada desde una sola <<entidad-geográfica, entidad geográfica>>. Tales localidades a veces contienen un indicador explícito de cómo se midió la distancia (p. ej. \"por aire\", \"millas aéreas al O de\", \"al N de\", \"en línea recta\", \"por carretera, \"río abajo de\", etc.). Sin tal indicador, la interpretación es una cuestión de juicio que debería ser documentada en el term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación)."
+msgstr "La <<localidad,localidad>> consiste en una distancia en una <<dirección>> dada desde una sola <<entidad-geográfica, entidad geográfica>>. Tales localidades a veces contienen un indicador explícito de cómo se midió la distancia (p. ej., \"por aire\", \"millas aéreas al O de\", \"al N de\", \"en línea recta\", \"por carretera, \"río abajo de\", etc.). Sin tal indicador, la interpretación es una cuestión de juicio que debería ser documentada en el term:dwc[georeferenceRemarks] (Comentarios de la georreferenciación)."
 
 #. type: Plain text
 #: 0220.en.adoc:190
 msgid "Since an offset at a heading \"by air\" will usually encompass the alternative by a path anyway, the former is the recommended locality type to use if there is no indication to the contrary. You can increase the maximum uncertainty to encompass the other option. This recommendation applies if you don’t have a compelling reason to use <<Offset – Distance along a Path>>)."
-msgstr "Dado que un desplazamiento en una orientación \"por aire\" usualmente englobará la alternativa \"por una ruta\", la primera es el tipo de localidad que se recomienda usar si no hay indicios de lo contrario. Puede aumentar la incertidumbre máxima para englobar la otra opción. Esta recomendación se aplica si no tiene una razón convincente para usar <<Desplazamiento: Distancia a lo Largo de una Ruta>>)."
+msgstr "Dado que un desplazamiento en una orientación \"por aire\" usualmente englobará la alternativa \"por ruta\", la primera es el tipo de localidad que se recomienda usar si no hay indicios de lo contrario. Puede aumentar la incertidumbre máxima para englobar la otra opción. Esta recomendación se aplica si no tiene una razón convincente para usar <<Desplazamiento: distancia a lo largo de una ruta>>)."
 
 #. type: Plain text
 #: 0220.en.adoc:192
 msgid "The addition of an adverbial modifier to the distance part of a locality description (e.g. \"about 25 km WNW Campinas\"), while an honest observation, should not affect the determination of the <<geographic-coordinates>> or the overall <<uncertainty>>."
-msgstr "La adición de un adverbio modificador a la distancia de una descripción de una localidad (p. ej. \"aproximadamente a 25 km de Campinas ONO\"), aunque es una observación honesta, no debe afectar la determinación de las <<coordenadas-geográficas>> o la <<incertidumbre>> total."
+msgstr "La adición de un adverbio modificador a la distancia de la descripción de una localidad (p. ej., \"aproximadamente a 25 km de Campinas ONO\"), aunque es una observación honesta, no debe afectar la determinación de las <<coordenadas-geográficas>> o la <<incertidumbre>> total."
 
 #. type: delimited block =
 #: 0220.en.adoc:197
@@ -2157,30 +2157,30 @@ msgstr "\"10 mi E (por aire) de Yerevan\""
 #: 0220.en.adoc:204
 #, no-wrap
 msgid "*Locality Type:* [ui-element]#Distance at a heading#\n"
-msgstr "*Tipo de localidad:* [ui-element]#Distancia en una Orientación Cardinal#\n"
+msgstr "*Tipo de localidad:* [ui-element]#Distancia en una orientación cardinal#\n"
 
 #. type: Plain text
 #: 0220.en.adoc:208
 #, no-wrap
 msgid "*Step 2 – Determine the starting feature coordinates and geographic radial*: Once the boundary has been determined, obtain the <<coordinates>> and the <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature.\n"
-msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico de la entidad geográfica de inicio*: Una vez que el límite haya sido determinado, obtenga las <<coordenadas>> y el <<radio-geográfico>> al igual que para <<Entidad Geográfica con una Extensión Espacial Obvia>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido>> hasta el punto más lejano en el límite de la entidad.\n"
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico de la entidad geográfica de inicio*: Una vez que el límite haya sido determinado, obtenga las <<coordenadas>> y el <<radio-geográfico>> al igual que para <<Entidad geográfica con una extensión espacial obvia>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido>> hasta el punto más lejano en el límite de la entidad.\n"
 
 #. type: Plain text
 #: 0220.en.adoc:210
 #, no-wrap
 msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source,# [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Direction#, [ui-element]#Offset Distance#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).\n"
-msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Fuente de las Coordenadas,# [ui-element]#Formato de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Dirección#, [ui-element]#Distancia de Desplazamiento#, [ui-element]#Exactitud del GPS#/[ui-element]#Error de la Medición#, [ui-element]#Unidades de la Distancia#, [ui-element]#Precisión de la Distancia# (ver <<Conceptos de Georreferenciación>>).\n"
+msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación^]*: [ui-element]#Fuente de las coordenadas,# [ui-element]#Formato de las coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de lascCoordenadas#, [ui-element]#Dirección#, [ui-element]#Distancia de desplazamiento#, [ui-element]#Exactitud del GPS#/[ui-element]#Error de la medición#, [ui-element]#Unidades de la distancia#, [ui-element]#Precisión de la distancia# (ver <<Conceptos de georreferenciación>>).\n"
 
 #. type: Title ====
 #: 0220.en.adoc:213
 #, no-wrap
 msgid "Offset – Distances from Two Distinct Paths"
-msgstr "Desplazamiento: Distancia desde dos Rutas Distintas"
+msgstr "Desplazamiento: distancia desde dos rutas distintas"
 
 #. type: Plain text
 #: 0220.en.adoc:216
 msgid "The <<locality,locality>> consists of orthogonal <<offset>> distances, one from each of two distinct <<path,paths>>."
-msgstr "La <<localidad,localidad>> consiste de distancias ortogonales de <<desplazamiento>>, una por cada dos <<ruta,rutas>> distintas."
+msgstr "La <<localidad,localidad>> esta compuesta por distancias de <<desplazamiento>> ortogonales, una por cada dos <<ruta,rutas>> distintas."
 
 #. type: delimited block =
 #: 0220.en.adoc:221
@@ -2190,7 +2190,7 @@ msgstr "\"1.5 mi al E de LA Highway. 1026 y 2 mi al S de U.S. 190\""
 #. type: Plain text
 #: 0220.en.adoc:226
 msgid "Although this is not technically a distance along a path, the choice of this <<locality-type>> in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^] will allow all of the relevant parameters to be entered."
-msgstr "Aunque tecnicamente no es una distancia a lo largo de una ruta, elegir este <<tipo-de-localidad,tipo de localidad>> en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^] permitirá introducir todos los parámetros relevantes."
+msgstr "Aunque tecnicamente no es una distancia a lo largo de una ruta, elegir este <<tipo-de-localidad,tipo de localidad>> en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación^] permitirá introducir todos los parámetros relevantes."
 
 #. type: Plain text
 #: 0220.en.adoc:228
@@ -2202,7 +2202,7 @@ msgstr "*Paso 1 – Determinar los límites de la entidad geográfica*: Determin
 #: 0220.en.adoc:232
 #, no-wrap
 msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#Radial of Feature#, [ui-element]#Measurement Error#, [ui-element]#Distance Units#, [ui-element]#Distance Precision# (see <<Georeferencing Concepts>>).\n"
-msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferencia^]*: [ui-element]#Fuente de las Coordenadas#, [ui-element]#Formato de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Radial de la Entidad#, [ui-element]#Error de la Medición#, [ui-element]#Unidades de la Distancia#, [ui-element]#Precisión de la Distancia# (ver <<Conceptos de Georreferenciación>>).\n"
+msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferencia^]*: [ui-element]#Fuente de las coordenadas#, [ui-element]#Formato de las coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las coordenadas#, [ui-element]#Radial de la entidad#, [ui-element]#Error de la medición#, [ui-element]#Unidades de la distancia#, [ui-element]#Precisión de la distancia# (ver <<Conceptos de georreferenciación>>).\n"
 
 #. type: Block title
 #: 0220.en.adoc:234
@@ -2231,7 +2231,7 @@ msgstr "La localidad consiste en un punto representado por **coordenadas**, pued
 #: 0230.en.adoc:9
 #, no-wrap
 msgid "Coordinates – Geographic Coordinates"
-msgstr "Coordenadas: Coordenadas Geográficas"
+msgstr "Coordenadas: coordenadas geográficas"
 
 #. type: Plain text
 #: 0230.en.adoc:12
@@ -2256,7 +2256,7 @@ msgstr "<<grados-decimales>> (DD)"
 #. type: Plain text
 #: 0230.en.adoc:18
 msgid "Records should also contain a hemisphere indicator ('E' or 'W' and 'N' or 'S' for DMS and DDM formats in English; '−' for west or south in DD format). For maritime <<location,locations>>, if there is no information that would suggest a particular [ui-element]#Coordinate Source#, use a map of 1:150000 scale, as this is a realistic conservative selection."
-msgstr "Los registros también deben contener un indicador del hemisferio ('O' o 'E' y 'N' o 'S' para formatos DMS y DDM en inglés; '−' para el oeste o el sur en formato DD). Para <<ubicación,ubicaciones>> maritimas, si no hay información que sugiera una [ui-element]#Fuente de las Coordenadas# particular, use un mapa de escala 1:150000, ya que esta es una selección realista y conservadora."
+msgstr "Los registros también deben contener un indicador del hemisferio ('O' o 'E' y 'N' o 'S' para formatos DMS y DDM en inglés; '−' para el oeste o el sur en formato DD). Para <<ubicación,ubicaciones>> maritimas, si no hay información que sugiera una [ui-element]#Fuente de las coordenadas# particular, use un mapa de escala 1:150000, ya que esta es una selección realista y conservadora."
 
 #. type: delimited block =
 #: 0230.en.adoc:23
@@ -2277,7 +2277,7 @@ msgstr "\"-36.524276; -114.164055\" (DD usando el signo menos para indicar hemis
 #: 0230.en.adoc:28
 #, no-wrap
 msgid "*Locality Type:* [ui-element]#Coordinates only#\n"
-msgstr "*Tipo de localidad:* [ui-element]#Solo Coordenadas#\n"
+msgstr "*Tipo de localidad:* [ui-element]#Solo coordenadas#\n"
 
 #. type: Plain text
 #: 0230.en.adoc:30
@@ -2288,13 +2288,13 @@ msgstr "*Paso 1 – Introducir las coordenadas*: Introduzca las <<coordenadas>> 
 #. type: Plain text
 #: 0230.en.adoc:32
 msgid "The http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator] calculates and preserves seven digits of precision in decimal degrees so that any transformation between coordinate formats is reversible without introducing rounding errors."
-msgstr "La http://georeferencing.org/georefcalculator/gc.html[Calculadora de Gerreferenciación] calcula y preserva siete cifras de precisión en grados decimales para que cualquier transformación entre formatos de coordenadas sea reversible sin introducir errores de redondeo."
+msgstr "La http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación] calcula y preserva siete cifras de precisión en grados decimales para que cualquier transformación entre formatos de coordenadas sea reversible sin introducir errores de redondeo."
 
 #. type: Plain text
 #: 0230.en.adoc:34
 #, no-wrap
 msgid "*Step 2 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
-msgstr "*Paso 2 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Gerreferenciación]*: [ui-element]#Fuente de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Precisión del GPS#, [ui-element]#Unidades de la Distancia# (ver <<Conceptos de georreferenciación>>).\n"
+msgstr "*Paso 2 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación]*: [ui-element]#Fuente de las coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las coordenadas#, [ui-element]#Precisión del GPS#, [ui-element]#Unidades de la distancia# (ver <<Conceptos de georreferenciación>>).\n"
 
 #. type: Title ====
 #: 0230.en.adoc:35
@@ -2305,7 +2305,7 @@ msgstr "Coordenadas: Universal Transversa de Mercator (UTM)"
 #. type: Plain text
 #: 0230.en.adoc:38
 msgid "The <<locality>> consists of a point represented by <<coordinates,coordinate>> information in the form of <<UTM,Universal Transverse Mercator (UTM)>> or a related <<coordinate-system>>. For UTM or equivalent coordinates, a Zone should ALWAYS be included to make sure that the <<longitude>> is not ambiguous. Zones are often not reported where a region (e.g. Tasmania) falls completely within one UTM zone. Be aware that UTM zones are valid only between 84°N and 80°S. For details on dealing with UTM Coordinates see {gbp}#universal-transverse-mercator-utm-coordinates[Universal Transverse Mercator (UTM) Coordinates^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
-msgstr "La <<localidad>> consiste en un punto representado por información de <<coordenadas,coordenadas>> en forma de <<UTM, Universal Transversa de Mercator (UTM)>> o un <<sistema-de-coordenadas>> relacionado. Para las coordenadas UTM o equivalentes, SIEMPRE se debe incluir una zona para asegurarse de que la <<longitud>> no es ambigua. A menudo no se reportan las zonas donde una región (p. ej. Tasmania) cae completamente dentro de una zona UTM. Tenga en cuenta que las zonas UTM son válidas solo entre 84°N y 80°S. Para más detalles sobre cómo lidiar con las Coordenadas UTM vea {gbp}#coordenadas-universal-transversa-de-mercator[Coordenadas Universal Transversa de Mercator (UTM)^] en {gbp}[Buenas Prácticas de Georreferenciación(Chapman y Wieczorek 2020)^]."
+msgstr "La <<localidad>> consiste en un punto representado por información de <<coordenadas,coordenadas>> en forma de <<UTM, Universal Transversa de Mercator (UTM)>> o un <<sistema-de-coordenadas>> relacionado. Para las coordenadas UTM o equivalentes, SIEMPRE se debe incluir una zona para asegurarse de que la <<longitud>> no es ambigua. A menudo no se reportan las zonas donde una región (p. ej., Tasmania) cae completamente dentro de una zona UTM. Tenga en cuenta que las zonas UTM son válidas solo entre 84°N y 80°S. Para más detalles sobre cómo lidiar con las Coordenadas UTM vea {gbp}#coordenadas-universal-transversa-de-mercator[Coordenadas Universal Transversa de Mercator (UTM)^] en {gbp}[Buenas prácticas de georreferenciación(Chapman y Wieczorek 2020)^]."
 
 #. type: Plain text
 #: 0230.en.adoc:40
@@ -2336,7 +2336,7 @@ msgstr "Aunque técnicamente esto no es una <<entidad-geográfica>>, el <<tipo-d
 #: 0230.en.adoc:54
 #, no-wrap
 msgid "*Step 1 – Convert the coordinates*: The <<UTM>> <<coordinates>> must be converted to <<decimal-degrees>> using a UTM to <<latitude,Latitude>>/<<longitude,Longitude>> conversion tool. If the Zone is not given with the UTM coordinates, try to determine it using http://www.dmap.co.uk/utmworld.htm[UTM Grid Zones of the World (Morton 2006)^] and any additional geographic information in the <<locality>> or geography fields combined with a UTM zone map. Use all of the digits of <<precision>> from the conversion in the [ui-element]#Input Latitude# and [ui-element]#Longitude#. Choose the [ui-element]#Coordinate Source:# [ui-element]#Locality description#\n"
-msgstr "*Paso 1 – Convertir las coordenadas*: Las <<coordenadas>> <<UTM>> deben ser convertidas a <<grados-decimales>> usando una herramienta de conversión UTM a <<latitud,Latitud>>/<<longitud,Longitud>>. Si la Zona no se especifica con las coordenadas UTM, intente determinarla usando http://www.dmap.co.uk/utmworld.htm[UTM Grid Zones of the World (Morton 2006)^] y cualquier información geográfica adicional que se encuentre en los campos <<localidad>> o geografía combinados con un mapa de zonas UTM. Use todas las cifras de <<precisión>> de la conversión en la [ui-element]#Latitud# y la [ui-element]#Longitud de entrada#. Elija la [ui-element]#Fuente de las Coordenada:# [ui-element]#Localidad Textual#\n"
+msgstr "*Paso 1 – Convertir las coordenadas*: Las <<coordenadas>> <<UTM>> deben ser convertidas a <<grados-decimales>> usando una herramienta de conversión UTM a <<latitud,Latitud>>/<<longitud,Longitud>>. Si la Zona no se especifica con las coordenadas UTM, intente determinarla usando http://www.dmap.co.uk/utmworld.htm[UTM Grid Zones of the World (Morton 2006)^] y cualquier información geográfica adicional que se encuentre en los campos <<localidad>> o geografía combinados con un mapa de zonas UTM. Use todas las cifras de <<precisión>> de la conversión en la [ui-element]#Latitud# y la [ui-element]#Longitud de entrada#. Elija la [ui-element]#Fuente de la coordenada:# [ui-element]#Localidad textual#\n"
 
 #. type: Plain text
 #: 0230.en.adoc:56
@@ -2347,24 +2347,24 @@ msgstr "Las coordenadas UTM a veces se truncan a menos de 7 cifras en el <<norte
 #: 0230.en.adoc:58
 #, no-wrap
 msgid "*Step 2 – Determine geographic radial*: If the UTM coordinates have 7 digits in the northing and 6 digits in the easting, the <<geographic-radial>> is 0.707 m (because the coordinates distinguish to the nearest meter and the geographic radial is half the diagonal of the 1 m by 1 m <<grid>> cell). For UTM coordinates with fewer digits of precision see <<table-default-geographic-radial>>. This <<radial>> covers the <<uncertainty>> from the UTM <<coordinate-precision>>. The [ui-element]#Coordinate Precision# in the Calculator for this case is the coordinate precision of the [ui-element]#Input Latitude# and [ui-element]#Longitude#, which depends on how many digits of <<decimal-degrees>> are copied from the converted latitude and longitude (<<table-default-geographic-radial>>).\n"
-msgstr "*Paso 2 – Determinar el radio geográfico*: Si las coordenadas UTM tienen 7 cifras en el norte y 6 cifras en el este, el <<radio-geográfico>> es 0. 07 m (porque las coordenadas distinguen al metro más cercano y el radio geográfico es la mitad de la diagonal de una celda de grilla de 1 m en 1 m). Para las coordenadas UTM con menos cifras de precisión ver <<table-default-geographic-radial>>. Este <<radio>> cubre la <<incertidumbre>> de la <<precisión-de-las-coordenadas, precisión de las coordenadas>> UTM. La [ui-element]#Precisión de las Coordenadas# en la Calculadora en este caso es la precisión de las coordenadas de [ui-element]#Latitud# y [ui-element]#Longitud de entrada#, la cual depende de cuántas cifras de <<grados-decimales>> se copian de la latitud y longitud convertidas (<<table-default-geographic-radial>>).\n"
+msgstr "*Paso 2 – Determinar el radio geográfico*: Si las coordenadas UTM tienen 7 cifras en el norte y 6 cifras en el este, el <<radio-geográfico>> es 0.07 m (porque las coordenadas distinguen al metro más cercano y el radio geográfico es la mitad de la diagonal de una celda de grilla de 1 m en 1 m). Para las coordenadas UTM con menos cifras de precisión ver <<table-default-geographic-radial>>. Este <<radio>> cubre la <<incertidumbre>> de la <<precisión-de-las-coordenadas, precisión de las coordenadas>> UTM. La [ui-element]#Precisión de las coordenadas# en la Calculadora en este caso es la precisión de las coordenadas de [ui-element]#Latitud# y [ui-element]#Longitud de entrada#, la cual depende de cuántas cifras de <<grados-decimales>> se copian de la latitud y longitud convertidas (<<table-default-geographic-radial>>).\n"
 
 #. type: Plain text
 #: 0230.en.adoc:60
 #, no-wrap
 msgid "*Step 3 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy/Measurement Error#, and [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
-msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Formato de las Coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las Coordenadas#, [ui-element]#Exactitud del GPS/Error de la Medición#, y [ui-element]#Unidades de la Distancia# (ver <<Conceptos de Georreferenciación>>).\n"
+msgstr "*Paso 3 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Formato de las coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las coordenadas#, [ui-element]#Exactitud del GPS/Error de la medición#, y [ui-element]#Unidades de la distancia# (ver <<Conceptos de georreferenciación>>).\n"
 
 #. type: Title ====
 #: 0230.en.adoc:61
 #, no-wrap
 msgid "Coordinates – Grid Systems"
-msgstr "Coordenadas: Sistemas de Grillas"
+msgstr "Coordenadas: sistemas de grillas"
 
 #. type: Plain text
 #: 0230.en.adoc:64
 msgid "<<locality,Locality>> is a <<grid>> reference (see {gbp}#grids[Grids^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]), such as the 100 m square grids extensively used in Europe, Quarter Degree Square Grids (QDS) as used in South Africa, and the Public Land Survey System (PLSS) system of Townships andSection (TRS) used in the mid- and western USA. Townships in the PLSS system are usually square and six miles on each side, with 36 one-mile by one-mile sections. Be aware that not all townships are square, however, as some were adjusted to conform to administrative or natural boundaries (rivers, for example). Numbered Townships are not unique descriptions without a <<meridian>>, which often is not given in a locality description. The meridian must then be inferred from a Principal Meridian map using other information in the locality description. Similar subdivisions are used in other countries, and should be calculated in a similar way, once the sizes of the cells have been determined (see <<table-default-geographic-radial>>). Map sheets (quadrangles) are sometimes used and can also be calculated as a grid system. Note that, unlike geographic grids, QDS grids are referenced from the top left corner."
-msgstr "La <<localidad>> es una <<grilla>> de referencia (ver {gbp}#grillas[Grillas^] en {gbp}[Buenas Prácticas de Georreferenciación (Chapman y Wieczorek 2020)^]), como las grillas cuadradas de 100 m ampliamente utilizadas en Europa, Cuadrículas de Cuarto de Grado (QDS) usadas en Sudáfrica y el sistema Public Land Survey System (PLSS) de Municipios (Townships) y Sección (Section) (TRS) usado en el centro y oeste de los Estados Unidos. Los Municipios en el sistema PLSS suelen ser cuadrados y de seis millas en cada lado, con 36 secciones de una milla por una milla. Sin embargo, tenga en cuenta que no todos los municipios son cuadrados, ya que algunos fueron ajustados para acomodarse a los límites administrativos o naturales (ríos, por ejemplo). Los municipios numerados no son descripciones únicas sin un <<meridiano>>, el cual a menudo no se da en la descripción de una localidad. El meridiano entonces debe ser inferido de un mapa de Meridiano Principal usando otra información que esté en la descripción de la localidad. Las subdivisiones similares se utilizan en otros países y deben calcularse de manera similar una vez que se haya determinado el tamaño de las celdas (ver <<table-default-geographic-radial>>). Los mapas análogos (cuadrángulos) se usan a veces y también se pueden calcular como un sistema de grillas. Tenga en cuenta que, a diferencia de las grillas geográficas, las grillas QDS se referencian desde la esquina superior izquierda."
+msgstr "La <<localidad>> es una <<grilla>> de referencia (ver {gbp-es}#grillas[Grillas^] en {gbp-es}[Buenas prácticas de georreferenciación (Chapman y Wieczorek 2020)^]), como las grillas cuadradas de 100 m ampliamente utilizadas en Europa, Cuadrículas de Cuarto de Grado (QDS) usadas en Sudáfrica y el sistema Public Land Survey System (PLSS) de Municipios (Townships) y Sección (Section) (TRS) usado en el centro y oeste de los Estados Unidos. Los Municipios en el sistema PLSS suelen ser cuadrados y de seis millas en cada lado, con 36 secciones de una milla por una milla. Sin embargo, tenga en cuenta que no todos los municipios son cuadrados, ya que algunos fueron ajustados para acomodarse a los límites administrativos o naturales (ríos, por ejemplo). Los municipios numerados no son descripciones únicas sin un <<meridiano>>, el cual a menudo no se da en la descripción de una localidad. El meridiano entonces debe ser inferido de un mapa de Meridiano Principal usando otra información que esté en la descripción de la localidad. Las subdivisiones similares se utilizan en otros países y deben calcularse de manera similar una vez que se haya determinado el tamaño de las celdas (ver <<table-default-geographic-radial>>). Los mapas análogos (cuadrángulos) se usan a veces y también se pueden calcular como un sistema de grillas. Tenga en cuenta que, a diferencia de las grillas geográficas, las grillas QDS se referencian desde la esquina superior izquierda."
 
 #. type: delimited block =
 #: 0230.en.adoc:69
@@ -2385,7 +2385,7 @@ msgstr "\"TQ2387\" (Ordnance Survey National Grid)"
 #: 0230.en.adoc:76
 #, no-wrap
 msgid "*Step 1 – Determine the coordinates*: Determine as for <<Feature – with Obvious Spatial Extent>>. Use the <<coordinates>> for the <<corrected-center>> of the named grid cell. Usually a grid is made up of <<bounding-box,bounding boxes>>, so determining the corrected center should be easy.\n"
-msgstr "*Paso 1 - Determinar las coordenadas*: Determine como para una <<Entidad Geográfica con una Extensión Espacial Obvia>>. Use las <<coordenadas>> para el <<centro-corregido>> de la nombrada grilla de celda. Por lo general, una grilla se compone de <<caja-delimitadora,cajas delimitadoras>>, por lo que determinar el centro corregido debe ser fácil.\n"
+msgstr "*Paso 1 - Determinar las coordenadas*: Determine como para una <<Entidad geográfica con una extensión espacial obvia>>. Use las <<coordenadas>> para el <<centro-corregido>> de la nombrada grilla de celda. Por lo general, una grilla se compone de <<caja-delimitadora,cajas delimitadoras>>, por lo que determinar el centro corregido debe ser fácil.\n"
 
 #. type: Plain text
 #: 0230.en.adoc:78
