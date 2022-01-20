@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-01-19 14:46\n"
+"PO-Revision-Date: 2022-01-20 15:27\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -711,7 +711,7 @@ msgstr "Error de la Medición"
 #. type: Plain text
 #: 0100.en.adoc:212
 msgid "The [ui-element]#Measurement Error# accounts for <<error>> associated with the ability to distinguish one point from another using any measuring tool, such as rulers on paper maps or the measuring tools on Google Maps or Google Earth. The units of measurement must be the same as those in the <<locality>> description as captured in [ui-element]#Distance Units# (see <<Distance Units>>). The [ui-element]#Distance Converter# at the bottom of the http://georeferencing.org/georefcalculator/gc.html[Calculator^] is provided to aid in changing a measurement to the locality description units. For example, a reasonable value for measurement error on a map is 1 mm, which on a map of 1:24,000 scale would be 24 m."
-msgstr "El [ui-element]#Error de la Medición# tiene en cuenta el <<error>> asociado con la capacidad de distinguir un punto de otro usando cualquier herramienta de medición, como las reglas en los mapas físicos o las herramientas de medición en Google Maps o Google Earth. Las unidades de medida deben ser las mismas que las de la descripción de la <<localidad>> como se capturaron en [ui-element]#Unidades de la distancia# (ver <<Unidades de la Distancia>>). El [ui-element]#Convertidor de distancias# ubicado en la parte inferior de la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] se proporciona para ayudar a convertir una medida a las unidades de descripción de la localidad. Por ejemplo, un valor razonable para el error de medición en un mapa es de 1 mm, que en un mapa de 1:24.000 escala sería de 24 m."
+msgstr "El [ui-element]#Error de la Medición# tiene en cuenta el <<error>> asociado con la capacidad de distinguir un punto de otro usando cualquier herramienta de medición, como las reglas en los mapas físicos o las herramientas de medición en Google Maps o Google Earth. Las unidades de medida deben ser las mismas que las de la descripción de la <<localidad>> como se capturaron en [ui-element]#Unidades de la distancia# (ver <<Unidades de la distancia>>). El [ui-element]#Convertidor de distancias# ubicado en la parte inferior de la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] se proporciona para ayudar a convertir una medida a las unidades de descripción de la localidad. Por ejemplo, un valor razonable para el error de medición en un mapa es de 1 mm, que en un mapa de 1:24.000 escala sería de 24 m."
 
 #. type: Title ====
 #: 0100.en.adoc:213
@@ -722,7 +722,7 @@ msgstr "Exactitud del GPS"
 #. type: Plain text
 #: 0100.en.adoc:216
 msgid "When [ui-element]#GPS# is selected from the [ui-element]#Coordinate Source# drop-down list, the label for the [ui-element]#Measurement Error# text box changes to [ui-element]#GPS Accuracy#. We recommend entering a value that is at least twice the value given by the <<GPS>> at the time the <<coordinates>> were captured (see {gbp}#uncertainty-due-to-gps[Uncertainty due to GPS^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]. If [ui-element]#GPS Accuracy# is not known, enter 100 m for standard hand-held GPS coordinates taken before 1 May 2000 when Selective Availability was discontinued. After that, use 30 m as a conservative default value."
-msgstr "Cuando se selecciona [ui-element]#GPS# en la lista despegable de la [ui-element]#Fuente de las coordenadas# la etiqueta para la caja de texto del [ui-element]#Error de medición# cambia a [ui-element]#Exactitud del GPS#. Le recomendamos ingresar una exactitud que sea al menos el doble del valor mostrado por el <<GPS>> al momento en que se capturaron las <<coordenadas>> (ver {gbp-es}#incertidumbre-debido-al-gps[Incertidumbre debido al GPS^] in {gbp-es}[Buenas Prácticas de Georreferenciación(Chapman & Wieczorek 2020)^]. Si desconoce la [ui-element]#Exactitud del GPS# ingrese un valor de 100 para las coordenadas tomadas antes del 1 de mayo del 2000, cuando se descontinuó la Disponibilidad Selectiva, con un GPS portatil estándar. Para fechas posteriores, use 30m como un valor conservador predeterminado."
+msgstr "Cuando se selecciona [ui-element]#GPS# en la lista despegable de la [ui-element]#Fuente de las coordenadas# la etiqueta para la caja de texto del [ui-element]#Error de medición# cambia a [ui-element]#Exactitud del GPS#. Le recomendamos ingresar una exactitud que sea al menos el doble del valor mostrado por el <<GPS>> al momento en que se capturaron las <<coordenadas>> (ver {gbp-es}#incertidumbre-debido-al-gps[Incertidumbre debido al GPS^] en {gbp-es}[Buenas Prácticas de Georreferenciación(Chapman & Wieczorek 2020)^]. Si desconoce la [ui-element]#Exactitud del GPS# ingrese un valor de 100 para las coordenadas tomadas antes del 1 de mayo del 2000, cuando se descontinuó la Disponibilidad Selectiva, con un GPS portatil estándar. Para fechas posteriores, use 30m como un valor conservador predeterminado."
 
 #. type: Title ====
 #: 0100.en.adoc:218
