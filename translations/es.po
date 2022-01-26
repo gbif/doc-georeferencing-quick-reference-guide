@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-01-26 18:00\n"
+"PO-Revision-Date: 2022-01-26 19:48\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1117,7 +1117,7 @@ msgstr "*Paso 1 - Determinar los límites de las entidades*: Localice la propied
 #. type: Plain text
 #: 0200.en.adoc:161
 msgid "Property <<boundary>> evident – if the map shows the <<extent>> of the property, determine the boundary exactly as you would for <<Feature – with Obvious Spatial Extent>>)."
-msgstr "Propiedad con un <<límite>> evidente: si el mapa muestra la <<extensión, extensión>> de la propiedad, determine el límite exactamente a como lo haría para una <<Entidad geográfica con una extensión espacial obvia>>."
+msgstr "Propiedad con un <<límite>> evidente: si el mapa muestra la <<extensión, extensión>> de la propiedad, determine el límite exactamente a como lo haría para <<Entidad geográfica con una extensión espacial obvia>>."
 
 #. type: Plain text
 #: 0200.en.adoc:163
