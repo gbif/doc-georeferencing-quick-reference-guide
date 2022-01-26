@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-01-26 17:02\n"
+"PO-Revision-Date: 2022-01-26 18:00\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1060,7 +1060,7 @@ msgstr "Dirección con un límite poco evidente: si no puede encontrar la direcc
 #: 0200.en.adoc:137
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, use the same method to determine the coordinates and <<geographic-radial,geographic radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center,corrected center>> to the furthest point on the boundary of the feature.\n"
-msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez que haya determinado el límite, use el mismo método que para una <<Entidad geográfica con una extensión espacial obvia>> para determinar las coordenadas y el <<radio-geográfico, radio geográfico>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad.\n"
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez que haya determinado el límite, use el mismo método para determinar las coordenadas y el <<radio-geográfico, radio geográfico>> como en <<Entidad geográfica con una extensión espacial obvia>>, es decir, mida la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad.\n"
 
 #. type: Plain text
 #: 0200.en.adoc:139 0200.en.adoc:171 0200.en.adoc:212 0200.en.adoc:238
@@ -1091,7 +1091,7 @@ msgstr "Entidad geográfica: propiedad"
 #. type: Plain text
 #: 0200.en.adoc:147
 msgid "The <<locality>> is a property – a ranch, rancho, station, farm, finca, grange, granja, estância, plantation, hacienda, fazenda, manor, holding, estate, spread, acreage, orchard, steading, parcel, terreno, etc."
-msgstr "La <<localidad>> es una propiedad: un rancho, estación, granja, finca, estância, plantación, hacienda, fazenda, casa de campo, terreno, parcela, etc."
+msgstr "La <<localidad>> es una propiedad: un rancho, estación, granja, finca, estancia, plantación, hacienda, fazenda, casa de campo, terreno, parcela, etc."
 
 #. type: delimited block =
 #: 0200.en.adoc:152
