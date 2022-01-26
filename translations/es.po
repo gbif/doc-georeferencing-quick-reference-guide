@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-01-26 14:47\n"
+"PO-Revision-Date: 2022-01-26 15:43\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -599,7 +599,7 @@ msgstr "El _Datum_ a usar en la http://georeferencing.org/georefcalculator/gc.ht
 #. type: Plain text
 #: 0100.en.adoc:170
 msgid "The term [ui-element]#Datum# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] is equivalent to the <<Darwin-Core,Darwin Core>> term term:dwc[geodeticDatum]. The Calculator includes <<ellipsoid,ellipsoids>> on the [ui-element]#Datum# drop-down list, as sometimes that is all that coordinate source shows. The choice of datum in the Calculator has two important effects. The first is the contribution to <<uncertainty>> if the datum of the input coordinates is not known. If the datum and ellipsoid are not known, [ui-element]#datum not recorded# must be selected. Uncertainty due to an unknown datum can be severe and varies geographically in a complex way, with a worst-case contribution of 5359 m (see {gbp}#coordinate-reference-system[Coordinate Reference System^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). The second important effect of the datum selection is to provide the characteristics of the ellipsoid model of the earth, on which the distance calculations depend."
-msgstr "El término [ui-element]#Datum# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] es equivalente al término term:dwc[geodeticDatum] del <<Darwin-Core, Darwin Core>>. La Calculadora incluye <<elipsoide,elipsoides>> en la lista desplegable [ui-element]#Datum# pues a veces es todo lo que se muestra la fuente de las coordenadas. La elección del datum en la Calculadora tiene dos efectos importantes. El primero es la contribución a la <<incertidumbre>> si se desconoce el datum de las coordenadas de entrada. Si se desconoce el datum y el elipsoide se debe seleccionar [ui-element]#datum no registrado#. La incertidumbre debida a un datum desconocido puede ser grave y varía geográficamente de una manera compleja, con una contribución en el peor de los casos de 5359 m ({gbp-es}#coordinate-reference-system[Sistema de coordenadas de referencia^] en {gbp-es}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). El segundo efecto importante de la selección del datum es proporcionar las características del modelo elipsoide de la tierra, del cual dependen los cálculos de la distancia."
+msgstr "El término [ui-element]#Datum# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] es equivalente al término term:dwc[geodeticDatum] del <<Darwin-Core, Darwin Core>>. La Calculadora incluye varios <<elipsoide,elipsoides>> en la lista desplegable del [ui-element]#Datum# pues en ocasiones esta la única información disponible sobre la fuente de las coordenadas. La elección del datum en la Calculadora tiene dos efectos importantes. El primero es la contribución a la <<incertidumbre>> si se desconoce el datum de las coordenadas de entrada. Si se desconoce el datum y el elipsoide se debe seleccionar la opción de [ui-element]#datum no registrado#. La incertidumbre debida a un datum desconocido puede ser grave y varía geográficamente de una manera compleja, con una contribución en el peor de los casos de 5359 m (ver {gbp-es}#coordinate-reference-system[Sistema de coordenadas de referencia^] en {gbp-es}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). El segundo efecto importante de la selección del datum es proporcionar las características del modelo elipsoidal de la tierra, del cual dependen los cálculos de la distancia."
 
 #. type: Title ====
 #: 0100.en.adoc:172
@@ -626,7 +626,7 @@ msgstr "Distancia de desplazamiento"
 #. type: Plain text
 #: 0100.en.adoc:181
 msgid "The [ui-element]#Offset Distance# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^] is the linear surface distance from a point of origin. <<offset,Offsets>> are used for the [ui-element]#Locality Types# [ui-element]#Distance at a heading# and [ui-element]#Distance only#. If the [ui-element]#Locality Type# [ui-element]#Distance along orthogonal directions# is selected, there are two distinct offsets:"
-msgstr "La [ui-element]#Distancia de desplazamiento# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] es la distancia lineal desde un punto de origen. Los <<desplazamiento, desplazamientos>> se usan para los [ui-element]#Tipos de localidades# [ui-element]#Distancia desde una orientación cardinal# y [ui-element]#Sólo distancia#.Si selecciona el [ui-element]#Tipo de localidad# [ui-element]#Distancia a lo largo de direcciones ortogonales# hay dos desplazamientos posibles:"
+msgstr "La [ui-element]#Distancia de desplazamiento# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^] es la distancia lineal desde un punto de origen. Los <<desplazamiento, desplazamientos>> se usan para los [ui-element]#Tipos de localidades# de [ui-element]#Distancia desde una orientación cardinal# y [ui-element]#Sólo distancia#. Si selecciona el [ui-element]#Tipo de localidad# de [ui-element]#Distancia a lo largo de direcciones ortogonales# hay dos desplazamientos posibles:"
 
 #. type: Labeled list
 #: 0100.en.adoc:182
@@ -637,7 +637,7 @@ msgstr "Distancia de desplazamiento al norte o al sur"
 #. type: Plain text
 #: 0100.en.adoc:183
 msgid "The distance to the north or south (set with the selection box to the right of the distance text box) of the [ui-element]#Input Latitude#."
-msgstr "La distancia al norte o al sur (establecida con el cuadro de selección a la derecha del cuadro de texto de la distancia) de la [ui-element]#Latitud de entrada#."
+msgstr "La distancia al norte o sur (establecida con el cuadro de selección a la derecha del cuadro de texto de la distancia) de la [ui-element]#Latitud de entrada#."
 
 #. type: Labeled list
 #: 0100.en.adoc:184
@@ -648,7 +648,7 @@ msgstr "Distancia al este o al oeste"
 #. type: Plain text
 #: 0100.en.adoc:185
 msgid "The distance to the east or west (set with the selection box to the right of the distance text box) of the [ui-element]#Input Longitude#."
-msgstr "La distancia al este o al oeste (establecida con el cuadro de selección a la derecha del cuadro de texto de la distancia) de la [ui-element]#Longitud de entrada#."
+msgstr "La distancia al este u oeste (establecida con el cuadro de selección a la derecha del cuadro de texto de la distancia) de la [ui-element]#Longitud de entrada#."
 
 #. type: Title ====
 #: 0100.en.adoc:186
@@ -722,7 +722,7 @@ msgstr "Exactitud del GPS"
 #. type: Plain text
 #: 0100.en.adoc:216
 msgid "When [ui-element]#GPS# is selected from the [ui-element]#Coordinate Source# drop-down list, the label for the [ui-element]#Measurement Error# text box changes to [ui-element]#GPS Accuracy#. We recommend entering a value that is at least twice the value given by the <<GPS>> at the time the <<coordinates>> were captured (see {gbp}#uncertainty-due-to-gps[Uncertainty due to GPS^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]. If [ui-element]#GPS Accuracy# is not known, enter 100 m for standard hand-held GPS coordinates taken before 1 May 2000 when Selective Availability was discontinued. After that, use 30 m as a conservative default value."
-msgstr "Cuando se selecciona [ui-element]#GPS# en la lista despegable de la [ui-element]#Fuente de las coordenadas# la etiqueta para la caja de texto del [ui-element]#Error de medición# cambia a [ui-element]#Exactitud del GPS#. Le recomendamos ingresar una exactitud que sea al menos el doble del valor mostrado por el <<GPS>> al momento en que se capturaron las <<coordenadas>> (ver {gbp-es}#incertidumbre-debido-al-gps[Incertidumbre debido al GPS^] en {gbp-es}[Buenas Prácticas de Georreferenciación(Chapman & Wieczorek 2020)^]. Si desconoce la [ui-element]#Exactitud del GPS# ingrese un valor de 100 para las coordenadas tomadas antes del 1 de mayo del 2000, cuando se descontinuó la Disponibilidad Selectiva, con un GPS portatil estándar. Para fechas posteriores, use 30m como un valor conservador predeterminado."
+msgstr "Cuando se selecciona [ui-element]#GPS# en la lista desplegable de la [ui-element]#Fuente de las coordenadas# la etiqueta para la caja de texto del [ui-element]#Error de medición# cambia a [ui-element]#Exactitud del GPS#. Le recomendamos ingresar una exactitud que sea al menos el doble del valor mostrado por el <<GPS>> al momento en que se capturaron las <<coordenadas>> (ver {gbp-es}#incertidumbre-debido-al-gps[Incertidumbre debido al GPS^] en {gbp-es}[Buenas Prácticas de Georreferenciación(Chapman & Wieczorek 2020)^]. Si desconoce la [ui-element]#Exactitud del GPS# ingrese un valor de 100 m para las coordenadas tomadas antes del 1 de mayo del 2000, cuando se descontinuó la Disponibilidad Selectiva, con un GPS portatil estándar. Para fechas posteriores, use 30 m como un valor conservador predeterminado."
 
 #. type: Title ====
 #: 0100.en.adoc:218
@@ -756,7 +756,7 @@ msgstr "Definición"
 #. type: delimited block =
 #: 0200.en.adoc:9
 msgid "The simplest locality descriptions consist of only a named place, or more generally, a feature, which is often listed in a standard gazetteer and can probably be located on a map of the appropriate scale."
-msgstr "Las descripciones de localidades más sencillas consisten de un sólo un lugar con un nombre, o más generalmente, de una entidad geográfica, que a menudo se indica en un gacetero estándar y que probablemente se puede localizar en un mapa de la escala apropiada."
+msgstr "Las descripciones de localidades más sencillas consisten de un sólo un lugar con un nombre, o más generalmente, de una entidad geográfica, que a menudo se indica en un gacetero estándar y que probablemente se puede localizar en un mapa con una escala apropiada."
 
 #. type: Plain text
 #: 0200.en.adoc:12
