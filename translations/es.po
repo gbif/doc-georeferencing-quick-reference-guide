@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-01-20 15:27\n"
+"PO-Revision-Date: 2022-01-26 14:47\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -578,7 +578,7 @@ msgstr "La Precisión de las coordenadas a usar en la Calculadora corresponde a 
 #. type: Plain text
 #: 0100.en.adoc:161
 msgid "This term is similar to, but **NOT** the same as, the <<Darwin-Core,Darwin Core>> term term:dwc[coordinatePrecision], which applies to the output coordinates."
-msgstr "Este término es similar a, pero **NO** el mismo que, el término term:dwc[coordinatePrecision] (Precisión de las coordenadas) del <<Darwin-Core,Darwin Core>>, el cual se aplica a las coordenadas resultantes."
+msgstr "Este término es similar, pero **NO** igual, al término term:dwc[coordinatePrecision] (Precisión de las coordenadas) del <<Darwin-Core,Darwin Core>>, el cual se aplica a las coordenadas resultantes."
 
 #. type: Title ====
 #: 0100.en.adoc:163
@@ -589,7 +589,7 @@ msgstr "Datum"
 #. type: Plain text
 #: 0100.en.adoc:166
 msgid "Defines the position of the origin and orientation of an <<ellipsoid>> upon which the <<coordinates>> are based for the given [ui-element]#Input Latitude# and [ui-element]#Longitude# (see <<coordinate-reference-system, coordinate reference system>>)."
-msgstr "Define la posición del origen y la orientación de un <<elipsoide>> en el que se basan las <<coordenadas>> para la [ui-element]#Latitud# y la [ui-element]#Longitud de entrada# (ver <<sistema-de-coordenadas-de-referencia, sistema de coordenadas de referencia>>)."
+msgstr "Define la posición de origen y la orientación del <<elipsoide>> en el que se basan las <<coordenadas>> para una [ui-element]#Latitud# y [ui-element]#Longitud dadas# (ver <<sistema-de-coordenadas-de-referencia, sistema de coordenadas de referencia>>)."
 
 #. type: Plain text
 #: 0100.en.adoc:168
