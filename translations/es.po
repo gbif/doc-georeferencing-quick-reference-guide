@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-01-26 20:50\n"
+"PO-Revision-Date: 2022-01-26 21:53\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -2015,7 +2015,7 @@ msgstr "*Paso 1 – Determinar los límites de la entidad de inicio*: Encuentre 
 #: 0220.en.adoc:150
 #, no-wrap
 msgid "*Step 2 – Determine the boundaries for distinct paths*: For each of the distinct possible paths, determine the final <<boundary,boundaries>> of the path segment as for <<Offset along a Narrow Path>> or <<Offset along a Wide Path>>, as appropriate (<<img-offset-multiple-paths>>B).\n"
-msgstr "*Paso 2 – Determinar los límites para las distintas rutas*: Para cada una de las posibles rutas distintas, determine los <<límite,límites>> finales de los segmentos de la ruta como lo haría para un <<Desplazamiento a lo largo de una ruta angosta>> o un <<Desplazamiento a lo largo de una ruta ancha>>, según sea apropiado (<<img-offset-multiple-paths>>B).\n"
+msgstr "*Paso 2 – Determinar los límites para las distintas rutas*: Para cada una de las posibles rutas distintas, determine los <<límite,límites>> finales de los segmentos de la ruta como lo haría para <<Desplazamiento a lo largo de una ruta angosta>> o <<Desplazamiento a lo largo de una ruta ancha>>, según sea apropiado (<<img-offset-multiple-paths>>B).\n"
 
 #. type: Plain text
 #: 0220.en.adoc:152
@@ -2146,7 +2146,7 @@ msgstr "\"16 mi río abajo de St Louis en el Río Mississipi\" +"
 #. type: delimited block =
 #: 0220.en.adoc:200
 msgid "\"about 25 km WNW of Campinas\" +"
-msgstr "\"a unos 25 km de ONO de Campinas\" +"
+msgstr "\"a unos 25 km de WNW de Campinas\" +"
 
 #. type: delimited block =
 #: 0220.en.adoc:201
@@ -2256,17 +2256,17 @@ msgstr "<<grados-decimales>> (DD)"
 #. type: Plain text
 #: 0230.en.adoc:18
 msgid "Records should also contain a hemisphere indicator ('E' or 'W' and 'N' or 'S' for DMS and DDM formats in English; '−' for west or south in DD format). For maritime <<location,locations>>, if there is no information that would suggest a particular [ui-element]#Coordinate Source#, use a map of 1:150000 scale, as this is a realistic conservative selection."
-msgstr "Los registros también deben contener un indicador del hemisferio ('O' o 'E' y 'N' o 'S' para formatos DMS y DDM en inglés; '−' para el oeste o el sur en formato DD). Para <<ubicación,ubicaciones>> maritimas, si no hay información que sugiera una [ui-element]#Fuente de las coordenadas# particular, use un mapa de escala 1:150000, ya que esta es una selección realista y conservadora."
+msgstr "Los registros también deben contener un indicador del hemisferio ('E' o 'W' y 'N' o 'S' para formatos DMS y DDM en inglés; '−' para el oeste (W) o el sur en formato DD). Para <<ubicación,ubicaciones>> maritimas, si no hay información que sugiera una [ui-element]#Fuente de las coordenadas# particular, use un mapa de escala 1:150000, ya que esta es una selección realista y conservadora."
 
 #. type: delimited block =
 #: 0230.en.adoc:23
 msgid "\"36º 31' 21.4\" N; 114º 09' 50.6\" W\" (DMS) +"
-msgstr "\"36o 31' 21.4\" N; 114o 09' 50.6\" W\" (DMS) +"
+msgstr "\"36º 31' 21.4\" N; 114º 09' 50.6\" W\" (DMS) +"
 
 #. type: delimited block =
 #: 0230.en.adoc:24
 msgid "\"36º 31.4566’N; 114º 09.8433’W\" (DDM) +"
-msgstr "\"36o 31.4566’N; 114o 09.8433’W\" (DDM) +"
+msgstr "\"36º 31.4566’N; 114º 09.8433’W\" (DDM) +"
 
 #. type: delimited block =
 #: 0230.en.adoc:25
@@ -2597,7 +2597,7 @@ msgstr "\"Condado de Sonoma al lado del Río Gualalala, Condado de Mendocino\" (
 #. type: delimited block =
 #: 0240.en.adoc:86
 msgid "\"10 mi W of Bakersfield, 6000 ft\" (There is no place anywhere near 10 mi W of Bakersfield at an elevation of 6000 ft) +"
-msgstr "\"10 mi O de Bakersfield, 6000 pies\" (No hay ningún lugar cerca de 10 mi W de Bakersfield a una elevación de 6000 pies) +"
+msgstr "\"10 mi W de Bakersfield, 6000 pies\" (No hay ningún lugar cerca de 10 mi W de Bakersfield a una elevación de 6000 pies) +"
 
 #. type: delimited block =
 #: 0240.en.adoc:87
