@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-01-26 19:48\n"
+"PO-Revision-Date: 2022-01-26 20:50\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1186,13 +1186,13 @@ msgstr "\"Ruta Estatal de California 1\" +"
 #. type: delimited block =
 #: 0200.en.adoc:189
 msgid "\"along 100 m contour line\""
-msgstr "\"a lo largo de 100 m isolínea\""
+msgstr "\"100 m a lo largo de una isolínea\""
 
 #. type: Plain text
 #: 0200.en.adoc:194
 #, no-wrap
 msgid "*Step 1 – Determine the feature boundaries*: As a linear feature, a path is often represented as a series of line segments (i.e. a polyline), with or without a buffer. When viewed on satellite imagery these features (especially rivers) can be quite complex, so a constant buffer around the midline is not a good representation in these cases. When possible, determine the boundary as for any other <<shape>> using <<Feature – with Obvious Spatial Extent>>) (<<img-paths>>A). Otherwise, treat the boundary as a polyline (<<img-paths>>B) and determine the <<corrected-center>> and <<geographic-radial>> as explained below.\n"
-msgstr "*Paso 1 – Determinar los límites de la entidad geográfica*: Como una entidad geográfica lineal, las rutas se representan a menudo como una serie de segmentos de una línea (p. ej., un polígono), con o sin un buffer. Cuando se ven en imágenes satelitales, estas entidades (especialmente los ríos) pueden ser bastante complejas, por lo que un buffer constante alrededor de la línea media no es una buena representación en estos casos. Cuando sea posible, determine el límite como para cualquier otra <<forma-geométrica, forma geométrica>> usando <<Entidad geográfica con una extensión espacial obvia>>) (<<img-paths>>A). De lo contrario, trate el límite como un polilínea (<<img-paths>>B) y determine el <<centro-corregido>> y el <<radio-geográfico>> como se explica a continuación.\n"
+msgstr "*Paso 1 – Determinar los límites de la entidad geográfica*: Como una entidad geográfica lineal, las rutas se representan a menudo como una serie de segmentos de una línea (p. ej., una polilínea), con o sin un buffer. Cuando se ven en imágenes satelitales, estas entidades (especialmente los ríos) pueden ser bastante complejas, por lo que un buffer constante alrededor de la línea media no es una buena representación en estos casos. Cuando sea posible, determine el límite como para cualquier otra <<forma-geométrica, forma geométrica>> usando <<Entidad geográfica con una extensión espacial obvia>> (<<img-paths>>A). De lo contrario, trate el límite como un polilínea (<<img-paths>>B) y determine el <<centro-corregido>> y el <<radio-geográfico>> como se explica a continuación.\n"
 
 #. type: Plain text
 #: 0200.en.adoc:196
@@ -1229,12 +1229,12 @@ msgstr "Estas consideraciones pueden aplicarse igualmente a la <<batimetría>> c
 #: 0200.en.adoc:208
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: If the boundary can be determined, treat as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the **<<coordinates>>** of the corrected center to the furthest point on the boundary of the feature (<<img-paths>>A).\n"
-msgstr "*Paso 2 - Determinar las coordenadas y el radio geográfico*: Si el límite puede ser determinado, trate la entidad como una <<Entidad geográfica con una extensión espacial obvia>>, es decir, mida la distancia desde las **<<coordenadas>>** del centro corregido hasta el punto más lejano en el límite de la entidad (<<img-paths>>A).\n"
+msgstr "*Paso 2 - Determinar las coordenadas y el radio geográfico*: Si el límite puede ser determinado, trate la entidad como en <<Entidad geográfica con una extensión espacial obvia>>, es decir, mida la distancia desde las **<<coordenadas>>** del centro corregido hasta el punto más lejano en el límite de la entidad (<<img-paths>>A).\n"
 
 #. type: Plain text
 #: 0200.en.adoc:210
 msgid "If the feature must be treated as a polyline, draw a straight line connecting the ends of the polyline and determine its midpoint. If the midpoint falls on the polyline, that will be the center (no need for correction), and the geographic radial will be the distance from that point to either of the endpoints of the polyline. If the midpoint does not fall on the polyline, move it to the point on the polyline that minimizes the distance to both endpoints. This is the corrected center and the distance to the endpoints is the geographic radial (<<img-paths>>B)."
-msgstr "Si la entidad debe ser tratada como una polilínea, dibuje una línea recta que conecte los extremos del polilínea y determine su punto medio. Si el punto medio cae en el polilínea, ese será el centro (sin necesidad de corrección) y el radio geográfico será la distancia desde ese punto hasta cualquiera de los extremos. Si el punto medio no cae en la polilínea, muévalo al punto sobre la polilínea que minimice la distancia a ambos extremos. Este es el centro corregido y la distancia a los extremos es el radio geográfico (<<img-paths>>B)."
+msgstr "Si la entidad debe ser tratada como una polilínea, dibuje una línea recta que conecte los extremos de la polilínea y determine su punto medio. Si el punto medio cae en el polilínea, ese será el centro (sin necesidad de corrección) y el radio geográfico será la distancia desde ese punto hasta cualquiera de los extremos. Si el punto medio no cae en la polilínea, muévalo al punto sobre la polilínea que minimice la distancia a ambos extremos. Este es el centro corregido y la distancia a los extremos es el radio geográfico (<<img-paths>>B)."
 
 #. type: Block title
 #: 0200.en.adoc:214
@@ -1289,7 +1289,7 @@ msgstr "Para una confluencia de dos vías acuáticas, el límite es un triángul
 #: 0200.en.adoc:236
 #, no-wrap
 msgid "*Step 2 – Determine the coordinates and geographic radial*: Once the boundary has been determined, use the same method to determine the <<coordinates>> and <<geographic-radial>> as for <<Feature – with Obvious Spatial Extent>>, namely, measure the distance from the coordinates of the <<corrected-center>> to the furthest point on the boundary of the feature (<<img-junction>>B).\n"
-msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez se ha determinado el límite, determine las <<coordenadas>> y el <<radio-geográfico, radio geográfico>> usando el mismo método como para <<Entidad geográfica con una extensión espacial obvia>>, es decir, medir la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad geográfica (<<img-junction>>B).\n"
+msgstr "*Paso 2 – Determinar las coordenadas y el radio geográfico*: Una vez se ha determinado el límite, determine las <<coordenadas>> y el <<radio-geográfico, radio geográfico>> usando el mismo método como para <<Entidad geográfica sin una extensión espacial obvia>>, es decir, medir la distancia desde las coordenadas del <<centro-corregido, centro corregido>> hasta el punto más lejano en el límite de la entidad geográfica (<<img-junction>>B).\n"
 
 #. type: Block title
 #: 0200.en.adoc:240
@@ -1898,7 +1898,7 @@ msgstr "*Paso 1 – Determinar los límites de la entidad geográfica de inicio*
 #: 0220.en.adoc:101
 #, no-wrap
 msgid "*Step 2 – Determine the starting feature coordinates and length of the matching path*: Once the <<boundary>> of the starting <<feature>> has been determined, find the midpoint along the path within the boundary of the feature it intersects with (<<img-offset-narrow-path>>B). Note the distance along the path from the midpoint to the boundary of the feature it intersects in the direction of the offset. Enter the length of that segment in [ui-element]#Radial of Feature# in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^].\n"
-msgstr "*Paso 2 – Determinar las coordenadas de la entidad geográfica de inicio y la longitud de la ruta de coincidencia*: Una vez que el <<límite>> de la <<entidad-geográfica>> de inicio haya sido determinado, encuentre el punto medio de la ruta dentro del límite de la entidad con la que se intersecta (<<img-offset-narrow-path>>B). Tenga en cuenta la distancia a lo largo de la ruta desde el punto medio hasta el límite de la entidad que intersecta en la dirección del desplazamiento. Introduzca la longitud de ese segmento en [ui-element]#Radial de la entidad# en http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación^].\n"
+msgstr "*Paso 2 – Determinar las coordenadas de la entidad geográfica de inicio y la longitud de la ruta de coincidencia*: Una vez que el <<límite>> de la <<entidad-geográfica>> de inicio haya sido determinado, encuentre el punto medio de la ruta dentro del límite de la entidad con la que se intersecta (<<img-offset-narrow-path>>B). Tenga en cuenta la distancia a lo largo de la ruta desde el punto medio hasta el límite de la entidad que intersecta en la dirección del desplazamiento. Introduzca la longitud de ese segmento en [ui-element]#Radial de la entidad# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación^].\n"
 
 #. type: Plain text
 #: 0220.en.adoc:103
