@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-01-26 15:43\n"
+"PO-Revision-Date: 2022-01-26 17:02\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -1001,7 +1001,7 @@ msgstr "*Paso 3 - Medir el radio geográfico*: Una vez el límite aproximado y l
 #: 0200.en.adoc:111
 #, no-wrap
 msgid "*Step 4 – Calculate using the following additional parameters in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^]*: [ui-element]#Coordinate Source#, [ui-element]#Coordinate Format#, [ui-element]#Datum#, [ui-element]#Coordinate Precision#, [ui-element]#GPS Accuracy#/[ui-element]#Measurement Error#, [ui-element]#Distance Units# (see <<Georeferencing Concepts>>).\n"
-msgstr "*Paso 4 – Hacer el cálculo usando los siguientes parámetros adicionales en http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Fuente de las coordenadas#, [ui-element]#Formato de las coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las coordenadas#, [ui-element]#Precisión del GPS#/[ui-element]#Error de medición#, [ui-element]#Unidades de distancia# (ver <<Conceptos de georreferenciación>>).\n"
+msgstr "*Paso 4 – Hacer el cálculo usando los siguientes parámetros adicionales en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de Georreferenciación^]*: [ui-element]#Fuente de las coordenadas#, [ui-element]#Formato de las coordenadas#, [ui-element]#Datum#, [ui-element]#Precisión de las coordenadas#, [ui-element]#Precisión del GPS#/[ui-element]#Error de medición#, [ui-element]#Unidades de distancia# (ver <<Conceptos de georreferenciación>>).\n"
 
 #. type: Title ====
 #: 0200.en.adoc:112
