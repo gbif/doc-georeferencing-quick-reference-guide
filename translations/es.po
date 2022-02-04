@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-01-26 21:53\n"
+"PO-Revision-Date: 2022-02-04 00:50\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -141,7 +141,7 @@ msgstr "Esta es una guía práctica de <<georreferencia,georreferenciación>>. D
 #. type: Plain text
 #: 0100.en.adoc:6
 msgid "This Guide is based on a http://georeferencing.org/docs/GeoreferencingQuickGuide.pdf[first version of the Guide (Wieczorek et al. 2012)^]), which was in turn an adaptation of http://georeferencing.org/docs/georeffordummy.xls[Georeferencing for Dummies (Spencer et al. 2008)^]. It explains the recommended georeferencing procedures for the most commonly encountered type of <<locality,localities>>. This Guide should be used in parallel with the {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^], which contains the theoretical background and more detailed information about concepts used here."
-msgstr "Esta guía se basa en la http://georeferencing.org/docs/GeoreferencingQuickGuide.pdf[primera versión de la Guía (Wieczorek et al. 2012)^]), que a su vez fue una adaptación de http://georeferencing.org/docs/georeffordummy.xls[Georeferencing for Dummies (Spencer et al. 2008)^]. La guía explica los procedimientos recomendados de georreferenciación para el tipo más común de <<localidad,localidades>>. Esta guía debe usarse en paralelo con las {gbp}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^], documento que contiene los antecedentes teóricos y la información más detallada sobre los conceptos utilizados aquí."
+msgstr "Esta guía se basa en la http://georeferencing.org/docs/GeoreferencingQuickGuide.pdf[primera versión de la Guía (Wieczorek et al. 2012)^]), que a su vez fue una adaptación de http://georeferencing.org/docs/georeffordummy.xls[Georeferencing for Dummies (Spencer et al. 2008)^]. La guía explica los procedimientos recomendados de georreferenciación para el tipo más común de <<localidad,localidades>>. Esta guía debe usarse en paralelo con las {gbp-es}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^], documento que contiene los antecedentes teóricos y la información más detallada sobre los conceptos utilizados aquí."
 
 #. type: Plain text
 #: 0100.en.adoc:8
@@ -478,7 +478,7 @@ msgstr "Radio de la entidad geográfica"
 #. type: Plain text
 #: 0100.en.adoc:119
 msgid "A <<feature>> is a place in the <<locality>> description that has an <<extent>> and can be delimited by a <<boundary>>. The <<geographic-radial,geographic radial>> of the feature (shown as [ui-element]#Radial of Feature# in the http://georeferencing.org/georefcalculator/gc.html[Calculator^]) is the distance from the <<corrected-center,corrected center>> of the feature to the furthest point on the <<geographic-boundary,geographic boundary>> of that feature (see <<img-corrected-center>> and {gbp}#extent-of-a-location[Extent of a Location^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). Note that the radial was called \"extent\" in earlier documents and versions of the Calculator. See <<Appendix B: Methods to Find the Corrected Center and Geographic Radial>> for techniques to determine the geographic radial."
-msgstr "Una <<entidad geográfica>> es un lugar en la descripción de una <<localidad>> que tiene una <<extensión, extensión>> y puede ser acotada por un <<límite>>. El <<radio geográfico>> de la entidad (mostrado como [ui-element]#Radio de la Entidad# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^])) es la distancia desde el <<centro corregido>> de la entidad hasta el punto más lejano en el <<límite geográfico>> de esa entidad (ver <<img-corrected-center>> y {gbp}#extensión-de-una-ubicación[Extensión de una ubicación^] en {gbp-es}[Buenas Prácticas de Georreferenciación (Chapman & Wieczorek 2020)^]). Tenga en cuenta que en documentos y versiones anteriores de la Calculadora el radio se llamaba \"extensión\". Vea <<Apéndice B: Métodos para encontrar el centro corregido y el radio geográfico>> para conocer las técnicas que permiten determinar el centro corregido."
+msgstr "Una <<entidad geográfica>> es un lugar en la descripción de una <<localidad>> que tiene una <<extensión, extensión>> y puede ser acotada por un <<límite>>. El <<radio geográfico>> de la entidad (mostrado como [ui-element]#Radio de la Entidad# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora^])) es la distancia desde el <<centro corregido>> de la entidad hasta el punto más lejano en el <<límite geográfico>> de esa entidad (ver <<img-corrected-center>> y {gbp-es}#extensión-de-una-ubicación[Extensión de una ubicación^] en {gbp-es}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). Tenga en cuenta que en documentos y versiones anteriores de la Calculadora el radio se llamaba \"extensión\". Vea <<Apéndice B: Métodos para encontrar el centro corregido y el radio geográfico>> para conocer las técnicas que permiten determinar el centro corregido."
 
 #. type: Plain text
 #: 0100.en.adoc:121
@@ -610,7 +610,7 @@ msgstr "Dirección"
 #. type: Plain text
 #: 0100.en.adoc:175
 msgid "The [ui-element]#Direction# in the http://georeferencing.org/georefcalculator/gc.html[Georeferencing Calculator^] is the <<heading>> given in the <<locality>> description, either as a standard compass point (see https://en.wikipedia.org/wiki/Boxing_the_compass[Boxing the compass^]) or as a number of degrees in the clockwise direction from north. True North is not the same as Magnetic North (see {gbp}#headings[Headings^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). If a heading is known to be a magnetic heading, it will have to be converted into a true heading (see NOAA's https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml[Magnetic Field Calculator^]) before it can be used in the Calculator. If [ui-element]#degrees from N# is selected, a text box will appear to the right of the selection, into which the degree heading should be entered."
-msgstr "La [ui-element]#Dirección# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación^] es la <<orientación-cardinal, orientación cardinal>> proporcionada en la descripción de una <<localidad>>, puede ser un punto estándar tomado con una brújula (ver https://es.wikipedia.org/wiki/Puntos_del_comp%C3%A1s[Puntos del compás^]) o un número de grados en el sentido de las agujas del reloj desde el norte. El Norte Verdadero no es lo mismo que Norte Magnético (ver {gbp-es}#orientaciones-cardinales[Orientaciones cardinales^] en {gbp-es}[Buenas Prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). Si se sabe que una orientación es una orientación cardinal magnética, tendrá que convertirse en una orientación cardinal verdadera (ver https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml[Magnetic Field Calculator (Calculadora del campo magnético)^]) antes de que se pueda usar en la Calculadora. Si selecciona [ui-element]#grados desde N#, aparecerá un cuadro de texto a la derecha de la selección en el que debe escribir cuál es el grado de la orientación cardinal."
+msgstr "La [ui-element]#Dirección# en la http://georeferencing.org/georefcalculator/gc.html[Calculadora de georreferenciación^] es la <<orientación-cardinal, orientación cardinal>> proporcionada en la descripción de una <<localidad>>, puede ser un punto estándar tomado con una brújula (ver https://es.wikipedia.org/wiki/Puntos_del_comp%C3%A1s[Puntos del compás^]) o un número de grados en el sentido de las agujas del reloj desde el norte. El Norte Verdadero no es lo mismo que Norte Magnético (ver {gbp-es}#orientaciones-cardinales[Orientaciones cardinales^] en {gbp-es}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). Si se sabe que una orientación es una orientación cardinal magnética, tendrá que convertirse en una orientación cardinal verdadera (ver https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml[Magnetic Field Calculator (Calculadora del campo magnético)^]) antes de que se pueda usar en la Calculadora. Si selecciona [ui-element]#grados desde N#, aparecerá un cuadro de texto a la derecha de la selección en el que debe escribir cuál es el grado de la orientación cardinal."
 
 #. type: Plain text
 #: 0100.en.adoc:177
@@ -722,7 +722,7 @@ msgstr "Exactitud del GPS"
 #. type: Plain text
 #: 0100.en.adoc:216
 msgid "When [ui-element]#GPS# is selected from the [ui-element]#Coordinate Source# drop-down list, the label for the [ui-element]#Measurement Error# text box changes to [ui-element]#GPS Accuracy#. We recommend entering a value that is at least twice the value given by the <<GPS>> at the time the <<coordinates>> were captured (see {gbp}#uncertainty-due-to-gps[Uncertainty due to GPS^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]. If [ui-element]#GPS Accuracy# is not known, enter 100 m for standard hand-held GPS coordinates taken before 1 May 2000 when Selective Availability was discontinued. After that, use 30 m as a conservative default value."
-msgstr "Cuando se selecciona [ui-element]#GPS# en la lista desplegable de la [ui-element]#Fuente de las coordenadas# la etiqueta para la caja de texto del [ui-element]#Error de medición# cambia a [ui-element]#Exactitud del GPS#. Le recomendamos ingresar una exactitud que sea al menos el doble del valor mostrado por el <<GPS>> al momento en que se capturaron las <<coordenadas>> (ver {gbp-es}#incertidumbre-debido-al-gps[Incertidumbre debido al GPS^] en {gbp-es}[Buenas Prácticas de Georreferenciación(Chapman & Wieczorek 2020)^]. Si desconoce la [ui-element]#Exactitud del GPS# ingrese un valor de 100 m para las coordenadas tomadas antes del 1 de mayo del 2000, cuando se descontinuó la Disponibilidad Selectiva, con un GPS portatil estándar. Para fechas posteriores, use 30 m como un valor conservador predeterminado."
+msgstr "Cuando se selecciona [ui-element]#GPS# en la lista desplegable de la [ui-element]#Fuente de las coordenadas# la etiqueta para la caja de texto del [ui-element]#Error de medición# cambia a [ui-element]#Exactitud del GPS#. Le recomendamos ingresar una exactitud que sea al menos el doble del valor mostrado por el <<GPS>> al momento en que se capturaron las <<coordenadas>> (ver {gbp-es}#incertidumbre-debido-al-gps[Incertidumbre debido al GPS^] en {gbp-es}[Buenas prácticas de georreferenciación(Chapman & Wieczorek 2020)^]. Si desconoce la [ui-element]#Exactitud del GPS# ingrese un valor de 100 m para las coordenadas tomadas antes del 1 de mayo del 2000, cuando se descontinuó la Disponibilidad Selectiva, con un GPS portatil estándar. Para fechas posteriores, use 30 m como un valor conservador predeterminado."
 
 #. type: Title ====
 #: 0100.en.adoc:218
@@ -1312,7 +1312,7 @@ msgstr "Entidad geográfica: cueva"
 #. type: Plain text
 #: 0200.en.adoc:246
 msgid "The <<locality>> is a cave, an underground mine, etc. For details of how to record a locality within a cave, see {gbp}#caves[Caves^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
-msgstr "La <<localidad>> es una cueva, una mina subterránea, etc. Para obtener detalles sobre cómo registrar una localidad dentro de una cueva, consulte {gbp}#cuevas[Cuevas^] en {gbp}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]."
+msgstr "La <<localidad>> es una cueva, una mina subterránea, etc. Para obtener detalles sobre cómo registrar una localidad dentro de una cueva, consulte {gbp-es}#cuevas[Cuevas^] en {gbp-es}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]."
 
 #. type: delimited block =
 #: 0200.en.adoc:251
@@ -1661,7 +1661,7 @@ msgstr "**Definición**"
 #. type: delimited block =
 #: 0220.en.adoc:7
 msgid "An *offset* is a displacement from a reference location. An offset is usually used in conjunction with a heading to give a distance and direction from a feature (see {gbp}#offsets[Offsets^] and {gbp}#uncertainty-related-to-offset-precision[Uncertainty Related to Offset Precision^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]). There are a variety of ways in which offsets with features and headings are represented in locality descriptions, each with its own methods of spatial interpretation."
-msgstr "Un *desplazamiento* es un movimiento desde una ubicación de referencia. Los desplazamientos se usan normalmente junto con una orientación geográfica para dar una distancia y dirección desde una entidad (ver {gbp-es}#desplazamientos[Desplazamientos^] e {gbp-es}#incertidumbre-relacionada-con-la-precisión-de-un-desplazamiento[Incertidumbre relacionada con la precisión de un desplazamiento^] en {gbp}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). Hay una variedad de formas en las que los desplazamientos con ubicaciones y orientaciones están representados en las descripciones de las localidades, cada uno con sus propios métodos de interpretación espacial."
+msgstr "Un *desplazamiento* es un movimiento desde una ubicación de referencia. Los desplazamientos se usan normalmente junto con una orientación geográfica para dar una distancia y dirección desde una entidad (ver {gbp-es}#desplazamientos[Desplazamientos^] e {gbp-es}#incertidumbre-relacionada-con-la-precisión-de-un-desplazamiento[Incertidumbre relacionada con la precisión de un desplazamiento^] en {gbp-es}[Buenas prácticas de georreferenciación (Chapman & Wieczorek 2020)^]). Hay una variedad de formas en las que los desplazamientos con ubicaciones y orientaciones están representados en las descripciones de las localidades, cada uno con sus propios métodos de interpretación espacial."
 
 #. type: Plain text
 #: 0220.en.adoc:10
@@ -2305,7 +2305,7 @@ msgstr "Coordenadas: Universal Transversa de Mercator (UTM)"
 #. type: Plain text
 #: 0230.en.adoc:38
 msgid "The <<locality>> consists of a point represented by <<coordinates,coordinate>> information in the form of <<UTM,Universal Transverse Mercator (UTM)>> or a related <<coordinate-system>>. For UTM or equivalent coordinates, a Zone should ALWAYS be included to make sure that the <<longitude>> is not ambiguous. Zones are often not reported where a region (e.g. Tasmania) falls completely within one UTM zone. Be aware that UTM zones are valid only between 84°N and 80°S. For details on dealing with UTM Coordinates see {gbp}#universal-transverse-mercator-utm-coordinates[Universal Transverse Mercator (UTM) Coordinates^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
-msgstr "La <<localidad>> consiste en un punto representado por información de <<coordenadas,coordenadas>> en forma de <<UTM, Universal Transversa de Mercator (UTM)>> o un <<sistema-de-coordenadas>> relacionado. Para las coordenadas UTM o equivalentes, SIEMPRE se debe incluir una zona para asegurarse de que la <<longitud>> no es ambigua. A menudo no se reportan las zonas donde una región (p. ej., Tasmania) cae completamente dentro de una zona UTM. Tenga en cuenta que las zonas UTM son válidas solo entre 84°N y 80°S. Para más detalles sobre cómo lidiar con las Coordenadas UTM vea {gbp}#coordenadas-universal-transversa-de-mercator[Coordenadas Universal Transversa de Mercator (UTM)^] en {gbp}[Buenas prácticas de georreferenciación(Chapman y Wieczorek 2020)^]."
+msgstr "La <<localidad>> consiste en un punto representado por información de <<coordenadas,coordenadas>> en forma de <<UTM, Universal Transversa de Mercator (UTM)>> o un <<sistema-de-coordenadas>> relacionado. Para las coordenadas UTM o equivalentes, SIEMPRE se debe incluir una zona para asegurarse de que la <<longitud>> no es ambigua. A menudo no se reportan las zonas donde una región (p. ej., Tasmania) cae completamente dentro de una zona UTM. Tenga en cuenta que las zonas UTM son válidas solo entre 84°N y 80°S. Para más detalles sobre cómo lidiar con las Coordenadas UTM vea {gbp-es}#coordenadas-universal-transversa-de-mercator[Coordenadas Universal Transversa de Mercator (UTM)^] en {gbp-es}[Buenas prácticas de georreferenciación(Chapman y Wieczorek 2020)^]."
 
 #. type: Plain text
 #: 0230.en.adoc:40
@@ -2408,7 +2408,7 @@ msgstr "Localidades difíciles"
 #. type: Plain text
 #: 0240.en.adoc:4
 msgid "At times, <<locality>> descriptions are fraught with vagueness. This may be due to any number of reasons, but in particular relates to historic collections in areas that at may have had no named <<feature,features>> to reference at the time when the locality was recorded. See the section {gbp}#difficult-localities[Difficult Localities^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
-msgstr "A veces, las descripciones de las <<localidad,localidades>> están llenas de imprecisiones. Esto puede deberse a una serie de razones pero en particular, se relaciona con las colecciones históricas en áreas en las que no había <<entidad-geográfica,entidades geográficas>> nombradas para referenciar en el momento en que se registró la localidad. Vea la sección {gbp-es}#localidades-difíciles[Localidades difíciles^] en {gbp}[Buenas prácticas de georreferenciación (Chapman y Wieczorek 2020)^]."
+msgstr "A veces, las descripciones de las <<localidad,localidades>> están llenas de imprecisiones. Esto puede deberse a una serie de razones pero en particular, se relaciona con las colecciones históricas en áreas en las que no había <<entidad-geográfica,entidades geográficas>> nombradas para referenciar en el momento en que se registró la localidad. Vea la sección {gbp-es}#localidades-difíciles[Localidades difíciles^] en {gbp-es}[Buenas prácticas de georreferenciación (Chapman y Wieczorek 2020)^]."
 
 #. type: Plain text
 #: 0240.en.adoc:6
@@ -2618,7 +2618,7 @@ msgstr "Cultivado o cautivo"
 #. type: Plain text
 #: 0240.en.adoc:94
 msgid "The <<locality>> is recorded in association with a captive animal, a cultivated plant or some other non-natural occurrence. The locality cited is often that of a zoo, aquarium, botanical garden, etc. (see {gbp}#dealing-with-non-natural-occurrences[Dealing with Non-natural Occurrences^] in {gbp}[Georeferencing Best Practices (Chapman & Wieczorek 2020)^]."
-msgstr "La <<localidad>> se registra en asociación con un animal cautivo, una planta cultivada o algún otro registro no natural. La localidad citada es a menudo la de un zoológico, acuario, jardín botánico, etc. (vea {gbp}#lidiando-con-registros-no-naturales[Lidiando con registros no naturales^] en {gbp}[Buenas prácticas de georreferenciación (Chapman y Wieczorek 2020)^]."
+msgstr "La <<localidad>> se registra en asociación con un animal cautivo, una planta cultivada o algún otro registro no natural. La localidad citada es a menudo la de un zoológico, acuario, jardín botánico, etc. (vea {gbp-es}#lidiando-con-registros-no-naturales[Lidiando con registros no naturales^] en {gbp-es}[Buenas prácticas de georreferenciación (Chapman y Wieczorek 2020)^]."
 
 #. type: Plain text
 #: 0240.en.adoc:96
@@ -2751,7 +2751,7 @@ msgstr "[[sistema-de-coordenadas-de-referencia]]sistema de coordenadas de refere
 #. type: Plain text
 #: glossary.en.adoc:24
 msgid "(also {gbp}#spatial-reference-system[spatial reference system]) A <<coordinate-system>> defined in relation to a standard reference or <<datum>>."
-msgstr "(también {gbp}#sistema-de-referencia-espacial[sistema de referencia espacial]) Un <<sistema de coordenadas>> definido en relación a una referencia estándar o <<datum>>."
+msgstr "(también {gbp-es}#sistema-de-referencia-espacial[sistema de referencia espacial]) Un <<sistema de coordenadas>> definido en relación a una referencia estándar o <<datum>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:25
@@ -2762,7 +2762,7 @@ msgstr "[[sistema-de-coordenadas]]sistema de coordenadas"
 #. type: Plain text
 #: glossary.en.adoc:26
 msgid "A geometric system that defines the nature and relationship of the <<coordinates>> it uses to uniquely define positions. Examples include the {gbp}geographic-coordinate-system[geographic coordinate system] and the <<UTM>> <<coordinate-system>>."
-msgstr "Un sistema geométrico que describe la naturaleza y la relación de las <<coordenadas>> usadas para definir posiciones únicas. Algunos ejemplos incluyen el {gbp}sistema-de-coordenadas-geográfico[sistema de coordenadas geográfico] y el sistema de <<sistema-de-coordenadas>> <<UTM>>."
+msgstr "Un sistema geométrico que describe la naturaleza y la relación de las <<coordenadas>> usadas para definir posiciones únicas. Algunos ejemplos incluyen el {gbp-es}sistema-de-coordenadas-geográfico[sistema de coordenadas geográfico] y el sistema de <<sistema-de-coordenadas>> <<UTM>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:27
@@ -2806,7 +2806,7 @@ msgstr "[[datum]]datum"
 #. type: Plain text
 #: glossary.en.adoc:34
 msgid "A set of one or more parameters that serve as a reference or basis for the calculation of other parameters https://www.iso.org/standard/74039.html[ISO 19111^]. A datum defines the position of the origin, the scale, and the orientation of the axes of a <<coordinate-system>>. For <<georeference,georeferencing>> purposes, a datum may be a {gbp}#geodetic-datum[geodetic datum] or a {gbp}#vertical-datum[vertical datum]."
-msgstr "Conjunto de uno o más parámetros que sirven como referencia o base para el cálculo de otros parámetros https://www.iso.org/standard/74039.html[ISO 19111^]. El datum define la posición del origen, la escala y la orientación de los ejes de un <<sistema-de-coordenadas>>. Para propósitos de la <<georreferencia,georreferenciación>>, un datum puede ser un {gbp}#datum-geodésico[datum geodésico] or a {gbp}#datum-vertical[datum vertical]."
+msgstr "Conjunto de uno o más parámetros que sirven como referencia o base para el cálculo de otros parámetros https://www.iso.org/standard/74039.html[ISO 19111^]. El datum define la posición del origen, la escala y la orientación de los ejes de un <<sistema-de-coordenadas>>. Para propósitos de la <<georreferencia,georreferenciación>>, un datum puede ser un {gbp-es}#datum-geodésico[datum geodésico] or a {gbp-es}#datum-vertical[datum vertical]."
 
 #. type: Labeled list
 #: glossary.en.adoc:35
@@ -2818,7 +2818,7 @@ msgstr "[[grados-decimales]]grados decimales"
 #: glossary.en.adoc:36
 msgid "Degrees expressed as a single real number (e.g. −22.343456). Note that <<latitude,latitudes>> south of the equator are negative, as are <<longitude,longitudes>> west of the <<prime-meridian>> to −180 degrees. See also {gbp}#decimal-latitude[decimal latitude] and {gbp}#decimal-longitude[decimal longitude]."
 msgstr "Grados expresados como un único número real (p. ej., -22.343456). Tenga en cuenta que las <<latitud,latitudes>> al sur del ecuador son negativas, al igual que las <<longitud,longitudes>> al oeste del <<meridiano cero>> hasta −180 grados. Ver también \n"
-"{gbp}#latitud-decimal[latitud decimal] and {gbp}#longitud-decimal[longitud-decimal]."
+"{gbp-es}#latitud-decimal[latitud decimal] and {gbp-es}#longitud-decimal[longitud-decimal]."
 
 #. type: Labeled list
 #: glossary.en.adoc:37
@@ -2829,7 +2829,7 @@ msgstr "[[profundidad]]profundidad"
 #. type: Plain text
 #: glossary.en.adoc:38
 msgid "A measurement of the vertical distance below a {gbp}#vertical-datum[vertical datum]. In this document, we try to modify the term to signify the medium in which the measurement is made. Thus, \"water depth\" is the vertical distance below an air-water interface in a waterbody (ocean, lake, river, sinkhole, etc.). Compare {gbp}#distance-above-surface[distance above surface]. Depth is always a non-negative number."
-msgstr "Medición de la distancia vertical por debajo de un {gbp}#datum-vertical[datum vertical]. En este documento tratamos de modificar el término para indicar el medio en el que se realiza la medición. En este sentido, la \"profundidad del agua\" es la distancia vertical por debajo de una interfaz de aire-agua, en un cuerpo de agua (océano, lago, río, agujero, etc.). Comparar con {gbp}#distancia-sobre-la-superficie[distancia sobre la superficie]. Profundidad es siempre un número no negativo."
+msgstr "Medición de la distancia vertical por debajo de un {gbp-es}#datum-vertical[datum vertical]. En este documento tratamos de modificar el término para indicar el medio en el que se realiza la medición. En este sentido, la \"profundidad del agua\" es la distancia vertical por debajo de una interfaz de aire-agua, en un cuerpo de agua (océano, lago, río, agujero, etc.). Comparar con {gbp-es}#distancia-sobre-la-superficie[distancia sobre la superficie]. Profundidad es siempre un número no negativo."
 
 #. type: Labeled list
 #: glossary.en.adoc:39
@@ -2873,7 +2873,7 @@ msgstr "[[elevación]]elevación"
 #. type: Plain text
 #: glossary.en.adoc:46
 msgid "A measurement of the vertical distance of a land or water surface above a {gbp}#vertical-datum[vertical datum]. On maps, the reference <<datum>> is generally some interpretation of {gbp}:mean-sea-level[mean sea level] or the {gbp}#geoid[geoid], while in devices using <<GPS>>/{gbp}#GNSS[GNSS], the reference datum is the <<ellipsoid>> of the {gbp}#geodetic-datum[geodetic datum] to which the GPS unit is configured, though the device may make corrections to report the elevation above mean sea level or the geoid. Elevations that are above a reference point should be expressed as positive numbers, while those below should be negative. Compare <<depth>>, {gbp}#distance-above-surface[distance above surface], and {gbp}#altitude[altitude]."
-msgstr "Medida de la distancia vertical de una superficie continental o marina a partir de un {gbp}#datum-vertical[datum vertical]. En los mapas, la referencia al <<datum>> generalmente es una interpretación del {gbp}:nivel-medio-del-mar[nivel medio del mar] or el {gbp}#geoide[geoide], mientras que en dispositivos <<GPS>>/{gbp}#GNSS[GNSS], el datum de referencia es el <<elipsoide>> del {gbp}#datum-geodesico[datum geodesico] al que está configurada la unidad GPS, aunque el dispositivo puede hacer correcciones para informar de la elevación por encima del nivel del mar o del geoide. Las elevaciones que están por encima de un punto de referencia deben ser expresadas como números positivos, mientras que las que están por debajo deben ser negativas. Compare con <<profundidad>>, {gbp}#distancia-sobre-la-superficie[distancia sobre la superficie], y {gbp}#altitud[altitud]."
+msgstr "Medida de la distancia vertical de una superficie continental o marina a partir de un {gbp-es}#datum-vertical[datum vertical]. En los mapas, la referencia al <<datum>> generalmente es una interpretación del {gbp-es}:nivel-medio-del-mar[nivel medio del mar] or el {gbp-es}#geoide[geoide], mientras que en dispositivos <<GPS>>/{gbp-es}#GNSS[GNSS], el datum de referencia es el <<elipsoide>> del {gbp-es}#datum-geodesico[datum geodesico] al que está configurada la unidad GPS, aunque el dispositivo puede hacer correcciones para informar de la elevación por encima del nivel del mar o del geoide. Las elevaciones que están por encima de un punto de referencia deben ser expresadas como números positivos, mientras que las que están por debajo deben ser negativas. Compare con <<profundidad>>, {gbp-es}#distancia-sobre-la-superficie[distancia sobre la superficie], y {gbp-es}#altitud[altitud]."
 
 #. type: Labeled list
 #: glossary.en.adoc:47
@@ -2895,7 +2895,7 @@ msgstr "[[punto-de-entrada]]punto de entrada"
 #. type: Plain text
 #: glossary.en.adoc:50
 msgid "The entry point on the surface of the ocean or lake where a diver enters the water and from which all activities are measured. See {gbp}#img-underwater-event[illustration] in {gbp}[_Georeferencing Best Practices_] (Chapman & Wieczorek 2020)."
-msgstr "El punto de entrada sobre la superficie del océano o lago donde un buceador entra al agua y desde el cual se miden todas las actividades. See {gbp}#img-underwater-event[illustration] in {gbp}[_Buenas Prácticas de Georreferenciación_] (Chapman & Wieczorek 2020)."
+msgstr "El punto de entrada sobre la superficie del océano o lago donde un buceador entra al agua y desde el cual se miden todas las actividades. See {gbp-es}#img-underwater-event[illustration] in {gbp-es}[_Buenas prácticas de georreferenciación_] (Chapman & Wieczorek 2020)."
 
 #. type: Labeled list
 #: glossary.en.adoc:51
@@ -2906,7 +2906,7 @@ msgstr "[[error]]error"
 #. type: Plain text
 #: glossary.en.adoc:52
 msgid "The difference between a computed, estimated, or measured value and the accepted true, specified, or theoretically correct value. It encompasses both the <<precision,imprecision>> of a measurement and its inaccuracies. Error can be either random or systematic. If the error is systematic, it is called \"bias\". Compare <<accuracy>>, {gbp}#bias[bias], precision, {gbp}#false-precision[false precision] and <<uncertainty>>."
-msgstr "La diferencia entre un valor calculado, estimado o medido y el valor verdadero aceptado, especificado, o teóricamente correcto. Este comprende tanto la <<precisión,imprecisión>> de una medición como su inexacitud. El error puede ser aleatorio o sistemático. Si el error es sistemático, se llama \"sesgo\". Comparar con <<exactitud>>, {gbp}#sesgo[sesgo], <<precisión>>, {gbp}#falsa-precisión[falsa precisión] e <<incertidumbre>>."
+msgstr "La diferencia entre un valor calculado, estimado o medido y el valor verdadero aceptado, especificado, o teóricamente correcto. Este comprende tanto la <<precisión,imprecisión>> de una medición como su inexacitud. El error puede ser aleatorio o sistemático. Si el error es sistemático, se llama \"sesgo\". Comparar con <<exactitud>>, {gbp-es}#sesgo[sesgo], <<precisión>>, {gbp-es}#falsa-precisión[falsa precisión] e <<incertidumbre>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:53
@@ -2995,7 +2995,7 @@ msgstr "[[radio-geográfico]]radio geográfico"
 #. type: Plain text
 #: glossary.en.adoc:69
 msgid "The distance from the <<corrected-center>> of a <<location>> to the furthest point on the <<geographic-boundary>> of that location. The geographical radial is what contributes to calculations of the {gbp}#maximum-uncertainty-distance[maximum uncertainty distance] using the <<point-radius>> <<georeferencing-method>>. The term geographic radial, as defined here, replaces its equivalent \"extent\" used in the early versions of this _Quick Reference Guide_ and related documents."
-msgstr "La distancia desde el <<centro-corregido>> de una <<ubicación>> hasta el punto más lejos en el <<límite-geográfico>> de esa ubicación. El radio geográfico contribuye a los cálculos de la {gbp}#distancia-máxima-de-incertidumbre[distancia máxima de incertidumbre] usando el <<método-de-georreferenciación>> <<radio-punto>>. El término radio geográfico, tal y como se define aquí, reemplaza su equivalente \"extensión\" utilizado en las primeras versiones de esta _Guía Rápida de Georreferenciación_ y documentos relacionados."
+msgstr "La distancia desde el <<centro-corregido>> de una <<ubicación>> hasta el punto más lejos en el <<límite-geográfico>> de esa ubicación. El radio geográfico contribuye a los cálculos de la {gbp-es}#distancia-máxima-de-incertidumbre[distancia máxima de incertidumbre] usando el <<método-de-georreferenciación>> <<radio-punto>>. El término radio geográfico, tal y como se define aquí, reemplaza su equivalente \"extensión\" utilizado en las primeras versiones de esta _Guía rápida de georreferenciación_ y documentos relacionados."
 
 #. type: Labeled list
 #: glossary.en.adoc:70
@@ -3006,7 +3006,7 @@ msgstr "[[geometría]]geometría"
 #. type: Plain text
 #: glossary.en.adoc:71
 msgid "The measures and properties of points, lines, and surfaces. Geometry is used to represent the {gbp}#geographic-component[geographic component] of <<location,locations>>."
-msgstr "Las medidas y propiedades de puntos, líneas y superficies (polígonos). La geometría se utiliza para representar el {gbp}#componente-geográfico[componente geográfico] de una <<ubicación>>."
+msgstr "Las medidas y propiedades de puntos, líneas y superficies (polígonos). La geometría se utiliza para representar el {gbp-es}#componente-geográfico[componente geográfico] de una <<ubicación>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:72
@@ -3061,7 +3061,7 @@ msgstr "[[GPS-receptor]]GPS (receptor)"
 #. type: Plain text
 #: glossary.en.adoc:81
 msgid "The colloquial term used to refer to both GPS and {gbp}#GNSS[GNSS] receivers (including those in smartphones and cameras). A GPS or GNSS receiver is an instrument which, in combination with an inbuilt or separate antenna, is able to receive and interpret radio signals from GNSS satellites and translate them into <<geographic-coordinates>>."
-msgstr "El término coloquial utilizado para referirse tanto al GPS como a los receptores {gbp}#GNSS[GNSS] (incluyendo los de teléfonos inteligentes y cámaras). Un receptor GPS o GNSS es un instrumento que en combinación con una antena incorporada o separada, es capaz de recibir e interpretar señales de radio de los satélites GNSS y traducirlas en <<coordenadas-geográficas>>."
+msgstr "El término coloquial utilizado para referirse tanto al GPS como a los receptores {gbp-es}#GNSS[GNSS] (incluyendo los de teléfonos inteligentes y cámaras). Un receptor GPS o GNSS es un instrumento que en combinación con una antena incorporada o separada, es capaz de recibir e interpretar señales de radio de los satélites GNSS y traducirlas en <<coordenadas-geográficas>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:82
@@ -3083,7 +3083,7 @@ msgstr "[[cota-cero]]cota cero"
 #. type: Plain text
 #: glossary.en.adoc:85
 msgid "The <<location>> on the land surface directly above a radiolocation point in a cave where the magnetic radiation lines are vertical. See {gbp}#img-vertical-position-in-a-cave[illustration] in {gbp}[_Georeferencing Best Practices_] (Chapman & Wieczorek 2020)."
-msgstr "La <<ubicación>> en la superficie directamente sobre un punto de radiolocación en una cueva donde las líneas de radiación magnética son verticales. Ver {gbp}#img-vertical-position-in-a-cave[illustration] en {gbp}[_Buenas Prácticas de Georreferenciación_] (Chapman & Wieczorek 2020)."
+msgstr "La <<ubicación>> en la superficie directamente sobre un punto de radiolocación en una cueva donde las líneas de radiación magnética son verticales. Ver {gbp-es}#img-vertical-position-in-a-cave[illustration] en {gbp-es}[_Buenas Prácticas de Georreferenciación_] (Chapman & Wieczorek 2020)."
 
 #. type: Labeled list
 #: glossary.en.adoc:86
@@ -3149,7 +3149,7 @@ msgstr "[[ubicación]]ubicación"
 #. type: Plain text
 #: glossary.en.adoc:97
 msgid "A physical space that can be positioned and oriented relative to a reference point, and potentially described in a natural language <<locality>> description. In <<georeference,georeferencing>>, a location can have distinct representations based on distinct {gbp}#rules-of-interpretation[rules of interpretation], each of which is embodied in a <<georeferencing-method>>."
-msgstr "Un espacio físico que puede posicionarse y orientarse de manera relativa a un punto de referencia y potencialmente descrito en un lenguaje natural en la descripción de la <<localidad>>. En la <<georreferencia,georreferenciación>>, una ubicación puede tener distintas representaciones basadas en diferentes {gbp}#reglas-de-interpretación[reglas-de-interpretación], cada una de las cuales está incorporada en un <<método-de-georreferenciación,método de georreferenciación>>."
+msgstr "Un espacio físico que puede posicionarse y orientarse de manera relativa a un punto de referencia y potencialmente descrito en un lenguaje natural en la descripción de la <<localidad>>. En la <<georreferencia,georreferenciación>>, una ubicación puede tener distintas representaciones basadas en diferentes {gbp-es}#reglas-de-interpretación[reglas-de-interpretación], cada una de las cuales está incorporada en un <<método-de-georreferenciación,método de georreferenciación>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:98
@@ -3171,7 +3171,7 @@ msgstr "[[meridiano]]meridiano"
 #. type: Plain text
 #: glossary.en.adoc:101
 msgid "A line on the surface of the Earth where all of the <<location,locations>> have the same <<longitude>>. Compare {gbp}#antimeridian[antimeridian] and <<prime-meridian>>."
-msgstr "Una línea en la superficie de la tierra donde todas las <<ubicación,ubicaciones>> tienen la misma <<longitud>>. Comparar con {gbp}#antimeridiano[antimeridiano] y <<meridiano-cero>>."
+msgstr "Una línea en la superficie de la tierra donde todas las <<ubicación,ubicaciones>> tienen la misma <<longitud>>. Comparar con {gbp-es}#antimeridiano[antimeridiano] y <<meridiano-cero>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:102
@@ -3215,7 +3215,7 @@ msgstr "[[radio-punto]]radio punto"
 #. type: Plain text
 #: glossary.en.adoc:109
 msgid "A representation of the {gbp}#geographic-component[geographic component] of a <<location>> as <<geographic-coordinates,geographic coordinates>> and a {gbp}#maximum-uncertainty-distance[maximum uncertainty distance]. The point-radius <<georeferencing-method>> produces <<georeference,georeferences>> that include <<geographic-coordinates>>, a <<coordinate-reference-system>>, and a maximum uncertainty distance that encompasses all of the possible geographic coordinates where a <<locality>> might be interpreted to be. This representation encompasses all of the geographical <<uncertainty,uncertainties>> within a circle. The point-radius method uses ranges to represent the non-geographic descriptors of the location (<<elevation>>, <<depth>>, {gbp}#distance-above-surface[distance above surface])."
-msgstr "Representación del {gbp}#componente-geográfico[componente geográfico] de una <<ubicación>> a partir de sus <<coordenadas-geográficas>> y una {gbp}#distancia-máxima-de-incertidumbre[distancia-máxima-de-incertidumbre]. El <<método-de-georreferenciación>> radio-punto produce <<georreferencia,georreferencias>> que incluyen <<coordenadas-geográficas>>, un <<sistema-de-coordenadas-de-referencia>> y una distancia máxima de incertidumbre que cubre todas las posibles coordenadas geográficas donde podría interpretarse que está una <<localidad>>. Esta representación enmarca todas las <<incertidumbre,incertidumbres>> geográficas dentro de un círculo. El método radio-punto utiliza rangos para representar otros atributos no geográficos de la ubicación (<<elevación>>, <<profundidad>>,{gbp}#distancia-sobre-la-superficie[distancia sobre la superficie])."
+msgstr "Representación del {gbp-es}#componente-geográfico[componente geográfico] de una <<ubicación>> a partir de sus <<coordenadas-geográficas>> y una {gbp-es}#distancia-máxima-de-incertidumbre[distancia-máxima-de-incertidumbre]. El <<método-de-georreferenciación>> radio-punto produce <<georreferencia,georreferencias>> que incluyen <<coordenadas-geográficas>>, un <<sistema-de-coordenadas-de-referencia>> y una distancia máxima de incertidumbre que cubre todas las posibles coordenadas geográficas donde podría interpretarse que está una <<localidad>>. Esta representación enmarca todas las <<incertidumbre,incertidumbres>> geográficas dentro de un círculo. El método radio-punto utiliza rangos para representar otros atributos no geográficos de la ubicación (<<elevación>>, <<profundidad>>,{gbp-es}#distancia-sobre-la-superficie[distancia sobre la superficie])."
 
 #. type: Labeled list
 #: glossary.en.adoc:110
