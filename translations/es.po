@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-02-04 00:50\n"
+"PO-Revision-Date: 2022-02-04 01:47\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -3236,7 +3236,7 @@ msgstr "Con valores, describe la mejor unidad de medida utilizada para expresar 
 #. type: Plain text
 #: glossary.en.adoc:118
 msgid "Antonym: imprecision. Compare <<accuracy>>, <<error>>, {gbp}#bias[bias], {gbp}#false-precision[false precision], and <<uncertainty>>."
-msgstr "Antónimo: imprecisión. Comparar con <<exactitud>>, <<error>>, {gbp}#sesgo[sesgo], {gbp}#falsa-precisión[falsa precisión] e <<incertidumbre>>."
+msgstr "Antónimo: imprecisión. Comparar con <<exactitud>>, <<error>>, {gbp-es}#sesgo[sesgo], {gbp-es}#falsa-precisión[falsa precisión] e <<incertidumbre>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:119
@@ -3269,8 +3269,8 @@ msgstr "[[forma-geométrica]]forma geométrica"
 #. type: Plain text
 #: glossary.en.adoc:124
 msgid "synonym of {gbp}#footprint[footprint]. A representation of the {gbp}#geographic-component[geographic component] of a location as a <<geometry>>. The result of a <<georeferencing-method,shape georeferencing method>> includes a shape as the geographic component of the <<georeference>>, which contains the set of all possible <<geographic-coordinates>> where a <<location>> might be interpreted to be. This representation encompasses all of the geographical <<uncertainty,uncertainties>> within the geometry given. The shape method uses ranges to represent the non-geographic descriptors of the location (<<elevation>>, <<depth>>, {gbp}#distance-above-surface[distance above surface])."
-msgstr "sinónimo de {gbp}#footprint[footprint]. Una representación del {gbp}#componente-geográfico[componente geográfico] de una ubicación a partir de una <<geometría>>. El resultado de la aplicación de un <<método-de-georreferenciación, método de georreferenciación de formas geométricas>> incluye una forma geométrica como componente geográfico de la <<georreferencia>>, que contiene el conjunto de todas las posibles <<coordenadas-geográficas>> donde se podría interpretar que está una <<ubicación>>. Esta representación engloba toda la <<incertidumbre>> geográfica dentro de la geometría resultante. El método de forma geométrica utiliza rangos para representar los atributos no geográficos de la ubicación (<<elevación>>, <<profundidad>>, \n"
-"{gbp}#distancia-sobre-la-superficie[distancia sobre la superficie])."
+msgstr "sinónimo de {gbp-es}#footprint[footprint]. Una representación del {gbp-es}#componente-geográfico[componente geográfico] de una ubicación a partir de una <<geometría>>. El resultado de la aplicación de un <<método-de-georreferenciación, método de georreferenciación de formas geométricas>> incluye una forma geométrica como componente geográfico de la <<georreferencia>>, que contiene el conjunto de todas las posibles <<coordenadas-geográficas>> donde se podría interpretar que está una <<ubicación>>. Esta representación engloba toda la <<incertidumbre>> geográfica dentro de la geometría resultante. El método de forma geométrica utiliza rangos para representar los atributos no geográficos de la ubicación (<<elevación>>, <<profundidad>>, \n"
+"{gbp-es}#distancia-sobre-la-superficie[distancia sobre la superficie])."
 
 #. type: Labeled list
 #: glossary.en.adoc:125
@@ -3303,7 +3303,7 @@ msgstr "[[incertidumbre]]incertidumbre"
 #. type: Plain text
 #: glossary.en.adoc:130
 msgid "A measure of the incompleteness of one’s knowledge or information about an unknown quantity whose true value could be established if complete knowledge and a perfect measuring device were available (<<cullen,Cullen & Frey 1999>>). <<georeferencing-method,Georeferencing methods>> codify how to incorporate uncertainties from a variety of sources (including <<accuracy>> and <<precision>>) in the interpretation of a <<location>>. Compare accuracy, <<error>>, {gbp}#bias[bias], precision, and {gbp}#false-precision[false precision]."
-msgstr "Medida de la falta de completitud del conocimiento o información de uno sobre una cantidad desconocida cuyo valor real podría establecerse si se dispusieran de un conocimiento completo y un dispositivo de medición perfecto (<<cullen,Cullen & Frey 1999>>). Los <<método de georreferenciación,Métodos de georreferenciación>> establecen cómo incorporar la incertidumbre desde una variedad de fuentes (incluyendo <<exactitud>> y <<precisión>>) en la interpretación de la <<ubicación>>. Comparar con <<exactitud>>, <<error>>, {gbp}#sesgo[sesgo], precisión, and {gbp}#falsa-precisión[falsa precisión]."
+msgstr "Medida de la falta de completitud del conocimiento o información de uno sobre una cantidad desconocida cuyo valor real podría establecerse si se dispusieran de un conocimiento completo y un dispositivo de medición perfecto (<<cullen,Cullen & Frey 1999>>). Los <<método de georreferenciación,Métodos de georreferenciación>> establecen cómo incorporar la incertidumbre desde una variedad de fuentes (incluyendo <<exactitud>> y <<precisión>>) en la interpretación de la <<ubicación>>. Comparar con <<exactitud>>, <<error>>, {gbp-es}#sesgo[sesgo], precisión, and {gbp-es}#falsa-precisión[falsa precisión]."
 
 #. type: Labeled list
 #: glossary.en.adoc:131
@@ -3314,7 +3314,7 @@ msgstr "[[UTM]]Universal Transversa de Mercator (UTM)"
 #. type: Plain text
 #: glossary.en.adoc:132
 msgid "A standardized <<coordinate-system>> based on a metric rectangular <<grid>> system and a division of the Earth into sixty 6-degree longitudinal zones. The scope of UTM covers from 84° N to 80° S. (See {gbp}#universal-transverse-mercator-utm-coordinates[Universal Transverse Mercator (UTM) Coordinates] in {gbp}[_Georeferencing Best Practices_] (Chapman & Wieczorek 2020))."
-msgstr "<<sistema-de-coordenadas, Sistema de coordenadas>> estandarizado basado en un sistema de <<grilla, grillas>> métrico rectangular y una división de la tierra en 60 zonas longitudinales de 6 grados. El alcance del sistema UTM cubre desde los 84° N hasta 80° S. (Ver {gbp}#coordenadas-universal-transversa-de-mercator[Coordendas Universal Transversa de Mercator (UTM)] en {gbp}[_Buenas Prácticas de Georreferenciación_] (Chapman & Wieczorek 2020))."
+msgstr "<<sistema-de-coordenadas, Sistema de coordenadas>> estandarizado basado en un sistema de <<grilla, grillas>> métrico rectangular y una división de la tierra en 60 zonas longitudinales de 6 grados. El alcance del sistema UTM cubre desde los 84° N hasta 80° S. (Ver {gbp-es}#coordenadas-universal-transversa-de-mercator[Coordendas Universal Transversa de Mercator (UTM)] en {gbp-es}[_Buenas prácticas de georreferenciación_] (Chapman & Wieczorek 2020))."
 
 #. type: Plain text
 #: glossary.en.adoc:133 bibliography.en.adoc:36
