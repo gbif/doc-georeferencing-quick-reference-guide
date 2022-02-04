@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-02-04 14:55\n"
+"PO-Revision-Date: 2022-02-04 15:53\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -2818,7 +2818,7 @@ msgstr "[[grados-decimales]]grados decimales"
 #: glossary.en.adoc:36
 msgid "Degrees expressed as a single real number (e.g. −22.343456). Note that <<latitude,latitudes>> south of the equator are negative, as are <<longitude,longitudes>> west of the <<prime-meridian>> to −180 degrees. See also {gbp}#decimal-latitude[decimal latitude] and {gbp}#decimal-longitude[decimal longitude]."
 msgstr "Grados expresados como un único número real (p. ej., -22.343456). Tenga en cuenta que las <<latitud,latitudes>> al sur del ecuador son negativas, al igual que las <<longitud,longitudes>> al oeste del <<meridiano cero>> hasta −180 grados. Ver también \n"
-"{gbp-es}#latitud-decimal[latitud decimal] and {gbp-es}#longitud-decimal[longitud-decimal]."
+"{gbp-es}#latitud-decimal[latitud decimal] and {gbp-es}#longitud-decimal[longitud decimal]."
 
 #. type: Labeled list
 #: glossary.en.adoc:37
@@ -2873,7 +2873,7 @@ msgstr "[[elevación]]elevación"
 #. type: Plain text
 #: glossary.en.adoc:46
 msgid "A measurement of the vertical distance of a land or water surface above a {gbp}#vertical-datum[vertical datum]. On maps, the reference <<datum>> is generally some interpretation of {gbp}:mean-sea-level[mean sea level] or the {gbp}#geoid[geoid], while in devices using <<GPS>>/{gbp}#GNSS[GNSS], the reference datum is the <<ellipsoid>> of the {gbp}#geodetic-datum[geodetic datum] to which the GPS unit is configured, though the device may make corrections to report the elevation above mean sea level or the geoid. Elevations that are above a reference point should be expressed as positive numbers, while those below should be negative. Compare <<depth>>, {gbp}#distance-above-surface[distance above surface], and {gbp}#altitude[altitude]."
-msgstr "Medida de la distancia vertical de una superficie continental o marina a partir de un {gbp-es}#datum-vertical[datum vertical]. En los mapas, la referencia al <<datum>> generalmente es una interpretación del {gbp-es}:nivel-medio-del-mar[nivel medio del mar] or el {gbp-es}#geoide[geoide], mientras que en dispositivos <<GPS>>/{gbp-es}#GNSS[GNSS], el datum de referencia es el <<elipsoide>> del {gbp-es}#datum-geodesico[datum geodesico] al que está configurada la unidad GPS, aunque el dispositivo puede hacer correcciones para informar de la elevación por encima del nivel del mar o del geoide. Las elevaciones que están por encima de un punto de referencia deben ser expresadas como números positivos, mientras que las que están por debajo deben ser negativas. Compare con <<profundidad>>, {gbp-es}#distancia-sobre-la-superficie[distancia sobre la superficie], y {gbp-es}#altitud[altitud]."
+msgstr "Medida de la distancia vertical de una superficie continental o marina a partir de un {gbp-es}#datum-vertical[datum vertical]. En los mapas, la referencia al <<datum>> generalmente es una interpretación del {gbp-es}nivel-medio-del-mar[nivel medio del mar] or el {gbp-es}#geoide[geoide], mientras que en dispositivos <<GPS>>/{gbp-es}#GNSS[GNSS], el datum de referencia es el <<elipsoide>> del {gbp-es}#geodetic-datum[datum geodesico] al que está configurada la unidad GPS, aunque el dispositivo puede hacer correcciones para informar de la elevación por encima del nivel del mar o del geoide. Las elevaciones que están por encima de un punto de referencia deben ser expresadas como números positivos, mientras que las que están por debajo deben ser negativas. Compare con <<profundidad>>, {gbp-es}#distancia-sobre-la-superficie[distancia sobre la superficie], y {gbp-es}#altitud[altitud]."
 
 #. type: Labeled list
 #: glossary.en.adoc:47
@@ -2895,7 +2895,7 @@ msgstr "[[punto-de-entrada]]punto de entrada"
 #. type: Plain text
 #: glossary.en.adoc:50
 msgid "The entry point on the surface of the ocean or lake where a diver enters the water and from which all activities are measured. See {gbp}#img-underwater-event[illustration] in {gbp}[_Georeferencing Best Practices_] (Chapman & Wieczorek 2020)."
-msgstr "El punto de entrada sobre la superficie del océano o lago donde un buceador entra al agua y desde el cual se miden todas las actividades. See {gbp-es}#img-underwater-event[illustration] in {gbp-es}[_Buenas prácticas de georreferenciación_] (Chapman & Wieczorek 2020)."
+msgstr "El punto de entrada sobre la superficie del océano o lago donde un buceador entra al agua y desde el cual se miden todas las actividades. Ver esta {gbp-es}#img-underwater-event[ilustración] dn {gbp-es}[_Buenas prácticas de georreferenciación_] (Chapman & Wieczorek 2020)."
 
 #. type: Labeled list
 #: glossary.en.adoc:51
@@ -3083,7 +3083,7 @@ msgstr "[[cota-cero]]cota cero"
 #. type: Plain text
 #: glossary.en.adoc:85
 msgid "The <<location>> on the land surface directly above a radiolocation point in a cave where the magnetic radiation lines are vertical. See {gbp}#img-vertical-position-in-a-cave[illustration] in {gbp}[_Georeferencing Best Practices_] (Chapman & Wieczorek 2020)."
-msgstr "La <<ubicación>> en la superficie directamente sobre un punto de radiolocación en una cueva donde las líneas de radiación magnética son verticales. Ver {gbp-es}#img-vertical-position-in-a-cave[illustration] en {gbp-es}[_Buenas Prácticas de Georreferenciación_] (Chapman & Wieczorek 2020)."
+msgstr "La <<ubicación>> en la superficie directamente sobre un punto de radiolocación en una cueva donde las líneas de radiación magnética son verticales. Ver esta {gbp-es}#img-vertical-position-in-a-cave[ilustración] en {gbp-es}[_Buenas Prácticas de Georreferenciación_] (Chapman & Wieczorek 2020)."
 
 #. type: Labeled list
 #: glossary.en.adoc:86
@@ -3149,7 +3149,7 @@ msgstr "[[ubicación]]ubicación"
 #. type: Plain text
 #: glossary.en.adoc:97
 msgid "A physical space that can be positioned and oriented relative to a reference point, and potentially described in a natural language <<locality>> description. In <<georeference,georeferencing>>, a location can have distinct representations based on distinct {gbp}#rules-of-interpretation[rules of interpretation], each of which is embodied in a <<georeferencing-method>>."
-msgstr "Un espacio físico que puede posicionarse y orientarse de manera relativa a un punto de referencia y potencialmente descrito en un lenguaje natural en la descripción de la <<localidad>>. En la <<georreferencia,georreferenciación>>, una ubicación puede tener distintas representaciones basadas en diferentes {gbp-es}#reglas-de-interpretación[reglas-de-interpretación], cada una de las cuales está incorporada en un <<método-de-georreferenciación,método de georreferenciación>>."
+msgstr "Un espacio físico que puede posicionarse y orientarse de manera relativa a un punto de referencia y potencialmente descrito en un lenguaje natural en la descripción de la <<localidad>>. En la <<georreferencia,georreferenciación>>, una ubicación puede tener distintas representaciones basadas en diferentes {gbp-es}#rules-of-interpretation[reglas de interpretación], cada una de las cuales está incorporada en un <<método-de-georreferenciación,método de georreferenciación>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:98
@@ -3215,7 +3215,7 @@ msgstr "[[radio-punto]]radio punto"
 #. type: Plain text
 #: glossary.en.adoc:109
 msgid "A representation of the {gbp}#geographic-component[geographic component] of a <<location>> as <<geographic-coordinates,geographic coordinates>> and a {gbp}#maximum-uncertainty-distance[maximum uncertainty distance]. The point-radius <<georeferencing-method>> produces <<georeference,georeferences>> that include <<geographic-coordinates>>, a <<coordinate-reference-system>>, and a maximum uncertainty distance that encompasses all of the possible geographic coordinates where a <<locality>> might be interpreted to be. This representation encompasses all of the geographical <<uncertainty,uncertainties>> within a circle. The point-radius method uses ranges to represent the non-geographic descriptors of the location (<<elevation>>, <<depth>>, {gbp}#distance-above-surface[distance above surface])."
-msgstr "Representación del {gbp-es}#componente-geográfico[componente geográfico] de una <<ubicación>> a partir de sus <<coordenadas-geográficas>> y una {gbp-es}#distancia-máxima-de-incertidumbre[distancia-máxima-de-incertidumbre]. El <<método-de-georreferenciación>> radio-punto produce <<georreferencia,georreferencias>> que incluyen <<coordenadas-geográficas>>, un <<sistema-de-coordenadas-de-referencia>> y una distancia máxima de incertidumbre que cubre todas las posibles coordenadas geográficas donde podría interpretarse que está una <<localidad>>. Esta representación enmarca todas las <<incertidumbre,incertidumbres>> geográficas dentro de un círculo. El método radio-punto utiliza rangos para representar otros atributos no geográficos de la ubicación (<<elevación>>, <<profundidad>>,{gbp-es}#distancia-sobre-la-superficie[distancia sobre la superficie])."
+msgstr "Representación del {gbp-es}#componente-geográfico[componente geográfico] de una <<ubicación>> a partir de sus <<coordenadas-geográficas>> y una {gbp-es}#distancia-máxima-de-incertidumbre[distancia máxima de incertidumbre]. El <<método-de-georreferenciación>> radio-punto produce <<georreferencia,georreferencias>> que incluyen <<coordenadas-geográficas>>, un <<sistema-de-coordenadas-de-referencia>> y una distancia máxima de incertidumbre que cubre todas las posibles coordenadas geográficas donde podría interpretarse que está una <<localidad>>. Esta representación enmarca todas las <<incertidumbre,incertidumbres>> geográficas dentro de un círculo. El método radio-punto utiliza rangos para representar otros atributos no geográficos de la ubicación (<<elevación>>, <<profundidad>>,{gbp-es}#distancia-sobre-la-superficie[distancia sobre la superficie])."
 
 #. type: Labeled list
 #: glossary.en.adoc:110
@@ -3314,7 +3314,7 @@ msgstr "[[UTM]]Universal Transversa de Mercator (UTM)"
 #. type: Plain text
 #: glossary.en.adoc:132
 msgid "A standardized <<coordinate-system>> based on a metric rectangular <<grid>> system and a division of the Earth into sixty 6-degree longitudinal zones. The scope of UTM covers from 84° N to 80° S. (See {gbp}#universal-transverse-mercator-utm-coordinates[Universal Transverse Mercator (UTM) Coordinates] in {gbp}[_Georeferencing Best Practices_] (Chapman & Wieczorek 2020))."
-msgstr "<<sistema-de-coordenadas, Sistema de coordenadas>> estandarizado basado en un sistema de <<grilla, grillas>> métrico rectangular y una división de la tierra en 60 zonas longitudinales de 6 grados. El alcance del sistema UTM cubre desde los 84° N hasta 80° S. (Ver {gbp-es}#coordenadas-universal-transversa-de-mercator[Coordendas Universal Transversa de Mercator (UTM)] en {gbp-es}[_Buenas prácticas de georreferenciación_] (Chapman & Wieczorek 2020))."
+msgstr "<<sistema-de-coordenadas, Sistema de coordenadas>> estandarizado basado en un sistema de <<grilla, grillas>> métrico rectangular y una división de la tierra en 60 zonas longitudinales de 6 grados. El alcance del sistema UTM cubre desde los 84° N hasta 80° S. (Ver {gbp-es}#coordenadas-universales-transversales-de-mercator-utm[Coordendas Universal Transversa de Mercator (UTM)] en {gbp-es}[_Buenas prácticas de georreferenciación_] (Chapman & Wieczorek 2020))."
 
 #. type: Plain text
 #: glossary.en.adoc:133 bibliography.en.adoc:36
