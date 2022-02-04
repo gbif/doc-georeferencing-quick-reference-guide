@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: georeferencing-quick-reference\n"
 "POT-Creation-Date: 2022-01-12 17:40+0000\n"
-"PO-Revision-Date: 2022-02-04 01:47\n"
+"PO-Revision-Date: 2022-02-04 14:55\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -2751,7 +2751,7 @@ msgstr "[[sistema-de-coordenadas-de-referencia]]sistema de coordenadas de refere
 #. type: Plain text
 #: glossary.en.adoc:24
 msgid "(also {gbp}#spatial-reference-system[spatial reference system]) A <<coordinate-system>> defined in relation to a standard reference or <<datum>>."
-msgstr "(también {gbp-es}#sistema-de-referencia-espacial[sistema de referencia espacial]) Un <<sistema de coordenadas>> definido en relación a una referencia estándar o <<datum>>."
+msgstr "(también {gbp-es}#spatial-reference-system[sistema de referencia espacial]) Un <<sistema de coordenadas>> definido en relación a una referencia estándar o <<datum>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:25
@@ -2762,7 +2762,7 @@ msgstr "[[sistema-de-coordenadas]]sistema de coordenadas"
 #. type: Plain text
 #: glossary.en.adoc:26
 msgid "A geometric system that defines the nature and relationship of the <<coordinates>> it uses to uniquely define positions. Examples include the {gbp}geographic-coordinate-system[geographic coordinate system] and the <<UTM>> <<coordinate-system>>."
-msgstr "Un sistema geométrico que describe la naturaleza y la relación de las <<coordenadas>> usadas para definir posiciones únicas. Algunos ejemplos incluyen el {gbp-es}sistema-de-coordenadas-geográfico[sistema de coordenadas geográfico] y el sistema de <<sistema-de-coordenadas>> <<UTM>>."
+msgstr "Un sistema geométrico que describe la naturaleza y la relación de las <<coordenadas>> usadas para definir posiciones únicas. Algunos ejemplos incluyen el {gbp-es}sistema-de-coordenadas-geográficas[sistema de coordenadas geográficas] y el sistema de <<sistema-de-coordenadas>> <<UTM>>."
 
 #. type: Labeled list
 #: glossary.en.adoc:27
@@ -2806,7 +2806,7 @@ msgstr "[[datum]]datum"
 #. type: Plain text
 #: glossary.en.adoc:34
 msgid "A set of one or more parameters that serve as a reference or basis for the calculation of other parameters https://www.iso.org/standard/74039.html[ISO 19111^]. A datum defines the position of the origin, the scale, and the orientation of the axes of a <<coordinate-system>>. For <<georeference,georeferencing>> purposes, a datum may be a {gbp}#geodetic-datum[geodetic datum] or a {gbp}#vertical-datum[vertical datum]."
-msgstr "Conjunto de uno o más parámetros que sirven como referencia o base para el cálculo de otros parámetros https://www.iso.org/standard/74039.html[ISO 19111^]. El datum define la posición del origen, la escala y la orientación de los ejes de un <<sistema-de-coordenadas>>. Para propósitos de la <<georreferencia,georreferenciación>>, un datum puede ser un {gbp-es}#datum-geodésico[datum geodésico] or a {gbp-es}#datum-vertical[datum vertical]."
+msgstr "Conjunto de uno o más parámetros que sirven como referencia o base para el cálculo de otros parámetros https://www.iso.org/standard/74039.html[ISO 19111^]. El datum define la posición del origen, la escala y la orientación de los ejes de un <<sistema-de-coordenadas>>. Para propósitos de la <<georreferencia,georreferenciación>>, un datum puede ser un {gbp-es}#geodetic-datum[datum geodésico] or a {gbp-es}#datum-vertical[datum vertical]."
 
 #. type: Labeled list
 #: glossary.en.adoc:35
